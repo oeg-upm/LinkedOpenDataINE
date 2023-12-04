@@ -1,0 +1,2016 @@
+@prefix ns1: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0111>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0112>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0113>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0114>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0115>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0116>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0119>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0126>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0128>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0129>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0163>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0164> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0111>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0113>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0128>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0164>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0230> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0119>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0125>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0130>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0164>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0210> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01131> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1102> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01132> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0123> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01133> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0126>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1043> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01134> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0122>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0124>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0125>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0126>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0127>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0128>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0163>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0164>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0230> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0141>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0142> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0145> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0143> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01231> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0146> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0146> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0147> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0144>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0149>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0322> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0150> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0161>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0163>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0164>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1039>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3600>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8130> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0162>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9609> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01501> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0170> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01502> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0170> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA01503> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0170> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA02011> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0129>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0210>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0230> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA02012> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0220>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1610> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/AA02020> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0240> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/BB05010> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7022> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/BB05021> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0322> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/BB05022> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0321> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA10101> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0510>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA10102> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0510>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA10103> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0510>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA10200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0520>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA10300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0892>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA11100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0610>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0620>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0910>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA11200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0910> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CA12000> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0721>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB13100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0710>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB13201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0729>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB13202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0729>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB13203> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0729>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14113> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14123> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14303> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14304> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14305> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14401> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0893>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1084> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14402> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0893>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1084> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14501> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/CB14502> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/B0990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1011> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1011>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1012> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1013>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1089> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1021>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1022>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15203> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1021>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1031> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15321> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1032> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15322> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1032> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15331> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1039>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15332> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1039>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15333> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1039> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15334> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1039> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15411> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1043> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15412> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1044> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15413> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1044> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1043>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1044> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1042> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15511> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1054> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15512> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1053> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1052> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15611> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1061> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15612> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1061> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15613> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1061> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1062>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1089> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15710> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1091> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1092> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15811> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1071> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15812> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1071>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1089> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15821> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1072> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15822> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1072> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15830> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1081> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15841> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1082> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15842> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1082> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15850> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1073>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1085> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15860> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1083> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15870> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1084> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15881> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1086> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15882> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1086> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15890> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1089> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15911> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1101> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15912> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1101> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15920> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1101> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15931> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1102> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15932> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1102> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15940> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1103> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15950> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1104> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15960> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1105> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15970> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1106> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15981> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1107>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3530> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA15982> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1054>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1107> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DA16000> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1200> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17140> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17160> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17170> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1310> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1330> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1330> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17303> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1330> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1392>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9529> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1393> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1394>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17530> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1395> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17541> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1396>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17542> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1396> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17543> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1396>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1399>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1722> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17600> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1391> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17710> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1419>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1431> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB17720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1439> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1412> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1413> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1413> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18231> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1414> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1414> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18241> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1419> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18242> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1419> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18243> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1419>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1511> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DB18302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1320>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1391>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DC19100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1511> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DC19201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DC19202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1512>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DC19300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1520>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1629>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2219>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2229> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20101> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1610> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20102> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1610> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1621> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1622>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1623> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1623>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4122> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1624>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1629>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20521> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1629>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DD20522> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1629> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1712> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1721> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1722> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1723> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1724> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE21250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5812> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5813> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5814> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22140> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5819> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1811> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1723>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5819> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1814> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1813> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1813> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1820> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1820> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DE22330> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1820> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DF23100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1910> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DF23200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DF23301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2013>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2120> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DF23302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2446>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3822> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2011> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2012> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2013> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24141> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1910>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2014> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24142> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2014> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2015> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24160> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2016> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24170> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2017> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2030> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2030> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2110> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24421> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2120> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24422> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2041>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2042> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2042> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24611> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2051> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24612> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2051> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2052>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2059> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24630> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2053> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24640> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2059> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24650> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2680> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24661> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2059> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24662> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2059> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DG24700> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2060> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2211> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2211> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2219>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2221>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2223>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2733>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4122>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4332> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25241> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1412>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1413>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2229>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DH25242> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2229>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2733>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2313> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26140> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2314> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2341> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2342> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2343> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2344> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2349> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26260> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2331> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2332> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2351> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2352> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26530> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2352> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26610> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2361> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2362> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26630> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2363> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26640> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2364> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26650> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2365> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26660> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2369> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26701> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2370> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26702> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2370> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26810> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2391> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DI26820> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2399>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2410> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27211> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2451> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27212> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2451> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2431> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2432> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27330> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2433> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27340> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2434> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2441> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2442> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27431> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2443> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27432> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2443> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27433> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2443> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27440> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2444> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27450> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2445> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2451> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2452> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27530> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2453> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ27540> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2454> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2433>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2511>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4122>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2529>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2521>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2530>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28401> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2550> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28402> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2550> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28403> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2550> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2561> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2562> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28610> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2571>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28621> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2573>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2849>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28622> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2573>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28630> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2572>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28710> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2591>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2592> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28730> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2593> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28740> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2593>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2594> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28751> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2599>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28752> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2599>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DJ28753> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2571>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2599>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2813>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2813>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29123> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2814>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29141> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2815> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29142> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2815>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2821>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2822>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2822>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2825>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29241> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29242> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29243> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2830>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29321> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2830> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29322> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2824>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2841>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2849>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2891>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29520> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2892>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29530> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2830>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2893>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29541> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2894>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29542> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2894>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29543> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2894>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29550> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2895>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29561> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2894>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29562> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2896>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29563> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2573>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29564> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29601> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2540>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3030>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3040>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3317> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29602> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2540>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29710> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2751>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2821>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2825> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DK29720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2752>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2821> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL30010> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2823>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL30020> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2620>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6209> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2611>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2711>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3314>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2611>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2712>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2733>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3314>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2611>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2731>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2732>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2720> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31501> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2740> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31502> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2740>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3314> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31611> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2931> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31612> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2740>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL31620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2344>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2599>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2630>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2651>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2849>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3020>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3314>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL32100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2611>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2612>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL32201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2630>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL32202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2630>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL32300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2611>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2630>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2640>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2670>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2823>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2660>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2651>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2670>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3314> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33401> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3250> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33402> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2670>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2731>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DL33500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2652>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3212>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3213>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3313> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM34100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2892>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2910>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3091> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM34200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2920>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM34300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2932> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3011>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3315> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3831> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3012>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3315> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3020>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3317> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3030>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3316> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3091> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3092> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3092>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3317> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DM35500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2822>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3099>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3101>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3317> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2932>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3011>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3020>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3030>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3101>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3102>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3109>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9524> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3101> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3102>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9524> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36141> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3109> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36142> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3109> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36143> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3109> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36144> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3109>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9524> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3103> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3211> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3212> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3212> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3220>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9529> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3230> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2640>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3240>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36610> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3213> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2219>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3291> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN36630> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1399>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1512>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1629>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1729>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2051>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2219>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2223>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2229>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2599>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C2899>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3092>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN37100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3831>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3832> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/DN37200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3832> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3515> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3516> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40113> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3517>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3812> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40114> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3518> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40115> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3519> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3513>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3514> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3521> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3522>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3523> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE40300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/D3530> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/EE41000> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3600> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4313> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45211> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4122> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45212> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4213> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45213> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4213> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45214> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45215> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4212>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45216> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45217> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4222>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4299>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4391> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45231> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4212> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4122>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4211>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4221>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4291>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45251> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45252> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45253> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4221>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4322>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4321>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4322>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45331> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4322> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45332> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4322> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45340> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4321>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4331> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45421> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4332> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45422> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4329>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4332> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4333> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45441> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4334> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45442> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4334> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45450> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4339>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/FF45500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4399> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50101> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4511> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50102> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4511>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4519> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50103> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4519> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4520>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4531> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4532> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4540> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG50500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4730> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4611> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4613> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51140> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4614> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4615> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51160> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4616> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51170> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4617> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51180> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4618> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51190> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4619> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4621> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4622> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4623> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4624> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4621> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4631> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51321> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4632> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51322> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4632> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51323> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4632> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51330> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4633> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51340> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1101>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1102>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4634> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51350> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4635> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51360> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4636> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51370> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4637> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51381> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4638> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51382> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4631>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4638> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51391> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4639> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51392> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4639> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4641> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51421> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4642> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51422> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4642> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51423> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4642> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4643>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4647>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4652> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51441> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4644>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4649> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51442> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4644>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51450> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4645> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51460> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4646> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51471> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4649> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51472> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4649> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51473> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4648> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51474> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4649> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51475> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4643>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4647>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4649>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4671> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51521> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4672> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51522> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4672> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51523> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4672> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51524> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4672> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51531> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51532> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51533> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51534> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4673> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51541> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4674> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51542> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4674> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51551> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4675> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51552> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4676> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51553> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4675> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51560> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4676> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51571> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4677> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51572> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4677> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51600> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4652> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51611> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4662> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51612> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4662> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4663> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51630> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4664> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51660> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4661> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51670> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4651> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51680> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4665>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4666> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51691> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4669> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51692> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4669> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG51700> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4690> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52113> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52114> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52115> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4719> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4719> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4721> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4722> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4723> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4724> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4725> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52260> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4726> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52271> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52272> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4721>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4773> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4774> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52330> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4775> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52410> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4751> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52420> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4771> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52430> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4772> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52440> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4753>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4759> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52450> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4742>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4743>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4754>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4759>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4763> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52461> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4752> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52462> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4752> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52463> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4752> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52470> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4761>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4762> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52481> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4778> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52482> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4777> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52483> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4764>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4765> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52484> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4753> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52485> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4776> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52486> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4778> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52487> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4778> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52488> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4719>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4741>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4742>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4778>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4779> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52501> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4779> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52502> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4779> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52610> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4791> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52620> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4781>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4782>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4789> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52631> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4799> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52632> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4779>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4791>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/G4799> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52710> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9523> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9521>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9522> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52730> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9525> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/GG52740> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C1330>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9512>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9523>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9529> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55101> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5510> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55102> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5510>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5590> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55211> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55212> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5530> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5530> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55231> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55233> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55234> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5590> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5610> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5630> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5629> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55521> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5629> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/HH55522> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/I5621> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4910>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4920>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60211> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4931> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60212> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4931> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60213> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4939> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60214> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4931>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4939> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4932> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4939> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60241> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4942> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60242> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4941> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60243> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4941> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II60300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H4950> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II61100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5010>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II61200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5030>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5040> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II62100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5110>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5121> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II62200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5110>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5121> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II62300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5122> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5224> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5210> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5210> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63123> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5210> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63124> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5210> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63211> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63212> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63213> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63214> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63215> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5221> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5222> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63231> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5223> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5223>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8532> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7912> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7911> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63303> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7990> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II63400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5229>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7490> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II64110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5310>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8219> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II64120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/H5320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/II64200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6010>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6020>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6110>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6120>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6130>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6190> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6419> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6419> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65123> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6419> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6491> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65224> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6492> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65225> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6492>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6499> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65232> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6430> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65234> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6430> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65235> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6430> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ65236> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6420>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6499> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ66011> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6511>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ66012> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6511>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ66020> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6520>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6530> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ66031> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6512> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ66032> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6611> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67123> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67124> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6630> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67125> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67131> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67132> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6619> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67133> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67134> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6612> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6622> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6622> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/JJ67203> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6621>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6629> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4110> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/F4110> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6810> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6820> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6820> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6831> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70321> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6832>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8110> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK70322> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/L6832>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8110> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7711> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7712>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7739> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7734> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7735> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7731> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7732>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7739> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71331> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7733> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71332> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7733> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71340> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7739> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71401> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71402> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71403> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7721> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK71404> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7722>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7729> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6202> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5821>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5829> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6201>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6202>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6209> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6203>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5814>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5819>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5821>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5829>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5920>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6010>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6020>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6201>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72500> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/C3312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9511> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK72600> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6209> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK73100> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7211>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7219>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7220> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK73200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7220> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M6910> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M6910> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74113> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M6910> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M6920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7320> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74141> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/A0240>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7022>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7490>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8560> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74142> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7021> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74150> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/K6420>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7010> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7111> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7112> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74203> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7112> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74204> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7112>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7490> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7120> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7120> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74401> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74402> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7311>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7312> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74501> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7810> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74502> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7810> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74503> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7820>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7830> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74601> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8030> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74602> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7490>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8010>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74700> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8121>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8122>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8129> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74811> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74812> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74820> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8292> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74831> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8211>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8219> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74832> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7430> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74833> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74841> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7410> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74842> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8230> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74843> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5920>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6399>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7490>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7740>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8291>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8299> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/KK74860> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8220> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75113> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8412> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8413> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75140> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8110>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8411>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9106> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8421>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8899> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75220> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8422> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75230> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8423> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75240> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8424> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75250> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8425> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/LL75300> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/O8430> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80101> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8510> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80102> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8520> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80210> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8531> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80221> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8532> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80222> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8532> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80301> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8541> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80302> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8543> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80303> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8544> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80411> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8553> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80412> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8553> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80421> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8552>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8559> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80422> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8551>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8552>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8559> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/MM80423> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8559> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8610>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8720> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8621>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8622> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8623> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85141> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8690>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8710>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8720>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8731>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8732> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85142> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8690> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85143> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8690> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85144> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8690> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7500> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85311> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8710>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8731> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85312> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8720>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8732> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85313> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85314> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85315> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8720>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8790> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85321> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8812> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85322> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8891> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85323> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8812> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85324> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8899> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/NN85325> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/Q8899> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO90010> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3700> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO90020> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3812>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3821>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3822> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO90030> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3811>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/E3900>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N8129> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91110> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9411> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91120> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9412> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91200> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9420> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91310> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9491> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9492> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91331> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9499> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO91332> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9499> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92111> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5915> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92112> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5912>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5920> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92121> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5917> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92122> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5917> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92130> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5914> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92201> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5920>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6010> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92202> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5916>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J5918> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92203> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6020> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92311> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9001>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9003> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92312> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9001> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92313> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9002> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92320> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9004> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92330> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9321> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92341> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8552>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92342> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9002>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92343> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9001>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9002>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92400> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/J6391>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/M7420>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9003> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92510> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9105>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9106> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92521> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9102> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92522> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9103> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92530> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9104> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92611> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92612> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92613> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9311> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92621> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/P8551>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9312>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9313> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92622> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92623> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/N7990>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9319> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92711> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9200> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92712> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9200> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92713> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9200> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO92720> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9329> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93010> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9601> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93020> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9602> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93030> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9603> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93041> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9604> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93042> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/R9313>,
+        <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9604> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/OO93050> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/S9609> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/PP95000> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/T9700> .
+
+<http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/QQ9900> ns1:ConceptAssociation <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/U9900> .
+

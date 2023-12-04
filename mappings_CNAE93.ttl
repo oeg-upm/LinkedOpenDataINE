@@ -11,7 +11,7 @@
 
 <#TriplesMap1> a rr:TriplesMap;
     rml:logicalSource [
-     rml:source "cnae09.csv";
+     rml:source "cnae93.csv";
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
