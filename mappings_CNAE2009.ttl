@@ -15,7 +15,7 @@
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
-        rr:template "https://http://stats.linkeddata.es/voc/cnae/cnae09/{CODINTEGR}";
+        rr:template "https://http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/{CODINTEGR}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -32,12 +32,8 @@
         rr:objectMap [ rr:column "NIVEL" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate skos:altLabel;
-        rr:objectMap [ rr:column "TITABREV" ];
-    ]; 
-    rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:column "PADRE" ];
+        rr:objectMap [ rr:template "https://http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:inclusionNote;
@@ -48,10 +44,6 @@
         rr:objectMap [ rr:column "NOTA2" ];
     ];              
     rr:predicateObjectMap [
-        rr:predicate skos:note;
-        rr:objectMap [ rr:column "NOTA3" ];
-    ];
-    rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:objectMap [ rr:column "NOMBRE" ];
+        rr:objectMap [  rr:template "https://http://stats.linkeddata.es/voc/cnae/{NOMBRE}";];
     ].          
