@@ -15,12 +15,12 @@
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/{CODINTEGR}";
+        rr:template "http://stats.linkeddata.es/voc/cnae/CNAE93/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:altLabel;
-        rr:objectMap [ rr:column "COD" ];
+        rr:objectMap [ rr:column "CODINTEGR" ];
     ];    
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -33,15 +33,19 @@
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/CNAE93/{PADRE}";];
     ];
     rr:predicateObjectMap [
-        rr:predicate xkos:inclusionNote;
+        rr:predicate xkos:coreContentNote;
         rr:objectMap [ rr:column "NOTA1" ];
     ];          
     rr:predicateObjectMap [
         rr:predicate xkos:exclusionNote;
         rr:objectMap [ rr:column "NOTA2" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:note;
+        rr:objectMap [ rr:column "NOTA3" ];
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;

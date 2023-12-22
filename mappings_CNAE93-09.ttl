@@ -15,9 +15,9 @@
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE09/{CODINT1}";
+        rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE93/{CODINT2}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/CNAE93/{CODIGO2}";];
     ].
