@@ -26,6 +26,10 @@
         rr:predicate rdfs:label;
         rr:objectMap [ rr:column "TITULO" ];
     ];
+    rr:predicateObjectMap [
+        rr:predicate skos:altLabel;
+        rr:objectMap [ rr:column "TITABREV" ];
+    ];    
     #De cara a representar los niveles usamos xkos, que skos no tiene forma de representarlo que no sea mediante colecciones.
     rr:predicateObjectMap [
         rr:predicate xkos:depth;

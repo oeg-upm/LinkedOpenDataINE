@@ -21,7 +21,11 @@
     rr:predicateObjectMap [
         rr:predicate skos:altLabel;
         rr:objectMap [ rr:column "CODINTEGR" ];
-    ];    
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:altLabel;
+        rr:objectMap [ rr:column "TITABREV" ];
+    ];        
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [ rr:column "TITULO" ];
