@@ -11,11 +11,11 @@
 
 <#TriplesMap1> a rr:TriplesMap;
     rml:logicalSource [
-     rml:source "cnedp14.csv";
+     rml:source "./datasets/cnedp14.csv";
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/cned/CNEDP14/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/cnedp/CNEDP14/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -37,7 +37,7 @@
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnedp/CNEDP14/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -53,5 +53,5 @@
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:objectMap [  rr:template "http://stats.linkeddata.es/voc/cnae/{NOMBRE}";];
+        rr:objectMap [  rr:template "http://stats.linkeddata.es/voc/cnedp/{NOMBRE}";];
     ].          
