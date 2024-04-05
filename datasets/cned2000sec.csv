@@ -1,0 +1,657 @@
+"COD","CODINTEGR","TITULO","TITABREV","PADRE","NOTA1","NOTA2","NOTA3","VALORNOTA","REFERENCIA","FECHA_NOTA","NIVEL"
+"421","421","Biología y Bioquímica","","42","Biología y bioquímica es el estudio de la estructura, función, reproducción, crecimiento, evolución y comportamiento de todos los organismos vivos. Comprende el estudio de los procesos químicos en los organismos vivos (bioquímica, ...). Este sector consta en gran medida de programas de educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Bioquímica, toxicología, farmacología
+· Biología, genética
+· Botánica, zoología","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de las ciencias ambientales, que es el estudio de la relación entre los organismos vivos y el medio ambiente (véase 422)","","SI","","",3
+"422","422","Ciencias del medio ambiente","","42","Ciencias del medio ambiente es el estudio de las relaciones de los organismos vivos entre sí y con el medio ambiente. Este sector consiste en gran medida en educación superior.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ecología
+· Ciencias medioambientales","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la biología y la toxicología véase 421","","SI","","",3
+"441","441","Física","","44","Física es el estudio de las propiedades e interacciones de la materia y la energía. Este sector consta en gran medida de programas de educación superior
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Física, óptica
+· Astronomía, ciencias del espacio","","","SI","","",3
+"443","443","Geología y metereología","","44","Geología es el estudio de la composición, estructura y evolución de la tierra, incluida la hidrosfera. Meteorología es el estudio de la atmósfera. Este sector consta en gran medida de programas de educación superior.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Geología
+· Meteorología
+· Oceanografía, sismología
+· Geografía física","","","SI","","",3
+"461","461","Matemáticas","","46","Matemáticas es el estudio de los sistemas deductivos abstractos. Incluye el álgebra, aritmética, geometría, análisis real y complejo y matemáticas aplicadas. Este sector consta en gran medida de programas de educación superior.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Estadística matemática
+· Matemáticas, álgebra, geometría, análisis numérico","","","SI","","",3
+"462","462","Estadística","","46","Estadística es el estudio de recoger, describir, estructurar y analizar datos numéricos. Se incluye el estudio de la teoría de la probabilidad y las ciencias actuariales. Este sector consta en gran medida de programas de educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Estadística, teoría de la probabilidad
+· Ciencias actuariales","","","SI","","",3
+"481","481","Ciencias de la computación","","48","Ciencias de la computación es el estudio del diseño y desarrollo de sistemas in-formáticos y de entornos informáticos. Incluye el estudio del diseño, mantenimiento e integración de aplicaciones de software. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Programación de ordenadores, lenguajes de programación
+· Ciencias de la computación
+· Diseño y análisis de sistemas informáticos
+· Informática, sistemas operativos, administración de redes","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Ingeniería de ordenadores (hardware) ( véase 523)
+- Los programas formativos sobre el uso de ordenadores y/o de aplicaciones de software (véase 482)","","SI","","",3
+"482","482","Informática en el nivel de usuario","","48","Informática en el nivel de usuario es el estudio del uso de ordenadores y de software de ordenadores y de sus aplicaciones para diferentes propósitos. Estos pro-gramas son generalmente de corta duración.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Uso de ordenador y utilización de Internet
+· Formación sobre el manejo del software para cálculos (hojas de cálculo), para proceso de datos, para procesamiento de textos, para composición de publicaciones","","","SI","","",3
+"521","521","Maquinaria y metalurgia","","52","Maquinaria y metalurgia (ingeniería, técnica y profesiones afines) es el estudio de la planificación, diseño, desarrollo, producción, mantenimiento y seguimiento de máquinas, plantas y sistemas mecánicos y productos metálicos. Incluye el diseño y mantenimiento de máquinas que producen bienes y servicios. Los programas en este sector se centran en las máquinas, sistemas mecánicos y productos metálicos. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Hidráulica
+· Ingeniería mecánica, mecánica de precisión
+· Fundición y moldeado de metales, procesos de laminación·
+- Ingeniería metalúrgica, producción de acero
+· Fabricación de herramientas, fabricación de maquinaria
+- Soldadura","No comprende los programas educativos con los siguientes contenidos principales:
+
+El estudio de la ingeniería y mecánica de los motores de vehículos (véase 525)","","SI","","",3
+"522","522","Electricidad y energia","","52","Electricidad (ingeniería, técnica y profesiones afines) es el estudio de la instalación, mantenimiento, reparación y diagnóstico de fallos en el sistema eléctrico, y equipamiento en los hogares y en establecimientos comerciales e industriales. Se incluye la instalación y mantenimiento de tendido eléctrico y tuberías eléctricas para la distribución de electricidad. Energía es el estudio de la generación de energía.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ingeniería eléctrica, generación de potencia eléctrica
+· Programas para sistemas eléctricos, reparación de sistemas eléctricos
+· Programas energéticos
+· Energía nuclear, hidráulica y termal
+· Instalación y mantenimiento de líneas de alta tensión, distribución de gas
+· Instalación, diagnóstico y reparación de sistemas de calefacción, aire acondicio-nado y equipos de refrigeración.","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la electricidad en vehículos (véase 525)","","SI","","",3
+"524","524","Procesos químicos","","52","Procesos químicos (ingeniería, técnica y profesiones afines) es el estudio de la planificación, diseño y desarrollo de productos y procesos en los que ocurren cambios químicos y físicos. Incluye el diseño de plantas químicas y sistemas de control. La tecnología de laboratorios se incluye si no se hace énfasis en una aplicación específica.
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ingeniería química, ingeniería de procesos químicos, biotecnología
+· Tecnología de laboratorios
+· Procesamiento de petróleo/gas/petroquímica
+· Operaciones de plantas y máquinas (procesamiento)· 
+- Tecnologías de procesos químicos y bioquímicos","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas en tecnologías de laboratorios en los que se haga énfasis en una determinada aplicación (biológica, médica, ...) (véase 421, 725)
+· Los programas con énfasis en la producción de un material específico, (véase 54)","","SI","","",3
+"541","541","Industria de la alimentación","","54","Industria de la alimentación (industria y producción) es el estudio del procesamiento y empaquetado de comidas y bebidas, y del equipamiento y procedimientos utilizados en la producción y distribución de comidas.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Procesamiento de alimentos y bebidas, productos lácteos, carnes, tabacos
+· Conservación de los alimentos
+· Pastelería
+· Tecnología y ciencia de los alimentos
+· Enología, elaboración de cerveza
+· Manipulación de alimentos e higiene alimentaria","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas de cocineros de restaurantes (véase 811)
+· Las ciencias nutricionales (véase 726)","","SI","","",3
+"544","544","Minería y extracción","","54","Minería y extracción (industria y producción) es el estudio de la planificación, desarrollo y dirección de la extracción de minerales, petróleo y gas de la tierra. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+. Extracción de minerales, petróleo y gas","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios en ingeniería metalúrgica (véase 521)
+· El refino del petróleo<br>· Los estudios en geología (véase 443)","","SI","","",3
+"581","581","Arquitectura y urbanismo","","58","Arquitectura es el estudio del arte, ciencia y técnicas del diseño en la construcción. Abarca fines utilitarios, estructura funcional y consideraciones estéticas. El urbanismo es el estudio del crecimiento controlado y la mejora de las ciudades tanto desde el punto de vista funcional como estético.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Arquitectura
+· Cartografía e inspección de terrenos, topografía
+· Planificación urbana","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de diseño de interiores (véase 214)
+· El acabado y construcción de parques y jardines (véase 622)","","SI","","",3
+"212","212","Música y artes del espectáculo","","21","Música y artes del espectáculo es el estudio de los principios y técnicas asociadas con la actuación con música, voz, movimiento, mimo, caracterización, improvisación y artes escénicas.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Música, composición y dirección
+· Coreografía, danza
+· Teatro, drama, actuación y dirección, circo
+· Historia y teoría de los estudios de teatro, cine, música y danza","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La formación a profesores de teatro, música y danza (véase 146)","","SI","","",3
+"213","213","Técnicas audiovisuales y medios de comunicación","","21","Las Técnicas audiovisuales y medios de comunicación son los estudios de las técnicas y habilidades para producir libros, periódicos, producción de radio y TV, de películas/vídeos, de música grabada y reproducción gráfica. Incluye programas en métodos de reproducción del color, fotografía y gráficos por ordenador. También se incluye el estudio de la composición de imágenes, palabras y decoraciones para producir libros, revistas, pósters, anuncios,... .
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Manejo de cámara, fotografía, maquetación
+· Diseño gráfico, composición, reproducción gráfica, ilustración
+· Técnicas de medios de comunicación
+· Producción de radio y TV, producción de películas
+· Técnicas de sonido, producción de música grabada
+· Cajista (impresión), impresión, edición, encuadernación","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas formativos para explicar el manejo de aplicaciones específicas de software para edición de publicaciones y se incluyen en el 482 Informática a nivel de usuario
+· Los estudios de periodismo y escritura y contenido de mensajes (véase 321)","","SI","","",3
+"221","221","Religión","","22","La religión es el estudio de creencias religiosas, conceptos, símbolos, expresiones, texto y espiritualidad. 
+Comprende los programas educativos con los siguientes contenidos principales:
+· Historia y estudio de las diferentes religiones
+· Catequesis y programas afines para niños y jóvenes","","","SI","","",3
+"222","222","Lenguas extranjeras","","22","Lenguas extranjeras es el estudio de la estructura y composición de las lenguas extranjeras. Incluye el estudio de las correspondientes culturas, literatura y lingüística. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Lenguas extranjeras
+· Lenguas muertas
+· Programas de traducción e interpretación","","","SI","","",3
+"223","223","Lenguas y dialectos españoles","","22","Lenguas y dialectos españoles es el estudio de cualquiera de las lenguas o dialectos españoles, incluyendo estudios relacionados con su literatura y lingüística.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Lenguas y dialectos españoles: castellano, catalán, gallego, vasco, valenciano, balear, bable y otros dialectos
+
+Comprende también los programas educativos con los siguientes contenidos principales:
+
+· Lenguajes por signos","","","SI","","",3
+"225","225","Historia y arqueología","","22","La historia es el estudio de sucesos pasados, especialmente el desarrollo político, social y económico de un país, un continente o todo el mundo. Arqueología es el estudio de las civilizaciones antiguas mediante análisis científicos de restos encontrados en el terreno. Este sector consiste fundamentalmente en educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Arqueología
+· Historia cultural, de la literatura, de la ciencia
+· Museología","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la literatura combinado con el de una lengua especifica (véase 22)","","SI","","",3
+"226","226","Filosofia y ética","","22","Filosofía y ética es el estudio de la filosofía, ética y materias relacionadas con la concepción de la existencia. Este sector consiste fundamentalmente en educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+· Ética y mora
+· Filosofía, lógica","No comprende los programas educativos con los siguientes contenidos principales:
+
+- El estudio de la religión (véase 221)","","SI","","",3
+"311","311","Psicología","","31","Psicología es el estudio de la mente humana, del comportamiento como resultado de las diferencias individuales, de la experiencia y del entorno. Este sector consta en gran medida de programas de educación superior. 
+Programas educativos con los siguientes contenidos principales se clasifican aquí:
+
+· Psicología, psicoanálisis, psicoterapia","","","SI","","",3
+"312","312","Sociología, antropología y geografía social y cultural","","31","La sociología, antropología, geografía social y cultural es el estudio de los pueblos y de la forma en que se comportan los humanos en grupos y en sociedad. Este sector consta en gran medida de programas de educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+· Sociología y antropología
+· Estudios de población y demográficos
+· Geografía social y cultural
+· Etnología
+· Criminología","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas de protección social en los que el énfasis se hace en trabajo social práctico (véase 762)
+· El estudio de la geografía física (véase 443)","","SI","","",3
+"211","211","Bellas artes","","21","Bellas artes es el estudio de las formas visuales de expresiones creativas, relacionadas con la teoría, historia, técnica, acabado y producción de bellas artes.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Grabados, miniaturas, pintura, escultura
+· Teoría del arte","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La formación en cerámica y barro (véase 215)
+· Estudios de arquitectura (véase 581)
+· La formación de profesores de Bellas Artes (véase 146)","","SI","","",3
+"010","010","Programas de formación básica","","01","Programas básicos son programas diseñados para dar una educación básica en lectura, escritura y aritmética, así como un conocimiento general en otras asignaturas como historia, geografía, ciencias naturales, ciencias sociales, arte y música, y en algunos casos formación religiosa.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Programas básicos de nivel primario y secundario básico
+· Programas generales de nivel secundario sin énfasis en ningún tema especial
+· Programas de bachiller","","","SI","","",3
+"080","080","Programas de alfabetización y de aritmética","","08","Los programas de alfabetización y de aritmética están enfocados fundamentalmente a adultos sin formación, diseñados para enseñar lectura básica, escritura y en algunos casos aritmética. El rango de edades típico se puede usar para distinguir entre el sector 010 Programas básicos y este sector. 
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Alfabetización de adultos, aritmética","","","SI","","",3
+"090","090","Desarrollo personal","","09","Los programas de desarrollo personal se pueden definir por referencia a los efectos en la destreza o capacidad individual (mental, social, ...). Este sector cubre los programas de desarrollo personal, no incluidos en 010 Programas básicos o en 080 Programas de alfabetización y aritmética.
+
+Comprende los programas educativos con los siguientes contenidos principales:
+· Programas de búsqueda de empleo
+· Programas de autoestima, desarrollo de aptitudes mentales
+· Capacidad organizativa, aptitudes de comunicación","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de liderazgo en el contexto de la gestión administrativa (véase 345)","","SI","","",3
+"144","144","Formación de docentes de enseñanza primaria","","14","La formación de docentes de enseñanza primaria es el estudio de las teorías, métodos y práctica de dar a los niños de entre 6 y 12 años una educación básica en lectura, escritura y matemáticas, así como un conocimiento elemental de otras asignaturas como historia, geografía, ciencias sociales, etc. La formación del profesorado destinado a enseñar a los niños de educación especial se incluye en este sector, del mismo modo que la formación destinada a enseñar a los adultos la escritura básicas, así como la enseñanza básica de las lenguas españolas a inmigran-tes (o a cualquier otro).
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enseñanzas para la formación de maestros
+· Enseñanzas para la formación de profesores de educación básica de adultos
+- Enseñanzas para la formación de profesores de Enseñanza primaria
+· Enseñanza de profesores de educación especial","","","SI","","",3
+"641","641","Veterinaria","","64","Veterinaria es el estudio de la prevención, diagnóstico y tratamiento de enfermedades, heridas y lesiones en animales, así como su cuidado general. El estudio de cuidados para animales débiles bajo tratamiento en clínicas veterinarias también se incluye. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ciencia veterinaria
+· Reproducción animal (ciencia)","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la crianza de animales (véase 621)","","SI","","",3
+"721","721","Medicina","","72","Medicina es el estudio de los principios y procedimientos usados para prevenir, diagnosticar, cuidar y tratar enfermedades, dolencias, heridas y lesiones en huma-nos y el mantenimiento general de la buena salud. Principalmente, este sector consiste en enseñanzas para médicos/doctores.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Medicina
+· Ginecología, pediatría, cirugía, (todas las especialidades médicas)","","","SI","","",3
+"724","724","Estudios dentales","","72","Estudios dentales es el estudio del diagnóstico, tratamiento y prevención de infecciones y anormalidades de dientes y encías. Incluye el estudio del diseño, construcción y reparación de prótesis dentales y ortodoncias. También incluye el estudio de proporcionar asistencia a los dentistas.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Odontología, cirugía dental, ortodoncias
+· Estudios de la higiene dental y la salud dental pública
+· Prótesis dentales
+· Tecnología de laboratorios dentales
+· Enfermería dental","","","SI","","",3
+"726","726","Terapia y rehabilitación","","72","Terapia y rehabilitación es el estudio de la restauración de las condiciones normales físicas y psíquicas, para aquellos incapacitados por discapacidades temporales y permanentes. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Fisioterapia, logopedia
+· Nutrición
+· Rehabilitación de personas y terapia ocupacional","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La psicología (véase 311)","","SI","","",3
+"727","727","Farmacia","","72","Farmacia es el estudio de las drogas y sus efectos sobre los humanos. Incluye su preparación, dosificación y administración. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Farmacia","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la farmacología (véase 421)","","SI","","",3
+"145","145","Formación de docentes de enseñanza de temas especiales","","14","La formación de docentes de enseñanza de temas especiales es el estudio de las teorías, métodos y práctica de enseñar un tema especial fundamentalmente a nivel secundario o superior.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enseñanza a profesores de secundaria","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Las enseñanzas en formación profesional, temas prácticos y artísticos (véase 146)","","SI","","",3
+"345","345","Administración y gestión de empresas","","34","Administración y gestión de empresas es el estudio de la planificación y dirección de las funciones y actividades de organizaciones e instituciones. Se incluyen programas de gestión, así como programas de administración, economía, finanzas, ... siempre y cuando el énfasis recaiga en la gestión y administración.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Administración, gestión
+· Gestión logística, gestión formativa, gestión del empleo, ciencias de la gestión
+· Gestión y administración de personal
+- Cursos de autoempleo","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de administración, en el contexto del trabajo administrativo de oficina (véase 346)
+· Las enseñanzas de liderazgo en el contexto del desarrollo personal (véase 090)","","SI","","",3
+"812","812","Viajes, turismo y ocio","","81","Viajes y turismo es el estudio del marketing y publicidad de destinos y sucesos turísticos. Incluye el estudio de gestión y reserva de billetes. Ocio es el estudio de las actividades recreativas y de entretenimiento para individuos y grupos. 
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Formación de personal de tierra (aeropuertos)
+· Recreación y ocio
+· Servicios de agencia de viajes
+· Viajes y turismo","No comprende los programas educativos con los siguientes contenidos principales:
+
+. Los estudios de actividades recreativas y de ocio para escolares, (véase 761)
+· Las clases de baile, siempre que se consideren como una actividad de ocio, no constituye una actividad educativa.","","SI","","",3
+"146","146","Formación de docentes de formación profesional","","14","La formación de docentes de formación profesional es el estudio de las teorías, métodos y práctica de la formación profesional y enseñanzas prácticas.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enseñanzas destinadas a la formación de profesores en las materias propias de la formación profesional
+· Formación de formadores de formación profesional y ocupacional
+· Enseñanzas destinadas a la formación de profesores de artes plásticas, diseño, música, educación física,...
+· Enseñanza a profesores de autoescuela","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La enseñanza de entrenadores deportivos (véase 813)","","SI","","",3
+"143","143","Formación de docentes de enseñanza infantil","","14","La formación de docentes de enseñanza infantil es el estudio de las teorías, métodos y práctica de enseñanza a niños de entre 3 y 6 años en el ámbito previo al primario.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enseñanzas destinadas a la formación de profesores de educación infantil","","","SI","","",3
+"582","582","Construcción e ingeniería civil","","58","Construcción es el estudio de la ciencia, tecnología y técnicas de ensamblaje, levantamiento y mantenimiento de estructuras públicas, comerciales, industriales y residenciales y de sus instalaciones. La ingeniería civil es el estudio de la planificación, diseño, prueba y dirección de la construcción de edificios y estructuras de gran tamaño, incluyendo sistemas de transporte, suministro de agua, alcantarillado, ... .
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Albañilería
+· Construcción de puentes
+· Tecnología de la construcción
+· Carpintería de edificios, fontanería, colocación de suelos y techos,...
+· Ingeniería civil
+· Ingeniería de puertos","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La instalación de electricidad (véase 522)
+· Instalación y reparación de equipos de calefacción, aire acondicionado y refrigeración (véase 522)","","SI","","",3
+"621","621","Producción agrícola y explotación ganadera","","62","Producción agrícola y explotación ganadera (agricultura) es el estudio del crecimiento, mantenimiento y cosecha de cultivos y pastos, así como el pastoreo y la ganadería de animales. Incluye el estudio de la gestión y mantenimiento de granjas y la producción de plantas sin procesamiento y de productos animales.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ciencias agrónomas
+· Gestión de granjas
+· Cultivo de centeno y trigo, de la vid, de grano, frutas, ...
+. Estudio de los substratos del terreno, de técnicas de fertilización e irrigación
+· Adiestramiento de perros, entrenamiento de caballos","No comprende los programas educativos con los siguientes contenidos principales:
+
+- Los estudios de la enología (véase 541)","","SI","","",3
+"623","623","Silvicultura","","62","Silvicultura es el estudio del establecimiento, cultivo y gestión de bosques. Incluye el estudio de la caza. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Silvicultura, técnicas y cuidado de bosques
+· Caza","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La gestión de parques nacionales (véase 852)
+· La tecnología maderera (producción de aserraderos,...) (véase 543)","","SI","","",3
+"624","624","Pesca","","62","Pesca es el estudio de la cría y cultivo de pescado y otros alimentos marinos.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Cría de pescado, de crustáceos
+· Pesca
+· Ciencia y tecnología del mar
+· Programas educativos para operar barcos de pesca","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de procesamiento industriales del pescado (véase 541)","","SI","","",3
+"0","0","Programas de formación básica y desarrollo personal","","","En este contexto, general se refiere a técnicas básicas y desarrollo personal.","","","SI","","",1
+"09","09","Desarrollo personal","","0","","","","","","",2
+"14","14","Formación de personal docente y ciencias de la educación","","1","","","","","","",2
+"142","142","Ciencias de la educación","","14","Ciencias de la educación es el estudio de los procesos de aprendizaje y las teorías, métodos y técnicas para impartir conocimiento a otros.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Ciencias de la educación, pedagogía y didáctica
+· Evaluación de los conocimientos, pruebas y mediciones","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas de formación para docentes que imparten clases en niveles específicos de educación (véase 143-146)","","SI","","",3
+"2","2","Artes y humanidades","","","","","","","","",1
+"3","3","Ciencias sociales,enseñanza comercial y derecho","","","","","","","","",1
+"32","32","Periodismo e información","","3","","","","","","",2
+"34","34","Enseñanza comercial y administración","","3","","","","","","",2
+"380","380","Derecho","","38","Derecho es el estudio de los principios y procedimientos para el normal mantenimiento del orden social, incluyendo enseñanzas para profesiones en leyes como abogado o para la judicatura.
+
+Comprende los programas educativos con los siguientes contenidos principales:
+· Historia del derecho, derecho mercantil, derecho penal, derecho laboral
+ Jurisprudencia, prácticas en leyes","","","SI","","",3
+"4","4","Ciencias","","","","","","","","",1
+"44","44","Ciencias Físicas, quimicas, geológicas","","4","","","","","","",2
+"442","442","Química","","44","Química es el estudio de la composición y propiedades de la materia, sus transformaciones y combinaciones. Este sector consta en gran medida de programas de educación superior. 
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+- Química","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Bioquímica (véase 421)","","SI","","",3
+"46","46","Matemáticas y estadistica","","4","","","","","","",2
+"5","5","Mecánica, electrónica y otra formación técnica; industria manufacturera y construcción","","","","","","","","",1
+"52","52","Mecánica, electrónica y otra formación técnica","","5","","","","","","",2
+"542","542","Industria textil, confección, del calzado y piel","","54","Industria textil, confección, del calzado y piel (industria y producción) es el estudio de la manufactura de textiles, productos de tela y pieles, ropa y afines, calzado y otras prendas.
+
+Comprende los programas educativos con los siguientes contenidos principales:
+
+- Elaboración de productos de cuero
+· Confección de prendas de vestir
+· Procesamiento de pieles y cueros
+· Elaboración de sillas de montar
+· Tapicería
+· Sastrería
+· Industria del calzado","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas de artesanía como tejido, bordado, .... (véase 215)","","SI","","",3
+"58","58","Arquitectura y construccion","","5","","","","","","",2
+"62","62","Agricultura,ganadería y pesca","","6","","","","","","",2
+"7","7","Salud y servicios sociales","","","","","","","","",1
+"725","725","Tecnología de diagnóstico y tratamiento médico","","72","Tecnología de diagnóstico y tratamiento médico es el estudio de una amplia gama de tecnologías usadas para diagnosticar y tratar enfermedades y discapacidades.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Tecnologías de laboratorios médicos
+· Tecnologías de radiología, de ayuda auditiva, de prótesis
+· Radioterapia","No comprende los programas educativos con los siguientes contenidos principales:
+· El estudio de la tecnología de los laboratorios se excluye de este sector, si el énfasis no se hace en la tecnología de los laboratorios médicos. La tecnología de los laboratorios en general se incluye en el sector 524 Procesos químicos
+· El estudio de la tecnología dental (véase 724)","","SI","","",3
+"815","815","Peluqueía y servicios de belleza","","81","Peluquería y servicios de belleza es el estudio de los cuidados del cabello y del cuerpo, con fines estéticos. 
+Comprende los programas educativos con los siguientes contenidos principales:
+· Barbería, peluquería, cosmética (maquillaje)
+· Tratamiento de belleza
+· Adelgazamiento y control de peso","","","SI","","",3
+"86","86","Servicios de seguridad","","8","","","","","","",2
+"862","862","Salud y seguridad en el trabajo","","86","Salud y seguridad en el trabajo es el estudio del reconocimiento, evaluación y control de factores ambientales asociados al lugar de trabajo.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ergonomía (salud y seguridad en el trabajo)
+· Salud y seguridad en el lugar de trabajo","No comprende los programas educativos con los siguientes contenidos principales:
+· El estudio de la rehabilitación profesional y la terapia ocupacional (véase 726)
+· El estudio del derecho laboral (véase 380)","","SI","","",3
+"321","321","Periodismo","","32","Periodismo es el estudio de la teoría y práctica del periodismo como parte del sector de los medios de comunicación de masas. Trata de la redacción y contenido de mensajes, la redacción de noticias, escritura de comentarios y artículos de interés general,... 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Información y comunicación de masas (redacción y contenido)
+· Periodismo, periodismo de radio y TV","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de las técnicas de comunicación de masas (por ejemplo, producción de TV/radio) (véase 213)
+· El estudio del diseño de publicaciones y su composición (véase 213)
+· El estudio de las relaciones públicas (véase 342)","","SI","","",3
+"322","322","Biblioteconomía, documentación y archivos","","32","Biblioteconomía, documentación y archivos es el estudio de los métodos de selección, adquisición, organización y almacenamiento de lotes de información, así como de facilitar el uso de la información.
+Comprende los programas educativos con los siguientes contenidos principales:
+· Técnicas de archivo
+· Documentación, documentación de museos
+· Programas de bibliotecas","","","SI","","",3
+"341","341","Ventas al por mayor y al por menor","","34","Ventas al por mayor y al por menor es el estudio de las compras y ventas de bienes y servicios, incluida la gestión de almacenes, políticas de precios, prevención de pérdidas, sistemas y procedimientos de ventas.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Compras y ventas al por mayor y al por menor
+· Subastas
+· Servicios al consumidor, ventas por teléfono
+· Técnicas de demostración
+· Gestión de existencias
+· Compras y ventas de edificios y propiedades","","","SI","","",3
+"342","342","Marketing y publicidad","","34","Marketing y publicidad es el estudio del comportamiento del consumidor y sus necesidades. Incluye el estudio del desarrollo del producto, su precio, distribución, promoción y ventas, para maximizar el rendimiento del negocio. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Estudios de mercado
+· Marketing y publicidad
+· Relaciones públicas","","","SI","","",3
+"347","347","Otros estudios referidos al puesto de trabajo","","34","Otros estudios referidos al puesto de trabajo abarcan el estudio de la estructura y funcionamiento de la vida laboral. Incluye programas relacionados con el lugar de trabajo y con las tareas laborales asignadas.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Organización, conocimiento de una empresa, necesidades de los clientes
+· Desarrollo del trabajo","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Las enseñanzas relacionadas más con el desarrollo personal que con el desarrollo del trabajo, (véase 090)
+· Los programas sobre el entorno de trabajo (véase 862)
+· Los programas de educación superior, relativos a la vida laboral en general, en términos de mercado laboral, relaciones entre organizaciones, psicología industrial (véase 31)
+· Los programas de enseñanza al personal docente referidos a técnicas y métodos de educación (véase 14)","","SI","","",3
+"761","761","Cuidado de niños y servicios para jovenes","","76","Cuidado de niños y servicios para jóvenes es el estudio del desarrollo y cuidado de niños y jóvenes. Incluye el estudio actividades de ocio y recreo como servicio social para escuelas infantiles. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Cuidados infantiles, programas recreativos
+· Servicios para jóvenes","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de profesores y educadores de educación infantil (véase 143)
+· Los estudios de cuidados de salud para niños (véase 723)","","SI","","",3
+"762","762","Trabajo social y orientación","","76","Trabajo social y orientación es el estudio de las necesidades de bienestar social de las comunidades, tanto grupos específicos como individuos, y de las formas apropiadas de satisfacer esas necesidades. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+ Asistencia en el abuso del alcohol, las drogas, el tabaco
+· Apoyo en situaciones de crisis, rechazo social, maltratos
+· Asesoramiento familiar y matrimonial
+. Trabajo social (asistencia social)
+· Orientación profesional","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de sociología y ciencias sociales (véase 312)
+· Los programas que combinan cuidados de salud con cuidados sociales, por ejemplo, para ancianos (véase 723)","","SI","","",3
+"814","814","Servicios domésticos","","81","Servicios domésticos es el estudio de varias ocupaciones relacionadas con el servicio doméstico, como ama de llaves, limpieza de la casa, lavado, cosido, ...
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Conserjería, ama de llaves y trabajadores de servicio doméstico
+· Limpieza en seco, lavandería
+· Servicios funerarios y mortuorios
+· Programas de limpieza incluso si están directamente enfocados a limpieza de colegios, hospitales, fábricas, ... .","No comprende los programas educativos con los siguientes contenidos principales:
+
+Los estudios de mantenimiento de los elementos de edificios (fontanería, electricidad, ...) (véase 582)","","SI","","",3
+"852","852","Entornos naturales y vida salvaje","","85","Entornos naturales y vida salvaje es el estudio de las relaciones entre organismos vivos en entornos naturales, con objeto de proteger la naturaleza y la vida salvaje. Incluye el estudio del establecimiento y mantenimiento de parques nacionales para preservar su estado natural original, .... 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Gestión de parques nacionales y vida salvaje
+· Conservación de la naturaleza","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la silvicultura y horticultura (véase 62) 
+· El estudio de la caza y la puesta de trampas (véase 623)","","SI","","",3
+"853","853","Servicios de saneamiento a la comunidad","","85","Servicios de saneamiento a la comunidad es el estudio de los servicios comunitarios relativos a temas que afecten a la salud pública, como normas de higiene en alimentos, suministro de agua, proceso de aguas residuales, recogida de basuras y limpieza de calles. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Recogida de basuras, limpieza de calles
+· Suministro de agua (servicio)","","","SI","","",3
+"861","861","Protección de la propiedad y las personas","","86","Protección de la propiedad y las personas es el estudio de los servicios a la comunidad relativos a la protección de la propiedad y las personas. Incluye enseñanzas en servicios policiales, seguridad pública, protección y lucha contra incendios.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Tecnología de prevención de incendios
+· Estudios policiales<br>· Guardas de prisiones
+· Servicios de seguridad","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la ley (véase 380)
+· El estudio de la criminología (véase 312)","","SI","","",3
+"863","863","Enseñanza militar","","86","La enseñanza Militar, es el fundamento del ejercicio profesional en las Fuerzas Armadas, diseñada para proporcionar al militar profesional los conocimientos necesarios para ejercerlas funciones de mando, administración y logística, de apoyo al mando, técnicas facultativas y docentes.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enseñanza Militar de Formación
+· Enseñanza Militar de Perfeccionamiento
+· Altos Estudios Militares","","","SI","","",3
+"900","900","Sectores desconocidos o no especificados","","90","Este sector no forma parte de la clasificación en sí misma, pero ante la imposibilidad de que el usuario pueda clasificar determinados estudios, siguiendo las recomendaciones de la UNESCO se ha decidido crear un sector para los tipos de estudios desconocidos o que no se encuentran especificados en la clasificación.
+Se recomienda que este código se utilice lo menos posible intentando clasificar los programas por aproximación en otros códigos de la clasificación.","","","SI","","",3
+"214","214","Diseño","","21","Diseño es el estudio de combinar creativamente líneas, formas y telas para diseñar y fabricar, por ejemplo, prendas de moda, productos industriales y decoración de interiores. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Diseño de ropa y de alta costura
+· Diseño de productos industriales
+· Diseño de interiores
+· Decoración, escenografía, diseño de escaparates","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El diseño industrial se excluye de este sector si el énfasis se hace en asuntos técnicos y no artísticos (véase 52)
+· El diseño de publicaciones y el diseño gráfico (véase 213)","","SI","","",3
+"215","215","Artesanía","","21","Artesanía es el estudio de técnicas y habilidades asociadas a oficios artesanales como joyería, elaboración de vasijas, tejeduría, tallado de madera, ... .
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Artesanía del cristal y el vidrio, cerámica
+· Artesanía, producción artesanal<br>· Joyería, orfebrería, platería
+· Construcción artesana de instrumentos musicales, reparación y afinación 
+· Talla en piedra, en madera, artesanía decorativa en metal
+· Floristería (decoración floral)","No comprende los programas educativos con los siguientes contenidos principales:
+
+El estudio de la producción industrial de vasijas, materiales tejidos, bordado, ... se excluye de este sector y se incluye en alguno de los grupos detallados bajo el sector 5.","","SI","","",3
+"313","313","Ciencias políticas","","31","Ciencias políticas es el estudio de los gobiernos y de los principios y prácticas políticas. Se incluyen temas relacionados con los derechos y deberes de los ciudadanos. Este sector consta en gran medida de programas de educación superior. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ciencias políticas, historia política
+· Derechos humanos
+· Relaciones internacionales","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de la economía política (véase 314)","","SI","","",3
+"314","314","Economía","","31","Economía es el estudio de la política económica, teoría económica y toma de decisiones económicas. Este sector consta en gran medida de programas de educación superior. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Historia de la economía, economía política
+· Ciencias económicas","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios económicos en los que se hace énfasis en los negocios (véase 34)","","SI","","",3
+"343","343","Finanzas, banca y seguros","","34","Finanzas, banca y seguros es el estudio de la planificación, dirección, organización y control de actividades y servicios financieros. Incluye el control y seguimiento de los recursos financieros de las organizaciones, instituciones e individuos, y la provisión de servicios financieros corporativos e individuales. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Finanzas y banca, teoría de las finanzas
+· Análisis de inversiones, agente de inversiones, fondos de pensiones
+· Seguridad social, seguros","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de las ciencias actuariales (véase 462)","","SI","","",3
+"346","346","Secretariado y trabajo administrativo","","34","Secretariado y trabajo administrativo es el estudio de los procedimientos y prácticas administrativas, tecnologías de ofimática, taquigrafía y mecanografía. Programas de secretariado especializados (bilingüe, médico, derecho, contabilidad, ...) se incluyen si el programa está enfocado al trabajo de secretariado, más que al de asistente especializado.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+. Servicios de secretariado y administrativos
+· Programas de secretariado en lenguas extranjeras, en leyes, en medicina, ... 
+· Mecanografía, taquigrafía 
+· Operador/a centralita, formación de recepcionista","No comprende los programas educativos con los siguientes contenidos principales:
+
+. Los programas formativos para usar un software de ordenador específico (véase 482)
+. Los programas educativos para recepcionista de hotel (véase 811)","","SI","","",3
+"622","622","Horticultura","","62","Horticultura es el estudio de la tecnología y gestión de la horticultura, floricultura, métodos de invernaderos, jardinería ornamental,... 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+. Floricultura, horticultura o Creación y acabado de parques y jardines","No comprende los programas educativos con los siguientes contenidos principales:
+
+· El estudio de cultivos comestibles (véase 621)
+· Los estudios de fertilidad del terreno y técnicas de irrigación (véase 621)
+· La gestión de parques nacionales (véase 853)","","SI","","",3
+"523","523","Electrónica y automática","","52","Electrónica y automática (ingeniería, técnica y profesiones afines) es el estudio de la planificación, diseño, desarrollo, mantenimiento y seguimiento de equipos electrónicos, maquinaria y sistemas. Incluye el diseño de ordenadores y equipos de comunicaciones.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Instalación y mantenimiento de equipos de comunicaciones
+· Reparación de ordenadores
+· Tecnología digital
+· Ingeniería electrónica
+· Tecnologías de redes
+· Robótica
+· Tecnología de telecomunicaciones
+· Reparación de radio y televisión","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Diseño de sistemas informáticos y aplicaciones de software (véase 481)","","SI","","",3
+"525","525","Vehículos de motor, barcos y aeronaves","","52","Vehículos de motor, barcos y aeronaves (ingeniería, técnica y profesiones afines) es el estudio del diseño, desarrollo, producción, mantenimiento, diagnóstico, reparación y servicio posventa de vehículos de motor, incluyendo equipos de movimiento de tierras y maquinaria agrícola. Es típica la combinación de estudios tanto en estructuras de metal como en motores.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Ingeniería de automóviles, de motocicletas, de aeronaves
+· Construcción y reparación de barcos, de vehículos, de aeronaves","No comprende los programas educativos con los siguientes contenidos principales:
+
+. El estudio de la producción y reparación de vehículos sin motor, que se clasifica en el 521 Maquinaria y metalurgia (por ejemplo, bicicletas) o 543 Industrias de otros materiales (por ejemplo., barcas sin motor)","","SI","","",3
+"543","543","Industrias de otros materiales ( madera, papel, plástico, vidrio)","","54","Industrias de otros materiales (industria y producción) es el estudio de la manufactura de productos en madera, papel, plástico, vidrio u otros materiales como piedra, arcilla, materiales artificiales,... . Los programas incluidos en este sector tienen más relación con un material específico que con el conocimiento general de una técnica.
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Fabricación de muebles
+· Cerámica (industrial)
+ Trabajo del vidrio (industrial)
+· Fabricación de plástico, de caucho, de papel
+· Industria maderera","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios en metalurgia (véase 521)
+· Los estudios en carpintería de edificios (véase 582) 
+· Los estudios en procesamientos químicos en general (véase 524)
+· Los estudios en edición y encuadernación (véase 213)
+· Los programas de artesanía como por ejemplo artes del vidrio, talla de madera, ... (véase 215)","","SI","","",3
+"723","723","Enfermería y atención a enfermos","","72","Enfermería es el estudio de proporcionar cuidados médicos para enfermedades, incapacidades, y asistencia a médicos y a otros profesionales médicos y de la salud para diagnosticar y tratar pacientes. El objetivo de la cualificación en enfermería es el mantenimiento y cuidado de la salud durante la enfermedad y rehabilitación. Incluye cuidados para ancianos y discapacitados. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Enfermería
+. Matrona
+· Ayudante de enfermería/celador
+. Programas de cuidados que afecten tanto a cuidados de salud como a cuidados sociales","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La enfermería veterinaria (véase 641)
+· Los cuidados de niños, si no son de salud (véase 761)","","SI","","",3
+"811","811","Hosteleria","","81","Hostelería es el estudio de proporcionar comida, bebida, acomodación y servicios relacionados en hoteles, restaurantes, .. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Servicio de comidas, de bar, de camareros
+· Catering
+· Formación para tripulaciones de vuelo
+· Formación de recepcionista de hotel","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Los estudios de manipulación de alimentos en empresas industriales (véase 541)
+· Las enseñanzas de recepcionista, distinto de hotel (véase 346)","","SI","","",3
+"813","813","Deportes","","81","Deportes es el estudio de las técnicas y habilidades en un cierto deporte. 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Los programas de entrenadores deportivos, árbitros y jueces deportivos
+· Las técnicas y habilidades en un cierto deporte","No comprende los programas educativos con los siguientes contenidos principales:
+
+· Las enseñanzas que reciben los profesores de educación física (véase 146)
+· Los cursos de aprendizaje o perfeccionamiento de una actividad deportiva (tenis, golf, esquí,...), siempre que se trate de ocio, no constituyen un programa educativo.","","SI","","",3
+"840","840","Servicios de transporte","","84","Servicios de transporte es el estudio del manejo, navegación y dirección de barcos, aeronaves y otras formas de transportes. Comprende los programas educativos con los siguientes contenidos principales:
+
+· Control de tráfico aéreo
+· Conducción de grúas y camiones, de vehículos de motor por carretera
+· Programas de conducción de coches
+· Navegación y vuelo, manejo de barcos, manejo de aeronaves
+· Manejo de ferrocarril
+· Programas de transporte
+
+Comprende también:
+
+. Servicios postales","No comprende los programas educativos con los siguientes contenidos principales:
+
+· La formación de tripulaciones de vuelo (véase 811)
+· Los programas en servicios de redes telefónicas (véase 523)
+· Los programas en manejo de centralitas (véase 346)","","SI","","",3
+"851","851","Control y tecnología medioambiental","","85","Control y tecnología medioambiental es el estudio de los procesos para minimizar los residuos y gastos de recursos naturales, y evitar la polución. Incluye progra-mas relativos al control del agua, aire, suelo, ... 
+Comprende los programas educativos con los siguientes contenidos principales:
+
+· Control de polución del aire, del agua, de contaminación sonora
+· Tecnología ecológica
+· Control de residuos industriales
+· Reciclaje","No comprende los programas educativos con los siguientes contenidos principales:
+
+. Los programas relativos a las normas de higiene en alimentos, agua, ...., (véase 853)","","SI","","",3
+"6","6","Agricultura","","","","","","","","",1
+"64","64","Veterinaria","","6","","","","","","",3
+"72","72","Salud","","7","","","","","","",2
+"8","8","Servicios","","","","","","","","",1
+"84","84","Servicios de transporte","","8","","","","","","",2
+"9","9","Sectores desconocidos o no especificados","","","","","","","","",1
+"01","01","Programas de formación básica","","0","","","","","","",2
+"1","1","Educación","","","","","","","","",1
+"21","21","Artes","","2","","","","","","",2
+"31","31","Ciencias sociales y del comportamiento","","3","","","","","","",2
+"38","38","Derecho","","3","","","","","","",2
+"42","42","Ciencias de la vida","","4","","","","","","",2
+"48","48","Informática","","4","","","","","","",2
+"54","54","Industria manufacturera y producción","","5","","","","","","",2
+"76","76","Servicios Sociales","","7","","","","","","",2
+"85","85","Protección del medio ambiente","","8","","","","","","",2
+"08","08","Programas de alfabetización y de aritmética","","0","","","","","","",2
+"22","22","Humanidades","","2","","","","","","",2
+"344","344","Contabilidad y gestión de impuestos","","34","Contabilidad y gestión de impuestos es el estudio del mantenimiento, auditoría y registro de transacciones financieras. 
+Comprende los programas educativos con los siguientes contenidos principales:
+· Contabilidad, auditoría, teneduría de libros
+· Gestión de impuestos","","","SI","","",3
+"81","81","Servicios personales","","8","","","","","","",2
+"90","90","Sectores desconocidos ono especificados","","9","","","","","","",2
