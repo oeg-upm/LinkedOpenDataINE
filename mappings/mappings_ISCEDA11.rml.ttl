@@ -15,7 +15,7 @@
      rml:referenceFormulation ql:CSV 
     ];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/isceda/ISCEDA11/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/isced/ISCEDA11/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -37,7 +37,7 @@
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/isceda/ISCEDA11/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/isced/ISCEDA11/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
