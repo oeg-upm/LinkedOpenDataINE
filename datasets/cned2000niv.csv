@@ -1,0 +1,156 @@
+"COD","CODINTEGR","TITULO","TITABREV","PADRE","NOTA1","NOTA2","NOTA3","VALORNOTA","REFERENCIA","FECHA_NOTA","NIVEL"
+"56","K56","Estudios oficiales de especialización profesional","","K","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Especialidades médica, farmacéutica, biológica, química, ... (MIR, FIR, BIR, QUIR,)
+·Título profesional de Especialización Didáctica, CAP
+· Psicólogo Especialista en Psicología Clínica
+· Especialista en Radiofísica Hospitalaria","","","SI","","",2
+"12","B12","Estudios primarios completos","","B","Este grupo comprende:
+
+· Las personas que saben leer y escribir y que han asistido 5 o más años a la escuela (no tienen por qué poseer una acreditación al respecto) y no pueden clasificarse en ninguna otra rúbrica.
+
+Este grupo comprende también las personas cuyo programa educativo de más alto nivel terminado es el siguiente:
+
+· Educación primaria LOGSE completa
+· Cinco cursos aprobados de EGB","En este grupo no se clasifican las personas cuyo programa educativo de más alto nivel terminado es el siguiente:
+· Certificado de Estudios Primarios, expedido con anterioridad a la Ley General de Educación de 1970, es decir, antes del curso 1975-76 (véase 23)","","SI","","",2
+"D","D","Primera etapa de educación secundaria","","","En esta categoría se van a incluir las personas que han recibido todos los cursos de escolarización obligatoria, en los que habrá adquirido los elementos básicos de la cultura. Han existido diversos planes de estudios, y las acreditaciones están en función del plan de la época en la cual la persona realizó el estudio.","","","SI","","",1
+"I","I","Otras enseñanzas de 2 y más años que precisan del título de Bachiller","","","","","","","","",1
+"11","B11","Estudios primarios incompletos","","B","Este grupo comprende:
+
+- Las personas que saben leer y escribir y han asistido menos de 5 años a la escuela, sin tener en cuenta los posibles años pasados en la educación infantil. Estas personas no suelen poseer ninguna acreditación.","","","SI","","",2
+"L","L","Enseñanza universitaria de tercer ciclo","","","","","","","","",1
+"61","L61","Doctorado universitario","","L","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+Doctores","Este grupo no comprende:
+ Las personas que han completado los cursos de doctorado, pero no han adquirido el título de doctor (véase 55)
+Las personas que han obtenido el certificado de suficiencia investigada, pero no han adquirido el título de doctor (véase 55)","","SI","","",2
+"80","Z80","Analfabetos","","Z","Se considera analfabetas a las personas de 16 y más años que teniendo en cuenta cualquier lengua del mundo cumplen: 
+
+- No son capaces de leer ni de escribir
+
+-Son capaces de leer pero no de escribir
+
+-Son capaces de leer y escribir una o varias frases que recuerdan de memoria
+
+-Son capaces de leer y escribir sólo números o su propio nombre
+
+Este grupo comprende:
+
+- Analfabetos","","","SI","","",2
+"B","B","Educación primaria","","","Las personas clasificadas en este nivel de formación poseen los elementos básicos culturales, relativos a la expresión oral, lectura, escritura y aritmética.
+
+En esta categoría se van a clasificar aquellas personas que saben leer y escribir y no se pueden clasificar en otra categoría. Las personas clasificadas en esta cate-goría puede que no posean ningún título académico.","","","SI","","",1
+"G","G","Enseñanzas   para la formación e inserción laboral que precisan de una titulación de estudios secundarios de segunda etapa para su realización (más de 300 horas)","","","","","","","","",1
+"H","H","Enseñanzas de grado superior de formación profesional específica y equivalentes, artes plásticas y diseño y deportivas","","","","","","","","",1
+"J","J","Enseñanza universitaria de primer ciclo y segundo ciclo","","","","","","","","",1
+"54","J54","Enseñanzas universitarias de primer ciclo y equivalentes o personas que han aprobado 3 cursos completos de una licenciatura   o créditos equivalentes","","J","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Diplomaturas universitarias
+· Ingenierías técnicas 
+· Arquitectura técnica
+· Otras titulaciones equivalentes a una diplomatura universitaria
+
+Este grupo comprende también:
+
+· Personas que han aprobado tres cursos de una licenciatura o créditos equivalentes
+· Componentes de las Escalas de Oficiales de las Fuerzas Armadas
+· Componentes de la Escala de Oficiales de la Guardia Civil","","","SI","","",2
+"K","K","Estudios oficiales de especialización profesional","","","","","","","","",1
+"34","F34","Enseñanzas de grado medio de música y danza","","F","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Título Profesional de Grado Medio de Música y Danza","","","SI","","",2
+"Z","Z","Analfabetos","","","","","","","","",1
+"C","C","Enseñanzas para la formación e inserción laboral que no precisan de una titulación académica de la primera etapa de secundaria para su realización (más de 300 horas)","","","","","","","","",1
+"E","E","Enseñanzas para la formación e inserción laboral que precisan de una titulación de estudios secundarios de primera etapa para  su realización (más de 300 horas)","","","","","","","","",1
+"F","F","Segunda etapa de educación secundaria","","","","","","","","",1
+"32","F32","Enseñanzas de bachillerato","","F","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Bachiller (LOGSE)
+· Bachiller (Título de BUP)
+· Bachiller Superior
+· COU
+· Preuniversitario","","","SI","","",2
+"21","C21","Enseñanzas para la formación e inserción laboral que no precisan de una titulación académica de la primera etapa de secundaria para su realización (más de 300 horas)","","C","En este grupo se clasifican las personas cuyo programa educativo de FPO (véase su definición en la página 27) de más nivel terminado ha sido uno de los siguientes:
+
+· Programas del Plan FIP de más de 300 h que requieren una formación de educación primaria o que no existe ningún requisito de formación mínima, dirigido exclusivamente a desempleados
+· Programas de Escuelas Taller, Casas de Oficios y Talleres de Empleo, que requieren una formación de educación primaria o que no existe ningún requisito de formación mínima 
+
+En este grupo se clasifican también las personas cuyo programa educativo de más nivel terminado ha sido uno de los siguientes:
+
+- Programas de Aulas Taller de más de 300 h
+· Programas de Garantía Social de más de 300h y menos de un año de formación
+· Programas de formación para la transición a la vida adulta","","","SI","","",2
+"22","D22","Primera etapa de educación secundaria sin título de graduado escolar o equivalente","","D","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado es el siguiente:
+
+· Haber estado escolarizado todo el período de educación obligatoria, y no estar en posesión de Graduado Escolar o equivalente 
+· Certificado de Escolaridad
+· Haber cursado el 4º curso de Bachillerato Elemental sin superarlo","","","SI","","",2
+"23","D23","Primera etapa de educación secundaria con títlulo de graduado escolar o equivalente","","D","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+· Graduado en Educación Secundaria (ESO)
+· Graduado Escolar (EGB)
+· Bachiller elemental (general, laboral o técnico)
+· Certificado de Estudios Primarios, expedido con anterioridad a la Ley General de Educación de 1970, es decir, antes del curso 1975-76 (este título en su época era la máxima acreditación que se podía obtener después del período de enseñanza obligatoria)","","","SI","","",2
+"31","E31"," Enseñanzas par la formación e inserción laboral que precisan de una titulación de estudios secundarios de primera etapa para su realización (más de 300 horas)","","E","En este grupo se clasifican las personas cuyo programa educativo de FPO (véase su definición en la página 27) de más nivel terminado ha sido uno de los siguientes:
+
+· Programas del Plan FIP de más de 300 h que requieren una titulación de primera etapa de educación secundaria dirigido exclusivamente a desempleados
+· Programas de Escuelas Taller, Casas de Oficios y Talleres de Empleo que requieren una titulación de primera etapa de educación secundaria
+
+En este grupo también se clasifican las personas cuyo programa educativo de más nivel terminado ha sido uno de los siguientes:
+
+· Certificado de Aptitud de las Enseñanzas de las Escuelas Oficiales de Idiomas.
+· Programas de Garantía Social de más de 1 año de formación
+· Enseñanza militar, formación de tropa","","","SI","","",2
+"33","F33","Enseñanzas de grado medio de formación profesional específica, artes plásticas y diseño y deportivas","","F","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Técnico (Título de Ciclos Formativos de Formación Profesional de Grado Medio)
+· Técnico Auxiliar (Título de Formación Profesional de Primer Grado, FP I)
+· Aprobados los tres cursos comunes de Artes Aplicadas y Oficios Artísticos
+· Técnico (Ciclos Formativos de Artes Plásticas y Diseño de Grado Medio)
+· Técnico (Ciclos Formativos de enseñanzas técnico-deportivas de Grado Medio)
+· Capataz agrícola
+· Escala Básica de la Guardia Civil
+· Oficial industrial
+· Otras titulaciones que sean equivalentes a enseñanzas de grado medio de formación profesional específica","","","SI","","",2
+"41","G41","Enseñanzas para la formación  einserción laboral que precisan de una titulación de estudios secundarios de segunda etapa para su realización (más de 300 horas )","","G","En este grupo se clasifican las personas cuyo programa educativo de FPO (véase su definición en la página 27) de más nivel terminado ha sido uno de los siguientes:
+· Programas del Plan FIP, de más de 300 h que requieren una titulación de segunda etapa de educación secundaria dirigido exclusivamente a desempleados.
+· Programas de Escuelas Taller, Casas de Oficios y Talleres de Empleo, de más de 300 h que requieren una titulación de segunda etapa de educación secundaria.
+
+En este grupo se clasifican también las personas cuyo programa educativo de más nivel terminado ha sido uno de los siguientes:
+· Segundo Nivel de Mandos Intermedios
+· Navegante
+· Mecánico de a bordo
+· Tripulante de cabina de pasajeros
+· Títulos propios de las universidades que no sean de postgrado con una duración menor de 2 años y más de 300 h","","","SI","","",2
+"51","H51","Enseñanzas de grado superior de formación profesional específica y equivalentes, artes plásticas y diseño y deportivas","","H","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Técnico Superior (Título de Ciclos Formativos de Formación Profesional de Grado Superior (LOGSE))
+· Técnico Superior (Ciclos Formativos de Artes Plásticas y Diseño de Grado Superior)
+· Técnico especialista (Título de Formación profesional de Segundo Grado, FPII)
+· Graduado en Artes Aplicadas y Oficios Artísticos
+· Maestro Industrial
+· Perito mercantil
+· Título de piloto comercial de avión
+· Título de la Escala de Suboficiales de las FAS
+· Título de la Escala de Suboficiales de la Guardia Civil
+· Otras titulaciones que sean equivalentes a enseñanzas de grado superior de formación profesional específica","","","SI","","",2
+"52","I52","Titulos propios de universidades  y otras enseñanzas que precisan del título de bachiller ( 2 y más años )","","I","Se entiende por título propio de una universidad aquel programa impartido por una universidad que no tiene la homologación de un título universitario oficial por parte del Ministerio de Educación. Es decir, estos programas son estudios conducentes a una titulación no oficial, reconocida por la universidad que los imparte.
+
+Este grupo comprende los siguientes programas:
+· Títulos propios impartidos por las Universidades de 2 y más años de duración.","Este grupo no comprende los siguientes programas:
+
+· Títulos oficiales y homologados impartidos por las universidades (véase 54, 55)","","SI","","",2
+"53","I53","Enseñanzas para la formación e inserción laboral que precisan de una formación profesional de grado superior para su realización (más de 300 horas)","","I","En este grupo se clasifican las personas cuyo programa educativo de FPO (véase su definición en la página 27) de más nivel terminado ha sido uno de los siguientes:
+
+· Programas del plan FIP de más de 300 h que requieren una titulación de FP de grado superior o equivalentes dirigido exclusivamente a desempleados.
+· Programas de Escuelas Taller, Casas de Oficios y Talleres de Empleo, de más de 300 h que requieren una titulación de FP de grado superior o equivalentes.","","","SI","","",2
+"55","J55","Enseñanzas universitarias de primer y segundo ciclo, de sólo segundo ciclo y equivalentes","","J","En este grupo se clasifican las personas cuyo programa educativo de más alto nivel terminado les ha proporcionado una titulación de las siguientes:
+
+· Licenciados universitarios
+· Ingenieros (superiores)
+· Arquitectos
+
+Este grupo comprende también:
+
+· Componentes de las Escalas Superiores de Oficiales de las Fuerzas Armadas
+· Componentes de la Escala Superior de Oficiales de la Guardia Civil
+· Otras titulaciones equivalentes a una licenciatura universitaria","","","SI","","",2
