@@ -13,26 +13,21 @@ Los pasos a seguir para generar estos datos en local son los siguientes:
         ```bash
         python3 -m pip install libaio1
         ```      
-
     4. Se establece la variable de entorno LD_LIBRARY_PATH al directorio en el que está el cliente de Oracle:
         ```bash
         export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1:$LD_LIBRARY_PATH
         ```
-
     5. Se instala la librería cx_Oracle para la ejecución de Morph-KGC sobre bases de datos Oracle:
         ```bash
         python3 -m pip install cx_Oracle --upgrade
         ```
-
     6. Instalar la librería de Morph-KGC y su extensión para bases de datos Oracle:
         ```bash
         python3 -m pip install cx_Oracle --upgrade
         ```   
-
     7. Ejecutar el script linkedstats_generation con el dataset a regenerar como parámetro:
         ```bash
         python3 linkedstats_generation.py "CNAE09"
         ```
-
 #   Autor
 - Diego Conde Herreros (OEG-UPM) - main contact  diego.conde.herreros at upm.es
