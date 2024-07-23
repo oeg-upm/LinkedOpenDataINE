@@ -10,8 +10,8 @@
 
 <#TriplesMap1> a rr:TriplesMap;
     rml:logicalSource [
-     rml:source "cnae09.csv";
-     rml:referenceFormulation ql:CSV 
+     rml:source "AYUDACOD_CNAE09";
+     rml:referenceFormulation rr:SQL2008; 
     ];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{COD}";
