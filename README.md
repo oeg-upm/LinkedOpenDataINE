@@ -21,9 +21,9 @@ python3 -m pip install cx_Oracle --upgrade
 ````
  python3 -m pip install cx_Oracle --upgrade
 ````   
-8. Ejecutar el script linkedstats_generation con el dataset a regenerar como parámetro:
+8. Ejecutar el script linkedstats_generation con el dataset a regenerar, y el directorio del cliente de oracle como parámetros:
 ````
-python3 linkedstats_generation.py "CNAE09"
+python3 linkedstats_generation.py "CNAE09" "exampledir"
 ````
 #   Autor
 - Diego Conde Herreros (OEG-UPM) - main contact  diego.conde.herreros at upm.es
