@@ -10,7 +10,7 @@
 
 <#TriplesMap1> a rr:TriplesMap;
     rml:logicalSource [
-     rml:source "AYUDACOD_CNAE09";
+     rml:source "AYUDACOD2024PRO.AYUDACOD_CNAE09";
      rml:referenceFormulation rr:SQL2008; 
     ];
     rr:subjectMap [
