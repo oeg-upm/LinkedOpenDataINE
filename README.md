@@ -1,8 +1,9 @@
 # LinkedOpenDataINE
 Este repositorio existe para subir los recursos semánticos generados para el proyecto LinkedOpenData, colaboración entre el Ontology Engineering Group y el Instituto Nacional de Estadística.
 
-Los pasos a seguir para generar estos datos en local son los siguientes
-0. Crear un entorno virtual (Recomendado)
+Los pasos a seguir para generar estos datos en local son los siguientes:
+
+0. Crear un entorno virtual (Recomendado).
 1. Tener en el equipo instalado Python 3.10.9 y su versión correspondiente de pip (la herramienta no funciona con versiones posteriores de python).
 2. Descargar el [Oracle Client](https://www.oracle.com/database/technologies/instant-client/downloads.html) la última versión en forma de ZIP.
 3. Descomprime el ZIP del cliente de Oracle.
