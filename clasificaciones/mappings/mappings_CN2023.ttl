@@ -10,27 +10,23 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 
 <#TriplesMap1> a rr:TriplesMap;
-    rml:logicalSource [
-     rml:source "./datasets/cn2023.csv";
-     rml:referenceFormulation ql:CSV 
-    ];
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CN2023"];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/cn/CN2023/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
-        rr:predicate skos:altLabel;
-        rr:objectMap [ rr:column "CODINTEGR" ];
+        rr:predicate skos:notation;
+        rr:objectMap [ rr:column "COD" ];
     ];    
     rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [ rr:column "TITULO" ];
+        rr:predicate skos:prefLabel;
+        rr:objectMap [ rr:column "TITULO"; rr:language "es" ];
     ];
     rr:predicateObjectMap [
         rr:predicate skos:altLabel;
-        rr:objectMap [ rr:column "TITABREV" ];
+        rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
     ];    
-    #De cara a representar los niveles usamos xkos, que skos no tiene forma de representarlo que no sea mediante colecciones.
     rr:predicateObjectMap [
         rr:predicate xkos:depth;
         rr:objectMap [ rr:column "NIVEL" ];
@@ -41,13 +37,13 @@
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
-        rr:objectMap [ rr:column "NOTA1" ];
+        rr:objectMap [ rr:column "NOTA1"; rr:language "es" ];
     ];          
     rr:predicateObjectMap [
         rr:predicate xkos:exclusionNote;
-        rr:objectMap [ rr:column "NOTA2" ];
+        rr:objectMap [ rr:column "NOTA2"; rr:language "es" ];
     ];
     rr:predicateObjectMap [
         rr:predicate skos:note;
-        rr:objectMap [ rr:column "NOTA3" ];
+        rr:objectMap [ rr:column "NOTA3"; rr:language "es" ];
     ].          

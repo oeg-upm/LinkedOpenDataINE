@@ -10,10 +10,7 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 
 <#TriplesMap1> a rr:TriplesMap;
-    rml:logicalSource [
-     rml:source "correspondencias93-09.csv";
-     rml:referenceFormulation ql:CSV 
-    ];
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93-09"];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{CODIGO1}";
     ];
