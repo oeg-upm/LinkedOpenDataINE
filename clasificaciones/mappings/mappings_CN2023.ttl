@@ -8,6 +8,27 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+
+<#Metadata> a rr:TriplesMap;
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CN2023"];
+    rr:subjectMap [
+        rr:constant <http://stats.linkeddata.es/distribution/CN2023>;
+        rr:class dcat:Distribution;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate dcat:accessURL;
+    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/" 
+    ];
+    rr:predicateObjectMap [
+    rr:predicate dcat:downloadURL;
+    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_cn2023.nt" 
+    ];
+    rr:predicateObjectMap [
+    rr:predicate dcat:mediaType;
+    rr:object "https://www.iana.org/assignments/media-types/application/n-triples" 
+    ]. 
 
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CN2023"];
