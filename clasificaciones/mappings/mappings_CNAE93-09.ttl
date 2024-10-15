@@ -12,7 +12,7 @@
 
 
 <#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93-09"];
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009"];
     rr:subjectMap [
         rr:constant <http://stats.linkeddata.es/distribution/CNAE93-CNAE09>;
         rr:class dcat:Distribution;
@@ -31,7 +31,7 @@
     ]. 
 
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93-09"];
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009"];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{CODIGO1}";
     ];

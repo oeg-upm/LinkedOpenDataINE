@@ -1,344 +1,466 @@
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n- \tTítulo de Graduado (hast 240 créditos ECTS) / Grados universitarios de hasta 240 créditos ECTS y equivalentes.\r\n- \tDoble grado universitario (combinación de dos grados de hasta 240 créditos ECTS).\r\n- \tGraduado en Ingeniería, cualquier especialidad.\r\n- \tTítulo Superior de Conservación y Restauración de Bienes Culturales, equivalente a graduado (LOE) / Enseñanzas de Conservación y Restauración de Bienes Culturales (LOE).\r\n- \tTítulo Superior de Artes Plásticas, Cerámica (LOE), equivalente a graduado / Estudios Superiores, Artes Plásticas, Cerámica (LOE).\r\n- \tTítulo Superior de Artes Plásticas, Vidrio, equivalente a Graduado (LOE) / Estudios Superiores, Artes Plásticas, Vidrio (LOE).\r\n- \tTítulo Superior de Diseño, equivalente a Graduado (LOE) / Estudios Superiores, Diseño (LOE).\r\n- \tTítulo Superior de Música, equivalente a Graduado (LOE) / Estudios Superiores, Música (LOE).\r\n- \tTítulo Superior de Danza, equivalente a Graduado a (LOE) / Estudios Superiores, Danza (LOE).\r\n- \tTítulo Superior de Arte Dramático, equivalente a Graduado (LOE) / Enseñanzas de Arte Dramático (LOE).\r\n- \tTítulo de Baccalaureatus (enseñanzas eclesiásticas) / Enseñanzas eclesiásticas equivalentes a Grado.\r\n- \tTítulo de Graduado en Teología / Grado en Teología.\r\n- \tTítulo de Oficial de las Fuerzas Armadas (acceso a la escala a partir de 2015).\r\n- \tTítulo de Oficial de las Fuerzas Armadas (acceso desde antigua Escala de Oficiales).\r\n- \tOtras titulaciones equivalentes a un Grado universitario." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar:\r\n\r\n-\tTítulo de Bachiller.\r\n-\tTítulo de Bachiller a través de pruebas libres.\r\n-\tTítulo de Bachiller/ Bachillerato Unificado Polivalente (BUP).\r\n-\tCurso de Orientación Universitaria (COU), aprobado.\r\n-\tTítulo de Bachiller/Bachiller REM o experimental.\r\n-\tTítulo de Bachiller Superior/ Bachiller superior.\r\n-\tCurso Preuniversitario, aprobado.\r\n-\tCertificado de superación de la prueba acceso a la Universidad Mayores de 25 años.\r\n-\tCertificado de superación de la prueba de acceso a un CFGS de FP.\r\n-\tCertificado de superación de la prueba de acceso a un CFGS de Artes Plásticas y Diseño.\r\n-\tCertificado de superación de la prueba de acceso a las Enseñanzas Deportivas de Grado Superior." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se aplica a las personas analfabetas. Se considera analfabetas a las personas de 16 y más años que teniendo en cuenta cualquier lengua del mundo cumplen:\r\n\r\n- \tno son capaces de leer ni de escribir;\r\n- \tson capaces de leer pero no de escribir;\r\n- \tson capaces de leer y escribir sólo una o varias frases que recuerdan de memoria;\r\n- \tson capaces de leer y escribir sólo números o su propio nombre.\r\n\r\nEn este grupo se clasifican:\r\n\r\n-\tAnalfabetos" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar o equivalente:\r\n\r\n-\tTítulo de Técnico / Ciclos Formativos de Grado Medio (CFGM) de FP.\r\n-\tTítulo de Técnico de artes plásticas y diseño / Ciclos Formativos de Grado Medio (CFGM) de Artes Plásticas y Diseño (ApyD).\r\n-\tTítulo de Técnico deportivo / Enseñanzas deportivas de grado medio.\r\n-\tTítulo de Técnico Auxiliar / Formación Profesional de primer grado, FP1.\r\n-\tOficialía Industrial, con título.\r\n-\tArtes Aplicadas y Oficios Artísticos - 3 cursos comunes.\r\n-\tTítulo de Técnico Auxiliar / Módulos Experimentales de nivel II de FP.\r\n-\tTítulo de Técnico Militar.\r\n-\tPolicía Nacional / Escala Básica del Cuerpo Nacional de Policía.\r\n-\tEscala Básica del Cuerpo de Mozos de Escuadra.\r\n-\tEscala Básica de la Ertzaintza.\r\n-\tCuerpos de la Policía Local de la Comunidad Autónoma del País Vasco.\r\n-\tCuerpos de la policía local de la Comunidad Autónoma de Navarra.\r\n-\tCuerpos de la policía local de la Generalitat de Cataluña.\r\n-\tEscala Básica de la Guardia Civil.\r\n-\tCapataz Agrícola.\r\n-\tOtras titulaciones que sean equivalentes a enseñanzas de grado medio de formación profesional del sistema educativo." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se corresponde con la Educación Primaria, etapa del sistema educativo que no proporciona un título al finalizarse. A falta de certificación de referencia se clasificarán en este grupo las personas que: han cursado la Educación Primaria, o han cursado las enseñanzas iniciales de educación básica para adultos o programas equivalentes a la Educación Primaria o, por lo menos, han asistido 5 años a la escuela (en la educación inicial o equivalente en educación de adultos); y no cumplen los requisitos para ser clasificados en un nivel superior.\r\n\r\nEn este grupo se clasifican las personas que como máximo:\r\n\r\n-\than cursado la educación primaria (completa); o\r\n-\than completado las enseñanzas iniciales de educación básica para adultos o programas equivalentes a la educación primaria; o\r\n-\than asistido a la escuela 5 o más años y no pueden clasificarse en otro epígrafe; o\r\n-\than estado matriculados en Educación Secundaria Obligatoria y no pueden ser clasificados en el nivel 2." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se aplica a las personas que saben leer y escribir, y han asistido a la escuela (en la educación inicial o de adultos) menos de 5 años, sin tener en cuenta los posibles años pasados en la educación infantil.\r\n\r\nEn este grupo se clasifican:\r\n\r\n-\tlas personas que saben leer y escribir y han asistido menos de 5 años a la escuela." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Licenciado.\r\n-\tTítulo de Ingeniero.\r\n-\tTítulo de Arquitecto.\r\n-\tTítulo Superior de Música, equivalente a licenciado (LOGSE) / Enseñanzas de Grado Superior de Música (LOGSE).\r\n-\tTítulo Superior de Danza, equivalente a licenciado (LOGSE) / Enseñanzas de Grado Superior de Danza.\r\n-\tTítulo Superior de Arte Dramático, equivalente a licenciado (LOGSE)/ Enseñanzas de Arte Dramático, Grado Superior (LOGSE).\r\n-\tTítulo de Profesor Superior de Música (Decreto 2618/1966).\r\n-\tTítulo de Profesor de Música y Título Profesional de Música (Decreto 15 de junio de 1942).\r\n-\tDiploma Superior de Especialización para Solistas (Decreto 313/1970).\r\n-\tTítulo de Profesor y Título Profesional de Actor Teatral (Decreto 15 de junio de 1942).\r\n-\tDiplomas Expedidos al amparo de los dispuesto en el Decreto 2607/1974).\r\n-\tAntigua Escala Superior de Oficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015).\r\n-\tEscala Superior de Oficiales de la Guardia Civil.\r\n-\tEscala de Oficiales de la Guardia Civil.\r\n-\tTítulo Profesional de Piloto de Segunda de la Marina Mercante.\r\n-\tTítulo Profesional de Piloto de primera de la Marina Mercante.\r\n-\tTítulo Profesional de Capitán de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial de Máquinas de Segunda de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial de Máquinas de Primera de la Marina Mercante.\r\n-\tTítulo Profesional de Jefe de Máquinas de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial Radioelectrónico de Segunda de la Marina Mercante.\r\n-\tTítulo profesional de Oficial Radioelectrónico de Primera de la Marina Mercante.\r\n-\tOtras titulaciones equivalentes a una licenciatura." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "35\t Certificado de las escuelas oficiales de idiomas de niveles B2, C1 Y C2,\r\ny similares.\r\n\r\nEn este grupo se clasifican los siguientes títulos o certificaciones:\r\n\r\n-\tCertificado de Aptitud de la EOI / Escuela Oficial de Idiomas, ciclo superior (LOGSE).\r\n-\tCertificado de Nivel Avanzado de la EOI / Escuela Oficial de Idiomas, nivel avanzado (LOE hasta curso 2017-2018).\r\n-       Certificado de Nivel Intermedio B2 / Escuela Oficial de Idiomas, nivel intermedio B2 (R.D. 1041/2017, a partir del curso 2018-2019).\r\n-       Certificado de Nivel Avanzado C1 / Escuela Oficial de Idiomas, nivel avanzado C1 (R.D. 1041/2017, a partir del curso 2018-2019).\r\n-       Certificado de Nivel Avanzado C2 / Escuela Oficial de Idiomas, nivel avanzado C2 (R.D. 1041/2017, a partir del curso 2018-2019)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Diplomado Universitario.\r\n-\tTítulo de Ingeniero Técnico.\r\n-\tTítulo de Arquitecto Técnico.\r\n-\t3 primeros años completos de Licenciatura, cualquier especialidad.\r\n-\t3 primeros años completos de Ingeniería, cualquier especialidad.\r\n-\t3 primeros años completos de Arquitectura.\r\n-\tAparejador.\r\n-\tFacultativo de Minas.\r\n-\tProfesor Mercantil, título.\r\n-\tTítulo Superior de Conservación y Restauración de Bienes Culturales, equivalente a Diplomado (LOGSE) / Enseñanzas de Conservación y Restauración de Bienes Culturales (LOGSE).\r\n-\tTítulo Superior de Diseño, equivalente a Diplomado (LOGSE) / Estudios Superiores de Diseño (LOGSE).\r\n-\tTítulo Superior de Cerámica, equivalente a Diplomado (LOGSE) / Estudios Superiores de Cerámica (LOGSE).\r\n-\tTítulo Superior del Vidrio, equivalente a Diplomado (LOGSE) / Estudios Superiores del Vidrio (LOGSE).\r\n-\tTítulo de Piloto de Transporte de Línea Aérea (Avión).\r\n-\tTítulo de Piloto de Transporte de Línea Aérea (Helicóptero).\r\n-\tEnseñanza militar, antigua Escala de Oficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015).\r\n-\tEnseñanzas eclesiásticas equivalentes a Diplomado.\r\n-\tOtras titulaciones equivalentes a una diplomatura universitaria." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se corresponde con el primer ciclo de Educación Secundaria Obligatoria (LOMCE) (1º-3º), el cual no conduce a una certificación o título en su finalización y que representa una duración acumulada de 9 años desde el inicio de la CINE 1. Se clasificarán en este grupo aquellas personas que han cursado 3º de la ESO totalmente (o los 9 primeros cursos de educación primaria y secundaria) y que no hayan alcanzado el título de Graduado en ESO o equivalente, u otra titulación o certificación del resto de grupos de este nivel (ver certificaciones en grupos 22, 23 y 24) o superior.\r\n\r\nSe considera cursado el 3er curso de la ESO e totalmente si se ha participado en todos los componentes del curso , con independencia de los resultados obtenidos (es decir habiendo superado/aprobado o no el curso).\r\n\r\nSe clasifican en este grupo certificados y situaciones relativas a programas extinguidos que tienen reconocida algún tipo de equivalencia con títulos de primera etapa de educación secundaria.\r\n\r\nEn este grupo se clasifican las personas que como máximo:\r\n\r\n-\than cursado el 3er curso (primer ciclo), todo el curso (aprobado o no), o superior de Educación Secundaria Obligatoria pero no han obtenido el título de Graduado en ESO; o\r\n-\than cursado la Educación Secundaria de Adultos completamente o el equivalente a 3º de la ESO, pero no disponen de certificaciones o títulos de educación secundaria de primera etapa; o\r\n-\than cursado los 9 primeros cursos académicos de educación primaria y secundaria, sin certificaciones o títulos de educación secundaria de primera etapa; o\r\n-\ttienen un Certificado de Escolaridad anterior a la LOGSE (certificados de la EGB o anteriores a 1999); o\r\n-\than cursado la EGB completa (8º curso), sin título de Graduado Escolar; o\r\n-\than cursado el Bachillerato Elemental (4º curso), sin superar; o\r\n-\than completado programas de formación para la transición a la vida adulta de la Educación Especial específica; o\r\n-\than asistido a la escuela al menos 9 años (solo si no puede determinarse los años académicos cursados ni las certificaciones, por ejemplo en algunos casos de extranjeros, personas de edad avanzada,...etc)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n-\tTítulo de Graduado de más de 240 créditos ECTS.\r\n-\tDoble grado universitario (combinación de uno de más de 240 créditos ECTS y otro grado.\r\n-\tTítulo de Graduado en Medicina.\r\n-\tTítulo de Graduado en Farmacia.\r\n-\tTítulo de Graduado en Veterinaria.\r\n-\tTítulo de Graduado en Odontología.\r\n-\tTítulo de Graduado en Arquitectura.\r\n-\tOtras titulaciones equivalentes a grados de más de 240 créditos ETCS." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP (distancia)\r\n-\tTítulo de Técnico Superior de artes plásticas y diseño / Ciclos Formativos de Grado Superior (CFGS) de Enseñanzas de Artes plásticas y Diseño (ApyD)\r\n-\tTítulo de Técnico Deportivo Superior / Enseñanzas Deportivas de Grado Superior\r\n-\tTítulo de Técnico Especialista / Formación Profesional de Segundo Grado. FP2\r\n-\tTítulo de Técnico Especialista / Módulos Experimentales de nivel III de FP\r\n-\tMaestría Industrial, con título\r\n-\tPerito Mercantil, título\r\n-\tTítulo de Graduado en Artes Aplicadas y Oficios Artísticos / Artes Aplicadas y Oficios Artísticos\r\n-\tEnseñanza militar, antigua Escala de Suboficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015)\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP a través de Enseñanza Militar (acceso a la escala a partir de 2015)\r\n-\tGuardia Civil, Escala de Suboficiales\r\n-\tOtras titulaciones que sean equivalentes a enseñanzas de grado superior de formación profesional del sistema educativo." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar:\r\n\r\n-\tTítulo Profesional de Música/Enseñanzas Profesionales de Música (LOE)\r\n-\tTítulo Profesional de Danza/Enseñanzas Profesionales de Danza (LOE)\r\n-\tTítulo Profesional de Música/Enseñanzas de Grado Medio de Música (LOGSE)\r\n-\tTítulo Profesional de Danza/Enseñanzas de Grado Medio de Danza (LOGSE)\r\n-\tTítulo de Profesor de Música (Decreto 2618/1966)\r\n-\tDiploma de Cantante de Ópera (Decreto 313/1970)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad del nivel 1 (CdPN1).\r\n-\tPrograma de Cualificación Profesional Inicial, PCPI (superados solo los módulos obligatorios).\r\n-\tProgramas de Garantía Social." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Doctor (cualquier plan de estudios).\r\n-\tEnseñanzas eclesiásticas equivalentes a Doctorado." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los títulos que acreditan la superación de programas de 8 o más cursos educación básica (primaria y secundaria) y sus equivalentes, y que no pueden clasificarse en un nivel superior. Puede incluir certificaciones y títulos correspondientes a programas de nivel 3 de la CNED-P insuficientes para consolidar el nivel (por ejemplo el título de Graduado en ESO).\r\n\r\nEn este grupo se clasifican las siguientes titulaciones y certificaciones, y formación equivalentes:\r\n\r\n-\tTítulo de Graduado en ESO a través de Educación Secundaria Obligatoria.\r\n-\tTítulo de Graduado en ESO a través de un Programa de Cualificación Profesional Inicial, PCPI (superados los módulos voluntarios).\r\n-\tTítulo de Graduado en ESO a través de Educación Secundaria para Adultos.\r\n-\tTítulo de Graduado en ESO a través de Pruebas libres.\r\n-\tTítulo de Graduado Escolar / EGB completa.\r\n-\tTítulo de Bachiller Elemental / Bachiller Elemental completo (general, laboral o técnico).\r\n-\tCertificado de Estudios Primarios (anterior al curso 1975-1976).\r\n-\tCertificado de superación de la prueba de acceso a un CFGM de FP.\r\n-\tCertificado de superación de la prueba de acceso a un CFGM de Artes Plásticas y Diseño.\r\n-\tCertificado de superación de la prueba de acceso a las Enseñanzas Deportivas de Grado Medio.\r\n\r\nEn este grupo no se clasifican las personas que poseen:\r\n-\tTítulo de Graduado en ESO a a partir de la Formación Profesional Básica (ver 38)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tMáster oficial universitario (especialización profesional o académica).\r\n-\tMáster oficial universitario (especialidad investigación o asociado a un doctorado).\r\n-\tDoctorado, periodo de formación completo.\r\n-\tDiploma de Estudios Avanzados.\r\n-\tSuficiencia Investigadora (reconocida).\r\n-\tFormación oficial de postgrado con acceso al doctorado distinta del máster (RD 99/2011, art. 6.2 a, b y c).\r\n-\tMáster en Enseñanzas Artísticas.\r\n-\tInspector de Policía Nacional.\r\n-\tEnseñanza de Altos Estudios de la Defensa Nacional, con título.\r\n-\tTítulo de Licenciatus (enseñanzas eclesiásticas) / Enseñanzas eclesiásticas equivalentes a máster.\r\n." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad del nivel 2 (CdPN2)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos propios universitarios de postgrado :\r\n\r\n-\tTítulo propio universitario de Experto.\r\n-\tTítulo propio universitario de Especialista.\r\n-\tTítulos propios universitarios de más de 30 créditos ECTS y menos de 60 para los que se precisa una titulación universitaria.\r\n-\tPostgrados universitarios no oficiales, de 6 meses o más y menos de 1 año, para los que se precisa una titulación universitaria." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos propios universitarios de postgrado :\r\n-\tTítulo propio universitario de máster no oficial.\r\n-\tTítulos propios universitarios de 60 o más créditos ECTS para los que se precisa una titulación universitaria.\r\n-\tPostgrados universitarios no oficiales, de 1 año o más, para los que se precisa una titulación universitaria.\r\n-\tTítulo Profesional de Especialización Didáctica (CAP)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes primeros títulos propios universitarios :\r\n\r\n-\tTítulos propios universitarios que precisan del título de Bachiller o similar, de duración igual o superior a 2 años." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad de nivel 3 (CdPN3).\r\n-\tTítulos propios universitarios que precisan del titulo de Bachiller, de duración igual o superior a 1 semestre e inferior a 2 años." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente, de especialización en el ámbito de la salud:\r\n\r\n-\tTítulo de Médico especialista (diversas especialidades) / Especialidades de Medicina (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Especialista en Farmacia Hospitalaria / Especialidad de Farmacia Hospitalaria (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Psicólogo Clínico / Especialidad de Psicología Clínica (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Especialista Sanitario (diversas especialidades) / Especialidades multidisciplinares en Ciencias de la Salud por el sistema de residencia.\r\n-\tTítulo de Enfermero especialista (diversas especialidades) / Especialidades de Enfermería (Ciencias de la Salud por el sistema de residencia.\r\n-\tBIR, Programas de especialización para biólogos, con título.\r\n-\tFIR, Programas de especialización para farmacéuticos, con título.\r\n-\tMIR, Programas de especialización para médicos, con título.\r\n-\tPIR, Programas de especialización para psicólogos, con título.\r\n-\tQIR, Programas de especialización para químicos, con título.\r\n-\tOtras titulaciones equivalentes." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones:\r\n\r\n-\tTítulo Profesional Básico / Formación Profesional Básica." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/2> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/B> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/4> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/7> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CM> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/B> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/2> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/0> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BH> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/1> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/5> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/6> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/8> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/_> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/7> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/distribution/CNEDA14> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
+<http://stats.linkeddata.es/distribution/CNEDA14> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
+<http://stats.linkeddata.es/distribution/CNEDA14> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_cneda14.nt" .
+<http://stats.linkeddata.es/distribution/CNEDA14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#note> "None"@es .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#altLabel> "B4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AD24" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#altLabel> "C5" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#altLabel> "B3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2004/02/skos/core#altLabel> "B" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CL73" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AC22" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#altLabel> "C8CM" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#altLabel> "A1AB10" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2004/02/skos/core#altLabel> "Z_ZZ" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#altLabel> "C5CI51" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#altLabel> "C6CJ" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CK" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CL75" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BG34" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#altLabel> "C5CI" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BF" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AD" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AC21" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#altLabel> "A0AA" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#altLabel> "C5CI52" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#altLabel> "C7" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#altLabel> "A2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2004/02/skos/core#altLabel> "C" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#altLabel> "C6CJ63" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CK71" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#altLabel> "B4BH" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AC" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#altLabel> "C6CJ61" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BE" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CL74" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#altLabel> "A0" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#altLabel> "A1" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BG" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#altLabel> "C6" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2004/02/skos/core#altLabel> "Z_ZZnc" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#altLabel> "A2AD23" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BG38" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#altLabel> "A0AA02" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BE32" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#altLabel> "C8" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BF33" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2004/02/skos/core#altLabel> "Z_" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#altLabel> "C6CJ62" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#altLabel> "A1AB" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#altLabel> "B3BG35" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2004/02/skos/core#altLabel> "A" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#altLabel> "C8CM81" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#altLabel> "A0AA01" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/2004/02/skos/core#altLabel> "Z" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CL" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#altLabel> "C7CK72" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#altLabel> "B4BH41" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tMásteres oficiales universitarios (ver 73)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulos propios universitarios (ver 41, 52, 63, 75 y 92).\r\n- \tGrados oficiales universitarios (ver 61 y 71)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \t3 primeros años completos de un grado universitario, que no se correspondan con una certificación." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \tCertificado de superación de la prueba acceso a la Universidad de mayores de 45 años (este certificado no otorga nivel de formación)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican las personas que poseen:\r\n- \tel Certificado de Escolaridad (ver 21); o\r\n- \tel Certificado de Estudios Primarios (ver 22)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulo de Graduado de 240 créditos ECTS) (ver 61)\r\n- \tDoble grado universitario, combinación de dos grados de 240 créditos ECTS (ver 61)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulo de Graduado universitario de más de 240 créditos ECTS (ver 71)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tPostgrados universitarios no oficiales (ver 63, 75 y 92)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tMásteres oficiales universitarios, asociado o no a un Doctorado (ver 73).\r\n- \tDoctorado, completado el periodo de formación exclusivamente (ver 73)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican las personas que poseen:\r\n-\tTítulo de Graduado en ESO a a partir de la Formación Profesional Básica (ver 38)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulos de los niveles básico A1 y A2 e intermedio B1 de las Escuelas Oficiales de Idiomas (no consolidan el nivel de formación).\n- \tCursos de actualización y perfeccionamiento profesional y otros cursos de la Escuela oficial de idiomas no conducentes a las certificaciones de los niveles oficiales de estas enseñanzas (es educación no formal)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> " En este grupo no se clasifican:\r\n\r\n- \tTítulos propios universitarios de duración inferior a 2 años o que no precisan el Bachillerato (ver 41 y 92).\r\n- \tTítulos propios universitarios de postgrado (ver 63, 75 y 92)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \tMásteres y otros programas de postgrado del ámbito de la salud o distintos, no realizados en régimen de residencia o similar (ver 63, 73,75 y 92)." .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/cneda/AYUDACOD_CNEDA14> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de hasta 240 créditos ECTS, diplomados universitarios, títulos propios universitarios de experto o especialista, y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Formación profesional básica"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria y similar, con orientación general"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "No clasificable (no otorga nivel de formación)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación primaria "@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Certificados de profesionalidad de nivel 2 y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Segunda etapa de educación secundaria y educación postsecundaria no superior"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Bachillerato y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Diplomados universitarios y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria sin título de graduado en ESO y similar"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Estudios primarios incompletos"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas de doctorado"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria y similar, con orientación profesional"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Segunda etapa de educación secundaria y similar"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de hasta 240 créditos ECTS y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Segunda etapa de educación secundaria, con orientación profesional (y continuidad en la educación superior)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Doctorado universitario"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación superior"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Especialidades en Ciencias de la Salud por el sistema de residencia y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Segunda etapa de educación secundaria, con orientación profesional (sin continuidad en la educación superior)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Licenciados y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación postsecundaria no superior"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "No clasificable (no otorga nivel de formación)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación primaria"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas profesionales de música y danza y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de hasta 240 créditos ECTS, diplomados universitarios, títulos propios universitarios de experto o especialista, y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "No clasificable (no otorga nivel de formación)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria e inferior "@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria con título de graduado en ESO y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Doctorado universitario"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Títulos propios universitarios de experto o especialista, de menos de 60 créditos ECTS, cuyo acceso requiera ser titulado universitario"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de más de 240 créditos ECTS, licenciados, másteres y especialidades en Ciencias de la Salud por el sistema de residencia, y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Analfabetos"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Grados universitarios de más de 240 créditos ECTS y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Títulos propios universitarios de máster (maestrías), de 60 o más crédito ECTS cuyo acceso requiera ser titulado universitario"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación postsecundaria no superior"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Másteres oficiales universitarios y equivalentes"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Menos que primaria"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Menos que primaria"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "No clasificable (no otorga nivel de formación)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Educación primaria"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Primera etapa de educación secundaria y similar"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Segunda etapa de educación secundaria, con orientación general"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Certificados de profesionalidad de nivel 1 y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado medio y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Másteres, especialidades en Ciencias de la Salud por el sistema de residencia y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Certificados de las escuelas oficiales de idiomas de niveles B2, C1 y C2, y similares"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2000/01/rdf-schema#prefLabel> "Certificados de profesionalidad de nivel 3; programas de corta duración que requieren segunda etapa de secundaria y similares"@es .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
 <http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2000/01/rdf-schema#label> "Certificados de profesionalidad de nivel 2 y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2000/01/rdf-schema#label> "Analfabetos" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de más de 240 créditos ECTS, licenciados y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de hasta 240 créditos ECTS, diplomados universitarios, títulos propios universitarios de experto o especialista, y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/2000/01/rdf-schema#label> "No clasificable (no otorga nivel de formación)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria sin título de graduado en ESO y similar" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2000/01/rdf-schema#label> "Diplomados universitarios y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2000/01/rdf-schema#label> "Segunda etapa de educación secundaria, con orientación profesional (y continuidad en la educación superior)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria y similar, con orientación profesional" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas profesionales de música y danza y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de más de 240 créditos ECTS y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2000/01/rdf-schema#label> "Certificados de profesionalidad de nivel 3; programas de corta duración que requieren segunda etapa de secundaria y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2000/01/rdf-schema#label> "No clasificable (no otorga nivel de formación)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria y similar" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de más de 240 créditos ECTS, licenciados, másteres y especialidades en Ciencias de la Salud por el sistema de residencia, y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2000/01/rdf-schema#label> "Segunda etapa de educación secundaria, con orientación profesional (sin continuidad en la educación superior)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria y similar, con orientación general" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2000/01/rdf-schema#label> "Especialidades en Ciencias de la Salud por el sistema de residencia y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2000/01/rdf-schema#label> "Educación superior" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2000/01/rdf-schema#label> "No clasificable (no otorga nivel de formación)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2000/01/rdf-schema#label> "Títulos propios universitarios de máster (maestrías), de 60 o más crédito ECTS cuyo acceso requiera ser titulado universitario" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2000/01/rdf-schema#label> "Títulos propios universitarios de experto o especialista, de menos de 60 créditos ECTS, cuyo acceso requiera ser titulado universitario" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2000/01/rdf-schema#label> "Formación profesional básica" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2000/01/rdf-schema#label> "Estudios primarios incompletos" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorado universitario" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2000/01/rdf-schema#label> "Menos que primaria" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2000/01/rdf-schema#label> "Másteres, especialidades en Ciencias de la Salud por el sistema de residencia y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2000/01/rdf-schema#label> "Educación primaria" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2000/01/rdf-schema#label> "Educación postsecundaria no superior" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de hasta 240 créditos ECTS y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorado universitario" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2000/01/rdf-schema#label> "No clasificable (no otorga nivel de formación)" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2000/01/rdf-schema#label> "Educación primaria" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas de doctorado" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2000/01/rdf-schema#label> "Licenciados y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2000/01/rdf-schema#label> "Educación primaria " .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2000/01/rdf-schema#label> "Segunda etapa de educación secundaria y similar" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2000/01/rdf-schema#label> "Segunda etapa de educación secundaria, con orientación general" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado superior y equivalentes; títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2000/01/rdf-schema#label> "Másteres oficiales universitarios y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2000/01/rdf-schema#label> "Títulos propios universitarios que precisan del título de bachiller, de duración igual o superior a 2 años" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2000/01/rdf-schema#label> "Bachillerato y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2000/01/rdf-schema#label> "Menos que primaria" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria e inferior " .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2000/01/rdf-schema#label> "Grados universitarios de hasta 240 créditos ECTS, diplomados universitarios, títulos propios universitarios de experto o especialista, y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2000/01/rdf-schema#label> "Enseñanzas de formación profesional, artes plásticas y diseño y deportivas de grado medio y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2000/01/rdf-schema#label> "Certificados de profesionalidad de nivel 1 y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2000/01/rdf-schema#label> "Certificados de las escuelas oficiales de idiomas de niveles B2, C1 y C2, y similares" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2000/01/rdf-schema#label> "Segunda etapa de educación secundaria y educación postsecundaria no superior" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2000/01/rdf-schema#label> "Primera etapa de educación secundaria con título de graduado en ESO y equivalentes" .
-<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2000/01/rdf-schema#label> "Educación postsecundaria no superior" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes primeros títulos propios universitarios :\r\n\r\n-\tTítulos propios universitarios que precisan del título de Bachiller o similar, de duración igual o superior a 2 años."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos propios universitarios de postgrado :\r\n\r\n-\tTítulo propio universitario de Experto.\r\n-\tTítulo propio universitario de Especialista.\r\n-\tTítulos propios universitarios de más de 30 créditos ECTS y menos de 60 para los que se precisa una titulación universitaria.\r\n-\tPostgrados universitarios no oficiales, de 6 meses o más y menos de 1 año, para los que se precisa una titulación universitaria."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los títulos que acreditan la superación de programas de 8 o más cursos educación básica (primaria y secundaria) y sus equivalentes, y que no pueden clasificarse en un nivel superior. Puede incluir certificaciones y títulos correspondientes a programas de nivel 3 de la CNED-P insuficientes para consolidar el nivel (por ejemplo el título de Graduado en ESO).\r\n\r\nEn este grupo se clasifican las siguientes titulaciones y certificaciones, y formación equivalentes:\r\n\r\n-\tTítulo de Graduado en ESO a través de Educación Secundaria Obligatoria.\r\n-\tTítulo de Graduado en ESO a través de un Programa de Cualificación Profesional Inicial, PCPI (superados los módulos voluntarios).\r\n-\tTítulo de Graduado en ESO a través de Educación Secundaria para Adultos.\r\n-\tTítulo de Graduado en ESO a través de Pruebas libres.\r\n-\tTítulo de Graduado Escolar / EGB completa.\r\n-\tTítulo de Bachiller Elemental / Bachiller Elemental completo (general, laboral o técnico).\r\n-\tCertificado de Estudios Primarios (anterior al curso 1975-1976).\r\n-\tCertificado de superación de la prueba de acceso a un CFGM de FP.\r\n-\tCertificado de superación de la prueba de acceso a un CFGM de Artes Plásticas y Diseño.\r\n-\tCertificado de superación de la prueba de acceso a las Enseñanzas Deportivas de Grado Medio.\r\n\r\nEn este grupo no se clasifican las personas que poseen:\r\n-\tTítulo de Graduado en ESO a a partir de la Formación Profesional Básica (ver 38)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se aplica a las personas que saben leer y escribir, y han asistido a la escuela (en la educación inicial o de adultos) menos de 5 años, sin tener en cuenta los posibles años pasados en la educación infantil.\r\n\r\nEn este grupo se clasifican:\r\n\r\n-\tlas personas que saben leer y escribir y han asistido menos de 5 años a la escuela."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad de nivel 3 (CdPN3).\r\n-\tTítulos propios universitarios que precisan del titulo de Bachiller, de duración igual o superior a 1 semestre e inferior a 2 años."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tMáster oficial universitario (especialización profesional o académica).\r\n-\tMáster oficial universitario (especialidad investigación o asociado a un doctorado).\r\n-\tDoctorado, periodo de formación completo.\r\n-\tDiploma de Estudios Avanzados.\r\n-\tSuficiencia Investigadora (reconocida).\r\n-\tFormación oficial de postgrado con acceso al doctorado distinta del máster (RD 99/2011, art. 6.2 a, b y c).\r\n-\tMáster en Enseñanzas Artísticas.\r\n-\tInspector de Policía Nacional.\r\n-\tEnseñanza de Altos Estudios de la Defensa Nacional, con título.\r\n-\tTítulo de Licenciatus (enseñanzas eclesiásticas) / Enseñanzas eclesiásticas equivalentes a máster.\r\n."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Diplomado Universitario.\r\n-\tTítulo de Ingeniero Técnico.\r\n-\tTítulo de Arquitecto Técnico.\r\n-\t3 primeros años completos de Licenciatura, cualquier especialidad.\r\n-\t3 primeros años completos de Ingeniería, cualquier especialidad.\r\n-\t3 primeros años completos de Arquitectura.\r\n-\tAparejador.\r\n-\tFacultativo de Minas.\r\n-\tProfesor Mercantil, título.\r\n-\tTítulo Superior de Conservación y Restauración de Bienes Culturales, equivalente a Diplomado (LOGSE) / Enseñanzas de Conservación y Restauración de Bienes Culturales (LOGSE).\r\n-\tTítulo Superior de Diseño, equivalente a Diplomado (LOGSE) / Estudios Superiores de Diseño (LOGSE).\r\n-\tTítulo Superior de Cerámica, equivalente a Diplomado (LOGSE) / Estudios Superiores de Cerámica (LOGSE).\r\n-\tTítulo Superior del Vidrio, equivalente a Diplomado (LOGSE) / Estudios Superiores del Vidrio (LOGSE).\r\n-\tTítulo de Piloto de Transporte de Línea Aérea (Avión).\r\n-\tTítulo de Piloto de Transporte de Línea Aérea (Helicóptero).\r\n-\tEnseñanza militar, antigua Escala de Oficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015).\r\n-\tEnseñanzas eclesiásticas equivalentes a Diplomado.\r\n-\tOtras titulaciones equivalentes a una diplomatura universitaria."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad del nivel 1 (CdPN1).\r\n-\tPrograma de Cualificación Profesional Inicial, PCPI (superados solo los módulos obligatorios).\r\n-\tProgramas de Garantía Social."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se aplica a las personas analfabetas. Se considera analfabetas a las personas de 16 y más años que teniendo en cuenta cualquier lengua del mundo cumplen:\r\n\r\n- \tno son capaces de leer ni de escribir;\r\n- \tson capaces de leer pero no de escribir;\r\n- \tson capaces de leer y escribir sólo una o varias frases que recuerdan de memoria;\r\n- \tson capaces de leer y escribir sólo números o su propio nombre.\r\n\r\nEn este grupo se clasifican:\r\n\r\n-\tAnalfabetos"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente, de especialización en el ámbito de la salud:\r\n\r\n-\tTítulo de Médico especialista (diversas especialidades) / Especialidades de Medicina (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Especialista en Farmacia Hospitalaria / Especialidad de Farmacia Hospitalaria (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Psicólogo Clínico / Especialidad de Psicología Clínica (Ciencias de la Salud) por el sistema de residencia.\r\n-\tTítulo de Especialista Sanitario (diversas especialidades) / Especialidades multidisciplinares en Ciencias de la Salud por el sistema de residencia.\r\n-\tTítulo de Enfermero especialista (diversas especialidades) / Especialidades de Enfermería (Ciencias de la Salud por el sistema de residencia.\r\n-\tBIR, Programas de especialización para biólogos, con título.\r\n-\tFIR, Programas de especialización para farmacéuticos, con título.\r\n-\tMIR, Programas de especialización para médicos, con título.\r\n-\tPIR, Programas de especialización para psicólogos, con título.\r\n-\tQIR, Programas de especialización para químicos, con título.\r\n-\tOtras titulaciones equivalentes."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n- \tTítulo de Graduado (hast 240 créditos ECTS) / Grados universitarios de hasta 240 créditos ECTS y equivalentes.\r\n- \tDoble grado universitario (combinación de dos grados de hasta 240 créditos ECTS).\r\n- \tGraduado en Ingeniería, cualquier especialidad.\r\n- \tTítulo Superior de Conservación y Restauración de Bienes Culturales, equivalente a graduado (LOE) / Enseñanzas de Conservación y Restauración de Bienes Culturales (LOE).\r\n- \tTítulo Superior de Artes Plásticas, Cerámica (LOE), equivalente a graduado / Estudios Superiores, Artes Plásticas, Cerámica (LOE).\r\n- \tTítulo Superior de Artes Plásticas, Vidrio, equivalente a Graduado (LOE) / Estudios Superiores, Artes Plásticas, Vidrio (LOE).\r\n- \tTítulo Superior de Diseño, equivalente a Graduado (LOE) / Estudios Superiores, Diseño (LOE).\r\n- \tTítulo Superior de Música, equivalente a Graduado (LOE) / Estudios Superiores, Música (LOE).\r\n- \tTítulo Superior de Danza, equivalente a Graduado a (LOE) / Estudios Superiores, Danza (LOE).\r\n- \tTítulo Superior de Arte Dramático, equivalente a Graduado (LOE) / Enseñanzas de Arte Dramático (LOE).\r\n- \tTítulo de Baccalaureatus (enseñanzas eclesiásticas) / Enseñanzas eclesiásticas equivalentes a Grado.\r\n- \tTítulo de Graduado en Teología / Grado en Teología.\r\n- \tTítulo de Oficial de las Fuerzas Armadas (acceso a la escala a partir de 2015).\r\n- \tTítulo de Oficial de las Fuerzas Armadas (acceso desde antigua Escala de Oficiales).\r\n- \tOtras titulaciones equivalentes a un Grado universitario."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar o equivalente:\r\n\r\n-\tTítulo de Técnico / Ciclos Formativos de Grado Medio (CFGM) de FP.\r\n-\tTítulo de Técnico de artes plásticas y diseño / Ciclos Formativos de Grado Medio (CFGM) de Artes Plásticas y Diseño (ApyD).\r\n-\tTítulo de Técnico deportivo / Enseñanzas deportivas de grado medio.\r\n-\tTítulo de Técnico Auxiliar / Formación Profesional de primer grado, FP1.\r\n-\tOficialía Industrial, con título.\r\n-\tArtes Aplicadas y Oficios Artísticos - 3 cursos comunes.\r\n-\tTítulo de Técnico Auxiliar / Módulos Experimentales de nivel II de FP.\r\n-\tTítulo de Técnico Militar.\r\n-\tPolicía Nacional / Escala Básica del Cuerpo Nacional de Policía.\r\n-\tEscala Básica del Cuerpo de Mozos de Escuadra.\r\n-\tEscala Básica de la Ertzaintza.\r\n-\tCuerpos de la Policía Local de la Comunidad Autónoma del País Vasco.\r\n-\tCuerpos de la policía local de la Comunidad Autónoma de Navarra.\r\n-\tCuerpos de la policía local de la Generalitat de Cataluña.\r\n-\tEscala Básica de la Guardia Civil.\r\n-\tCapataz Agrícola.\r\n-\tOtras titulaciones que sean equivalentes a enseñanzas de grado medio de formación profesional del sistema educativo."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se corresponde con la Educación Primaria, etapa del sistema educativo que no proporciona un título al finalizarse. A falta de certificación de referencia se clasificarán en este grupo las personas que: han cursado la Educación Primaria, o han cursado las enseñanzas iniciales de educación básica para adultos o programas equivalentes a la Educación Primaria o, por lo menos, han asistido 5 años a la escuela (en la educación inicial o equivalente en educación de adultos); y no cumplen los requisitos para ser clasificados en un nivel superior.\r\n\r\nEn este grupo se clasifican las personas que como máximo:\r\n\r\n-\than cursado la educación primaria (completa); o\r\n-\than completado las enseñanzas iniciales de educación básica para adultos o programas equivalentes a la educación primaria; o\r\n-\than asistido a la escuela 5 o más años y no pueden clasificarse en otro epígrafe; o\r\n-\than estado matriculados en Educación Secundaria Obligatoria y no pueden ser clasificados en el nivel 2."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican las siguientes certificaciones y formación similar:\r\n\r\n-\tCertificado de Profesionalidad del nivel 2 (CdPN2)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones:\r\n\r\n-\tTítulo Profesional Básico / Formación Profesional Básica."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar:\r\n\r\n-\tTítulo Profesional de Música/Enseñanzas Profesionales de Música (LOE)\r\n-\tTítulo Profesional de Danza/Enseñanzas Profesionales de Danza (LOE)\r\n-\tTítulo Profesional de Música/Enseñanzas de Grado Medio de Música (LOGSE)\r\n-\tTítulo Profesional de Danza/Enseñanzas de Grado Medio de Danza (LOGSE)\r\n-\tTítulo de Profesor de Música (Decreto 2618/1966)\r\n-\tDiploma de Cantante de Ópera (Decreto 313/1970)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Licenciado.\r\n-\tTítulo de Ingeniero.\r\n-\tTítulo de Arquitecto.\r\n-\tTítulo Superior de Música, equivalente a licenciado (LOGSE) / Enseñanzas de Grado Superior de Música (LOGSE).\r\n-\tTítulo Superior de Danza, equivalente a licenciado (LOGSE) / Enseñanzas de Grado Superior de Danza.\r\n-\tTítulo Superior de Arte Dramático, equivalente a licenciado (LOGSE)/ Enseñanzas de Arte Dramático, Grado Superior (LOGSE).\r\n-\tTítulo de Profesor Superior de Música (Decreto 2618/1966).\r\n-\tTítulo de Profesor de Música y Título Profesional de Música (Decreto 15 de junio de 1942).\r\n-\tDiploma Superior de Especialización para Solistas (Decreto 313/1970).\r\n-\tTítulo de Profesor y Título Profesional de Actor Teatral (Decreto 15 de junio de 1942).\r\n-\tDiplomas Expedidos al amparo de los dispuesto en el Decreto 2607/1974).\r\n-\tAntigua Escala Superior de Oficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015).\r\n-\tEscala Superior de Oficiales de la Guardia Civil.\r\n-\tEscala de Oficiales de la Guardia Civil.\r\n-\tTítulo Profesional de Piloto de Segunda de la Marina Mercante.\r\n-\tTítulo Profesional de Piloto de primera de la Marina Mercante.\r\n-\tTítulo Profesional de Capitán de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial de Máquinas de Segunda de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial de Máquinas de Primera de la Marina Mercante.\r\n-\tTítulo Profesional de Jefe de Máquinas de la Marina Mercante.\r\n-\tTítulo Profesional de Oficial Radioelectrónico de Segunda de la Marina Mercante.\r\n-\tTítulo profesional de Oficial Radioelectrónico de Primera de la Marina Mercante.\r\n-\tOtras titulaciones equivalentes a una licenciatura."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos propios universitarios de postgrado :\r\n-\tTítulo propio universitario de máster no oficial.\r\n-\tTítulos propios universitarios de 60 o más créditos ECTS para los que se precisa una titulación universitaria.\r\n-\tPostgrados universitarios no oficiales, de 1 año o más, para los que se precisa una titulación universitaria.\r\n-\tTítulo Profesional de Especialización Didáctica (CAP)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "35\t Certificado de las escuelas oficiales de idiomas de niveles B2, C1 Y C2,\r\ny similares.\r\n\r\nEn este grupo se clasifican los siguientes títulos o certificaciones:\r\n\r\n-\tCertificado de Aptitud de la EOI / Escuela Oficial de Idiomas, ciclo superior (LOGSE).\r\n-\tCertificado de Nivel Avanzado de la EOI / Escuela Oficial de Idiomas, nivel avanzado (LOE hasta curso 2017-2018).\r\n-       Certificado de Nivel Intermedio B2 / Escuela Oficial de Idiomas, nivel intermedio B2 (R.D. 1041/2017, a partir del curso 2018-2019).\r\n-       Certificado de Nivel Avanzado C1 / Escuela Oficial de Idiomas, nivel avanzado C1 (R.D. 1041/2017, a partir del curso 2018-2019).\r\n-       Certificado de Nivel Avanzado C2 / Escuela Oficial de Idiomas, nivel avanzado C2 (R.D. 1041/2017, a partir del curso 2018-2019)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "Este grupo se corresponde con el primer ciclo de Educación Secundaria Obligatoria (LOMCE) (1º-3º), el cual no conduce a una certificación o título en su finalización y que representa una duración acumulada de 9 años desde el inicio de la CINE 1. Se clasificarán en este grupo aquellas personas que han cursado 3º de la ESO totalmente (o los 9 primeros cursos de educación primaria y secundaria) y que no hayan alcanzado el título de Graduado en ESO o equivalente, u otra titulación o certificación del resto de grupos de este nivel (ver certificaciones en grupos 22, 23 y 24) o superior.\r\n\r\nSe considera cursado el 3er curso de la ESO e totalmente si se ha participado en todos los componentes del curso , con independencia de los resultados obtenidos (es decir habiendo superado/aprobado o no el curso).\r\n\r\nSe clasifican en este grupo certificados y situaciones relativas a programas extinguidos que tienen reconocida algún tipo de equivalencia con títulos de primera etapa de educación secundaria.\r\n\r\nEn este grupo se clasifican las personas que como máximo:\r\n\r\n-\than cursado el 3er curso (primer ciclo), todo el curso (aprobado o no), o superior de Educación Secundaria Obligatoria pero no han obtenido el título de Graduado en ESO; o\r\n-\than cursado la Educación Secundaria de Adultos completamente o el equivalente a 3º de la ESO, pero no disponen de certificaciones o títulos de educación secundaria de primera etapa; o\r\n-\than cursado los 9 primeros cursos académicos de educación primaria y secundaria, sin certificaciones o títulos de educación secundaria de primera etapa; o\r\n-\ttienen un Certificado de Escolaridad anterior a la LOGSE (certificados de la EGB o anteriores a 1999); o\r\n-\than cursado la EGB completa (8º curso), sin título de Graduado Escolar; o\r\n-\than cursado el Bachillerato Elemental (4º curso), sin superar; o\r\n-\than completado programas de formación para la transición a la vida adulta de la Educación Especial específica; o\r\n-\than asistido a la escuela al menos 9 años (solo si no puede determinarse los años académicos cursados ni las certificaciones, por ejemplo en algunos casos de extranjeros, personas de edad avanzada,...etc)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación similar:\r\n\r\n-\tTítulo de Bachiller.\r\n-\tTítulo de Bachiller a través de pruebas libres.\r\n-\tTítulo de Bachiller/ Bachillerato Unificado Polivalente (BUP).\r\n-\tCurso de Orientación Universitaria (COU), aprobado.\r\n-\tTítulo de Bachiller/Bachiller REM o experimental.\r\n-\tTítulo de Bachiller Superior/ Bachiller superior.\r\n-\tCurso Preuniversitario, aprobado.\r\n-\tCertificado de superación de la prueba acceso a la Universidad Mayores de 25 años.\r\n-\tCertificado de superación de la prueba de acceso a un CFGS de FP.\r\n-\tCertificado de superación de la prueba de acceso a un CFGS de Artes Plásticas y Diseño.\r\n-\tCertificado de superación de la prueba de acceso a las Enseñanzas Deportivas de Grado Superior."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n-\tTítulo de Graduado de más de 240 créditos ECTS.\r\n-\tDoble grado universitario (combinación de uno de más de 240 créditos ECTS y otro grado.\r\n-\tTítulo de Graduado en Medicina.\r\n-\tTítulo de Graduado en Farmacia.\r\n-\tTítulo de Graduado en Veterinaria.\r\n-\tTítulo de Graduado en Odontología.\r\n-\tTítulo de Graduado en Arquitectura.\r\n-\tOtras titulaciones equivalentes a grados de más de 240 créditos ETCS."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP (distancia)\r\n-\tTítulo de Técnico Superior de artes plásticas y diseño / Ciclos Formativos de Grado Superior (CFGS) de Enseñanzas de Artes plásticas y Diseño (ApyD)\r\n-\tTítulo de Técnico Deportivo Superior / Enseñanzas Deportivas de Grado Superior\r\n-\tTítulo de Técnico Especialista / Formación Profesional de Segundo Grado. FP2\r\n-\tTítulo de Técnico Especialista / Módulos Experimentales de nivel III de FP\r\n-\tMaestría Industrial, con título\r\n-\tPerito Mercantil, título\r\n-\tTítulo de Graduado en Artes Aplicadas y Oficios Artísticos / Artes Aplicadas y Oficios Artísticos\r\n-\tEnseñanza militar, antigua Escala de Suboficiales de las Fuerzas Armadas (acceso a la escala anterior a 2015)\r\n-\tTítulo de Técnico Superior / Ciclos Formativos de Grado Superior (CFGS) de FP a través de Enseñanza Militar (acceso a la escala a partir de 2015)\r\n-\tGuardia Civil, Escala de Suboficiales\r\n-\tOtras titulaciones que sean equivalentes a enseñanzas de grado superior de formación profesional del sistema educativo."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En este grupo se clasifican los siguientes títulos o certificaciones y formación equivalente:\r\n\r\n-\tTítulo de Doctor (cualquier plan de estudios).\r\n-\tEnseñanzas eclesiásticas equivalentes a Doctorado."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#notation> "BE" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#notation> "CI" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://www.w3.org/2004/02/skos/core#notation> "C" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2004/02/skos/core#notation> "nc" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#notation> "75" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#notation> "AC" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#notation> "BF" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#notation> "AA" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#notation> "38" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#notation> "3" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://www.w3.org/2004/02/skos/core#notation> "Z" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#notation> "33" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#notation> "81" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#notation> "4" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2004/02/skos/core#notation> "ZZ" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#notation> "35" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#notation> "AB" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#notation> "0" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#notation> "34" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#notation> "6" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#notation> "71" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#notation> "74" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#notation> "32" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#notation> "23" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#notation> "21" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://www.w3.org/2004/02/skos/core#notation> "B" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#notation> "CG" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#notation> "63" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#notation> "24" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#notation> "52" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#notation> "CJ" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#notation> "61" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#notation> "73" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#notation> "BG" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#notation> "CL" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#notation> "62" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#notation> "22" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#notation> "41" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#notation> "51" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#notation> "CK" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#notation> "5" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2004/02/skos/core#notation> "_" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#notation> "2" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#notation> "8" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://www.w3.org/2004/02/skos/core#notation> "A" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#notation> "AD" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#notation> "7" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#notation> "72" .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \tCertificado de superación de la prueba acceso a la Universidad de mayores de 45 años (este certificado no otorga nivel de formación)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \t3 primeros años completos de un grado universitario, que no se correspondan con una certificación."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulos de los niveles básico A1 y A2 e intermedio B1 de las Escuelas Oficiales de Idiomas (no consolidan el nivel de formación).\n- \tCursos de actualización y perfeccionamiento profesional y otros cursos de la Escuela oficial de idiomas no conducentes a las certificaciones de los niveles oficiales de estas enseñanzas (es educación no formal)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican las personas que poseen:\r\n- \tel Certificado de Escolaridad (ver 21); o\r\n- \tel Certificado de Estudios Primarios (ver 22)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> " En este grupo no se clasifican:\r\n\r\n- \tTítulos propios universitarios de duración inferior a 2 años o que no precisan el Bachillerato (ver 41 y 92).\r\n- \tTítulos propios universitarios de postgrado (ver 63, 75 y 92)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/A> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tPostgrados universitarios no oficiales (ver 63, 75 y 92)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulo de Graduado universitario de más de 240 créditos ECTS (ver 71)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tMásteres oficiales universitarios (ver 73)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/C> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican las personas que poseen:\r\n-\tTítulo de Graduado en ESO a a partir de la Formación Profesional Básica (ver 38)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/B> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n- \tMásteres y otros programas de postgrado del ámbito de la salud o distintos, no realizados en régimen de residencia o similar (ver 63, 73,75 y 92)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tMásteres oficiales universitarios, asociado o no a un Doctorado (ver 73).\r\n- \tDoctorado, completado el periodo de formación exclusivamente (ver 73)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulos propios universitarios (ver 41, 52, 63, 75 y 92).\r\n- \tGrados oficiales universitarios (ver 61 y 71)."@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican:\r\n\r\n- \tTítulo de Graduado de 240 créditos ECTS) (ver 61)\r\n- \tDoble grado universitario, combinación de dos grados de 240 créditos ECTS (ver 61)"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "None"@es .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/01> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/0> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/_> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/Z> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/8> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/71> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/62> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/34> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/81> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CM> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/nc> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/1> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/2> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/75> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/4> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/33> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BF> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/24> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/4> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/B> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/38> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/73> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/21> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/72> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/6> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/0> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/ZZ> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/_> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/8> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/22> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AC> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/6> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/10> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/7> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/2> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/A> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/51> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/35> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BG> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/3> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CG> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/5> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/74> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CL> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/41> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BH> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AB> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/1> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/32> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/BE> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/52> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CI> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/02> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AA> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/3> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/B> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/61> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/5> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/C> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/7> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/2> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/CK> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/7> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/63> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/CJ> .
+<http://stats.linkeddata.es/voc/cneda/CNEDA14/23> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/cneda/CNEDA14/AD> .

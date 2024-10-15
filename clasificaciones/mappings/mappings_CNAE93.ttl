@@ -30,7 +30,7 @@
     ]. 
     
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93"];
+    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE"];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/cnae/CNAE93/{COD}";
         rr:class skos:Concept;
