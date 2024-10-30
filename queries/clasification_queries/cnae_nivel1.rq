@@ -3,7 +3,7 @@ PREFIX  xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
 SELECT DISTINCT ?x  ?y
 WHERE {
  ?x rdf:type skos:Concept.
- ?x skos:inScheme <http://stats.linkeddata.es/voc/cnae/AYUDACOD_CNAE> .
+ ?x skos:inScheme <http://stats.linkeddata.es/voc/clasificaciones/cnae/AYUDACOD_CNAE> .
  ?x rdfs:label ?y .
  ?x xkos:depth "1"
 }
