@@ -1,4 +1,5 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
 select ?s ?p ?o where { 
 	?s ?p ?o .
-    <https://stats.linkeddata.es/voc/cubes/capitulo-66615/o763856> ?p ?o .
+        ?s ?p1 qb:Observation.
 }
