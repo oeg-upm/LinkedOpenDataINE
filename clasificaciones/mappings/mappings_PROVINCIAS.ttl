@@ -5,14 +5,43 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
-<#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_PROVINCIAS"];
+<#ClassifiTableView> rr:sqlQuery """
+ SELECT 
+    COD, 
+    TITULO, 
+    NIVEL, 
+    TITABREV, 
+    PADRE, 
+    NOTA1, 
+    NOTA2, 
+    NOTA3 
+FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
+""".
+
+<#Level> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/distribution/PROVINCIAS>;
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}";
+        rr:class xkos:ClassificationLevel;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate xkos:depth;
+    rr:objectMap [rr:column "NIVEL"];
+    ];
+    
+    rr:predicateObjectMap [
+    rr:predicate skos:inScheme;
+    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>;
+    ].
+
+# These are the mappings corresponding to the dataset metadata
+<#Metadata> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
+    rr:subjectMap [
+        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -21,23 +50,24 @@
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:downloadURL;
-    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_provincias.nt" 
+    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_provincias.nt" 
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:mediaType;
     rr:object "https://www.iana.org/assignments/media-types/application/n-triples" 
     ]. 
- 
+
+#These are the mappings corresponding to the concepts of the classification
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_PROVINCIAS"];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/provincias/PROVINCIAS/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:notation;
         rr:objectMap [ rr:column "COD" ];
-    ];    
+    ];        
     rr:predicateObjectMap [
         rr:predicate skos:prefLabel;
         rr:objectMap [ rr:column "TITULO"; rr:language "es" ];
@@ -47,12 +77,8 @@
         rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
     ];    
     rr:predicateObjectMap [
-        rr:predicate xkos:depth;
-        rr:objectMap [ rr:column "NIVEL" ];
-    ];
-    rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/provincias/PROVINCIAS/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -65,4 +91,8 @@
     rr:predicateObjectMap [
         rr:predicate skos:note;
         rr:objectMap [ rr:column "NOTA3"; rr:language "es" ];
-    ].
+    ];              
+    rr:predicateObjectMap [
+        rr:predicate skos:inScheme;
+        rr:object <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>;
+    ].          

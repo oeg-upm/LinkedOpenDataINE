@@ -5,15 +5,43 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
+<#ClassifiTableView> rr:sqlQuery """
+ SELECT 
+    COD, 
+    TITULO, 
+    NIVEL, 
+    TITABREV, 
+    PADRE, 
+    NOTA1, 
+    NOTA2, 
+    NOTA3 
+FROM AYUDACOD2024PRO.AYUDACOD_CCAA
+""".
 
-<#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CCAA"];
+<#Level> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/distribution/CCAA>;
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}";
+        rr:class xkos:ClassificationLevel;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate xkos:depth;
+    rr:objectMap [rr:column "NIVEL"];
+    ];
+    
+    rr:predicateObjectMap [
+    rr:predicate skos:inScheme;
+    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>;
+    ].
+
+# These are the mappings corresponding to the dataset metadata
+<#Metadata> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
+    rr:subjectMap [
+        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -29,10 +57,11 @@
     rr:object "https://www.iana.org/assignments/media-types/application/n-triples" 
     ]. 
 
+#These are the mappings corresponding to the concepts of the classification
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CCAA"];
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/ccaa/CCAA/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -48,12 +77,8 @@
         rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
     ];    
     rr:predicateObjectMap [
-        rr:predicate xkos:depth;
-        rr:objectMap [ rr:column "NIVEL" ];
-    ];
-    rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/ccaa/CCAA/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -69,5 +94,5 @@
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:objectMap [  rr:template "http://stats.linkeddata.es/voc/ccaa/{NOMBRE}";];
+        rr:object <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>;
     ].          

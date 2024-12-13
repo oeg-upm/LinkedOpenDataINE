@@ -9,10 +9,41 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
-<#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE09"];
+<#ClassifiTableView> rr:sqlQuery """
+ SELECT 
+    COD, 
+    TITULO, 
+    NIVEL, 
+    TITABREV, 
+    PADRE, 
+    NOTA1, 
+    NOTA2, 
+    NOTA3, 
+    (NIVEL - 1) AS PADRE_NIVEL
+FROM AYUDACOD2024PRO.AYUDACOD_CNAE09
+""".
+
+<#Level> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/distribution/CNAE09>;
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{NIVEL}";
+        rr:class xkos:ClassificationLevel;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate xkos:depth;
+    rr:objectMap [rr:column "NIVEL"];
+    ];
+    
+    rr:predicateObjectMap [
+    rr:predicate skos:inScheme;
+    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09>;
+    ].
+
+
+<#Metadata> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
+    rr:subjectMap [
+        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -29,9 +60,9 @@
     ]. 
    
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE09"];
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -45,14 +76,10 @@
     rr:predicateObjectMap [
         rr:predicate skos:altLabel;
         rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
-    ];    
-    rr:predicateObjectMap [
-        rr:predicate xkos:depth;
-        rr:objectMap [ rr:column "NIVEL" ];
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -68,5 +95,5 @@
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:objectMap [  rr:template "http://stats.linkeddata.es/voc/cnae/{NOMBRE}";];
+        rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09>;
     ].          

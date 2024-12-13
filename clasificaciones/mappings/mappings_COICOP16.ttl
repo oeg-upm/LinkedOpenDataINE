@@ -9,10 +9,52 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
-<#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_COICOP16"];
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+
+<#ClassifiTableView> rr:sqlQuery """
+ SELECT 
+    COD, 
+    TITULO, 
+    NIVEL, 
+    TITABREV, 
+    PADRE, 
+    NOTA1, 
+    NOTA2, 
+    NOTA3, 
+    (NIVEL - 1) AS PADRE_NIVEL
+FROM AYUDACOD2024PRO.AYUDACOD_COICOP16
+""".
+
+<#Level> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/distribution/COICOP16>;
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/{NIVEL}";
+        rr:class xkos:ClassificationLevel;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate xkos:depth;
+    rr:objectMap [rr:column "NIVEL"];
+    ];
+    
+    rr:predicateObjectMap [
+    rr:predicate skos:inScheme;
+    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16>;
+    ].
+
+
+<#Metadata> a rr:TriplesMap;
+    rr:logicalTable <#ClassifiTableView>;
+    rr:subjectMap [
+        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -27,11 +69,11 @@
     rr:predicate dcat:mediaType;
     rr:object "https://www.iana.org/assignments/media-types/application/n-triples" 
     ]. 
- 
+   
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_COICOP16"];
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/coicop/COICOP16/{COD}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -45,14 +87,10 @@
     rr:predicateObjectMap [
         rr:predicate skos:altLabel;
         rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
-    ];    
-    rr:predicateObjectMap [
-        rr:predicate xkos:depth;
-        rr:objectMap [ rr:column "NIVEL" ];
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/coicop/COICOP16/{PADRE}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -68,5 +106,5 @@
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:objectMap [  rr:template "http://stats.linkeddata.es/voc/coicop/{NOMBRE}";];
+        rr:object  <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16>;
     ].          

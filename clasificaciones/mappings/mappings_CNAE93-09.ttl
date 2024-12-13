@@ -10,11 +10,19 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
+<#ClassifiTableView> rr:sqlQuery """
+SELECT 
+    CODIGO1, 
+    CODIGO2, 
+    LENGTH(CODIGO1) AS NIVEL1, 
+    LENGTH(CODIGO2) AS NIVEL2
+FROM AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009
+""".
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009"];
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/distribution/CNAE93-CNAE09>;
+        rr:constant <http://stats.linkeddata.es/voc/correspondencias/CNAE93-CNAE09>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -31,11 +39,11 @@
     ]. 
 
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009"];
+    rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/cnae/CNAE09/{CODIGO1}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/cnae/CNAE93/{CODIGO2}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93/{CODIGO2}";];
     ].

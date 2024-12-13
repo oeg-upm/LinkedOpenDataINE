@@ -1,449 +1,458 @@
-<http://stats.linkeddata.es/distribution/ISCEDP11> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
-<http://stats.linkeddata.es/distribution/ISCEDP11> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_iscedp11.nt" .
-<http://stats.linkeddata.es/distribution/ISCEDP11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://stats.linkeddata.es/distribution/ISCEDP11> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/656> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/551> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/655> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/453> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/861> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/666> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/451> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/554> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/253> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/641> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/020> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/747> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/751> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/010> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/451> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/661> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/244> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/854> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/241> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/746> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/443> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/864> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/100> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/551> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/343> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/851> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/667> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/353> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/761> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/252> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/351> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/454> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/647> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/342> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/341> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/655> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/453> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/757> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/541> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/251> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/841> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/646> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/767> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/756> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/665> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/544> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/656> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/254> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/554> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/243> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/354> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/441> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/861> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/844> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/999> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/666> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/352> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/242> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/748> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/741> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/344> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/9> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/651> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/766> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/657> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/645> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/444> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/768> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/758> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/541> <http://www.w3.org/2004/02/skos/core#notation> "541" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/851> <http://www.w3.org/2004/02/skos/core#notation> "851" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/757> <http://www.w3.org/2004/02/skos/core#notation> "757" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/243> <http://www.w3.org/2004/02/skos/core#notation> "243" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/999> <http://www.w3.org/2004/02/skos/core#notation> "999" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> <http://www.w3.org/2004/02/skos/core#notation> "5" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/861> <http://www.w3.org/2004/02/skos/core#notation> "861" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/646> <http://www.w3.org/2004/02/skos/core#notation> "646" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/242> <http://www.w3.org/2004/02/skos/core#notation> "242" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> <http://www.w3.org/2004/02/skos/core#notation> "0" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> <http://www.w3.org/2004/02/skos/core#notation> "45" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/748> <http://www.w3.org/2004/02/skos/core#notation> "748" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/761> <http://www.w3.org/2004/02/skos/core#notation> "761" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/100> <http://www.w3.org/2004/02/skos/core#notation> "100" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> <http://www.w3.org/2004/02/skos/core#notation> "6" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/844> <http://www.w3.org/2004/02/skos/core#notation> "844" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/020> <http://www.w3.org/2004/02/skos/core#notation> "020" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/756> <http://www.w3.org/2004/02/skos/core#notation> "756" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> <http://www.w3.org/2004/02/skos/core#notation> "4" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/657> <http://www.w3.org/2004/02/skos/core#notation> "657" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> <http://www.w3.org/2004/02/skos/core#notation> "34" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> <http://www.w3.org/2004/02/skos/core#notation> "65" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/9> <http://www.w3.org/2004/02/skos/core#notation> "9" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/656> <http://www.w3.org/2004/02/skos/core#notation> "656" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> <http://www.w3.org/2004/02/skos/core#notation> "25" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> <http://www.w3.org/2004/02/skos/core#notation> "44" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/351> <http://www.w3.org/2004/02/skos/core#notation> "351" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/343> <http://www.w3.org/2004/02/skos/core#notation> "343" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> <http://www.w3.org/2004/02/skos/core#notation> "99" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/443> <http://www.w3.org/2004/02/skos/core#notation> "443" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/854> <http://www.w3.org/2004/02/skos/core#notation> "854" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/747> <http://www.w3.org/2004/02/skos/core#notation> "747" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/244> <http://www.w3.org/2004/02/skos/core#notation> "244" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> <http://www.w3.org/2004/02/skos/core#notation> "64" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> <http://www.w3.org/2004/02/skos/core#notation> "85" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/344> <http://www.w3.org/2004/02/skos/core#notation> "344" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://www.w3.org/2004/02/skos/core#notation> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/741> <http://www.w3.org/2004/02/skos/core#notation> "741" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/441> <http://www.w3.org/2004/02/skos/core#notation> "441" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/354> <http://www.w3.org/2004/02/skos/core#notation> "354" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/746> <http://www.w3.org/2004/02/skos/core#notation> "746" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/241> <http://www.w3.org/2004/02/skos/core#notation> "241" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/444> <http://www.w3.org/2004/02/skos/core#notation> "444" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/451> <http://www.w3.org/2004/02/skos/core#notation> "451" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/766> <http://www.w3.org/2004/02/skos/core#notation> "766" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/544> <http://www.w3.org/2004/02/skos/core#notation> "544" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/253> <http://www.w3.org/2004/02/skos/core#notation> "253" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/010> <http://www.w3.org/2004/02/skos/core#notation> "010" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/342> <http://www.w3.org/2004/02/skos/core#notation> "342" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/341> <http://www.w3.org/2004/02/skos/core#notation> "341" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/254> <http://www.w3.org/2004/02/skos/core#notation> "254" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/767> <http://www.w3.org/2004/02/skos/core#notation> "767" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> <http://www.w3.org/2004/02/skos/core#notation> "24" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/768> <http://www.w3.org/2004/02/skos/core#notation> "768" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/252> <http://www.w3.org/2004/02/skos/core#notation> "252" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/655> <http://www.w3.org/2004/02/skos/core#notation> "655" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> <http://www.w3.org/2004/02/skos/core#notation> "35" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> <http://www.w3.org/2004/02/skos/core#notation> "55" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/667> <http://www.w3.org/2004/02/skos/core#notation> "667" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/554> <http://www.w3.org/2004/02/skos/core#notation> "554" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> <http://www.w3.org/2004/02/skos/core#notation> "8" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> <http://www.w3.org/2004/02/skos/core#notation> "76" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/841> <http://www.w3.org/2004/02/skos/core#notation> "841" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://www.w3.org/2004/02/skos/core#notation> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> <http://www.w3.org/2004/02/skos/core#notation> "7" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/666> <http://www.w3.org/2004/02/skos/core#notation> "666" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/758> <http://www.w3.org/2004/02/skos/core#notation> "758" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/864> <http://www.w3.org/2004/02/skos/core#notation> "864" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/454> <http://www.w3.org/2004/02/skos/core#notation> "454" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> <http://www.w3.org/2004/02/skos/core#notation> "75" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/651> <http://www.w3.org/2004/02/skos/core#notation> "651" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> <http://www.w3.org/2004/02/skos/core#notation> "86" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/251> <http://www.w3.org/2004/02/skos/core#notation> "251" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/661> <http://www.w3.org/2004/02/skos/core#notation> "661" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/353> <http://www.w3.org/2004/02/skos/core#notation> "353" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/665> <http://www.w3.org/2004/02/skos/core#notation> "665" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> <http://www.w3.org/2004/02/skos/core#notation> "84" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/551> <http://www.w3.org/2004/02/skos/core#notation> "551" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/453> <http://www.w3.org/2004/02/skos/core#notation> "453" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/641> <http://www.w3.org/2004/02/skos/core#notation> "641" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/647> <http://www.w3.org/2004/02/skos/core#notation> "647" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> <http://www.w3.org/2004/02/skos/core#notation> "66" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/751> <http://www.w3.org/2004/02/skos/core#notation> "751" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> <http://www.w3.org/2004/02/skos/core#notation> "54" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> <http://www.w3.org/2004/02/skos/core#notation> "74" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/645> <http://www.w3.org/2004/02/skos/core#notation> "645" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/352> <http://www.w3.org/2004/02/skos/core#notation> "352" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/756> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/646> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/341> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/661> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/854> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/667> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/741> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/851> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/864> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/544> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/251> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/844> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/253> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/254> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/353> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/020> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/666> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/748> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/746> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/999> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/747> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/100> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/655> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/352> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/342> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/758> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/354> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/651> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/645> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/657> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/665> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/751> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/010> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/244> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/243> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/451> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/351> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/647> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/757> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/841> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/441> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/541> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/767> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_isceda11.nt" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/665> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/656> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de maestría o equivalente"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/758> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/746> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (duración mínima de 5 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/767> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/666> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/551> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/352> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/864> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/342> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/341> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/645> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/751> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/353> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/841> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/999> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/344> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/251> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/768> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/541> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de licenciatura o equivalente"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/244> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/655> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de doctorado o equivalente"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/667> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/9> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/854> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación de la primera infancia"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/443> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/453> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/861> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación primaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/756> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/354> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/343> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/757> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/657> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación terciaria de ciclo corto"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/741> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/761> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/646> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (más de 4 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/451> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/241> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria baja"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/252> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/844> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación postsecundaria no terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/454> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/253> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/661> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/444> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/651> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/641> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/351> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/766> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/747> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/647> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/242> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/544> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/441> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/851> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/554> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/748> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/451> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/554> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/741> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/746> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/665> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/351> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/864> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/353> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/756> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/768> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/655> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/656> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/454> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/551> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/647> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/342> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/667> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/646> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/651> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/241> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/641> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/761> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/341> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/747> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/9> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/020> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/354> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/243> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/657> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/854> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/999> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/541> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/253> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/254> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/100> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/645> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/444> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/443> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/252> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/242> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/661> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/666> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/343> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/757> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/748> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/766> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/441> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/861> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/352> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/844> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/544> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/841> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/751> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/453> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/244> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/344> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/767> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/251> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/010> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/851> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/758> <http://www.w3.org/2004/02/skos/core#broader> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/656> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/655> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/453> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/554> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/451> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/551> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/666> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/861> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/242> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/554> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/766> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/454> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/656> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/453> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/641> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/241> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/861> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/551> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/444> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/9> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/343> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/761> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/768> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/344> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/252> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/443> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/757> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/353> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/656> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/75> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/444> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/453> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/76> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación postsecundaria no terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación de la primera infancia"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/342> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/45> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/55> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/9> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/54> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/741> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/655> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación terciaria de ciclo corto"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/768> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/751> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/24> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/44> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de licenciatura o equivalente"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/8> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de doctorado o equivalente"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/65> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/443> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de maestría o equivalente"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/651> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/441> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación primaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/841> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/854> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/647> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/657> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/758> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/354> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/646> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (más de 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/351> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/343> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/541> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/99> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/766> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/242> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/551> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/767> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/746> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (duración mínima de 5 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/864> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/761> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/66> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/747> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/844> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/252> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/454> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/34> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/35> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/84> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/86> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/999> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/641> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/352> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria baja"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/341> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/544> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/666> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/344> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/667> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/861> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/748> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/253> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/251> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/554> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/645> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/661> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/665> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/64> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/25> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/756> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/451> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/851> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/241> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/244> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/74> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> <http://www.w3.org/2004/02/skos/core#notation> "76" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/243> <http://www.w3.org/2004/02/skos/core#notation> "243" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/351> <http://www.w3.org/2004/02/skos/core#notation> "351" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/844> <http://www.w3.org/2004/02/skos/core#notation> "844" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> <http://www.w3.org/2004/02/skos/core#notation> "25" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> <http://www.w3.org/2004/02/skos/core#notation> "3" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/656> <http://www.w3.org/2004/02/skos/core#notation> "656" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/751> <http://www.w3.org/2004/02/skos/core#notation> "751" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/251> <http://www.w3.org/2004/02/skos/core#notation> "251" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/241> <http://www.w3.org/2004/02/skos/core#notation> "241" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/454> <http://www.w3.org/2004/02/skos/core#notation> "454" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> <http://www.w3.org/2004/02/skos/core#notation> "35" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> <http://www.w3.org/2004/02/skos/core#notation> "7" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> <http://www.w3.org/2004/02/skos/core#notation> "55" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/010> <http://www.w3.org/2004/02/skos/core#notation> "010" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/854> <http://www.w3.org/2004/02/skos/core#notation> "854" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/768> <http://www.w3.org/2004/02/skos/core#notation> "768" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> <http://www.w3.org/2004/02/skos/core#notation> "75" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> <http://www.w3.org/2004/02/skos/core#notation> "99" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/647> <http://www.w3.org/2004/02/skos/core#notation> "647" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/747> <http://www.w3.org/2004/02/skos/core#notation> "747" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> <http://www.w3.org/2004/02/skos/core#notation> "54" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> <http://www.w3.org/2004/02/skos/core#notation> "74" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> <http://www.w3.org/2004/02/skos/core#notation> "2" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/851> <http://www.w3.org/2004/02/skos/core#notation> "851" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/9> <http://www.w3.org/2004/02/skos/core#notation> "9" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/544> <http://www.w3.org/2004/02/skos/core#notation> "544" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/252> <http://www.w3.org/2004/02/skos/core#notation> "252" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/645> <http://www.w3.org/2004/02/skos/core#notation> "645" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/554> <http://www.w3.org/2004/02/skos/core#notation> "554" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/657> <http://www.w3.org/2004/02/skos/core#notation> "657" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/761> <http://www.w3.org/2004/02/skos/core#notation> "761" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/020> <http://www.w3.org/2004/02/skos/core#notation> "020" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/343> <http://www.w3.org/2004/02/skos/core#notation> "343" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/342> <http://www.w3.org/2004/02/skos/core#notation> "342" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/354> <http://www.w3.org/2004/02/skos/core#notation> "354" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/758> <http://www.w3.org/2004/02/skos/core#notation> "758" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/766> <http://www.w3.org/2004/02/skos/core#notation> "766" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/551> <http://www.w3.org/2004/02/skos/core#notation> "551" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/757> <http://www.w3.org/2004/02/skos/core#notation> "757" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> <http://www.w3.org/2004/02/skos/core#notation> "84" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> <http://www.w3.org/2004/02/skos/core#notation> "0" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/341> <http://www.w3.org/2004/02/skos/core#notation> "341" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/453> <http://www.w3.org/2004/02/skos/core#notation> "453" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> <http://www.w3.org/2004/02/skos/core#notation> "8" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/665> <http://www.w3.org/2004/02/skos/core#notation> "665" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/646> <http://www.w3.org/2004/02/skos/core#notation> "646" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/999> <http://www.w3.org/2004/02/skos/core#notation> "999" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> <http://www.w3.org/2004/02/skos/core#notation> "45" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/767> <http://www.w3.org/2004/02/skos/core#notation> "767" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> <http://www.w3.org/2004/02/skos/core#notation> "86" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/748> <http://www.w3.org/2004/02/skos/core#notation> "748" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/352> <http://www.w3.org/2004/02/skos/core#notation> "352" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/756> <http://www.w3.org/2004/02/skos/core#notation> "756" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/244> <http://www.w3.org/2004/02/skos/core#notation> "244" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/242> <http://www.w3.org/2004/02/skos/core#notation> "242" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/254> <http://www.w3.org/2004/02/skos/core#notation> "254" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/661> <http://www.w3.org/2004/02/skos/core#notation> "661" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> <http://www.w3.org/2004/02/skos/core#notation> "5" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/666> <http://www.w3.org/2004/02/skos/core#notation> "666" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/353> <http://www.w3.org/2004/02/skos/core#notation> "353" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> <http://www.w3.org/2004/02/skos/core#notation> "4" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/344> <http://www.w3.org/2004/02/skos/core#notation> "344" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/741> <http://www.w3.org/2004/02/skos/core#notation> "741" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/541> <http://www.w3.org/2004/02/skos/core#notation> "541" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> <http://www.w3.org/2004/02/skos/core#notation> "34" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/100> <http://www.w3.org/2004/02/skos/core#notation> "100" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/451> <http://www.w3.org/2004/02/skos/core#notation> "451" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> <http://www.w3.org/2004/02/skos/core#notation> "64" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/443> <http://www.w3.org/2004/02/skos/core#notation> "443" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/651> <http://www.w3.org/2004/02/skos/core#notation> "651" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> <http://www.w3.org/2004/02/skos/core#notation> "85" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/861> <http://www.w3.org/2004/02/skos/core#notation> "861" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> <http://www.w3.org/2004/02/skos/core#notation> "6" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/253> <http://www.w3.org/2004/02/skos/core#notation> "253" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/441> <http://www.w3.org/2004/02/skos/core#notation> "441" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> <http://www.w3.org/2004/02/skos/core#notation> "24" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/444> <http://www.w3.org/2004/02/skos/core#notation> "444" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/841> <http://www.w3.org/2004/02/skos/core#notation> "841" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/667> <http://www.w3.org/2004/02/skos/core#notation> "667" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/864> <http://www.w3.org/2004/02/skos/core#notation> "864" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/746> <http://www.w3.org/2004/02/skos/core#notation> "746" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> <http://www.w3.org/2004/02/skos/core#notation> "65" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> <http://www.w3.org/2004/02/skos/core#notation> "44" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/641> <http://www.w3.org/2004/02/skos/core#notation> "641" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/655> <http://www.w3.org/2004/02/skos/core#notation> "655" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> <http://www.w3.org/2004/02/skos/core#notation> "66" .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/451> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/35> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/351> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/756> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/541> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/45> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/253> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/25> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/453> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/84> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/665> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/751> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/85> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/86> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/74> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/242> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/353> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/645> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/999> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/544> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/641> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/741> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/551> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/9> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/441> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/454> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/661> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/241> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/761> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/851> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/44> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/768> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/655> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/7> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/8> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/844> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/667> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/646> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/341> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/443> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/757> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/444> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/64> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/666> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/647> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/864> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/854> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/657> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/66> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/244> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/861> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/354> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/100> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/651> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/010> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/243> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/252> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/746> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/54> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/76> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/747> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/767> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/352> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/758> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/24> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/841> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/34> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/656> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/342> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/1/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/99> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/55> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/254> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/343> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/344> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/65> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/748> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/766> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/2/75> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/251> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/554> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11/3/020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> .
