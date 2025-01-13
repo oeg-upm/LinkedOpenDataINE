@@ -7,7 +7,7 @@ data = sys.argv[3]
 config = """
 [CONFIGURATION]
 output_file: nt_data/clasificaciones_"""+data+""".nt
-infer_sql_datatypes: yes
+na_values: None, ,null
 [ORACLE_DB]
 mappings: test_mappings_"""+data+""".ttl
 db_url=oracle+cx_oracle://"""+db_usr+""":"""+db_psw+"""@(DESCRIPTION = (ADDRESS =(PROTOCOL = TCP)(HOST=p8dbejv12kvm.ine.es)(PORT = 1622))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = PRO19)))
