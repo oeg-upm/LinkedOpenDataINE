@@ -1,0 +1,42 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix place: <http://purl.org/ontology/places>. 
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix ex-geo:   <http://example.org/geo#> .
+@prefix inelod:       <https://stats.linkeddata.es/voc/cubes/> .
+@prefix inelod-voc: <https://stats.linkeddata.es/voc/cubes/vocabulary#>
+
+#The following is a list made of the different dimensions and measures that have been developed according to the RDF data cube standard for the INE LinekdStats project.
+#TODO: Add metadata and term documentation for the terms defined in the vocabulary.
+
+# Dimensions
+inelod-voc:nationality a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Nacionalidad"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:placeOfBirth  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Lugar de nacimiento"@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
+# Measures
+inelod-voc:numberOfIndividuals  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Numero de individuos de un nivel educativo"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:integer.

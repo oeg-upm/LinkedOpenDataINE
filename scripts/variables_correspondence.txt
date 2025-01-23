@@ -1,0 +1,10 @@
+Capitales y grandes ciudades,http://purl.org/linked-data/sdmx/2009/dimension#refArea
+Sexo,http://purl.org/linked-data/sdmx/2009/dimension#sex
+Edad,http://purl.org/linked-data/sdmx/2009/dimension#age
+Nivel de formacion alcanzado,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
+Periodo,http://purl.org/linked-data/sdmx/2009/dimension#refPeriod
+Total,http://purl.org/linked-data/sdmx/2009/measure#obsValue
+Grupos de edad,http://purl.org/linked-data/sdmx/2009/dimension#age
+Nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#nationality
+Nivel de estudios,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
+Lugar de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#placeOfBirth

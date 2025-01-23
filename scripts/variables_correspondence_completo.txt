@@ -1,0 +1,1560 @@
+[{"Id":349, "Nombre":"Totales Territoriales", "Codigo":"NAC"}
+,
+{"Id":954, "Nombre":"Total", "Codigo":""}
+,
+{"Id":70, "Nombre":"Comunidades y Ciudades Autónomas", "Codigo":"CCAA"}
+,
+{"Id":955, "Nombre":"Cultivos, pastos y huertos", "Codigo":""}
+,
+{"Id":115, "Nombre":"Provincias", "Codigo":"PROV"}
+,
+{"Id":956, "Nombre":"SAU y Otras tierras", "Codigo":""}
+,
+{"Id":19, "Nombre":"Municipios", "Codigo":"MUN"}
+,
+{"Id":601, "Nombre":"Subciudad", "Codigo":"SUBCITY"}
+,
+{"Id":599, "Nombre":"Supraciudad", "Codigo":"FUA"}
+,
+{"Id":600, "Nombre":"Conurbación", "Codigo":"KERNEL"}
+,
+{"Id":846, "Nombre":"Distritos", "Codigo":"DIST"}
+,
+{"Id":847, "Nombre":"Secciones", "Codigo":"SECC"}
+,
+{"Id":913, "Nombre":"Cría o engorde de ganado", "Codigo":""}
+,
+{"Id":1, "Nombre":"Tipo de comercio", "Codigo":""}
+,
+{"Id":2, "Nombre":"Grupos de Productos", "Codigo":""}
+,
+{"Id":3, "Nombre":"Tipo de dato", "Codigo":""}
+,
+{"Id":4, "Nombre":"Periodo", "Codigo":""}
+,
+{"Id":5, "Nombre":"Componentes PIBpm, oferta", "Codigo":""}
+,
+{"Id":6, "Nombre":"Componentes PIBpm, demanda ", "Codigo":""}
+,
+{"Id":7, "Nombre":"Estadística", "Codigo":""}
+,
+{"Id":8, "Nombre":"Precios", "Codigo":""}
+,
+{"Id":9, "Nombre":"Operaciones y saldos (nacionales)", "Codigo":""}
+,
+{"Id":10, "Nombre":"Ramas de actividad", "Codigo":""}
+,
+{"Id":11, "Nombre":"Agregados de empleo", "Codigo":""}
+,
+{"Id":12, "Nombre":"Componentes PIBpm, renta", "Codigo":""}
+,
+{"Id":16, "Nombre":"Rama de actividad - CNAE93", "Codigo":""}
+,
+{"Id":18, "Nombre":"Sexo", "Codigo":""}
+,
+{"Id":20, "Nombre":"Islas", "Codigo":""}
+,
+{"Id":26, "Nombre":"Régimen de tenenecia de la vivienda principal", "Codigo":""}
+,
+{"Id":27, "Nombre":"Disposición de agua caliente", "Codigo":""}
+,
+{"Id":28, "Nombre":"Fuente de energía utilizada para calentar el agua", "Codigo":""}
+,
+{"Id":29, "Nombre":"Disposición de calefacción", "Codigo":""}
+,
+{"Id":30, "Nombre":"Fuente de energía utilizada para la calefacción", "Codigo":""}
+,
+{"Id":31, "Nombre":"Disposición de otras viviendas distintas de la principal", "Codigo":""}
+,
+{"Id":33, "Nombre":"Hogares y personas", "Codigo":""}
+,
+{"Id":34, "Nombre":"Tamaño del municipio", "Codigo":""}
+,
+{"Id":35, "Nombre":"Densidad de población", "Codigo":""}
+,
+{"Id":36, "Nombre":"Composición del hogar", "Codigo":""}
+,
+{"Id":37, "Nombre":"Tipo de hogar", "Codigo":""}
+,
+{"Id":46, "Nombre":"Principal fuente de ingresos del hogar", "Codigo":""}
+,
+{"Id":47, "Nombre":"Nivel de ingresos mensuales netos regulares del hogar", "Codigo":""}
+,
+{"Id":55, "Nombre":"Grupos de gasto (2 dígitos)", "Codigo":""}
+,
+{"Id":57, "Nombre":"Gastos totales, medios, distribución porcentual e índices sobre la media del gasto", "Codigo":""}
+,
+{"Id":64, "Nombre":"Cantidades medias consumidas", "Codigo":""}
+,
+{"Id":66, "Nombre":"Gasto total y valor unitario", "Codigo":""}
+,
+{"Id":71, "Nombre":"Año Base", "Codigo":""}
+,
+{"Id":72, "Nombre":"Subgrupos de gasto (3 dígitos)", "Codigo":""}
+,
+{"Id":73, "Nombre":"Códigos de gasto (4 dígitos)", "Codigo":""}
+,
+{"Id":74, "Nombre":"Códigos de gasto (5 dígitos)", "Codigo":""}
+,
+{"Id":77, "Nombre":"Códigos de gasto con cantidad física", "Codigo":""}
+,
+{"Id":86, "Nombre":"Gastos totales y medios (monetario)", "Codigo":""}
+,
+{"Id":88, "Nombre":"Principales variables económicas", "Codigo":""}
+,
+{"Id":92, "Nombre":"Personas/Horas", "Codigo":""}
+,
+{"Id":94, "Nombre":"TIPO DE CATEGORIA", "Codigo":""}
+,
+{"Id":95, "Nombre":"ZONAS TURÍSTICAS", "Codigo":""}
+,
+{"Id":96, "Nombre":"RESIDENCIA/ORIGEN", "Codigo":""}
+,
+{"Id":97, "Nombre":"Lugar de nacimiento", "Codigo":""}
+,
+{"Id":101, "Nombre":"Forma de organización del viaje", "Codigo":""}
+,
+{"Id":103, "Nombre":"PUNTOS TURISTÍCOS", "Codigo":""}
+,
+{"Id":105, "Nombre":"TARIFAS", "Codigo":""}
+,
+{"Id":106, "Nombre":"MODALIDADES DE ALQUILER", "Codigo":""}
+,
+{"Id":108, "Nombre":"Ocupados en cada encuesta e índice de cambio neto", "Codigo":""}
+,
+{"Id":109, "Nombre":"Parados en cada encuesta e índice de cambio neto", "Codigo":""}
+,
+{"Id":110, "Nombre":"Rama de actividad CNAE 2009", "Codigo":""}
+,
+{"Id":111, "Nombre":"Rama de actividad (empleo principal) CNAE 2009", "Codigo":""}
+,
+{"Id":112, "Nombre":"Rama de actividad (empleo secundario) CNAE 2009", "Codigo":""}
+,
+{"Id":113, "Nombre":"Colectivo", "Codigo":""}
+,
+{"Id":114, "Nombre":"Relación con la actividad económica", "Codigo":""}
+,
+{"Id":116, "Nombre":"Edad", "Codigo":""}
+,
+{"Id":117, "Nombre":"Sector económico", "Codigo":""}
+,
+{"Id":118, "Nombre":"Situación profesional", "Codigo":""}
+,
+{"Id":119, "Nombre":"Tipo de contrato o relación laboral", "Codigo":""}
+,
+{"Id":120, "Nombre":"Tipo de jornada", "Codigo":""}
+,
+{"Id":121, "Nombre":"Tiempo de búsqueda de empleo", "Codigo":""}
+,
+{"Id":122, "Nombre":"SITUACION DE INACTIVIDAD", "Codigo":""}
+,
+{"Id":123, "Nombre":"Tasas", "Codigo":""}
+,
+{"Id":124, "Nombre":"Número de horas empleadas en cursar estudios no reglados (en las últimas cuatro semanas)", "Codigo":""}
+,
+{"Id":125, "Nombre":"Número medio de horas", "Codigo":""}
+,
+{"Id":126, "Nombre":"Estudios en curso reglados", "Codigo":""}
+,
+{"Id":127, "Nombre":"Estudios en curso no reglados", "Codigo":""}
+,
+{"Id":128, "Nombre":"Realizan o no, horas extraordinarias", "Codigo":""}
+,
+{"Id":129, "Nombre":"Total de horas extraordinarias realizadas en la semana por los asalariados", "Codigo":""}
+,
+{"Id":130, "Nombre":"Edad en que finalizo la formación", "Codigo":""}
+,
+{"Id":131, "Nombre":"Número de horas habitualmente trabajadas", "Codigo":""}
+,
+{"Id":132, "Nombre":"Total de horas extraordinarias realizadas en la semana por los asalariados", "Codigo":""}
+,
+{"Id":133, "Nombre":"Tiempo desde que dejaron el último empleo", "Codigo":""}
+,
+{"Id":134, "Nombre":"Tipo de administración", "Codigo":""}
+,
+{"Id":135, "Nombre":"Tiempo de residencia en España", "Codigo":""}
+,
+{"Id":136, "Nombre":"Parentesco con la persona de referencia", "Codigo":""}
+,
+{"Id":137, "Nombre":"Nivel de formación alcanzado", "Codigo":""}
+,
+{"Id":138, "Nombre":"Estudios en curso", "Codigo":""}
+,
+{"Id":139, "Nombre":"Estudios reglados", "Codigo":""}
+,
+{"Id":140, "Nombre":"Estado civil", "Codigo":""}
+,
+{"Id":141, "Nombre":"Nacionalidad", "Codigo":""}
+,
+{"Id":142, "Nombre":"Zonas de nacionalidad", "Codigo":""}
+,
+{"Id":143, "Nombre":"Deseo de modificar su horario habitual", "Codigo":""}
+,
+{"Id":144, "Nombre":"Tiempo que llevan trabajando en el empleo actual", "Codigo":""}
+,
+{"Id":145, "Nombre":"Rama de actividad (empleo principal)", "Codigo":""}
+,
+{"Id":146, "Nombre":"Situación profesional del empleo principal", "Codigo":""}
+,
+{"Id":147, "Nombre":"Causa de la actividad reducida", "Codigo":""}
+,
+{"Id":148, "Nombre":"Sectores económicos del empleo principal", "Codigo":""}
+,
+{"Id":149, "Nombre":"Forma de búsqueda de empleo", "Codigo":""}
+,
+{"Id":150, "Nombre":"Clase principal de la inactividad", "Codigo":""}
+,
+{"Id":151, "Nombre":"Ocupación (empleo principal)", "Codigo":""}
+,
+{"Id":152, "Nombre":"Tiempo desde el comienzo o renovación del contrato", "Codigo":""}
+,
+{"Id":153, "Nombre":"Situación profesional del empleo secundario", "Codigo":""}
+,
+{"Id":154, "Nombre":"Causas de la mayor actividad", "Codigo":""}
+,
+{"Id":155, "Nombre":"Sectores económicos del empleo secundario", "Codigo":""}
+,
+{"Id":156, "Nombre":"Nº de formas de búsqueda de empleo activas", "Codigo":""}
+,
+{"Id":157, "Nombre":"Rama de actividad (empleo secundario)", "Codigo":""}
+,
+{"Id":158, "Nombre":"Ocupación (empleo secundario)", "Codigo":""}
+,
+{"Id":159, "Nombre":"Clase secundaria de inactividad", "Codigo":""}
+,
+{"Id":160, "Nombre":"Duración del contrato o relación laboral", "Codigo":""}
+,
+{"Id":161, "Nombre":"Tipo de jornada en el empleo buscado", "Codigo":""}
+,
+{"Id":162, "Nombre":"Ocupación", "Codigo":""}
+,
+{"Id":163, "Nombre":"Rama de actividad CNAE 93", "Codigo":""}
+,
+{"Id":164, "Nombre":"Motivos de no trabajar", "Codigo":""}
+,
+{"Id":166, "Nombre":"Vinculación con la actividad", "Codigo":""}
+,
+{"Id":167, "Nombre":"Unidad", "Codigo":""}
+,
+{"Id":168, "Nombre":"Número de horas efectivas trabajadas en la semana en el empleo principal", "Codigo":""}
+,
+{"Id":169, "Nombre":"Motivos de la jornada parcial", "Codigo":""}
+,
+{"Id":170, "Nombre":"Motivo de no buscar empleo", "Codigo":""}
+,
+{"Id":171, "Nombre":"Condición socioeconómica", "Codigo":""}
+,
+{"Id":172, "Nombre":"Viviendas familiares", "Codigo":""}
+,
+{"Id":173, "Nombre":"Número de personas en la vivienda", "Codigo":""}
+,
+{"Id":174, "Nombre":"Número de activos en la vivienda", "Codigo":""}
+,
+{"Id":175, "Nombre":"Número de ocupados en la vivienda", "Codigo":""}
+,
+{"Id":176, "Nombre":"Número de parados en la vivienda", "Codigo":""}
+,
+{"Id":177, "Nombre":"Personas entre 16 y 25 años que conviven con la persona de referencia", "Codigo":""}
+,
+{"Id":178, "Nombre":"Sectores económicos del empleo secundario CNAE 2009", "Codigo":""}
+,
+{"Id":179, "Nombre":"Sector económico CNAE 2009 del último empleo", "Codigo":""}
+,
+{"Id":180, "Nombre":"Número de personas que conviven en la vivienda con la persona de referencia", "Codigo":""}
+,
+{"Id":181, "Nombre":"Estudiantes entre 16 y 25 años que conviven con la persona de referencia", "Codigo":""}
+,
+{"Id":182, "Nombre":"Número de activos entre los restantes miembros de la vivienda", "Codigo":""}
+,
+{"Id":183, "Nombre":"Número de parados entre los restantes miembros de la vivienda", "Codigo":""}
+,
+{"Id":184, "Nombre":"Situación respecto a la actividad de la persona de referencia de la vivienda", "Codigo":""}
+,
+{"Id":185, "Nombre":"Clase de inactividad de la persona de referencia de la vivienda", "Codigo":""}
+,
+{"Id":186, "Nombre":"Número de perceptores de ingresos en la vivienda", "Codigo":""}
+,
+{"Id":187, "Nombre":"Perceptores de ingresos que conviven con la persona de referencia", "Codigo":""}
+,
+{"Id":188, "Nombre":"Según perciba o no ingresos la persona de referencia", "Codigo":""}
+,
+{"Id":189, "Nombre":"Número de parados que conviven en la vivienda con la persona de referencia", "Codigo":""}
+,
+{"Id":190, "Nombre":"Proporción de parados", "Codigo":""}
+,
+{"Id":191, "Nombre":"Principales magnitudes", "Codigo":""}
+,
+{"Id":192, "Nombre":"Sector del nivel de formación alcanzado", "Codigo":""}
+,
+{"Id":193, "Nombre":"Sector de estudios en curso reglados", "Codigo":""}
+,
+{"Id":194, "Nombre":"Sector de estudios en curso no reglados", "Codigo":""}
+,
+{"Id":195, "Nombre":"Objetivo de la formación (no reglada)", "Codigo":""}
+,
+{"Id":196, "Nombre":"Participación empresarial en su formación (no reglada)", "Codigo":""}
+,
+{"Id":197, "Nombre":"Días trabajados en el domicilio particular", "Codigo":""}
+,
+{"Id":198, "Nombre":"Sábados trabajados al mes", "Codigo":""}
+,
+{"Id":199, "Nombre":"Domingos trabajados al mes", "Codigo":""}
+,
+{"Id":200, "Nombre":"Días trabajados al final de la tarde", "Codigo":""}
+,
+{"Id":201, "Nombre":"Días trabajados por la noche", "Codigo":""}
+,
+{"Id":202, "Nombre":"Forma de la jornada laboral", "Codigo":""}
+,
+{"Id":203, "Nombre":"Trabajo con un sistema de turnos", "Codigo":""}
+,
+{"Id":204, "Nombre":"Tipo de puesto laboral", "Codigo":""}
+,
+{"Id":205, "Nombre":"Número de personas que trabajan en el establecimiento", "Codigo":""}
+,
+{"Id":206, "Nombre":"Contratado a través de una empresa de trabajo temporal", "Codigo":""}
+,
+{"Id":207, "Nombre":"Participación de una oficina pública de empleo", "Codigo":""}
+,
+{"Id":208, "Nombre":"Motivo de tener un contrato o relación laboral temporal", "Codigo":""}
+,
+{"Id":209, "Nombre":"Empleo en el que desean trabajar más horas", "Codigo":""}
+,
+{"Id":210, "Nombre":"Razón de búsqueda de otro empleo", "Codigo":""}
+,
+{"Id":211, "Nombre":"Situación anterior a la búsqueda de empleo", "Codigo":""}
+,
+{"Id":212, "Nombre":"Causa de dejar el último empleo", "Codigo":""}
+,
+{"Id":213, "Nombre":"Situación profesional en el último empleo", "Codigo":""}
+,
+{"Id":214, "Nombre":"Ocupación en el último empleo", "Codigo":""}
+,
+{"Id":215, "Nombre":"Sector económico del último empleo", "Codigo":""}
+,
+{"Id":216, "Nombre":"Motivo de no buscar empleo por cuidar  personas dependientes", "Codigo":""}
+,
+{"Id":217, "Nombre":"Datos para viviendas y personas", "Codigo":""}
+,
+{"Id":218, "Nombre":"Unidad de medida", "Codigo":""}
+,
+{"Id":219, "Nombre":"Clasificación según E.R.", "Codigo":""}
+,
+{"Id":220, "Nombre":"Clasificación según E.O.", "Codigo":""}
+,
+{"Id":221, "Nombre":"Relación con la actividad económica", "Codigo":""}
+,
+{"Id":222, "Nombre":"Tipo de indicador", "Codigo":""}
+,
+{"Id":223, "Nombre":"Horas efectivas trabajadas en el empleo principal", "Codigo":""}
+,
+{"Id":224, "Nombre":"Situación de desempleo por sexo", "Codigo":""}
+,
+{"Id":225, "Nombre":"Sectores ecónomicos", "Codigo":""}
+,
+{"Id":229, "Nombre":"Conceptos salariales/laborales", "Codigo":""}
+,
+{"Id":230, "Nombre":"Componentes del coste", "Codigo":""}
+,
+{"Id":233, "Nombre":"Tiempo de trabajo", "Codigo":""}
+,
+{"Id":238, "Nombre":"Tipo de cambio", "Codigo":""}
+,
+{"Id":239, "Nombre":"Cancelación hipoteca", "Codigo":""}
+,
+{"Id":240, "Nombre":"Naturaleza de la finca", "Codigo":""}
+,
+{"Id":241, "Nombre":"Capital prestado", "Codigo":""}
+,
+{"Id":242, "Nombre":"Intereses", "Codigo":""}
+,
+{"Id":243, "Nombre":"Tramos de extensión", "Codigo":""}
+,
+{"Id":244, "Nombre":"Entidad que concede el préstamo", "Codigo":""}
+,
+{"Id":245, "Nombre":"Duración en años de la hipoteca", "Codigo":""}
+,
+{"Id":246, "Nombre":"Bienes muebles", "Codigo":""}
+,
+{"Id":247, "Nombre":"Concepto financiero", "Codigo":""}
+,
+{"Id":249, "Nombre":"Cifra de Negocio/Personal Ocupado", "Codigo":""}
+,
+{"Id":255, "Nombre":"Grupo de Venta", "Codigo":""}
+,
+{"Id":257, "Nombre":"Destino económico de bienes (CNAE-93)", "Codigo":""}
+,
+{"Id":258, "Nombre":"Destino económico de bienes  (CNAE-2009)", "Codigo":""}
+,
+{"Id":259, "Nombre":"Fenómeno demográfico", "Codigo":""}
+,
+{"Id":260, "Nombre":"Conceptos Demográficos", "Codigo":""}
+,
+{"Id":261, "Nombre":"Conceptos demográficos derivados 2", "Codigo":""}
+,
+{"Id":264, "Nombre":"Conjunto Urbano o No Urbano", "Codigo":""}
+,
+{"Id":265, "Nombre":"Grupos COICOP", "Codigo":""}
+,
+{"Id":266, "Nombre":"Subgrupos 2001", "Codigo":""}
+,
+{"Id":267, "Nombre":"Clases 2001", "Codigo":""}
+,
+{"Id":268, "Nombre":"Subclases 2001", "Codigo":""}
+,
+{"Id":269, "Nombre":"Grupos especiales 2001", "Codigo":""}
+,
+{"Id":270, "Nombre":"Rúbricas 2001", "Codigo":""}
+,
+{"Id":271, "Nombre":"Grupos COICOP 1992", "Codigo":""}
+,
+{"Id":272, "Nombre":"Subgrupos 1992", "Codigo":""}
+,
+{"Id":273, "Nombre":"Clases 1992", "Codigo":""}
+,
+{"Id":274, "Nombre":"Subclases 1992", "Codigo":""}
+,
+{"Id":275, "Nombre":"Rúbricas 1992", "Codigo":""}
+,
+{"Id":276, "Nombre":"Grupos especiales 1992", "Codigo":""}
+,
+{"Id":277, "Nombre":"Grupos 1992", "Codigo":""}
+,
+{"Id":278, "Nombre":"Grupos 1983", "Codigo":""}
+,
+{"Id":279, "Nombre":"Rúbricas 1983", "Codigo":""}
+,
+{"Id":280, "Nombre":"Subclases 1983", "Codigo":""}
+,
+{"Id":281, "Nombre":"Grupos especiales 1983", "Codigo":""}
+,
+{"Id":282, "Nombre":"Grupos 1976", "Codigo":""}
+,
+{"Id":283, "Nombre":"Rúbricas 1976", "Codigo":""}
+,
+{"Id":284, "Nombre":"Subclases 1976", "Codigo":""}
+,
+{"Id":285, "Nombre":"Capitales de provincia", "Codigo":""}
+,
+{"Id":288, "Nombre":"Clases 2006", "Codigo":""}
+,
+{"Id":289, "Nombre":"Subclases 2006", "Codigo":""}
+,
+{"Id":290, "Nombre":"Subgrupos 2006", "Codigo":""}
+,
+{"Id":291, "Nombre":"Divisiones", "Codigo":""}
+,
+{"Id":293, "Nombre":"Grupos", "Codigo":""}
+,
+{"Id":294, "Nombre":"Índices corregidos de efecto calendario, basados en la CNAE-2009", "Codigo":""}
+,
+{"Id":295, "Nombre":"Secciones de la CNAE 2009", "Codigo":""}
+,
+{"Id":296, "Nombre":"Destino económico de los bienes", "Codigo":""}
+,
+{"Id":297, "Nombre":"Secciones y subsecciones de la CNAE-93", "Codigo":""}
+,
+{"Id":298, "Nombre":"Destino económico de los bienes (Base 2000)", "Codigo":""}
+,
+{"Id":299, "Nombre":"Secciones y subsecciones (Base 2000)", "Codigo":""}
+,
+{"Id":300, "Nombre":"Divisiones (Base 2000)", "Codigo":""}
+,
+{"Id":301, "Nombre":"Destino económico de los bienes (Base 90)", "Codigo":""}
+,
+{"Id":302, "Nombre":"Secciones y subsecciones (Base 90)", "Codigo":""}
+,
+{"Id":303, "Nombre":"Divisiones (Base 90)", "Codigo":""}
+,
+{"Id":304, "Nombre":"Destino económico de los bienes (Base 2000) exportación", "Codigo":""}
+,
+{"Id":305, "Nombre":"Destino económico de los bienes (Base 2000) importación", "Codigo":""}
+,
+{"Id":306, "Nombre":"Actividades económicas (Histórico Base 90)", "Codigo":""}
+,
+{"Id":307, "Nombre":"Destino económico de los bienes (Base 2005)", "Codigo":""}
+,
+{"Id":308, "Nombre":"Divisiones (Base 2005)", "Codigo":""}
+,
+{"Id":309, "Nombre":"Lugar de referencia del fenómeno demográfico", "Codigo":""}
+,
+{"Id":310, "Nombre":"Periodicidad", "Codigo":""}
+,
+{"Id":311, "Nombre":"Edad de la madre", "Codigo":""}
+,
+{"Id":319, "Nombre":"Subíndice IPCA", "Codigo":""}
+,
+{"Id":328, "Nombre":"Ciudades", "Codigo":""}
+,
+{"Id":332, "Nombre":"Generación/Decadas/Año nacimiento", "Codigo":""}
+,
+{"Id":336, "Nombre":"Estrato de asalariados", "Codigo":""}
+,
+{"Id":337, "Nombre":"Condición jurídica", "Codigo":""}
+,
+{"Id":338, "Nombre":"Actividad principal", "Codigo":""}
+,
+{"Id":340, "Nombre":"Tipo de operación", "Codigo":""}
+,
+{"Id":341, "Nombre":"Clasificación Ampliada de la Balanza de Pagos de Servicios (CABPS)", "Codigo":""}
+,
+{"Id":345, "Nombre":"Estado de la vivienda", "Codigo":""}
+,
+{"Id":355, "Nombre":"Valores simples de edad", "Codigo":""}
+,
+{"Id":356, "Nombre":"Totales de edad", "Codigo":""}
+,
+{"Id":357, "Nombre":"Semiintervalos de edad", "Codigo":""}
+,
+{"Id":360, "Nombre":"Grupos de edad", "Codigo":""}
+,
+{"Id":364, "Nombre":"Porcentajes", "Codigo":""}
+,
+{"Id":368, "Nombre":"Actividad económica (CNAE-93)", "Codigo":""}
+,
+{"Id":369, "Nombre":"Actividad económica (CNAE-09)", "Codigo":""}
+,
+{"Id":372, "Nombre":"Tipo de concurso", "Codigo":""}
+,
+{"Id":374, "Nombre":"Clase de procedimiento", "Codigo":""}
+,
+{"Id":375, "Nombre":"Existencia de propuesta anticipada", "Codigo":""}
+,
+{"Id":376, "Nombre":"Contenido propuesta", "Codigo":""}
+,
+{"Id":377, "Nombre":"Componentes PIBpm, demanda (a desaparecer)", "Codigo":""}
+,
+{"Id":378, "Nombre":"Componentes PIBpm, oferta (a desaparecer)", "Codigo":""}
+,
+{"Id":379, "Nombre":"Operaciones y saldos (con el resto del mundo)", "Codigo":""}
+,
+{"Id":381, "Nombre":"Tipo de dato: Niveles y Tasas", "Codigo":""}
+,
+{"Id":382, "Nombre":"Tipo de dato: Tasas", "Codigo":""}
+,
+{"Id":384, "Nombre":"SECTORES ", "Codigo":""}
+,
+{"Id":386, "Nombre":"RELACIÓN CON LA ACTIVIDAD ", "Codigo":""}
+,
+{"Id":387, "Nombre":"DIVISIONES", "Codigo":""}
+,
+{"Id":389, "Nombre":"SECCIONES ", "Codigo":""}
+,
+{"Id":390, "Nombre":"SUBSECCIONES", "Codigo":""}
+,
+{"Id":391, "Nombre":"GRUPOS", "Codigo":""}
+,
+{"Id":393, "Nombre":"TOTALES VARIABLES CNAE", "Codigo":""}
+,
+{"Id":394, "Nombre":"CLASES", "Codigo":""}
+,
+{"Id":395, "Nombre":"DESTINO ECONOMICO DE LOS BIENES", "Codigo":""}
+,
+{"Id":406, "Nombre":"EUROSTAT_Edad", "Codigo":""}
+,
+{"Id":429, "Nombre":"Cambios de conceptos", "Codigo":""}
+,
+{"Id":430, "Nombre":"Volumen de negocio", "Codigo":""}
+,
+{"Id":431, "Nombre":"Países y Continentes", "Codigo":""}
+,
+{"Id":432, "Nombre":"Países", "Codigo":""}
+,
+{"Id":433, "Nombre":"Concepto turístico", "Codigo":""}
+,
+{"Id":434, "Nombre":"Grupos (Base 2005) CNAE -09", "Codigo":""}
+,
+{"Id":435, "Nombre":"Continentes", "Codigo":""}
+,
+{"Id":440, "Nombre":"Divisiones", "Codigo":""}
+,
+{"Id":441, "Nombre":"Secciones", "Codigo":""}
+,
+{"Id":445, "Nombre":"Divisiones corregidas de efecto calendario de la CNAE 2009", "Codigo":""}
+,
+{"Id":446, "Nombre":"Grupos", "Codigo":""}
+,
+{"Id":447, "Nombre":"Grupos corregidos de efecto calendario de la CNAE 2009", "Codigo":""}
+,
+{"Id":448, "Nombre":"Índices corregidos de efecto calendario, basados en la CNAE-74", "Codigo":""}
+,
+{"Id":449, "Nombre":"Índices corregidos de efecto calendario, basados en la CNAE-93", "Codigo":""}
+,
+{"Id":450, "Nombre":"Secciones corregidas de efecto calendario de la CNAE 2009", "Codigo":""}
+,
+{"Id":451, "Nombre":"Zonas Geográficas del Resto del Mundo", "Codigo":""}
+,
+{"Id":452, "Nombre":"Orden de nacimiento", "Codigo":""}
+,
+{"Id":456, "Nombre":"OCUPACIONES", "Codigo":""}
+,
+{"Id":457, "Nombre":"Ocupación", "Codigo":""}
+,
+{"Id":458, "Nombre":"TOTALES OCUPACIONES", "Codigo":""}
+,
+{"Id":460, "Nombre":"Situación profesional                               ", "Codigo":""}
+,
+{"Id":461, "Nombre":"SECTORES DE ESTUDIOS - CNED-F", "Codigo":""}
+,
+{"Id":462, "Nombre":"TOTALES CLASIFICACION EDUCACIÓN", "Codigo":""}
+,
+{"Id":463, "Nombre":"NIVELES DE FORMACIÓN ALCANZADO - CNED-A", "Codigo":""}
+,
+{"Id":464, "Nombre":"NIVELES EDUCATIVOS - CNED-P", "Codigo":""}
+,
+{"Id":469, "Nombre":"CANTIDAD", "Codigo":""}
+,
+{"Id":470, "Nombre":"SITUACION DE ACTIVIDAD", "Codigo":""}
+,
+{"Id":472, "Nombre":"Motivos de jornada parcial, de no buscar empleo y de dejar el último empleo", "Codigo":""}
+,
+{"Id":474, "Nombre":"Razón por la que trabajó un número de horas distinto al habitual", "Codigo":""}
+,
+{"Id":476, "Nombre":"SI/NO", "Codigo":""}
+,
+{"Id":478, "Nombre":"TIPO DE TRANSPORTE", "Codigo":""}
+,
+{"Id":479, "Nombre":"Indicadores Urban Audit", "Codigo":""}
+,
+{"Id":480, "Nombre":"OPERACIONES DE BIENES Y SERVICIOS", "Codigo":""}
+,
+{"Id":481, "Nombre":"OPERACIONES DE DISTRIBUCIÓN", "Codigo":""}
+,
+{"Id":482, "Nombre":"SALDOS CONTABLES", "Codigo":""}
+,
+{"Id":483, "Nombre":"RÚBRICAS DE ACUMULACIÓN", "Codigo":""}
+,
+{"Id":484, "Nombre":"Destino económico de los bienes corregidos de efecto calendario", "Codigo":""}
+,
+{"Id":486, "Nombre":"Ocupación CNO-11", "Codigo":""}
+,
+{"Id":487, "Nombre":"Ocupación CNO-11 (empleo secundario)", "Codigo":""}
+,
+{"Id":488, "Nombre":"Ocupación CNO-11 (empleo principal)", "Codigo":""}
+,
+{"Id":489, "Nombre":"CAPITALES", "Codigo":""}
+,
+{"Id":490, "Nombre":"Relación con la actividad", "Codigo":""}
+,
+{"Id":491, "Nombre":"Secciones", "Codigo":""}
+,
+{"Id":492, "Nombre":"Conceptos demográficos derivados 1", "Codigo":""}
+,
+{"Id":494, "Nombre":"OPERACIÓN DE DISTRIBUCIÓN REMUNERACIÓN DE ASALARIADOS", "Codigo":""}
+,
+{"Id":495, "Nombre":"SALDO CONTABLE VAB", "Codigo":""}
+,
+{"Id":496, "Nombre":"OPERACIÓN DE BIENES Y SERVICIOS FBCF", "Codigo":""}
+,
+{"Id":497, "Nombre":"Grupos COICOP 2006", "Codigo":""}
+,
+{"Id":498, "Nombre":"Rúbricas 2006", "Codigo":""}
+,
+{"Id":499, "Nombre":"Grupos especiales 2006", "Codigo":""}
+,
+{"Id":500, "Nombre":"Situacion profesional", "Codigo":""}
+,
+{"Id":501, "Nombre":"Precios_SEC", "Codigo":""}
+,
+{"Id":502, "Nombre":"Empleo por Rama de actividad. CTA", "Codigo":""}
+,
+{"Id":503, "Nombre":"Régimen de la vivienda", "Codigo":""}
+,
+{"Id":504, "Nombre":"Rama de actividad - CNAE2009", "Codigo":""}
+,
+{"Id":505, "Nombre":"Titular de la vivienda", "Codigo":""}
+,
+{"Id":506, "Nombre":"AGRUPACIONES CNAE", "Codigo":""}
+,
+{"Id":507, "Nombre":"Grupos COICOP 2011", "Codigo":""}
+,
+{"Id":508, "Nombre":"Grupos especiales 2011", "Codigo":""}
+,
+{"Id":509, "Nombre":"Rúbricas 2011", "Codigo":""}
+,
+{"Id":510, "Nombre":"Clases 2011", "Codigo":""}
+,
+{"Id":511, "Nombre":"Subclases 2011", "Codigo":""}
+,
+{"Id":512, "Nombre":"Subgrupos 2011", "Codigo":""}
+,
+{"Id":514, "Nombre":"Nombre", "Codigo":""}
+,
+{"Id":515, "Nombre":"PADRON", "Codigo":""}
+,
+{"Id":516, "Nombre":"Nacionalidad", "Codigo":""}
+,
+{"Id":517, "Nombre":"Apellido", "Codigo":""}
+,
+{"Id":518, "Nombre":"Tipo de apellido", "Codigo":""}
+,
+{"Id":519, "Nombre":"VARIABLE NO CONSIDERADA", "Codigo":""}
+,
+{"Id":520, "Nombre":"Ocupación en el último empleo ", "Codigo":""}
+,
+{"Id":524, "Nombre":"Principales Resultados de Contabilidad", "Codigo":""}
+,
+{"Id":525, "Nombre":"Recursos y empleos", "Codigo":""}
+,
+{"Id":528, "Nombre":"Agrupaciones regionales (NUTS 1)", "Codigo":""}
+,
+{"Id":529, "Nombre":"Valor Añadido Bruto de actividades", "Codigo":""}
+,
+{"Id":530, "Nombre":"Formación Bruta de Capital Fijo de actividades", "Codigo":""}
+,
+{"Id":533, "Nombre":"Tipo de sector", "Codigo":""}
+,
+{"Id":536, "Nombre":"Nacionalidad de la persona de refencia", "Codigo":""}
+,
+{"Id":538, "Nombre":"Porcentajes de renta por unidad de consumo", "Codigo":""}
+,
+{"Id":539, "Nombre":"Relación con la actividad en periodo anterior", "Codigo":""}
+,
+{"Id":542, "Nombre":"Clases", "Codigo":""}
+,
+{"Id":543, "Nombre":"Tipo de mercado", "Codigo":""}
+,
+{"Id":544, "Nombre":"Corrección de efectos", "Codigo":""}
+,
+{"Id":545, "Nombre":"Tipo de vivienda", "Codigo":"2613"}
+,
+{"Id":546, "Nombre":"Edad de la persona de refencia", "Codigo":""}
+,
+{"Id":548, "Nombre":"Sexo de la persona de referencia", "Codigo":""}
+,
+{"Id":549, "Nombre":"Problemas que sufre la vivienda y entorno", "Codigo":""}
+,
+{"Id":550, "Nombre":"Agrupaciones EPA", "Codigo":""}
+,
+{"Id":551, "Nombre":"Personas en cada encuesta e índice de cambio neto", "Codigo":""}
+,
+{"Id":552, "Nombre":"SITUACIÓN PROFESIONAL", "Codigo":""}
+,
+{"Id":553, "Nombre":"Situación profesional del empleo principal", "Codigo":""}
+,
+{"Id":554, "Nombre":"Situación profesional del empleo secundario", "Codigo":""}
+,
+{"Id":555, "Nombre":"RELACIÓN CON LA ACTIVIDAD DERIVADA", "Codigo":""}
+,
+{"Id":556, "Nombre":"AGRUPACIONES NIVELES DE FORMACIÓN", "Codigo":""}
+,
+{"Id":557, "Nombre":"Tipo de carencia de material", "Codigo":""}
+,
+{"Id":558, "Nombre":"Dificultad para llegar a fin de mes", "Codigo":""}
+,
+{"Id":559, "Nombre":"Dominio", "Codigo":""}
+,
+{"Id":560, "Nombre":"Indicador", "Codigo":""}
+,
+{"Id":561, "Nombre":"Concepto (ANTIGUA DSD BDE)", "Codigo":""}
+,
+{"Id":562, "Nombre":"Motivos por los que no se ha podido cubrir las vacantes existentes en el periodo anterior", "Codigo":""}
+,
+{"Id":563, "Nombre":"Motivos por los que no exiten puestos de trabajo vacantes", "Codigo":""}
+,
+{"Id":565, "Nombre":"Tipo de establecimiento", "Codigo":""}
+,
+{"Id":567, "Nombre":"Título de adquisición", "Codigo":""}
+,
+{"Id":568, "Nombre":"Estados Sociedades", "Codigo":""}
+,
+{"Id":571, "Nombre":"Clase de disolución", "Codigo":""}
+,
+{"Id":572, "Nombre":"Tramos de Capital", "Codigo":""}
+,
+{"Id":574, "Nombre":"AGRUPACIONES DE NIVELES EDUCATIVOS", "Codigo":""}
+,
+{"Id":576, "Nombre":"Estado civil de la madre", "Codigo":""}
+,
+{"Id":577, "Nombre":"Causa de muerte", "Codigo":""}
+,
+{"Id":578, "Nombre":"Organismo ", "Codigo":""}
+,
+{"Id":579, "Nombre":"Personas de referencia", "Codigo":""}
+,
+{"Id":580, "Nombre":"Motivo del viaje", "Codigo":""}
+,
+{"Id":581, "Nombre":"Destino de turismo", "Codigo":""}
+,
+{"Id":582, "Nombre":"Semiintervalos de edad conyuge 2", "Codigo":""}
+,
+{"Id":583, "Nombre":"Materiales y Mano de Obra", "Codigo":""}
+,
+{"Id":584, "Nombre":"Edad del cónyuge 2", "Codigo":""}
+,
+{"Id":585, "Nombre":"Totales de edad conyuge 2", "Codigo":""}
+,
+{"Id":587, "Nombre":"Tipo de viaje", "Codigo":""}
+,
+{"Id":588, "Nombre":"Duración del viaje", "Codigo":""}
+,
+{"Id":589, "Nombre":"Sectores institucionales", "Codigo":""}
+,
+{"Id":590, "Nombre":"Sector institucional homólogo", "Codigo":""}
+,
+{"Id":591, "Nombre":"Balanza de pagos", "Codigo":""}
+,
+{"Id":592, "Nombre":"Partida de contabilidad", "Codigo":""}
+,
+{"Id":593, "Nombre":"Anotación de cuentas internacionales", "Codigo":""}
+,
+{"Id":594, "Nombre":"Categoría funcional", "Codigo":""}
+,
+{"Id":595, "Nombre":"Clasificación de instrumentos y activos", "Codigo":""}
+,
+{"Id":596, "Nombre":"Vencimiento", "Codigo":""}
+,
+{"Id":597, "Nombre":"Moneda", "Codigo":""}
+,
+{"Id":598, "Nombre":"Compiliation methodology", "Codigo":""}
+,
+{"Id":602, "Nombre":"Consolidación", "Codigo":""}
+,
+{"Id":604, "Nombre":"Activity classification", "Codigo":"ACTIVITY"}
+,
+{"Id":605, "Nombre":"Expenditure", "Codigo":"EXPENDITURE"}
+,
+{"Id":606, "Nombre":"Transformación", "Codigo":""}
+,
+{"Id":607, "Nombre":"Cust breakdown", "Codigo":""}
+,
+{"Id":608, "Nombre":"Detalle periodo", "Codigo":""}
+,
+{"Id":609, "Nombre":"Forma de regulación de las relaciones laborales", "Codigo":""}
+,
+{"Id":611, "Nombre":"Efectos de Comerciales", "Codigo":""}
+,
+{"Id":612, "Nombre":"Generación/edades", "Codigo":""}
+,
+{"Id":613, "Nombre":"Tipo de visitante", "Codigo":""}
+,
+{"Id":614, "Nombre":"Modificaciones condiciones convenio colectivo", "Codigo":""}
+,
+{"Id":615, "Nombre":"Situación personal", "Codigo":""}
+,
+{"Id":616, "Nombre":"Indicadores de Desarrollo Sostenible (ODS)", "Codigo":""}
+,
+{"Id":617, "Nombre":"Número de hijos", "Codigo":""}
+,
+{"Id":618, "Nombre":"Nivel de renta", "Codigo":""}
+,
+{"Id":619, "Nombre":"Brecha de género", "Codigo":""}
+,
+{"Id":620, "Nombre":"Edad del hijo", "Codigo":""}
+,
+{"Id":621, "Nombre":"Motivo de excedencia a tiempo completo", "Codigo":""}
+,
+{"Id":622, "Nombre":"Percentiles simples", "Codigo":""}
+,
+{"Id":625, "Nombre":"Semiintervalos de percentiles", "Codigo":""}
+,
+{"Id":626, "Nombre":"Grupos de percentiles", "Codigo":""}
+,
+{"Id":628, "Nombre":"Múltiplos del Salario Mínimo Interprofesional", "Codigo":""}
+,
+{"Id":629, "Nombre":"Agrupaciones CABPS", "Codigo":""}
+,
+{"Id":630, "Nombre":"Tiempo de excedencia", "Codigo":""}
+,
+{"Id":631, "Nombre":"Relación con la justicia", "Codigo":""}
+,
+{"Id":632, "Nombre":"Tipo de violencia", "Codigo":""}
+,
+{"Id":633, "Nombre":"Medidas cautelares", "Codigo":""}
+,
+{"Id":634, "Nombre":"Tipo de relación sentimental", "Codigo":""}
+,
+{"Id":635, "Nombre":"Partidos Políticos", "Codigo":""}
+,
+{"Id":636, "Nombre":"Ámbitos de representación", "Codigo":""}
+,
+{"Id":637, "Nombre":"Grupos parlamentarios", "Codigo":""}
+,
+{"Id":638, "Nombre":"Cargo", "Codigo":""}
+,
+{"Id":639, "Nombre":"Órganos Institucionales", "Codigo":""}
+,
+{"Id":640, "Nombre":"Reales Academias", "Codigo":""}
+,
+{"Id":641, "Nombre":"Brecha de parentalidad", "Codigo":""}
+,
+{"Id":642, "Nombre":"Origen del turismo", "Codigo":""}
+,
+{"Id":643, "Nombre":"Concepto Educativo", "Codigo":""}
+,
+{"Id":644, "Nombre":"Convocatoria de la prueba de acceso a la universidad", "Codigo":""}
+,
+{"Id":645, "Nombre":"Actividad cultural", "Codigo":""}
+,
+{"Id":646, "Nombre":"Categoría profesional", "Codigo":""}
+,
+{"Id":647, "Nombre":"Medidas estadísticas", "Codigo":""}
+,
+{"Id":648, "Nombre":"Conceptos tecnológicos", "Codigo":""}
+,
+{"Id":649, "Nombre":"Sector de ejecución", "Codigo":""}
+,
+{"Id":650, "Nombre":"Frecuencia", "Codigo":""}
+,
+{"Id":651, "Nombre":"Razón de usar Internet", "Codigo":""}
+,
+{"Id":652, "Nombre":"Campo de estudio", "Codigo":""}
+,
+{"Id":653, "Nombre":"Enseñanza que se imparte", "Codigo":""}
+,
+{"Id":654, "Nombre":"Lista de actividades de ocio armonizada", "Codigo":""}
+,
+{"Id":655, "Nombre":"Quien fija el horario de trabajo", "Codigo":""}
+,
+{"Id":656, "Nombre":"Redución de las horas trabajadas por el cuidado de niños", "Codigo":""}
+,
+{"Id":657, "Nombre":"Tipo de trabajo", "Codigo":""}
+,
+{"Id":658, "Nombre":"Duración en horas", "Codigo":""}
+,
+{"Id":659, "Nombre":"Conceptos sanitarios", "Codigo":""}
+,
+{"Id":660, "Nombre":"Fuente", "Codigo":""}
+,
+{"Id":661, "Nombre":"Valoración del estado de salud", "Codigo":""}
+,
+{"Id":663, "Nombre":"Clase social basada en la ocupación", "Codigo":""}
+,
+{"Id":664, "Nombre":"Intensidad", "Codigo":""}
+,
+{"Id":665, "Nombre":"Dependencia funcional", "Codigo":""}
+,
+{"Id":666, "Nombre":"Tiempo transcurrido", "Codigo":""}
+,
+{"Id":667, "Nombre":"Limitación", "Codigo":""}
+,
+{"Id":668, "Nombre":"Tipo de problema sanitario", "Codigo":""}
+,
+{"Id":669, "Nombre":"Lugar del accidente", "Codigo":""}
+,
+{"Id":670, "Nombre":"Motivo de la consulta médica", "Codigo":""}
+,
+{"Id":671, "Nombre":"Masa corporal", "Codigo":""}
+,
+{"Id":672, "Nombre":"Tipo de alimento", "Codigo":""}
+,
+{"Id":674, "Nombre":"Duración de la lactancia", "Codigo":""}
+,
+{"Id":675, "Nombre":"Tipo de lactancia", "Codigo":""}
+,
+{"Id":676, "Nombre":"Persona que realiza la actividad en el hogar", "Codigo":""}
+,
+{"Id":677, "Nombre":"Consumo de tabaco", "Codigo":""}
+,
+{"Id":678, "Nombre":"Tiempo de exposición", "Codigo":""}
+,
+{"Id":679, "Nombre":"Problema medioambiental", "Codigo":""}
+,
+{"Id":680, "Nombre":"Tipo de discapacidad", "Codigo":""}
+,
+{"Id":682, "Nombre":"Número de personas con discapacidad", "Codigo":""}
+,
+{"Id":683, "Nombre":"Sexo del cuidador principal", "Codigo":""}
+,
+{"Id":684, "Nombre":"Decil de salarios", "Codigo":""}
+,
+{"Id":689, "Nombre":"Tiempo de residencia en el municipio", "Codigo":""}
+,
+{"Id":691, "Nombre":"Relacion entre lugar de trabajo y residencia", "Codigo":""}
+,
+{"Id":692, "Nombre":"Ubicación del municipio de residencia anterior", "Codigo":""}
+,
+{"Id":693, "Nombre":"Tipo de hábitat anterior", "Codigo":""}
+,
+{"Id":694, "Nombre":"Ubicación del municipio de nacimiento", "Codigo":""}
+,
+{"Id":696, "Nombre":"Curso Académico", "Codigo":""}
+,
+{"Id":697, "Nombre":"Agrupaciones de Sectores de Estudios", "Codigo":""}
+,
+{"Id":698, "Nombre":"Número de perceptores", "Codigo":""}
+,
+{"Id":699, "Nombre":"Modo de adquisición de la nacionalidad", "Codigo":""}
+,
+{"Id":701, "Nombre":"Mes del fallecimiento", "Codigo":""}
+,
+{"Id":702, "Nombre":"Estado civil del cónyuge 1", "Codigo":""}
+,
+{"Id":703, "Nombre":"Estado civil del cónyuge 2", "Codigo":""}
+,
+{"Id":704, "Nombre":"Tipo de parto", "Codigo":""}
+,
+{"Id":705, "Nombre":"Maturidad", "Codigo":""}
+,
+{"Id":706, "Nombre":"Nacionalidad de la madre", "Codigo":""}
+,
+{"Id":707, "Nombre":"Nacionalidad del padre", "Codigo":""}
+,
+{"Id":708, "Nombre":"Asistencia sanitaria", "Codigo":""}
+,
+{"Id":709, "Nombre":"Nivel de formación de la madre", "Codigo":""}
+,
+{"Id":710, "Nombre":"Nivel de formación del padre", "Codigo":""}
+,
+{"Id":711, "Nombre":"Orden del nacido vivo", "Codigo":""}
+,
+{"Id":713, "Nombre":"Lugar de nacimiento de la madre", "Codigo":""}
+,
+{"Id":714, "Nombre":"Lugar de nacimiento del padre", "Codigo":""}
+,
+{"Id":715, "Nombre":"Edad del padre", "Codigo":""}
+,
+{"Id":716, "Nombre":"Intervalo intergenésico", "Codigo":""}
+,
+{"Id":717, "Nombre":"Peso al nacimiento", "Codigo":""}
+,
+{"Id":718, "Nombre":"Supervivencia del nacido", "Codigo":""}
+,
+{"Id":719, "Nombre":"Semanas de gestación", "Codigo":""}
+,
+{"Id":721, "Nombre":"Edad del cónyuge 1", "Codigo":""}
+,
+{"Id":723, "Nombre":"Sexo de los contrayentes", "Codigo":""}
+,
+{"Id":724, "Nombre":"Nacionalidad del cónyuge 1", "Codigo":""}
+,
+{"Id":725, "Nombre":"Nacionalidad del cónyuge 2", "Codigo":""}
+,
+{"Id":726, "Nombre":"Mes de celebración", "Codigo":""}
+,
+{"Id":727, "Nombre":"Forma de celebración", "Codigo":""}
+,
+{"Id":728, "Nombre":"Según otras religiones", "Codigo":""}
+,
+{"Id":729, "Nombre":"Lugar de nacimiento del cónyuge 1", "Codigo":""}
+,
+{"Id":730, "Nombre":"Lugar de nacimiento del cónyuge 2", "Codigo":""}
+,
+{"Id":731, "Nombre":"Multiplicidad del parto", "Codigo":""}
+,
+{"Id":735, "Nombre":"Multiplicidad/vitalidad del parto", "Codigo":""}
+,
+{"Id":737, "Nombre":"Mes del nacimiento", "Codigo":""}
+,
+{"Id":738, "Nombre":"Tipo de disolución matrimonial", "Codigo":""}
+,
+{"Id":739, "Nombre":"Tipo de resolución matrimonial", "Codigo":""}
+,
+{"Id":740, "Nombre":"Tipo de matrimonio según sexo", "Codigo":""}
+,
+{"Id":741, "Nombre":"AGRUPACIONES OCUPACIONES", "Codigo":""}
+,
+{"Id":742, "Nombre":"Antigüedad en el empleo", "Codigo":""}
+,
+{"Id":743, "Nombre":"Duración del matrimonio", "Codigo":""}
+,
+{"Id":745, "Nombre":"Duración del procedimiento", "Codigo":""}
+,
+{"Id":746, "Nombre":"Tipo de separación", "Codigo":""}
+,
+{"Id":747, "Nombre":"Tipo de divorcio", "Codigo":""}
+,
+{"Id":748, "Nombre":"Cónyuge que debe pagar la pensión compensatoria", "Codigo":""}
+,
+{"Id":749, "Nombre":"Cónyuge que debe pagar la pensión alimenticia", "Codigo":""}
+,
+{"Id":750, "Nombre":"Cónyuge que presenta la demanda", "Codigo":""}
+,
+{"Id":751, "Nombre":"Cónyuge que debe ejercer la custodia", "Codigo":""}
+,
+{"Id":752, "Nombre":"Existe o no separación previa", "Codigo":""}
+,
+{"Id":753, "Nombre":"Tipo de matrimonio según nacionalidad de los conyuges", "Codigo":""}
+,
+{"Id":754, "Nombre":"Edad del esposo", "Codigo":""}
+,
+{"Id":755, "Nombre":"Edad de la esposa", "Codigo":""}
+,
+{"Id":756, "Nombre":"Nacionalidad del esposo", "Codigo":""}
+,
+{"Id":757, "Nombre":"Nacionalidad de la esposa", "Codigo":""}
+,
+{"Id":758, "Nombre":"Estado civil del esposo", "Codigo":""}
+,
+{"Id":759, "Nombre":"Estado civil de la esposa", "Codigo":""}
+,
+{"Id":760, "Nombre":"Número de hijos menores o mayores dependientes", "Codigo":""}
+,
+{"Id":762, "Nombre":"Grupos ECOICOP", "Codigo":""}
+,
+{"Id":763, "Nombre":"Subgrupos ECOICOP", "Codigo":""}
+,
+{"Id":764, "Nombre":"Clases ECOICOP", "Codigo":""}
+,
+{"Id":765, "Nombre":"Subclases ECOICOP", "Codigo":""}
+,
+{"Id":766, "Nombre":"Estado del asunto jurídico", "Codigo":""}
+,
+{"Id":767, "Nombre":"Asuntos civiles resueltos", "Codigo":""}
+,
+{"Id":768, "Nombre":"Tipo de asunto jurídico", "Codigo":""}
+,
+{"Id":769, "Nombre":"Asuntos penales resueltos", "Codigo":""}
+,
+{"Id":771, "Nombre":"Relacion entre lugar de nacimiento y residencia", "Codigo":""}
+,
+{"Id":773, "Nombre":"Tamaño del municipio de residencia", "Codigo":""}
+,
+{"Id":774, "Nombre":"Tamaño del municipio de nacimiento", "Codigo":""}
+,
+{"Id":777, "Nombre":"País de origen o destino", "Codigo":""}
+,
+{"Id":778, "Nombre":" Valores especiales", "Codigo":""}
+,
+{"Id":779, "Nombre":"Tipo de transporte según contenido", "Codigo":""}
+,
+{"Id":780, "Nombre":"Tipo de transporte según destino", "Codigo":""}
+,
+{"Id":781, "Nombre":"Tipo de unidad de transporte", "Codigo":""}
+,
+{"Id":782, "Nombre":"Flete", "Codigo":""}
+,
+{"Id":783, "Nombre":" Tipo de accidente ferroviario significativo", "Codigo":""}
+,
+{"Id":784, "Nombre":"Tipo de precursor de accidente ferroviario", "Codigo":""}
+,
+{"Id":785, "Nombre":"Heridos graves y víctimas mortales", "Codigo":""}
+,
+{"Id":786, "Nombre":"Tipo de mercancía peligrosa", "Codigo":""}
+,
+{"Id":787, "Nombre":"NST (Standard goods classification for transport statistics) 2007 ", "Codigo":""}
+,
+{"Id":788, "Nombre":"Unidades de medida", "Codigo":""}
+,
+{"Id":789, "Nombre":"Accidentes con mercancías peligrosas", "Codigo":""}
+,
+{"Id":790, "Nombre":"Tipo de víctima de accidente", "Codigo":""}
+,
+{"Id":791, "Nombre":"Tipo de accidente ferroviario", "Codigo":""}
+,
+{"Id":792, "Nombre":"TABLE_IDENTIFIER", "Codigo":""}
+,
+{"Id":794, "Nombre":"Tipo de interés", "Codigo":""}
+,
+{"Id":796, "Nombre":"Subgrupos COICOP/EPF", "Codigo":""}
+,
+{"Id":797, "Nombre":"Clases COICOP/EPF", "Codigo":""}
+,
+{"Id":798, "Nombre":"Subclases COICOP/EPF", "Codigo":""}
+,
+{"Id":799, "Nombre":"Estrato de ocupados", "Codigo":""}
+,
+{"Id":800, "Nombre":"Lugar de pago", "Codigo":""}
+,
+{"Id":801, "Nombre":"Quintil de gasto", "Codigo":""}
+,
+{"Id":802, "Nombre":"Compra por internet", "Codigo":""}
+,
+{"Id":803, "Nombre":"Tipo de gasto", "Codigo":""}
+,
+{"Id":806, "Nombre":"CUST_BREAKDOWN_LB", "Codigo":""}
+,
+{"Id":807, "Nombre":"Códigos de gasto con cantidad física (ECOICOP/EPF)", "Codigo":""}
+,
+{"Id":808, "Nombre":"Tasa de Divorcialidad", "Codigo":""}
+,
+{"Id":809, "Nombre":"Tipos de penas", "Codigo":""}
+,
+{"Id":810, "Nombre":"Número de delitos", "Codigo":""}
+,
+{"Id":811, "Nombre":"Número de penas", "Codigo":""}
+,
+{"Id":812, "Nombre":"Duración de la pena", "Codigo":""}
+,
+{"Id":813, "Nombre":"Grado de comisión", "Codigo":""}
+,
+{"Id":815, "Nombre":"Medidas adoptadas", "Codigo":""}
+,
+{"Id":816, "Nombre":"Número de medidas adoptadas", "Codigo":""}
+,
+{"Id":817, "Nombre":"Número de infracciones penales", "Codigo":""}
+,
+{"Id":818, "Nombre":"Motivos para no viajar", "Codigo":""}
+,
+{"Id":820, "Nombre":"Delitos Faltas", "Codigo":""}
+,
+{"Id":821, "Nombre":"Actividades de trabajo no remunerado ", "Codigo":""}
+,
+{"Id":822, "Nombre":"Horas trabajadas no remuneradas", "Codigo":""}
+,
+{"Id":823, "Nombre":"Indicador (últimos datos)", "Codigo":""}
+,
+{"Id":824, "Nombre":"Tipo de dato (últimos datos)", "Codigo":""}
+,
+{"Id":825, "Nombre":"Time period collection", "Codigo":""}
+,
+{"Id":826, "Nombre":"LCI_ACTIVITY", "Codigo":""}
+,
+{"Id":828, "Nombre":"Indicadores de desigualdad", "Codigo":""}
+,
+{"Id":831, "Nombre":"Penas y medidas", "Codigo":""}
+,
+{"Id":832, "Nombre":"Lugar de nacimiento de la victima", "Codigo":""}
+,
+{"Id":833, "Nombre":"Lugar de nacimiento del denunciado", "Codigo":""}
+,
+{"Id":834, "Nombre":"Edad de la victima", "Codigo":""}
+,
+{"Id":835, "Nombre":"Edad del denunciado", "Codigo":""}
+,
+{"Id":837, "Nombre":"Condenados", "Codigo":""}
+,
+{"Id":838, "Nombre":"CNAE Agrupación A10", "Codigo":""}
+,
+{"Id":839, "Nombre":"CNAE Agrupación A21", "Codigo":""}
+,
+{"Id":840, "Nombre":"CNAE Agrupación A64", "Codigo":""}
+,
+{"Id":841, "Nombre":"Pronunciamiento de la sentencia", "Codigo":""}
+,
+{"Id":842, "Nombre":"Causa del litigio", "Codigo":""}
+,
+{"Id":843, "Nombre":"Dictamen del decreto", "Codigo":""}
+,
+{"Id":844, "Nombre":"Tipo de arrendamiento", "Codigo":""}
+,
+{"Id":845, "Nombre":"Año de llegada a España", "Codigo":""}
+,
+{"Id":848, "Nombre":"Distribución de la renta", "Codigo":""}
+,
+{"Id":849, "Nombre":"Distribución de la fuente de ingresos", "Codigo":""}
+,
+{"Id":850, "Nombre":"Población de municipios desaparecidos", "Codigo":""}
+,
+{"Id":851, "Nombre":"Motivo para no contratar servicios para el cuidado de hijos", "Codigo":""}
+,
+{"Id":852, "Nombre":"Medidas adptadas para el cuidado de familiares dependientes", "Codigo":""}
+,
+{"Id":853, "Nombre":"Formula para dejar de trabajar", "Codigo":""}
+,
+{"Id":855, "Nombre":"Situación matrimonial de la madre", "Codigo":""}
+,
+{"Id":858, "Nombre":"Tipo de stock", "Codigo":""}
+,
+{"Id":859, "Nombre":"Activos", "Codigo":""}
+,
+{"Id":860, "Nombre":"Estado civil anterior", "Codigo":""}
+,
+{"Id":861, "Nombre":"Lugar de nacimiento del esposo", "Codigo":""}
+,
+{"Id":862, "Nombre":"Lugar de nacimiento de la esposa", "Codigo":""}
+,
+{"Id":863, "Nombre":"Ocupación del padre", "Codigo":""}
+,
+{"Id":864, "Nombre":"Ocupación de la madre", "Codigo":""}
+,
+{"Id":865, "Nombre":"Relación con la actividad del padre", "Codigo":""}
+,
+{"Id":866, "Nombre":"Relación con la actividad de la madre", "Codigo":""}
+,
+{"Id":867, "Nombre":"Normalidad del parto", "Codigo":""}
+,
+{"Id":868, "Nombre":"Multiplicidad/sexo", "Codigo":""}
+,
+{"Id":869, "Nombre":"Nivel de formación del cónyuge 1", "Codigo":""}
+,
+{"Id":870, "Nombre":"Nivel de formación del cónyuge 2", "Codigo":""}
+,
+{"Id":871, "Nombre":"Ocupación del cónyunge 1", "Codigo":""}
+,
+{"Id":872, "Nombre":"Ocupación del cónyunge 2", "Codigo":""}
+,
+{"Id":873, "Nombre":"Áreas de movilidad", "Codigo":""}
+,
+{"Id":875, "Nombre":"Zonas geográficas de España", "Codigo":""}
+,
+{"Id":876, "Nombre":"Escenario", "Codigo":""}
+,
+{"Id":877, "Nombre":"Control de la empresa", "Codigo":""}
+,
+{"Id":878, "Nombre":"Tipo de indicador", "Codigo":""}
+,
+{"Id":879, "Nombre":"Tareas de supervisión otros trabajadores", "Codigo":""}
+,
+{"Id":880, "Nombre":"Relación con la actividad del cónyuge 1", "Codigo":""}
+,
+{"Id":881, "Nombre":"Relación con la actividad del cónyuge 2", "Codigo":""}
+,
+{"Id":882, "Nombre":"Tipo de representación", "Codigo":""}
+,
+{"Id":883, "Nombre":"Personas con y sin discapacidad", "Codigo":""}
+,
+{"Id":884, "Nombre":"Situaciones en relación a la Seguridad Social", "Codigo":""}
+,
+{"Id":887, "Nombre":"Grado de urbanización", "Codigo":""}
+,
+{"Id":890, "Nombre":"Régimen de tenencia de la SAU", "Codigo":""}
+,
+{"Id":893, "Nombre":"Indicadores agricolas", "Codigo":""}
+,
+{"Id":894, "Nombre":"Tipo de tareas informáticas", "Codigo":""}
+,
+{"Id":895, "Nombre":"Indicadores de confianza empresarial", "Codigo":""}
+,
+{"Id":896, "Nombre":"Utilización de la capacidad productiva en la industria", "Codigo":""}
+,
+{"Id":897, "Nombre":"Conceptos demográficos de empresas", "Codigo":""}
+,
+{"Id":898, "Nombre":"Indicadores ODS", "Codigo":""}
+,
+{"Id":899, "Nombre":"Tamaño de alojamiento", "Codigo":""}
+,
+{"Id":900, "Nombre":"Tipo de alojamiento", "Codigo":""}
+,
+{"Id":901, "Nombre":"Cohortes", "Codigo":""}
+,
+{"Id":902, "Nombre":"ERTE", "Codigo":""}
+,
+{"Id":903, "Nombre":"COMPOSITE_BREAKDOWN", "Codigo":""}
+,
+{"Id":904, "Nombre":"REPORTING_TYPE", "Codigo":""}
+,
+{"Id":905, "Nombre":"PRODUCT", "Codigo":""}
+,
+{"Id":906, "Nombre":"Duración de la ausencia", "Codigo":""}
+,
+{"Id":908, "Nombre":"Personalidad jurídica del titular", "Codigo":""}
+,
+{"Id":909, "Nombre":"Tamaño de las explotaciones según SAU (Ha.)", "Codigo":""}
+,
+{"Id":910, "Nombre":"Tipo de explotación según SAU y UG", "Codigo":""}
+,
+{"Id":911, "Nombre":"OTE", "Codigo":""}
+,
+{"Id":912, "Nombre":"Distribución general de la explotación", "Codigo":""}
+,
+{"Id":914, "Nombre":"Certificación ecológica de las explotaciones", "Codigo":""}
+,
+{"Id":915, "Nombre":"Formación agraria del jefe/a ", "Codigo":""}
+,
+{"Id":916, "Nombre":"Porcentaje de tiempo trabajado (tramo UTAT)", "Codigo":""}
+,
+{"Id":917, "Nombre":"OAL relacionadas con la explotación", "Codigo":""}
+,
+{"Id":918, "Nombre":"% VN que representan las OAL sobre el VN total", "Codigo":""}
+,
+{"Id":919, "Nombre":"Plan de seguridad", "Codigo":""}
+,
+{"Id":920, "Nombre":"Tipo de almacenamiento de estiércol ", "Codigo":""}
+,
+{"Id":921, "Nombre":"Tipo de fertilizante utilizado", "Codigo":""}
+,
+{"Id":922, "Nombre":"Exportación e importación de estiércol", "Codigo":""}
+,
+{"Id":923, "Nombre":"Medidas desarrollo rural", "Codigo":""}
+,
+{"Id":924, "Nombre":"Tipo de estabulación de bovinos", "Codigo":""}
+,
+{"Id":925, "Nombre":"Mano de obra en la explotación", "Codigo":""}
+,
+{"Id":926, "Nombre":"Cursos de formación agraria del jefe/a (últimos 12 meses)", "Codigo":""}
+,
+{"Id":927, "Nombre":"Trabajo en la explotación del titular", "Codigo":""}
+,
+{"Id":928, "Nombre":"Jefe/a de la explotación", "Codigo":""}
+,
+{"Id":929, "Nombre":"Tipo de estabulación de porcinos", "Codigo":""}
+,
+{"Id":930, "Nombre":"Tipo de estabulación de gallinas ponedoras", "Codigo":""}
+,
+{"Id":931, "Nombre":"Especies animales", "Codigo":""}
+,
+{"Id":932, "Nombre":"Tipos de ganado", "Codigo":""}
+,
+{"Id":933, "Nombre":"Tamaño de la vivienda", "Codigo":""}
+,
+{"Id":935, "Nombre":"Tamaño de las explotaciones según UGT", "Codigo":""}
+,
+{"Id":936, "Nombre":"Cría o engorde de ganado ecológico", "Codigo":""}
+,
+{"Id":937, "Nombre":"SAU (sin huertos)", "Codigo":""}
+,
+{"Id":938, "Nombre":"Meses (tramos)", "Codigo":""}
+,
+{"Id":939, "Nombre":"Cultivos  y pastos", "Codigo":""}
+,
+{"Id":940, "Nombre":"OAL NO relacionadas con la explotación", "Codigo":""}
+,
+{"Id":941, "Nombre":"Total", "Codigo":""}
+,
+{"Id":942, "Nombre":"Características básicas de la explotación", "Codigo":""}
+,
+{"Id":943, "Nombre":"Tipo de transmitiente", "Codigo":""}
+,
+{"Id":944, "Nombre":"Conceptos demográficos de empresas en el periodo anterior", "Codigo":""}
+,
+{"Id":945, "Nombre":"Tamaño de las explotaciones según  PET (€)", "Codigo":""}
+,
+{"Id":946, "Nombre":"Tamaño de las explotaciones según UTAT", "Codigo":""}
+,
+{"Id":947, "Nombre":"Con/Sin SAU", "Codigo":""}
+,
+{"Id":948, "Nombre":"Tipo de ganado estabulado", "Codigo":""}
+,
+{"Id":949, "Nombre":"Experiencia como jefe/a", "Codigo":""}
+,
+{"Id":951, "Nombre":"SAU", "Codigo":""}
+,
+{"Id":952, "Nombre":"Con o sin OAL", "Codigo":""}
+,
+{"Id":953, "Nombre":"Comarcas", "Codigo":""}
+,
+{"Id":957, "Nombre":"SAU al aire libre", "Codigo":""}
+,
+{"Id":958, "Nombre":"Tipos de cultivos y pastos  II", "Codigo":""}
+,
+{"Id":959, "Nombre":"Distribución general de la ST de la explotación", "Codigo":""}
+,
+{"Id":960, "Nombre":"Técnica de aplicación de estiércol", "Codigo":""}
+,
+{"Id":961, "Nombre":"Tipos ganado bovino", "Codigo":""}
+,
+{"Id":962, "Nombre":"Total", "Codigo":""}
+,
+{"Id":963, "Nombre":"Total", "Codigo":""}
+,
+{"Id":964, "Nombre":"OTE Generales", "Codigo":""}
+,
+{"Id":965, "Nombre":"OTE Principales", "Codigo":""}
+,
+{"Id":966, "Nombre":"OTE Particulares", "Codigo":""}
+,
+{"Id":967, "Nombre":"SAU  y Superficies", "Codigo":""}
+,
+{"Id":968, "Nombre":"Distribución general de la superficie ecológica", "Codigo":""}
+,
+{"Id":969, "Nombre":"Tipo de cultivos III", "Codigo":""}
+,
+{"Id":970, "Nombre":"Tipo de cultivos IV", "Codigo":""}
+,
+{"Id":971, "Nombre":"Tipo de ganado", "Codigo":""}
+,
+{"Id":972, "Nombre":"Cría o engorde de ganado", "Codigo":""}
+,
+{"Id":973, "Nombre":"P.fisica y P.juridica ", "Codigo":""}
+,
+{"Id":974, "Nombre":"Tipos de P.fisica y P.juridica ", "Codigo":""}
+,
+{"Id":975, "Nombre":"Total", "Codigo":""}
+,
+{"Id":976, "Nombre":"Distribución general de la SAU de la explotación", "Codigo":""}
+,
+{"Id":977, "Nombre":"Distribución general de la SAU de la explotación", "Codigo":""}
+,
+{"Id":978, "Nombre":"Total", "Codigo":""}
+,
+{"Id":979, "Nombre":"Con/Sin UGT", "Codigo":""}
+,
+{"Id":980, "Nombre":"Tramos de UGT", "Codigo":""}
+,
+{"Id":981, "Nombre":"Cría o engorde de ganado", "Codigo":""}
+,
+{"Id":982, "Nombre":"Tipo de cultivos IV", "Codigo":""}
+,
+{"Id":983, "Nombre":"Tipo actividad", "Codigo":""}
+,
+{"Id":984, "Nombre":"Titular/Familiar/No familiar", "Codigo":""}
+,
+{"Id":985, "Nombre":"Tipo mano obra", "Codigo":""}
+,
+{"Id":986, "Nombre":"Tipo mano obra contratada", "Codigo":""}
+,
+{"Id":990, "Nombre":"Total", "Codigo":""}
+,
+{"Id":991, "Nombre":"Tipo de estabulación", "Codigo":""}
+,
+{"Id":992, "Nombre":"Con estiércol sólido o líquido", "Codigo":""}
+,
+{"Id":998, "Nombre":"Limitaciones en la participación en el mercado laboral por cuidar de personas dependientes", "Codigo":""}
+,
+{"Id":999, "Nombre":"Total", "Codigo":""}
+,
+{"Id":1000, "Nombre":"Type of entity", "Codigo":""}
+,
+{"Id":1001, "Nombre":"Antigüedad del contrato de arrendamiento", "Codigo":""}
+,
+{"Id":1002, "Nombre":"Intervalos de error", "Codigo":""}
+,
+{"Id":1005, "Nombre":"Pertenencia a grupo empresarial", "Codigo":""}
+,
+{"Id":1006, "Nombre":"Grupo empresarial", "Codigo":""}
+,
+{"Id":1007, "Nombre":"Tamaño de la empresa", "Codigo":""}
+,
+{"Id":1009, "Nombre":"Acceso a distintos tipos de atención sanitaria", "Codigo":""}
+,
+{"Id":1010, "Nombre":"Razones por las que no ha accedido a atención sanitaria", "Codigo":""}
+,
+{"Id":1013, "Nombre":"Edad (personas mayores de 16 años)", "Codigo":""}
+,
+{"Id":1014, "Nombre":"Relación entre lugar de residencia y lugar de estudios ", "Codigo":""}
+,
+{"Id":1015, "Nombre":"Tipo de estudios en curso", "Codigo":""}
+,
+{"Id":1016, "Nombre":"Tipo de material", "Codigo":""}
+,
+{"Id":1017, "Nombre":"Residuos de envases", "Codigo":""}
+,
+{"Id":1018, "Nombre":"Materias primas secundarias", "Codigo":""}
+,
+{"Id":1019, "Nombre":"Tipo de consumo", "Codigo":""}
+,
+{"Id":1020, "Nombre":"Tipo de flujo energético", "Codigo":""}
+,
+{"Id":1021, "Nombre":"Demarcación marina", "Codigo":""}
+,
+{"Id":1022, "Nombre":"Grupo taxonómico", "Codigo":""}
+,
+{"Id":1023, "Nombre":"Indicador medioambiental", "Codigo":""}
+,
+{"Id":1024, "Nombre":"Agrupaciones CINE-A 2011", "Codigo":""}
+,
+{"Id":1025, "Nombre":"Zonas marítimas/no marítimas", "Codigo":""}
+,
+{"Id":1026, "Nombre":"Indicadores HVD", "Codigo":""}
+,
+{"Id":1027, "Nombre":"Relación con la actividad más frecuente", "Codigo":""}
+,
+{"Id":1028, "Nombre":"Modo reserva alojamiento", "Codigo":""}
+,
+{"Id":1029, "Nombre":"Modo reserva transporte", "Codigo":""}
+,
+{"Id":1030, "Nombre":"Lugar de destino", "Codigo":""}
+,
+{"Id":1031, "Nombre":"Nivel de satisfacción", "Codigo":""}
+,
+{"Id":1032, "Nombre":"Operaciones y flujos", "Codigo":""}
+,
+{"Id":1034, "Nombre":"Percentil de riqueza neta", "Codigo":""}
+,
+{"Id":1035, "Nombre":"Tipo de activo/deuda", "Codigo":""}
+,
+{"Id":1036, "Nombre":"Tamaño municipios de destino", "Codigo":""}
+,
+{"Id":1037, "Nombre":"Tipo de razones", "Codigo":""}
+,
+{"Id":1038, "Nombre":"Tipo de ejercicio", "Codigo":""}
+,
+{"Id":1039, "Nombre":"Intervalo de tiempo semanal", "Codigo":""}
+,
+{"Id":1040, "Nombre":"Año de llegada a CCAA", "Codigo":""}
+,
+{"Id":1041, "Nombre":"Año de llegada a Provincia", "Codigo":""}
+,
+{"Id":1042, "Nombre":"Año de llegada a Municipio", "Codigo":""}
+,
+{"Id":1043, "Nombre":"Mes", "Codigo":""}
+,
+{"Id":1045, "Nombre":"Ramas de actividad y Hogares", "Codigo":""}
+,
+{"Id":1046, "Nombre":"Exportaciones, importaciones y servicios", "Codigo":""}
+,
+{"Id":1047, "Nombre":"Modo de Suministro", "Codigo":""}
+,
+{"Id":1048, "Nombre":"Categorías HVD", "Codigo":""}
+]
