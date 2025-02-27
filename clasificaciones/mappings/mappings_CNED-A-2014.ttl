@@ -107,4 +107,8 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDA
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
         rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:member;
+        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14/{NIVEL}"]
     ].          

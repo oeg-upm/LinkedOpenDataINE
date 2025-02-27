@@ -36,7 +36,6 @@ SDMX_SUBJECT = Namespace("http://purl.org/linked-data/sdmx/2009/subject#")
 INELOD_VOC = Namespace("http://stats.linkeddata.es/voc/cubes/vocabulary/")
 
 # Create two new graphs, one for the data and one for the RML mappings for the observations
-g_data = Graph()
 g_mappings = Graph()
 namespaces = {
     "ex": EX, "schema": SCHEMA, "rr": RR, "rml": RML, "ql": QL, "transit": TRANSIT, "xsd": XSD, 
@@ -46,7 +45,6 @@ namespaces = {
     "sdmx-measure": SDMX_MEASURE, "sdmx-metadata": SDMX_METADATA, "sdmx-code": SDMX_CODE, "sdmx-subject": SDMX_SUBJECT, "inelod-voc" : INELOD_VOC
 }
 for prefix, namespace in namespaces.items():
-    g_data.bind(prefix, namespace)
     g_mappings.bind(prefix, namespace)
 
 # Function to load a list of tuples from a txt file
@@ -62,53 +60,150 @@ def load_variables(file_path):
 # Function to add template metadata to the data graph, those terms that cannot be inferred automatically are left as XXXX values.
 def add_template_metadata(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    triples_map_uri = INELOD[file_name + "_TriplesMap"]
-    g_data.add((INELOD[file_name], RDF.type, QB.DataSet))
-    g_data.add((INELOD[file_name], DCT.title, Literal("XXXX")))
-    g_data.add((INELOD[file_name], RDFS.label, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.description, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.publisher, URIRef("https://www.ine.es/")))
-    g_data.add((INELOD[file_name], DCT.license, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.source, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.created, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.modified, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.issued, Literal("XXXX")))
-    g_data.add((INELOD[file_name], DCT.subject, Literal("XXXX")))
-    g_data.add((INELOD[file_name], QB.structure, INELOD[file_name + "_dsd"]))
-    g_data.add((INELOD[file_name + "_dsd"], RDF.type, QB.DataStructureDefinition))
+    triples_map_dataset = INELOD[file_name + "_TriplesMapDataset"]
+    g_mappings.add((triples_map_dataset, RDF.type, RR.TriplesMap))
+    logical_source_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RML.logicalSource, logical_source_bnode))
+    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+    subject_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.subjectMap, subject_map_bnode))
+    g_mappings.add((subject_map_bnode, RR.subject, INELOD[file_name]))
+    g_mappings.add((subject_map_bnode, RR["class"], QB.DataSet))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.title))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, RDFS.label))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.description))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.publisher))
+    g_mappings.add((predicate_object_map_bnode, RR.object, URIRef("https://www.ine.es/")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.license))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.source))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate,  DCT.created))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate,   DCT.modified))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate,   DCT.issued))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.subject))
+    g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.structure))
+    g_mappings.add((predicate_object_map_bnode, RR.object, INELOD[file_name + "_dsd"]))
+    predicate_object_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, SDMX_ATTRIBUTE.unitMeasure))
+    g_mappings.add((predicate_object_map_bnode, RR.object, SDMX_MEASURE.obsValue))
 
 def add_POM_from_csv(file_path):
     variables = load_variables("variables_correspondence.txt")
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     dsd_uri = INELOD[file_name + "_dsd"]
-    triples_map_uri = INELOD[file_name + "_TriplesMap"]
+    #TM Definition corresponding to the dimensions
+    triples_map_dsd = INELOD[file_name + "_TriplesMapDSD"]
+    g_mappings.add((triples_map_dsd, RDF.type, RR.TriplesMap))
+    logical_source_bnode = BNode()
+    g_mappings.add((triples_map_dsd, RML.logicalSource, logical_source_bnode))
+    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+    subject_map_bnode = BNode()
+    g_mappings.add((triples_map_dsd, RR.subjectMap, subject_map_bnode))
+    g_mappings.add((subject_map_bnode, RR.subject, dsd_uri))
+    g_mappings.add((subject_map_bnode, RR["class"], QB.DataStructureDefinition))
+    #Triples map for the observations
+    triples_map_obs = INELOD[file_name + "_Observations"]
     with open(file_path, mode='r', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
+        reader = csv.DictReader(csvfile, delimiter=';')
         columns = reader.fieldnames
         order = 1
         for column in columns:
+            print("Entro en el for")
+            print(column)
             for ine_var, sdmx_dim in variables:
                 if column == ine_var and column != "Total":
+                    print("Entro en el if")
+                    #This part of the mappings corresponds to the blank nodes of each of the dimensions
+                    triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
+                    g_mappings.add((triples_map_uri_dim, RDF.type, RR.TriplesMap))
+                    logical_source_bnode = BNode()
+                    g_mappings.add((triples_map_uri_dim, RML.logicalSource, logical_source_bnode))
+                    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+                    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+                    subject_map_bnode = BNode()
+                    g_mappings.add((triples_map_uri_dim, RR.subjectMap, subject_map_bnode))
+                    g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
+                    predicate_object_map_bnode = BNode()
+                    g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
+                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dimension))
+                    g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(sdmx_dim.strip())))
+                    predicate_object_map_bnode = BNode()
+                    g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
+                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.order))
+                    g_mappings.add((predicate_object_map_bnode, RR.object, Literal(order)))
+                    #This is the part that corresponds to the components of the DSD.
                     component_bnode = BNode()
-                    g_data.add((dsd_uri, QB.component, component_bnode))
-                    g_data.add((component_bnode, QB.dimension, URIRef(sdmx_dim.strip())))
-                    g_data.add((component_bnode, QB.order, Literal(order)))
+                    predicate_object_map_bnode = BNode()
+                    g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
+                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
+                    g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
+                    g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_dim))
+                    #Part that includes the POM for the observations
                     order += 1
                     pom_bnode = BNode()
-                    g_mappings.add((triples_map_uri, RR.predicateObjectMap, pom_bnode))
+                    g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
                     g_mappings.add((pom_bnode, RR.predicate, URIRef(sdmx_dim.strip())))
                     object_bnode = BNode()
                     g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
                     g_mappings.add((object_bnode, RML.reference, Literal(column)))
 
                 elif column == ine_var and column == "Total":
+                    triples_map_uri_measu = triples_map_dsd+"_measu"
+                    g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
+                    logical_source_bnode = BNode()
+                    g_mappings.add((triples_map_uri_measu, RML.logicalSource, logical_source_bnode))
+                    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+                    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+                    subject_map_bnode = BNode()
+                    g_mappings.add((triples_map_uri_measu, RR.subjectMap, subject_map_bnode))
+                    g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
+                    predicate_object_map_bnode = BNode()
+                    g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
+                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
+                    g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(sdmx_dim.strip())))
+                    #This is the part that corresponds to the components of the DSD.
                     component_bnode = BNode()
-                    g_data.add((dsd_uri, QB.component, component_bnode))
-                    g_data.add((component_bnode, QB.measure, URIRef(sdmx_dim)))
-                    g_data.add((component_bnode, QB.order, Literal(order)))
-                    order += 1
+                    predicate_object_map_bnode = BNode()
+                    g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
+                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
+                    g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
+                    g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_measu))
+                    #Part that includes the POM for the observations
                     pom_bnode = BNode()
-                    g_mappings.add((triples_map_uri, RR.predicateObjectMap, pom_bnode))
+                    g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
                     g_mappings.add((pom_bnode, RR.predicate, URIRef(sdmx_dim)))
                     object_bnode = BNode()
                     g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
@@ -117,8 +212,10 @@ def add_POM_from_csv(file_path):
 # Function to add an index column to the CSV file
 def add_index_column(file_path):
     with open(file_path, mode='r', encoding='utf-8') as csvfile:
-        reader = csv.reader(csvfile)
+        reader = csv.reader(csvfile, delimiter=';')
         headers = next(reader)
+        if "index" in headers:
+            return
         rows = list(reader)
     # Add the index column to the headers
     headers.insert(0, "index")
@@ -126,26 +223,24 @@ def add_index_column(file_path):
     indexed_rows = [[str(index)] + row for index, row in enumerate(rows, start=1)]
     # Write the updated CSV back to the file
     with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, delimiter=';')
         writer.writerow(headers)
         writer.writerows(indexed_rows)
 
 def add_mappings_from_csv(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
-    triples_map_uri = INELOD[file_name + "_TriplesMap"]
-    g_mappings.add((triples_map_uri, RDF.type, RR.TriplesMap))
+    triples_map_obs = INELOD[file_name + "_Observations"]
+    g_mappings.add((triples_map_obs, RDF.type, RR.TriplesMap))
     logical_source_bnode = BNode()
-    g_mappings.add((triples_map_uri, RML.logicalSource, logical_source_bnode))
+    g_mappings.add((triples_map_obs, RML.logicalSource, logical_source_bnode))
     g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
     g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
-
     subject_map_bnode = BNode()
-    g_mappings.add((triples_map_uri, RR.subjectMap, subject_map_bnode))
+    g_mappings.add((triples_map_obs, RR.subjectMap, subject_map_bnode))
     g_mappings.add((subject_map_bnode, RR.template, Literal("https://stats.linkeddata.es/voc/cubes/" + file_name + "/o{index}")))
     g_mappings.add((subject_map_bnode, RR['class'], QB.Observation))
-
     predicate_object_map_bnode = BNode()
-    g_mappings.add((triples_map_uri, RR.predicateObjectMap, predicate_object_map_bnode))
+    g_mappings.add((triples_map_obs, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dataSet))
     g_mappings.add((predicate_object_map_bnode, RR.object, INELOD[file_name]))
 
@@ -180,20 +275,13 @@ print(f"Mappings serialized in {time.time() - start_time:.2f} seconds")
 
 # Execution of Morph-KGC to materialize the data.
 start_time = time.time()
-config = """
+file_name = os.path.splitext(os.path.basename(csv_file_path))[0]
+print(file_name)
+config = f"""
             [DataSource1]
             mappings: cube_output/auto_mappings.ttl
          """
-g_morph = morph_kgc.materialize(config)
+graph=morph_kgc.materialize(config)
 print(f"Data materialized in {time.time() - start_time:.2f} seconds")
+graph.serialize(format='turtle', destination=f"cube_output/{file_name}.ttl")
 
-# Add all triples from the materialized graph to the g_data graph
-start_time = time.time()
-for triple in g_data:
-    g_morph.add(triple)
-print(f"Triples added in {time.time() - start_time:.2f} seconds")
-
-# Serialize the data graph to a file in Turtle format
-start_time = time.time()
-g_morph.serialize(format='turtle', destination="cube_output/auto_data.ttl")
-print(f"Data serialized in {time.time() - start_time:.2f} seconds")

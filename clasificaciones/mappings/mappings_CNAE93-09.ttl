@@ -41,9 +41,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{CODIGO1}";
+        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09/{NIVEL1}/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93/{CODIGO2}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93/{NIVEL2}/{CODIGO2}";];
     ].

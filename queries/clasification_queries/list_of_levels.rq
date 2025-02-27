@@ -1,0 +1,9 @@
+#List of all the levels of a given classification. 
+PREFIX  xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?x ?y ?z
+WHERE {
+?x ?y ?z.
+ ?x rdf:type xkos:ClassificationLevel .
+ ?x skos:inScheme <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>. 
+}

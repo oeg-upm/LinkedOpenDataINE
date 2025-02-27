@@ -96,4 +96,8 @@ FROM AYUDACOD2024PRO.AYUDACOD_CN2020
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
         rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020>;
-    ].          
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:member;
+        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020/{NIVEL}"]
+    ].              

@@ -107,4 +107,8 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_NIV
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
         rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV>;
-    ].          
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:member;
+        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/{NIVEL}"]
+    ].              
