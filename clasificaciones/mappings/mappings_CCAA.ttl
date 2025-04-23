@@ -77,10 +77,6 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
         rr:objectMap [ rr:column "TITABREV"; rr:language "es" ];
     ];    
     rr:predicateObjectMap [
-        rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{PADRE}";];
-    ];
-    rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
         rr:objectMap [ rr:column "NOTA1"; rr:language "es" ];
     ];          

@@ -23,20 +23,49 @@
 @prefix inelod-voc: <https://stats.linkeddata.es/voc/cubes/vocabulary#>
 
 #The following is a list made of the different dimensions and measures that have been developed according to the RDF data cube standard for the INE LinekdStats project.
-#TODO: Add metadata and term documentation for the terms defined in the vocabulary.
 
 # Dimensions
 inelod-voc:nationality a rdf:Property, qb:DimensionProperty;
     rdfs:label "Nacionalidad"@es;
+    rdfs:comment "Vínculo jurídico particular entre un individuo y su Estado, adquirido mediante nacimiento, naturalización, declaración, opción, matrimonio y otras fórmulas acordes con la legislación nacional."@es;
     rdfs:range xsd:string.
 
 inelod-voc:placeOfBirth  a rdf:Property, qb:DimensionProperty;
     rdfs:label "Lugar de nacimiento"@es;
+    rdfs:comment "Lugar en que ha nacido una persona, es decir, el lugar de residencia habitual de la madre en el momento del nacimiento, determinado en la fecha de la recogida de datos."@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
+inelod-voc:countryNationality  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de nacionalidad"@es;
+    rdfs:comment "Vínculo jurídico particular entre un individuo y su Estado, adquirido mediante nacimiento, naturalización, declaración, opción, matrimonio y otras fórmulas acordes con la legislación nacional."@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
+inelod-voc:countryOfBirth  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de nacimiento"@es;
+    rdfs:comment "País en que ha nacido una persona, es decir, el país de residencia habitual de la madre en el momento del nacimiento, determinado en la fecha de la recogida de datos."@es;
+    rdfs:subPropertyOf inelod-voc:placeOfBirth;
+    rdfs:range rdfs:Resource.
+
+inelod-voc:countryOfOrigin  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de procedencia"@es;
+    rdfs:comment "País de procedencia de la mercancía, el país de la exportación."@es;
     rdfs:subPropertyOf sdmx-dimension:refArea;
     rdfs:range rdfs:Resource.
 
 # Measures
 inelod-voc:numberOfIndividuals  a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Numero de individuos de un nivel educativo"@es;
+    rdfs:label "Numero de individuos"@es;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     rdfs:range xsd:integer.
+
+
+# The following is a set of terms that are to relate the RDF terms to the internal representation of the INE, used in INEbase, and the database
+
+inelod-voc:tableId a rdf:Property;
+    rdfs:label "Identificador de la tabla"@es;
+    rdfs:comment "Identificador de la tabla, se emplea en la API JSON, INEbase, y la base de datos local."@es;
+    rdfs:range xsd:integer;
+    dct:source <https://uvima.github.io/datalab/api-json/inicio.html>.

@@ -1,102 +1,102 @@
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_ccaa.nt" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunitat Valenciana "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla - La Mancha "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Melilla"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Madrid, Comunidad de"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asturias, Principado de"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Extremadura "@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#prefLabel> "Galicia "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Murcia, Región de"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rioja, La"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#prefLabel> "País Vasco "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canarias "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla - La Mancha "@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ceuta"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cataluña "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andalucía "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#prefLabel> "País Vasco "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cantabria "@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Navarra, Comunidad Foral de"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canarias "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#prefLabel> "Balears, Illes"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rioja, La"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla y León "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Madrid, Comunidad de"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cantabria "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunitat Valenciana "@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aragón "@es .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Murcia, Región de"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#prefLabel> "Balears, Illes"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andalucía "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla y León "@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Melilla"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asturias, Principado de"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#notation> "16" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#notation> "12" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#notation> "11" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#notation> "15" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#notation> "03" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#notation> "17" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#notation> "06" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#notation> "09" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#notation> "12" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#notation> "18" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#notation> "07" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#notation> "08" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#notation> "06" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#notation> "11" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#notation> "19" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#notation> "14" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#notation> "08" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#notation> "03" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#notation> "13" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#notation> "05" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#notation> "07" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#notation> "15" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#notation> "17" .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#notation> "04" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#notation> "19" .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
-<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
