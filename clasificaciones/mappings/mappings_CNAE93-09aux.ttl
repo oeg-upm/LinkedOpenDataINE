@@ -10,17 +10,11 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
-<#ClassifiTableView> rr:sqlQuery """
-SELECT 
-    CODIGO1, 
-    CODIGO2, 
-    LENGTH(CODIGO1)+1 AS NIVEL1, 
-    LENGTH(CODIGO2) AS NIVEL2
-FROM AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009
-""".
-
 <#Metadata> a rr:TriplesMap;
-    rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009"];
+    rml:logicalSource [
+        rml:source "datasets/correspondencias93-09.csv";
+        rml:referenceFormulation ql:CSV;
+    ];
     rr:subjectMap [
         rr:constant <http://stats.linkeddata.es/voc/correspondencias/CNAE93-CNAE09>;
         rr:class dcat:Distribution;
@@ -39,7 +33,10 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNAE93REV1_CNAE2009
     ]. 
 
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalTable <#ClassifiTableView>;
+    rml:logicalSource [
+        rml:source "datasets/correspondencias93-09.csv";
+        rml:referenceFormulation ql:CSV;
+    ];
     rr:subjectMap [
         rr:template "http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93/6/{CODIGO1}";
     ];
