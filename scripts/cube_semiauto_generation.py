@@ -7,6 +7,7 @@ import time
 
 # Define namespaces for the data used in the RDF cubes.
 EX = Namespace("http://example.org/")
+DCAT = Namespace("http://www.w3.org/ns/dcat#")
 SCHEMA = Namespace("http://schema.org/")
 RR = Namespace("http://www.w3.org/ns/r2rml#")
 RML = Namespace("http://semweb.mmlab.be/ns/rml#")
@@ -108,7 +109,7 @@ def add_template_metadata(file_path):
     g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
     predicate_object_map_bnode = BNode()
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
-    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.subject))
+    g_mappings.add((predicate_object_map_bnode, RR.predicate, DCAT.theme))
     g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
     predicate_object_map_bnode = BNode()
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
@@ -287,7 +288,7 @@ print(f"Mappings serialized in {time.time() - start_time:.2f} seconds")
 # Execution of Morph-KGC to materialize the data.
 start_time = time.time()
 
-os.system(f"python -m morph_kgc ../config_CSV.ini")
+os.system(f"python -m morph_kgc ../configuration/config_CSV.ini")
 os.rename("knowledge-graph.nt", f"{os.path.splitext(os.path.basename(csv_file_path))[0]}.nt")
 os.rename("auto_mappings.ttl", f"auto_mappings{os.path.splitext(os.path.basename(csv_file_path))[0]}.ttl")
 print(f"Data materialized in {time.time() - start_time:.2f} seconds")

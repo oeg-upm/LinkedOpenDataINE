@@ -1,3 +1,4 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix inelod: <http://stats.linkeddata.es/voc/cubes/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
@@ -13,38 +14,38 @@
 inelod:66618_Observations a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
-    rr:predicateObjectMap [ rr:objectMap [ rml:reference "Capitales y grandes ciudades" ] ;
-            rr:predicate sdmx-dimension:refArea ],
-        [ rr:objectMap [ rml:reference "Nivel de estudios" ] ;
-            rr:predicate sdmx-dimension:educationLev ],
-        [ rr:objectMap [ rml:reference "Total" ;
-                    rr:datatype xsd:int ] ;
-            rr:predicate sdmx-measure:obsValue ],
-        [ rr:objectMap [ rml:reference "País de nacimiento" ] ;
-            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfBirth> ],
-        [ rr:object inelod:66618 ;
+    rr:predicateObjectMap [ rr:object inelod:66618 ;
             rr:predicate qb:dataSet ],
         [ rr:objectMap [ rml:reference "Sexo" ] ;
             rr:predicate sdmx-dimension:sex ],
         [ rr:objectMap [ rml:reference "Periodo" ] ;
-            rr:predicate sdmx-dimension:refPeriod ] ;
+            rr:predicate sdmx-dimension:refPeriod ],
+        [ rr:objectMap [ rml:reference "Nivel de estudios" ] ;
+            rr:predicate sdmx-dimension:educationLev ],
+        [ rr:objectMap [ rml:reference "País de nacimiento" ] ;
+            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth> ],
+        [ rr:objectMap [ rml:reference "Total" ;
+                    rr:datatype xsd:int ] ;
+            rr:predicate sdmx-measure:obsValue ],
+        [ rr:objectMap [ rml:reference "Capitales y grandes ciudades" ] ;
+            rr:predicate sdmx-dimension:refArea ] ;
     rr:subjectMap [ rr:class qb:Observation ;
             rr:template "https://stats.linkeddata.es/voc/cubes/66618/o{index}" ] .
 
 inelod:66618_TriplesMapDSD a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
-    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim5 ] ;
-            rr:predicate qb:component ],
-        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim3 ] ;
-            rr:predicate qb:component ],
-        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim2 ] ;
-            rr:predicate qb:component ],
-        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_measu ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim2 ] ;
             rr:predicate qb:component ],
         [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim4 ] ;
             rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_measu ] ;
+            rr:predicate qb:component ],
         [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim1 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim3 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:66618_TriplesMapDSD_bndim5 ] ;
             rr:predicate qb:component ] ;
     rr:subjectMap [ rr:class qb:DataStructureDefinition ;
             rr:constant inelod:66618_dsd ] .
@@ -53,49 +54,49 @@ inelod:66618_TriplesMapDataset a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
     rr:predicateObjectMap [ rr:object "XXXX" ;
-            rr:predicate dct:subject ],
+            rr:predicate dct:issued ],
         [ rr:object "XXXX" ;
             rr:predicate dct:license ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:created ],
-        [ rr:object "XXXX" ;
-            rr:predicate dct:title ],
-        [ rr:object "XXXX" ;
             rr:predicate rdfs:label ],
-        [ rr:object <https://www.ine.es/> ;
-            rr:predicate dct:publisher ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:source ],
-        [ rr:object inelod:66618_dsd ;
-            rr:predicate qb:structure ],
+            rr:predicate dcat:theme ],
         [ rr:object "XXXX" ;
             rr:predicate dct:description ],
+        [ rr:object inelod:66618_dsd ;
+            rr:predicate qb:structure ],
         [ rr:object sdmx-measure:obsValue ;
             rr:predicate sdmx-attribute:unitMeasure ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:issued ],
+            rr:predicate dct:created ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:modified ] ;
+            rr:predicate dct:modified ],
+        [ rr:object "XXXX" ;
+            rr:predicate dct:title ],
+        [ rr:object "XXXX" ;
+            rr:predicate dct:source ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dct:publisher ] ;
     rr:subjectMap [ rr:class qb:DataSet ;
             rr:constant inelod:66618 ] .
 
 inelod:66618_TriplesMapDSD_bndim1 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
-    rr:predicateObjectMap [ rr:object 1 ;
-            rr:predicate qb:order ],
-        [ rr:object sdmx-dimension:refArea ;
-            rr:predicate qb:dimension ] ;
+    rr:predicateObjectMap [ rr:object sdmx-dimension:refArea ;
+            rr:predicate qb:dimension ],
+        [ rr:object 1 ;
+            rr:predicate qb:order ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
 
 inelod:66618_TriplesMapDSD_bndim2 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
-    rr:predicateObjectMap [ rr:object 2 ;
-            rr:predicate qb:order ],
-        [ rr:object sdmx-dimension:sex ;
-            rr:predicate qb:dimension ] ;
+    rr:predicateObjectMap [ rr:object sdmx-dimension:sex ;
+            rr:predicate qb:dimension ],
+        [ rr:object 2 ;
+            rr:predicate qb:order ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
 
@@ -104,7 +105,7 @@ inelod:66618_TriplesMapDSD_bndim3 a rr:TriplesMap ;
             rml:source "../datasets/66618.csv" ] ;
     rr:predicateObjectMap [ rr:object 3 ;
             rr:predicate qb:order ],
-        [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfBirth> ;
+        [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth> ;
             rr:predicate qb:dimension ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
@@ -122,10 +123,10 @@ inelod:66618_TriplesMapDSD_bndim4 a rr:TriplesMap ;
 inelod:66618_TriplesMapDSD_bndim5 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/66618.csv" ] ;
-    rr:predicateObjectMap [ rr:object 5 ;
-            rr:predicate qb:order ],
-        [ rr:object sdmx-dimension:refPeriod ;
-            rr:predicate qb:dimension ] ;
+    rr:predicateObjectMap [ rr:object sdmx-dimension:refPeriod ;
+            rr:predicate qb:dimension ],
+        [ rr:object 5 ;
+            rr:predicate qb:order ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
 

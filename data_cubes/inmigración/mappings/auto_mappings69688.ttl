@@ -1,3 +1,4 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix inelod: <http://stats.linkeddata.es/voc/cubes/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
@@ -13,21 +14,21 @@
 inelod:69688_Observations a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/69688.csv" ] ;
-    rr:predicateObjectMap [ rr:objectMap [ rml:reference "Sexo" ] ;
+    rr:predicateObjectMap [ rr:object inelod:69688 ;
+            rr:predicate qb:dataSet ],
+        [ rr:objectMap [ rml:reference "Sexo" ] ;
             rr:predicate sdmx-dimension:sex ],
-        [ rr:objectMap [ rml:reference "Edad" ] ;
-            rr:predicate sdmx-dimension:age ],
         [ rr:objectMap [ rml:reference "Total" ;
                     rr:datatype xsd:int ] ;
             rr:predicate sdmx-measure:obsValue ],
-        [ rr:objectMap [ rml:reference "Periodo" ] ;
-            rr:predicate sdmx-dimension:refPeriod ],
         [ rr:objectMap [ rml:reference "País de nacimiento" ] ;
-            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfBirth> ],
-        [ rr:object inelod:69688 ;
-            rr:predicate qb:dataSet ],
+            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth> ],
+        [ rr:objectMap [ rml:reference "Edad" ] ;
+            rr:predicate sdmx-dimension:age ],
         [ rr:objectMap [ rml:reference "Nacionalidad" ] ;
-            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#nationality> ] ;
+            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#nationality> ],
+        [ rr:objectMap [ rml:reference "Periodo" ] ;
+            rr:predicate sdmx-dimension:refPeriod ] ;
     rr:subjectMap [ rr:class qb:Observation ;
             rr:template "https://stats.linkeddata.es/voc/cubes/69688/o{index}" ] .
 
@@ -36,15 +37,15 @@ inelod:69688_TriplesMapDSD a rr:TriplesMap ;
             rml:source "../datasets/69688.csv" ] ;
     rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim4 ] ;
             rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim3 ] ;
+            rr:predicate qb:component ],
         [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim2 ] ;
             rr:predicate qb:component ],
         [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim5 ] ;
             rr:predicate qb:component ],
-        [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_measu ] ;
-            rr:predicate qb:component ],
         [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim1 ] ;
             rr:predicate qb:component ],
-        [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_bndim3 ] ;
+        [ rr:objectMap [ rr:parentTriplesMap inelod:69688_TriplesMapDSD_measu ] ;
             rr:predicate qb:component ] ;
     rr:subjectMap [ rr:class qb:DataStructureDefinition ;
             rr:constant inelod:69688_dsd ] .
@@ -53,49 +54,49 @@ inelod:69688_TriplesMapDataset a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/69688.csv" ] ;
     rr:predicateObjectMap [ rr:object "XXXX" ;
-            rr:predicate dct:subject ],
-        [ rr:object sdmx-measure:obsValue ;
-            rr:predicate sdmx-attribute:unitMeasure ],
-        [ rr:object "XXXX" ;
-            rr:predicate dct:description ],
-        [ rr:object <https://www.ine.es/> ;
-            rr:predicate dct:publisher ],
+            rr:predicate dct:title ],
         [ rr:object "XXXX" ;
             rr:predicate dct:created ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:issued ],
-        [ rr:object "XXXX" ;
             rr:predicate dct:source ],
-        [ rr:object "XXXX" ;
-            rr:predicate dct:modified ],
         [ rr:object "XXXX" ;
             rr:predicate dct:license ],
         [ rr:object "XXXX" ;
-            rr:predicate dct:title ],
+            rr:predicate dct:description ],
+        [ rr:object inelod:69688_dsd ;
+            rr:predicate qb:structure ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dct:publisher ],
+        [ rr:object "XXXX" ;
+            rr:predicate dcat:theme ],
+        [ rr:object "XXXX" ;
+            rr:predicate dct:modified ],
+        [ rr:object sdmx-measure:obsValue ;
+            rr:predicate sdmx-attribute:unitMeasure ],
         [ rr:object "XXXX" ;
             rr:predicate rdfs:label ],
-        [ rr:object inelod:69688_dsd ;
-            rr:predicate qb:structure ] ;
+        [ rr:object "XXXX" ;
+            rr:predicate dct:issued ] ;
     rr:subjectMap [ rr:class qb:DataSet ;
             rr:constant inelod:69688 ] .
 
 inelod:69688_TriplesMapDSD_bndim1 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/69688.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfBirth> ;
-            rr:predicate qb:dimension ],
-        [ rr:object 1 ;
-            rr:predicate qb:order ] ;
+    rr:predicateObjectMap [ rr:object 1 ;
+            rr:predicate qb:order ],
+        [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth> ;
+            rr:predicate qb:dimension ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
 
 inelod:69688_TriplesMapDSD_bndim2 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/69688.csv" ] ;
-    rr:predicateObjectMap [ rr:object 2 ;
-            rr:predicate qb:order ],
-        [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#nationality> ;
-            rr:predicate qb:dimension ] ;
+    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#nationality> ;
+            rr:predicate qb:dimension ],
+        [ rr:object 2 ;
+            rr:predicate qb:order ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
 

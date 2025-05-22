@@ -8,9 +8,9 @@ Grupos de edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#nationality
 Nivel de estudios,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
 Lugar de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#placeOfBirth
-País de nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#contryNationality
-País de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfBirth
-País de procedencia,https://stats.linkeddata.es/voc/cubes/vocabulary#contryOfOrigin
+País de nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#countryNationality
+País de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth
+País de procedencia,https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfOrigin
 Municipios,http://purl.org/linked-data/sdmx/2009/dimension#refArea 
 Comunidades y ciudades autonomas,http://purl.org/linked-data/sdmx/2009/dimension#refArea
 Tipo de alojamiento,http://purl.org/dc/terms/source
