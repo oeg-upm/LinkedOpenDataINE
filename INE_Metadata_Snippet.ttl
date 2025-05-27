@@ -1,0 +1,89 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sec-pub: <http://datos.gob.es/kos/sector-publico/sector/>.
+
+<http://stats.linkeddata.es/voc/cubes/66615> rdfs:label "66615";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											 dcat:theme sec-pub:educacion ;
+											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, edad y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, edad y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
+
+<http://stats.linkeddata.es/voc/cubes/66616> rdfs:label "66616";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											 dcat:theme sec-pub:educacion ;
+											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, nacionalidad (española/extranjera) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, nacionalidad (española/extranjera) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
+
+<http://stats.linkeddata.es/voc/cubes/66617> rdfs:label "66617";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											 dcat:theme sec-pub:educacion ;
+											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, lugar de nacimiento (España/extranjero) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, lugar de nacimiento (España/extranjero) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
+
+<http://stats.linkeddata.es/voc/cubes/66618> rdfs:label "66618";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											 dcat:theme sec-pub:educacion ;
+											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacimiento (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacimiento (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)".
+
+<http://stats.linkeddata.es/voc/cubes/66619> rdfs:label "66619";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											 dcat:theme sec-pub:educacion ;
+											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacionalidad (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacionalidad (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)".
+
+<http://stats.linkeddata.es/voc/cubes/69687> rdfs:label "69687";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											 dcat:theme sec-pub:inmigracionyemigracion ;
+											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo y edad";
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo y edad".
+
+<http://stats.linkeddata.es/voc/cubes/69688> rdfs:label "69688";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											 dcat:theme sec-pub:inmigracionyemigracion ;
+											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), nacionalidad y país de nacimiento (España/extranjero)";
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), nacionalidad y país de nacimiento (España/extranjero)".
+
+<http://stats.linkeddata.es/voc/cubes/69689> rdfs:label "69689";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											 dcat:theme sec-pub:inmigracionyemigracion ;
+											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), país de nacimiento y nacionalidad (española/extranjera)";
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), país de nacimiento y nacionalidad (española/extranjera)".
+
+<http://stats.linkeddata.es/voc/cubes/69690> rdfs:label "69690";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											 dcat:theme sec-pub:inmigracionyemigracion ;
+											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, país de procedencia y nacionalidad (española/extranjera)";
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, país de procedencia y nacionalidad (española/extranjera)".
+
+<http://stats.linkeddata.es/voc/cubes/65334> rdfs:label "65334";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											 dcat:theme sec-pub:mercadolaboral ;
+											 dcterms:title "Tasas de paro por distintos grupos de edad, sexo y comunidad autónoma";
+											 dcterms:description "Tasas de paro por distintos grupos de edad, sexo y comunidad autónoma".
+
+<http://stats.linkeddata.es/voc/cubes/2855> rdfs:label "2855";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											 dcat:theme sec-pub:demografia ;
+											 dcterms:title "Albacete: Población por municipios y sexo.";
+											 dcterms:description "Albacete: Población por municipios y sexo.".
+
+<http://stats.linkeddata.es/voc/cubes/2940> rdfs:label "2940";
+											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											 dcat:theme sec-pub:alojamientos ;
+											 dcterms:title "Estancia media, por tipo de alojamiento por comunidad y ciudades autónomas.";
+											 dcterms:description "Estancia media, por tipo de alojamiento por comunidad y ciudades autónomas.".

@@ -1,0 +1,758 @@
+ Tipo de accidente ferroviario significativo
+ Valores especiales
+% VN que representan las OAL sobre el VN total
+AGRUPACIONES CNAE
+AGRUPACIONES DE NIVELES EDUCATIVOS
+AGRUPACIONES NIVELES DE FORMACIÓN
+AGRUPACIONES OCUPACIONES
+Acceso a distintos tipos de atención sanitaria
+Accidentes con mercancías peligrosas
+Actividad cultural
+Actividad económica (CNAE-09)
+Actividad económica (CNAE-93)
+Actividad principal
+Actividades de trabajo no remunerado 
+Actividades económicas (Histórico Base 90)
+Activity classification
+Activos
+Agregados de empleo
+Agrupaciones CABPS
+Agrupaciones CINE-A 2011
+Agrupaciones EPA
+Agrupaciones de Sectores de Estudios
+Agrupaciones regionales (NUTS 1)
+Anotación de cuentas internacionales
+Antigüedad del contrato de arrendamiento
+Antigüedad en el empleo
+Apellido
+Asistencia sanitaria
+Asuntos civiles resueltos
+Asuntos penales resueltos
+Año Base
+Año de llegada a CCAA
+Año de llegada a España
+Año de llegada a Municipio
+Año de llegada a Provincia
+Balanza de pagos
+Bienes muebles
+Brecha de género
+Brecha de parentalidad
+CANTIDAD
+CAPITALES
+CLASES
+CNAE Agrupación A10
+CNAE Agrupación A21
+CNAE Agrupación A64
+COMPOSITE_BREAKDOWN
+CUST_BREAKDOWN_LB
+Cambios de conceptos
+Campo de estudio
+Cancelación hipoteca
+Cantidades medias consumidas
+Capital prestado
+Capitales de provincia
+Características básicas de la explotación
+Cargo
+Categoría funcional
+Categoría profesional
+Categorías HVD
+Causa de dejar el último empleo
+Causa de la actividad reducida
+Causa de muerte
+Causa del litigio
+Causas de la mayor actividad
+Certificación ecológica de las explotaciones
+Cifra de Negocio/Personal Ocupado
+Ciudades
+Clase de disolución
+Clase de inactividad de la persona de referencia de la vivienda
+Clase de procedimiento
+Clase principal de la inactividad
+Clase secundaria de inactividad
+Clase social basada en la ocupación
+Clases
+Clases 1992
+Clases 2001
+Clases 2006
+Clases 2011
+Clases COICOP/EPF
+Clases ECOICOP
+Clasificación Ampliada de la Balanza de Pagos de Servicios (CABPS)
+Clasificación de instrumentos y activos
+Clasificación según E.O.
+Clasificación según E.R.
+Cohortes
+Colectivo
+Comarcas
+Compiliation methodology
+Componentes PIBpm, demanda 
+Componentes PIBpm, demanda (a desaparecer)
+Componentes PIBpm, oferta
+Componentes PIBpm, oferta (a desaparecer)
+Componentes PIBpm, renta
+Componentes del coste
+Composición del hogar
+Compra por internet
+Comunidades y Ciudades Autónomas
+Con estiércol sólido o líquido
+Con o sin OAL
+Con/Sin SAU
+Con/Sin UGT
+Concepto (ANTIGUA DSD BDE)
+Concepto Educativo
+Concepto financiero
+Concepto turístico
+Conceptos Demográficos
+Conceptos demográficos de empresas
+Conceptos demográficos de empresas en el periodo anterior
+Conceptos demográficos derivados 1
+Conceptos demográficos derivados 2
+Conceptos salariales/laborales
+Conceptos sanitarios
+Conceptos tecnológicos
+Condenados
+Condición jurídica
+Condición socioeconómica
+Conjunto Urbano o No Urbano
+Consolidación
+Consumo de tabaco
+Contenido propuesta
+Continentes
+Contratado a través de una empresa de trabajo temporal
+Control de la empresa
+Conurbación
+Convocatoria de la prueba de acceso a la universidad
+Corrección de efectos
+Cría o engorde de ganado
+Cría o engorde de ganado ecológico
+Cultivos  y pastos
+Cultivos, pastos y huertos
+Curso Académico
+Cursos de formación agraria del jefe/a (últimos 12 meses)
+Cust breakdown
+Códigos de gasto (4 dígitos)
+Códigos de gasto (5 dígitos)
+Códigos de gasto con cantidad física
+Códigos de gasto con cantidad física (ECOICOP/EPF)
+Cónyuge que debe ejercer la custodia
+Cónyuge que debe pagar la pensión alimenticia
+Cónyuge que debe pagar la pensión compensatoria
+Cónyuge que presenta la demanda
+DESTINO ECONOMICO DE LOS BIENES
+DIVISIONES
+Datos para viviendas y personas
+Decil de salarios
+Delitos Faltas
+Demarcación marina
+Densidad de población
+Dependencia funcional
+Deseo de modificar su horario habitual
+Destino de turismo
+Destino económico de bienes  (CNAE-2009)
+Destino económico de bienes (CNAE-93)
+Destino económico de los bienes
+Destino económico de los bienes (Base 2000)
+Destino económico de los bienes (Base 2000) exportación
+Destino económico de los bienes (Base 2000) importación
+Destino económico de los bienes (Base 2005)
+Destino económico de los bienes (Base 90)
+Destino económico de los bienes corregidos de efecto calendario
+Detalle periodo
+Dictamen del decreto
+Dificultad para llegar a fin de mes
+Disposición de agua caliente
+Disposición de calefacción
+Disposición de otras viviendas distintas de la principal
+Distribución de la fuente de ingresos
+Distribución de la renta
+Distribución general de la SAU de la explotación
+Distribución general de la ST de la explotación
+Distribución general de la explotación
+Distribución general de la superficie ecológica
+Distritos
+Divisiones
+Divisiones (Base 2000)
+Divisiones (Base 2005)
+Divisiones (Base 90)
+Divisiones corregidas de efecto calendario de la CNAE 2009
+Domingos trabajados al mes
+Dominio
+Duración de la ausencia
+Duración de la lactancia
+Duración de la pena
+Duración del contrato o relación laboral
+Duración del matrimonio
+Duración del procedimiento
+Duración del viaje
+Duración en años de la hipoteca
+Duración en horas
+Días trabajados al final de la tarde
+Días trabajados en el domicilio particular
+Días trabajados por la noche
+ERTE
+EUROSTAT_Edad
+Edad
+Edad (personas mayores de 16 años)
+Edad de la esposa
+Edad de la madre
+Edad de la persona de refencia
+Edad de la victima
+Edad del cónyuge 1
+Edad del cónyuge 2
+Edad del denunciado
+Edad del esposo
+Edad del hijo
+Edad del padre
+Edad en que finalizo la formación
+Efectos de Comerciales
+Empleo en el que desean trabajar más horas
+Empleo por Rama de actividad. CTA
+Enseñanza que se imparte
+Entidad que concede el préstamo
+Escenario
+Especies animales
+Estado civil
+Estado civil anterior
+Estado civil de la esposa
+Estado civil de la madre
+Estado civil del cónyuge 1
+Estado civil del cónyuge 2
+Estado civil del esposo
+Estado de la vivienda
+Estado del asunto jurídico
+Estados Sociedades
+Estadística
+Estrato de asalariados
+Estrato de ocupados
+Estudiantes entre 16 y 25 años que conviven con la persona de referencia
+Estudios en curso
+Estudios en curso no reglados
+Estudios en curso reglados
+Estudios reglados
+Existe o no separación previa
+Existencia de propuesta anticipada
+Expenditure
+Experiencia como jefe/a
+Exportaciones, importaciones y servicios
+Exportación e importación de estiércol
+Fenómeno demográfico
+Flete
+Forma de búsqueda de empleo
+Forma de celebración
+Forma de la jornada laboral
+Forma de organización del viaje
+Forma de regulación de las relaciones laborales
+Formación Bruta de Capital Fijo de actividades
+Formación agraria del jefe/a 
+Formula para dejar de trabajar
+Frecuencia
+Fuente
+Fuente de energía utilizada para calentar el agua
+Fuente de energía utilizada para la calefacción
+GRUPOS
+Gasto total y valor unitario
+Gastos totales y medios (monetario)
+Gastos totales, medios, distribución porcentual e índices sobre la media del gasto
+Generación/Decadas/Año nacimiento
+Generación/edades
+Grado de comisión
+Grado de urbanización
+Grupo de Venta
+Grupo empresarial
+Grupo taxonómico
+Grupos
+Grupos (Base 2005) CNAE -09
+Grupos 1976
+Grupos 1983
+Grupos 1992
+Grupos COICOP
+Grupos COICOP 1992
+Grupos COICOP 2006
+Grupos COICOP 2011
+Grupos ECOICOP
+Grupos corregidos de efecto calendario de la CNAE 2009
+Grupos de Productos
+Grupos de edad
+Grupos de gasto (2 dígitos)
+Grupos de percentiles
+Grupos especiales 1983
+Grupos especiales 1992
+Grupos especiales 2001
+Grupos especiales 2006
+Grupos especiales 2011
+Grupos parlamentarios
+Heridos graves y víctimas mortales
+Hogares y personas
+Horas efectivas trabajadas en el empleo principal
+Horas trabajadas no remuneradas
+Indicador
+Indicador (últimos datos)
+Indicador medioambiental
+Indicadores HVD
+Indicadores ODS
+Indicadores Urban Audit
+Indicadores agricolas
+Indicadores de Desarrollo Sostenible (ODS)
+Indicadores de confianza empresarial
+Indicadores de desigualdad
+Intensidad
+Intereses
+Intervalo de tiempo semanal
+Intervalo intergenésico
+Intervalos de error
+Islas
+Jefe/a de la explotación
+LCI_ACTIVITY
+Limitaciones en la participación en el mercado laboral por cuidar de personas dependientes
+Limitación
+Lista de actividades de ocio armonizada
+Lugar de destino
+Lugar de nacimiento
+Lugar de nacimiento de la esposa
+Lugar de nacimiento de la madre
+Lugar de nacimiento de la victima
+Lugar de nacimiento del cónyuge 1
+Lugar de nacimiento del cónyuge 2
+Lugar de nacimiento del denunciado
+Lugar de nacimiento del esposo
+Lugar de nacimiento del padre
+Lugar de pago
+Lugar de referencia del fenómeno demográfico
+Lugar del accidente
+MODALIDADES DE ALQUILER
+Mano de obra en la explotación
+Masa corporal
+Materiales y Mano de Obra
+Materias primas secundarias
+Maturidad
+Medidas adoptadas
+Medidas adptadas para el cuidado de familiares dependientes
+Medidas cautelares
+Medidas desarrollo rural
+Medidas estadísticas
+Mes
+Mes de celebración
+Mes del fallecimiento
+Mes del nacimiento
+Meses (tramos)
+Modificaciones condiciones convenio colectivo
+Modo de Suministro
+Modo de adquisición de la nacionalidad
+Modo reserva alojamiento
+Modo reserva transporte
+Moneda
+Motivo de excedencia a tiempo completo
+Motivo de la consulta médica
+Motivo de no buscar empleo
+Motivo de no buscar empleo por cuidar  personas dependientes
+Motivo de tener un contrato o relación laboral temporal
+Motivo del viaje
+Motivo para no contratar servicios para el cuidado de hijos
+Motivos de jornada parcial, de no buscar empleo y de dejar el último empleo
+Motivos de la jornada parcial
+Motivos de no trabajar
+Motivos para no viajar
+Motivos por los que no exiten puestos de trabajo vacantes
+Motivos por los que no se ha podido cubrir las vacantes existentes en el periodo anterior
+Multiplicidad del parto
+Multiplicidad/sexo
+Multiplicidad/vitalidad del parto
+Municipios
+Múltiplos del Salario Mínimo Interprofesional
+NIVELES DE FORMACIÓN ALCANZADO - CNED-A
+NIVELES EDUCATIVOS - CNED-P
+NST (Standard goods classification for transport statistics) 2007 
+Nacionalidad
+Nacionalidad de la esposa
+Nacionalidad de la madre
+Nacionalidad de la persona de refencia
+Nacionalidad del cónyuge 1
+Nacionalidad del cónyuge 2
+Nacionalidad del esposo
+Nacionalidad del padre
+Naturaleza de la finca
+Nivel de formación alcanzado
+Nivel de formación de la madre
+Nivel de formación del cónyuge 1
+Nivel de formación del cónyuge 2
+Nivel de formación del padre
+Nivel de ingresos mensuales netos regulares del hogar
+Nivel de renta
+Nivel de satisfacción
+Nombre
+Normalidad del parto
+Nº de formas de búsqueda de empleo activas
+Número de activos en la vivienda
+Número de activos entre los restantes miembros de la vivienda
+Número de delitos
+Número de hijos
+Número de hijos menores o mayores dependientes
+Número de horas efectivas trabajadas en la semana en el empleo principal
+Número de horas empleadas en cursar estudios no reglados (en las últimas cuatro semanas)
+Número de horas habitualmente trabajadas
+Número de infracciones penales
+Número de medidas adoptadas
+Número de ocupados en la vivienda
+Número de parados en la vivienda
+Número de parados entre los restantes miembros de la vivienda
+Número de parados que conviven en la vivienda con la persona de referencia
+Número de penas
+Número de perceptores
+Número de perceptores de ingresos en la vivienda
+Número de personas con discapacidad
+Número de personas en la vivienda
+Número de personas que conviven en la vivienda con la persona de referencia
+Número de personas que trabajan en el establecimiento
+Número medio de horas
+OAL NO relacionadas con la explotación
+OAL relacionadas con la explotación
+OCUPACIONES
+OPERACIONES DE BIENES Y SERVICIOS
+OPERACIONES DE DISTRIBUCIÓN
+OPERACIÓN DE BIENES Y SERVICIOS FBCF
+OPERACIÓN DE DISTRIBUCIÓN REMUNERACIÓN DE ASALARIADOS
+OTE
+OTE Generales
+OTE Particulares
+OTE Principales
+Objetivo de la formación (no reglada)
+Ocupación
+Ocupación (empleo principal)
+Ocupación (empleo secundario)
+Ocupación CNO-11
+Ocupación CNO-11 (empleo principal)
+Ocupación CNO-11 (empleo secundario)
+Ocupación de la madre
+Ocupación del cónyunge 1
+Ocupación del cónyunge 2
+Ocupación del padre
+Ocupación en el último empleo
+Ocupación en el último empleo 
+Ocupados en cada encuesta e índice de cambio neto
+Operaciones y flujos
+Operaciones y saldos (con el resto del mundo)
+Operaciones y saldos (nacionales)
+Orden de nacimiento
+Orden del nacido vivo
+Organismo 
+Origen del turismo
+P.fisica y P.juridica 
+PADRON
+PRODUCT
+PUNTOS TURISTÍCOS
+Parados en cada encuesta e índice de cambio neto
+Parentesco con la persona de referencia
+Participación de una oficina pública de empleo
+Participación empresarial en su formación (no reglada)
+Partida de contabilidad
+Partidos Políticos
+País de origen o destino
+Países
+Países y Continentes
+Penas y medidas
+Percentil de riqueza neta
+Percentiles simples
+Perceptores de ingresos que conviven con la persona de referencia
+Periodicidad
+Periodo
+Persona que realiza la actividad en el hogar
+Personalidad jurídica del titular
+Personas con y sin discapacidad
+Personas de referencia
+Personas en cada encuesta e índice de cambio neto
+Personas entre 16 y 25 años que conviven con la persona de referencia
+Personas/Horas
+Pertenencia a grupo empresarial
+Peso al nacimiento
+Plan de seguridad
+Población de municipios desaparecidos
+Porcentaje de tiempo trabajado (tramo UTAT)
+Porcentajes
+Porcentajes de renta por unidad de consumo
+Precios
+Precios_SEC
+Principal fuente de ingresos del hogar
+Principales Resultados de Contabilidad
+Principales magnitudes
+Principales variables económicas
+Problema medioambiental
+Problemas que sufre la vivienda y entorno
+Pronunciamiento de la sentencia
+Proporción de parados
+Provincias
+Quien fija el horario de trabajo
+Quintil de gasto
+RELACIÓN CON LA ACTIVIDAD 
+RELACIÓN CON LA ACTIVIDAD DERIVADA
+REPORTING_TYPE
+RESIDENCIA/ORIGEN
+Rama de actividad (empleo principal)
+Rama de actividad (empleo principal) CNAE 2009
+Rama de actividad (empleo secundario)
+Rama de actividad (empleo secundario) CNAE 2009
+Rama de actividad - CNAE2009
+Rama de actividad - CNAE93
+Rama de actividad CNAE 2009
+Rama de actividad CNAE 93
+Ramas de actividad
+Ramas de actividad y Hogares
+Razones por las que no ha accedido a atención sanitaria
+Razón de búsqueda de otro empleo
+Razón de usar Internet
+Razón por la que trabajó un número de horas distinto al habitual
+Reales Academias
+Realizan o no, horas extraordinarias
+Recursos y empleos
+Redución de las horas trabajadas por el cuidado de niños
+Relacion entre lugar de nacimiento y residencia
+Relacion entre lugar de trabajo y residencia
+Relación con la actividad
+Relación con la actividad de la madre
+Relación con la actividad del cónyuge 1
+Relación con la actividad del cónyuge 2
+Relación con la actividad del padre
+Relación con la actividad económica
+Relación con la actividad en periodo anterior
+Relación con la actividad más frecuente
+Relación con la justicia
+Relación entre lugar de residencia y lugar de estudios 
+Residuos de envases
+RÚBRICAS DE ACUMULACIÓN
+Régimen de la vivienda
+Régimen de tenencia de la SAU
+Régimen de tenenecia de la vivienda principal
+Rúbricas 1976
+Rúbricas 1983
+Rúbricas 1992
+Rúbricas 2001
+Rúbricas 2006
+Rúbricas 2011
+SALDO CONTABLE VAB
+SALDOS CONTABLES
+SAU
+SAU  y Superficies
+SAU (sin huertos)
+SAU al aire libre
+SAU y Otras tierras
+SECCIONES 
+SECTORES 
+SECTORES DE ESTUDIOS - CNED-F
+SI/NO
+SITUACION DE ACTIVIDAD
+SITUACION DE INACTIVIDAD
+SITUACIÓN PROFESIONAL
+SUBSECCIONES
+Secciones
+Secciones corregidas de efecto calendario de la CNAE 2009
+Secciones de la CNAE 2009
+Secciones y subsecciones (Base 2000)
+Secciones y subsecciones (Base 90)
+Secciones y subsecciones de la CNAE-93
+Sector de ejecución
+Sector de estudios en curso no reglados
+Sector de estudios en curso reglados
+Sector del nivel de formación alcanzado
+Sector económico
+Sector económico CNAE 2009 del último empleo
+Sector económico del último empleo
+Sector institucional homólogo
+Sectores económicos del empleo principal
+Sectores económicos del empleo secundario
+Sectores económicos del empleo secundario CNAE 2009
+Sectores ecónomicos
+Sectores institucionales
+Según otras religiones
+Según perciba o no ingresos la persona de referencia
+Semanas de gestación
+Semiintervalos de edad
+Semiintervalos de edad conyuge 2
+Semiintervalos de percentiles
+Sexo
+Sexo de la persona de referencia
+Sexo de los contrayentes
+Sexo del cuidador principal
+Situacion profesional
+Situaciones en relación a la Seguridad Social
+Situación anterior a la búsqueda de empleo
+Situación de desempleo por sexo
+Situación matrimonial de la madre
+Situación personal
+Situación profesional
+Situación profesional                               
+Situación profesional del empleo principal
+Situación profesional del empleo secundario
+Situación profesional en el último empleo
+Situación respecto a la actividad de la persona de referencia de la vivienda
+Subciudad
+Subclases 1976
+Subclases 1983
+Subclases 1992
+Subclases 2001
+Subclases 2006
+Subclases 2011
+Subclases COICOP/EPF
+Subclases ECOICOP
+Subgrupos 1992
+Subgrupos 2001
+Subgrupos 2006
+Subgrupos 2011
+Subgrupos COICOP/EPF
+Subgrupos ECOICOP
+Subgrupos de gasto (3 dígitos)
+Subíndice IPCA
+Supervivencia del nacido
+Supraciudad
+Sábados trabajados al mes
+TABLE_IDENTIFIER
+TARIFAS
+TIPO DE CATEGORIA
+TIPO DE TRANSPORTE
+TOTALES CLASIFICACION EDUCACIÓN
+TOTALES OCUPACIONES
+TOTALES VARIABLES CNAE
+Tamaño de alojamiento
+Tamaño de la empresa
+Tamaño de la vivienda
+Tamaño de las explotaciones según  PET (€)
+Tamaño de las explotaciones según SAU (Ha.)
+Tamaño de las explotaciones según UGT
+Tamaño de las explotaciones según UTAT
+Tamaño del municipio
+Tamaño del municipio de nacimiento
+Tamaño del municipio de residencia
+Tamaño municipios de destino
+Tareas de supervisión otros trabajadores
+Tasa de Divorcialidad
+Tasas
+Tiempo de búsqueda de empleo
+Tiempo de excedencia
+Tiempo de exposición
+Tiempo de residencia en España
+Tiempo de residencia en el municipio
+Tiempo de trabajo
+Tiempo desde el comienzo o renovación del contrato
+Tiempo desde que dejaron el último empleo
+Tiempo que llevan trabajando en el empleo actual
+Tiempo transcurrido
+Time period collection
+Tipo actividad
+Tipo de accidente ferroviario
+Tipo de activo/deuda
+Tipo de administración
+Tipo de alimento
+Tipo de almacenamiento de estiércol 
+Tipo de alojamiento
+Tipo de apellido
+Tipo de arrendamiento
+Tipo de asunto jurídico
+Tipo de cambio
+Tipo de carencia de material
+Tipo de comercio
+Tipo de concurso
+Tipo de consumo
+Tipo de contrato o relación laboral
+Tipo de cultivos III
+Tipo de cultivos IV
+Tipo de dato
+Tipo de dato (últimos datos)
+Tipo de dato: Niveles y Tasas
+Tipo de dato: Tasas
+Tipo de discapacidad
+Tipo de disolución matrimonial
+Tipo de divorcio
+Tipo de ejercicio
+Tipo de establecimiento
+Tipo de estabulación
+Tipo de estabulación de bovinos
+Tipo de estabulación de gallinas ponedoras
+Tipo de estabulación de porcinos
+Tipo de estudios en curso
+Tipo de explotación según SAU y UG
+Tipo de fertilizante utilizado
+Tipo de flujo energético
+Tipo de ganado
+Tipo de ganado estabulado
+Tipo de gasto
+Tipo de hogar
+Tipo de hábitat anterior
+Tipo de indicador
+Tipo de interés
+Tipo de jornada
+Tipo de jornada en el empleo buscado
+Tipo de lactancia
+Tipo de material
+Tipo de matrimonio según nacionalidad de los conyuges
+Tipo de matrimonio según sexo
+Tipo de mercado
+Tipo de mercancía peligrosa
+Tipo de operación
+Tipo de parto
+Tipo de precursor de accidente ferroviario
+Tipo de problema sanitario
+Tipo de puesto laboral
+Tipo de razones
+Tipo de relación sentimental
+Tipo de representación
+Tipo de resolución matrimonial
+Tipo de sector
+Tipo de separación
+Tipo de stock
+Tipo de tareas informáticas
+Tipo de trabajo
+Tipo de transmitiente
+Tipo de transporte según contenido
+Tipo de transporte según destino
+Tipo de unidad de transporte
+Tipo de viaje
+Tipo de violencia
+Tipo de visitante
+Tipo de vivienda
+Tipo de víctima de accidente
+Tipo mano obra
+Tipo mano obra contratada
+Tipos de P.fisica y P.juridica 
+Tipos de cultivos y pastos  II
+Tipos de ganado
+Tipos de penas
+Tipos ganado bovino
+Titular de la vivienda
+Titular/Familiar/No familiar
+Total
+Total de horas extraordinarias realizadas en la semana por los asalariados
+Totales Territoriales
+Totales de edad
+Totales de edad conyuge 2
+Trabajo con un sistema de turnos
+Trabajo en la explotación del titular
+Tramos de Capital
+Tramos de UGT
+Tramos de extensión
+Transformación
+Type of entity
+Técnica de aplicación de estiércol
+Título de adquisición
+Ubicación del municipio de nacimiento
+Ubicación del municipio de residencia anterior
+Unidad
+Unidad de medida
+Unidades de medida
+Utilización de la capacidad productiva en la industria
+VARIABLE NO CONSIDERADA
+Valor Añadido Bruto de actividades
+Valoración del estado de salud
+Valores simples de edad
+Vencimiento
+Vinculación con la actividad
+Viviendas familiares
+Volumen de negocio
+ZONAS TURÍSTICAS
+Zonas Geográficas del Resto del Mundo
+Zonas de nacionalidad
+Zonas geográficas de España
+Zonas marítimas/no marítimas
+Ámbitos de representación
+Áreas de movilidad
+Índices corregidos de efecto calendario, basados en la CNAE-2009
+Índices corregidos de efecto calendario, basados en la CNAE-74
+Índices corregidos de efecto calendario, basados en la CNAE-93
+Órganos Institucionales
