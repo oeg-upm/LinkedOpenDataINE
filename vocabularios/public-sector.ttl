@@ -5,6 +5,7 @@
 @prefix api:   <http://purl.org/linked-data/api/vocab#> .
 @prefix sec-pub: <http://datos.gob.es/kos/sector-publico/sector/>.
 
+
 sec-pub:ciencia-tecnologia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;

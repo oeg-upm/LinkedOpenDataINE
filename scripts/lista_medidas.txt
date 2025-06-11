@@ -1,0 +1,5 @@
+Tasas,https://stats.linkeddata.es/voc/cubes/vocabulary#activityRate
+Tasas,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
+Tasas,https://stats.linkeddata.es/voc/cubes/vocabulary#employmentRate
+Unidad,https://stats.linkeddata.es/voc/cubes/vocabulary#employedABSValue
+Unidad,https://stats.linkeddata.es/voc/cubes/vocabulary#employedPercentage

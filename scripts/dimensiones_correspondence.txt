@@ -3,7 +3,6 @@ Sexo,http://purl.org/linked-data/sdmx/2009/dimension#sex
 Edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nivel de formación alcanzado,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
 Periodo,http://purl.org/linked-data/sdmx/2009/dimension#refPeriod
-Total,http://purl.org/linked-data/sdmx/2009/measure#obsValue
 Grupos de edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#nationality
 Nivel de estudios,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
@@ -14,3 +13,6 @@ País de procedencia,https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfO
 Municipios,http://purl.org/linked-data/sdmx/2009/dimension#refArea 
 Comunidades y ciudades autonomas,http://purl.org/linked-data/sdmx/2009/dimension#refArea
 Tipo de alojamiento,http://purl.org/dc/terms/source
+Provincias,https://stats.linkeddata.es/voc/cubes/vocabulary#provinces
+Sector económico,https://stats.linkeddata.es/voc/cubes/vocabulary#economicSector
+Rama de actividad CNAE 2009,https://stats.linkeddata.es/voc/cubes/vocabulary#economicalActivity

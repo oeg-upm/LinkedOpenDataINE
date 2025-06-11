@@ -1,0 +1,6 @@
+Tasa de actividad,https://stats.linkeddata.es/voc/cubes/vocabulary#activityRate
+Tasa de paro,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
+Tasa de paro de la población,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
+Tasa de empleo de la población,https://stats.linkeddata.es/voc/cubes/vocabulary#employmentRate
+Valor absoluto,https://stats.linkeddata.es/voc/cubes/vocabulary#employedABSValue
+Porcentaje,https://stats.linkeddata.es/voc/cubes/vocabulary#employedPercentage

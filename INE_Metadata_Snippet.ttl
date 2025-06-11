@@ -3,87 +3,820 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix sec-pub: <http://datos.gob.es/kos/sector-publico/sector/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>. 
+
+<https://www.ine.es/> a vcard:Organization;
+					  vcard:fn "Instituto Nacional de Estadistica";
+					  vcard:hasURL <https://www.ine.es/infoine/>.
+
 
 <http://stats.linkeddata.es/voc/cubes/66615> rdfs:label "66615";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
 											 dcat:theme sec-pub:educacion ;
 											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, edad y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
-											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, edad y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, edad y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:66615"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/66615.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/66615.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66615>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/66615.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/66615.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].																					
+
 
 <http://stats.linkeddata.es/voc/cubes/66616> rdfs:label "66616";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
 											 dcat:theme sec-pub:educacion ;
 											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, nacionalidad (española/extranjera) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
-											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, nacionalidad (española/extranjera) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, nacionalidad (española/extranjera) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:66616"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/66616.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/66616.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66616>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/66616.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/66616.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 
 <http://stats.linkeddata.es/voc/cubes/66617> rdfs:label "66617";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
 											 dcat:theme sec-pub:educacion ;
 											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, lugar de nacimiento (España/extranjero) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
-											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, lugar de nacimiento (España/extranjero) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)".
-
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, grupos de edad, lugar de nacimiento (España/extranjero) y nivel de estudios (detalle) (Capitales de provincia y principales ciudades)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:66617"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/66617.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/66617.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66617>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/66617.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/66617.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/66618> rdfs:label "66618";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
 											 dcat:theme sec-pub:educacion ;
 											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacimiento (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
-											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacimiento (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)".
-
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacimiento (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:66618"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/66615.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/66618.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66618>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/66618.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/66618.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/66619> rdfs:label "66619";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
 											 dcat:theme sec-pub:educacion ;
 											 dcterms:title "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacionalidad (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
-											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacionalidad (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)".
+											 dcterms:description "Nivel de estudios completados: Población de 15 y más años por sexo, país de nacionalidad (principales países) y nivel de estudios (agrupado) (Capitales de provincia y principales ciudades)";
+											 											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:66619"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/66619.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/66619.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66619>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/66619.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/66619.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 
 <http://stats.linkeddata.es/voc/cubes/69687> rdfs:label "69687";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
 											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo y edad";
-											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo y edad".
-
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo y edad";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:69687"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/69687.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/69687.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/69687>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/69687.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69687.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/69688> rdfs:label "69688";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
 											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), nacionalidad y país de nacimiento (España/extranjero)";
-											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), nacionalidad y país de nacimiento (España/extranjero)".
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), nacionalidad y país de nacimiento (España/extranjero)";
+											 											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:69688"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/69688.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/69688.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/69688>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/69688.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69688.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 
 <http://stats.linkeddata.es/voc/cubes/69689> rdfs:label "69689";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
 											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), país de nacimiento y nacionalidad (española/extranjera)";
-											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), país de nacimiento y nacionalidad (española/extranjera)".
-
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, edad (grandes grupos), país de nacimiento y nacionalidad (española/extranjera)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:69689"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/69689.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/69689.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/69689>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/69689.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69689.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/69690> rdfs:label "69690";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
 											 dcterms:title "Inmigraciones procedentes del extranjero por año, sexo, país de procedencia y nacionalidad (española/extranjera)";
-											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, país de procedencia y nacionalidad (española/extranjera)".
+											 dcterms:description "Inmigraciones procedentes del extranjero por año, sexo, país de procedencia y nacionalidad (española/extranjera)";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:69690"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/69690.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/69690.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/69690>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/69690.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69690.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 
 <http://stats.linkeddata.es/voc/cubes/65334> rdfs:label "65334";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
 											 dcat:theme sec-pub:mercadolaboral ;
 											 dcterms:title "Tasas de paro por distintos grupos de edad, sexo y comunidad autónoma";
-											 dcterms:description "Tasas de paro por distintos grupos de edad, sexo y comunidad autónoma".
-
+											 dcterms:description "Tasas de paro por distintos grupos de edad, sexo y comunidad autónoma";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:65334"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/65334.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/65334.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/65334>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/65334.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/65334.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/2855> rdfs:label "2855";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
 											 dcat:theme sec-pub:demografia ;
 											 dcterms:title "Albacete: Población por municipios y sexo.";
-											 dcterms:description "Albacete: Población por municipios y sexo.".
-
+											 dcterms:description "Albacete: Población por municipios y sexo.";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:2855"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/2855.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/2855.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/2855>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/2855.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/2855.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
 <http://stats.linkeddata.es/voc/cubes/2940> rdfs:label "2940";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
 											 dcat:theme sec-pub:alojamientos ;
 											 dcterms:title "Estancia media, por tipo de alojamiento por comunidad y ciudades autónomas.";
-											 dcterms:description "Estancia media, por tipo de alojamiento por comunidad y ciudades autónomas.".
+											 dcterms:description "Estancia media, por tipo de alojamiento por comunidad y ciudades autónomas.";
+											 rdf:type dcat:Dataset ;
+											 dcterms:identifier "urn:ine:es:TABLA:TPX:2940"@es;
+											 dcterms:language <http://publications.europa.eu/resource/authority/language/SPA>;
+											 dcat:contactPoint <https://www.ine.es/>;
+											 dcat:distribution [
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcterms:title "Html"@es, "Html"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/html> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/px/2940.px?nocab=1>;
+											       dcterms:title "PC-Axis"@es, "PC-Axis"@en ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/xlsx/2940.xlsx?nocab=1>;
+											       dcterms:title "Excel: Extensión XLSX"@es, "Excel: XLSX extension"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcat:downloadURL <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/2940>;
+											       dcterms:title "Json"@es, "Json"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/application/json> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bd/2940.csv?nocab=1>;
+											       dcterms:title "CSV: separado por tabuladores"@es, "CSV: Tab Separated"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											],
+											[
+											       a dcat:Distribution ;
+											       dcat:accessURL <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
+											       dcat:downloadURL <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/2940.csv?nocab=1>;
+											       dcterms:title "CSV: separado por ;"@es, "CSV: Separated by ;"@en ;
+											       dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+											       dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+											       dcterms:license <https://www.ine.es/aviso_legal>
+											].	
