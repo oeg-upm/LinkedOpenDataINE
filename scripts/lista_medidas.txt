@@ -3,3 +3,9 @@ Tasas,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
 Tasas,https://stats.linkeddata.es/voc/cubes/vocabulary#employmentRate
 Unidad,https://stats.linkeddata.es/voc/cubes/vocabulary#employedABSValue
 Unidad,https://stats.linkeddata.es/voc/cubes/vocabulary#employedPercentage
+Unidad Ocupados,https://stats.linkeddata.es/voc/cubes/vocabulary#employedABSValue
+Unidad Ocupados,https://stats.linkeddata.es/voc/cubes/vocabulary#employedPercentage
+Tipo de dato Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsABSValue
+Tipo de dato Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAnnualVarianceRate
+Tipo de dato Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAccumulated
+Tipo de dato Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate

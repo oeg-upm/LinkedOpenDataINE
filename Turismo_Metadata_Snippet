@@ -1,0 +1,26 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sec-pub: <http://datos.gob.es/kos/sector-publico/sector/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>. 
+
+<http://stats.linkeddata.es/voc/cubes/10822> dcterms:title "Número de turistas según país de residencia"@es;
+											 dcterms:description "Número de turistas según país de residencia"@es;
+											 dcat:theme sec-pub:turismo.
+
+<http://stats.linkeddata.es/voc/cubes/10823> dcterms:title "Número de turistas según comunidad autónoma de destino principal"@es;
+											 dcterms:description "Número de turistas según comunidad autónoma de destino principal"@es;
+											 dcat:theme sec-pub:turismo.
+
+<http://stats.linkeddata.es/voc/cubes/23988> dcterms:title "Número de turistas según comunidad autónoma de destino principal"@es;
+											 dcterms:description "Número de turistas según comunidad autónoma de destino principal"@es;
+											 dcat:theme sec-pub:turismo.
+
+<http://stats.linkeddata.es/voc/cubes/13864> dcterms:title "Número de turistas según motivo principal del viaje"@es;
+											 dcterms:description "Número de turistas según motivo principal del viaje"@es;
+											 dcat:theme sec-pub:turismo.
+
+<http://stats.linkeddata.es/voc/cubes/10821> dcterms:title "Número de visitantes según tipología"@es;
+											 dcterms:description "Número de visitantes según tipología"@es;
+											 dcat:theme sec-pub:turismo.

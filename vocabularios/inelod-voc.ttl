@@ -55,6 +55,17 @@ inelod-voc:countryOfOrigin  a rdf:Property, qb:DimensionProperty;
     rdfs:subPropertyOf sdmx-dimension:refArea;
     rdfs:range rdfs:Resource.
 
+inelod-voc:ageGroup a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Grupos de edad"@es;
+    rdfs:subPropertyOf sdmx-dimension:age;
+    rdfs:range rdfs:Resource.
+
+inelod-voc:city  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Capitales de provincia y principales ciudades"@es;
+    rdfs:label "Capitales y grandes ciudades"@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
 #Clasificaciones estadísticas como dimensiones en cubo de datos..
 
 inelod-voc:economicalActivity a rdf:Property, qb:DimensionProperty;
@@ -69,6 +80,7 @@ inelod-voc:economicSector a rdf:Property, qb:DimensionProperty;
 
 inelod-voc:ccaa a rdf:Property, qb:DimensionProperty;
     rdfs:label "Comunidades y Ciudades Autónomas"@es;
+    rdfs:label "Comunidades autónomas"@es;
     rdfs:comment "Una comunidad autónoma (C. A.) es una entidad territorial que, dentro del actual ordenamiento jurídico constitucional, está dotada de autonomía, con instituciones y representantes propios y determinadas competencias legislativas, ejecutivas y administrativas, lo que la asimila en muchos aspectos a entidades federadas."@es;
     rdfs:range skos:concept.
 
@@ -147,6 +159,40 @@ inelod-voc:activitySector a rdf:Property , qb:DimensionProperty;
     rdfs:label "Sector de actividad"@es;
     rdfs:range xsd:string.
 
+### Estadistica de Movimientos Turísticos en Fronteras (FRONTUR)
+
+inelod-voc:countryOfResidence a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de residencia"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:travelReason a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Motivo del viaje"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:accessRoute a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Vía de acceso"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:lodgingType a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tipo de alojamiento"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:lodgingType a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tipo de alojamiento"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:travelOrganization a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Forma de organización del viaje"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:travelDuration a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Duración del viaje"@es;
+    rdfs:range xsd:string.
+
+inelod-voc:touristType a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tipo de Visitante"@es;
+    rdfs:range xsd:string.
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Measures
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -159,6 +205,7 @@ inelod-voc:numberOfIndividuals  a rdf:Property, qb:MeasureProperty;
 
 inelod-voc:numberOfPeople  a rdf:Property, qb:MeasureProperty;
     rdfs:label "Numero de personas"@es;
+    rdfs:label "Personas";
     rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es;
     rdfs:subPropertyOf inelod-voc:numberOfIndividuals;
     rdfs:range xsd:integer.
@@ -264,6 +311,32 @@ inelod-voc:employedABSValue  a rdf:Property , qb:MeasureProperty;
 
 inelod-voc:employedPercentage  a rdf:Property , qb:MeasureProperty;
     rdfs:label "Porcentaje"@es;
+    rdfs:label "Distribución porcentual de los activos"@es;
     rdfs:comment "Los ocupados son todas aquellas personas de 16 años o más que, según los criterios OIT, durante la semana de referencia tuvieron un empleo por cuenta ajena, asalariado, o ejercieron una actividad por cuenta propia, trabajadores por cuenta propia. En relación a este empleo o actividad, pudieron haberse encontrado en la semana de referencia: - trabajando al menos una hora en el citado período a cambio de una remuneración, salario, beneficio empresarial o ganancia familiar, etc., o - ausentes del mismo pero con un fuerte vínculo con dicho empleo."@es;
     rdfs:subPropertyOf sdmx-measure:obsValue; 
     rdfs:range unit:PERCENT.
+
+inelod-voc:averageStay a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Estancia media"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue; 
+    rdfs:range xsd:float.
+
+inelod-voc:numberOfTouristsABSValue a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Dato base"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue; 
+    rdfs:range xsd:int.
+
+inelod-voc:numberOfTouristsAnnualVarianceRate a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Tasa de variación anual"@es;
+    rdfs:subPropertyOf inelod-voc:rate; 
+    rdfs:range xsd:float.
+
+inelod-voc:numberOfTouristsAccumulated a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Acumulado en lo que va de año"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue; 
+    rdfs:range xsd:int.
+
+inelod-voc:numberOfTouristsAccumulatedVarianceRate a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Tasa de variación acumulada"@es;
+    rdfs:subPropertyOf inelod-voc:rate; 
+    rdfs:range xsd:float.

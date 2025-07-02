@@ -42,5 +42,5 @@
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2/5/{CODIGO2}";];
+        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2/4/{CODIGO2}";];
     ].

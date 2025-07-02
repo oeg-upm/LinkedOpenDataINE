@@ -58,6 +58,7 @@ def load_variables(file_path):
             var_list.append((ine_var, sdmx_dim))
     return var_list
 
+#Earlier version of the code, a new version has been added that automatically generates the DCAT metadata.
 # Function to add template metadata to the data graph, those terms that cannot be inferred automatically are left as XXXX values.
 def add_template_metadata(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
@@ -75,7 +76,6 @@ def add_template_metadata(file_path):
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.publisher))
     g_mappings.add((predicate_object_map_bnode, RR.object, URIRef("https://www.ine.es/")))
-    """
     predicate_object_map_bnode = BNode()
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, DCT.title))
@@ -112,7 +112,6 @@ def add_template_metadata(file_path):
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, DCAT.theme))
     g_mappings.add((predicate_object_map_bnode, RR.object, Literal("XXXX")))
-    """
     predicate_object_map_bnode = BNode()
     g_mappings.add((triples_map_dataset, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.structure))
@@ -122,14 +121,183 @@ def add_template_metadata(file_path):
     g_mappings.add((predicate_object_map_bnode, RR.predicate, SDMX_ATTRIBUTE.unitMeasure))
     g_mappings.add((predicate_object_map_bnode, RR.object, SDMX_MEASURE.obsValue))
 
+# Method for adding the INE specific metadata. 
+def add_INE_metadata(file_path):
+        file_name = os.path.splitext(os.path.basename(file_path))[0]
+        dataset_uri = INELOD[file_name]
+        triples_map_dataset = INELOD[file_name + "_TriplesMapDataset"]
+        # Add logical source for the dataset
+        logical_source_bnode = BNode()
+        g_mappings.add((triples_map_dataset, RML.logicalSource, logical_source_bnode))
+        g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+        g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+
+        # Add subject map for the dataset
+        subject_map_bnode = BNode()
+        g_mappings.add((triples_map_dataset, RR.subjectMap, subject_map_bnode))
+        g_mappings.add((subject_map_bnode, RR.constant, dataset_uri))
+        g_mappings.add((subject_map_bnode, RR["class"], QB.DataSet)) 
+
+        # Helper to add a predicate-object mapping
+        def add_pom(pred, obj, lang=None):
+            pom_bnode = BNode()
+            g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
+            g_mappings.add((pom_bnode, RR.predicate, pred))
+            if lang:
+                g_mappings.add((pom_bnode, RR.object, Literal(obj, lang=lang)))
+            else:
+                g_mappings.add((pom_bnode, RR.object, obj if isinstance(obj, URIRef) else Literal(obj)))
+
+        # Add required triples
+        add_pom(RDFS.label, file_name)
+        add_pom(DCT.license, URIRef("https://creativecommons.org/licenses/by/4.0/"))
+        add_pom(DCT.source, URIRef(f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}"))
+        add_pom(RDF.type, DCAT.Dataset)
+        add_pom(DCT.identifier, Literal(f"urn:ine:es:TABLA:TPX:{file_name}", lang="es"))
+        add_pom(DCT.language, URIRef("http://publications.europa.eu/resource/authority/language/SPA"))
+        add_pom(DCAT.contactPoint, URIRef("https://www.ine.es/"))
+        add_pom(DCT.publisher,URIRef("https://www.ine.es/"))
+        add_pom(QB.structure, INELOD[file_name + "_dsd"])
+
+        # Add dcat:distribution blank nodes for each distribution
+        distributions = [
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "title": [("Html", "es"), ("Html", "en")],
+                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/HTML"),
+                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/html"),
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/px/{file_name}.px?nocab=1",
+                "title": [("PC-Axis", "es"), ("PC-Axis", "en")],
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/xlsx/{file_name}.xlsx?nocab=1",
+                "title": [("Excel: Extensión XLSX", "es"), ("Excel: XLSX extension", "en")],
+                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/XLSX"),
+                "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "downloadURL": f"https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/{file_name}",
+                "title": [("Json", "es"), ("Json", "en")],
+                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/JSON"),
+                "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/json"),
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bd/{file_name}.csv?nocab=1",
+                "title": [("CSV: separado por tabuladores", "es"), ("CSV: Tab Separated", "en")],
+                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
+                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+            {
+                "type": DCAT.Distribution,
+                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/{file_name}.csv?nocab=1",
+                "title": [("CSV: separado por ;", "es"), ("CSV: Separated by ;", "en")],
+                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
+                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
+                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+                "license": URIRef("https://www.ine.es/aviso_legal"),
+            },
+        ]
+        order = 1
+        for dist in distributions:
+            triples_map_uri_dist = INELOD[file_name] + "_dist"+str(order)
+            dist_bnode = BNode()
+            pom_bnode = BNode()
+            g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
+            g_mappings.add((pom_bnode, RR.predicate, DCAT.distribution))
+            g_mappings.add((pom_bnode, RR.objectMap, dist_bnode))
+            g_mappings.add((dist_bnode, RR.parentTriplesMap, triples_map_uri_dist))
+            logical_source_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RML.logicalSource, logical_source_bnode))
+            g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+            g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+            subject_map_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.subjectMap, subject_map_bnode))
+            g_mappings.add((subject_map_bnode, RR.constant, BNode()))
+            g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
+            # Distribution type
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, RDF.type))
+            g_mappings.add((dist_pom_bnode, RR.object, dist["type"]))
+            # accessURL
+            if "accessURL" in dist:            
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))            
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.accessURL))
+                g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["accessURL"])))
+            # downloadURL
+            if "downloadURL" in dist:
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))             
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.downloadURL))
+                g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["downloadURL"])))
+            # Titles (multilingual)
+            for t, lang in dist["title"]:
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+                g_mappings.add((dist_pom_bnode, RR.predicate,DCT.title))
+                g_mappings.add((dist_pom_bnode, RR.object, Literal(t, lang=lang)))
+            # Format (constant, if present)
+            if "format" in dist:
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCT["format"]))
+                g_mappings.add((dist_pom_bnode, RR.object, dist["format"]))
+            # MediaType (constant, if present)
+            if "mediaType" in dist:
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.mediaType))
+                g_mappings.add((dist_pom_bnode, RR.object, dist["mediaType"]))
+            # applicableLegislation (constant)
+            if "applicableLegislation" in dist:
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.applicableLegislation))
+                g_mappings.add((dist_pom_bnode, RR.object, dist["applicableLegislation"]))
+            if "license" in dist:
+            # license (constant)
+                dist_pom_bnode = BNode()
+                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+                g_mappings.add((dist_pom_bnode, RR.predicate, DCT.license))
+                g_mappings.add((dist_pom_bnode, RR.object, dist["license"]))
+            order += 1
+
+
 def add_POM_from_csv(file_path):
     variables = load_variables("dimensiones_correspondence.txt")
     measu_list = load_variables("lista_medidas.txt")
+    measures = load_variables("medidas_correspondence.txt")
+    measures_set = set(measu for measu, _ in measures)
     medidas_set = set(ine_var for ine_var, _ in measu_list)
+    variables_dict = dict(variables)
+    measures_dict = dict(measures)
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     dsd_uri = INELOD[file_name + "_dsd"]
     detect_and_replace_measures(file_path)
-    #TM Definition corresponding to the dimensions
+
     triples_map_dsd = INELOD[file_name + "_TriplesMapDSD"]
     g_mappings.add((triples_map_dsd, RDF.type, RR.TriplesMap))
     logical_source_bnode = BNode()
@@ -140,87 +308,119 @@ def add_POM_from_csv(file_path):
     g_mappings.add((triples_map_dsd, RR.subjectMap, subject_map_bnode))
     g_mappings.add((subject_map_bnode, RR.constant, dsd_uri))
     g_mappings.add((subject_map_bnode, RR["class"], QB.DataStructureDefinition))
-    #Triples map for the observations
+
     triples_map_obs = INELOD[file_name + "_Observations"]
     multiple_measures = False
+
     with open(file_path, mode='r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=';')
         columns = reader.fieldnames
         order = 1
         for column in columns:
-            for ine_var, sdmx_dim in variables:
-                #Caso en el que la columna se trata de una dimensión del dataset.
-                if column == ine_var and column not in medidas_set:
-                    print(f"Processing column: {column} as dimension with URI: {sdmx_dim}")
-                    #This part of the mappings corresponds to the blank nodes of each of the dimensions
-                    triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
-                    g_mappings.add((triples_map_uri_dim, RDF.type, RR.TriplesMap))
-                    logical_source_bnode = BNode()
-                    g_mappings.add((triples_map_uri_dim, RML.logicalSource, logical_source_bnode))
-                    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
-                    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
-                    subject_map_bnode = BNode()
-                    g_mappings.add((triples_map_uri_dim, RR.subjectMap, subject_map_bnode))
-                    g_mappings.add((subject_map_bnode, RR.constant, BNode()))
-                    g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
-                    predicate_object_map_bnode = BNode()
-                    g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
-                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dimension))
-                    g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(sdmx_dim.strip())))
-                    predicate_object_map_bnode = BNode()
-                    g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
-                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.order))
-                    g_mappings.add((predicate_object_map_bnode, RR.object, Literal(order)))
-                    #This is the part that corresponds to the components of the DSD.
-                    component_bnode = BNode()
-                    predicate_object_map_bnode = BNode()
-                    g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
-                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
-                    g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
-                    g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_dim))
-                    #Part that includes the POM for the observations
-                    order += 1
-                    pom_bnode = BNode()
-                    g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
-                    g_mappings.add((pom_bnode, RR.predicate, URIRef(sdmx_dim.strip())))
-                    object_bnode = BNode()
-                    g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
-                    g_mappings.add((object_bnode, RML.reference, Literal(column)))
-                    break
-                #Caso en el que la columna se trata de una sola medida del dataset.
-                elif  column not in medidas_set and column == "Total" and multiple_measures is False:
-                    print(f"Processing column: {column}")
-                    triples_map_uri_measu = triples_map_dsd+"_measu"
-                    g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
-                    logical_source_bnode = BNode()
-                    g_mappings.add((triples_map_uri_measu, RML.logicalSource, logical_source_bnode))
-                    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
-                    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
-                    subject_map_bnode = BNode()
-                    g_mappings.add((triples_map_uri_measu, RR.subjectMap, subject_map_bnode))
-                    g_mappings.add((subject_map_bnode, RR.constant, BNode()))
-                    g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
-                    predicate_object_map_bnode = BNode()
-                    g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
-                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
-                    g_mappings.add((predicate_object_map_bnode, RR.object, SDMX_MEASURE.obsValue))
-                    #This is the part that corresponds to the components of the DSD.
-                    component_bnode = BNode()
-                    predicate_object_map_bnode = BNode()
-                    g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
-                    g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
-                    g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
-                    g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_measu))
-                    #Part that includes the POM for the observations
-                    pom_bnode = BNode()
-                    g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
-                    g_mappings.add((pom_bnode, RR.predicate, URIRef(sdmx_dim)))
-                    object_bnode = BNode()
-                    g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
-                    g_mappings.add((object_bnode, RML.reference, Literal(column)))
-                    g_mappings.add((object_bnode, RR.datatype, XSD.float))
-                    break
-            #Caso en el que la columna se trata de un conjunto de medidas del dataset.
+            # Dimension columns
+            if column in variables_dict and column not in medidas_set and column not in measures_dict:
+                sdmx_dim = variables_dict[column]
+                print(f"Processing column: {column} as dimension with URI: {sdmx_dim}")
+                triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
+                g_mappings.add((triples_map_uri_dim, RDF.type, RR.TriplesMap))
+                logical_source_bnode = BNode()
+                g_mappings.add((triples_map_uri_dim, RML.logicalSource, logical_source_bnode))
+                g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+                g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+                subject_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_dim, RR.subjectMap, subject_map_bnode))
+                g_mappings.add((subject_map_bnode, RR.constant, BNode()))
+                g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dimension))
+                g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(sdmx_dim.strip())))
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.order))
+                g_mappings.add((predicate_object_map_bnode, RR.object, Literal(order)))
+                component_bnode = BNode()
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
+                g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
+                g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_dim))
+                pom_bnode = BNode()
+                g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
+                g_mappings.add((pom_bnode, RR.predicate, URIRef(sdmx_dim.strip())))
+                object_bnode = BNode()
+                g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
+                g_mappings.add((object_bnode, RML.reference, Literal(column)))
+                order += 1
+                continue
+
+            # Single measure column (Total)
+            if column == "Total" and not multiple_measures:
+                print(f"Processing column: {column}")
+                triples_map_uri_measu = triples_map_dsd + "_measu"
+                g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
+                logical_source_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RML.logicalSource, logical_source_bnode))
+                g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+                g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+                subject_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RR.subjectMap, subject_map_bnode))
+                g_mappings.add((subject_map_bnode, RR.constant, BNode()))
+                g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
+                g_mappings.add((predicate_object_map_bnode, RR.object, SDMX_MEASURE.obsValue))
+                component_bnode = BNode()
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
+                g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
+                g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_measu))
+                pom_bnode = BNode()
+                g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
+                g_mappings.add((pom_bnode, RR.predicate, SDMX_MEASURE.obsValue))
+                object_bnode = BNode()
+                g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
+                g_mappings.add((object_bnode, RML.reference, Literal(column)))
+                g_mappings.add((object_bnode, RR.datatype, XSD.float))
+                multiple_measures = True
+                continue
+
+            # Individual measure columns
+            if column in measures_dict:
+                rdf_measure = measures_dict[column]
+                print(f"Processing column: {column}")
+                triples_map_uri_measu = triples_map_dsd + "_measu"
+                g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
+                logical_source_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RML.logicalSource, logical_source_bnode))
+                g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+                g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+                subject_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RR.subjectMap, subject_map_bnode))
+                g_mappings.add((subject_map_bnode, RR.constant, BNode()))
+                g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
+                g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(rdf_measure)))
+                component_bnode = BNode()
+                predicate_object_map_bnode = BNode()
+                g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
+                g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
+                g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
+                g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_measu))
+                pom_bnode = BNode()
+                g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
+                g_mappings.add((pom_bnode, RR.predicate, URIRef(rdf_measure)))
+                object_bnode = BNode()
+                g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
+                g_mappings.add((object_bnode, RML.reference, Literal(column)))
+                g_mappings.add((object_bnode, RR.datatype, XSD.float))
+                continue
+
+            # Multiple measures (measureType)
             if column in medidas_set:
                 print(f"Processing column: {column} as multiple measures")
                 triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
@@ -232,7 +432,7 @@ def add_POM_from_csv(file_path):
                 subject_map_bnode = BNode()
                 g_mappings.add((triples_map_uri_dim, RR.subjectMap, subject_map_bnode))
                 g_mappings.add((subject_map_bnode, RR.constant, BNode()))
-                g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
+                g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
                 predicate_object_map_bnode = BNode()
                 g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
                 g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dimension))
@@ -241,36 +441,36 @@ def add_POM_from_csv(file_path):
                 g_mappings.add((triples_map_uri_dim, RR.predicateObjectMap, predicate_object_map_bnode))
                 g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.order))
                 g_mappings.add((predicate_object_map_bnode, RR.object, Literal(order)))
-                #This is the part that corresponds to the components of the DSD.
                 component_bnode = BNode()
                 predicate_object_map_bnode = BNode()
                 g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
                 g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.component))
                 g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
                 g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_dim))
-                #Part that includes the POM for the observations
                 pom_bnode = BNode()
                 g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
                 g_mappings.add((pom_bnode, RR.predicate, QB.measureType))
                 object_bnode = BNode()
                 g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
                 g_mappings.add((object_bnode, RML.reference, Literal(column)))
-                #Part that includes the POM for the observations
                 pom_bnode = BNode()
                 g_mappings.add((triples_map_obs, RR.predicateObjectMap, pom_bnode))
                 predicate_bnode = BNode()
                 g_mappings.add((pom_bnode, RR.predicateMap, predicate_bnode))
-                g_mappings.add((predicate_bnode, RR.reference, Literal(column)))
+                g_mappings.add((predicate_bnode, RML.reference, Literal(column)))
                 object_bnode = BNode()
                 g_mappings.add((pom_bnode, RR.objectMap, object_bnode))
-                g_mappings.add((object_bnode, RML.reference, Literal("Total")))
+                if len(sys.argv) > 2 and sys.argv[2]:
+                    g_mappings.add((object_bnode, RML.reference, Literal(sys.argv[2])))
+                else:
+                    g_mappings.add((object_bnode, RML.reference, Literal("Total")))
                 g_mappings.add((object_bnode, RR.datatype, XSD.float))
                 order += 1
                 measu_order = 1
                 for measure_group, measure in measu_list:
                     if column == measure_group:
                         print(f"Processing measure group: {measure_group} with measure: {measure}")
-                        triples_map_uri_measu = triples_map_dsd+"_measu"+str(measu_order)
+                        triples_map_uri_measu = triples_map_dsd + "_measu" + str(measu_order)
                         g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
                         logical_source_bnode = BNode()
                         g_mappings.add((triples_map_uri_measu, RML.logicalSource, logical_source_bnode))
@@ -279,12 +479,11 @@ def add_POM_from_csv(file_path):
                         subject_map_bnode = BNode()
                         g_mappings.add((triples_map_uri_measu, RR.subjectMap, subject_map_bnode))
                         g_mappings.add((subject_map_bnode, RR.constant, BNode()))
-                        g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))                                    
+                        g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
                         predicate_object_map_bnode = BNode()
                         g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
                         g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
                         g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(measure)))
-                        #This is the part that corresponds to the components of the DSD.
                         component_bnode = BNode()
                         predicate_object_map_bnode = BNode()
                         g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
@@ -292,7 +491,6 @@ def add_POM_from_csv(file_path):
                         g_mappings.add((predicate_object_map_bnode, RR.objectMap, component_bnode))
                         g_mappings.add((component_bnode, RR.parentTriplesMap, triples_map_uri_measu))
                         measu_order += 1
-            multiple_measures = True
 
 # Function to detect and replace measures in the CSV file
 def detect_and_replace_measures(file_path):
@@ -301,30 +499,69 @@ def detect_and_replace_measures(file_path):
     medidas_set = set(ine_var for ine_var, _ in lista_medidas)
     measures = load_variables("medidas_correspondence.txt")
     measures_dict = dict(measures)
+
+    # Get the measurement argument if provided
+    measurement = sys.argv[2] if len(sys.argv) > 2 else None
+    print(f"Measurement to append: {measurement}")
     with open(file_path, mode='r', encoding='utf-8', errors='replace') as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
         headers = next(reader, None)
         if headers is None:
             return False
+
+        # Replace "Total" column name with measurement if provided
+        if measurement and "Total" in headers:
+            headers = [measurement if h == "Total" else h for h in headers]
+
+        # If "Unidad" or "Tipo de dato" column exists, append sys.argv[2] to its header only
+        if "Unidad" in headers or "Tipo de dato" in headers:
+            unidad_idx = headers.index("Unidad") if "Unidad" in headers else None
+            tipo_dato_idx = headers.index("Tipo de dato") if "Tipo de dato" in headers else None
+            # Read all rows, ensuring UTF-8 encoding
+            rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
+            # Append measurement (sys.argv[2]) to "Unidad" and/or "Tipo de dato" column header
+            measurement = sys.argv[2] if len(sys.argv) > 2 else ""
+            if measurement:
+             if unidad_idx is not None:
+                headers[unidad_idx] = f"Unidad {measurement}"
+             if tipo_dato_idx is not None:
+                headers[tipo_dato_idx] = f"Tipo de dato {measurement}"
+            # Also append measurement to each cell in the "Unidad" and/or "Tipo de dato" column
+            for row in rows:
+                if measurement:
+                    if unidad_idx is not None and len(row) > unidad_idx:
+                        row[unidad_idx] = f"{row[unidad_idx]} {measurement}"
+                    if tipo_dato_idx is not None and len(row) > tipo_dato_idx:
+                        row[tipo_dato_idx] = f"{row[tipo_dato_idx]} {measurement}"
+        else:
+            # If "Unidad" not in headers, just read the rows
+            rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
+
         # Find indices of headers that are in medidas_set
         medidas_indices = [i for i, header in enumerate(headers) if header in medidas_set]
         if not medidas_indices:
+            # Write back headers and rows if only header changes were made
+            with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
+                writer = csv.writer(csvfile, delimiter=';')
+                writer.writerow(headers)
+                writer.writerows(rows)
             return False
-        # Read all rows and replace values as needed
+
+        # Replace values in measure columns
         updated_rows = []
-        for row in reader:
-            row = [cell.encode('utf-8', 'replace').decode('utf-8') for cell in row]
+        for row in rows:
             for idx in medidas_indices:
                 cell_value = row[idx]
                 if cell_value in measures_dict:
                     row[idx] = measures_dict[cell_value]
             updated_rows.append(row)
+
     # Write the updated rows back to the file
     with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=';')
         writer.writerow(headers)
         writer.writerows(updated_rows)
-    print(f"CSV updated with replaced measures.")
+    print(f"CSV updated with replaced measures and column names.")
     return True
 
 # Function to add an index column to the CSV file and strip non-UTF-8 characters
@@ -376,7 +613,8 @@ csv_file_path = sys.argv[1]
 
 # Add template metadata to the data graph
 start_time = time.time()
-add_template_metadata(csv_file_path)
+#add_template_metadata(csv_file_path)
+add_INE_metadata(csv_file_path)
 print(f"Template metadata added in {time.time() - start_time:.2f} seconds")
 
 # Add index column to the CSV file
