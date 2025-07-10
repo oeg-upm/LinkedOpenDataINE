@@ -88,6 +88,13 @@ inelod-voc:provinces a rdf:Property, qb:DimensionProperty;
     rdfs:label "Provincias"@es;
     rdfs:range skos:concept.
 
+inelod-voc:municipality a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Municipios"@es;
+    rdfs:label "Capitales de provincia y principales ciudades"@es;
+    rdfs:label "Capitales y grandes ciudades"@es;
+    rdfs:subClassOf smdx-dim:refArea;
+    rdfs:range rdfs:Resource.
+
 
 ### Variables de las estadísticas coyunturales
 #### Contabilidad Nacional Trimestral de España. Primer trimestre 2025. Avance
@@ -223,7 +230,7 @@ inelod-voc:unemploymentRate a rdf:Property, qb:MeasureProperty;
     rdfs:range xsd:float.
 
 inelod-voc:activityRate a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Tasa de actividad"@es
+    rdfs:label "Tasa de actividad"@es;
     rdfs:comment "La tasa de actividad se define como el cociente entre el total de activos y la población de 16 y más años."@es;
     rdfs:subPropertyOf inelod-voc:rate;
     rdfs:range xsd:float.

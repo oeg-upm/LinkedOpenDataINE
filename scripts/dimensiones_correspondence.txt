@@ -1,4 +1,5 @@
-Capitales y grandes ciudades,https://stats.linkeddata.es/voc/cubes/vocabulary#city
+Capitales y grandes ciudades,https://stats.linkeddata.es/voc/cubes/vocabulary#municipality
+Municipios,https://stats.linkeddata.es/voc/cubes/vocabulary#municipality
 Sexo,http://purl.org/linked-data/sdmx/2009/dimension#sex
 Edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nivel de formación alcanzado,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
@@ -10,8 +11,8 @@ Lugar de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#placeOfBirt
 País de nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#countryNationality
 País de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfBirth
 País de procedencia,https://stats.linkeddata.es/voc/cubes/vocabulary#countryOfOrigin
-Municipios,http://purl.org/linked-data/sdmx/2009/dimension#refArea 
 Comunidades y ciudades autonomas,https://stats.linkeddata.es/voc/cubes/vocabulary#ccaa
+Comunidades y Ciudades Autónomas,https://stats.linkeddata.es/voc/cubes/vocabulary#ccaa
 Tipo de alojamiento,https://stats.linkeddata.es/voc/cubes/vocabulary#lodgingType
 Provincias,https://stats.linkeddata.es/voc/cubes/vocabulary#provinces
 Sector económico,https://stats.linkeddata.es/voc/cubes/vocabulary#economicSector
