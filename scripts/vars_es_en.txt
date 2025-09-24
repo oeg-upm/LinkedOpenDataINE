@@ -1,0 +1,758 @@
+Tipo de accidente ferroviario significativo,Type of significant railway accident
+Valores especiales,Special values
+% VN que representan las OAL sobre el VN total,% of VN representing OALs over total VN
+AGRUPACIONES CNAE,CNAE groupings
+AGRUPACIONES DE NIVELES EDUCATIVOS,Educational level groupings
+AGRUPACIONES NIVELES DE FORMACIÓN,Training level groupings
+AGRUPACIONES OCUPACIONES,Occupation groupings
+Acceso a distintos tipos de atención sanitaria,Access to different types of healthcare
+Accidentes con mercancías peligrosas,Accidents with dangerous goods
+Actividad cultural,Cultural activity
+Actividad económica (CNAE-09),Economic activity (CNAE-09)
+Actividad económica (CNAE-93),Economic activity (CNAE-93)
+Actividad principal,Main activity
+Actividades de trabajo no remunerado,Unpaid work activities
+Actividades económicas (Histórico Base 90),Economic activities (Historical Base 90)
+Activity classification,Activity classification
+Activos,Active population
+Agregados de empleo,Employment aggregates
+Agrupaciones CABPS,CABPS groupings
+Agrupaciones CINE-A 2011,CINE-A 2011 groupings
+Agrupaciones EPA,EPA groupings
+Agrupaciones de Sectores de Estudios,Study sector groupings
+Agrupaciones regionales (NUTS 1),Regional groupings (NUTS 1)
+Anotación de cuentas internacionales,International accounts annotation
+Antigüedad del contrato de arrendamiento,Lease contract tenure
+Antigüedad en el empleo,Job tenure
+Apellido,Surname
+Asistencia sanitaria,Healthcare
+Asuntos civiles resueltos,Civil cases resolved
+Asuntos penales resueltos,Criminal cases resolved
+Año Base,Base year
+Año de llegada a CCAA,Year of arrival in autonomous community
+Año de llegada a España,Year of arrival in Spain
+Año de llegada a Municipio,Year of arrival in municipality
+Año de llegada a Provincia,Year of arrival in province
+Balanza de pagos,Balance of payments
+Bienes muebles,Movable property
+Brecha de género,Gender gap
+Brecha de parentalidad,Parenthood gap
+CANTIDAD,QUANTITY
+CAPITALES,PROVINCIAL CAPITALS
+CLASES,CLASSES
+CNAE Agrupación A10,CNAE Grouping A10
+CNAE Agrupación A21,CNAE Grouping A21
+CNAE Agrupación A64,CNAE Grouping A64
+COMPOSITE_BREAKDOWN,COMPOSITE_BREAKDOWN
+CUST_BREAKDOWN_LB,CUST_BREAKDOWN_LB
+Cambios de conceptos,Concept changes
+Campo de estudio,Field of study
+Cancelación hipoteca,Mortgage cancellation
+Cantidades medias consumidas,Average quantities consumed
+Capital prestado,Borrowed capital
+Capitales de provincia,Provincial capitals
+Características básicas de la explotación,Basic farm characteristics
+Cargo,Position
+Categoría funcional,Functional category
+Categoría profesional,Professional category
+Categorías HVD,HVD categories
+Causa de dejar el último empleo,Reason for leaving last job
+Causa de la actividad reducida,Reason for reduced activity
+Causa de muerte,Cause of death
+Causa del litigio,Cause of litigation
+Causas de la mayor actividad,Reasons for increased activity
+Certificación ecológica de las explotaciones,Farm organic certification
+Cifra de Negocio/Personal Ocupado,Turnover/Occupied Personnel
+Ciudades,Cities
+Clase de disolución,Type of dissolution
+Clase de inactividad de la persona de referencia de la vivienda,Inactivity type of household reference person
+Clase de procedimiento,Type of procedure
+Clase principal de la inactividad,Main inactivity class
+Clase secundaria de inactividad,Secondary inactivity class
+Clase social basada en la ocupación,Social class based on occupation
+Clases,Classes
+Clases 1992,Classes 1992
+Clases 2001,Classes 2001
+Clases 2006,Classes 2006
+Clases 2011,Classes 2011
+Clases COICOP/EPF,COICOP/EPF classes
+Clases ECOICOP,ECOICOP classes
+Clasificación Ampliada de la Balanza de Pagos de Servicios (CABPS),Extended Balance of Payments Services Classification (CABPS)
+Clasificación de instrumentos y activos,Instrument and asset classification
+Clasificación según E.O.,Classification according to E.O.
+Clasificación según E.R.,Classification according to E.R.
+Cohortes,Cohorts
+Colectivo,Collective
+Comarcas,Regions
+Compiliation methodology,Compilation methodology
+Componentes PIBpm demanda,GDP components demand
+Componentes PIBpm demanda (a desaparecer),GDP components demand (to be discontinued)
+Componentes PIBpm oferta,GDP components supply
+Componentes PIBpm oferta (a desaparecer),GDP components supply (to be discontinued)
+Componentes PIBpm renta,GDP components income
+Componentes del coste,Cost components
+Composición del hogar,Household composition
+Compra por internet,Online purchase
+Comunidades y Ciudades Autónomas,Autonomous communities and cities
+Con estiércol sólido o líquido,With solid or liquid manure
+Con o sin OAL,With or without OAL
+Con/Sin SAU,With/Without SAU
+Con/Sin UGT,With/Without UGT
+Concepto (ANTIGUA DSD BDE),Concept (OLD BDE DSD)
+Concepto Educativo,Educational concept
+Concepto financiero,Financial concept
+Concepto turístico,Tourism concept
+Conceptos Demográficos,Demographic concepts
+Conceptos demográficos de empresas,Business demographic concepts
+Conceptos demográficos de empresas en el periodo anterior,Business demographic concepts in previous period
+Conceptos demográficos derivados 1,Derived demographic concepts 1
+Conceptos demográficos derivados 2,Derived demographic concepts 2
+Conceptos salariales/laborales,Salary/labor concepts
+Conceptos sanitarios,Healthcare concepts
+Conceptos tecnológicos,Technological concepts
+Condenados,Convicted persons
+Condición jurídica,Legal status
+Condición socioeconómica,Socioeconomic condition
+Conjunto Urbano o No Urbano,Urban or non-urban area
+Consolidación,Consolidation
+Consumo de tabaco,Tobacco consumption
+Contenido propuesta,Proposal content
+Continentes,Continents
+Contratado a través de una empresa de trabajo temporal,Hired through temporary work agency
+Control de la empresa,Company control
+Conurbación,Conurbation
+Convocatoria de la prueba de acceso a la universidad,University entrance exam call
+Corrección de efectos,Seasonal adjustment
+Cría o engorde de ganado,Livestock breeding or fattening
+Cría o engorde de ganado ecológico,Organic livestock breeding or fattening
+Cultivos  y pastos,Crops and pastures
+Cultivos pastos y huertos,Crops pastures and orchards
+Curso Académico,Academic year
+Cursos de formación agraria del jefe/a (últimos 12 meses),Farm manager training courses (last 12 months)
+Cust breakdown,Cust breakdown
+Códigos de gasto (4 dígitos),Expenditure codes (4 digits)
+Códigos de gasto (5 dígitos),Expenditure codes (5 digits)
+Códigos de gasto con cantidad física,Expenditure codes with physical quantity
+Códigos de gasto con cantidad física (ECOICOP/EPF),Expenditure codes with physical quantity (ECOICOP/EPF)
+Cónyuge que debe ejercer la custodia,Spouse to exercise custody
+Cónyuge que debe pagar la pensión alimenticia,Spouse to pay alimony
+Cónyuge que debe pagar la pensión compensatoria,Spouse to pay compensatory pension
+Cónyuge que presenta la demanda,Spouse filing the claim
+DESTINO ECONOMICO DE LOS BIENES,ECONOMIC DESTINATION OF GOODS
+DIVISIONES,DIVISIONS
+Datos para viviendas y personas,Data for dwellings and persons
+Decil de salarios,Wage decile
+Delitos Faltas,Crimes Misdemeanors
+Demarcación marina,Marine demarcation
+Densidad de población,Population density
+Dependencia funcional,Functional dependency
+Deseo de modificar su horario habitual,Desire to modify usual schedule
+Destino de turismo,Tourism destination
+Destino económico de bienes  (CNAE-2009),Economic destination of goods (CNAE-2009)
+Destino económico de bienes (CNAE-93),Economic destination of goods (CNAE-93)
+Destino económico de los bienes,Economic destination of goods
+Destino económico de los bienes (Base 2000),Economic destination of goods (Base 2000)
+Destino económico de los bienes (Base 2000) exportación,Economic destination of goods (Base 2000) export
+Destino económico de los bienes (Base 2000) importación,Economic destination of goods (Base 2000) import
+Destino económico de los bienes (Base 2005),Economic destination of goods (Base 2005)
+Destino económico de los bienes (Base 90),Economic destination of goods (Base 90)
+Destino económico de los bienes corregidos de efecto calendario,Economic destination of goods calendar-adjusted
+Detalle periodo,Period detail
+Dictamen del decreto,Decree ruling
+Dificultad para llegar a fin de mes,Difficulty making ends meet
+Disposición de agua caliente,Hot water availability
+Disposición de calefacción,Heating availability
+Disposición de otras viviendas distintas de la principal,Ownership of other dwellings besides main
+Distribución de la fuente de ingresos,Income source distribution
+Distribución de la renta,Income distribution
+Distribución general de la SAU de la explotación,General SAU distribution of holding
+Distribución general de la ST de la explotación,General ST distribution of holding
+Distribución general de la explotación,General distribution of holding
+Distribución general de la superficie ecológica,General organic surface distribution
+Distritos,Districts
+Divisiones,Divisions
+Divisiones (Base 2000),Divisions (Base 2000)
+Divisiones (Base 2005),Divisions (Base 2005)
+Divisiones (Base 90),Divisions (Base 90)
+Divisiones corregidas de efecto calendario de la CNAE 2009,Calendar-adjusted divisions of CNAE 2009
+Domingos trabajados al mes,Sundays worked per month
+Dominio,Domain
+Duración de la ausencia,Duration of absence
+Duración de la lactancia,Breastfeeding duration
+Duración de la pena,Sentence duration
+Duración del contrato o relación laboral,Contract or employment relationship duration
+Duración del matrimonio,Marriage duration
+Duración del procedimiento,Procedure duration
+Duración del viaje,Trip duration
+Duración en años de la hipoteca,Mortgage duration in years
+Duración en horas,Duration in hours
+Días trabajados al final de la tarde,Days worked late evening
+Días trabajados en el domicilio particular,Days worked at private home
+Días trabajados por la noche,Days worked at night
+ERTE,ERTE (Temporary Employment Regulation)
+EUROSTAT_Edad,EUROSTAT_Age
+Edad,Age
+Edad (personas mayores de 16 años),Age (persons over 16 years)
+Edad de la esposa,Wife's age
+Edad de la madre,Mother's age
+Edad de la persona de refencia,Reference person's age
+Edad de la victima,Victim's age
+Edad del cónyuge 1,Spouse 1 age
+Edad del cónyuge 2,Spouse 2 age
+Edad del denunciado,Defendant's age
+Edad del esposo,Husband's age
+Edad del hijo,Child's age
+Edad del padre,Father's age
+Edad en que finalizo la formación,Age at completion of training
+Efectos de Comerciales,Commercial effects
+Empleo en el que desean trabajar más horas,Job where more hours desired
+Empleo por Rama de actividad. CTA,Employment by activity branch. CTA
+Enseñanza que se imparte,Type of education provided
+Entidad que concede el préstamo,Lending institution
+Escenario,Scenario
+Especies animales,Animal species
+Estado civil,Marital status
+Estado civil anterior,Previous marital status
+Estado civil de la esposa,Wife's marital status
+Estado civil de la madre,Mother's marital status
+Estado civil del cónyuge 1,Spouse 1 marital status
+Estado civil del cónyuge 2,Spouse 2 marital status
+Estado civil del esposo,Husband's marital status
+Estado de la vivienda,Dwelling condition
+Estado del asunto jurídico,Legal case status
+Estados Sociedades,Company status
+Estadística,Statistics
+Estrato de asalariados,Employee stratum
+Estrato de ocupados,Employed stratum
+Estudiantes entre 16 y 25 años que conviven con la persona de referencia,Students aged 16-25 living with reference person
+Estudios en curso,Current studies (non-formal)
+Estudios en curso no reglados,Current studies (non-formal)
+Estudios en curso reglados,Current formal studies
+Estudios reglados,Formal studies
+Existe o no separación previa,Existence of prior separation
+Existencia de propuesta anticipada,Existence of advance proposal
+Expenditure,Expenditure
+Experiencia como jefe/a,Experience as farm manager
+Exportaciones importaciones y servicios,Exports imports and services
+Exportación e importación de estiércol,Manure export and import
+Fenómeno demográfico,Demographic phenomenon
+Flete,Freight
+Forma de búsqueda de empleo,Job search method
+Forma de celebración,Form of celebration
+Forma de la jornada laboral,Work schedule form
+Forma de organización del viaje,Trip organization form
+Forma de regulación de las relaciones laborales,Labor relations regulation form
+Formación Bruta de Capital Fijo de actividades,Gross Fixed Capital Formation by activity
+Formación agraria del jefe/a,Farm manager training 
+Formula para dejar de trabajar,Formula to stop working
+Frecuencia,Frequency
+Fuente,Source
+Fuente de energía utilizada para calentar el agua,Energy source for water heating
+Fuente de energía utilizada para la calefacción,Energy source for heating
+GRUPOS,GROUPS
+Gasto total y valor unitario,Total expenditure and unit value
+Gastos totales y medios (monetario),Total and average expenditure (monetary)
+Gastos totales medios distribución porcentual e índices sobre la media del gasto,Total expenditure averages percentage distribution and indices
+Generación/Decadas/Año nacimiento,Generation/Decades/Year of birth
+Generación/edades,Generation/ages
+Grado de comisión,Degree of offense
+Grado de urbanización,Degree of urbanization
+Grupo de Venta,Sales group
+Grupo empresarial,Business group
+Grupo taxonómico,Taxonomic group
+Grupos,Groups
+Grupos (Base 2005) CNAE -09,Groups (Base 2005) CNAE -09
+Grupos 1976,Groups 1976
+Grupos 1983,Groups 1983
+Grupos 1992,Groups 1992
+Grupos COICOP,COICOP groups
+Grupos COICOP 1992,COICOP groups 1992
+Grupos COICOP 2006,COICOP groups 2006
+Grupos COICOP 2011,COICOP groups 2011
+Grupos ECOICOP,ECOICOP groups
+Grupos corregidos de efecto calendario de la CNAE 2009,Calendar-adjusted groups of CNAE 2009
+Grupos de Productos,Product groups
+Grupos de edad,Age groups
+Grupos de gasto (2 dígitos),Expenditure groups (2 digits)
+Grupos de percentiles,Percentile groups
+Grupos especiales 1983,Special groups 1983
+Grupos especiales 1992,Special groups 1992
+Grupos especiales 2001,Special groups 2001
+Grupos especiales 2006,Special groups 2006
+Grupos especiales 2011,Special groups 2011
+Grupos parlamentarios,Parliamentary groups
+Heridos graves y víctimas mortales,Seriously injured and fatalities
+Hogares y personas,Households and persons
+Horas efectivas trabajadas en el empleo principal,Actual hours worked in main job
+Horas trabajadas no remuneradas,Unpaid hours worked
+Indicador,Indicator
+Indicador (últimos datos),Indicator (latest data)
+Indicador medioambiental,Environmental indicator
+Indicadores HVD,HVD indicators
+Indicadores ODS,SDG indicators
+Indicadores Urban Audit,Urban Audit indicators
+Indicadores agricolas,Agricultural indicators
+Indicadores de Desarrollo Sostenible (ODS),Sustainable Development Indicators (SDGs)
+Indicadores de confianza empresarial,Business confidence indicators
+Indicadores de desigualdad,Inequality indicators
+Intensidad,Intensity
+Intereses,Interest
+Intervalo de tiempo semanal,Weekly time interval
+Intervalo intergenésico,Intergenesic interval
+Intervalos de error,Error intervals
+Islas,Islands
+Jefe/a de la explotación,Farm manager
+LCI_ACTIVITY,LCI_ACTIVITY
+Limitaciones en la participación en el mercado laboral por cuidar de personas dependientes,Labor market limitations due to caregiving
+Limitación,Limitation
+Lista de actividades de ocio armonizada,Harmonized leisure activities list
+Lugar de destino,Destination place
+Lugar de nacimiento,Place of birth
+Lugar de nacimiento de la esposa,Wife's place of birth
+Lugar de nacimiento de la madre,Mother's place of birth
+Lugar de nacimiento de la victima,Victim's place of birth
+Lugar de nacimiento del cónyuge 1,Spouse 1 place of birth
+Lugar de nacimiento del cónyuge 2,Spouse 2 place of birth
+Lugar de nacimiento del denunciado,Defendant's place of birth
+Lugar de nacimiento del esposo,Husband's place of birth
+Lugar de nacimiento del padre,Father's place of birth
+Lugar de pago,Payment place
+Lugar de referencia del fenómeno demográfico,Reference place of demographic phenomenon
+Lugar del accidente,Accident location
+MODALIDADES DE ALQUILER,RENTAL MODALITIES
+Mano de obra en la explotación,Farm labor
+Masa corporal,Body mass
+Materiales y Mano de Obra,Materials and Labor
+Materias primas secundarias,Secondary raw materials
+Maturidad,Maturity
+Medidas adoptadas,Measures adopted
+Medidas adptadas para el cuidado de familiares dependientes,Measures for dependent family care
+Medidas cautelares,Precautionary measures
+Medidas desarrollo rural,Rural development measures
+Medidas estadísticas,Statistical measures
+Mes,Month
+Mes de celebración,Month of celebration
+Mes del fallecimiento,Month of death
+Mes del nacimiento,Month of birth
+Meses (tramos),Months (ranges)
+Modificaciones condiciones convenio colectivo,Collective agreement modifications
+Modo de Suministro,Mode of Supply
+Modo de adquisición de la nacionalidad,Mode of nationality acquisition
+Modo reserva alojamiento,Accommodation booking mode
+Modo reserva transporte,Transport booking mode
+Moneda,Currency
+Motivo de excedencia a tiempo completo,Reason for full-time leave
+Motivo de la consulta médica,Reason for medical consultation
+Motivo de no buscar empleo,Reason for not seeking employment
+Motivo de no buscar empleo por cuidar  personas dependientes,Reason for not seeking employment due to caregiving
+Motivo de tener un contrato o relación laboral temporal,Reason for temporary contract
+Motivo del viaje,Trip purpose
+Motivo para no contratar servicios para el cuidado de hijos,Reason for not hiring childcare services
+Motivos de jornada parcial de no buscar empleo y de dejar el último empleo,Reasons for part-time not seeking work and leaving last job
+Motivos de la jornada parcial,Reasons for part-time work
+Motivos de no trabajar,Reasons for not working
+Motivos para no viajar,Reasons for not traveling
+Motivos por los que no exiten puestos de trabajo vacantes,Reasons for no job vacancies
+Motivos por los que no se ha podido cubrir las vacantes existentes en el periodo anterior,Reasons for unfilled vacancies in previous period
+Multiplicidad del parto,Multiple birth
+Multiplicidad/sexo,Multiplicity/gender
+Multiplicidad/vitalidad del parto,Multiplicity/vitality of birth
+Municipios,Municipalities
+Múltiplos del Salario Mínimo Interprofesional,Multiples of Minimum Wage
+NIVELES DE FORMACIÓN ALCANZADO - CNED-A,ATTAINED EDUCATION LEVELS - CNED-A
+NIVELES EDUCATIVOS - CNED-P,EDUCATIONAL LEVELS - CNED-P
+NST (Standard goods classification for transport statistics) 2007,NST 2007 (Standard goods classification)
+Nacionalidad,Nationality
+Nacionalidad de la esposa,Wife's nationality
+Nacionalidad de la madre,Mother's nationality
+Nacionalidad de la persona de refencia,Reference person's nationality
+Nacionalidad del cónyuge 1,Spouse 1 nationality
+Nacionalidad del cónyuge 2,Spouse 2 nationality
+Nacionalidad del esposo,Husband's nationality
+Nacionalidad del padre,Father's nationality
+Naturaleza de la finca,Property nature
+Nivel de formación alcanzado,Highest educational attainment
+Nivel de formación de la madre,Mother's education level
+Nivel de formación del cónyuge 1,Spouse 1 education level
+Nivel de formación del cónyuge 2,Spouse 2 education level
+Nivel de formación del padre,Father's education level
+Nivel de ingresos mensuales netos regulares del hogar,Household regular net monthly income level
+Nivel de renta,Income level
+Nivel de satisfacción,Satisfaction level
+Nombre,First name
+Normalidad del parto,Birth normality
+Nº de formas de búsqueda de empleo activas,Number of active job search methods
+Número de activos en la vivienda,Number of employed in household
+Número de activos entre los restantes miembros de la vivienda,Number of employed among other household members
+Número de delitos,Number of crimes
+Número de hijos,Number of children
+Número de hijos menores o mayores dependientes,Number of dependent minors/adult children
+Número de horas efectivas trabajadas en la semana en el empleo principal,Actual hours worked in main job (week)
+Número de horas empleadas en cursar estudios no reglados (en las últimas cuatro semanas),Hours spent in non-formal studies (last 4 weeks)
+Número de horas habitualmente trabajadas,Usual hours worked
+Número de infracciones penales,Number of criminal offenses
+Número de medidas adoptadas,Number of measures adopted
+Número de ocupados en la vivienda,Number of employed in household
+Número de parados en la vivienda,Number of unemployed in household
+Número de parados entre los restantes miembros de la vivienda,Number of unemployed among other household members
+Número de parados que conviven en la vivienda con la persona de referencia,Number of unemployed living with reference person
+Número de penas,Number of sentences
+Número de perceptores,Number of recipients
+Número de perceptores de ingresos en la vivienda,Number of income recipients in household
+Número de personas con discapacidad,Number of persons with disability
+Número de personas en la vivienda,Number of persons in household
+Número de personas que conviven en la vivienda con la persona de referencia,Number of persons living with reference person
+Número de personas que trabajan en el establecimiento,Number of persons working in establishment
+Número medio de horas,Average number of hours
+OAL NO relacionadas con la explotación,OAL NOT related to holding
+OAL relacionadas con la explotación,OAL related to holding
+OCUPACIONES,OCCUPATIONS
+OPERACIONES DE BIENES Y SERVICIOS,GOODS AND SERVICES OPERATIONS
+OPERACIONES DE DISTRIBUCIÓN,DISTRIBUTION OPERATIONS
+OPERACIÓN DE BIENES Y SERVICIOS FBCF,FIXED CAPITAL FORMATION OPERATIONS
+OPERACIÓN DE DISTRIBUCIÓN REMUNERACIÓN DE ASALARIADOS,COMPENSATION OF EMPLOYEES OPERATION
+OTE,OTE
+OTE Generales,General OTEs
+OTE Particulares,Specific OTEs
+OTE Principales,Main OTEs
+Objetivo de la formación (no reglada),Training objective (non-formal)
+Ocupación,Occupation
+Ocupación (empleo principal),Occupation (main job)
+Ocupación (empleo secundario),Occupation (secondary job)
+Ocupación CNO-11,CNO-11 occupation
+Ocupación CNO-11 (empleo principal),CNO-11 occupation (main job)
+Ocupación CNO-11 (empleo secundario),CNO-11 occupation (secondary job)
+Ocupación de la madre,Mother's occupation
+Ocupación del cónyunge 1,Spouse 1 occupation
+Ocupación del cónyunge 2,Spouse 2 occupation
+Ocupación del padre,Father's occupation
+Ocupación en el último empleo,Occupation in last job
+Ocupación en el último empleo ,Occupation in last job 
+Ocupados en cada encuesta e índice de cambio neto,Employed per survey and net change index
+Operaciones y flujos,Operations and flows
+Operaciones y saldos (con el resto del mundo),Operations and balances (with rest of world)
+Operaciones y saldos (nacionales),Operations and balances (national)
+Orden de nacimiento,Birth order
+Orden del nacido vivo,Live birth order
+Organismo,Organization 
+Origen del turismo,Tourism origin
+P.fisica y P.juridica,Individuals and Legal entities 
+PADRON,POPULATION REGISTER
+PRODUCT,PRODUCT
+PUNTOS TURISTÍCOS,TOURIST ATTRACTIONS
+Parados en cada encuesta e índice de cambio neto,Unemployed per survey and net change index
+Parentesco con la persona de referencia,Relationship to reference person
+Participación de una oficina pública de empleo,Public employment office participation
+Participación empresarial en su formación (no reglada),Company participation in training (non-formal)
+Partida de contabilidad,Accounting item
+Partidos Políticos,Political parties
+País de origen o destino,Country of origin/destination
+Países,Countries
+Países y Continentes,Countries and continents
+Penas y medidas,Sentences and measures
+Percentil de riqueza neta,Net wealth percentile
+Percentiles simples,Simple percentiles
+Perceptores de ingresos que conviven con la persona de referencia,Income recipients living with reference person
+Periodicidad,Periodicity
+Periodo,Period
+Persona que realiza la actividad en el hogar,Person performing household activity
+Personalidad jurídica del titular,Legal personality of owner
+Personas con y sin discapacidad,Persons with/without disability
+Personas de referencia,Reference persons
+Personas en cada encuesta e índice de cambio neto,Persons per survey and net change index
+Personas entre 16 y 25 años que conviven con la persona de referencia,Persons aged 16-25 living with reference person
+Personas/Horas,Persons/Hours
+Pertenencia a grupo empresarial,Business group affiliation
+Peso al nacimiento,Birth weight
+Plan de seguridad,Safety plan
+Población de municipios desaparecidos,Population of disappeared municipalities
+Porcentaje de tiempo trabajado (tramo UTAT),Percentage of time worked (UTAT range)
+Porcentajes,Percentages
+Porcentajes de renta por unidad de consumo,Income per consumption unit percentages
+Precios,Prices
+Precios_SEC,SEC prices
+Principal fuente de ingresos del hogar,Main household income source
+Principales Resultados de Contabilidad,Main national accounts results
+Principales magnitudes,Key indicators
+Principales variables económicas,Key economic variables
+Problema medioambiental,Environmental problem
+Problemas que sufre la vivienda y entorno,Dwelling and environment problems
+Pronunciamiento de la sentencia,Sentence ruling
+Proporción de parados,Unemployment proportion
+Provincias,Provinces
+Quien fija el horario de trabajo,Who sets work schedule
+Quintil de gasto,Expenditure quintile
+RELACIÓN CON LA ACTIVIDAD,LABOR FORCE STATUS 
+RELACIÓN CON LA ACTIVIDAD DERIVADA,DERIVED LABOR FORCE STATUS
+REPORTING_TYPE,REPORTING_TYPE
+RESIDENCIA/ORIGIN,RESIDENCE/ORIGIN
+Rama de actividad (empleo principal),Activity branch (main job)
+Rama de actividad (empleo principal) CNAE 2009,Activity branch (main job) CNAE 2009
+Rama de actividad (empleo secundario),Activity branch (secondary job)
+Rama de actividad (empleo secundario) CNAE 2009,Activity branch (secondary job) CNAE 2009
+Rama de actividad - CNAE2009,Activity branch - CNAE2009
+Rama de actividad - CNAE93,Activity branch - CNAE93
+Rama de actividad CNAE 2009,Activity branch CNAE 2009
+Rama de actividad CNAE 93,Activity branch CNAE 93
+Ramas de actividad,Activity branches
+Ramas de actividad y Hogares,Activity branches and households
+Razones por las que no ha accedido a atención sanitaria,Reasons for not accessing healthcare
+Razón de búsqueda de otro empleo,Reason for seeking other job
+Razón de usar Internet,Reason for internet use
+Razón por la que trabajó un número de horas distinto al habitual,Reason for working different hours than usual
+Reales Academias,Royal academies
+Realizan o no horas extraordinarias,Performing overtime or not
+Recursos y empleos,Resources and uses
+Redución de las horas trabajadas por el cuidado de niños,Working hour reduction for childcare
+Relacion entre lugar de nacimiento y residencia,Relationship between place of birth and residence
+Relacion entre lugar de trabajo y residencia,Relationship between workplace and residence
+Relación con la actividad,Labor force status
+Relación con la actividad de la madre,Mother's labor force status
+Relación con la actividad del cónyuge 1,Spouse 1 labor force status
+Relación con la actividad del cónyuge 2,Spouse 2 labor force status
+Relación con la actividad del padre,Father's labor force status
+Relación con la actividad económica,Relationship to economic activity
+Relación con la actividad en periodo anterior,Labor force status in previous period
+Relación con la actividad más frecuente,Most frequent labor force status
+Relación con la justicia,Relationship with justice
+Relación entre lugar de residencia y lugar de estudios,Relationship between residence and study location 
+Residuos de envases,Packaging waste
+RÚBRICAS DE ACUMULACIÓN,ACCUMULATION RUBRICS
+Régimen de la vivienda,Housing regime
+Régimen de tenencia de la SAU,SAU tenure regime
+Régimen de tenenecia de la vivienda principal,Main dwelling tenure regime
+Rúbricas 1976,Rubrics 1976
+Rúbricas 1983,Rubrics 1983
+Rúbricas 1992,Rubrics 1992
+Rúbricas 2001,Rubrics 2001
+Rúbricas 2006,Rubrics 2006
+Rúbricas 2011,Rubrics 2011
+SALDO CONTABLE VAB,VAB ACCOUNTING BALANCE
+SALDOS CONTABLES,ACCOUNTING BALANCES
+SAU,SAU
+SAU  y Superficies,SAU and Surfaces
+SAU (sin huertos),SAU (without orchards)
+SAU al aire libre,Open-air SAU
+SAU y Otras tierras,SAU and Other lands
+SECCIONES,SECTIONS 
+SECTORES,SECTORS 
+SECTORES DE ESTUDIOS - CNED-F,STUDY FIELDS - CNED-F
+SI/NO,YES/NO
+SITUACION DE ACTIVIDAD,ACTIVITY STATUS
+SITUACION DE INACTIVIDAD,INACTIVITY STATUS
+SITUACIÓN PROFESIONAL,PROFESSIONAL SITUATION
+SUBSECCIONES,SUBSECTIONS
+Secciones,Sections
+Secciones corregidas de efecto calendario de la CNAE 2009,Calendar-adjusted sections of CNAE 2009
+Secciones de la CNAE 2009,Sections of CNAE 2009
+Secciones y subsecciones (Base 2000),Sections and subsections (Base 2000)
+Secciones y subsecciones (Base 90),Sections and subsections (Base 90)
+Secciones y subsecciones de la CNAE-93,Sections and subsections of CNAE-93
+Sector de ejecución,Execution sector
+Sector de estudios en curso no reglados,Sector of current non-formal studies
+Sector de estudios en curso reglados,Sector of current formal studies
+Sector del nivel de formación alcanzado,Sector of highest educational attainment
+Sector económico,Economic sector
+Sector económico CNAE 2009 del último empleo,Economic sector CNAE 2009 of last job
+Sector económico del último empleo,Economic sector of last job
+Sector institucional homólogo,Homologous institutional sector
+Sectores económicos del empleo principal,Economic sectors of main job
+Sectores económicos del empleo secundario,Economic sectors of secondary job
+Sectores económicos del empleo secundario CNAE 2009,Economic sectors of secondary job CNAE 2009
+Sectores ecónomicos,Economic sectors
+Sectores institucionales,Institutional sectors
+Según otras religiones,Other religions
+Según perciba o no ingresos la persona de referencia,Based on reference person income status
+Semanas de gestación,Weeks of gestation
+Semiintervalos de edad,Age semi-intervals
+Semiintervalos de edad conyuge 2,Spouse 2 age semi-intervals
+Semiintervalos de percentiles,Percentile semi-intervals
+Sexo,Gender
+Sexo de la persona de referencia,Reference person gender
+Sexo de los contrayentes,Contracting parties' gender
+Sexo del cuidador principal,Main caregiver gender
+Situacion profesional,Professional situation
+Situaciones en relación a la Seguridad Social,Social Security status
+Situación anterior a la búsqueda de empleo,Status before job search
+Situación de desempleo por sexo,Unemployment status by gender
+Situación matrimonial de la madre,Mother's marital status
+Situación personal,Personal situation
+Situación profesional,Professional situation
+Situación profesional                               ,Professional situation                               
+Situación profesional del empleo principal,Professional situation of main job
+Situación profesional del empleo secundario,Professional situation of secondary job
+Situación profesional en el último empleo,Professional situation in last job
+Situación respecto a la actividad de la persona de referencia de la vivienda,Activity status of household reference person
+Subciudad,Sub-city
+Subclases 1976,Subclasses 1976
+Subclases 1983,Subclasses 1983
+Subclases 1992,Subclasses 1992
+Subclases 2001,Subclasses 2001
+Subclases 2006,Subclasses 2006
+Subclases 2011,Subclasses 2011
+Subclases COICOP/EPF,COICOP/EPF subclasses
+Subclases ECOICOP,ECOICOP subclasses
+Subgrupos 1992,Subgroups 1992
+Subgrupos 2001,Subgroups 2001
+Subgrupos 2006,Subgroups 2006
+Subgrupos 2011,Subgroups 2011
+Subgrupos COICOP/EPF,COICOP/EPF subgroups
+Subgrupos ECOICOP,ECOICOP subgroups
+Subgrupos de gasto (3 dígitos),Expenditure subgroups (3 digits)
+Subíndice IPCA,CPI sub-index
+Supervivencia del nacido,Newborn survival
+Supraciudad,Supra-city
+Sábados trabajados al mes,Saturdays worked per month
+TABLE_IDENTIFIER,TABLE_IDENTIFIER
+TARIFAS,TARIFFS
+TIPO DE CATEGORIA,CATEGORY TYPE
+TIPO DE TRANSPORTE,TYPE OF TRANSPORT
+TOTALES CLASIFICACION EDUCACIÓN,TOTAL EDUCATION CLASSIFICATIONS
+TOTALES OCUPACIONES,TOTAL OCCUPATIONS
+TOTALES VARIABLES CNAE,TOTAL CNAE VARIABLES
+Tamaño de alojamiento,Accommodation size
+Tamaño de la empresa,Company size
+Tamaño de la vivienda,Dwelling size
+Tamaño de las explotaciones según  PET (€),Farm size by PET (€)
+Tamaño de las explotaciones según SAU (Ha.),Farm size by SAU (Ha.)
+Tamaño de las explotaciones según UGT,Farm size by UGT
+Tamaño de las explotaciones según UTAT,Farm size by UTAT
+Tamaño del municipio,Municipality size
+Tamaño del municipio de nacimiento,Birth municipality size
+Tamaño del municipio de residencia,Residence municipality size
+Tamaño municipios de destino,Destination municipality size
+Tareas de supervisión otros trabajadores,Supervision of other workers
+Tasa de Divorcialidad,Divorce rate
+Tasas,Rates
+Tiempo de búsqueda de empleo,Job search duration
+Tiempo de excedencia,Leave duration
+Tiempo de exposición,Exposure time
+Tiempo de residencia en España,Residence time in Spain
+Tiempo de residencia en el municipio,Residence time in municipality
+Tiempo de trabajo,Working time
+Tiempo desde el comienzo o renovación del contrato,Time since contract start/renewal
+Tiempo desde que dejaron el último empleo,Time since leaving last job
+Tiempo que llevan trabajando en el empleo actual,Time in current job
+Tiempo transcurrido,Elapsed time
+Time period collection,Time period collection
+Tipo actividad,Activity type
+Tipo de accidente ferroviario,Type of railway accident
+Tipo de activo/deuda,Type of asset/debt
+Tipo de administración,Type of administration
+Tipo de alimento,Type of food
+Tipo de almacenamiento de estiércol,Type of manure storage 
+Tipo de alojamiento,Accommodation type
+Tipo de apellido,Type of surname
+Tipo de arrendamiento,Type of lease
+Tipo de asunto jurídico,Type of legal case
+Tipo de cambio,Exchange rate
+Tipo de carencia de material,Type of material shortage
+Tipo de comercio,Type of trade
+Tipo de concurso,Type of insolvency proceeding
+Tipo de consumo,Type of consumption
+Tipo de contrato o relación laboral,Type of contract or employment relationship
+Tipo de cultivos III,Type of crops III
+Tipo de cultivos IV,Type of crops IV
+Tipo de dato,Data type
+Tipo de dato (últimos datos),Data type (latest data)
+Tipo de dato: Niveles y Tasas,Data type: Levels and Rates
+Tipo de dato: Tasas,Data type: Rates
+Tipo de discapacidad,Type of disability
+Tipo de disolución matrimonial,Type of marital dissolution
+Tipo de divorcio,Type of divorce
+Tipo de ejercicio,Type of exercise
+Tipo de establecimiento,Type of establishment
+Tipo de estabulación,Type of livestock housing
+Tipo de estabulación de bovinos,Type of cattle housing
+Tipo de estabulación de gallinas ponedoras,Type of laying hen housing
+Tipo de estabulación de porcinos,Type of pig housing
+Tipo de estudios en curso,Type of current studies
+Tipo de explotación según SAU y UG,Type of farm by SAU and UG
+Tipo de fertilizante utilizado,Type of fertilizer used
+Tipo de flujo energético,Type of energy flow
+Tipo de ganado,Type of livestock
+Tipo de ganado estabulado,Type of housed livestock
+Tipo de gasto,Type of expenditure
+Tipo de hogar,Household type
+Tipo de hábitat anterior,Previous habitat type
+Tipo de indicador,Indicator type
+Tipo de interés,Interest rate
+Tipo de jornada,Type of work schedule
+Tipo de jornada en el empleo buscado,Type of schedule in desired job
+Tipo de lactancia,Type of breastfeeding
+Tipo de material,Type of material
+Tipo de matrimonio según nacionalidad de los conyuges,Type of marriage by spouses' nationality
+Tipo de matrimonio según sexo,Type of marriage by gender
+Tipo de mercado,Type of market
+Tipo de mercancía peligrosa,Type of dangerous goods
+Tipo de operación,Type of operation
+Tipo de parto,Type of delivery
+Tipo de precursor de accidente ferroviario,Type of railway accident precursor
+Tipo de problema sanitario,Type of health problem
+Tipo de puesto laboral,Type of work position
+Tipo de razones,Type of reasons
+Tipo de relación sentimental,Type of romantic relationship
+Tipo de representación,Type of representation
+Tipo de resolución matrimonial,Type of marital resolution
+Tipo de sector,Type of sector
+Tipo de separación,Type of separation
+Tipo de stock,Type of stock
+Tipo de tareas informáticas,Type of computer tasks
+Tipo de trabajo,Type of work
+Tipo de transmitiente,Type of transferor
+Tipo de transporte según contenido,Type of transport by content
+Tipo de transporte según destino,Type of transport by destination
+Tipo de unidad de transporte,Type of transport unit
+Tipo de viaje,Type of trip
+Tipo de violencia,Type of violence
+Tipo de visitante,Type of visitor
+Tipo de vivienda,Type of dwelling
+Tipo de víctima de accidente,Type of accident victim
+Tipo mano obra,Type of labor
+Tipo mano obra contratada,Type of hired labor
+Tipos de P.fisica y P.juridica,Types of Individuals and Legal entities 
+Tipos de cultivos y pastos  II,Types of crops and pastures II
+Tipos de ganado,Types of livestock
+Tipos de penas,Types of sentences
+Tipos ganado bovino,Types of cattle
+Titular de la vivienda,Dwelling owner
+Titular/Familiar/No familiar,Owner/Family/Non-family
+Total,Total
+Total de horas extraordinarias realizadas en la semana por los asalariados,Total overtime hours worked per week by employees
+Totales Territoriales,Territorial totals
+Totales de edad,Age totals
+Totales de edad conyuge 2,Spouse 2 age totals
+Trabajo con un sistema de turnos,Shift work system
+Trabajo en la explotación del titular,Work on owner's holding
+Tramos de Capital,Capital brackets
+Tramos de UGT,UGT brackets
+Tramos de extensión,Size brackets
+Transformación,Transformation
+Type of entity,Type of entity
+Técnica de aplicación de estiércol,Manure application technique
+Título de adquisición,Title of acquisition
+Ubicación del municipio de nacimiento,Location of birth municipality
+Ubicación del municipio de residencia anterior,Location of previous residence municipality
+Unidad,Unit
+Unidad de medida,Unit of measurement
+Unidades de medida,Units of measurement
+Utilización de la capacidad productiva en la industria,Industrial capacity utilization rate
+VARIABLE NO CONSIDERADA,VARIABLE NOT CONSIDERED
+Valor Añadido Bruto de actividades,Gross Value Added by activities
+Valoración del estado de salud,Health status assessment
+Valores simples de edad,Single age values
+Vencimiento,Maturity date
+Vinculación con la actividad,Connection to economic activity
+Viviendas familiares,Family dwellings
+Volumen de negocio,Business volume
+ZONAS TURÍSTICAS,TOURIST AREAS
+Zonas Geográficas del Resto del Mundo,Geographical zones of the rest of the world
+Zonas de nacionalidad,Nationality zones
+Zonas geográficas de España,Geographical zones of Spain
+Zonas marítimas/no marítimas,Maritime/non-maritime zones
+Ámbitos de representación,Representation spheres
+Áreas de movilidad,Mobility areas
+Índices corregidos de efecto calendario basados en la CNAE-2009,Calendar-adjusted indices based on CNAE-2009
+Índices corregidos de efecto calendario basados en la CNAE-74,Calendar-adjusted indices based on CNAE-74
+Índices corregidos de efecto calendario basados en la CNAE-93,Calendar-adjusted indices based on CNAE-93
+Órganos Institucionales,Institutional bodies
