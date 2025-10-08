@@ -4,7 +4,6 @@ Sexo,http://purl.org/linked-data/sdmx/2009/dimension#sex
 Edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nivel de formación alcanzado,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
 Periodo,http://purl.org/linked-data/sdmx/2009/dimension#refPeriod
-Grupos de edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nacionalidad,https://stats.linkeddata.es/voc/cubes/vocabulary#nationality
 Nivel de estudios,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
 Lugar de nacimiento,https://stats.linkeddata.es/voc/cubes/vocabulary#placeOfBirth

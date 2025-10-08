@@ -5,6 +5,8 @@ import sys
 import morph_kgc
 import time
 
+import rdflib
+
 # Define namespaces for the data used in the RDF cubes.
 EX = Namespace("http://example.org/")
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
@@ -503,11 +505,8 @@ def add_POM_from_csv(file_path):
 # Function to detect and replace measures in the CSV file
 def detect_and_replace_measures(file_path):
     # Load lista_medidas.txt as a list of tuples (first element is the one to look for)
-    lista_medidas = load_variables("lista_medidas.txt")
-    medidas_set = set(ine_var for ine_var, _ in lista_medidas)
-    measures = load_variables("medidas_correspondence.txt")
-    measures_dict = dict(measures)
-
+    medidas = rdflib.Graph().parse("rdf_vocabularies/inelod-voc-auto.ttl", format="ttl")
+    
     # Get the measurement argument if provided
     measurement = sys.argv[2] if len(sys.argv) > 2 else None
     print(f"Measurement to append: {measurement}")
@@ -520,30 +519,43 @@ def detect_and_replace_measures(file_path):
         # Replace "Total" column name with measurement if provided
         if measurement and "Total" in headers:
             headers = [measurement if h == "Total" else h for h in headers]
+        # SPARQL query to find ine:MeasureSet matching CSV columns
 
-        # If "Unidad" or "Tipo de dato" column exists, append sys.argv[2] to its header only
-        if "Unidad" in headers or "Tipo de dato" in headers:
-            unidad_idx = headers.index("Unidad") if "Unidad" in headers else None
-            tipo_dato_idx = headers.index("Tipo de dato") if "Tipo de dato" in headers else None
-            # Read all rows, ensuring UTF-8 encoding
-            rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
-            # Append measurement (sys.argv[2]) to "Unidad" and/or "Tipo de dato" column header
-            measurement = sys.argv[2] if len(sys.argv) > 2 else ""
-            if measurement:
-             if unidad_idx is not None:
-                headers[unidad_idx] = f"Unidad {measurement}"
-             if tipo_dato_idx is not None:
-                headers[tipo_dato_idx] = f"Tipo de dato {measurement}"
-            # Also append measurement to each cell in the "Unidad" and/or "Tipo de dato" column
-            for row in rows:
-                if measurement:
-                    if unidad_idx is not None and len(row) > unidad_idx:
-                        row[unidad_idx] = f"{row[unidad_idx]} {measurement}"
-                    if tipo_dato_idx is not None and len(row) > tipo_dato_idx:
-                        row[tipo_dato_idx] = f"{row[tipo_dato_idx]} {measurement}"
-        else:
-            # If "Unidad" not in headers, just read the rows
-            rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
+        csv_columns_set = set(headers)
+        query = """
+            PREFIX ine: <http://stats.linkeddata.es/voc/cubes/>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT ?label
+            WHERE {
+                ?set a ine:MeasureSet ;
+                    rdfs:label ?label .
+            }
+            GROUP BY ?label
+        """
+        matching_set = None
+        for row in medidas.query(query):
+                measure_labels = set(row["labels"].split(","))
+                if measure_labels.issubset(csv_columns_set):
+                        matching_set = row["set"]
+                        matching_column = next((h for h in headers if h == row["label"]), None)
+                        print(f"Found matching MeasureSet: {matching_set} for columns: {measure_labels}")
+                        # If Measure Set column exists, append sys.argv[2] to its header only
+                        # Find the index of the matching column and append measurement to its header
+                        matching_idx = headers.index(matching_column) if matching_column in headers else None
+                        if matching_idx is not None and measurement:
+                            headers[matching_idx] = f"{headers[matching_idx]} {sys.argv[2]}"
+                        # Read all rows, ensuring UTF-8 encoding
+                        rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
+                        # Also append measurement to each cell in the "Unidad" and/or "Tipo de dato" column
+                        for row in rows:
+                            if measurement:
+                                if unidad_idx is not None and len(row) > unidad_idx:
+                                    row[unidad_idx] = f"{row[unidad_idx]} {measurement}"
+                                if tipo_dato_idx is not None and len(row) > tipo_dato_idx:
+                                    row[tipo_dato_idx] = f"{row[tipo_dato_idx]} {measurement}"
+                else:
+                    # If there is not any MeasureSet, just read the rows
+                    rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
 
         # Find indices of headers that are in medidas_set
         medidas_indices = [i for i, header in enumerate(headers) if header in medidas_set]
@@ -614,6 +626,7 @@ def add_mappings_from_csv(file_path):
     g_mappings.add((triples_map_obs, RR.predicateObjectMap, predicate_object_map_bnode))
     g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.dataSet))
     g_mappings.add((predicate_object_map_bnode, RR.object, INELOD[file_name]))
+
 
 # Main execution of the python script
 # Path to the CSV file

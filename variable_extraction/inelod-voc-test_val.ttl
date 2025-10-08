@@ -15,40 +15,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 
-# Ontology declaration and metadata. 
-
-ine: a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-    dcterms:creator "Diego Conde-Herreros";
-    dcterms:contributor "Diego Conde-Herreros";
-    dcterms:created "2025-05-01"^^xsd:date ;
-    dcterms:modified "2025-09-23"^^xsd:date;
-    vann:preferredNamespacePrefix "ine" ;
-    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
-    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
-    owl:versionInfo "1.0.0"@en;
-    dcterms:description "An ontology for describing the variables used in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
-                        "Una ontologia para describir las variables empleadas en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
-    dcterms:title "INELOD VOC" .
-
-# Reused Ontology terms from other vocabularies.
-
-sdmx-dimension:age a qb:DimensionProperty, rdf:Property .
-sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:refArea a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:educationLev a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:currency a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:sex a qb:DimensionProperty, rdf:Property.
-foaf:surname a rdf:Property.
-foaf:name a rdf:Property.
-sdmx-measure:age a qb:MeasureProperty, rdf:Property.
-qb:Observation a rdfs:Class, owl:Class.
-qb:DimensionProperty a rdfs:Class, owl:Class.
-qb:MeasureProperty a rdfs:Class, owl:Class.
-skos:Concept a owl:Class.
-
-
-
 # The Ontology.
 
 ine:territorialTotals

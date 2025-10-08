@@ -1,0 +1,6215 @@
+@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>. 
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-dimensionension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix och: <http://w3id.org/def/och/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+
+# Ontology declaration and metadata. 
+
+ine: a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:creator "Diego Conde-Herreros";
+    dcterms:contributor "Diego Conde-Herreros";
+    dcterms:created "2025-05-01"^^xsd:date ;
+    dcterms:modified "2025-09-23"^^xsd:date;
+    vann:preferredNamespacePrefix "ine" ;
+    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
+    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
+    owl:versionInfo "1.0.0"@en;
+    dcterms:description "An ontology for describing the variables used in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
+                        "Una ontologia para describir las variables empleadas en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
+    dcterms:title "INELOD VOC" .
+
+# Reused Ontology terms from other vocabularies.
+
+sdmx-dimensionension:age a qb:DimensionProperty, rdf:Property .
+sdmx-dimensionension:refPeriod a qb:DimensionProperty, rdf:Property.
+sdmx-dimensionension:refArea a qb:DimensionProperty, rdf:Property.
+sdmx-dimensionension:educationLev a qb:DimensionProperty, rdf:Property.
+sdmx-dimensionension:currency a qb:DimensionProperty, rdf:Property.
+sdmx-dimensionension:sex a qb:DimensionProperty, rdf:Property.
+foaf:surname a rdf:Property.
+foaf:name a rdf:Property.
+sdmx-measure:age a qb:DimensionProperty, rdf:Property.
+qb:Observation a rdfs:Class, owl:Class.
+qb:DimensionProperty a rdfs:Class, owl:Class.
+qb:DimensionProperty a rdfs:Class, owl:Class.
+skos:Concept a owl:Class.
+
+
+
+# The Ontology.
+
+ine:territorialTotals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Territorial totals"@en ,
+    "Totales Territoriales"@es ,
+    "NAC"@es .
+
+
+ine:total
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Total"@en ,
+    "Total"@es .
+
+
+ine:ccaa
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range skos:Concept ;
+    rdfs:comment "Una comunidad autónoma (C. A.) es una entidad territorial que, dentro del actual ordenamiento jurídico constitucional, está dotada de autonomía, con instituciones y representantes propios y determinadas competencias legislativas, ejecutivas y administrativas, lo que la asimila en muchos aspectos a entidades federadas."@es;
+    rdfs:label "Autonomous communities and cities"@en , "Comunidades y Ciudades Autónomas"@es , "Comunidades y ciudades autonomas"@es, "CCAA"@es, "Comunidades autónomas"@es, "Comunidad autónoma de destino"@es ;
+    qb:concept  <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+
+
+ine:cropsPasruresAndOrchards
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Crops, pastures and orchards"@en ,
+    "Cultivos, pastos y huertos"@es .
+
+
+ine:provinces
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "La provincia es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado. Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica."@es ;
+    rdfs:label "Provinces"@en, "Provincias"@es, "PROV"@es ;
+    qb:concept  <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>  .
+
+
+ine:sauAndOtherLands
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Es el conjunto de la superficie de tierras labradas y tierras para pastos permanentes. Las tierras labradas comprenden los cultivos herbáceos, los barbechos, los huertos familiares y las tierras consagradas a cultivos leñosos."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SAU and Other lands"@en ,
+    "SAU y Otras tierras"@es .
+
+
+ine:municipalities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "El municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines."@es ;
+    rdfs:label "Municipalities"@en ,
+    "Municipios"@es ,
+    "MUN"@es .
+
+
+ine:subcity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sub-city"@en ,
+    "Subciudad"@es ,
+    "SUBCITY"@es .
+
+
+ine:supracity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Supra-city"@en ,
+    "Supraciudad"@es ,
+    "FUA"@es .
+
+
+ine:conurbation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Una ciudad se denominará conurbación o gran ciudad si más del 25% de la población de su centro urbano se encuentra fuera del área municipal. La conurbación estará formada por la ciudad y los municipios circundantes donde se extiende el centro urbano. En estos municipios, al menos el 50% de la población debe residir en el centro urbano."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Conurbation"@en ,
+    "Conurbación"@es ,
+    "KERNEL"@es .
+
+
+ine:districts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Districts"@en ,
+    "Distritos"@es ,
+    "DIST"@es .
+
+
+ine:sections
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sections"@en ,
+    "Secciones"@es ,
+    "SECC"@es ,
+    "Sections of CNAE 2009"@en ,
+    "Secciones de la CNAE 2009"@es ,
+    "Sections and subsections of CNAE-93"@en ,
+    "Secciones y subsecciones de la CNAE-93"@es ,
+    "Sections and subsections (Base 2000)"@en ,
+    "Secciones y subsecciones (Base 2000)"@es ,
+    "Sections and subsections (Base 90)"@en ,
+    "Secciones y subsecciones (Base 90)"@es ,
+    "Calendar-adjusted sections of CNAE 2009"@en ,
+    "Secciones corregidas de efecto calendario de la CNAE 2009"@es .
+
+
+
+ine:typeOfTrade
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of trade"@en ,
+    "Tipo de comercio"@es .
+
+
+ine:productGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Product groups"@en ,
+    "Grupos de Productos"@es .
+
+
+ine:dataType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Data type"@en ,
+    "Tipo de dato"@es .
+
+sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource;
+    qb:concept sdmx-concept:refPeriod ;
+    rdfs:label "Reference Period"@en , "Period"@en, "Periodo"@es ;
+    rdfs:comment """The period of time or point in time to which the measured observation is intended to refer."""@en ;
+    rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
+
+
+ine:componentsPIBpmSupply
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "PIBpm components, supply "@en ,
+    "PIBpm componentes, oferta"@es ,
+    "GDP components, supply (to be phased out)"@en ,
+    "Componentes PIBpm, oferta (a desaparecer)"@es .
+
+ine:PIBDataType  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tipo de dato de PIB"@es;
+    rdfs:comment "Incluye: Datos no ajustados de estacionalidad y calendario, y Datos ajustados de estacionalidad y calendario"@es;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:String.
+
+
+ine:compontentsPIBpmDemand
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "PIBpm components, demand"@en ,
+    "Componentes PIBpm, demanda"@es ,
+    "PIBpm components, demand (to be phased out)"@en ,
+    "Componentes PIBpm, demanda (a desaparecer)"@es .
+
+
+ine:statistics
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Statistics"@en ,
+    "Estadística"@es .
+
+
+ine:prices
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Prices"@en ,
+    "Precios"@es,
+    "SEC prices"@en ,
+    "Precios_SEC"@es .
+
+
+ine:operationsAndBalancesNational
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Operations and balances (national)"@en ,
+    "Operaciones y saldos (nacionales)"@es ,
+    "Operations and balances (with rest of world)"@en ,
+    "Operaciones y saldos (con el resto del mundo)"@es .
+
+
+
+ine:economicalActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "Se define como la generación de valor añadido mediante la producción de bienes y servicios."@es ;
+    rdfs:label "Activity branches"@en ,
+    "Ramas de actividad"@es ,
+    "Activity branches and households"@en ,
+    "Ramas de actividad y Hogares"@es ,
+    "Activity branch - CNAE93"@en ,
+    "Rama de actividad - CNAE93"@es ,
+    "Activity branch CNAE 2009"@en ,
+    "Rama de actividad CNAE 2009"@es ,
+    "Activity branch (main job) CNAE 2009"@en ,
+    "Rama de actividad (empleo principal) CNAE 2009"@es,
+    "Economic activities (Historical Base 90)"@en ,
+    "Actividades económicas (Histórico Base 90)"@es ,
+    "Main activity"@en ,
+    "Actividad principal"@es ,
+    "Economic activity (CNAE-93)"@en ,
+    "Actividad económica (CNAE-93)"@es ,
+    "Economic activity (CNAE-09)"@en ,
+    "Actividad económica (CNAE-09)"@es .
+
+ine:economicSector 
+    a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Sector económico"@es, "Economic sectors"@en , "Sectores económicos"@es ,"Economic Sector","Sector de actividad"@es;
+    rdfs:domain qb:Observation;
+    rdfs:range skos:Concept.
+
+
+ine:employmentAggregates
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Employment aggregates"@en ,
+    "Agregados de empleo"@es .
+
+ine:macroeconomicalAggregates  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Agregados macroeconómicos"@es;
+    rdfs:comment "Los agregados macroeconómicos son valores que representan la suma de todos los datos individuales del conjunto de una economía."@es;
+    rdfs:range rdfs:Resource.
+
+
+ine:componentesPibpmRent
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Componentes PIBpm, rent"@en ,
+    "Componentes PIBpm, renta"@es .
+
+
+sdmx-dimensionension:sex a qb:DimensionProperty, rdf:Property ;
+    rdfs:range rdfs:Resource;
+    qb:concept sdmx-concept:sex ;
+    rdfs:label "Sex"@en, "Sexo"@es, "Reference person gender"@en, "Sexo de la persona de referencia"@es ;
+    rdfs:comment """The state of being male or female."""@en , "El sexo se refiere al sexo biológico de la persona. Según la OMS, el sexo hace referencia a las características biológicas y fisiológicas que definen a hombres y mujeres, mientras que el género se refiere a los roles, conductas, actividades y atributos construidos socialmente que una cultura determinada considera apropiados para hombres y mujeres. De acuerdo con esta descripción, la OMS considera que hombre y mujer son categorías de sexo, mientras que masculino y femenino son categorías de género."@es ;
+    rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
+
+
+ine:islands
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Islands"@en ,
+    "Islas"@es .
+
+
+ine:mainDwellingTenureRegime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Main dwelling tenure regime"@en ,
+    "Régimen de tenenecia de la vivienda principal"@es .
+
+
+ine:hotWaterAvailability
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Hot water availability"@en ,
+    "Disposición de agua caliente"@es .
+
+
+ine:energySourceForWaterHeating
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Energy source for water heating"@en ,
+    "Fuente de energía utilizada para calentar el agua"@es .
+
+
+ine:heatingAvailability
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Heating availability"@en ,
+    "Disposición de calefacción"@es .
+
+
+ine:energySourceForHeating
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Energy source for heating"@en ,
+    "Fuente de energía utilizada para la calefacción"@es .
+
+
+ine:ownershipOfOtherDwellingsBesidesMain
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Ownership of other dwellings besides main"@en ,
+    "Disposición de otras viviendas distintas de la principal"@es .
+
+
+ine:householdsAndPersons
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Households and persons"@en ,
+    "Hogares y personas"@es .
+
+
+ine:municipalitySize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Municipality size"@en ,
+    "Tamaño del municipio"@es .
+
+
+ine:municipality a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Municipios"@es;
+    rdfs:label "Capitales de provincia y principales ciudades"@es;
+    rdfs:label "Capitales y grandes ciudades"@es;
+    rdfs:subClassOf smdx-dim:refArea;
+    rdfs:range rdfs:Resource.
+
+
+ine:populationDensity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Population density"@en ,
+    "Densidad de población"@es .
+
+
+ine:householdComposition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Household composition"@en ,
+    "Composición del hogar"@es .
+
+
+ine:householdType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Clasificación de las diferentes composiciones de los hogares basadas en variables sociodemográficas como edad, sexo y parentesco de sus miembros."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Household type"@en ,
+    "Tipo de hogar"@es .
+
+
+ine:mainHouseholdIncomeSource
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Main household income source"@en ,
+    "Principal fuente de ingresos del hogar"@es .
+
+
+ine:householdRegularNetMonthlyIncomeLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Household regular net monthly income level"@en ,
+    "Nivel de ingresos mensuales netos regulares del hogar"@es .
+
+ine:expenditureGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Expenditure groups"@en ,
+    "Grupos de gasto"@es .
+
+
+ine:expenditureGroups2Digits
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf ine:expenditureGroups ;
+    rdfs:label "Expenditure groups (2 digits)"@en ,
+    "Grupos de gasto (2 dígitos)"@es .
+
+
+ine:totalExpensesAvgPercentageandIndexAboveAVGExpenditure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total expenses, averages, percentage distribution, and indices above the average expenditure"@en ,
+    "Gastos totales, medios, distribución porcentual e índices sobre la media del gasto"@es .
+
+
+ine:averageQuantitiesConsumed
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:label "Average quantities consumed"@en ,
+    "Cantidades medias consumidas"@es .
+
+
+ine:totalExpenditureAndUnitValue
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total expenditure and unit value"@en ,
+    "Gasto total y valor unitario"@es .
+
+
+ine:baseYear
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:label "Base year"@en ,
+    "Año Base"@es .
+
+ine:expenditureSubgroups3Digits
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Expenditure subgroups (3 digits)"@en ,
+    "Subgrupos de gasto (3 dígitos)"@es .
+
+ine:expenditureCodes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Expenditure codes"@en ,
+    "Códigos de gasto"@es .
+
+
+ine:expenditureCodes4Digits
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf ine:expenditureCodes ;
+    rdfs:label "Expenditure codes (4 digits)"@en ,
+    "Códigos de gasto (4 dígitos)"@es .
+
+
+ine:expenditureCodes5Digits
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf ine:expenditureCodes ;
+    rdfs:label "Expenditure codes (5 digits)"@en ,
+    "Códigos de gasto (5 dígitos)"@es .
+
+
+ine:expenditureCodesWithPhysicalQuantity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf ine:expenditureCodes ;
+    rdfs:label "Expenditure codes with physical quantity"@en ,
+    "Códigos de gasto con cantidad física"@es .
+
+
+ine:totalAndAverageExpenditureMonetary
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:label "Total and average expenditure (monetary)"@en ,
+    "Gastos totales y medios (monetario)"@es .
+
+
+ine:keyEconomicVariables
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Key economic variables"@en ,
+    "Principales variables económicas"@es .
+
+
+ine:personshours
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Persons/Hours"@en ,
+    "Personas/Horas"@es .
+
+
+ine:categoryType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CATEGORY TYPE"@en ,
+    "TIPO DE CATEGORIA"@es .
+
+
+ine:touristAreas
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TOURIST AREAS"@en ,
+    "ZONAS TURÍSTICAS"@es .
+
+
+ine:residenceOrigin
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "RESIDENCE/ORIGIN"@en ,
+    "RESIDENCIA/ORIGEN"@es .
+
+
+ine:placeOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Lugar en que ha nacido una persona, es decir, el lugar de residencia habitual de la madre en el momento del nacimiento, determinado en la fecha de la recogida de datos."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:label "Place of birth"@en ,
+    "Lugar de nacimiento"@es .
+
+
+ine:travelOrganization
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Trip organization form"@en ,
+    "Forma de organización del viaje"@es .
+
+
+ine:touristAttractions
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TOURIST ATTRACTIONS"@en ,
+    "PUNTOS TURISTÍCOS"@es .
+
+
+ine:tariffs
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TARIFFS"@en ,
+    "TARIFAS"@es .
+
+
+ine:rentalModalities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "RENTAL MODALITIES"@en ,
+    "MODALIDADES DE ALQUILER"@es .
+
+ine:numberOfEmployed
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Los ocupados son todas aquellas personas de 16 años o más que, según los criterios OIT, durante la semana de referencia tuvieron un empleo por cuenta ajena, asalariado, o ejercieron una actividad por cuenta propia, trabajadores por cuenta propia. En relación a este empleo o actividad, pudieron haberse encontrado en la semana de referencia: - trabajando al menos una hora en el citado período a cambio de una remuneración, salario, beneficio empresarial o ganancia familiar, etc., o - ausentes del mismo pero con un fuerte vínculo con dicho empleo."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Employed"@en ,
+    "Ocupados"@es .
+
+ine:index
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Index"@en ,
+    "Índice"@es .
+
+ine:employedPerSurveyAndNetChangeIndex
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:label "Employed per survey and net change index"@en ,
+    "Ocupados en cada encuesta e índice de cambio neto"@es .
+
+
+ine:unemployedPerSurveyAndNetChangeIndex
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unemployed per survey and net change index"@en ,
+    "Parados en cada encuesta e índice de cambio neto"@es .
+
+
+ine:collective
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Collective"@en ,
+    "Colectivo"@es .
+
+ine:residence a rdf:Property, qb:DimensionProperty;
+    rdfs:label "residencia"@es;
+    rdfs:comment "Lugar en que se reside"@es;
+    rdfs:domain qb:Observation;
+    rdfs:range rdfs:Resource;
+    rdfs:subPropertyOf sdmx-dim:refArea. 
+
+
+ine:relationshipToEconomicActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship to economic activity"@en ,
+    "Relación con la actividad económica"@es .
+
+
+sdmx-dimension:age
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "La edad en años cumplidos se refiere al número de aniversarios del nacimiento transcurridos en la fecha de referencia, es decir, a la edad en el último cumpleaños."@es, "The length of time that a person has lived or a thing has existed."@en ;
+    rdfs:range rdfs:Resource ;
+    qb:concept sdmx-concept:age ;
+    rdfs:label "Age"@en, "Edad"@es, "EUROSTAT_Age"@en, "EUROSTAT_Edad"@es , "Age groups"@en , "Grupos de edad"@es ;
+    rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
+
+ine:ageGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    qb:concept sdmx-concept:age ;
+    rdfs:label "Age groups"@en , "Grupos de edad"@es .
+
+
+ine:professionalSituation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "La definición se basa en la resolución de la OIT relativa a la Clasificación Internacional de la Situación en el Empleo (15ª CISE, 1993). Las dos dimensiones que son esenciales para el concepto de la situación profesional son el riesgo económico y la autoridad. La distinción básica es la existente entre los asalariados y los trabajadores por cuenta propia. Los asalariados son todos los trabajadores que tienen el tipo de empleo definido como empleo remunerado: empleos en los que los titulares tienen contratos de trabajo implícitos o explícitos (orales o escritos), por los que reciben una remuneración básica que no depende directamente de los ingresos de la unidad para la que trabajan (esta unidad puede ser una corporación, una institución sin fines de lucro, una unidad gubernamental o un hogar). Algunos o todos los instrumentos, bienes de capital, sistemas de información y/o locales utilizados por los titulares son propiedad de terceras personas, y los titulares pueden trabajar bajo la supervisión directa o de acuerdo con directrices estrictas establecidas por el propietario o las personas empleadas por éste. (Las personas con empleo asalariado se remuneran habitualmente con sueldos u salarios, pero también pueden remunerarse por medio de comisiones de ventas, pagos a destajo, primas o pagos en especie tales como comida, habitación o formación).. Los empleos por cuenta propia son aquellos empleos en los que la remuneración depende directamente de los beneficios (o del potencial para realizar beneficios) derivados de los bienes y servicios producidos (en estos empleos se considera que el consumo propio forma parte de los beneficios). Los trabajadores por cuenta propia toman las decisiones operacionales que afectan a la empresa, o delegan tales decisiones, pero mantienen la responsabilidad del bienestar de la empresa. (En este contexto, la empresa incluye a las operaciones de una única persona.) Los trabajadores asalariados con un trabajo/contrato de duración determinada son los empleados cuyo trabajo principal terminará transcurrido un período de tiempo determinado por anticipado, o después de un período de tiempo no conocido por anticipado, pero definido mediante criterios objetivos, como la conclusión de una tarea o del período de ausencia del trabajador al que se está sustituyendo de forma temporal."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Professional situation"@en ,
+    "Situación profesional"@es .
+
+
+ine:typeOfContractOrEmploymentRelationship
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Un contrato o relación laboral puede ser indefinido o temporal. 1. Si no existen criterios objetivos para la finalización de un contrato o relación laboral, éste debe ser considerado como indefinido, incluso si se desarrollan solo durante determinados períodos del año pero con la seguridad de que se repetirá cada año (fijos -discontinuos). En el caso de asalariados que trabajan a domicilio, como puedan ser las asistentas externas, profesores particulares, masajistas, peluqueras, etc. y que se desplazan al domicilio del que recibe el servicio se tendrá en cuenta lo siguiente: - Si el asalariado trabaja en una sola vivienda y se ha acordado una duración fija o una fecha de finalización, se considerará que el tipo de contrato o relación laboral es temporal. - Si trabaja en varias viviendas o no se ha acordado una duración fija o una fecha de finalización se considerará que el contrato es indefinido. Se tendrán en cuenta las situaciones laborales sin contrato. Se considerarán asimismo, dentro de los contratos temporales, los del Programa de Fomento del Empleo Agrario (antes Plan de Empleo Rural) y los creados en virtud de los convenios de colaboración entre el INEM y demás organismos públicos. 2. Con carácter general, se puede definir un empleo como temporal cuando el fin de la relación laboral o del contrato queda determinado por condiciones objetivas, tales como la expiración de cierto plazo, la realización de una tarea determinada, la reincorporación de un empleado al que se había reemplazado temporalmente, la realización de un período de prácticas o formación o la sustitución de la parte de trabajo no desarrollada por los parcialmente jubilados. En el caso de un contrato de trabajo de duración limitada, las condiciones correspondientes para su terminación se mencionan generalmente en el contrato."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of contract or employment relationship"@en ,
+    "Tipo de contrato o relación laboral"@es .
+
+
+ine:typeOfWorkSchedule
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "La jornada semanal habitual en el trabajo puede ser a tiempo completo o a tiempo parcial. La distinción se basa en la apreciación del entrevistado, si bien hay que tener en cuenta que el trabajo a tiempo parcial siempre debe ser igual o inferior a 35 horas habituales semanales y el trabajo a tiempo completo ha de ser igual o superior a 30 horas habituales a la semana." ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of work schedule"@en ,
+    "Tipo de jornada"@es .
+
+
+ine:jobSearchDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Job search duration"@en ,
+    "Tiempo de búsqueda de empleo"@es .
+
+
+ine:inactivityStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "INACTIVITY STATUS"@en ,
+    "SITUACION DE INACTIVIDAD"@es .
+
+
+ine:rates
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Rates"@en ,
+    "Tasas"@es .
+
+
+ine:hoursSpentInNonformalStudiesLast4Weeks
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Número de horas empleadas en cursar estudios no reglados (en las últimas cuatro semanas)"@es;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hours spent in non-formal studies (last 4 weeks)"@en ,
+    "Número de horas empleadas en cursar estudios no reglados (en las últimas cuatro semanas)"@es .
+
+
+ine:averageNumberOfHours
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Número medio de horas"@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Average number of hours"@en ,
+    "Número medio de horas"@es .
+
+
+ine:currentFormalStudies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Current formal studies"@en ,
+    "Estudios en curso reglados"@es .
+
+
+ine:currentStudiesNonformal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Current studies (non-formal)"@en ,
+    "Estudios en curso no reglados"@es ,
+    "Estudios en curso"@es .
+
+
+ine:workOvertimeOrNot
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Realizan o no, horas extraordinarias"@en ,
+    "Do they work overtime or not?"@es .
+
+
+ine:totalOvertimeHoursWorkedPerWeekByEmployees
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Total overtime hours worked per week by employees"@en ,
+    "Total de horas extraordinarias realizadas en la semana por los asalariados"@es .
+
+
+ine:ageAtCompletionOfTraining
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Age at completion of training"@en ,
+    "Edad en que finalizo la formación"@es .
+
+ine:hoursWorked
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Hours worked"@en ,
+    "Número de horas trabajadas"@es .
+
+ine:usualHoursWorked
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:hoursWorked;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Usual hours worked"@en ,
+    "Número de horas habitualmente trabajadas"@es .
+
+
+ine:timeSinceLeavingLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:label "Time since leaving last job"@en ,
+    "Tiempo desde que dejaron el último empleo"@es .
+
+
+ine:typeOfAdministration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Central, Seguridad Social, Comunidad Autónoma, Local, Empresa e Institución Pública, y Otro tipo" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of administration"@en ,
+    "Tipo de administración"@es .
+
+ine:residenceTime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Residence time"@en ,
+    "Tiempo de residencia"@es .
+
+ine:residenceTimeInSpain
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:residenceTime ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Residence time in Spain"@en ,
+    "Tiempo de residencia en España"@es .
+
+
+ine:relationshipToReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship to reference person"@en ,
+    "Parentesco con la persona de referencia"@es .
+
+sdmx-dimension:educationLev 
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "El nivel de formación alcanzado por una persona se define como el máximo nivel que el individuo ha completado y se mide a partir del programa de máximo nivel que haya superado, validado, normalmente, por la correspondiente certificación"@es , """The highest level of an educational programme the person has successfully completed."""@en ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource;
+    qb:concept sdmx-concept:educationLev ;
+    rdfs:label "Highest educational attainment"@en, "Education Level"@en, "Nivel de formación alcanzado"@es, "Nivel de estudios"@es;
+    rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
+
+
+ine:formalStudies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Formal studies"@en ,
+    "Estudios reglados"@es .
+
+
+ine:maritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Solteros/Solteras, Casados/Casadas, Viudos/Viudas, Separados/Separadas y Divorciados/Divorciadas" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Marital status"@en ,
+    "Estado civil"@es .
+
+
+ine:nationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Vínculo jurídico particular entre un individuo y su Estado, adquirido mediante nacimiento, naturalización, declaración, opción, matrimonio y otras fórmulas acordes con la legislación nacional."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Nationality"@en ,
+    "Nacionalidad"@es .
+
+
+ine:countryNationality  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de nacionalidad"@es, "Country of Nationality"@en ;
+    rdfs:comment "Vínculo jurídico particular entre un individuo y su Estado, adquirido mediante nacimiento, naturalización, declaración, opción, matrimonio y otras fórmulas acordes con la legislación nacional."@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
+
+ine:countryOfBirth  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de nacimiento"@es;
+    rdfs:comment "País en que ha nacido una persona, es decir, el país de residencia habitual de la madre en el momento del nacimiento, determinado en la fecha de la recogida de datos."@es;
+    rdfs:subPropertyOf ine:placeOfBirth;
+    rdfs:range rdfs:Resource.
+
+ine:countryOfOrigin  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de procedencia"@es;
+    rdfs:comment "País de procedencia de la mercancía, el país de la exportación."@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range rdfs:Resource.
+
+ine:countryOfResidence a rdf:Property, qb:DimensionProperty;
+    rdfs:label "País de residencia"@es;
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:string.
+
+ine:nationalityZones
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refArea ; 
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Nationality zones"@en ,
+    "Zonas de nacionalidad"@es .
+
+
+ine:desireToModifyUsualSchedule
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Desire to modify usual schedule"@en ,
+    "Deseo de modificar su horario habitual"@es .
+
+
+ine:timeInCurrentJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Time in current job"@en ,
+    "Tiempo que llevan trabajando en el empleo actual"@es .
+
+
+ine:activityBranchMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Activity branch (main job)"@en ,
+    "Rama de actividad (empleo principal)"@es .
+
+
+ine:professionalSituationOfMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:professionalSituation ;
+    rdfs:label "Professional situation of main job"@en ,
+    "Situación profesional del empleo principal"@es .
+
+
+ine:reasonForReducedActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reason for reduced activity"@en ,
+    "Causa de la actividad reducida"@es .
+
+
+ine:economicSectorsOfMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic sectors of main job"@en ,
+    "Sectores económicos del empleo principal"@es .
+
+
+ine:jobSearchMethod
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Job search method"@en ,
+    "Forma de búsqueda de empleo"@es .
+
+
+ine:mainInactivityClass
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Main inactivity class"@en ,
+    "Clase principal de la inactividad"@es .
+
+
+ine:occupationMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:occupation ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Occupation (main job)"@en ,
+    "Ocupación (empleo principal)"@es .
+
+
+ine:timeSinceContractStartrenewal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Time since contract start/renewal"@en ,
+    "Tiempo desde el comienzo o renovación del contrato"@es .
+
+
+ine:professionalSituationOfSecondaryJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:professionalSituation ;
+    rdfs:label "Professional situation of secondary job"@en ,
+    "Situación profesional del empleo secundario"@es .
+
+
+ine:reasonsForIncreasedActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reasons for increased activity"@en ,
+    "Causas de la mayor actividad"@es .
+
+
+ine:economicSectorsOfSecondaryJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic sectors of secondary job"@en ,
+    "Sectores económicos del empleo secundario"@es .
+
+
+ine:numberOfActiveJobSearchMethods
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Number of active job search methods"@en ,
+    "Nº de formas de búsqueda de empleo activas"@es .
+
+
+ine:activityBranchSecondaryJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:label "Activity branch (secondary job)"@en ,
+    "Rama de actividad (empleo secundario)"@es ,
+    "Activity branch (secondary job) CNAE 2009"@en ,
+    "Rama de actividad (empleo secundario) CNAE 2009"@es .
+
+
+ine:occupationSecondaryJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:occupation ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Occupation (secondary job)"@en ,
+    "Ocupación (empleo secundario)"@es .
+
+
+ine:secondaryInactivityClass
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Secondary inactivity class"@en ,
+    "Clase secundaria de inactividad"@es .
+
+
+ine:contractOrEmploymentRelationshipDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float ;
+    rdfs:label "Contract or employment relationship duration"@en ,
+    "Duración del contrato o relación laboral"@es .
+
+
+ine:typeOfScheduleInDesiredJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "La jornada semanal habitual en el trabajo puede ser a tiempo completo o a tiempo parcial. La distinción se basa en la apreciación del entrevistado, si bien hay que tener en cuenta que el trabajo a tiempo parcial siempre debe ser igual o inferior a 35 horas habituales semanales y el trabajo a tiempo completo ha de ser igual o superior a 30 horas habituales a la semana."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of schedule in desired job"@en ,
+    "Tipo de jornada en el empleo buscado"@es .
+
+
+ine:occupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Se define la ocupación como la clase o tipo de trabajo desarrollado, con especificación del puesto de trabajo desempeñado." ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Occupation"@en ,
+    "Ocupación"@es ,
+    "CNO-11 occupation"@en ,
+    "Ocupación CNO-11"@es .
+
+
+ine:reasonsForNotWorking
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reasons for not working"@en ,
+    "Motivos de no trabajar"@es .
+
+
+ine:connectionToEconomicActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Connection to economic activity"@en ,
+    "Vinculación con la actividad"@es .
+
+
+ine:unit
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unit"@en ,
+    "Unidad"@es .
+
+
+ine:actualHoursWorkedInMainJobWeek
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:hoursWorked;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Actual hours worked in main job (week)"@en ,
+    "Número de horas efectivas trabajadas en la semana en el empleo principal"@es .
+
+
+ine:reasonsForParttimeWork
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reasons for part-time work"@en ,
+    "Motivos de la jornada parcial"@es .
+
+
+ine:reasonForNotSeekingEmployment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reason for not seeking employment"@en ,
+    "Motivo de no buscar empleo"@es .
+
+
+ine:socioeconomicCondition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Socioeconomic condition"@en ,
+    "Condición socioeconómica"@es .
+
+
+ine:familyDwellings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "Vivienda destinada a ser habitada por una o varias personas que no constituyen un colectivo, independientemente de los vínculos existentes entre ellas."@es ;
+    rdfs:label "Family dwellings"@en ,
+    "Viviendas familiares"@es .
+
+
+ine:numberOfPersonsInHousehold
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of persons in household"@en ,
+    "Número de personas en la vivienda"@es .
+
+
+ine:numberOfEmployedInHousehold
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:numberOfEmployed ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of employed in household"@en ,
+    "Número de activos en la vivienda"@es ,
+    "Número de ocupados en la vivienda"@es .
+
+
+ine:numberOfUnemployedInHousehold
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of unemployed in household"@en ,
+    "Número de parados en la vivienda"@es .
+
+
+ine:personsAged1625LivingWithReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Persons aged 16-25 living with reference person"@en ,
+    "Personas entre 16 y 25 años que conviven con la persona de referencia"@es .
+
+
+ine:economicSectorsOfSecondaryJobCnae2009
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:label "Economic sectors of secondary job CNAE 2009"@en ,
+    "Sectores económicos del empleo secundario CNAE 2009"@es .
+
+
+ine:economicSectorCnae2009OfLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:label "Economic sector CNAE 2009 of last job"@en ,
+    "Sector económico CNAE 2009 del último empleo"@es .
+
+
+ine:numberOfPersonsLivingWithReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of persons living with reference person"@en ,
+    "Número de personas que conviven en la vivienda con la persona de referencia"@es .
+
+
+ine:studentsAged1625LivingWithReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Students aged 16-25 living with reference person"@en ,
+    "Estudiantes entre 16 y 25 años que conviven con la persona de referencia"@es .
+
+
+ine:numberOfEmployedAmongOtherHouseholdMembers
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of employed among other household members"@en ,
+    "Número de activos entre los restantes miembros de la vivienda"@es .
+
+
+ine:numberOfUnemployedAmongOtherHouseholdMembers
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of unemployed among other household members"@en ,
+    "Número de parados entre los restantes miembros de la vivienda"@es .
+
+
+ine:activityStatusOfHouseholdReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Activity status of household reference person"@en ,
+    "Situación respecto a la actividad de la persona de referencia de la vivienda"@es .
+
+
+ine:inactivityTypeOfHouseholdReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Inactivity type of household reference person"@en ,
+    "Clase de inactividad de la persona de referencia de la vivienda"@es .
+
+
+ine:numberOfIncomeRecipientsInHousehold
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Number of income recipients in household"@en ,
+    "Número de perceptores de ingresos en la vivienda"@es .
+
+
+ine:incomeRecipientsLivingWithReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Income recipients living with reference person"@en ,
+    "Perceptores de ingresos que conviven con la persona de referencia"@es .
+
+
+ine:basedOnReferencePersonIncomeStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Based on reference person income status"@en ,
+    "Según perciba o no ingresos la persona de referencia"@es .
+
+
+ine:numberOfUnemployedLivingWithReferencePerson
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of unemployed living with reference person"@en ,
+    "Número de parados que conviven en la vivienda con la persona de referencia"@es .
+
+
+ine:unemploymentProportion
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unemployment proportion"@en ,
+    "Proporción de parados"@es .
+
+
+ine:keyIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Key indicators"@en ,
+    "Principales magnitudes"@es .
+
+
+ine:sectorOfHighestEducationalAttainment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sector of highest educational attainment"@en ,
+    "Sector del nivel de formación alcanzado"@es .
+
+
+ine:sectorOfCurrentFormalStudies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sector of current formal studies"@en ,
+    "Sector de estudios en curso reglados"@es .
+
+
+ine:sectorOfCurrentNonformalStudies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sector of current non-formal studies"@en ,
+    "Sector de estudios en curso no reglados"@es .
+
+
+ine:trainingObjectiveNonformal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Training objective (non-formal)"@en ,
+    "Objetivo de la formación (no reglada)"@es .
+
+
+ine:companyParticipationInTrainingNonformal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Company participation in training (non-formal)"@en ,
+    "Participación empresarial en su formación (no reglada)"@es .
+
+
+ine:daysWorkedAtPrivateHome
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days worked at private home"@en ,
+    "Días trabajados en el domicilio particular"@es .
+
+
+ine:saturdaysWorkedPerMonth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Saturdays worked per month"@en ,
+    "Sábados trabajados al mes"@es .
+
+
+ine:sundaysWorkedPerMonth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Sundays worked per month"@en ,
+    "Domingos trabajados al mes"@es .
+
+
+ine:daysWorkedLateEvening
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days worked late evening"@en ,
+    "Días trabajados al final de la tarde"@es .
+
+
+ine:daysWorkedAtNight
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Days worked at night"@en ,
+    "Días trabajados por la noche"@es .
+
+
+ine:workScheduleForm
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Work schedule form"@en ,
+    "Forma de la jornada laboral"@es .
+
+
+ine:shiftWorkSystem
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Shift work system"@en ,
+    "Trabajo con un sistema de turnos"@es .
+
+
+ine:typeOfWorkPosition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of work position"@en ,
+    "Tipo de puesto laboral"@es .
+
+
+ine:numberOfPersonsWorkingInEstablishment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of persons working in establishment"@en ,
+    "Número de personas que trabajan en el establecimiento"@es .
+
+
+ine:hiredThroughTemporaryWorkAgency
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Hired through temporary work agency"@en ,
+    "Contratado a través de una empresa de trabajo temporal"@es .
+
+
+ine:publicEmploymentOfficeParticipation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Public employment office participation"@en ,
+    "Participación de una oficina pública de empleo"@es .
+
+
+ine:reasonForTemporaryContract
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reason for temporary contract"@en ,
+    "Motivo de tener un contrato o relación laboral temporal"@es .
+
+
+ine:jobWhereMoreHoursDesired
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Job where more hours desired"@en ,
+    "Empleo en el que desean trabajar más horas"@es .
+
+
+ine:reasonForSeekingOtherJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range ine:typeOfReason ;
+    rdfs:label "Reason for seeking other job"@en ,
+    "Razón de búsqueda de otro empleo"@es .
+
+
+ine:statusBeforeJobSearch
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Status before job search"@en ,
+    "Situación anterior a la búsqueda de empleo"@es .
+
+
+ine:reasonForLeavingLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for leaving last job"@en ,
+    "Causa de dejar el último empleo"@es .
+
+
+ine:professionalSituationInLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:professionalSituation ;
+    rdfs:label "Professional situation in last job"@en ,
+    "Situación profesional en el último empleo"@es .
+
+
+ine:occupationInLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:occupation ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Occupation in last job"@en ,
+    "Ocupación en el último empleo"@es .
+
+
+ine:economicSectorOfLastJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic sector of last job"@en ,
+    "Sector económico del último empleo"@es .
+
+
+ine:reasonForNotSeekingEmploymentDueToCaregiving
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for not seeking employment due to caregiving"@en ,
+    "Motivo de no buscar empleo por cuidar  personas dependientes"@es .
+
+
+ine:dataForDwellingsAndPersons
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Data for dwellings and persons"@en ,
+    "Datos para viviendas y personas"@es .
+
+
+ine:unitOfMeasurement
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:unit ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unit of measurement"@en ,
+    "Unidad de medida"@es .
+
+
+ine:classificationAccordingToER
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Classification according to E.R."@en ,
+    "Clasificación según E.R."@es .
+
+
+ine:classificationAccordingToEo
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Classification according to E.O."@en ,
+    "Clasificación según E.O."@es .
+
+
+ine:indicatorType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Indicator type"@en ,
+    "Tipo de indicador"@es .
+
+
+ine:actualHoursWorkedInMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Actual hours worked in main job"@en ,
+    "Horas efectivas trabajadas en el empleo principal"@es .
+
+
+ine:unemploymentStatusByGender
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unemployment status by gender"@en ,
+    "Situación de desempleo por sexo"@es .
+
+
+ine:salarylaborConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Salary/labor concepts"@en ,
+    "Conceptos salariales/laborales"@es .
+
+
+ine:costComponents
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cost components"@en ,
+    "Componentes del coste"@es .
+
+
+ine:workingTime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Working time"@en ,
+    "Tiempo de trabajo"@es .
+
+
+ine:exchangeRate
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Exchange rate"@en ,
+    "Tipo de cambio"@es .
+
+
+ine:mortgageCancellation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "La obligación de la constitución de hipoteca queda extinguida, la hipoteca finaliza."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mortgage cancellation"@en ,
+    "Cancelación hipoteca"@es .
+
+
+ine:propertyNature
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Es la descripción de la finca pudiéndose diferenciar entre rústicas y urbanas."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Property nature"@en ,
+    "Naturaleza de la finca"@es .
+
+
+ine:borrowedCapital
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Borrowed capital"@en ,
+    "Capital prestado"@es .
+
+
+ine:interest
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Interest"@en ,
+    "Intereses"@es .
+
+
+ine:sizeBrackets
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Size brackets"@en ,
+    "Tramos de extensión"@es .
+
+
+ine:lendingInstitution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Lending institution"@en ,
+    "Entidad que concede el préstamo"@es .
+
+
+ine:mortgageDurationInYears
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Mortgage duration in years"@en ,
+    "Duración en años de la hipoteca"@es .
+
+
+ine:movableProperty
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Movable property"@en ,
+    "Bienes muebles"@es .
+
+
+ine:financialConcept
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Financial concept"@en ,
+    "Concepto financiero"@es .
+
+
+ine:turnoveroccupiedPersonnel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Turnover/Occupied Personnel"@en ,
+    "Cifra de Negocio/Personal Ocupado"@es .
+
+
+ine:salesGroup
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sales group"@en ,
+    "Grupo de Venta"@es .
+
+
+ine:economicDestinationOfGoodsCnae93
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:range skos:Concept ;
+    rdfs:label "Economic destination of goods (CNAE-93)"@en ,
+    "Destino económico de bienes (CNAE-93)"@es .
+
+
+ine:economicDestinationOfGoodsCnae2009
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:subPropertyOf ine:economicActivity ;
+    rdfs:range skos:Concept ;
+    rdfs:label "Economic destination of goods (CNAE-2009)"@en ,
+    "Destino económico de bienes  (CNAE-2009)"@es .
+
+
+ine:demographicPhenomenon
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Demographic phenomenon"@en ,
+    "Fenómeno demográfico"@es .
+
+
+ine:demographicConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Demographic concepts"@en ,
+    "Conceptos Demográficos"@es .
+
+
+ine:urbanOrNonurbanArea
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:label "Urban or non-urban area"@en ,
+    "Conjunto Urbano o No Urbano"@es .
+
+
+ine:subgroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Subgroups 2001"@en ,
+    "Subgrupos 2001"@es ,
+    "Subgroups 2011"@en ,
+    "Subgrupos 2011"@es ,
+    "Subgroups 1992"@en ,
+    "Subgrupos 1992"@es ,
+    "Subgroups 2006"@en ,
+    "Subgrupos 2006"@es .
+
+
+ine:rubrics
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Rubrics 2001"@en ,
+    "Rúbricas 2001"@es ,
+    "Rubrics"@en ,
+    "Rúbricas"@es ,
+    "Rubrics 1992"@en ,
+    "Rúbricas 1992"@es ,
+    "Rubrics 1983"@en ,
+    "Rúbricas 1983"@es ,
+    "Rubrics 1976"@en ,
+    "Rúbricas 1976"@es ,
+    "Rubrics 2006"@en ,
+    "Rúbricas 2006"@es ,
+    "Rubrics 2011"@en ,
+    "Rúbricas 2011"@es .
+
+
+ine:provincialCapitals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:cities;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "La provincia es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado. Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica."@es ;
+    rdfs:label "Provincial capitals"@en ,
+    "Capitales de provincia"@es ,
+    "CAPITALES"@es .
+
+
+ine:divisions
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Divisions"@en ,
+    "Divisiones"@es ,
+    "Divisions (Base 2000)"@en ,
+    "Divisiones (Base 2000)"@es ,
+    "Divisions (Base 90)"@en ,
+    "Divisiones (Base 90)"@es ,
+    "Divisions (Base 2005)"@en ,
+    "Divisiones (Base 2005)"@es ,
+    "Calendar-adjusted divisions of CNAE 2009"@en ,
+    "Divisiones corregidas de efecto calendario de la CNAE 2009"@es .
+
+
+ine:groups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COICOP groups"@en ,
+    "Grupos COICOP"@es ,
+    "Groups"@en ,
+    "Grupos"@es ,
+    "Groups 1992"@en ,
+    "Grupos 1992"@es ,
+    "Groups 1983"@en ,
+    "Grupos 1983"@es ,
+    "Groups 1976"@en ,
+    "Grupos 1976"@es ,
+    "Groups (Base 2005) CNAE -09"@en ,
+    "Grupos (Base 2005) CNAE -09"@es ,
+    "Calendar-adjusted groups of CNAE 2009"@en ,
+    "Grupos corregidos de efecto calendario de la CNAE 2009"@es ,
+    "COICOP groups 2006"@en ,
+    "Grupos COICOP 2006"@es ,
+    "CNAE groupings"@en ,
+    "AGRUPACIONES CNAE"@es ,
+    "COICOP groups 2011"@en ,
+    "Grupos COICOP 2011"@es ,
+    "Training level groupings"@en ,
+    "AGRUPACIONES NIVELES DE FORMACIÓN"@es ,
+    "Educational level groupings"@en ,
+    "AGRUPACIONES DE NIVELES EDUCATIVOS"@es ,
+    "COICOP groups 1992"@en ,
+    "Grupos COICOP 1992"@es ,
+    "ECOICOP groups"@en ,
+    "Grupos ECOICOP"@es .
+
+
+
+ine:calendarAdjustedIndicesBasedonCNAE2009
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Calendar-adjusted indices, based on the CNAE-2009"@en ,
+    "Índices corregidos de efecto calendario, basados en la CNAE-2009"@es .
+
+
+ine:economicDestinationOfGoods
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic destination of goods"@en ,
+    "Destino económico de los bienes"@es ,
+    "Economic destination of goods (Base 2000)"@en ,
+    "Destino económico de los bienes (Base 2000)"@es ,
+    "Economic destination of goods (Base 90)"@en ,
+    "Destino económico de los bienes (Base 90)"@es ,
+    "Economic destination of goods (Base 2005)"@en ,
+    "Destino económico de los bienes (Base 2005)"@es .
+
+
+ine:economicDestinationOfGoodsExport
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic destination of goods (Base 2000) export"@en ,
+    "Destino económico de los bienes (Base 2000) exportación"@es .
+
+
+ine:economicDestinationOfGoodsImport
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic destination of goods (Base 2000) import"@en ,
+    "Destino económico de los bienes (Base 2000) importación"@es . 
+
+
+ine:referencePlaceOfDemographicPhenomenon
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reference place of demographic phenomenon"@en ,
+    "Lugar de referencia del fenómeno demográfico"@es .
+
+
+ine:periodicity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:label "Periodicity"@en ,
+    "Periodicidad"@es .
+
+
+ine:mothersAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Mother's age"@en ,
+    "Edad de la madre"@es .
+
+
+ine:cpiSubindex
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:label "CPI sub-index"@en ,
+    "Subíndice IPCA"@es .
+
+
+ine:cities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refArea ; 
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cities"@en , "Ciudades"@es, "Puntos Turísticos"@es.
+
+
+ine:generationdecadesyearOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range  rdfs:Resource ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Generation/Decades/Year of birth"@en ,
+    "Generación/Decadas/Año nacimiento"@es .
+
+
+ine:employeeStratum
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Employee stratum"@en ,
+    "Estrato de asalariados"@es .
+
+
+ine:legalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Legal status"@en ,
+    "Condición jurídica"@es .
+
+
+ine:typeOfOperation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of operation"@en ,
+    "Tipo de operación"@es .
+
+
+ine:extendedBalanceOfPaymentsServicesClassificationCabps
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Extended Balance of Payments Services Classification (CABPS)"@en ,
+    "Clasificación Ampliada de la Balanza de Pagos de Servicios (CABPS)"@es .
+
+
+ine:dwellingCondition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Dwelling condition"@en ,
+    "Estado de la vivienda"@es .
+
+
+ine:singleAgeValues
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Single age values"@en ,
+    "Valores simples de edad"@es .
+
+
+ine:ageTotals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Age totals"@en ,
+    "Totales de edad"@es .
+
+
+sdmx-dimension:ageSemiintervals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Age semi-intervals"@en ,
+    "Semiintervalos de edad"@es .
+
+
+ine:percentages
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Percentages"@en ,
+    "Porcentajes"@es .
+
+
+ine:typeOfInsolvencyProceeding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of insolvency proceeding"@en ,
+    "Tipo de concurso"@es .
+
+
+ine:typeOfProcedure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of procedure"@en ,
+    "Clase de procedimiento"@es .
+
+
+ine:existenceOfAdvanceProposal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Existence of advance proposal"@en ,
+    "Existencia de propuesta anticipada"@es .
+
+
+ine:proposalContent
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Proposal content"@en ,
+    "Contenido propuesta"@es .
+
+
+ine:dataTypeLevelsAndRates
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf ine:dataType ;
+    rdfs:label "Data type: Levels and Rates"@en ,
+    "Tipo de dato: Niveles y Tasas"@es .
+
+
+ine:levelsAndRates a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Niveles y Tasas"@es;
+    rdfs:comment "Los agregados macroeconómicos son valores que representan la suma de todos los datos individuales del conjunto de una economía."@es;
+    rdfs:domain qb:Observation;
+    rdfs:range rdfs:Resource.
+
+
+ine:dataTypeRates
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:dataType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Data type: Rates"@en ,
+    "Tipo de dato: Tasas"@es .
+
+
+ine:sectors
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SECTORS "@en ,
+    "SECTORES "@es ,
+    "STUDY FIELDS - CNED-F"@en ,
+    "SECTORES DE ESTUDIOS - CNED-F"@es .
+
+
+ine:relationshipWithTheActivity 
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "RELATIONSHIP WITH THE ACTIVITY  "@en ,
+    "RELACIÓN CON LA ACTIVIDAD "@es .
+
+
+ine:subsections
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:sections ;
+    rdfs:label "SUBSECTIONS"@en ,
+    "SUBSECCIONES"@es .
+
+
+ine:totalCnaeVariables
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TOTAL CNAE VARIABLES"@en ,
+    "TOTALES VARIABLES CNAE"@es .
+
+
+ine:classes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CLASSES"@en ,
+    "CLASES"@es ,
+    "Classes 2001"@en ,
+    "Clases 2001"@es ,
+    "Classes 1992"@en ,
+    "Clases 1992"@es ,
+    "Classes 2006"@en ,
+    "Clases 2006"@es ,
+    "Classes 2011"@en ,
+    "Clases 2011"@es .
+
+
+ine:conceptChanges
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Concept changes"@en ,
+    "Cambios de conceptos"@es .
+
+
+ine:businessVolume
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Business volume"@en ,
+    "Volumen de negocio"@es .
+
+
+ine:countriesAndContinents
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Countries and continents"@en ,
+    "Países y Continentes"@es .
+
+
+ine:countries
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:countriesAndContinents ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Countries"@en ,
+    "Países"@es .
+
+
+ine:tourismConcept
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Tourism concept"@en ,
+    "Concepto turístico"@es .
+
+
+ine:continents
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:countriesAndContinents ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Continents"@en ,
+    "Continentes"@es .
+
+ine:calendarAdjustedIndicesBasedOnCNAE74
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Calendar-adjusted indices, based on the CNAE-74"@en ,
+    "Índices corregidos de efecto calendario, basados en la CNAE-74"@es .
+
+
+ine:calendarAdjustedIndicesBasedOnCNAE93
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Calendar-adjusted indices, based on the CNAE-93"@en ,
+    "Índices corregidos de efecto calendario, basados en la CNAE-93"@es .
+
+
+ine:geographicalZonesOfTheRestOfTheWorld
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Geographical zones of the rest of the world"@en ,
+    "Zonas Geográficas del Resto del Mundo"@es .
+
+
+ine:birthOrder
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Número de hijos nacidos vivos que ha tenido la madre a lo largo de su vida contando el parto del nacimiento considerado." ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Birth order"@en ,
+    "Orden de nacimiento"@es .
+
+
+ine:occupations
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Se define la ocupación como la clase o tipo de trabajo desarrollado, con especificación del puesto de trabajo desempeñado." ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "OCCUPATIONS"@en ,
+    "OCUPACIONES"@es ,
+    "TOTAL OCCUPATIONS"@en ,
+    "TOTALES OCUPACIONES"@es .
+
+ine:classification
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CLASSIFICATIONS"@en ,
+    "CLASIFICACIONES"@es .
+
+
+ine:totalEducationClassifications
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:classification; 
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TOTAL EDUCATION CLASSIFICATIONS"@en ,
+    "TOTALES CLASIFICACION EDUCACIÓN"@es .
+
+
+ine:attainedEducationLevelsCneda
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:educationLev ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ATTAINED EDUCATION LEVELS - CNED-A"@en ,
+    "NIVELES DE FORMACIÓN ALCANZADO - CNED-A"@es .
+
+
+ine:educationalLevelsCnedp
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:educationLev ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "EDUCATIONAL LEVELS - CNED-P"@en ,
+    "NIVELES EDUCATIVOS - CNED-P"@es .
+
+
+ine:quantity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "QUANTITY"@en ,
+    "CANTIDAD"@es .
+
+
+ine:activityStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Se refiere a la situación en que queda clasificada cada persona según su relación con la actividad económica: activo (ocupado o parado) o inactivo (jubilado, estudiando, incapacitado para trabajar, etc.), basada en los criterios OIT."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ACTIVITY STATUS"@en ,
+    "SITUACION DE ACTIVIDAD"@es .
+
+
+ine:reasonsForChangeinJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reasons for working part-time, not seeking employment, and leaving the last job"@en ,
+    "Motivos de jornada parcial, de no buscar empleo y de dejar el último empleo"@es .
+
+
+ine:reasonForWorkingDifferentHoursThanUsual
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for working different hours than usual"@en ,
+    "Razón por la que trabajó un número de horas distinto al habitual"@es .
+
+
+ine:yesno
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "YES/NO"@en ,
+    "SI/NO"@es .
+
+
+ine:typeOfTransport
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TYPE OF TRANSPORT"@en ,
+    "TIPO DE TRANSPORTE"@es .
+
+
+ine:indicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Indicators"@en ,
+    "Indicadores"@es ,
+    "Indicator"@en ,
+    "Indicador"@es .
+
+ine:urbanAuditIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:indicators ;
+    rdfs:label "Urban Audit indicators"@en ,
+    "Indicadores Urban Audit"@es .
+
+
+ine:operations 
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Operations"@en ,
+    "Operaciones"@es .
+
+ine:goodsAndServicesOperations
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:operations ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "GOODS AND SERVICES OPERATIONS"@en ,
+    "OPERACIONES DE BIENES Y SERVICIOS"@es .
+
+
+ine:distributionOperations
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:operations ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "DISTRIBUTION OPERATIONS"@en ,
+    "OPERACIONES DE DISTRIBUCIÓN"@es .
+
+
+ine:accountingBalances
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ACCOUNTING BALANCES"@en , "SALDOS CONTABLES"@e, "Saldos contables"@es .
+
+
+ine:accumulationRubrics
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:rubrics ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ACCUMULATION RUBRICS"@en ,
+    "RÚBRICAS DE ACUMULACIÓN"@es .
+
+
+ine:economicDestinationOfGoodsCalendaradjusted
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Economic destination of goods calendar-adjusted"@en ,
+    "Destino económico de los bienes corregidos de efecto calendario"@es .
+
+
+ine:occupationSecondaryJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:occupation ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CNO-11 occupation (secondary job)"@en ,
+    "Ocupación CNO-11 (empleo secundario)"@es .
+
+
+ine:occupationMainJob
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:occupation ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CNO-11 occupation (main job)"@en ,
+    "Ocupación CNO-11 (empleo principal)"@es .
+
+
+ine:derivedDemographicConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:demographicConcepts ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Derived demographic concepts 1"@en ,
+    "Conceptos demográficos derivados 1"@es .
+
+
+ine:compensationOfEmployeesOperation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:operations ; 
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COMPENSATION OF EMPLOYEES OPERATION"@en ,
+    "OPERACIÓN DE DISTRIBUCIÓN REMUNERACIÓN DE ASALARIADOS"@es .
+
+
+ine:vabAccountingBalance
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "VAB ACCOUNTING BALANCE"@en ,
+    "SALDO CONTABLE VAB"@es .
+
+
+ine:fixedCapitalFormationOperations
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:operations ; 
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "FIXED CAPITAL FORMATION OPERATIONS"@en ,
+    "OPERACIÓN DE BIENES Y SERVICIOS FBCF"@es .
+
+
+ine:employmentByActivityBranchCta
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Employment by activity branch. CTA"@en ,
+    "Empleo por Rama de actividad. CTA"@es .
+
+
+ine:housingRegime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "El régimen de la vivienda es el régimen de protección en las viviendas, es decir, si éstas son de precio libre o tienen algún régimen de protección oficial. - Vivienda de precio libre.- Si la vivienda no está sometida a ningún tipo de protección. - Vivienda sujeta a algún régimen de protección.- Si la vivienda está sometida a alguna protección oficial: VPO, Tipo VPO u Otro VPO."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Housing regime"@en ,
+    "Régimen de la vivienda"@es .
+
+
+ine:dwellingOwner
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Dwelling owner"@en ,
+    "Titular de la vivienda"@es .
+
+
+ine:specialGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Special groups 2011"@en ,
+    "Grupos especiales 2011"@es ,
+    "Special groups"@en ,
+    "Grupos especiales"@es ,
+    "Special groups 2001"@en ,
+    "Grupos especiales 2001"@es ,
+    "Special groups 1992"@en ,
+    "Grupos especiales 1992"@es ,
+    "Special groups 1983"@en ,
+    "Grupos especiales 1983"@es ,
+    "Special groups 2006"@en ,
+    "Grupos especiales 2006"@es .
+
+
+ine:subclasses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Subclasses 2011"@en ,
+    "Subclases 2011"@es ,
+    "Subclasses"@en ,
+    "Subclases"@es ,
+    "Subclasses 2001"@en ,
+    "Subclases 2001"@es ,
+    "Subclasses 1992"@en ,
+    "Subclases 1992"@es ,
+    "Subclasses 1983"@en ,
+    "Subclases 1983"@es ,
+    "Subclasses 1976"@en ,
+    "Subclases 1976"@es ,
+    "Subclasses 2006"@en ,
+    "Subclases 2006"@es .
+
+
+
+ine:firstName
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf foaf:name ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "First name"@en ,
+    "Nombre"@es .
+
+
+ine:populationRegister
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "POPULATION REGISTER"@en ,
+    "PADRON"@es .
+
+
+ine:surname
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf foaf:surname ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Surname"@en ,
+    "Apellido"@es .
+
+
+ine:typeOfSurname
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of surname"@en ,
+    "Tipo de apellido"@es .
+
+
+ine:variableNotConsidered
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "VARIABLE NOT CONSIDERED"@en ,
+    "VARIABLE NO CONSIDERADA"@es .
+
+
+ine:mainNationalAccountsResults
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Main national accounts results"@en ,
+    "Principales Resultados de Contabilidad"@es .
+
+
+ine:resourcesAndUses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Resources and uses"@en ,
+    "Recursos y empleos"@es .
+
+
+ine:regionalGroupingsNuts1
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Regional groupings (NUTS 1)"@en ,
+    "Agrupaciones regionales (NUTS 1)"@es .
+
+
+ine:grossValueAddedByActivities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Gross Value Added by activities"@en ,
+    "Valor Añadido Bruto de actividades"@es .
+
+
+ine:grossFixedCapitalFormationByActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Gross Fixed Capital Formation by activity"@en ,
+    "Formación Bruta de Capital Fijo de actividades"@es .
+
+
+ine:typeOfSector
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of sector"@en ,
+    "Tipo de sector"@es .
+
+
+ine:referencePersonsNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:nationality ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reference person's nationality"@en ,
+    "Nacionalidad de la persona de refencia"@es .
+
+
+ine:incomePerConsumptionUnitPercentages
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Income per consumption unit percentages"@en ,
+    "Porcentajes de renta por unidad de consumo"@es .
+
+
+ine:laborForceStatusInPreviousPeriod
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Labor force status in previous period"@en ,
+    "Relación con la actividad en periodo anterior"@es .
+
+
+ine:typeOfMarket
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of market"@en ,
+    "Tipo de mercado"@es .
+
+
+ine:seasonalAdjustment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Seasonal adjustment"@en ,
+    "Corrección de efectos"@es .
+
+
+ine:typeOfDwelling
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of dwelling"@en ,
+    "Tipo de vivienda"@es ,
+    "2613"@es .
+
+
+ine:referencePersonsAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Reference person's age"@en ,
+    "Edad de la persona de refencia"@es .
+
+
+ine:dwellingAndEnvironmentProblems
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Dwelling and environment problems"@en ,
+    "Problemas que sufre la vivienda y entorno"@es .
+
+
+ine:epaGroupings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "EPA groupings"@en ,
+    "Agrupaciones EPA"@es .
+
+
+ine:personsPerSurveyAndNetChangeIndex
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Persons per survey and net change index"@en ,
+    "Personas en cada encuesta e índice de cambio neto"@es .
+
+
+ine:derivedLaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "DERIVED LABOR FORCE STATUS"@en ,
+    "RELACIÓN CON LA ACTIVIDAD DERIVADA"@es .
+
+
+ine:typeOfMaterialShortage
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of material shortage"@en ,
+    "Tipo de carencia de material"@es .
+
+
+ine:difficultyMakingEndsMeet
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Difficulty making ends meet"@en ,
+    "Dificultad para llegar a fin de mes"@es .
+
+
+ine:domain
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Domain"@en ,
+    "Dominio"@es .
+
+
+ine:conceptOldBdeDsd
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Concept (OLD BDE DSD)"@en ,
+    "Concepto (ANTIGUA DSD BDE)"@es .
+
+
+ine:reasonsForUnfilledVacanciesInPreviousPeriod
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Reasons for unfilled vacancies in previous period"@en ,
+    "Motivos por los que no se ha podido cubrir las vacantes existentes en el periodo anterior"@es .
+
+
+ine:reasonsForNoJobVacancies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reasons for no job vacancies"@en ,
+    "Motivos por los que no exiten puestos de trabajo vacantes"@es .
+
+
+ine:typeOfEstablishment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of establishment"@en ,
+    "Tipo de establecimiento"@es .
+
+
+ine:titleOfAcquisition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Es aquel por el que una persona es propietaria de un bien. Los títulos de adquisición se desagregan en compraventa, donación, permuta, herencia, etc. No contempla la transmisión de hipotecas, por estar éstas incluidas dentro de Subrogación de hipotecas."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Title of acquisition"@en ,
+    "Título de adquisición"@es .
+
+
+ine:companyStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Company status"@en ,
+    "Estados Sociedades"@es .
+
+
+ine:typeOfDissolution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of dissolution"@en ,
+    "Clase de disolución"@es .
+
+
+ine:capitalBrackets
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Capital brackets"@en ,
+    "Tramos de Capital"@es .
+
+
+ine:mothersMaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:maritalStatus ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's marital status"@en ,
+    "Estado civil de la madre"@es ,
+    "Situación matrimonial de la madre"@es .
+
+
+ine:causeOfDeath
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Enfermedad o lesión que inició la cadena de acontecimientos patológicos que condujeron directamente a la muerte, o las circunstancias del accidente o violencia que produjo la lesión fatal." ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cause of death"@en ,
+    "Causa de muerte"@es,
+    "Causa de defunción"@es .
+
+
+ine:organism
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Organism "@en ,
+    "Organismo "@es .
+
+
+ine:referencePersons
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Denominada también sustentador principal, es el miembro del hogar que más aporta regularmente (no de forma ocasional) al presupuesto del hogar, para sufragar los gastos comunes del mismo. El sustentador principal no es la persona que obtiene mayores ingresos (fuente principal), sino la que más aporta al presupuesto común."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reference persons"@en ,
+    "Personas de referencia"@es .
+
+
+ine:travelReason
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Se define el motivo principal del viaje como el motivo sin el cual el viaje no habría tenido lugar"@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Travel Reason"@en ,
+    "Motivo del viaje"@es .
+
+
+ine:tourismDestination
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Tourism destination"@en ,
+    "Destino de turismo"@es .
+
+ine:accessRoute 
+    a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Via de acceso"@es, "Access Route"@en;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:string.
+
+
+ine:spouse2AgeSemiintervals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:ageGroup ;
+    rdfs:label "Spouse 2 age semi-intervals"@en ,
+    "Semiintervalos de edad conyuge 2"@es .
+
+
+ine:materialsAndLabor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Materials and Labor"@en ,
+    "Materiales y Mano de Obra"@es .
+
+
+ine:spouse2Age
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Spouse 2 age"@en ,
+    "Edad del cónyuge 2"@es .
+
+
+ine:spouse2AgeTotals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Spouse 2 age totals"@en ,
+    "Totales de edad conyuge 2"@es .
+
+
+ine:typeOfTrip
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of trip"@en ,
+    "Tipo de viaje"@es .
+
+
+ine:travelDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Número de días que dura el viaje desde la salida del lugar de residencia habitual hasta su regreso al mismo."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Travel duration"@en ,
+    "Duración del viaje"@es .
+
+
+ine:institutionalSectors
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:sectors ;
+    rdfs:domain qb:Observation ;
+    rdfs:comment"Entidades económicas capaces de ser propietarias de bienes y activos, contraer pasivos y participar en actividades y operaciones económicas con otras unidades, en nombre propio"@es;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Institutional sectors"@en ,
+    "Sectores institucionales"@es .
+
+
+ine:homologousInstitutionalSector
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:sectors ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Homologous institutional sector"@en ,
+    "Sector institucional homólogo"@es .
+
+
+ine:balanceOfPayments
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Balance of payments"@en ,
+    "Balanza de pagos"@es .
+
+
+ine:accountingItem
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Accounting item"@en ,
+    "Partida de contabilidad"@es .
+
+
+ine:internationalAccountsAnnotation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "International accounts annotation"@en ,
+    "Anotación de cuentas internacionales"@es .
+
+
+ine:functionalCategory
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Functional category"@en ,
+    "Categoría funcional"@es .
+
+
+ine:instrumentAndAssetClassification
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:classification ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Instrument and asset classification"@en ,
+    "Clasificación de instrumentos y activos"@es .
+
+
+ine:maturityDate
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Maturity date"@en ,
+    "Vencimiento"@es .
+
+
+ine:currency
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimensionension:currency ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Currency"@en ,
+    "Moneda"@es .
+
+
+ine:compilationMethodology
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Compilation methodology"@en ,
+    "Compiliation methodology"@es .
+
+
+ine:consolidation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Consolidation"@en ,
+    "Consolidación"@es .
+
+
+ine:activityClassification
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Activity classification"@en ,
+    "Clasificación de actividad"@es ,
+    "ACTIVITY Activity classification"@en,
+    "ACTIVITY"@en .
+
+
+ine:expenditure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Expenditure"@en ,
+    "Gasto"@es ,
+    "EXPENDITURE"@en .
+
+
+ine:transformation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Transformation"@en ,
+    "Transformación"@es .
+
+
+ine:custBreakdown
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cust breakdown"@en ,
+    "Desglose de coste"@es .
+
+
+ine:periodDetail
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:label "Period detail"@en ,
+    "Detalle periodo"@es .
+
+
+ine:laborRelationsRegulationForm
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Labor relations regulation form"@en ,
+    "Forma de regulación de las relaciones laborales"@es .
+
+
+ine:commercialEffects
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Commercial effects"@en ,
+    "Efectos de Comerciales"@es .
+
+
+ine:generationages
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:label "Generation/ages"@en ,
+    "Generación/edades"@es .
+
+
+ine:touristTYpe
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of visitor"@en ,
+    "Tipo de visitante"@es .
+
+
+ine:collectiveAgreementModifications
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Collective agreement modifications"@en ,
+    "Modificaciones condiciones convenio colectivo"@es .
+
+
+ine:personalSituation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Personal situation"@en ,
+    "Situación personal"@es .
+
+
+ine:sustainableDevelopmentIndicatorsSdgs
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sustainable Development Indicators (SDGs)"@en ,
+    "Indicadores de Desarrollo Sostenible (ODS)"@es .
+
+
+ine:numberOfChildren
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of children"@en ,
+    "Número de hijos"@es .
+
+
+ine:incomeLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Income level"@en ,
+    "Nivel de renta"@es .
+
+
+ine:genderGap
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Gender gap"@en ,
+    "Brecha de género"@es .
+
+
+ine:childsAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Child's age"@en ,
+    "Edad del hijo"@es .
+
+
+ine:reasonForFulltimeLeave
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for full-time leave"@en ,
+    "Motivo de excedencia a tiempo completo"@es .
+
+
+ine:simplePercentiles
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Simple percentiles"@en ,
+    "Percentiles simples"@es .
+
+
+ine:percentileSemiintervals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Percentile semi-intervals"@en ,
+    "Semiintervalos de percentiles"@es .
+
+
+ine:percentileGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Percentile groups"@en ,
+    "Grupos de percentiles"@es .
+
+
+ine:multiplesOfMinimumWage
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:label "Multiples of Minimum Wage"@en ,
+    "Múltiplos del Salario Mínimo Interprofesional"@es .
+
+
+ine:cabpsGroupings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CABPS groupings"@en ,
+    "Agrupaciones CABPS"@es .
+
+
+ine:leaveDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Leave duration"@en ,
+    "Tiempo de excedencia"@es .
+
+
+ine:relationshipWithJustice
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship with justice"@en ,
+    "Relación con la justicia"@es .
+
+
+ine:typeOfViolence
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of violence"@en ,
+    "Tipo de violencia"@es .
+
+
+ine:precautionaryMeasures
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Precautionary measures"@en ,
+    "Medidas cautelares"@es .
+
+
+ine:typeOfRomanticRelationship
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of romantic relationship"@en ,
+    "Tipo de relación sentimental"@es .
+
+
+ine:politicalParties
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Political parties"@en ,
+    "Partidos Políticos"@es .
+
+
+ine:representationSpheres
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Representation spheres"@en ,
+    "Ámbitos de representación"@es .
+
+
+ine:parliamentaryGroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Parliamentary groups"@en ,
+    "Grupos parlamentarios"@es .
+
+
+ine:position
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Position"@en ,
+    "Cargo"@es .
+
+
+ine:institutionalBodies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Institutional bodies"@en ,
+    "Órganos Institucionales"@es .
+
+
+ine:royalAcademies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Royal academies"@en ,
+    "Reales Academias"@es .
+
+
+ine:parenthoodGap
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Parenthood gap"@en ,
+    "Brecha de parentalidad"@es .
+
+
+ine:tourismOrigin
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Tourism origin"@en ,
+    "Origen del turismo"@es .
+
+
+ine:educationalConcept
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Educational concept"@en ,
+    "Concepto Educativo"@es .
+
+
+ine:universityEntranceExamCall
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "University entrance exam call"@en ,
+    "Convocatoria de la prueba de acceso a la universidad"@es .
+
+
+ine:culturalActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cultural activity"@en ,
+    "Actividad cultural"@es .
+
+
+ine:professionalCategory
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Professional category"@en ,
+    "Categoría profesional"@es .
+
+
+ine:statisticalMeasures
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Statistical measures"@en ,
+    "Medidas estadísticas"@es .
+
+
+ine:technologicalConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Technological concepts"@en ,
+    "Conceptos tecnológicos"@es .
+
+
+ine:executionSector
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Execution sector"@en ,
+    "Sector de ejecución"@es .
+
+
+ine:frequency
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Frequency"@en ,
+    "Frecuencia"@es .
+
+
+ine:reasonForInternetUse
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for internet use"@en ,
+    "Razón de usar Internet"@es .
+
+
+ine:fieldOfStudy
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Field of study"@en ,
+    "Campo de estudio"@es .
+
+
+ine:typeOfEducationProvided
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of education provided"@en ,
+    "Enseñanza que se imparte"@es .
+
+
+ine:harmonizedLeisureActivitiesList
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Harmonized leisure activities list"@en ,
+    "Lista de actividades de ocio armonizada"@es .
+
+
+ine:whoSetsWorkSchedule
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Who sets work schedule"@en ,
+    "Quien fija el horario de trabajo"@es .
+
+
+ine:workingHourReductionForChildcare
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Working hour reduction for childcare"@en ,
+    "Redución de las horas trabajadas por el cuidado de niños"@es .
+
+
+ine:typeOfWork
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of work"@en ,
+    "Tipo de trabajo"@es .
+
+
+ine:durationInHours
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Duration in hours"@en ,
+    "Duración en horas"@es .
+
+
+ine:healthcareConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Healthcare concepts"@en ,
+    "Conceptos sanitarios"@es .
+
+
+ine:source
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Source"@en ,
+    "Fuente"@es .
+
+
+ine:healthStatusAssessment
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Health status assessment"@en ,
+    "Valoración del estado de salud"@es .
+
+
+ine:socialClassBasedOnOccupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Social class based on occupation"@en ,
+    "Clase social basada en la ocupación"@es .
+
+
+ine:intensity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Intensity"@en ,
+    "Intensidad"@es .
+
+
+ine:functionalDependency
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Functional dependency"@en ,
+    "Dependencia funcional"@es .
+
+
+ine:elapsedTime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Elapsed time"@en ,
+    "Tiempo transcurrido"@es .
+
+
+ine:limitation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Limitation"@en ,
+    "Limitación"@es .
+
+
+ine:typeOfHealthProblem
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of health problem"@en ,
+    "Tipo de problema sanitario"@es .
+
+
+ine:accidentLocation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Accident location"@en ,
+    "Lugar del accidente"@es .
+
+
+ine:reasonForMedicalConsultation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for medical consultation"@en ,
+    "Motivo de la consulta médica"@es .
+
+
+ine:bodyMass
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Body mass"@en ,
+    "Masa corporal"@es .
+
+
+ine:typeOfFood
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of food"@en ,
+    "Tipo de alimento"@es .
+
+
+ine:breastfeedingDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Breastfeeding duration"@en ,
+    "Duración de la lactancia"@es .
+
+
+ine:typeOfBreastfeeding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of breastfeeding"@en ,
+    "Tipo de lactancia"@es .
+
+
+ine:personPerformingHouseholdActivity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Person performing household activity"@en ,
+    "Persona que realiza la actividad en el hogar"@es .
+
+
+ine:tobaccoConsumption
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Tobacco consumption"@en ,
+    "Consumo de tabaco"@es .
+
+
+ine:exposureTime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Exposure time"@en ,
+    "Tiempo de exposición"@es .
+
+
+ine:environmentalProblem
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Environmental problem"@en ,
+    "Problema medioambiental"@es .
+
+
+ine:typeOfDisability
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of disability"@en ,
+    "Tipo de discapacidad"@es .
+
+
+ine:numberOfPersonsWithDisability
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of persons with disability"@en ,
+    "Número de personas con discapacidad"@es .
+
+
+ine:mainCaregiverGender
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:gender ;
+    rdfs:label "Main caregiver gender"@en ,
+    "Sexo del cuidador principal"@es .
+
+
+ine:wageDecile
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Wage decile"@en ,
+    "Decil de salarios"@es .
+
+
+ine:residenceTimeInMunicipality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:residenceTime ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Residence time in municipality"@en ,
+    "Tiempo de residencia en el municipio"@es .
+
+
+ine:relationshipBetweenWorkplaceAndResidence
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship between workplace and residence"@en ,
+    "Relacion entre lugar de trabajo y residencia"@es .
+
+
+ine:locationOfPreviousResidenceMunicipality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Location of previous residence municipality"@en ,
+    "Ubicación del municipio de residencia anterior"@es .
+
+
+ine:previousHabitatType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Previous habitat type"@en ,
+    "Tipo de hábitat anterior"@es .
+
+
+ine:locationOfBirthMunicipality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:comment "Lugar en que ha nacido una persona, es decir, el lugar de residencia habitual de la madre en el momento del nacimiento, determinado en la fecha de la recogida de datos."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Location of birth municipality"@en ,
+    "Ubicación del municipio de nacimiento"@es .
+
+
+ine:academicYear
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Academic year"@en ,
+    "Curso Académico"@es .
+
+
+ine:studySectorGroupings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Study sector groupings"@en ,
+    "Agrupaciones de Sectores de Estudios"@es .
+
+
+ine:numberOfRecipients
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of recipients"@en ,
+    "Número de perceptores"@es .
+
+
+ine:modeOfNationalityAcquisition
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mode of nationality acquisition"@en ,
+    "Modo de adquisición de la nacionalidad"@es .
+
+
+ine:monthOfDeath
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Month of death"@en ,
+    "Mes del fallecimiento"@es .
+
+
+ine:spouse1MaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 marital status"@en ,
+    "Estado civil del cónyuge 1"@es .
+
+
+ine:spouse2MaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 marital status"@en ,
+    "Estado civil del cónyuge 2"@es .
+
+
+ine:typeOfDelivery
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of delivery"@en ,
+    "Tipo de parto"@es .
+
+
+ine:maturity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Maturity"@en ,
+    "Maturidad"@es .
+
+
+ine:mothersNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's nationality"@en ,
+    "Nacionalidad de la madre"@es .
+
+
+ine:fathersNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Father's nationality"@en ,
+    "Nacionalidad del padre"@es .
+
+
+ine:healthcare
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Healthcare"@en ,
+    "Asistencia sanitaria"@es .
+
+
+ine:mothersEducationLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimension:educationLev ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's education level"@en ,
+    "Nivel de formación de la madre"@es .
+
+
+ine:fathersEducationLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Father's education level"@en ,
+    "Nivel de formación del padre"@es .
+
+
+ine:liveBirthOrder
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Live birth order"@en ,
+    "Orden del nacido vivo"@es .
+
+
+ine:mothersPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's place of birth"@en ,
+    "Lugar de nacimiento de la madre"@es .
+
+
+ine:fathersPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Father's place of birth"@en ,
+    "Lugar de nacimiento del padre"@es .
+
+
+ine:fathersAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Father's age"@en ,
+    "Edad del padre"@es .
+
+
+ine:intergenesicInterval
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Intergenesic interval"@en ,
+    "Intervalo intergenésico"@es .
+
+
+ine:birthWeight
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Birth weight"@en ,
+    "Peso al nacimiento"@es .
+
+
+ine:newbornSurvival
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Newborn survival"@en ,
+    "Supervivencia del nacido"@es .
+
+
+ine:weeksOfGestation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Weeks of gestation"@en ,
+    "Semanas de gestación"@es .
+
+
+ine:spouse1Age
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Spouse 1 age"@en ,
+    "Edad del cónyuge 1"@es .
+
+
+ine:contractingPartiesGender
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:gender ;
+    rdfs:label "Contracting parties' gender"@en ,
+    "Sexo de los contrayentes"@es .
+
+
+ine:spouse1Nationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 nationality"@en ,
+    "Nacionalidad del cónyuge 1"@es .
+
+
+ine:spouse2Nationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 nationality"@en ,
+    "Nacionalidad del cónyuge 2"@es .
+
+
+ine:monthOfCelebration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Month of celebration"@en ,
+    "Mes de celebración"@es .
+
+
+ine:formOfCelebration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Form of celebration"@en ,
+    "Forma de celebración"@es .
+
+
+ine:otherReligions
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Other religions"@en ,
+    "Según otras religiones"@es .
+
+
+ine:spouse1PlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 place of birth"@en ,
+    "Lugar de nacimiento del cónyuge 1"@es .
+
+
+ine:spouse2PlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 place of birth"@en ,
+    "Lugar de nacimiento del cónyuge 2"@es .
+
+
+ine:multipleBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Multiple birth"@en ,
+    "Multiplicidad del parto"@es .
+
+
+ine:multiplicityvitalityOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Multiplicity/vitality of birth"@en ,
+    "Multiplicidad/vitalidad del parto"@es .
+
+
+ine:monthOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Month of birth"@en ,
+    "Mes del nacimiento"@es .
+
+
+ine:typeOfMaritalDissolution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of marital dissolution"@en ,
+    "Tipo de disolución matrimonial"@es .
+
+
+ine:typeOfMaritalResolution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of marital resolution"@en ,
+    "Tipo de resolución matrimonial"@es .
+
+
+ine:typeOfMarriageByGender
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf ine:gender ;
+    rdfs:label "Type of marriage by gender"@en ,
+    "Tipo de matrimonio según sexo"@es .
+
+
+ine:occupationGroupings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Occupation groupings"@en ,
+    "AGRUPACIONES OCUPACIONES"@es .
+
+
+ine:jobTenure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Job tenure"@en ,
+    "Antigüedad en el empleo"@es .
+
+
+ine:marriageDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:label "Marriage duration"@en ,
+    "Duración del matrimonio"@es .
+
+
+ine:procedureDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Procedure duration"@en ,
+    "Duración del procedimiento"@es .
+
+
+ine:typeOfSeparation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of separation"@en ,
+    "Tipo de separación"@es .
+
+
+ine:typeOfDivorce
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of divorce"@en ,
+    "Tipo de divorcio"@es .
+
+
+ine:spouseToPayCompensatoryPension
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse to pay compensatory pension"@en ,
+    "Cónyuge que debe pagar la pensión compensatoria"@es .
+
+
+ine:spouseToPayAlimony
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse to pay alimony"@en ,
+    "Cónyuge que debe pagar la pensión alimenticia"@es .
+
+
+ine:spouseFilingTheClaim
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse filing the claim"@en ,
+    "Cónyuge que presenta la demanda"@es .
+
+
+ine:spouseToExerciseCustody
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse to exercise custody"@en ,
+    "Cónyuge que debe ejercer la custodia"@es .
+
+
+ine:existenceOfPriorSeparation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Existence of prior separation"@en ,
+    "Existe o no separación previa"@es .
+
+
+ine:typeOfMarriageBySpousesNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:label "Type of marriage by spouses' nationality"@en ,
+    "Tipo de matrimonio según nacionalidad de los conyuges"@es .
+
+
+ine:husbandsAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Husband's age"@en ,
+    "Edad del esposo"@es .
+
+
+ine:wifesAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Wife's age"@en ,
+    "Edad de la esposa"@es .
+
+
+ine:husbandsNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Husband's nationality"@en ,
+    "Nacionalidad del esposo"@es .
+
+
+ine:wifesNationality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Wife's nationality"@en ,
+    "Nacionalidad de la esposa"@es .
+
+
+ine:husbandsMaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Husband's marital status"@en ,
+    "Estado civil del esposo"@es .
+
+
+ine:wifesMaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Wife's marital status"@en ,
+    "Estado civil de la esposa"@es .
+
+
+ine:numberOfDependentMinorsadultChildren
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of dependent minors/adult children"@en ,
+    "Número de hijos menores o mayores dependientes"@es .
+
+
+ine:ecoicopSubgroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ECOICOP subgroups"@en ,
+    "Subgrupos ECOICOP"@es .
+
+
+ine:ecoicopClasses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ECOICOP classes"@en ,
+    "Clases ECOICOP"@es .
+
+
+ine:ecoicopSubclasses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ECOICOP subclasses"@en ,
+    "Subclases ECOICOP"@es .
+
+
+ine:legalCaseStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Legal case status"@en ,
+    "Estado del asunto jurídico"@es .
+
+
+ine:civilCasesResolved
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Civil cases resolved"@en ,
+    "Asuntos civiles resueltos"@es .
+
+
+ine:typeOfLegalCase
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of legal case"@en ,
+    "Tipo de asunto jurídico"@es .
+
+
+ine:criminalCasesResolved
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Criminal cases resolved"@en ,
+    "Asuntos penales resueltos"@es .
+
+
+ine:relationshipBetweenPlaceOfBirthAndResidence
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship between place of birth and residence"@en ,
+    "Relacion entre lugar de nacimiento y residencia"@es .
+
+
+ine:residenceMunicipalitySize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Residence municipality size"@en ,
+    "Tamaño del municipio de residencia"@es .
+
+
+ine:birthMunicipalitySize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Birth municipality size"@en ,
+    "Tamaño del municipio de nacimiento"@es .
+
+
+ine:countryOfOrigindestination
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Country of origin/destination"@en ,
+    "País de origen o destino"@es .
+
+
+ine:specialValues
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label " Special Values"@en ,
+    " Valores especiales"@es .
+
+
+ine:typeOfTransportByContent
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of transport by content"@en ,
+    "Tipo de transporte según contenido"@es .
+
+
+ine:typeOfTransportByDestination
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of transport by destination"@en ,
+    "Tipo de transporte según destino"@es .
+
+
+ine:typeOfTransportUnit
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of transport unit"@en ,
+    "Tipo de unidad de transporte"@es .
+
+
+ine:freight
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Freight"@en ,
+    "Flete"@es .
+
+
+ine:TypeOfSignificantRailwayAccident
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label " Type of significant railway accident"@en ,
+    " Tipo de accidente ferroviario significativo"@es .
+
+
+ine:typeOfRailwayAccidentPrecursor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of railway accident precursor"@en ,
+    "Tipo de precursor de accidente ferroviario"@es .
+
+
+ine:seriouslyInjuredAndFatalities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Seriously injured and fatalities"@en ,
+    "Heridos graves y víctimas mortales"@es .
+
+
+ine:typeOfDangerousGoods
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of dangerous goods"@en ,
+    "Tipo de mercancía peligrosa"@es .
+
+
+ine:nstStandardGoodsClassificationForTransportStatistics2007
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "NST (Standard goods classification for transport statistics) 2007 "@en ,
+    "NST (Clasificación estándar de mercancías para estadísticas de transporte) 2007 "@es .
+
+
+ine:unitsOfMeasurement
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Units of measurement"@en ,
+    "Unidades de medida"@es .
+
+
+ine:accidentsWithDangerousGoods
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Accidents with dangerous goods"@en ,
+    "Accidentes con mercancías peligrosas"@es .
+
+
+ine:typeOfAccidentVictim
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of accident victim"@en ,
+    "Tipo de víctima de accidente"@es .
+
+
+ine:typeOfRailwayAccident
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of railway accident"@en ,
+    "Tipo de accidente ferroviario"@es .
+
+
+ine:table_identifier
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "TABLE_IDENTIFIER"@en ,
+    "IDENTIFICADOR DE TABLA"@es .
+
+
+ine:interestRate
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Interest rate"@en ,
+    "Tipo de interés"@es .
+
+
+ine:coicopepfSubgroups
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COICOP/EPF subgroups"@en ,
+    "Subgrupos COICOP/EPF"@es .
+
+
+ine:coicopepfClasses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COICOP/EPF classes"@en ,
+    "Clases COICOP/EPF"@es .
+
+
+ine:coicopepfSubclasses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COICOP/EPF subclasses"@en ,
+    "Subclases COICOP/EPF"@es .
+
+
+ine:employedStratum
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Employed stratum"@en ,
+    "Estrato de ocupados"@es .
+
+
+ine:paymentPlace
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Payment place"@en ,
+    "Lugar de pago"@es .
+
+
+ine:expenditureQuintile
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Expenditure quintile"@en ,
+    "Quintil de gasto"@es .
+
+
+ine:onlinePurchase
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Online purchase"@en ,
+    "Compra por internet"@es .
+
+
+ine:typeOfExpenditure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Type of expenditure"@en ,
+    "Tipo de gasto"@es .
+
+
+ine:cust_breakdown_lb
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CUST_BREAKDOWN_LB"@en ,
+    "DESGLOSE_DE_COSTE_LB"@es .
+
+
+ine:expenditureCodesWithPhysicalQuantityEcoicopepf
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Expenditure codes with physical quantity (ECOICOP/EPF)"@en ,
+    "Códigos de gasto con cantidad física (ECOICOP/EPF)"@es .
+
+
+ine:divorceRate
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Divorce rate"@en ,
+    "Tasa de Divorcialidad"@es .
+
+
+ine:typesOfSentences
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Types of sentences"@en ,
+    "Tipos de penas"@es .
+
+
+ine:numberOfCrimes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of crimes"@en ,
+    "Número de delitos"@es .
+
+
+ine:numberOfSentences
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of sentences"@en ,
+    "Número de penas"@es .
+
+
+ine:sentenceDuration
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sentence duration"@en ,
+    "Duración de la pena"@es .
+
+
+ine:degreeOfOffense
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Degree of offense"@en ,
+    "Grado de comisión"@es .
+
+
+ine:measuresAdopted
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Measures adopted"@en ,
+    "Medidas adoptadas"@es .
+
+
+ine:numberOfMeasuresAdopted
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of measures adopted"@en ,
+    "Número de medidas adoptadas"@es .
+
+
+ine:numberOfCriminalOffenses
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Number of criminal offenses"@en ,
+    "Número de infracciones penales"@es .
+
+
+ine:reasonsForNotTraveling
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reasons for not traveling"@en ,
+    "Motivos para no viajar"@es .
+
+
+ine:crimesMisdemeanors
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Crimes Misdemeanors"@en ,
+    "Delitos Faltas"@es .
+
+
+ine:unpaidWorkActivities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Unpaid work activities "@en ,
+    "Actividades de trabajo no remunerado "@es .
+
+
+ine:unpaidHoursWorked
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Unpaid hours worked"@en ,
+    "Horas trabajadas no remuneradas"@es .
+
+
+ine:indicatorLatestData
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Indicator (latest data)"@en ,
+    "Indicador (últimos datos)"@es .
+
+
+ine:dataTypeLatestData
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Data type (latest data)"@en ,
+    "Tipo de dato (últimos datos)"@es .
+
+
+ine:timePeriodCollection
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Time period collection"@en ,
+    "Recopilación por período de tiempo"@es .
+
+
+ine:lci_activity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "LCI_ACTIVITY"@en ,
+    "Actividad LCI"@es .
+
+
+ine:inequalityIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Inequality indicators"@en ,
+    "Indicadores de desigualdad"@es .
+
+
+ine:sentencesAndMeasures
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sentences and measures"@en ,
+    "Penas y medidas"@es .
+
+
+ine:victimsPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Victim's place of birth"@en ,
+    "Lugar de nacimiento de la victima"@es .
+
+
+ine:defendantsPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Defendant's place of birth"@en ,
+    "Lugar de nacimiento del denunciado"@es .
+
+
+ine:victimsAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Victim's age"@en ,
+    "Edad de la victima"@es .
+
+
+ine:defendantsAge
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Defendant's age"@en ,
+    "Edad del denunciado"@es .
+
+
+ine:convictedPersons
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Convicted persons"@en ,
+    "Condenados"@es .
+
+
+ine:cnaeGroupingA10
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CNAE Grouping A10"@en ,
+    "CNAE Agrupación A10"@es .
+
+
+ine:cnaeGroupingA21
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CNAE Grouping A21"@en ,
+    "CNAE Agrupación A21"@es .
+
+
+ine:cnaeGroupingA64
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CNAE Grouping A64"@en ,
+    "CNAE Agrupación A64"@es .
+
+
+ine:sentenceRuling
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Sentence ruling"@en ,
+    "Pronunciamiento de la sentencia"@es .
+
+
+ine:causeOfLitigation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cause of litigation"@en ,
+    "Causa del litigio"@es .
+
+
+ine:decreeRuling
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Decree ruling"@en ,
+    "Dictamen del decreto"@es .
+
+
+ine:typeOfLease
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of lease"@en ,
+    "Tipo de arrendamiento"@es .
+
+
+ine:yearOfArrivalInSpain
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Year of arrival in Spain"@en ,
+    "Año de llegada a España"@es .
+
+
+ine:incomeDistribution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Income distribution"@en ,
+    "Distribución de la renta"@es .
+
+
+ine:incomeSourceDistribution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Income source distribution"@en ,
+    "Distribución de la fuente de ingresos"@es .
+
+
+ine:populationOfDisappearedMunicipalities
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Population of disappeared municipalities"@en ,
+    "Población de municipios desaparecidos"@es .
+
+
+ine:reasonForNotHiringChildcareServices
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reason for not hiring childcare services"@en ,
+    "Motivo para no contratar servicios para el cuidado de hijos"@es .
+
+
+ine:measuresForDependentFamilyCare
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Measures for dependent family care"@en ,
+    "Medidas adptadas para el cuidado de familiares dependientes"@es .
+
+
+ine:formulaToStopWorking
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Formula to stop working"@en ,
+    "Formula para dejar de trabajar"@es .
+
+
+ine:typeOfStock
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of stock"@en ,
+    "Tipo de stock"@es .
+
+
+ine:activePopulation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Active population"@en ,
+    "Activos"@es .
+
+
+ine:previousMaritalStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Previous marital status"@en ,
+    "Estado civil anterior"@es .
+
+
+ine:husbandsPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Husband's place of birth"@en ,
+    "Lugar de nacimiento del esposo"@es .
+
+
+ine:wifesPlaceOfBirth
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Wife's place of birth"@en ,
+    "Lugar de nacimiento de la esposa"@es .
+
+
+ine:fathersOccupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Father's occupation"@en ,
+    "Ocupación del padre"@es .
+
+
+ine:mothersOccupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's occupation"@en ,
+    "Ocupación de la madre"@es .
+
+
+ine:fathersLaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Father's labor force status"@en ,
+    "Relación con la actividad del padre"@es .
+
+
+ine:mothersLaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mother's labor force status"@en ,
+    "Relación con la actividad de la madre"@es .
+
+
+ine:birthNormality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Birth normality"@en ,
+    "Normalidad del parto"@es .
+
+
+ine:multiplicitygender
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Multiplicity/gender"@en ,
+    "Multiplicidad/sexo"@es .
+
+
+ine:spouse1EducationLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 education level"@en ,
+    "Nivel de formación del cónyuge 1"@es .
+
+
+ine:spouse2EducationLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 education level"@en ,
+    "Nivel de formación del cónyuge 2"@es .
+
+
+ine:spouse1Occupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 occupation"@en ,
+    "Ocupación del cónyunge 1"@es .
+
+
+ine:spouse2Occupation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 occupation"@en ,
+    "Ocupación del cónyunge 2"@es .
+
+
+ine:mobilityAreas
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mobility areas"@en ,
+    "Áreas de movilidad"@es .
+
+
+ine:geographicalZonesOfSpain
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Geographical zones of Spain"@en ,
+    "Zonas geográficas de España"@es .
+
+
+ine:scenario
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Scenario"@en ,
+    "Escenario"@es .
+
+
+ine:companyControl
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Company control"@en ,
+    "Control de la empresa"@es .
+
+
+ine:supervisionOfOtherWorkers
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Supervision of other workers"@en ,
+    "Tareas de supervisión otros trabajadores"@es .
+
+
+ine:spouse1LaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 1 labor force status"@en ,
+    "Relación con la actividad del cónyuge 1"@es .
+
+
+ine:spouse2LaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Spouse 2 labor force status"@en ,
+    "Relación con la actividad del cónyuge 2"@es .
+
+
+ine:typeOfRepresentation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of representation"@en ,
+    "Tipo de representación"@es .
+
+
+ine:personsWithwithoutDisability
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Persons with/without disability"@en ,
+    "Personas con y sin discapacidad"@es .
+
+
+ine:socialSecurityStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Social Security status"@en ,
+    "Situaciones en relación a la Seguridad Social"@es .
+
+
+ine:degreeOfUrbanization
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Degree of urbanization"@en ,
+    "Grado de urbanización"@es .
+
+
+ine:sauTenureRegime
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SAU tenure regime"@en ,
+    "Régimen de tenencia de la SAU"@es .
+
+
+ine:agriculturalIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Agricultural indicators"@en ,
+    "Indicadores agricolas"@es .
+
+
+ine:typeOfComputerTasks
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of computer tasks"@en ,
+    "Tipo de tareas informáticas"@es .
+
+
+ine:businessConfidenceIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Business confidence indicators"@en ,
+    "Indicadores de confianza empresarial"@es .
+
+
+ine:industrialCapacityUtilizationRate
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Industrial capacity utilization rate"@en ,
+    "Utilización de la capacidad productiva en la industria"@es .
+
+
+ine:businessDemographicConcepts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Business demographic concepts"@en ,
+    "Conceptos demográficos de empresas"@es .
+
+
+ine:sdgIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SDG indicators"@en ,
+    "Indicadores ODS"@es .
+
+
+ine:accommodationSize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Accommodation size"@en ,
+    "Tamaño de alojamiento"@es .
+
+
+ine:lodgingType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Accommodation type"@en ,
+    "Tipo de alojamiento"@es .
+
+
+ine:cohorts
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Cohorts"@en ,
+    "Cohortes"@es .
+
+
+ine:erteTemporaryEmploymentRegulation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "ERTE (Temporary Employment Regulation)"@en ,
+    "ERTE"@es .
+
+
+ine:composite_breakdown
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "COMPOSITE_BREAKDOWN"@en ,
+    "DESGLOSE COMPUESTO"@es .
+
+
+ine:reporting_type
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "REPORTING_TYPE"@en ,
+    "Tipo de Informe"@es .
+
+
+ine:product
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "PRODUCT"@en ,
+    "PRODUCTO"@es .
+
+
+ine:durationOfAbsence
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Duration of absence"@en ,
+    "Duración de la ausencia"@es .
+
+
+ine:legalPersonalityOfOwner
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Legal personality of owner"@en ,
+    "Personalidad jurídica del titular"@es .
+
+
+ine:farmSizeBySauHa
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Farm size by SAU (Ha.)"@en ,
+    "Tamaño de las explotaciones según SAU (Ha.)"@es .
+
+
+ine:typeOfFarmBySauAndUg
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of farm by SAU and UG"@en ,
+    "Tipo de explotación según SAU y UG"@es .
+
+
+ine:ote
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "OTE"@en ,
+    "OTE"@es .
+
+
+ine:generalDistributionOfHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "General distribution of holding"@en ,
+    "Distribución general de la explotación"@es .
+
+
+ine:farmOrganicCertification
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Farm organic certification"@en ,
+    "Certificación ecológica de las explotaciones"@es .
+
+
+ine:bossAgriculturalTraining
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Agricultural training for the boss "@en ,
+    "Formación agraria del jefe/a "@es .
+
+
+ine:percentageOfTimeWorkedUtatRange
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal ;
+    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:label "Percentage of time worked (UTAT range)"@en ,
+    "Porcentaje de tiempo trabajado (tramo UTAT)"@es .
+
+
+ine:oalRelatedToHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "OAL related to holding"@en ,
+    "OAL relacionadas con la explotación"@es .
+
+
+ine:ofVnRepresentingOalsOverTotalVn
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "% of VN representing OALs over total VN"@en ,
+    "% VN que representan las OAL sobre el VN total"@es .
+
+
+ine:safetyPlan
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Safety plan"@en ,
+    "Plan de seguridad"@es .
+
+
+ine:typeOfManureStorage
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of manure storage "@en ,
+    "Tipo de almacenamiento de estiércol "@es .
+
+
+ine:typeOfFertilizerUsed
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of fertilizer used"@en ,
+    "Tipo de fertilizante utilizado"@es .
+
+
+ine:manureExportAndImport
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Manure export and import"@en ,
+    "Exportación e importación de estiércol"@es .
+
+
+ine:ruralDevelopmentMeasures
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Rural development measures"@en ,
+    "Medidas desarrollo rural"@es .
+
+
+ine:typeOfCattleHousing
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of cattle housing"@en ,
+    "Tipo de estabulación de bovinos"@es .
+
+
+ine:farmLabor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Farm labor"@en ,
+    "Mano de obra en la explotación"@es .
+
+
+ine:farmManagerTrainingCoursesLast12Months
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Farm manager training courses (last 12 months)"@en ,
+    "Cursos de formación agraria del jefe/a (últimos 12 meses)"@es .
+
+
+ine:workOnOwnersHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Work on owner's holding"@en ,
+    "Trabajo en la explotación del titular"@es .
+
+
+ine:farmManager
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Farm manager"@en ,
+    "Jefe/a de la explotación"@es .
+
+
+ine:typeOfPigHousing
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of pig housing"@en ,
+    "Tipo de estabulación de porcinos"@es .
+
+
+ine:typeOfLayingHenHousing
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of laying hen housing"@en ,
+    "Tipo de estabulación de gallinas ponedoras"@es .
+
+
+ine:animalSpecies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Animal species"@en ,
+    "Especies animales"@es .
+
+
+ine:typesOfLivestock
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Livestock breeding or fattening"@en ,
+    "Cría o engorde de ganado"@es ,
+    "Type of livestock"@en ,
+    "Tipo de ganado"@es ,
+    "Types of livestock"@en ,
+    "Tipos de ganado"@es .
+
+
+ine:dwellingSize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Dwelling size"@en ,
+    "Tamaño de la vivienda"@es .
+
+
+ine:farmSizeByUgt
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Farm size by UGT"@en ,
+    "Tamaño de las explotaciones según UGT"@es .
+
+
+ine:organicLivestockBreedingOrFattening
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Organic livestock breeding or fattening"@en ,
+    "Cría o engorde de ganado ecológico"@es .
+
+
+ine:sauWithoutOrchards
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SAU (without orchards)"@en ,
+    "SAU (sin huertos)"@es .
+
+
+ine:monthsRanges
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Months (ranges)"@en ,
+    "Meses (tramos)"@es .
+
+
+ine:cropsAndPastures
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Crops and pastures"@en ,
+    "Cultivos  y pastos"@es .
+
+
+ine:oalNotRelatedToHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "OAL NOT related to holding"@en ,
+    "OAL NO relacionadas con la explotación"@es .
+
+
+ine:basicFarmCharacteristics
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Basic farm characteristics"@en ,
+    "Características básicas de la explotación"@es .
+
+
+ine:typeOfTransferor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of transferor"@en ,
+    "Tipo de transmitiente"@es .
+
+
+ine:businessDemographicConceptsInPreviousPeriod
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Business demographic concepts in previous period"@en ,
+    "Conceptos demográficos de empresas en el periodo anterior"@es .
+
+
+ine:farmSizeByPet
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Farm size by PET (€)"@en ,
+    "Tamaño de las explotaciones según  PET (€)"@es .
+
+
+ine:farmSizeByUtat
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Farm size by UTAT"@en ,
+    "Tamaño de las explotaciones según UTAT"@es .
+
+
+ine:withwithoutSau
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "With/Without SAU"@en ,
+    "Con/Sin SAU"@es .
+
+
+ine:typeOfHousedLivestock
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of housed livestock"@en ,
+    "Tipo de ganado estabulado"@es .
+
+
+ine:experienceAsFarmManager
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:label "Experience as farm manager"@en ,
+    "Experiencia como jefe/a"@es .
+
+
+ine:sau
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SAU"@en ,
+    "SAU"@es .
+
+
+ine:withOrWithoutOal
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "With or without OAL"@en ,
+    "Con o sin OAL"@es .
+
+
+ine:regions
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Regions"@en ,
+    "Comarcas"@es .
+
+
+ine:openairSau
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Open-air SAU"@en ,
+    "SAU al aire libre"@es .
+
+
+ine:typesOfCropsAndPasturesIi
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Types of crops and pastures II"@en ,
+    "Tipos de cultivos y pastos  II"@es .
+
+
+ine:generalStDistributionOfHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "General ST distribution of holding"@en ,
+    "Distribución general de la ST de la explotación"@es .
+
+
+ine:manureApplicationTechnique
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Manure application technique"@en ,
+    "Técnica de aplicación de estiércol"@es .
+
+
+ine:typesOfCattle
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Types of cattle"@en ,
+    "Tipos ganado bovino"@es .
+
+
+ine:generalOtes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "General OTEs"@en ,
+    "OTE Generales"@es .
+
+
+ine:mainOtes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Main OTEs"@en ,
+    "OTE Principales"@es .
+
+
+ine:specificOtes
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Specific OTEs"@en ,
+    "OTE Particulares"@es .
+
+
+ine:sauAndSurfaces
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "SAU and Surfaces"@en ,
+    "SAU  y Superficies"@es .
+
+
+ine:generalOrganicSurfaceDistribution
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "General organic surface distribution"@en ,
+    "Distribución general de la superficie ecológica"@es .
+
+
+ine:typeOfCropsIii
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of crops III"@en ,
+    "Tipo de cultivos III"@es .
+
+
+ine:typeOfCropsIv
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of crops IV"@en ,
+    "Tipo de cultivos IV"@es .
+
+
+ine:naturalPersonLandLegalEntity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Natural person and legal entity "@en ,
+    "P.fisica y P.juridica "@es .
+
+
+ine:typesofNPersonAndLegalEntity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Types of Natural Person and Legal Entity"@en ,
+    "Tipos de P.fisica y P.juridica "@es .
+
+
+ine:generalSauDistributionOfHolding
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "General SAU distribution of holding"@en ,
+    "Distribución general de la SAU de la explotación"@es .
+
+
+ine:withwithoutUgt
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "With/Without UGT"@en ,
+    "Con/Sin UGT"@es .
+
+
+ine:ugtBrackets
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "UGT brackets"@en ,
+    "Tramos de UGT"@es .
+
+
+ine:activityType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Activity type"@en ,
+    "Tipo actividad"@es .
+
+
+ine:ownerfamilynonfamily
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Owner/Family/Non-family"@en ,
+    "Titular/Familiar/No familiar"@es .
+
+
+ine:typeOfLabor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of labor"@en ,
+    "Tipo mano obra"@es .
+
+
+ine:typeOfHiredLabor
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of hired labor"@en ,
+    "Tipo mano obra contratada"@es .
+
+
+ine:typeOfLivestockHousing
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of livestock housing"@en ,
+    "Tipo de estabulación"@es .
+
+
+ine:withSolidOrLiquidManure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "With solid or liquid manure"@en ,
+    "Con estiércol sólido o líquido"@es .
+
+
+ine:laborMarketLimitationsDueToCaregiving
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Labor market limitations due to caregiving"@en ,
+    "Limitaciones en la participación en el mercado laboral por cuidar de personas dependientes"@es .
+
+
+ine:typeOfEntity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of entity"@en ,
+    "Tipo de entidad"@es .
+
+
+ine:leaseContractTenure
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Lease contract tenure"@en ,
+    "Antigüedad del contrato de arrendamiento"@es .
+
+
+ine:errorIntervals
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Error intervals"@en ,
+    "Intervalos de error"@es .
+
+
+ine:businessGroupAffiliation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Business group affiliation"@en ,
+    "Pertenencia a grupo empresarial"@es .
+
+
+ine:businessGroup
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Business group"@en ,
+    "Grupo empresarial"@es .
+
+
+ine:companySize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Company size"@en ,
+    "Tamaño de la empresa"@es .
+
+
+ine:accessToDifferentTypesOfHealthcare
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Access to different types of healthcare"@en ,
+    "Acceso a distintos tipos de atención sanitaria"@es .
+
+
+ine:reasonsForNotAccessingHealthcare
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Reasons for not accessing healthcare"@en ,
+    "Razones por las que no ha accedido a atención sanitaria"@es .
+
+
+ine:agePersonsOver16Years
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
+    rdfs:label "Age (persons over 16 years)"@en ,
+    "Edad (personas mayores de 16 años)"@es .
+
+
+ine:relationshipBetweenPlaceOfResidenceAndPlaceOfStudy
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Relationship between place of residence and place of study "@en ,
+    "Relación entre lugar de residencia y lugar de estudios "@es .
+
+
+ine:typeOfCurrentStudies
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of current studies"@en ,
+    "Tipo de estudios en curso"@es .
+
+
+ine:typeOfMaterial
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of material"@en ,
+    "Tipo de material"@es .
+
+
+ine:packagingWaste
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Packaging waste"@en ,
+    "Residuos de envases"@es .
+
+
+ine:secondaryRawMaterials
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Secondary raw materials"@en ,
+    "Materias primas secundarias"@es .
+
+
+ine:typeOfConsumption
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of consumption"@en ,
+    "Tipo de consumo"@es .
+
+
+ine:typeOfEnergyFlow
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of energy flow"@en ,
+    "Tipo de flujo energético"@es .
+
+
+ine:marineDemarcation
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Marine demarcation"@en ,
+    "Demarcación marina"@es .
+
+
+ine:taxonomicGroup
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Taxonomic group"@en ,
+    "Grupo taxonómico"@es .
+
+
+ine:environmentalIndicator
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Environmental indicator"@en ,
+    "Indicador medioambiental"@es .
+
+
+ine:cinea2011Groupings
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "CINE-A 2011 groupings"@en ,
+    "Agrupaciones CINE-A 2011"@es .
+
+
+ine:maritimenonmaritimeZones
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Maritime/non-maritime zones"@en ,
+    "Zonas marítimas/no marítimas"@es .
+
+
+ine:hvdIndicators
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "HVD indicators"@en ,
+    "Indicadores HVD"@es .
+
+
+ine:mostFrequentLaborForceStatus
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Most frequent labor force status"@en ,
+    "Relación con la actividad más frecuente"@es .
+
+
+ine:accommodationBookingMode
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Accommodation booking mode"@en ,
+    "Modo reserva alojamiento"@es .
+
+
+ine:transportBookingMode
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Transport booking mode"@en ,
+    "Modo reserva transporte"@es .
+
+
+ine:destinationPlace
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Destination place"@en ,
+    "Lugar de destino"@es .
+
+
+ine:satisfactionLevel
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Satisfaction level"@en ,
+    "Nivel de satisfacción"@es .
+
+
+ine:operationsAndFlows
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Operations and flows"@en ,
+    "Operaciones y flujos"@es .
+
+
+ine:netWealthPercentile
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Net wealth percentile"@en ,
+    "Percentil de riqueza neta"@es .
+
+
+ine:typeOfAssetdebt
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of asset/debt"@en ,
+    "Tipo de activo/deuda"@es .
+
+
+ine:destinationMunicipalitySize
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "Destination municipality size"@en ,
+    "Tamaño municipios de destino"@es .
+
+
+ine:typeOfReason
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of reasons"@en ,
+    "Tipo de razones"@es .
+
+
+ine:typeOfExercise
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Type of exercise"@en ,
+    "Tipo de ejercicio"@es .
+
+
+ine:weeklyTimeInterval
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Weekly time interval"@en ,
+    "Intervalo de tiempo semanal"@es .
+
+
+ine:yearOfArrivalInAutonomousCommunity
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Year of arrival in autonomous community"@en ,
+    "Año de llegada a CCAA"@es .
+
+
+ine:yearOfArrivalInProvince
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Year of arrival in province"@en ,
+    "Año de llegada a Provincia"@es .
+
+
+ine:yearOfArrivalInMunicipality
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf ine:baseYear ;
+    rdfs:label "Year of arrival in municipality"@en ,
+    "Año de llegada a Municipio"@es .
+
+
+ine:month
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Month"@en ,
+    "Mes"@es .
+
+
+ine:exportsImportsAndServices
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Exports, imports, and services"@en ,
+    "Exportaciones, importaciones y servicios"@es .
+
+
+ine:modeOfSupply
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mode of Supply"@en ,
+    "Modo de Suministro"@es .
+
+
+ine:hvdCategories
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    # rdfs:comment "TODO" ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "HVD categories"@en ,
+    "Categorías HVD"@es .
+

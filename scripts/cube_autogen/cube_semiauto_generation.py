@@ -288,7 +288,7 @@ def add_INE_metadata(file_path):
 
 def add_POM_from_csv(file_path):
     variables = load_variables("dimensiones_correspondence.txt")
-    measu_list = load_variables("lista_medidas.txt")
+    measu_list = load_variables("grupos_medidas.txt")
     measures = load_variables("medidas_correspondence.txt")
     measures_set = set(measu for measu, _ in measures)
     medidas_set = set(ine_var for ine_var, _ in measu_list)
@@ -494,9 +494,9 @@ def add_POM_from_csv(file_path):
 
 # Function to detect and replace measures in the CSV file
 def detect_and_replace_measures(file_path):
-    # Load lista_medidas.txt as a list of tuples (first element is the one to look for)
-    lista_medidas = load_variables("lista_medidas.txt")
-    medidas_set = set(ine_var for ine_var, _ in lista_medidas)
+    # Load grupos_medidas.txt as a list of tuples (first element is the one to look for)
+    grupos_medidas = load_variables("grupos_medidas.txt")
+    medidas_set = set(ine_var for ine_var, _ in grupos_medidas)
     measures = load_variables("medidas_correspondence.txt")
     measures_dict = dict(measures)
 
