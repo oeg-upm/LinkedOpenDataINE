@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix sdmx-dimensionension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix och: <http://w3id.org/def/och/> .
@@ -34,12 +34,12 @@ ine: a owl:Ontology ;
 
 # Reused Ontology terms from other vocabularies.
 
-sdmx-dimensionension:age a qb:DimensionProperty, rdf:Property .
-sdmx-dimensionension:refPeriod a qb:DimensionProperty, rdf:Property.
-sdmx-dimensionension:refArea a qb:DimensionProperty, rdf:Property.
-sdmx-dimensionension:educationLev a qb:DimensionProperty, rdf:Property.
-sdmx-dimensionension:currency a qb:DimensionProperty, rdf:Property.
-sdmx-dimensionension:sex a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:age a qb:DimensionProperty, rdf:Property .
+sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:refArea a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:educationLev a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:currency a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:sex a qb:DimensionProperty, rdf:Property.
 foaf:surname a rdf:Property.
 foaf:name a rdf:Property.
 sdmx-measure:age a qb:DimensionProperty, rdf:Property.
@@ -186,14 +186,6 @@ ine:productGroups
     rdfs:label "Product groups"@en ,
     "Grupos de Productos"@es .
 
-
-ine:dataType
-    rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
-    rdfs:label "Data type"@en ,
-    "Tipo de dato"@es .
-
 sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Resource;
@@ -310,7 +302,7 @@ ine:componentesPibpmRent
     "Componentes PIBpm, renta"@es .
 
 
-sdmx-dimensionension:sex a qb:DimensionProperty, rdf:Property ;
+sdmx-dimension:sex a qb:DimensionProperty, rdf:Property ;
     rdfs:range rdfs:Resource;
     qb:concept sdmx-concept:sex ;
     rdfs:label "Sex"@en, "Sexo"@es, "Reference person gender"@en, "Sexo de la persona de referencia"@es ;
@@ -394,7 +386,7 @@ ine:municipality a rdf:Property, qb:DimensionProperty;
     rdfs:label "Municipios"@es;
     rdfs:label "Capitales de provincia y principales ciudades"@es;
     rdfs:label "Capitales y grandes ciudades"@es;
-    rdfs:subClassOf smdx-dim:refArea;
+    rdfs:subClassOf sdmx-dimension:refArea;
     rdfs:range rdfs:Resource.
 
 
@@ -484,7 +476,7 @@ ine:baseYear
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:date ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:label "Base year"@en ,
     "Año Base"@es .
 
@@ -665,7 +657,7 @@ ine:residence a rdf:Property, qb:DimensionProperty;
     rdfs:comment "Lugar en que se reside"@es;
     rdfs:domain qb:Observation;
     rdfs:range rdfs:Resource;
-    rdfs:subPropertyOf sdmx-dim:refArea. 
+    rdfs:subPropertyOf sdmx-dimension:refArea. 
 
 
 ine:relationshipToEconomicActivity
@@ -733,14 +725,6 @@ ine:inactivityStatus
     rdfs:range rdfs:Literal ;
     rdfs:label "INACTIVITY STATUS"@en ,
     "SITUACION DE INACTIVIDAD"@es .
-
-
-ine:rates
-    rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:domain qb:Observation ;
-    rdfs:range xsd:decimal ;
-    rdfs:label "Rates"@en ,
-    "Tasas"@es .
 
 
 ine:hoursSpentInNonformalStudiesLast4Weeks
@@ -822,7 +806,7 @@ ine:timeSinceLeavingLastJob
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:label "Time since leaving last job"@en ,
     "Tiempo desde que dejaron el último empleo"@es .
 
@@ -921,7 +905,7 @@ ine:countryOfResidence a rdf:Property, qb:DimensionProperty;
 
 ine:nationalityZones
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refArea ; 
+    rdfs:subPropertyOf sdmx-dimension:refArea ; 
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Nationality zones"@en ,
@@ -938,7 +922,7 @@ ine:desireToModifyUsualSchedule
 
 ine:timeInCurrentJob
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Time in current job"@en ,
@@ -1007,7 +991,7 @@ ine:occupationMainJob
 
 ine:timeSinceContractStartrenewal
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Time since contract start/renewal"@en ,
@@ -1118,14 +1102,6 @@ ine:connectionToEconomicActivity
     rdfs:range rdfs:Literal ;
     rdfs:label "Connection to economic activity"@en ,
     "Vinculación con la actividad"@es .
-
-
-ine:unit
-    rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
-    rdfs:label "Unit"@en ,
-    "Unidad"@es .
 
 
 ine:actualHoursWorkedInMainJobWeek
@@ -1568,7 +1544,7 @@ ine:indicatorType
 ine:actualHoursWorkedInMainJob
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:range xsd:integer ;
     rdfs:label "Actual hours worked in main job"@en ,
     "Horas efectivas trabajadas en el empleo principal"@es .
@@ -1600,7 +1576,7 @@ ine:costComponents
 
 ine:workingTime
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Working time"@en ,
@@ -1744,7 +1720,7 @@ ine:urbanOrNonurbanArea
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:subPropertyOf sdmx-dimension:refArea ;
     rdfs:label "Urban or non-urban area"@en ,
     "Conjunto Urbano o No Urbano"@es .
 
@@ -1885,7 +1861,7 @@ ine:economicDestinationOfGoodsImport
 
 ine:referencePlaceOfDemographicPhenomenon
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:subPropertyOf sdmx-dimension:refArea ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Reference place of demographic phenomenon"@en ,
@@ -1896,7 +1872,7 @@ ine:periodicity
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:label "Periodicity"@en ,
     "Periodicidad"@es .
 
@@ -1921,7 +1897,7 @@ ine:cpiSubindex
 
 ine:cities
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refArea ; 
+    rdfs:subPropertyOf sdmx-dimension:refArea ; 
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Cities"@en , "Ciudades"@es, "Puntos Turísticos"@es.
@@ -2188,7 +2164,7 @@ ine:calendarAdjustedIndicesBasedOnCNAE93
 
 ine:geographicalZonesOfTheRestOfTheWorld
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:refArea ;
+    rdfs:subPropertyOf sdmx-dimension:refArea ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Geographical zones of the rest of the world"@en ,
@@ -2233,7 +2209,7 @@ ine:totalEducationClassifications
 
 ine:attainedEducationLevelsCneda
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:educationLev ;
+    rdfs:subPropertyOf sdmx-dimension:educationLev ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "ATTAINED EDUCATION LEVELS - CNED-A"@en ,
@@ -2242,7 +2218,7 @@ ine:attainedEducationLevelsCneda
 
 ine:educationalLevelsCnedp
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:educationLev ;
+    rdfs:subPropertyOf sdmx-dimension:educationLev ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "EDUCATIONAL LEVELS - CNED-P"@en ,
@@ -2936,7 +2912,7 @@ ine:maturityDate
 
 ine:currency
     rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:subPropertyOf sdmx-dimensionension:currency ;
+    rdfs:subPropertyOf sdmx-dimension:currency ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Currency"@en ,
@@ -3005,7 +2981,7 @@ ine:periodDetail
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:date ;
-    rdfs:subPropertyOf sdmx-dimensionension:refPeriod ;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod ;
     rdfs:label "Period detail"@en ,
     "Detalle periodo"@es .
 
@@ -3033,12 +3009,12 @@ ine:generationages
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Generation/ages"@en ,
     "Generación/edades"@es .
 
 
-ine:touristTYpe
+ine:touristType
     rdf:type rdf:Property , qb:DimensionProperty ;
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
@@ -3152,7 +3128,7 @@ ine:multiplesOfMinimumWage
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Multiples of Minimum Wage"@en ,
     "Múltiplos del Salario Mínimo Interprofesional"@es .
 
@@ -4042,7 +4018,7 @@ ine:marriageDuration
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Marriage duration"@en ,
     "Duración del matrimonio"@es .
 
@@ -4124,7 +4100,7 @@ ine:typeOfMarriageBySpousesNationality
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Type of marriage by spouses' nationality"@en ,
     "Tipo de matrimonio según nacionalidad de los conyuges"@es .
 
@@ -5593,7 +5569,7 @@ ine:experienceAsFarmManager
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimensionension:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Experience as farm manager"@en ,
     "Experiencia como jefe/a"@es .
 

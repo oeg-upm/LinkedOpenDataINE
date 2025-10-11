@@ -29,7 +29,7 @@
 
 ine:MeasureSet a owl:Class ;
     rdfs:label "Conjunto de Medidas"@es, "Set of Measurements"@en;
-    rdfs:comment "La clase OWL que representa a aquellas variables del INE que corresponden al conjunto de medidas de un conjunto de datos"@es;
+    rdfs:comment "La clase OWL que representa a aquellas variables del INE que corresponden al conjunto de medidas de un conjunto de datos"@es.
 
 ine:inMeasureSet a rdf:Property ;
     rdfs:label "In Measure Set"@en, "En el Conjunto de Medidas"@es ;
@@ -38,11 +38,11 @@ ine:inMeasureSet a rdf:Property ;
     rdfs:range ine:MeasureSet .
 
 ine:unit
-    rdf:type ine:MeasureSet
+    rdf:type ine:MeasureSet;
     rdfs:label "Unit"@en , "Unidad"@es .
 
 ine:unitEmployed
-    rdf:type ine:MeasureSet
+    rdf:type ine:MeasureSet ;
     rdfs:label "Unit Employed"@en , "Unidad Ocupados"@es .
 
 ine:rate 
@@ -53,6 +53,11 @@ ine:rate
 ine:datatypeTourists
     a ine:MeasureSet ;
     rdfs:label "Tipo de dato Turistas"@es, "Datatype Tourists"@en;
+    rdfs:comment "Relación entre dos magnitudes"@es.
+
+ine:dataType
+    a ine:MeasureSet ;
+    rdfs:label "Tipo de dato"@es, "Datatype"@en;
     rdfs:comment "Relación entre dos magnitudes"@es.
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -199,28 +204,28 @@ ine:averageStay a rdf:Property , qb:MeasureProperty;
     rdfs:range xsd:float.
 
 ine:numberOfTouristsABSValue a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Dato base"@es;
+    rdfs:label "Dato base"@es, "Dato base Turistas"@es;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     ine:inMeasureSet ine:datatypeTourists;
     rdfs:domain qb:Observation; 
     rdfs:range xsd:int.
 
 ine:numberOfTouristsAnnualVarianceRate a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Tasa de variación anual"@es;
+    rdfs:label "Tasa de variación anual"@es, "Tasa de variación anual Turistas"@es;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     ine:inMeasureSet ine:datatypeTourists;
     rdfs:domain qb:Observation;
     rdfs:range xsd:float.
 
 ine:numberOfTouristsAccumulated a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Acumulado en lo que va de año"@es;
+    rdfs:label "Acumulado en lo que va de año"@es, "Acumulado en lo que va de año Turistas"@es;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     ine:inMeasureSet ine:datatypeTourists; 
     rdfs:domain qb:Observation;
     rdfs:range xsd:int.
 
 ine:numberOfTouristsAccumulatedVarianceRate a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Tasa de variación acumulada"@es;
+    rdfs:label "Tasa de variación acumulada"@es, "Tasa de variación acumulada Turistas"@es;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     ine:inMeasureSet ine:datatypeTourists; 
     rdfs:domain qb:Observation;

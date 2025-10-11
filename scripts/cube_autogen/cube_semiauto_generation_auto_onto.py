@@ -26,7 +26,7 @@ VOID = Namespace("http://rdfs.org/ns/void#")
 DCT = Namespace("http://purl.org/dc/terms/")
 FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 ORG = Namespace("http://www.w3.org/ns/org#")
-ADMINGEO = Namespace("http://data.ordnancesurvey.co.uk/ontology/admingeo/")
+ADMINGEO = Namespace("http://data.ordnancesurvey.co.uk/dimensions/admingeo/")
 INTERVAL = Namespace("http://reference.data.gov.uk/def/intervals/")
 QB = Namespace("http://purl.org/linked-data/cube#")
 SDMX_CONCEPT = Namespace("http://purl.org/linked-data/sdmx/2009/concept#")
@@ -289,18 +289,11 @@ def add_INE_metadata(file_path):
 
 
 def add_POM_from_csv(file_path):
-    #variables = load_variables("dimensiones_correspondence.txt")
-    ontology = Graph().parse("vocabularios/inelod-voc-auto.ttl", format="turtle")
-    measu_list = load_variables("lista_medidas.txt")
-    measures = load_variables("medidas_correspondence.txt")
-    measures_set = set(measu for measu, _ in measures)
-    medidas_set = set(ine_var for ine_var, _ in measu_list)
-    #variables_dict = dict(variables)
-    measures_dict = dict(measures)
+    dimensions = Graph().parse("../rdf_vocabularies/inelod-voc-dimension.ttl", format="turtle")
+    measures = Graph().parse("../rdf_vocabularies/inelod-voc-measure.ttl", format="turtle")
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     dsd_uri = INELOD[file_name + "_dsd"]
     detect_and_replace_measures(file_path)
-
     triples_map_dsd = INELOD[file_name + "_TriplesMapDSD"]
     g_mappings.add((triples_map_dsd, RDF.type, RR.TriplesMap))
     logical_source_bnode = BNode()
@@ -322,13 +315,27 @@ def add_POM_from_csv(file_path):
         for column in columns:
             # Dimension columns
             # First we check if the column is in the vocabulary of the dimensions.
-            ask_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                    f' ASK {{ ?s rdfs:label <{column}> .}}'
-            res = ontology.query(ask_query)
-            if res.askAnswer and column not in medidas_set and column not in measures_dict:
+            ask_dim = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
+                    f' ASK {{ ?s rdfs:label "{column}"@es .}}'
+            #print(ask_dim)
+            res_dim = dimensions.query(ask_dim)
+            ask_measure = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
+                          f'                                    PREFIX qb: <http://purl.org/linked-data/cube#>' \
+                          f' ASK {{ ?s a qb:MeasureProperty ;' \
+                          f'            rdfs:label "{column}"@es .}}'
+            res_measure = measures.query(ask_measure)
+            ask_measure_set = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
+                    f'            PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>' \
+                    f' ASK {{ ?s a ine:MeasureSet ;' \
+                    f'   rdfs:label "{column}"@es .}}'
+            #print(ask_measure_set)
+            res_measure_set = measures.query(ask_measure_set)
+            #Case where the column is a dimension.
+            print("Dimension:", res_dim.askAnswer, "Measure:", res_measure.askAnswer, "MeasureSet:", res_measure_set.askAnswer)
+            if res_dim.askAnswer and not res_measure.askAnswer and not res_measure_set.askAnswer:
                 select_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                                f' SELECT ?s WHERE {{ ?s rdfs:label <{column}> .}}'
-                for result in ontology.query(select_query):
+                                f' SELECT ?s WHERE {{ ?s rdfs:label "{column}"@es .}}'
+                for result in dimensions.query(select_query):
                     dim = result["s"]
                 print(f"Processing column: {column} as dimension with URI: {dim}")
                 triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
@@ -364,8 +371,8 @@ def add_POM_from_csv(file_path):
                 order += 1
                 continue
 
-            # Single measure column (Total)
-            if column == "Total" and not multiple_measures:
+            # Case that is a single measure column (Total)
+            if column == "Total" and not res_dim.askAnswer and not res_measure.askAnswer and not res_measure_set.askAnswer:
                 print(f"Processing column: {column}")
                 triples_map_uri_measu = triples_map_dsd + "_measu"
                 g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
@@ -398,8 +405,11 @@ def add_POM_from_csv(file_path):
                 continue
 
             # Individual measure columns
-            if column in measures_dict:
-                rdf_measure = measures_dict[column]
+            if not res_dim.askAnswer and res_measure.askAnswer and not res_measure_set.askAnswer:
+                select_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
+                               f' SELECT ?s WHERE {{ ?s rdfs:label <{column}> .}}'
+                for result in measures.query(select_query):
+                    rdf_measure = result["s"] 
                 print(f"Processing column: {column}")
                 triples_map_uri_measu = triples_map_dsd + "_measu"
                 g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
@@ -431,7 +441,7 @@ def add_POM_from_csv(file_path):
                 continue
 
             # Multiple measures (measureType)
-            if column in medidas_set:
+            if not res_dim.askAnswer and not res_measure.askAnswer and res_measure_set.askAnswer:
                 print(f"Processing column: {column} as multiple measures")
                 triples_map_uri_dim = triples_map_dsd + "_bndim" + str(order)
                 g_mappings.add((triples_map_uri_dim, RDF.type, RR.TriplesMap))
@@ -477,9 +487,15 @@ def add_POM_from_csv(file_path):
                 g_mappings.add((object_bnode, RR.datatype, XSD.float))
                 order += 1
                 measu_order = 1
-                for measure_group, measure in measu_list:
-                    if column == measure_group:
-                        print(f"Processing measure group: {measure_group} with measure: {measure}")
+                query_measu_set = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
+                                  f' PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>' \
+                                    f' SELECT ?measure WHERE {{ ' \
+                                    f'?measureSet a ine:MeasureSet ;' \
+                                    f'              rdfs:label "{column}"@es . ' \
+                                    f'?measure ine:inMeasureSet ?measureSet .}}'
+                for result in measures.query(query_measu_set):
+                        rdf_measure = result["measure"]
+                        print(f"Processing measure group: {column} with measure: {rdf_measure}")
                         triples_map_uri_measu = triples_map_dsd + "_measu" + str(measu_order)
                         g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
                         logical_source_bnode = BNode()
@@ -493,7 +509,7 @@ def add_POM_from_csv(file_path):
                         predicate_object_map_bnode = BNode()
                         g_mappings.add((triples_map_uri_measu, RR.predicateObjectMap, predicate_object_map_bnode))
                         g_mappings.add((predicate_object_map_bnode, RR.predicate, QB.measure))
-                        g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(measure)))
+                        g_mappings.add((predicate_object_map_bnode, RR.object, URIRef(rdf_measure)))
                         component_bnode = BNode()
                         predicate_object_map_bnode = BNode()
                         g_mappings.add((triples_map_dsd, RR.predicateObjectMap, predicate_object_map_bnode))
@@ -505,25 +521,32 @@ def add_POM_from_csv(file_path):
 # Function to detect and replace measures in the CSV file
 def detect_and_replace_measures(file_path):
     # Load lista_medidas.txt as a list of tuples (first element is the one to look for)
-    medidas = rdflib.Graph().parse("rdf_vocabularies/inelod-voc-auto.ttl", format="ttl")
-    
+    medidas = rdflib.Graph().parse("../rdf_vocabularies/inelod-voc-measure.ttl", format="ttl")
+
     # Get the measurement argument if provided
     measurement = sys.argv[2] if len(sys.argv) > 2 else None
     print(f"Measurement to append: {measurement}")
     with open(file_path, mode='r', encoding='utf-8', errors='replace') as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
         headers = next(reader, None)
+        if measurement and any(h.endswith(measurement) for h in headers):
+            print(f"Measurement '{measurement}' already present at the end of a column header. Skipping modification.")
+            return
         if headers is None:
             return False
 
-        # Replace "Total" column name with measurement if provided
+        # Check if any column already has the measurement appended
+        if measurement and any(measurement in h for h in headers):
+            print(f"Measurement '{measurement}' already appended to a column header. Skipping modification.")
+            return
+
+        # If measurement is provided, append it to the "Total" column header before any other manipulation
         if measurement and "Total" in headers:
             headers = [measurement if h == "Total" else h for h in headers]
         # SPARQL query to find ine:MeasureSet matching CSV columns
-
         csv_columns_set = set(headers)
         query = """
-            PREFIX ine: <http://stats.linkeddata.es/voc/cubes/>
+            PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             SELECT ?label
             WHERE {
@@ -532,57 +555,49 @@ def detect_and_replace_measures(file_path):
             }
             GROUP BY ?label
         """
-        matching_set = None
         for row in medidas.query(query):
-                measure_labels = set(row["labels"].split(","))
-                if measure_labels.issubset(csv_columns_set):
-                        matching_set = row["set"]
-                        matching_column = next((h for h in headers if h == row["label"]), None)
-                        print(f"Found matching MeasureSet: {matching_set} for columns: {measure_labels}")
-                        # If Measure Set column exists, append sys.argv[2] to its header only
-                        # Find the index of the matching column and append measurement to its header
-                        matching_idx = headers.index(matching_column) if matching_column in headers else None
-                        if matching_idx is not None and measurement:
-                            headers[matching_idx] = f"{headers[matching_idx]} {sys.argv[2]}"
-                        # Read all rows, ensuring UTF-8 encoding
-                        rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
-                        # Also append measurement to each cell in the "Unidad" and/or "Tipo de dato" column
-                        for row in rows:
-                            if measurement:
-                                if unidad_idx is not None and len(row) > unidad_idx:
-                                    row[unidad_idx] = f"{row[unidad_idx]} {measurement}"
-                                if tipo_dato_idx is not None and len(row) > tipo_dato_idx:
-                                    row[tipo_dato_idx] = f"{row[tipo_dato_idx]} {measurement}"
-                else:
-                    # If there is not any MeasureSet, just read the rows
-                    rows = [[cell.encode('utf-8', 'replace').decode('utf-8') for cell in row] for row in reader]
+            measure_labels = row["label"]
+            if str(measure_labels) in csv_columns_set:
+                # Append measurement to matching columns and their cells
+                if measurement:
+                    # Also find the index of the column that is the measure set (i.e., the column whose header matches measure_labels)
+                    measure_set_index = None
+                    for i, h in enumerate(headers):
+                        if h == str(measure_labels):
+                            measure_set_index = i
+                            break
+                    # Read all rows, update matching columns
+                    updated_rows = []
+                    with open(file_path, mode='r', encoding='utf-8', errors='replace') as csvfile:
+                        reader = csv.reader(csvfile, delimiter=';')
+                        next(reader, None)  # Skip header
+                        for row in reader:
+                            # Append measurement only to the measure set column itself, if found
+                            if measure_set_index is not None:
+                                row[measure_set_index] = f"{row[measure_set_index]} {measurement}"
+                                measure_replace_query = f"""
+                                    PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>
+                                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                    PREFIX qb: <http://purl.org/linked-data/cube#>
+                                    SELECT ?measure 
+                                    WHERE {{
+                                    ?measure a qb:MeasureProperty ;
+                                        rdfs:label "{row[measure_set_index]}"@es .
+                                    }}
+                                """
+                                #print(measure_replace_query)
+                                for result in medidas.query(measure_replace_query):
+                                    rdf_measure = result["measure"]
+                                    #print(f"Replacing cell value '{row[measure_set_index]}' with RDF measure URI: {rdf_measure}")
+                                    row[measure_set_index] = str(rdf_measure)
+                            updated_rows.append(row)
 
-        # Find indices of headers that are in medidas_set
-        medidas_indices = [i for i, header in enumerate(headers) if header in medidas_set]
-        if not medidas_indices:
-            # Write back headers and rows if only header changes were made
-            with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
-                writer = csv.writer(csvfile, delimiter=';')
-                writer.writerow(headers)
-                writer.writerows(rows)
-            return False
-
-        # Replace values in measure columns
-        updated_rows = []
-        for row in rows:
-            for idx in medidas_indices:
-                cell_value = row[idx]
-                if cell_value in measures_dict:
-                    row[idx] = measures_dict[cell_value]
-            updated_rows.append(row)
-
-    # Write the updated rows back to the file
-    with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
-        writer = csv.writer(csvfile, delimiter=';')
-        writer.writerow(headers)
-        writer.writerows(updated_rows)
-    print(f"CSV updated with replaced measures and column names.")
-    return True
+                    # Write back to CSV
+                    with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
+                        writer = csv.writer(csvfile, delimiter=';')
+                        writer.writerow(headers)
+                        writer.writerows(updated_rows)
+                break
 
 # Function to add an index column to the CSV file and strip non-UTF-8 characters
 def csv_add_index(file_path):
@@ -661,7 +676,7 @@ print(f"Mappings serialized in {time.time() - start_time:.2f} seconds")
 # Execution of Morph-KGC to materialize the data.
 start_time = time.time()
 
-os.system(f"python -m morph_kgc ../configuration/config_CSV.ini")
+os.system(f"python -m morph_kgc ../../morph_configuration/config_CSV.ini")
 os.rename("knowledge-graph.nt", f"{os.path.splitext(os.path.basename(csv_file_path))[0]}.nt")
 os.rename("auto_mappings.ttl", f"auto_mappings{os.path.splitext(os.path.basename(csv_file_path))[0]}.ttl")
 print(f"Data materialized in {time.time() - start_time:.2f} seconds")
