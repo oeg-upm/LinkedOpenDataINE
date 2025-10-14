@@ -3,213 +3,213 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix api:   <http://purl.org/linked-data/api/vocab#> .
-@prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector>.
+@prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector/>.
 
-pubsec:Science_Technology
+pubsec:ciencia-tecnologia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Ciencia y tecnología"@es , "Science & Technology"@en .
 
-pubsec:Demography
+pubsec:demografia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Demografía"@es , "Demography"@en .
 
-pubsec:Employment
+pubsec:empleo
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Empleo"@es, "Employment"@en .
 
-pubsec:Education
+pubsec:education
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Educación"@es, "Education"@en .
 
-pubsec:Culture_Leisure
+pubsec:cultura-ocio
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Cultura y ocio"@es, "Culture & Leisure"@en .
 
-pubsec:Energy
+pubsec:energia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Energía"@es, "Energy"@en .
 
-pubsec:Treasury
+pubsec:hacienda
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Hacienda"@es, "Treasury"@en .
 
-pubsec:Sports
+pubsec:deporte
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Deporte"@es, "Sports"@en .
 
-pubsec:Comerce
+pubsec:comercio
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Comercio"@es, "Comerce"@en .
 
-pubsec:Economy
+pubsec:economia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Economía"@es, "Economy"@en .
 
-pubsec:Environment
+pubsec:medio-ambiente
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Medio ambiente"@es, "Environment"@en .
 
-pubsec:Society_Wellfare
+pubsec:sociedad-bienestar
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Sociedad y bienestar"@es, "Society and Wellfare"@en .
 
-pubsec:PublicSector
+pubsec:sector-publico
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Sector público"@es, "Public Sector"@en .
 
-pubsec:Security
+pubsec:seguridad
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Seguridad"@es , "Security"@en .
 
-pubsec:RuralEnvironment
+pubsec:medio-rural-pesca
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Medio Rural"@es .
 
-pubsec:Health
+pubsec:salud
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Salud"@es, "Health"@en .
 
-pubsec:Transport
+pubsec:transporte
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Transporte"@es, "Transport"@en .
 
-pubsec:Industry
+pubsec:industria
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Industria"@es, "Industry"@en .
 
-pubsec:Legislation_Justice
+pubsec:legislacion-justicia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Legislación y justicia"@es, "Legislation and Justice"@en .
 
-pubsec:Tourism
+pubsec:turismo
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Turismo"@es, "Tourism"@en .
 
-pubsec:Urbanism_Infrastructure
+pubsec:urbanismo-infraestructuras
         a                skos:Concept;
         skos:inScheme <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Urbanismo e Infraestructuras"@es, "Tourism and Inrastructure"@en .
 
-pubsec:Housing
+pubsec:vivienda
         a                skos:Concept;
         skos:inScheme <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Vivienda"@es, "Housing"@en .
 
-pubsec:Innovation
+pubsec:innovacion
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Innovación"@es, "Innovation"@en;
-        skos:broader pubsec:Science_Technology.
+        skos:broader pubsec:ciencia-tecnologia.
 
-pubsec:Research
+pubsec:investigacion
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Investigación"@es, "Research"@en;
-        skos:broader pubsec:Science_Technology.
+        skos:broader pubsec:ciencia-tecnologia.
 
-pubsec:RDI
+pubsec:idi
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "I+D+I"@es, "R+D+I"@en;
-        skos:broader pubsec:Science_Technology.
+        skos:broader pubsec:ciencia-tecnologia.
 
-pubsec:Telecommunications
+pubsec:telecomunicaciones
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Telecomunicaciones"@es, "Telecommunications"@en;
-        skos:broader pubsec:Science_Technology.
+        skos:broader pubsec:ciencia-tecnologia.
 
-pubsec:InternetAndInformationSociety
+pubsec:internet-sociedad-informacion
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Internet y Sociedad de la Información"@es, "Internet and Information Society"@en ;
-        skos:broader pubsec:Science_Technology.
+        skos:broader pubsec:ciencia-tecnologia.
 
-pubsec:Consumption
+pubsec:consumo
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Consumo"@es, "Consumption"@en;
-        skos:broader pubsec:Comerce.
+        skos:broader pubsec:Comercio.
 
-pubsec:FreeTime
+pubsec:tiempo-libre
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Tiempo Libre"@es, "Free Time;"@es;
-        skos:broader pubsec:Culture_Leisure.
+        skos:broader pubsec:cultura-ocio.
 
-pubsec:Immigration_Emigration
+pubsec:inmigracion-emigracion
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Inmigración y Emigración"@es, "Immigration and Emigration"@en ;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:Family
+pubsec:familia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Familia"@es, "Family"@en ;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:Women
+pubsec:mujeres
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Mujeres"@es, "Women"@en;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:Childhood
+pubsec:infancia
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Infancia"@es, "Childhood"@en;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:Seniors
+pubsec:mayores
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Mayores"@es, "Seniors"@en;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:Census
+pubsec:padron
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Padrón"@es, "Census"@en;
-        skos:broader pubsec:Demography.
+        skos:broader pubsec:demografia.
 
-pubsec:SportsFacilities
+pubsec:instalaciones-deportivas
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Instalaciones deportivas"@es;
-        skos:broader pubsec:Sports.
+        skos:broader pubsec:deporte.
 
 pubsec:federaciones
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Federaciones"@es;
-        skos:broader pubsec:Sports.
+        skos:broader pubsec:deporte.
 
 pubsec:competiciones
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Competiciones"@es;
-        skos:broader pubsec:Sports.
+        skos:broader pubsec:deporte.
 
 pubsec:deuda
         a               skos:Concept ;
@@ -217,7 +217,7 @@ pubsec:deuda
         skos:prefLabel  "Deuda"@es;
         skos:broader pubsec:economia.
 
-pubsec:monedaybancayfinanzas
+pubsec:moneda-banca-finanzas
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Moneda y Banca y finanzas"@es;
@@ -235,13 +235,13 @@ pubsec:trabajo
         skos:prefLabel  "Trabajo"@es;
         skos:broader pubsec:empleo.
 
-pubsec:mercadolaboral
+pubsec:mercado-laboral
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Mercado Laboral"@es;
         skos:broader pubsec:empleo.
 
-pubsec:fuentesrenovables
+pubsec:fuentes-renovables
         a               skos:Concept ;
         skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
         skos:prefLabel  "Fuentes Renovables"@es;
