@@ -4,9 +4,17 @@ import os
 import sys
 import morph_kgc
 import time
+import subprocess
 
 import rdflib
 
+# Base directory (absolute) of this script so relative resources can be resolved anywhere
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+VOC_DIR = os.path.normpath(os.path.join(BASE_DIR, "..", "..", "rdf_vocabularies"))
+MORPH_CONF = os.path.normpath(os.path.join(BASE_DIR, "..", "..", "morph_configuration", "config_CSV.ini"))
+print("Using MORPH configuration file at:", MORPH_CONF)
+print("Using VOC directory at:", VOC_DIR)
+print("Using BASE directory at:", BASE_DIR)
 # Define namespaces for the data used in the RDF cubes.
 EX = Namespace("http://example.org/")
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
@@ -41,10 +49,10 @@ INELOD_VOC = Namespace("http://stats.linkeddata.es/voc/cubes/vocabulary/")
 # Create two new graphs, one for the data and one for the RML mappings for the observations
 g_mappings = Graph()
 namespaces = {
-    "ex": EX, "schema": SCHEMA, "rr": RR, "rml": RML, "ql": QL, "transit": TRANSIT, "xsd": XSD, 
-    "wgs84_pos": WGS84_POS, "inelod": INELOD, "rdf": RDF, "rdfs": RDFS, "owl": OWL, "skos": SKOS, 
-    "void": VOID, "dct": DCT, "foaf": FOAF, "org": ORG, "admingeo": ADMINGEO, "interval": INTERVAL, 
-    "qb": QB, "sdmx-concept": SDMX_CONCEPT, "sdmx-dimension": SDMX_DIMENSION, "sdmx-attribute": SDMX_ATTRIBUTE, 
+    "ex": EX, "schema": SCHEMA, "rr": RR, "rml": RML, "ql": QL, "transit": TRANSIT, "xsd": XSD,
+    "wgs84_pos": WGS84_POS, "inelod": INELOD, "rdf": RDF, "rdfs": RDFS, "owl": OWL, "skos": SKOS,
+    "void": VOID, "dct": DCT, "foaf": FOAF, "org": ORG, "admingeo": ADMINGEO, "interval": INTERVAL,
+    "qb": QB, "sdmx-concept": SDMX_CONCEPT, "sdmx-dimension": SDMX_DIMENSION, "sdmx-attribute": SDMX_ATTRIBUTE,
     "sdmx-measure": SDMX_MEASURE, "sdmx-metadata": SDMX_METADATA, "sdmx-code": SDMX_CODE, "sdmx-subject": SDMX_SUBJECT, "inelod-voc" : INELOD_VOC
 }
 for prefix, namespace in namespaces.items():
@@ -60,7 +68,6 @@ def load_variables(file_path):
             var_list.append((ine_var, dim))
     return var_list
 
-#Earlier version of the code, a new version has been added that automatically generates the DCAT metadata.
 # Function to add template metadata to the data graph, those terms that cannot be inferred automatically are left as XXXX values.
 def add_template_metadata(file_path):
     file_name = os.path.splitext(os.path.basename(file_path))[0]
@@ -123,174 +130,174 @@ def add_template_metadata(file_path):
     g_mappings.add((predicate_object_map_bnode, RR.predicate, SDMX_ATTRIBUTE.unitMeasure))
     g_mappings.add((predicate_object_map_bnode, RR.object, SDMX_MEASURE.obsValue))
 
-# Method for adding the INE specific metadata. 
+# Method for adding the INE specific metadata.
 def add_INE_metadata(file_path):
-        file_name = os.path.splitext(os.path.basename(file_path))[0]
-        dataset_uri = INELOD[file_name]
-        triples_map_dataset = INELOD[file_name + "_TriplesMapDataset"]
-        # Add logical source for the dataset
+    file_name = os.path.splitext(os.path.basename(file_path))[0]
+    dataset_uri = INELOD[file_name]
+    triples_map_dataset = INELOD[file_name + "_TriplesMapDataset"]
+    # Add logical source for the dataset
+    logical_source_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RML.logicalSource, logical_source_bnode))
+    g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
+    g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
+
+    # Add subject map for the dataset
+    subject_map_bnode = BNode()
+    g_mappings.add((triples_map_dataset, RR.subjectMap, subject_map_bnode))
+    g_mappings.add((subject_map_bnode, RR.constant, dataset_uri))
+    g_mappings.add((subject_map_bnode, RR["class"], QB.DataSet))
+
+    # Helper to add a predicate-object mapping
+    def add_pom(pred, obj, lang=None):
+        pom_bnode = BNode()
+        g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
+        g_mappings.add((pom_bnode, RR.predicate, pred))
+        if lang:
+            g_mappings.add((pom_bnode, RR.object, Literal(obj, lang=lang)))
+        else:
+            g_mappings.add((pom_bnode, RR.object, obj if isinstance(obj, URIRef) else Literal(obj)))
+
+    # Add required triples
+    add_pom(RDFS.label, file_name)
+    add_pom(DCT.license, URIRef("https://creativecommons.org/licenses/by/4.0/"))
+    add_pom(DCT.source, URIRef(f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}"))
+    add_pom(RDF.type, DCAT.Dataset)
+    add_pom(DCT.identifier, Literal(f"urn:ine:es:TABLA:TPX:{file_name}", lang="es"))
+    add_pom(DCT.language, URIRef("http://publications.europa.eu/resource/authority/language/SPA"))
+    add_pom(DCAT.contactPoint, URIRef("https://www.ine.es/"))
+    add_pom(DCT.publisher,URIRef("https://www.ine.es/"))
+    add_pom(QB.structure, INELOD[file_name + "_dsd"])
+
+    # Add dcat:distribution blank nodes for each distribution
+    distributions = [
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "title": [("Html", "es"), ("Html", "en")],
+            "format": URIRef("http://publications.europa.eu/resource/authority/file-type/HTML"),
+            "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/html"),
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/px/{file_name}.px?nocab=1",
+            "title": [("PC-Axis", "es"), ("PC-Axis", "en")],
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/xlsx/{file_name}.xlsx?nocab=1",
+            "title": [("Excel: Extensión XLSX", "es"), ("Excel: XLSX extension", "en")],
+            "format": URIRef("http://publications.europa.eu/resource/authority/file-type/XLSX"),
+            "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "downloadURL": f"https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/{file_name}",
+            "title": [("Json", "es"), ("Json", "en")],
+            "format": URIRef("http://publications.europa.eu/resource/authority/file-type/JSON"),
+            "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/json"),
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bd/{file_name}.csv?nocab=1",
+            "title": [("CSV: separado por tabuladores", "es"), ("CSV: Tab Separated", "en")],
+            "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
+            "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+        {
+            "type": DCAT.Distribution,
+            "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
+            "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/{file_name}.csv?nocab=1",
+            "title": [("CSV: separado por ;", "es"), ("CSV: Separated by ;", "en")],
+            "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
+            "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
+            "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
+            "license": URIRef("https://www.ine.es/aviso_legal"),
+        },
+    ]
+    order = 1
+    for dist in distributions:
+        triples_map_uri_dist = INELOD[file_name] + "_dist"+str(order)
+        dist_bnode = BNode()
+        pom_bnode = BNode()
+        g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
+        g_mappings.add((pom_bnode, RR.predicate, DCAT.distribution))
+        g_mappings.add((pom_bnode, RR.objectMap, dist_bnode))
+        g_mappings.add((dist_bnode, RR.parentTriplesMap, triples_map_uri_dist))
         logical_source_bnode = BNode()
-        g_mappings.add((triples_map_dataset, RML.logicalSource, logical_source_bnode))
+        g_mappings.add((triples_map_uri_dist, RML.logicalSource, logical_source_bnode))
         g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
         g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
-
-        # Add subject map for the dataset
         subject_map_bnode = BNode()
-        g_mappings.add((triples_map_dataset, RR.subjectMap, subject_map_bnode))
-        g_mappings.add((subject_map_bnode, RR.constant, dataset_uri))
-        g_mappings.add((subject_map_bnode, RR["class"], QB.DataSet)) 
-
-        # Helper to add a predicate-object mapping
-        def add_pom(pred, obj, lang=None):
-            pom_bnode = BNode()
-            g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
-            g_mappings.add((pom_bnode, RR.predicate, pred))
-            if lang:
-                g_mappings.add((pom_bnode, RR.object, Literal(obj, lang=lang)))
-            else:
-                g_mappings.add((pom_bnode, RR.object, obj if isinstance(obj, URIRef) else Literal(obj)))
-
-        # Add required triples
-        add_pom(RDFS.label, file_name)
-        add_pom(DCT.license, URIRef("https://creativecommons.org/licenses/by/4.0/"))
-        add_pom(DCT.source, URIRef(f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}"))
-        add_pom(RDF.type, DCAT.Dataset)
-        add_pom(DCT.identifier, Literal(f"urn:ine:es:TABLA:TPX:{file_name}", lang="es"))
-        add_pom(DCT.language, URIRef("http://publications.europa.eu/resource/authority/language/SPA"))
-        add_pom(DCAT.contactPoint, URIRef("https://www.ine.es/"))
-        add_pom(DCT.publisher,URIRef("https://www.ine.es/"))
-        add_pom(QB.structure, INELOD[file_name + "_dsd"])
-
-        # Add dcat:distribution blank nodes for each distribution
-        distributions = [
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "title": [("Html", "es"), ("Html", "en")],
-                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/HTML"),
-                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/html"),
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/px/{file_name}.px?nocab=1",
-                "title": [("PC-Axis", "es"), ("PC-Axis", "en")],
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/xlsx/{file_name}.xlsx?nocab=1",
-                "title": [("Excel: Extensión XLSX", "es"), ("Excel: XLSX extension", "en")],
-                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/XLSX"),
-                "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "downloadURL": f"https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/{file_name}",
-                "title": [("Json", "es"), ("Json", "en")],
-                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/JSON"),
-                "mediaType": URIRef("http://www.iana.org/assignments/media-types/application/json"),
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bd/{file_name}.csv?nocab=1",
-                "title": [("CSV: separado por tabuladores", "es"), ("CSV: Tab Separated", "en")],
-                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
-                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-            {
-                "type": DCAT.Distribution,
-                "accessURL": f"https://www.ine.es/jaxiT3/Tabla.htm?t={file_name}",
-                "downloadURL": f"https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/{file_name}.csv?nocab=1",
-                "title": [("CSV: separado por ;", "es"), ("CSV: Separated by ;", "en")],
-                "format": URIRef("http://publications.europa.eu/resource/authority/file-type/CSV"),
-                "mediaType": URIRef("http://www.iana.org/assignments/media-types/text/csv"),
-                "applicableLegislation": URIRef("http://data.europa.eu/eli/reg_impl/2023/138/oj"),
-                "license": URIRef("https://www.ine.es/aviso_legal"),
-            },
-        ]
-        order = 1
-        for dist in distributions:
-            triples_map_uri_dist = INELOD[file_name] + "_dist"+str(order)
-            dist_bnode = BNode()
-            pom_bnode = BNode()
-            g_mappings.add((triples_map_dataset, RR.predicateObjectMap, pom_bnode))
-            g_mappings.add((pom_bnode, RR.predicate, DCAT.distribution))
-            g_mappings.add((pom_bnode, RR.objectMap, dist_bnode))
-            g_mappings.add((dist_bnode, RR.parentTriplesMap, triples_map_uri_dist))
-            logical_source_bnode = BNode()
-            g_mappings.add((triples_map_uri_dist, RML.logicalSource, logical_source_bnode))
-            g_mappings.add((logical_source_bnode, RML.source, Literal(file_path)))
-            g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
-            subject_map_bnode = BNode()
-            g_mappings.add((triples_map_uri_dist, RR.subjectMap, subject_map_bnode))
-            g_mappings.add((subject_map_bnode, RR.constant, BNode()))
-            g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
-            # Distribution type
+        g_mappings.add((triples_map_uri_dist, RR.subjectMap, subject_map_bnode))
+        g_mappings.add((subject_map_bnode, RR.constant, BNode()))
+        g_mappings.add((subject_map_bnode, RR.termType, RR.BlankNode))
+        # Distribution type
+        dist_pom_bnode = BNode()
+        g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+        g_mappings.add((dist_pom_bnode, RR.predicate, RDF.type))
+        g_mappings.add((dist_pom_bnode, RR.object, dist["type"]))
+        # accessURL
+        if "accessURL" in dist:
             dist_pom_bnode = BNode()
             g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-            g_mappings.add((dist_pom_bnode, RR.predicate, RDF.type))
-            g_mappings.add((dist_pom_bnode, RR.object, dist["type"]))
-            # accessURL
-            if "accessURL" in dist:            
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))            
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.accessURL))
-                g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["accessURL"])))
-            # downloadURL
-            if "downloadURL" in dist:
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))             
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.downloadURL))
-                g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["downloadURL"])))
-            # Titles (multilingual)
-            for t, lang in dist["title"]:
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-                g_mappings.add((dist_pom_bnode, RR.predicate,DCT.title))
-                g_mappings.add((dist_pom_bnode, RR.object, Literal(t, lang=lang)))
-            # Format (constant, if present)
-            if "format" in dist:
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCT["format"]))
-                g_mappings.add((dist_pom_bnode, RR.object, dist["format"]))
-            # MediaType (constant, if present)
-            if "mediaType" in dist:
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.mediaType))
-                g_mappings.add((dist_pom_bnode, RR.object, dist["mediaType"]))
-            # applicableLegislation (constant)
-            if "applicableLegislation" in dist:
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.applicableLegislation))
-                g_mappings.add((dist_pom_bnode, RR.object, dist["applicableLegislation"]))
-            if "license" in dist:
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.accessURL))
+            g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["accessURL"])))
+        # downloadURL
+        if "downloadURL" in dist:
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.downloadURL))
+            g_mappings.add((dist_pom_bnode, RR.object, URIRef(dist["downloadURL"])))
+        # Titles (multilingual)
+        for t, lang in dist["title"]:
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate,DCT.title))
+            g_mappings.add((dist_pom_bnode, RR.object, Literal(t, lang=lang)))
+        # Format (constant, if present)
+        if "format" in dist:
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCT["format"]))
+            g_mappings.add((dist_pom_bnode, RR.object, dist["format"]))
+        # MediaType (constant, if present)
+        if "mediaType" in dist:
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.mediaType))
+            g_mappings.add((dist_pom_bnode, RR.object, dist["mediaType"]))
+        # applicableLegislation (constant)
+        if "applicableLegislation" in dist:
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCAT.applicableLegislation))
+            g_mappings.add((dist_pom_bnode, RR.object, dist["applicableLegislation"]))
+        if "license" in dist:
             # license (constant)
-                dist_pom_bnode = BNode()
-                g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
-                g_mappings.add((dist_pom_bnode, RR.predicate, DCT.license))
-                g_mappings.add((dist_pom_bnode, RR.object, dist["license"]))
-            order += 1
+            dist_pom_bnode = BNode()
+            g_mappings.add((triples_map_uri_dist, RR.predicateObjectMap, dist_pom_bnode))
+            g_mappings.add((dist_pom_bnode, RR.predicate, DCT.license))
+            g_mappings.add((dist_pom_bnode, RR.object, dist["license"]))
+        order += 1
 
 
 def add_POM_from_csv(file_path):
-    dimensions = Graph().parse("../rdf_vocabularies/inelod-voc-dimension.ttl", format="turtle")
-    measures = Graph().parse("../rdf_vocabularies/inelod-voc-measure.ttl", format="turtle")
+    dimensions = Graph().parse(os.path.join(VOC_DIR, "inelod-voc-dimension.ttl"), format="turtle")
+    measures = Graph().parse(os.path.join(VOC_DIR, "inelod-voc-measure.ttl"), format="turtle")
     file_name = os.path.splitext(os.path.basename(file_path))[0]
     dsd_uri = INELOD[file_name + "_dsd"]
     detect_and_replace_measures(file_path)
@@ -409,7 +416,7 @@ def add_POM_from_csv(file_path):
                 select_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
                                f' SELECT ?s WHERE {{ ?s rdfs:label <{column}> .}}'
                 for result in measures.query(select_query):
-                    rdf_measure = result["s"] 
+                    rdf_measure = result["s"]
                 print(f"Processing column: {column}")
                 triples_map_uri_measu = triples_map_dsd + "_measu"
                 g_mappings.add((triples_map_uri_measu, RDF.type, RR.TriplesMap))
@@ -521,7 +528,7 @@ def add_POM_from_csv(file_path):
 # Function to detect and replace measures in the CSV file
 def detect_and_replace_measures(file_path):
     # Load lista_medidas.txt as a list of tuples (first element is the one to look for)
-    medidas = rdflib.Graph().parse("../rdf_vocabularies/inelod-voc-measure.ttl", format="ttl")
+    medidas = rdflib.Graph().parse(os.path.join(VOC_DIR, "inelod-voc-measure.ttl"), format="ttl")
 
     # Get the measurement argument if provided
     measurement = sys.argv[2] if len(sys.argv) > 2 else None
@@ -617,7 +624,7 @@ def csv_add_index(file_path):
         headers.insert(0, "index")
         # Add the index to each row
         indexed_rows = [[str(index)] + row for index, row in enumerate(rows, start=1)]
-        # Write the updated CSV back to the file 
+        # Write the updated CSV back to the file
         with open(file_path, mode='w', encoding='utf-8', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=';')
             writer.writerow(headers)
@@ -644,8 +651,12 @@ def add_mappings_from_csv(file_path):
 
 
 # Main execution of the python script
-# Path to the CSV file
-csv_file_path = sys.argv[1]
+if len(sys.argv) < 2:
+    print("Usage: python cube_semiauto_generation_auto_onto.py <csv-file-path> [measurement]")
+    sys.exit(1)
+
+# Path to the CSV file (absolute)
+csv_file_path = os.path.abspath(sys.argv[1])
 
 # Add template metadata to the data graph
 start_time = time.time()
@@ -668,15 +679,31 @@ start_time = time.time()
 add_mappings_from_csv(csv_file_path)
 print(f"Mappings created in {time.time() - start_time:.2f} seconds")
 
-# Serialize the mappings graph to a file in Turtle format
+# Serialize the mappings graph to a file in Turtle format (absolute path)
 start_time = time.time()
-g_mappings.serialize(format='turtle', destination="auto_mappings.ttl")
+mapping_file = os.path.join(BASE_DIR, "auto_mappings.ttl")
+g_mappings.serialize(format='turtle', destination=mapping_file)
 print(f"Mappings serialized in {time.time() - start_time:.2f} seconds")
 
 # Execution of Morph-KGC to materialize the data.
 start_time = time.time()
 
-os.system(f"python -m morph_kgc ../../morph_configuration/config_CSV.ini")
-os.rename("knowledge-graph.nt", f"{os.path.splitext(os.path.basename(csv_file_path))[0]}.nt")
-os.rename("auto_mappings.ttl", f"auto_mappings{os.path.splitext(os.path.basename(csv_file_path))[0]}.ttl")
+# Run morph_kgc using absolute config path and set working directory to BASE_DIR so outputs are predictable
+try:
+    subprocess.run([sys.executable, "-m", "morph_kgc", MORPH_CONF], check=True, cwd=BASE_DIR)
+except subprocess.CalledProcessError as e:
+    print(f"morph_kgc failed: {e}")
+    sys.exit(1)
+
+# Rename outputs that morph_kgc produced in BASE_DIR to absolute target names
+basename = os.path.splitext(os.path.basename(csv_file_path))[0]
+kg_src = os.path.join(BASE_DIR, "knowledge-graph.nt")
+kg_dst = os.path.join(BASE_DIR, f"{basename}.nt")
+mappings_dst = os.path.join(BASE_DIR, f"auto_mappings{basename}.ttl")
+
+if os.path.exists(kg_src):
+    os.rename(kg_src, kg_dst)
+if os.path.exists(mapping_file):
+    os.rename(mapping_file, mappings_dst)
+
 print(f"Data materialized in {time.time() - start_time:.2f} seconds")

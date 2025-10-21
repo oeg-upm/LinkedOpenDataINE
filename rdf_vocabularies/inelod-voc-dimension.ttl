@@ -2784,7 +2784,7 @@ ine:tourismDestination
 
 ine:accessRoute 
     a rdf:Property, qb:DimensionProperty;
-    rdfs:label "Via de acceso"@es, "Access Route"@en;
+    rdfs:label "Via de acceso"@es, "Vía de acceso"@es, "Access Route"@en;
     rdfs:domain qb:Observation;
     rdfs:range xsd:string.
 

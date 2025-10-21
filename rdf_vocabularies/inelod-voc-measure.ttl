@@ -64,24 +64,22 @@ ine:dataType
 # Measures
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ine:numberOfIndividuals  a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Numero de individuos"@es;
-    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation;
-    rdfs:range xsd:integer.
+ine:numberOfIndividuals  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de individuos"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
 
-ine:numberOfPeople  a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Numero de personas"@es;
-    rdfs:label "Personas";
-    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es;
-    rdfs:subPropertyOf ine:numberOfIndividuals;
-    rdfs:domain qb:Observation;
+ine:numberOfPeople  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de personas"@es , "Personas"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es ;
+    rdfs:subPropertyOf ine:numberOfIndividuals ;
+    rdfs:domain qb:Observation ;
     rdfs:range xsd:integer.
 
 ine:unemploymentRate a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Tasas de Paro"@es;
-    rdfs:label "Tasa de paro de la población"@es;
+    rdfs:label "Tasas de Paro"@es, "Tasa de paro de la población"@es;
     rdfs:comment "Es el cociente entre el número de parados y el de activos. Se calcula para ambos sexos y para cada uno de ellos por separado."@es;
     ine:inMeasureSet ine:rate;
     rdfs:domain qb:Observation;
