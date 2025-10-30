@@ -1,0 +1,401 @@
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix odrl:  <http://www.w3.org/ns/odrl/2/> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector/>.
+@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>. 
+
+# -----------------------------
+# Theme taxonomy
+# -----------------------------
+pubsec:demografia
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Demografía"@es , "Demography"@en .
+
+pubsec:empleo
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Empleo"@es, "Employment"@en .
+
+pubsec:education
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Educación"@es, "Education"@en .
+
+pubsec:economia
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Economía"@es, "Economy"@en .
+
+pubsec:turismo
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Turismo"@es, "Tourism"@en .
+
+pubsec:inmigracion-emigracion
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Inmigración y Emigración"@es, "Immigration and Emigration"@en ;
+        skos:broader pubsec:demografia.
+
+
+pubsec:padron
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Padrón"@es, "Census"@en;
+        skos:broader pubsec:demografia.
+
+
+pubsec:formacion
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Formacion"@es;
+        skos:broader pubsec:educacion.
+
+pubsec:trabajo
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Trabajo"@es;
+        skos:broader pubsec:empleo.
+
+pubsec:mercado-laboral
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Mercado Laboral"@es;
+        skos:broader pubsec:empleo.
+
+pubsec:alojamientos
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Alojamientos"@es;
+        skos:broader pubsec:turismo.
+
+pubsec:hosteleria
+        a               skos:Concept ;
+        skos:inScheme   <http://datos.gob.es/kos/sector-publico/sector> ;
+        skos:prefLabel  "Hostelería"@es;
+        skos:broader pubsec:turismo.
+
+
+# -----------------------------
+# Agents
+# -----------------------------
+<https://www.ine.es/>
+  a foaf:Agent ;
+  foaf:name "Instituto Nacional de Estadística"@es .
+
+<https://oeg.fi.upm.es/>
+  a foaf:Agent ;
+  foaf:name "Ontology Engineering Group"@en .
+
+# -----------------------------
+# Catalog
+# -----------------------------
+<https://oeg-upm.github.io/INELOD-Catalogue/>
+  a dcat:Catalog ;
+  dct:title "Catálogo de Datos Semánticos Estadísticos"@es ;
+  dct:description "Este catálogo contiene los conjuntos de datos generados en el contexto de la colaboración entre el Ontology Engineering Group de la Universidad Politécnica y el Instituto Nacional de Estadística."@es ;
+  dct:publisher <https://oeg.fi.upm.es/> ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
+  dct:issued "2025-10-22"^^xsd:date ;
+  dct:modified "2025-10-22"^^xsd:date ;
+  dcat:dataset <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2010>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2023>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDP14/>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94>,
+              <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21ENG>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2002>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2008>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpC/CPC21>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO88>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4>,
+              <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2>,
+              <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025>,
+              <http://stats.linkeddata.es/voc/correspondencias/CNAE93-CNAE09>,
+              <http://stats.linkeddata.es/voc/correspondencias/CNAE2009-NACEREV2>,
+              <http://stats.linkeddata.es/voc/mun>,
+              <http://stats.linkeddata.es/voc/cubes/66615>,
+              <http://stats.linkeddata.es/voc/cubes/66616>,
+              <http://stats.linkeddata.es/voc/cubes/66617>,
+              <http://stats.linkeddata.es/voc/cubes/66618>,
+              <http://stats.linkeddata.es/voc/cubes/66619>,
+              <http://stats.linkeddata.es/voc/cubes/69687>,
+              <http://stats.linkeddata.es/voc/cubes/69688>,
+              <http://stats.linkeddata.es/voc/cubes/69689>,
+              <http://stats.linkeddata.es/voc/cubes/69690>,
+              <http://stats.linkeddata.es/voc/cubes/65334>,
+              <http://stats.linkeddata.es/voc/cubes/65349>,
+              <http://stats.linkeddata.es/voc/cubes/65353>,
+              <http://stats.linkeddata.es/voc/cubes/65123>,
+              <http://stats.linkeddata.es/voc/cubes/2855>,
+              <http://stats.linkeddata.es/voc/cubes/2940>,
+              <http://stats.linkeddata.es/voc/cubes/10821>,
+              <http://stats.linkeddata.es/voc/cubes/10822>,
+              <http://stats.linkeddata.es/voc/cubes/10823>,
+              <http://stats.linkeddata.es/voc/cubes/13864>,
+              <http://stats.linkeddata.es/voc/cubes/23988>;
+  dcat:service <https://stats.linkeddata.es/> ;
+ # dcat:record <https://data.example.org/record/pop-annual-geo-2025> ; Actualmente no tenemos registros de los conjuntos de datos, pero podría ser una interesante incorporación en el futuro.
+  dcat:endpointURL <https://stats.linkeddata.es/> ;
+  dcat:contactPoint [
+    a vcard:Kind ;
+    vcard:fn "Diego Conde Herreros" ;
+    vcard:hasEmail <diego.conde.herreros@upm.es>
+  ] ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+# -----------------------------
+# Data Service
+# -----------------------------
+<https://stats.linkeddata.es/>
+  a dcat:DataService ;
+  dct:title "SPARQL Endpoint"@en ;
+  dct:description "Endpoint para realizar consultas SPARQL a los conjuntos de datos del catálogo"@es ;
+  dcat:endpointURL <https://stats.linkeddata.es/> ;
+  dcat:servesDataset <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2010>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020>, 
+              <http://stats.linkeddata.es/voc/clasificaciones/cn/CN2023>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDP14/>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94>,
+              <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21ENG>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2002>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2008>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cpC/CPC21>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO88>,
+              <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4>,
+              <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11>,
+              <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2>,
+              <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>,
+              <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025>,
+              <http://stats.linkeddata.es/voc/correspondencias/CNAE93-CNAE09>,
+              <http://stats.linkeddata.es/voc/correspondencias/CNAE2009-NACEREV2>,
+              <http://stats.linkeddata.es/voc/mun>,
+              <http://stats.linkeddata.es/voc/cubes/66615>,
+              <http://stats.linkeddata.es/voc/cubes/66616>,
+              <http://stats.linkeddata.es/voc/cubes/66617>,
+              <http://stats.linkeddata.es/voc/cubes/66618>,
+              <http://stats.linkeddata.es/voc/cubes/66619>,
+              <http://stats.linkeddata.es/voc/cubes/69687>,
+              <http://stats.linkeddata.es/voc/cubes/69688>,
+              <http://stats.linkeddata.es/voc/cubes/69689>,
+              <http://stats.linkeddata.es/voc/cubes/69690>,
+              <http://stats.linkeddata.es/voc/cubes/65334>,
+              <http://stats.linkeddata.es/voc/cubes/65349>,
+              <http://stats.linkeddata.es/voc/cubes/65353>,
+              <http://stats.linkeddata.es/voc/cubes/65123>,
+              <http://stats.linkeddata.es/voc/cubes/2855>,
+              <http://stats.linkeddata.es/voc/cubes/2940>,
+              <http://stats.linkeddata.es/voc/cubes/10821>,
+              <http://stats.linkeddata.es/voc/cubes/10822>,
+              <http://stats.linkeddata.es/voc/cubes/10823>,
+              <http://stats.linkeddata.es/voc/cubes/13864>,
+              <http://stats.linkeddata.es/voc/cubes/23988>; 
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+  dcat:contactPoint [
+    a vcard:Kind ;
+    vcard:fn "Diego Conde Herreros" ;
+    vcard:hasEmail <diego.conde.herreros@upm.es>  
+    ] .
+
+# -----------------------------
+# Dataset series
+# -----------------------------
+# Según DCAT son datos que están interrelacionados y que están publicados por separado, como los cubos de datos del INE, que están publicacdos en series y operaciones. En nuestro catálogo no hay series.
+#<https://data.example.org/series/population-by-geo-annual>
+#  a dcat:DatasetSeries ;
+#  dct:title "Population by Administrative Area (Annual Series)"@en ;
+#  dct:description "A longitudinal series of datasets reporting resident population counts by administrative area, annually."@en ;
+#  dct:publisher <https://example.org/org/publisher> ;
+#  dcat:theme <https://example.org/themes/demography> ;
+#  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> .
+
+# -----------------------------
+# Dataset
+# -----------------------------
+# No hace falta que incluyamos estos y las distribuciones, que ya los metimos en su momento a nivel de metadatos. 
+# Faltan metadatos de las clasificaciones, lo único que al haber sido extraidas de la BD habría que comentar a LUis, por como lo representamos.
+#<https://data.example.org/dataset/pop-annual-geo-2025>
+#  a dcat:Dataset ;
+#  dct:title "Population by Administrative Area — 2025"@en ;
+#  dct:description "Resident population as of 2025-01-01 by administrative area (NUTS3 level)."@en ;
+#  dct:publisher <https://example.org/org/publisher> ;
+#  dct:creator <https://example.org/org/publisher> ;
+#  dct:contributor <https://example.org/org/maintainer> ;
+#  dct:identifier "POP-ANNUAL-GEO-2025" ;
+#  adms:identifier [
+#    a adms:Identifier ;
+#    skos:notation "10.1234/example.pop.2025" ;
+#    adms:schemaAgency "DataCite DOI"
+#  ] ;
+#  dct:issued "2025-03-31"^^xsd:date ;
+#  dct:modified "2025-10-01"^^xsd:date ;
+#  dcat:version "1.2.0" ;
+#  dcat:versionNotes "Added 2025-09 boundary updates; corrected two area labels."@en ;
+#  dcat:isVersionOf <https://data.example.org/dataset/pop-annual-geo> ;
+#  dcat:inSeries <https://data.example.org/series/population-by-geo-annual> ;
+#  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+#  dcat:theme <https://example.org/themes/demography>, <https://example.org/themes/geography> ;
+#  dcat:keyword "population"@en, "demography"@en, "NUTS"@en ;
+#  dct:spatial [
+#    a dct:Location ;
+#    locn:geometry "POLYGON((-8.7 49.9, 1.8 49.9, 1.8 60.9, -8.7 60.9, -8.7 49.9))"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
+#  ] ;
+#  dcat:bbox "POLYGON((-8.7 49.9, 1.8 49.9, 1.8 60.9, -8.7 60.9, -8.7 49.9))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+#  dcat:centroid "POINT(-2.5 54.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+#  dct:temporal [
+#    a dct:PeriodOfTime, time:Interval ;
+#    time:hasBeginning [ time:inXSDDateTime "2025-01-01T00:00:00Z"^^xsd:dateTime ] ;
+#    time:hasEnd       [ time:inXSDDateTime "2025-12-31T23:59:59Z"^^xsd:dateTime ]
+#  ] ;
+#  dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+#  dct:conformsTo <https://w3id.org/dpv/dpv-owl> , <https://www.w3.org/TR/vocab-data-cube/> ;
+#  dct:provenance "Official register-based population statistics."@en ;
+#  dct:source <https://registers.example.org/population> ;
+#  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+#  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+#  dcat:landingPage <https://data.example.org/datasets/pop-annual-geo-2025> ;
+#  dcat:contactPoint [
+#    a vcard:Kind ;
+#    vcard:fn "Statistics Office — Population Team" ;
+#    vcard:hasEmail <mailto:population@example.org>
+#  ] ;
+#  dcat:distribution
+#    <https://data.example.org/dataset/pop-annual-geo-2025/dist/csv>,
+#    <https://data.example.org/dataset/pop-annual-geo-2025/dist/rdf> ;
+#  dcat:accessService <https://api.example.org/service/population> ;
+  # qualified relation to a related dataset with a role
+#  dcat:qualifiedRelation [
+#    a dcat:Relationship ;
+#    dct:relation <https://data.example.org/dataset/geo-boundaries-2025> ;
+#    dcat:hadRole <https://example.org/roles/is-based-on>
+#  ] ;
+  # quality information (DQV)
+#  dqv:hasQualityMeasurement [
+#    a dqv:QualityMeasurement ;
+#    dqv:isMeasurementOf <http://example.org/metrics/completeness> ;
+#    dqv:value "0.998"^^xsd:decimal ;
+#    dqv:computedOn "2025-10-01"^^xsd:date
+#  ] ;
+  # attribution/provenance (PROV)
+#  prov:qualifiedAttribution [
+#    a prov:Attribution ;
+#    prov:agent <https://example.org/org/maintainer> ;
+#    prov:hadRole <https://example.org/roles/data-curator>
+#  ] .
+
+# -----------------------------
+# Distributions
+# -----------------------------
+#<https://data.example.org/dataset/pop-annual-geo-2025/dist/csv>
+#  a dcat:Distribution ;
+#  dct:title "CSV download"@en ;
+#  dct:description "Comma-separated values; one row per area."@en ;
+#  dcat:accessURL <https://data.example.org/downloads/pop-annual-geo-2025.csv> ;
+#  dcat:downloadURL <https://cdn.example.org/files/pop-annual-geo-2025.csv> ;
+#  dcat:mediaType "text/csv" ;
+#  dct:format "text/csv" ;
+#  dcat:byteSize "184467"^^xsd:nonNegativeInteger ;
+#  dcat:packageFormat "application/zip" ;
+#  dcat:compressFormat "application/zip" ;
+#  spdx:checksum [
+#    a spdx:Checksum ;
+#    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+#    spdx:checksumValue "b3c82e5d8f0a6d0f5e2a1d9c0c9fe8f5d3a2c1b0e9d8c7f6a5b4c3d2e1f0a9b8"
+#  ] ;
+#  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+#  odrl:hasPolicy [
+#    a odrl:Policy ;
+#    odrl:permission [ odrl:action odrl:reproduce ] ;
+#    odrl:prohibition [ odrl:action odrl:modify ]
+#  ] .
+
+#<https://data.example.org/dataset/pop-annual-geo-2025/dist/rdf>
+#  a dcat:Distribution ;
+#  dct:title "RDF (Turtle) download"@en ;
+#  dct:description "DCAT-AP compliant RDF package."@en ;
+#  dcat:accessURL <https://data.example.org/downloads/pop-annual-geo-2025.ttl> ;
+#  dcat:downloadURL <https://cdn.example.org/files/pop-annual-geo-2025.ttl> ;
+#  dcat:mediaType "text/turtle" ;
+#  dct:format "text/turtle" ;
+#  dct:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+#  dcat:byteSize "402115"^^xsd:nonNegativeInteger ;
+#  spdx:checksum [
+#    a spdx:Checksum ;
+#    spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+#    spdx:checksumValue "0c7aa3f57d2b46c29f8c1e7e65b2c0f7f2c3d4e5a6b7c8d9e0f1a2b3c4d5e6f7"
+#  ] ;
+#  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+#  dcat:accessService <https://api.example.org/service/population> .
+# -----------------------------
+# Catalog Record
+# -----------------------------
+# Los registros del catálogo son opcionales y solo se usan cuando hay que distinguir entre los metadatos del dataset o servicio y los de la entrada en el catálogo sobre el dataset o servicio.
+#<https://data.example.org/record/pop-annual-geo-2025>
+#  a dcat:CatalogRecord ;
+#  foaf:primaryTopic <https://data.example.org/dataset/pop-annual-geo-2025> ;
+#  dct:modified "2025-10-01"^^xsd:date ;
+#  dct:conformsTo <https://www.w3.org/TR/vocab-dcat-3/> ;
+#  adms:status <http://purl.org/adms/status/Completed> .
+
+# -----------------------------
+# Related resources referenced
+# -----------------------------
+# Estos recursos mencionados se incluyen con la URL directamente en vez de referenciarlo con otro término. 
+#<https://data.example.org/dataset/geo-boundaries-2025>
+#  a dcat:Dataset ;
+#  dct:title "Administrative Boundaries — 2025"@en .
+
+# -----------------------------
+# Role concepts (for qualified relation / attribution)
+# -----------------------------
+#<https://example.org/roles/is-based-on>
+#  a dcat:Role ;
+#  skos:prefLabel "Is based on"@en .
+
+#<https://example.org/roles/data-curator>
+#  a prov:Role ;
+#  skos:prefLabel "Data curator"@en .

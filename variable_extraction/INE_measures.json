@@ -1,0 +1,503 @@
+[{"Id":3, "Nombre":"Personas", "Codigo":null, "Abrev":null}
+,
+{"Id":7, "Nombre":"Euros", "Codigo":null, "Abrev":"€"}
+,
+{"Id":9, "Nombre":"Pares", "Codigo":null, "Abrev":"Pares"}
+,
+{"Id":10, "Nombre":"Minutos", "Codigo":null, "Abrev":null}
+,
+{"Id":11, "Nombre":"Horas", "Codigo":null, "Abrev":"Horas"}
+,
+{"Id":12, "Nombre":"Días", "Codigo":null, "Abrev":null}
+,
+{"Id":33, "Nombre":"Metros cuadrados", "Codigo":null, "Abrev":"m2"}
+,
+{"Id":34, "Nombre":"Kilómetros cuadrados", "Codigo":null, "Abrev":"Km2"}
+,
+{"Id":37, "Nombre":"Hectáreas", "Codigo":null, "Abrev":null}
+,
+{"Id":42, "Nombre":"Toneladas", "Codigo":null, "Abrev":"t."}
+,
+{"Id":45, "Nombre":"Litros", "Codigo":null, "Abrev":"Litros"}
+,
+{"Id":48, "Nombre":"Horas/trabajador(mes)", "Codigo":null, "Abrev":null}
+,
+{"Id":50, "Nombre":"Tanto por cien", "Codigo":null, "Abrev":"Tanto por cien"}
+,
+{"Id":51, "Nombre":"Tanto por mil", "Codigo":null, "Abrev":"%1000"}
+,
+{"Id":93, "Nombre":"Miles de euros", "Codigo":null, "Abrev":"Miles de euros"}
+,
+{"Id":97, "Nombre":"Empresas", "Codigo":null, "Abrev":null}
+,
+{"Id":101, "Nombre":"Porcentaje", "Codigo":null, "Abrev":"%"}
+,
+{"Id":108, "Nombre":"Años", "Codigo":null, "Abrev":null}
+,
+{"Id":110, "Nombre":"Hijos por mujer", "Codigo":null, "Abrev":null}
+,
+{"Id":113, "Nombre":"Nacimientos por 1.000 mujeres", "Codigo":null, "Abrev":null}
+,
+{"Id":114, "Nombre":"Matrimonios por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":115, "Nombre":"Nacimientos menos defunciones (por mil habitantes)", "Codigo":null, "Abrev":null}
+,
+{"Id":116, "Nombre":"Defunciones por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":117, "Nombre":"Defunciones de menores de 1 año por 1.000 nacidos", "Codigo":null, "Abrev":null}
+,
+{"Id":118, "Nombre":"Defunciones durante las 24 primeras horas de vida", "Codigo":null, "Abrev":null}
+,
+{"Id":120, "Nombre":"Nacimientos", "Codigo":null, "Abrev":null}
+,
+{"Id":121, "Nombre":"Matrimonios", "Codigo":null, "Abrev":null}
+,
+{"Id":122, "Nombre":"Defunciones", "Codigo":null, "Abrev":null}
+,
+{"Id":123, "Nombre":"Número", "Codigo":null, "Abrev":null}
+,
+{"Id":124, "Nombre":"Gasto total: miles de euros. Gastos medios: euros ", "Codigo":null, "Abrev":"Gasto total: miles de euros. Gastos medios: euros "}
+,
+{"Id":125, "Nombre":"Gasto total: miles de euros. Valor unitario: euros/unidad", "Codigo":null, "Abrev":"Gasto total: miles de euros. Valor unitario: euros/unidad"}
+,
+{"Id":128, "Nombre":"Locales", "Codigo":null, "Abrev":null}
+,
+{"Id":129, "Nombre":"Cantidad total: miles de unidades. Cantidad media: unidades", "Codigo":null, "Abrev":"Cantidad total: miles de unidades. Cantidad media: unidades"}
+,
+{"Id":131, "Nombre":"Personas y porcentajes", "Codigo":null, "Abrev":"Personas y %"}
+,
+{"Id":133, "Nombre":"Índice", "Codigo":null, "Abrev":null}
+,
+{"Id":134, "Nombre":"Municipios", "Codigo":null, "Abrev":"Municipios"}
+,
+{"Id":135, "Nombre":"Tasas", "Codigo":null, "Abrev":null}
+,
+{"Id":142, "Nombre":"Personas que se casan por primera vez por cada mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":155, "Nombre":"Movimientos migratorios", "Codigo":null, "Abrev":null}
+,
+{"Id":156, "Nombre":"Mil kWh", "Codigo":null, "Abrev":"1.000 kWh"}
+,
+{"Id":157, "Nombre":"Kilogramo de sustancia activa", "Codigo":null, "Abrev":"kg. act. sub"}
+,
+{"Id":158, "Nombre":"Mil metros cúbicos", "Codigo":null, "Abrev":"mil m3"}
+,
+{"Id":159, "Nombre":"---", "Codigo":null, "Abrev":"---"}
+,
+{"Id":160, "Nombre":"Tonelada de nitrogeno", "Codigo":null, "Abrev":"t. N"}
+,
+{"Id":161, "Nombre":"Unidades", "Codigo":null, "Abrev":"Unidades"}
+,
+{"Id":162, "Nombre":"Tonelada de trióxido  de dialuminio (alúmina)", "Codigo":null, "Abrev":"t. Al2O3"}
+,
+{"Id":163, "Nombre":"Tonelada de materia seca al 90%", "Codigo":null, "Abrev":"t. 90% s.d.t."}
+,
+{"Id":166, "Nombre":"Tonelada de pirosulfito de sodio", "Codigo":null, "Abrev":"t. Na2S2O5"}
+,
+{"Id":167, "Nombre":"Kilogramo", "Codigo":null, "Abrev":"kg"}
+,
+{"Id":169, "Nombre":"Hectolitro de alcohol puro 100%", "Codigo":null, "Abrev":"hl. alc. 100%"}
+,
+{"Id":170, "Nombre":"Mil metros", "Codigo":null, "Abrev":"mil metros"}
+,
+{"Id":171, "Nombre":"Tonelada de óxido de potasio", "Codigo":null, "Abrev":"t. K2O"}
+,
+{"Id":173, "Nombre":"Kilogramo de dióxido de titanio", "Codigo":null, "Abrev":"kg. TiO2"}
+,
+{"Id":174, "Nombre":"Tonelada de dióxido de azufre", "Codigo":null, "Abrev":"t. SO2"}
+,
+{"Id":176, "Nombre":"Mil litros", "Codigo":null, "Abrev":"mil litros"}
+,
+{"Id":177, "Nombre":"Hectolitro", "Codigo":null, "Abrev":"hectolitro"}
+,
+{"Id":178, "Nombre":"Terajulios", "Codigo":null, "Abrev":"terajulios"}
+,
+{"Id":180, "Nombre":"Tonelada de cloruro de hidrógeno", "Codigo":null, "Abrev":"t. HCl"}
+,
+{"Id":181, "Nombre":"Tonelada de peróxido de hidrógeno", "Codigo":null, "Abrev":"t. H2O2"}
+,
+{"Id":182, "Nombre":"Arqueo bruto compensado", "Codigo":null, "Abrev":"CGT"}
+,
+{"Id":183, "Nombre":"Tonelada de dióxido de silicio", "Codigo":null, "Abrev":"t. SiO2"}
+,
+{"Id":184, "Nombre":"Tonelada de anhídrido fosfórico", "Codigo":null, "Abrev":"t. P2O5"}
+,
+{"Id":185, "Nombre":"Gramo", "Codigo":null, "Abrev":"gramo"}
+,
+{"Id":186, "Nombre":"Mil pares", "Codigo":null, "Abrev":"mil pares"}
+,
+{"Id":187, "Nombre":"Mil metros cuadrados", "Codigo":null, "Abrev":"mil m2"}
+,
+{"Id":188, "Nombre":"........", "Codigo":null, "Abrev":"........"}
+,
+{"Id":189, "Nombre":"Mil unidades", "Codigo":null, "Abrev":"mil unidades"}
+,
+{"Id":190, "Nombre":"Tonelada de cloro", "Codigo":null, "Abrev":"t. Cl"}
+,
+{"Id":191, "Nombre":"Tonelada de hidróxido de sodio (sosa cáustica)", "Codigo":null, "Abrev":"t. NaOH"}
+,
+{"Id":192, "Nombre":"Kilovatios", "Codigo":null, "Abrev":"Kw"}
+,
+{"Id":193, "Nombre":"Tonelada de trióxido de diboro", "Codigo":null, "Abrev":"t. B2O3"}
+,
+{"Id":196, "Nombre":"Tonelada de fluor", "Codigo":null, "Abrev":"t. F"}
+,
+{"Id":197, "Nombre":"Número de celdas", "Codigo":null, "Abrev":"Nº celdas"}
+,
+{"Id":199, "Nombre":"Metros cúbicos", "Codigo":null, "Abrev":"m3"}
+,
+{"Id":200, "Nombre":"Tonelada de hidróxido de potasio (potasa cáustica)", "Codigo":null, "Abrev":"t. KOH"}
+,
+{"Id":201, "Nombre":"Tonelada de floruro de hidrógeno", "Codigo":null, "Abrev":"t. HF"}
+,
+{"Id":202, "Nombre":"Metro", "Codigo":null, "Abrev":"m."}
+,
+{"Id":203, "Nombre":"Kilogramo de nitrógeno", "Codigo":null, "Abrev":"kg. N"}
+,
+{"Id":204, "Nombre":"Kilogramo de carbonato de sodio", "Codigo":null, "Abrev":"kg. Na2CO3"}
+,
+{"Id":207, "Nombre":"Puestos de trabajo", "Codigo":null, "Abrev":null}
+,
+{"Id":213, "Nombre":"Viajeros", "Codigo":null, "Abrev":null}
+,
+{"Id":214, "Nombre":"Vivienda", "Codigo":null, "Abrev":null}
+,
+{"Id":219, "Nombre":"Tipo marginal", "Codigo":null, "Abrev":"Tipo marginal"}
+,
+{"Id":220, "Nombre":"Media", "Codigo":null, "Abrev":"Media"}
+,
+{"Id":221, "Nombre":"Base dic85 = 100", "Codigo":null, "Abrev":"Base dic85 = 100"}
+,
+{"Id":222, "Nombre":"USD/EUR", "Codigo":null, "Abrev":"USD/EUR"}
+,
+{"Id":229, "Nombre":"Horas/trabajador (semana)", "Codigo":null, "Abrev":null}
+,
+{"Id":231, "Nombre":"Porcentaje de personas", "Codigo":null, "Abrev":null}
+,
+{"Id":232, "Nombre":"Porcentaje de hogares", "Codigo":null, "Abrev":"% hogares"}
+,
+{"Id":234, "Nombre":"Matrimonios por persona", "Codigo":null, "Abrev":null}
+,
+{"Id":235, "Nombre":"Tanto por mil de casados", "Codigo":null, "Abrev":null}
+,
+{"Id":236, "Nombre":"Tanto por mil de matrimonios", "Codigo":null, "Abrev":null}
+,
+{"Id":237, "Nombre":"Tanto por mil de personas", "Codigo":null, "Abrev":null}
+,
+{"Id":239, "Nombre":"Vacante", "Codigo":null, "Abrev":null}
+,
+{"Id":240, "Nombre":"Porcentaje de centros", "Codigo":null, "Abrev":"Porcentaje de centros"}
+,
+{"Id":242, "Nombre":"Pernoctaciones", "Codigo":null, "Abrev":"Pernoctaciones"}
+,
+{"Id":243, "Nombre":"Apartamentos", "Codigo":null, "Abrev":null}
+,
+{"Id":244, "Nombre":"Establecimientos", "Codigo":null, "Abrev":null}
+,
+{"Id":245, "Nombre":"Plazas", "Codigo":null, "Abrev":null}
+,
+{"Id":246, "Nombre":"Parcelas", "Codigo":null, "Abrev":"Parcelas"}
+,
+{"Id":249, "Nombre":"Emigraciones por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":251, "Nombre":"Migraciones por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":252, "Nombre":"Finca", "Codigo":null, "Abrev":null}
+,
+{"Id":254, "Nombre":"Tanto por uno", "Codigo":null, "Abrev":null}
+,
+{"Id":255, "Nombre":"Porcentaje de fallecidos", "Codigo":null, "Abrev":"%"}
+,
+{"Id":256, "Nombre":"Viajes", "Codigo":null, "Abrev":null}
+,
+{"Id":257, "Nombre":"Indicadores", "Codigo":null, "Abrev":"Indicadores"}
+,
+{"Id":260, "Nombre":"Euros", "Codigo":null, "Abrev":null}
+,
+{"Id":261, "Nombre":"Euros", "Codigo":null, "Abrev":"Euros"}
+,
+{"Id":262, "Nombre":"Gold fine troy ounces", "Codigo":null, "Abrev":null}
+,
+{"Id":263, "Nombre":"Excursiones", "Codigo":null, "Abrev":null}
+,
+{"Id":264, "Nombre":"Habitaciones", "Codigo":null, "Abrev":null}
+,
+{"Id":273, "Nombre":"Nacidos por mil defunciones", "Codigo":null, "Abrev":null}
+,
+{"Id":274, "Nombre":"Crecimiento por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":275, "Nombre":"Emigraciones por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":276, "Nombre":"Inmigraciones por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":277, "Nombre":"Migraciones por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":278, "Nombre":"Primeros Matrimonios por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":279, "Nombre":"Primeros Matrimonios por hombre", "Codigo":null, "Abrev":null}
+,
+{"Id":280, "Nombre":"Primeros Matrimonios por mujer", "Codigo":null, "Abrev":null}
+,
+{"Id":281, "Nombre":"Matrimonios por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":282, "Nombre":"Matrimonios por hombre", "Codigo":null, "Abrev":null}
+,
+{"Id":283, "Nombre":"Matrimonios por mujer", "Codigo":null, "Abrev":null}
+,
+{"Id":284, "Nombre":"Contrayentes por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":285, "Nombre":"Defunciones por mil nacidos", "Codigo":null, "Abrev":null}
+,
+{"Id":286, "Nombre":"Defunciones por mil nacidos vivos", "Codigo":null, "Abrev":null}
+,
+{"Id":287, "Nombre":"Nacidos por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":288, "Nombre":"Hipotecas", "Codigo":null, "Abrev":null}
+,
+{"Id":289, "Nombre":"Ácido sulfúrico", "Codigo":null, "Abrev":"t. H2SO4"}
+,
+{"Id":290, "Nombre":"Etapas", "Codigo":null, "Abrev":null}
+,
+{"Id":291, "Nombre":"Viajes por cada mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":293, "Nombre":"Mujeres por cada 100 hombres", "Codigo":null, "Abrev":null}
+,
+{"Id":294, "Nombre":"Tanto por 100.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":295, "Nombre":"Excursiones por cada mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":296, "Nombre":"Libros", "Codigo":null, "Abrev":null}
+,
+{"Id":297, "Nombre":"Bibliotecas", "Codigo":null, "Abrev":null}
+,
+{"Id":298, "Nombre":"Visitas", "Codigo":null, "Abrev":null}
+,
+{"Id":299, "Nombre":"Turistas", "Codigo":null, "Abrev":null}
+,
+{"Id":300, "Nombre":"Asunto", "Codigo":null, "Abrev":null}
+,
+{"Id":301, "Nombre":"Sentencias", "Codigo":null, "Abrev":null}
+,
+{"Id":302, "Nombre":"Partos", "Codigo":null, "Abrev":null}
+,
+{"Id":303, "Nombre":"Nulidades", "Codigo":null, "Abrev":null}
+,
+{"Id":304, "Nombre":"Separaciones", "Codigo":null, "Abrev":null}
+,
+{"Id":305, "Nombre":"Divorcios", "Codigo":null, "Abrev":null}
+,
+{"Id":306, "Nombre":"Disoluciones matrimoniales", "Codigo":null, "Abrev":null}
+,
+{"Id":307, "Nombre":"Número de asuntos", "Codigo":null, "Abrev":"Nº asuntos"}
+,
+{"Id":308, "Nombre":"UTI", "Codigo":null, "Abrev":"UTI"}
+,
+{"Id":309, "Nombre":"UTI en TEU", "Codigo":null, "Abrev":"UTI en TEU"}
+,
+{"Id":310, "Nombre":"Trenes-Km", "Codigo":null, "Abrev":null}
+,
+{"Id":311, "Nombre":"Accidentes", "Codigo":null, "Abrev":null}
+,
+{"Id":312, "Nombre":"Toneladas-Km (1000)", "Codigo":null, "Abrev":"Toneladas-Km (1000)"}
+,
+{"Id":313, "Nombre":"Viajeros-Km (1000)", "Codigo":null, "Abrev":null}
+,
+{"Id":315, "Nombre":"Divorcios por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":316, "Nombre":"Divorciados por mil habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":317, "Nombre":"Divorcios por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":318, "Nombre":"Divorcios por hombre", "Codigo":null, "Abrev":null}
+,
+{"Id":319, "Nombre":"Divorcios por mujer", "Codigo":null, "Abrev":null}
+,
+{"Id":320, "Nombre":"Porcentaje sobre el PIB", "Codigo":null, "Abrev":null}
+,
+{"Id":321, "Nombre":"Infracciones", "Codigo":null, "Abrev":"Infracciones"}
+,
+{"Id":322, "Nombre":"Horas/dia", "Codigo":null, "Abrev":"H/d"}
+,
+{"Id":323, "Nombre":"Años-persona", "Codigo":null, "Abrev":null}
+,
+{"Id":324, "Nombre":"Años-persona", "Codigo":null, "Abrev":null}
+,
+{"Id":325, "Nombre":"Medidas", "Codigo":null, "Abrev":null}
+,
+{"Id":326, "Nombre":"Hogares", "Codigo":null, "Abrev":null}
+,
+{"Id":327, "Nombre":"Hectómetros cúbicos", "Codigo":null, "Abrev":"hm3"}
+,
+{"Id":328, "Nombre":"Litros habitante y día", "Codigo":null, "Abrev":null}
+,
+{"Id":329, "Nombre":"Euros por metro cúbico", "Codigo":null, "Abrev":"euros/m3"}
+,
+{"Id":330, "Nombre":"Equivalencia jornada completa", "Codigo":null, "Abrev":"EJC"}
+,
+{"Id":331, "Nombre":"Kilogramos/habitante/año", "Codigo":null, "Abrev":null}
+,
+{"Id":332, "Nombre":"Número medio", "Codigo":null, "Abrev":null}
+,
+{"Id":334, "Nombre":"Decretos", "Codigo":null, "Abrev":null}
+,
+{"Id":335, "Nombre":"Madres fallecidas por cada 100.000 nacidos vivos", "Codigo":null, "Abrev":null}
+,
+{"Id":336, "Nombre":"Suicidios por 100.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":337, "Nombre":"Defunciones por cada 100.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":338, "Nombre":"Porcentaje fumadores diarios", "Codigo":null, "Abrev":null}
+,
+{"Id":339, "Nombre":"Toneladas por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":340, "Nombre":"Toneladas por millón de euros", "Codigo":null, "Abrev":null}
+,
+{"Id":342, "Nombre":"Investigadores (EJC) por cada millón de habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":343, "Nombre":"Tanto por 100.000", "Codigo":null, "Abrev":null}
+,
+{"Id":344, "Nombre":"Por 100.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":345, "Nombre":"Accidentes por cada cien mil trabajadores", "Codigo":null, "Abrev":null}
+,
+{"Id":346, "Nombre":"Dolares constantes de 2015", "Codigo":null, "Abrev":null}
+,
+{"Id":347, "Nombre":"Admisiones", "Codigo":null, "Abrev":null}
+,
+{"Id":348, "Nombre":"Km2/Ha", "Codigo":null, "Abrev":null}
+,
+{"Id":349, "Nombre":"Fallecidos por millón", "Codigo":null, "Abrev":null}
+,
+{"Id":350, "Nombre":"Tasa por cada 100.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":351, "Nombre":"Kg CO2 equivalente/ Euros", "Codigo":null, "Abrev":null}
+,
+{"Id":352, "Nombre":"Toneladas CO2 equivalente per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":353, "Nombre":"Kilogramo/habitante/día", "Codigo":null, "Abrev":null}
+,
+{"Id":354, "Nombre":"Toneladas per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":355, "Nombre":"LOGICA", "Codigo":null, "Abrev":"NO~SI"}
+,
+{"Id":356, "Nombre":"tep/M€", "Codigo":null, "Abrev":null}
+,
+{"Id":357, "Nombre":"Litros de alcohol puro consumido per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":358, "Nombre":"Porcentaje de diputadas", "Codigo":null, "Abrev":"%"}
+,
+{"Id":359, "Nombre":"Porcentaje de senadoras", "Codigo":null, "Abrev":"%"}
+,
+{"Id":360, "Nombre":"Porcentaje de consejeras", "Codigo":null, "Abrev":"%"}
+,
+{"Id":361, "Nombre":"Porcentaje de alcaldesas", "Codigo":null, "Abrev":"%"}
+,
+{"Id":363, "Nombre":"Porcentaje de concejalas", "Codigo":null, "Abrev":"%"}
+,
+{"Id":364, "Nombre":"Puntos porcentuales", "Codigo":null, "Abrev":null}
+,
+{"Id":365, "Nombre":"Licencias", "Codigo":null, "Abrev":null}
+,
+{"Id":366, "Nombre":"Organizaciones", "Codigo":null, "Abrev":null}
+,
+{"Id":367, "Nombre":"Años al cuadrado", "Codigo":null, "Abrev":null}
+,
+{"Id":369, "Nombre":"Proporción", "Codigo":null, "Abrev":null}
+,
+{"Id":370, "Nombre":"Penas", "Codigo":null, "Abrev":"Penas"}
+,
+{"Id":371, "Nombre":"Por 1.000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":372, "Nombre":"Investigadores (en personas físicas) por cada millón de habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":373, "Nombre":"Euros per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":374, "Nombre":"Kilogramos per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":375, "Nombre":"Euros en relación con dólares americanos", "Codigo":null, "Abrev":null}
+,
+{"Id":376, "Nombre":"Personas admitidas a tratamiento", "Codigo":null, "Abrev":null}
+,
+{"Id":377, "Nombre":"Número de tablas", "Codigo":null, "Abrev":null}
+,
+{"Id":378, "Nombre":"Rango [0,1]", "Codigo":null, "Abrev":null}
+,
+{"Id":379, "Nombre":"Rango [1,6]", "Codigo":null, "Abrev":null}
+,
+{"Id":380, "Nombre":"Rango [0,9]", "Codigo":null, "Abrev":null}
+,
+{"Id":381, "Nombre":"Rango [0,5]", "Codigo":null, "Abrev":null}
+,
+{"Id":382, "Nombre":"Rango [0,4]", "Codigo":null, "Abrev":null}
+,
+{"Id":383, "Nombre":"Número de abonados por cada 100 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":384, "Nombre":"Kilotoneladas", "Codigo":null, "Abrev":null}
+,
+{"Id":385, "Nombre":"Microgramos/metro cúbico", "Codigo":null, "Abrev":null}
+,
+{"Id":386, "Nombre":"Mil kilómetros cuadrados", "Codigo":null, "Abrev":null}
+,
+{"Id":387, "Nombre":"Valor de pH", "Codigo":null, "Abrev":null}
+,
+{"Id":388, "Nombre":"Gramos/euros", "Codigo":null, "Abrev":null}
+,
+{"Id":389, "Nombre":"Rango [0,10]", "Codigo":null, "Abrev":null}
+,
+{"Id":390, "Nombre":"€/jornal", "Codigo":null, "Abrev":null}
+,
+{"Id":392, "Nombre":"Dolares", "Codigo":null, "Abrev":"$"}
+,
+{"Id":393, "Nombre":"Rango [0,100]", "Codigo":null, "Abrev":null}
+,
+{"Id":394, "Nombre":"Rango [0,20]", "Codigo":null, "Abrev":null}
+,
+{"Id":395, "Nombre":"0=NO, 1=SI", "Codigo":null, "Abrev":null}
+,
+{"Id":396, "Nombre":"Toneladas CO2 equivalente", "Codigo":null, "Abrev":null}
+,
+{"Id":397, "Nombre":"Muertes por cada 100000 habitantes", "Codigo":null, "Abrev":null}
+,
+{"Id":398, "Nombre":"Kg por mil euros, volúmenes encadenados (2020)", "Codigo":null, "Abrev":null}
+,
+{"Id":399, "Nombre":"Empleo equivalente a tiempo completo", "Codigo":null, "Abrev":null}
+,
+{"Id":400, "Nombre":"Gigajulios por habitante", "Codigo":null, "Abrev":"GJ/hab"}
+,
+{"Id":401, "Nombre":"Terajulios por millón de euros", "Codigo":null, "Abrev":"TJ/M euros"}
+,
+{"Id":402, "Nombre":"Millones de euros", "Codigo":null, "Abrev":"mill. €"}
+,
+{"Id":403, "Nombre":"Kilotoneladas equivalentes de petróleo", "Codigo":null, "Abrev":"ktep"}
+,
+{"Id":405, "Nombre":"Euros por habitante", "Codigo":null, "Abrev":null}
+,
+{"Id":406, "Nombre":"Millones de toneladas equivalentes de petróleo (Mtep)", "Codigo":null, "Abrev":null}
+,
+{"Id":407, "Nombre":"Toneladas equivalentes de petróleo por habitante (tep/hab)", "Codigo":null, "Abrev":null}
+,
+{"Id":408, "Nombre":"Vatios per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":409, "Nombre":"Rango [0,3]", "Codigo":null, "Abrev":null}
+,
+{"Id":410, "Nombre":"Rango [1,4]", "Codigo":null, "Abrev":null}
+,
+{"Id":411, "Nombre":"Megajulios per cápita", "Codigo":null, "Abrev":null}
+,
+{"Id":412, "Nombre":"Kg de CO2 equivalente per capita", "Codigo":null, "Abrev":null}
+,
+{"Id":413, "Nombre":"Miles de personas", "Codigo":null, "Abrev":"miles de personas"}
+,
+{"Id":414, "Nombre":"Miles de Toneladas CO2 equivalente", "Codigo":null, "Abrev":"miles de t. CO2 eq."}
+,
+{"Id":415, "Nombre":"Euros por unidad de consumo", "Codigo":null, "Abrev":null}
+,
+{"Id":416, "Nombre":"Euros/m2", "Codigo":null, "Abrev":null}
+,
+{"Id":417, "Nombre":"Miles de toneladas netas", "Codigo":null, "Abrev":null}
+,
+{"Id":418, "Nombre":"Millones de viajeros-km", "Codigo":null, "Abrev":null}
+,
+{"Id":419, "Nombre":"Miles de Toneladas", "Codigo":null, "Abrev":null}
+]
+

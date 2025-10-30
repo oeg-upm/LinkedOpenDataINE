@@ -1,3 +1,8 @@
 datasets/
 configuration/
-data_cubes_rdf/
+data_cubes_rdf/educacion/data/
+data_cubes_rdf/inmigración/data/
+data_cubes_rdf/mercado_laboral/data/
+data_cubes_rdf/población/data/
+data_cubes_rdf/servicios/data/
+data_cubes_rdf/turismo/data/
