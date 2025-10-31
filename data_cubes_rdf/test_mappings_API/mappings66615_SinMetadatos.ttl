@@ -1,0 +1,117 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inelod: <http://stats.linkeddata.es/voc/cubes/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix rmle:  <https://w3id.org/imec/rml/ns/extensions#> .
+@prefix htv:   <http://www.w3.org/2011/http#> .
+@prefix formats: <https://www.w3.org/ns/formats/> .
+
+# Versión preliminar del Logical Source que se emplea para acceder a la API.
+inelod:APIJSONLS a rml:LogicalSource ;
+  rml:referenceFormulation rml:JSONPath ;
+  # Iterador JSON genérico, ajusta según haga falta
+  rml:iterator "$.items[*]" ;
+  # Accede al recurso mediante un GET HTTP.
+  rml:source [
+    a rml:Source, rmle:DirectHttpRequest ;
+    # Put the full URL, with query params if needed (e.g., ?page=1&limit=100)
+    htv:absoluteURI "https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/66615"
+  ] .
+
+
+inelod:66615_Observations a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:objectMap [ rml:reference "Edad" ] ;
+            rml:predicate sdmx-dimension:age ],
+        [ rml:objectMap [ rml:reference "Capitales y grandes ciudades" ] ;
+            rml:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#municipality> ],
+        [ rml:objectMap [ rml:reference "Periodo" ] ;
+            rml:predicate sdmx-dimension:refPeriod ],
+        [ rml:objectMap [ rml:reference "Nivel de formación alcanzado" ] ;
+            rml:predicate sdmx-dimension:educationLev ],
+        [ rml:object inelod:66615 ;
+            rml:predicate qb:dataSet ],
+        [ rml:objectMap [ rml:reference "Sexo" ] ;
+            rml:predicate sdmx-dimension:sex ],
+        [ rml:objectMap [ rml:reference "Personas" ;
+                    rml:datatype xsd:float ] ;
+            rml:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfPeople> ] ;
+    rml:subjectMap [ rml:class qb:Observation ;
+            rml:template "https://stats.linkeddata.es/voc/cubes/66615/o{index}" ] .
+
+inelod:66615_TriplesMapDSD a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_measu ] ;
+            rml:predicate qb:component ],
+        [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_bndim5 ] ;
+            rml:predicate qb:component ],
+        [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_bndim2 ] ;
+            rml:predicate qb:component ],
+        [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_bndim4 ] ;
+            rml:predicate qb:component ],
+        [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_bndim1 ] ;
+            rml:predicate qb:component ],
+        [ rml:objectMap [ rml:parentTriplesMap inelod:66615_TriplesMapDSD_bndim3 ] ;
+            rml:predicate qb:component ] ;
+    rml:subjectMap [ rml:class qb:DataStructureDefinition ;
+            rml:constant inelod:66615_dsd ] .
+
+inelod:66615_TriplesMapDSD_bndim1 a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:object 1 ;
+            rml:predicate qb:order ],
+        [ rml:object <https://stats.linkeddata.es/voc/cubes/vocabulary#municipality> ;
+            rml:predicate qb:dimension ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
+inelod:66615_TriplesMapDSD_bndim2 a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:object sdmx-dimension:sex ;
+            rml:predicate qb:dimension ],
+        [ rml:object 2 ;
+            rml:predicate qb:order ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
+inelod:66615_TriplesMapDSD_bndim3 a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS;
+    rml:predicateObjectMap [ rml:object sdmx-dimension:age ;
+            rml:predicate qb:dimension ],
+        [ rml:object 3 ;
+            rml:predicate qb:order ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
+inelod:66615_TriplesMapDSD_bndim4 a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:object sdmx-dimension:educationLev ;
+            rml:predicate qb:dimension ],
+        [ rml:object 4 ;
+            rml:predicate qb:order ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
+inelod:66615_TriplesMapDSD_bndim5 a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:object 5 ;
+            rml:predicate qb:order ],
+        [ rml:object sdmx-dimension:refPeriod ;
+            rml:predicate qb:dimension ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
+inelod:66615_TriplesMapDSD_measu a rml:TriplesMap ;
+    rml:logicalSource inelod:APIJSONLS ;
+    rml:predicateObjectMap [ rml:object <https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfPeople> ;
+            rml:predicate qb:measure ] ;
+    rml:subjectMap [ rml:constant [ ] ;
+            rml:termType rml:BlankNode ] .
+
