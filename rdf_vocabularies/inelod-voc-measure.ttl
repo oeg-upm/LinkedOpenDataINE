@@ -1,33 +1,58 @@
-@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:      <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
-@prefix void:     <http://rdfs.org/ns/void#> .
-@prefix dct:      <http://purl.org/dc/terms/> .
-@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
-@prefix org:      <http://www.w3.org/ns/org#> .
-@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
-@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
-@prefix place: <http://purl.org/ontology/places>. 
-@prefix qb:       <http://purl.org/linked-data/cube#> .
+@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>. 
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-dim: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix och: <http://w3id.org/def/och/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
-@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
-@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
-@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
-@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
-@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
-@prefix ex-geo:   <http://example.org/geo#> .
-@prefix inelod:       <https://stats.linkeddata.es/voc/cubes/> .
-@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>.
 @prefix unit: <http://qudt.org/vocab/unit/>.
+@prefix qudt: <http://qudt.org/schema/qudt/>.
 
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Measure Sets
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+########################################################################
+# SET OF ONTOLOGY METADATA
+#########################################################################
 
-ine:MeasureSet a owl:Class ;
+ine:measures a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:creator "Diego Conde-Herreros";
+    dcterms:contributor "Diego Conde-Herreros";
+    dcterms:created "2025-11-03"^^xsd:date ;
+    dcterms:modified "2025-11-03"^^xsd:date;
+    vann:preferredNamespacePrefix "ine" ;
+    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
+    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
+    owl:versionInfo "1.0.0"@en;
+    dcterms:description "An ontology for describing the variables used as measures in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
+                        "Una ontologia para describir las variables empleadas como medidas en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
+    dcterms:title "INELOD VOC MEASURE" .
+
+#############################################################################
+# REUSED TERMS DECLARATIONS
+###########################################################################
+
+qb:Observation a rdfs:Class .
+qb:MeasureProperty a rdfs:Class .
+qb:DimensionProperty a rdfs:Class .
+sdmx-measure:obsValue a qb:MeasureProperty, rdf:Property .
+sdmx-dim:refPeriod a qb:DimensionProperty, rdf:Property .
+sdmx-measure:refPeriod a qb:DimensionProperty, rdf:Property .
+sdmx-measure:currency a qb:MeasureProperty, rdf:Property  .
+sdmx-dim:refArea a qb:DimensionProperty, rdf:Property .
+unit:PERCENT a owl:Class . 
+############################################################################
+# MEASURE SETS
+###########################################################################
+
+ine:MeasureSet a rdfs:Class ;
     rdfs:label "Conjunto de Medidas"@es, "Set of Measurements"@en;
     rdfs:comment "La clase OWL que representa a aquellas variables del INE que corresponden al conjunto de medidas de un conjunto de datos"@es.
 
@@ -37,46 +62,62 @@ ine:inMeasureSet a rdf:Property ;
     rdfs:domain qb:MeasureProperty ;
     rdfs:range ine:MeasureSet .
 
-ine:unit
-    rdf:type ine:MeasureSet;
-    rdfs:label "Unit"@en , "Unidad"@es .
+ine:totalExpenditureThousandsOfEurosAverageExpenditureEuros a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gasto total: miles de euros. Gastos medios: euros"@es , "Total expenditure: thousands of euros. Average expenditure: euros."@en .
+
+ine:totalExpenditureThousandsOfEurosUnitValueEuros-Unit a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gasto total: miles de euros. Valor unitario: euros/unidad"@es , "Total expenditure: thousands of euros. Unit value: euros/unit"@en .
+
+ine:totalQuantityThousandsOfUnitsAverageQuantity:Units a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Cantidad total: miles de unidades. Cantidad media: unidades"@es , "Total quantity: thousands of units. Average quantity: units."@en .
+
+ine:personsAndPercentagesSet a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Personas y porcentajes"@es , "Persons And Percentages Set"@en .
+
+ine:rate a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tasas"@es , "Rates"@en ;
+  rdfs:comment "Relación entre dos magnitudes"@es .
+
+ine:unit a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Unidades"@es , "Unidades (value)"@en, "Unit"@en , "Unidad"@es .
+
+ine:indicators a ine:MeasureSet ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Indicadores"@es , "Indicators"@en .
+
+ine:measures a ine:MeasureSet;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Medidas"@es , "Medida"@es,  "Measures"@en .
+
+ine:ratesForEach100kInhabitants a ine:MeasureSet;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tasa por cada 100.000 habitantes"@es , "Rates for each 100k Inhabitants"@en .
 
 ine:unitEmployed
-    rdf:type ine:MeasureSet ;
+    a ine:MeasureSet ;
     rdfs:label "Unit Employed"@en , "Unidad Ocupados"@es .
 
-ine:rate 
+ine:dataType
     a ine:MeasureSet ;
-    rdfs:label "Tasas"@es, "Rates"@en;
+    rdfs:label "Tipo de dato"@es, "Datatype"@en ;
     rdfs:comment "Relación entre dos magnitudes"@es.
 
 ine:datatypeTourists
     a ine:MeasureSet ;
-    rdfs:label "Tipo de dato Turistas"@es, "Datatype Tourists"@en;
+    rdfs:label "Tipo de dato Turistas"@es, "Datatype Tourists"@en ;
     rdfs:comment "Relación entre dos magnitudes"@es.
 
-ine:dataType
-    a ine:MeasureSet ;
-    rdfs:label "Tipo de dato"@es, "Datatype"@en;
-    rdfs:comment "Relación entre dos magnitudes"@es.
 
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Measures
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ine:numberOfIndividuals  a rdf:Property, qb:MeasureProperty ;
-    rdfs:label "Numero de individuos"@es ;
-    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es ;
-    rdfs:subPropertyOf sdmx-measure:obsValue ;
-    rdfs:domain qb:Observation ;
-    rdfs:range xsd:integer .
-
-ine:numberOfPeople  a rdf:Property, qb:MeasureProperty ;
-    rdfs:label "Numero de personas"@es , "Personas"@es ;
-    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es ;
-    rdfs:subPropertyOf ine:numberOfIndividuals ;
-    rdfs:domain qb:Observation ;
-    rdfs:range xsd:integer.
+###############################################################################
+# MEASURES IN SETS
+################################################################################
 
 ine:unemploymentRate a rdf:Property, qb:MeasureProperty;
     rdfs:label "Tasas de Paro"@es, "Tasa de paro de la población"@es;
@@ -99,87 +140,6 @@ ine:employmentRate a rdf:Property, qb:MeasureProperty;
     rdfs:domain qb:Observation;
     rdfs:range xsd:float.
 
-ine:grossDomesticProduct a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Producto Interior Bruto"@es;
-    rdfs:comment "El producto interior bruto (PIB) es un indicador económico que refleja el valor monetario de todos los bienes y servicios finales producidos por un territorio en un determinado periodo de tiempo."@es;
-    rdfs:subPropertyOf sdmx-measure:currency;
-    rdfs:domain qb:Observation;
-    rdfs:range xsd:float.
-
-ine:workstation a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Puestos de trabajo"@es;
-    rdfs:comment "Es un contrato explícito o implícito entre una persona (que puede ser residente en otro territorio económico) y una unidad institucional residente en el país, para realizar un trabajo a cambio de una remuneración durante un período definido o indefinido de tiempo."@es;
-    rdfs:domain qb:Observation;
-    rdfs:range xsd:String.
-
-ine:numberOfHours a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Número de horas"@es;
-    rdfs:comment "Número de horas en miles"@es;
-    rdfs:subPropertyOf sdmx-measure:refPeriod;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
-ine:overnightStays a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Pernoctaciones"@es;
-    rdfs:comment "Se entiende por pernoctación cada noche que un viajero se aloja en el establecimiento. Al igual que en la entrada de viajeros, las plazas ocupadas se desglosan según el lugar de residencia."@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue; 
-    rdfs:domain qb:Observation;
-    rdfs:range xsd:int.
-
-ine:numberOfTravelers a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Viajero"@es;
-    rdfs:comment "Número de personas que viajan"@es;
-    rdfs:subPropertyOf ine:numberOfPeople; 
-    rdfs:domain qb:Observation;
-    rdfs:range xsd:int.
-
-ine:hiredStaff a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Personal Empleado"@es;
-    rdfs:comment "Número de empleados"@es;
-    rdfs:subPropertyOf ine:numberOfPeople;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
-ine:ocupationDegreeRoom  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Grado de ocupación por habitaciones"@es;
-    rdfs:comment "Relación, en porcentaje, entre la media diaria de habitaciones ocupadas en el mes y el total de habitaciones disponibles."@es;
-    rdfs:subPropertyOf ine:rate; 
-    rdfs:domain qb:Observation;
-    rdfs:range unit:PERCENT.
-
-ine:ocupationDegreeBedplaces  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Grado de ocupación por plazas"@es;
-    rdfs:label "Grado de ocupación por plazas en fin de semana"@es;
-    rdfs:comment "Relación, en porcentaje, entre el total de las pernoctaciones y el producto de las plazas disponibles por los días a los que se refieren las pernoctaciones más las camas supletorias utilizadas."@es;
-    rdfs:subPropertyOf ine:rate;
-    rdfs:domain qb:Observation; 
-    rdfs:range unit:PERCENT.
-
-ine:numberOfBedplaces  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Número de plazas estimadas"@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
-ine:numberOfRooms  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Número de habitaciones estimadas"@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
-ine:numberOfEstablishments  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Número de estabclecimientos abiertos estimados"@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
-ine:index  a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Índice"@es;
-    rdfs:comment "Medida estadística que permite agregar una o más variables de distinta naturaleza para sintetizar la parte esencial de la información contenida en un fenómeno."@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:int.
-
 ine:employedABSValue  a rdf:Property , qb:MeasureProperty;
     rdfs:label "Valor absoluto"@es;
     rdfs:comment "Los ocupados son todas aquellas personas de 16 años o más que, según los criterios OIT, durante la semana de referencia tuvieron un empleo por cuenta ajena, asalariado, o ejercieron una actividad por cuenta propia, trabajadores por cuenta propia. En relación a este empleo o actividad, pudieron haberse encontrado en la semana de referencia: - trabajando al menos una hora en el citado período a cambio de una remuneración, salario, beneficio empresarial o ganancia familiar, etc., o - ausentes del mismo pero con un fuerte vínculo con dicho empleo."@es;
@@ -194,12 +154,6 @@ ine:employedPercentage  a rdf:Property , qb:MeasureProperty;
     ine:inMeasureSet ine:unitEmployed;
     rdfs:domain qb:Observation; 
     rdfs:range unit:PERCENT.
-
-ine:averageStay a rdf:Property , qb:MeasureProperty;
-    rdfs:label "Estancia media"@es;
-    rdfs:subPropertyOf sdmx-measure:obsValue;
-    rdfs:domain qb:Observation; 
-    rdfs:range xsd:float.
 
 ine:numberOfTouristsABSValue a rdf:Property , qb:MeasureProperty;
     rdfs:label "Dato base"@es, "Dato base Turistas"@es;
@@ -228,3 +182,1797 @@ ine:numberOfTouristsAccumulatedVarianceRate a rdf:Property , qb:MeasureProperty;
     ine:inMeasureSet ine:datatypeTourists; 
     rdfs:domain qb:Observation;
     rdfs:range xsd:float.
+
+#############################################################################
+# INDIVIDUAL MEASURES
+############################################################################## 
+
+ine:averageStay a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Estancia media"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:float.
+
+ine:numberOfEstablishments  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de estabclecimientos abiertos estimados"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:numberOfRooms  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de habitaciones estimadas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:numberOfBedplaces  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de plazas estimadas"@es, "Plazas"@es ;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:ocupationDegreeBedplaces  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Grado de ocupación por plazas"@es;
+    rdfs:label "Grado de ocupación por plazas en fin de semana"@es;
+    rdfs:comment "Relación, en porcentaje, entre el total de las pernoctaciones y el producto de las plazas disponibles por los días a los que se refieren las pernoctaciones más las camas supletorias utilizadas."@es;
+    rdfs:domain qb:Observation; 
+    rdfs:range unit:PERCENT.
+
+ine:ocupationDegreeRoom  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Grado de ocupación por habitaciones"@es;
+    rdfs:comment "Relación, en porcentaje, entre la media diaria de habitaciones ocupadas en el mes y el total de habitaciones disponibles."@es;
+    rdfs:domain qb:Observation;
+    rdfs:range unit:PERCENT.
+
+ine:hiredStaff a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Personal Empleado"@es;
+    rdfs:comment "Número de empleados"@es;
+    rdfs:subPropertyOf ine:numberOfPeople;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:overnightStays a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Pernoctaciones"@es;
+    rdfs:comment "Se entiende por pernoctación cada noche que un viajero se aloja en el establecimiento. Al igual que en la entrada de viajeros, las plazas ocupadas se desglosan según el lugar de residencia."@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue; 
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:int.
+
+ine:numberOfHours a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de horas"@es;
+    rdfs:comment "Número de horas en miles"@es;
+    rdfs:subPropertyOf sdmx-measure:refPeriod;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:workstation a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Puestos de trabajo"@es;
+    rdfs:comment "Es un contrato explícito o implícito entre una persona (que puede ser residente en otro territorio económico) y una unidad institucional residente en el país, para realizar un trabajo a cambio de una remuneración durante un período definido o indefinido de tiempo."@es;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:String.
+
+ine:grossDomesticProduct a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Producto Interior Bruto"@es;
+    rdfs:comment "El producto interior bruto (PIB) es un indicador económico que refleja el valor monetario de todos los bienes y servicios finales producidos por un territorio en un determinado periodo de tiempo."@es;
+    rdfs:subPropertyOf sdmx-measure:currency;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.
+
+ine:numberOfIndividuals  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de individuos"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ine:numberOfPeople  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de personas"@es , "Personas"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es ;
+    rdfs:subPropertyOf ine:numberOfIndividuals ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer.
+
+ine:amountEuro a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Amount in euros"@en , "Importe en euros"@es .
+
+ine:percentage a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Percentage"@en , "Porcentaje"@es .
+
+ine:percentagePoints a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Percentage points"@en , "Puntos porcentuales"@es .
+
+ine:ratePerThousand a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Rate per thousand"@en , "Tanto por mil"@es .
+
+ine:ratePer100k a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Rate per 100,000 inhabitants"@en , "Tasa por 100.000 habitantes"@es .
+
+ine:ratePerWoman a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Rate per woman"@en , "Tasa por mujer"@es .
+
+ine:indexValue a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Index value"@en , "Índice"@es .
+
+ine:indexRangeScaled a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Scaled index/range"@en , "Rango/índice escalado"@es .
+
+ine:lengthMetreBased a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Length/Distance (metre-based)"@en , "Longitud/Distancia (en metros)"@es .
+
+ine:volumeCubicMetreBased a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Volume (cubic metres)"@en , "Volumen (metros cúbicos)"@es .
+
+ine:volumeLitreBased a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Volume (litres)"@en , "Volumen (litros)"@es .
+
+ine:massTonnesBased a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mass (tonnes-based)"@en , "Masa (en toneladas)"@es .
+
+ine:massKilogramsBased a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mass (kilograms-based)"@en , "Masa (en kilogramos)"@es .
+
+ine:co2EquivalentTonnes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "CO2 equivalent (tonnes)"@en , "CO2 equivalente (toneladas)"@es .
+
+ine:energyAmount a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Energy amount"@en , "Cantidad de energía"@es .
+
+ine:ratePerPopulation a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Rate per population"@en , "Tasa por población"@es .
+
+ine:booleanFlag a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:boolean ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Boolean flag"@en , "Indicador booleano"@es .
+
+ine:count a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Count (integer)"@en , "Conteo (entero)"@es .
+
+ine:euros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:currency  ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros"@es , "Euro amount"@en .
+
+ine:pairs a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Pares"@es , "Pairs"@en .
+
+ine:minutes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Minutos"@es , "Minutes"@en .
+
+ine:hours a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Horas"@es , "Hours"@en .
+
+ine:days a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Días"@es , "Days"@en .
+
+ine:squareMetres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Metros cuadrados"@es , "Square Metres"@en .
+
+ine:squareKilometres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilómetros cuadrados"@es , "Square Kilometres"@en .
+
+ine:hectares a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hectáreas"@es , "Hectares"@en .
+
+ine:tonnes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas"@es , "Tonnes"@en .
+
+ine:litres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:volumeLitreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Litros"@es , "Litres"@en .
+
+ine:horasTrabajadorMes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Horas/trabajador(mes)"@es , "Horas Trabajador Mes"@en .
+
+ine:percent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por cien"@es , "Percent"@en .
+
+ine:perThousand a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerThousand ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por mil"@es , "Per Thousand"@en .
+
+ine:thousandEuros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Miles de euros"@es , "Thousand Euro amount"@en .
+
+ine:companies a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "La empresa corresponde a la combinación más pequeña de unidades jurídicas que constituye una unidad organizativa de producción de bienes y servicios y que disfruta de una cierta autonomía de decisión."@es ;
+  rdfs:label "Empresas"@es , "Companies"@en .
+
+ine:years a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Años"@es , "Years"@en .
+
+ine:childrenPerWoman a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerWoman ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hijos por mujer"@es , "Children Per Woman"@en .
+
+ine:birthsPer1000Women a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Nacimientos por 1.000 mujeres"@es , "Births per 1,000 women"@en .
+
+ine:marriagePerThousandlInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Matrimonios por mil habitantes"@es , "Marriages per thousand inhabitants"@en .
+
+ine:birthDeathDifferencePerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Nacimientos menos defunciones (por mil habitantes)"@es , "Births minus deaths (per thousand inhabitants)"@en .
+
+ine:deathsPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones por mil habitantes"@es , "Deaths per thousand inhabitants"@en .
+
+ine:deathsOfLessThan1YearsPer1000Born a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones de menores de 1 año por 1.000 nacidos"@es , "Deaths of children under 1 year of age per 1,000 births"@en .
+
+ine:deathsDuringFirst24HoursOfLife a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones durante las 24 primeras horas de vida"@es , "Deaths during the first 24 hours of life"@en .
+
+ine:births a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "El concepto de nacido en la Estadística del Movimiento Natural de la Población queda identificado con el biológico de «nacido con vida»."@es ;
+  rdfs:label "Nacimientos"@es , "Births"@en .
+
+ine:marriages a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "Unión estable entre dos personas, como producto del acuerdo de voluntades de ambas, manifestado externamente con las formalidades legalmente establecidas."@es ;
+  rdfs:label "Matrimonios"@es , "Marriages"@en .
+
+ine:deaths a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "El concepto estadístico de defunción utilizado tradicionalmente en España comprendía a todos los fallecidos con más de 24 horas de vida; desde 1975 incluye los nacidos con vida fallecidos durante las primeras 24 horas."@es ;
+  rdfs:label "Defunciones"@es , "Deaths"@en .
+
+ine:number a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Número"@es , "Number"@en .
+
+
+
+ine:premises a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Locales"@es , "Premises"@en .
+
+
+ine:index  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Índice"@es;
+    rdfs:comment "Medida estadística que permite agregar una o más variables de distinta naturaleza para sintetizar la parte esencial de la información contenida en un fenómeno."@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:municipalities a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "El municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines."@es ;
+  rdfs:label "Municipios"@es , "Municipalities"@en .
+
+
+ine:peopleMarryingForTheFirstTimePerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Personas que se casan por primera vez por cada mil habitantes"@es , "People Marrying for the First Time per Thousand Inhabitants"@en .
+
+ine:migrationFlows a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Movimientos migratorios"@es , "Migration flows"@en .
+
+ine:thousandKwh a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil kWh"@es , "Thousand Kwh"@en .
+
+ine:kilogramOfActiveSubstance a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo de sustancia activa"@es , "Kilogram of active substance"@en .
+
+ine:thousandCubicMetres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil metros cúbicos"@es , "Thousand Cubic Metres"@en .
+
+ine:tonOfNitrogen a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de nitrogeno"@es , "Ton of nitrogen"@en .
+
+
+ine:tonOfDialuminiumTrioxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de trióxido  de dialuminio (alúmina)"@es , "Ton of dialuminium trioxide (alumina)"@en .
+
+ine:tonOfDryMatterAt90Percent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de materia seca al 90%"@es , "Ton of dry matter at 90%"@en .
+
+ine:ontOfSodiumPyrosulphite a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de pirosulfito de sodio"@es , "Ton of sodium pyrosulphite"@en .
+
+ine:kilogram a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo"@es , "Kilogram"@en .
+
+ine:hectolitreOfPureAlcohol a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hectolitro de alcohol puro 100%"@es , "Hectolitre of 100% pure alcohol"@en .
+
+ine:milMetres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil metros"@es , "Mil Metres"@en .
+
+ine:tonOfPotassiumOxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de óxido de potasio"@es , "Ton of potassium oxide"@en .
+
+ine:kilogramOfTitaniumDioxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo de dióxido de titanio"@es , "Kilogram of titanium dioxide"@en .
+
+ine:tonOfSulphurDioxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de dióxido de azufre"@es , "Ton of sulphur dioxide"@en .
+
+ine:thousandLitres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:volumeLitreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil litros"@es , "Thousand Litres"@en .
+
+ine:hectolitre a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:volumeLitreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hectolitro"@es , "Hectolitre"@en .
+
+ine:terajoules a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Terajulios"@es , "Terajoules"@en .
+
+ine:tonOfHydrogenChloride a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de cloruro de hidrógeno"@es , "Ton Of Hydrogen Chloride"@en .
+
+ine:tonOfHydrogenPeroxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de peróxido de hidrógeno"@es , "Ton of hydrogen peroxide"@en .
+
+ine:compensatedGrossTonnage a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Arqueo bruto compensado"@es , "Compensated gross tonnage"@en .
+
+ine:tonOfSiliconDioxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de dióxido de silicio"@es , "Ton of silicon dioxide"@en .
+
+ine:tonOfPhosphoricAnhydride a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de anhídrido fosfórico"@es , "Ton of phosphoric anhydride"@en .
+
+ine:gram a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gramo"@es , "Gram"@en .
+
+ine:thousandPairs a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil pares"@es , "Thousand Pairs"@en .
+
+ine:thousandSquareMetres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil metros cuadrados"@es , "Thousand Square Metres"@en .
+
+ine:thousandUnits a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil unidades"@es , "Thousand Units"@en .
+
+ine:tonOfChlorine a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de cloro"@es , "Ton of chlorine"@en .
+
+ine:tonOfSodiumHydroxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de hidróxido de sodio (sosa cáustica)"@es , "Ton of sodium hydroxide (caustic soda)"@en .
+
+ine:kilowatts a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilovatios"@es , "Kilowatts"@en .
+
+ine:tonOfDiboronTrioxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de trióxido de diboro"@es , "Ton of diboron trioxide"@en .
+
+ine:tonOfFluorine a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de fluor"@es , "Ton of fluorine"@en .
+
+ine:numberOfCells a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Número de celdas"@es , "Number of cells"@en .
+
+ine:cubicMetres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Metros cúbicos"@es , "Cubic Metres"@en .
+
+ine:tonOfPotassiumHydroxide a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de hidróxido de potasio (potasa cáustica)"@es , "Ton of potassium hydroxide (caustic potash)"@en .
+
+ine:tonOfHydrogenFluoride a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tonelada de floruro de hidrógeno"@es , "Ton of hydrogen fluoride"@en .
+
+ine:metre a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Metro"@es , "Metre"@en .
+
+ine:kilogramOfNitrogen a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo de nitrógeno"@es , "Kilogram of nitrogen"@en .
+
+ine:kilogramOfSodiumCarbonate a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo de carbonato de sodio"@es , "Kilogram of sodium carbonate"@en .
+
+ine:jobs a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Puestos de trabajo"@es , "Jobs"@en .
+
+ine:numberOfTravelers a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "Todas aquellas personas que realizan una o más pernoctaciones seguidas en el mismo alojamiento."@es ;
+  rdfs:label "Viajeros"@es , "Travellers"@en .
+
+ine:housing a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Vivienda"@es , "Housing"@en .
+
+ine:marginalRate a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tipo marginal"@es , "Marginal Rate"@en .
+
+ine:average a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Media"@es , "Average"@en, "Número medio"@es , "Average Number"@en .
+
+ine:baseDic85100 a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:indexValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Base dic85 = 100"@es , "Base Dic85100"@en .
+
+ine:usdEur a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "USD/EUR"@es , "USD/EUR"@en .
+
+ine:hours_workerByweek a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Horas/trabajador (semana)"@es , "Hours/worker (week)"@en .
+
+ine:percentageOfPeople a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de personas"@es , "Percentage of people"@en .
+
+ine:percentageOfHouseholds a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de hogares"@es , "Percentage of households"@en .
+
+ine:marriagesPerPerson a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Matrimonios por persona"@es , "Marriages per person"@en .
+
+ine:perMilleOfMarriedCouples a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerThousand ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por mil de casados"@es , "Per mille of married couples"@en .
+
+ine:perThousandMarriages a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerThousand ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por mil de matrimonios"@es , "Per thousand marriages"@en .
+
+ine:perThousandPeople a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerThousand ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por mil de personas"@es , "Per thousand people"@en .
+
+ine:vacancies a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Vacante"@es , "Vacancies"@en .
+
+ine:percentageOfCentres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de centros"@es , "Percentage of centres"@en .
+
+ine:apartments a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Apartamentos"@es , "Apartments"@en .
+
+ine:establishments a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Establecimientos"@es , "Establishments"@en .
+
+ine:places a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Plazas"@es , "Places"@en .
+
+ine:plots a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Parcelas"@es , "Plots"@en .
+
+ine:emigrationPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Emigraciones por habitante"@es , "Emigration per inhabitant"@en .
+
+ine:migrationsPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Migraciones por habitante"@es , "Migrations Per Inhabitant"@en .
+
+ine:estate a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Finca"@es , "Estate"@en .
+
+ine:bothForOne a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por uno"@es , "Both for one"@en .
+
+ine:percentageOfFatalities a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de fallecidos"@es , "Percentage of fatalities"@en .
+
+ine:travel a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Viajes"@es , "Travel"@en .
+
+
+
+ine:goldFineTroyOunces a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gold fine troy ounces"@es , "Gold Fine Troy Ounces (value)"@en .
+
+ine:excursions a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Excursiones"@es , "Excursions"@en .
+
+ine:rooms a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Habitaciones"@es , "Rooms"@en .
+
+ine:bornPerThousandDeaths a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Nacidos por mil defunciones"@es , "Born per thousand deaths"@en .
+
+ine:growthPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Crecimiento por mil habitantes"@es , "Growth per thousand inhabitants"@en .
+
+ine:emigrationPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Emigraciones por mil habitantes"@es , "Emigration per thousand inhabitants"@en .
+
+ine:immigrationPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Inmigraciones por mil habitantes"@es , "Immigration per thousand inhabitants"@en .
+
+ine:migrationsPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Migraciones por mil habitantes"@es , "Migrations Per Thousand Inhabitants"@en .
+
+ine:firstMarriagesPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Primeros Matrimonios por habitante"@es , "First marriages per inhabitant"@en .
+
+ine:firstMarriagesPerMan a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Primeros Matrimonios por hombre"@es , "First marriages per man"@en .
+
+ine:firstMarriagesPerWoman a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Primeros Matrimonios por mujer"@es , "First marriages per woman"@en .
+
+ine:marriagesPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Matrimonios por habitante"@es , "Marriages per inhabitant"@en .
+
+ine:marriagesPerMan a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Matrimonios por hombre"@es , "Marriages per man"@en .
+
+ine:marriagesPerWoman a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Matrimonios por mujer"@es , "Marriages per woman"@en .
+
+ine:contractingPartiesPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Contrayentes por mil habitantes"@es , "Contracting Parties Per Thousand Inhabitants"@en .
+
+ine:deathsPerThousandBirths a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones por mil nacidos"@es , "Deaths per Thousand Births"@en .
+
+ine:deathsPerThousandLiveBirths a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones por mil nacidos vivos"@es , "Deaths per thousand live births"@en .
+
+ine:birthsPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Nacidos por mil habitantes"@es , "Births per thousand inhabitants"@en .
+
+ine:mortages a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hipotecas"@es , "Mortgages"@en .
+
+ine:sulphuricAcid a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Ácido sulfúrico"@es , "Sulphuric acid"@en .
+
+ine:stages a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Etapas"@es , "Stages"@en .
+
+ine:tripsPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Viajes por cada mil habitantes"@es , "Trips per thousand inhabitants"@en .
+
+ine:womenPer100Men a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mujeres por cada 100 hombres"@es , "Women Per 100 Men"@en .
+
+ine:per100000inhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por 100.000 habitantes"@es , "Per 100,000 inhabitants"@en .
+
+ine:excursionsPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Excursiones por cada mil habitantes"@es , "Excursions per thousand inhabitants"@en .
+
+ine:books a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Libros"@es , "Books"@en .
+
+ine:libraries a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Bibliotecas"@es , "Libraries"@en .
+
+ine:visits a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Visitas"@es , "Visits"@en .
+
+ine:tourists a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "Persona que realiza un viaje turístico con al menos una pernoctación."@es ;
+  rdfs:label "Turistas"@es , "Tourists"@en .
+
+ine:subject a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Asunto"@es , "Subject"@en .
+
+ine:judgements a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Sentencias"@es , "Judgements"@en .
+
+ine:childbirths a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Partos"@es , "Childbirths"@en .
+
+ine:nullities a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Nulidades"@es , "NullitieS"@en .
+
+ine:separations a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Separaciones"@es , "Separations"@en .
+
+ine:divorces a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorcios"@es , "Divorces"@en .
+
+ine:maritalDissolutions a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Disoluciones matrimoniales"@es , "Marital dissolutions"@en .
+
+ine:numberOfCases a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Número de asuntos"@es , "Number of cases"@en .
+
+ine:itu a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "UTI"@es , "ITU"@en .
+
+ine:ituInTeu a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "UTI en TEU"@es , "Itu In Teu"@en .
+
+ine:trainKilometres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Trenes-Km"@es , "Train Kilometres"@en .
+
+ine:accidents a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Accidentes"@es , "Accidents"@en .
+
+ine:tonsKm1000 a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas-Km (1000)"@es , "Tons Km1000"@en .
+
+ine:travellersKm1000 a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Viajeros-Km (1000)"@es , "Travellers Km1000"@en .
+
+ine:divorcesPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorcios por mil habitantes"@es , "Divorces per thousand inhabitants"@en .
+
+ine:divorcedPerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorciados por mil habitantes"@es , "Divorced per thousand inhabitants"@en .
+
+ine:divorcesPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorcios por habitante"@es , "Divorces per inhabitant"@en .
+
+ine:divorcesPerMan a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorcios por hombre"@es , "Divorces per man"@en .
+
+ine:divorcesPerWoman a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Divorcios por mujer"@es , "Divorces per woman"@en .
+
+ine:porcentageOfGDP a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje sobre el PIB"@es , "Percentage of GDP"@en .
+
+ine:offences a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Infracciones"@es , "Offences"@en .
+
+ine:hoursDay a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Horas/dia"@es , "Hours/Day"@en .
+
+ine:yearsPerson a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Años-persona"@es , "Years-Person"@en .
+
+
+
+ine:households a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+  rdfs:comment "Grupo humano formado por una o varias personas que residen habitualmente en una vivienda familiar todo el año o la mayor parte del mismo, no teniendo por qué existir necesariamente vínculos familiares entre los miembros del grupo."@es ;
+  rdfs:label "Hogares"@es , "Households"@en .
+
+ine:cubicHectometers a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Hectómetros cúbicos"@es , "Cubic Hectometres"@en .
+
+ine:litresPerInhabitantPerDay a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:volumeLitreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Litros habitante y día"@es , "Litres Per Inhabitant Per Day"@en .
+
+ine:eurosPerCubicMetre a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros por metro cúbico"@es , "Euros Per Cubic Metre"@en .
+
+ine:full-timeJobEquivalent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Equivalencia jornada completa"@es , "Full-time job equivalent"@en .
+
+ine:kilogramsPerInhabitantPerYear a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramos/habitante/año"@es , "Kilograms per inhabitant per year"@en .
+
+ine:decrees a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Decretos"@es , "Decrees"@en .
+
+ine:madresFallecidasPerCada100000NacidosVivos a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Madres fallecidas por cada 100.000 nacidos vivos"@es , "Mothers who died per 100,000 live births"@en .
+
+ine:suicidesPer100KInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Suicidios por 100.000 habitantes"@es , "Suicides per 100,000 inhabitants"@en .
+
+ine:deathsPer100KInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Defunciones por cada 100.000 habitantes"@es , "Deaths per 100,000 inhabitants"@en .
+
+ine:percentageOfDailySmokers a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje fumadores diarios"@es , "Percentage of daily smokers"@en .
+
+ine:tonnessPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas por habitante"@es , "Tonnes Per Inhabitant"@en .
+
+ine:tonnesPerMillionEuros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas por millón de euros"@es , "Tonnes Per Million Euro amount"@en .
+
+ine:researchersPerMillionInhabitantsa a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Investigadores (EJC) por cada millón de habitantes"@es , "Researchers (EJC) per million inhabitants"@en .
+
+ine:per100k a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Tanto por 100.000"@es , "Per 100000"@en .
+
+ine:per100kInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf ine:per100k ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Por 100.000 habitantes"@es , "Per 100000 Inhabitants"@en .
+
+ine:accidentsPer100kWorkers a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Accidentes por cada cien mil trabajadores"@es , "Accidents Per100k Workers"@en .
+
+ine:constantDollars a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Dolares constantes de 2015"@es , "Constant dollars of 2015"@en .
+
+ine:admissions a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Admisiones"@es , "Admissions"@en .
+
+ine:km2-Ha a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Km2/Ha"@es , "Km2/Ha"@en .
+
+ine:deathsPerMillion a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Fallecidos por millón"@es , "Deaths per million"@en .
+
+
+ine:kgCo2EquivalenceEuros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kg CO2 equivalente/ Euros"@es , "Kg CO2 Equivalence/ Euro"@en .
+
+ine:tonnesCo2EquivalencePerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas CO2 equivalente per cápita"@es , "Tonnes Co2E quivalence Per Capita"@en .
+
+ine:kilogramPerInhabitantPerDay a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramo/habitante/día"@es , "Kilogram Per Inhabitant Per Day"@en .
+
+ine:tonnesPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas per cápita"@es , "Tonnes Per Capita"@en .
+
+ine:logic a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "LOGICA"@es , "Logic"@en .
+
+ine:tepM a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "tep/M€"@es , "Tep M"@en .
+
+ine:litresOfPureAlcoholConsumedPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:volumeLitreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Litros de alcohol puro consumido per cápita"@es , "Litres of pure alcohol consumed per capita"@en .
+
+ine:percentageOfMPs a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de diputadas"@es , "Percentage of MPs"@en .
+
+ine:percentageOfFemaleSenators a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de senadoras"@es , "Porcentaje Of female Senators "@en .
+
+ine:percentageOfFemaleCounselors a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de consejeras"@es , "Porcentaje Of Female Counselors"@en .
+
+ine:percentajeOfFemaleMayors a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de alcaldesas"@es , "Porcentaje Of Female Mayors"@en .
+
+ine:percentajeOfFemaleCouncillors a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Porcentaje de concejalas"@es , "Porcentaje Of Female Councillors"@en .
+
+ine:percentagePoints a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Puntos porcentuales"@es , "Percentage Points"@en .
+
+ine:licences a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Licencias"@es , "Licenses"@en .
+
+ine:organizations a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:string ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Organizaciones"@es , "Organizations"@en .
+
+ine:squareYears a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Años al cuadrado"@es , "Square Years"@en .
+
+ine:proportionality a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Proporción"@es , "Proportionality"@en .
+
+ine:punishment a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Penas"@es , "Punishment"@en .
+
+ine:per1000Inhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Por 1.000 habitantes"@es , "Per 1000 Inhabitants"@en .
+
+ine:researchersPerMillionInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Investigadores (en personas físicas) por cada millón de habitantes"@es , "Researchers (individuals) per million inhabitants"@en .
+
+ine:eurosPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros per cápita"@es , "Euro per capita"@en .
+
+ine:kilogramsPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilogramos per cápita"@es , "Kilograms Per Capita"@en .
+
+ine:EurosUSDRelation a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros en relación con dólares americanos"@es , "Euros in relation to US dollars"@en .
+
+ine:peopleAdmittedToTreatment a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Personas admitidas a tratamiento"@es , "People Admitted To Treatment"@en .
+
+ine:numeroOfTabless a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Número de tablas"@es , "Numero Of Tables"@en .
+
+ine:range a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Rango [0,1]"@es , "Range01"@en , "Rango [1,6]"@es , "Range16"@en ,"Rango [0,9]"@es , "Range09"@en , "Rango [0,5]"@es , "Range05"@en , "Rango [0,4]"@es , "Range04"@en ,  "Rango [0,10]"@es , "Range010"@en , "Rango [0,100]"@es , "Range0100"@en , "Rango [0,20]"@es , "Range020"@en , "Rango [0,3]"@es , "Range03"@en , "Rango [1,4]"@es , "Range14"@en .
+
+ine:numberOfSubscribersPer100Inhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Número de abonados por cada 100 habitantes"@es , "Number of subscribers per 100 inhabitants"@en .
+
+ine:kilotonnes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilotoneladas"@es , "Kilotonnes"@en .
+
+ine:microgramsPerCubicMetre a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Microgramos/metro cúbico"@es , "Micrograms Per Cubic Metre"@en .
+
+ine:thousandKilometresCuadrados a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Mil kilómetros cuadrados"@es , "Thousand Kilometres Cuadrados"@en .
+
+ine:phValue a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:indexRangeScaled ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Valor de pH"@es , "Ph Value"@en .
+
+ine:gramos-Euros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gramos/euros"@es , "Gramos/euros"@en .
+
+ine:dailyWage a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "€/jornal"@es , "Euro/Daily Wage"@en .
+
+ine:USD a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Dolares"@es , "Dolares"@en .
+
+ine:m0No1Yes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "0=NO, 1=SI"@es , "0=No, 1=Yes"@en .
+
+ine:tonnesCo2Equivalent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas CO2 equivalente"@es , "Tonnes Co2 Equivalent"@en .
+
+ine:deathsForEach100kInhabitants a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:ratePer100k ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Muertes por cada 100000 habitantes"@es , "Deaths For Each 100k Inhabitants"@en .
+
+ine:kilogramsPerThousandEuros-ChainedVolumes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kg por mil euros, volúmenes encadenados (2020)"@es , "Kilograms per thousand euros, chained volumes (2020)"@en .
+
+ine:full-timeEquivalentEmployment a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Empleo equivalente a tiempo completo"@es , "Full-time equivalent employment"@en .
+
+ine:gigajoulesPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Gigajulios por habitante"@es , "Gigajoules per capita"@en .
+
+ine:teraJoulesPerMillionEuros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Terajulios por millón de euros"@es , "Terajoules Per Million Euro"@en .
+
+ine:millionsOfEuros a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:currency ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Millones de euros"@es , "Millions Of Euros"@en .
+
+ine:ilotonnesOfOilEquivalent a rdf:Property, qb:MeasureProperty ;
+  rdfs:skubPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kilotoneladas equivalentes de petróleo"@es , "Kilotonnes of oil equivalent"@en .
+
+ine:eurosPerInhabitant a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:currency , ine:ratePerPopulation ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros por habitante"@es , "Euros Per Inhabitant"@en .
+
+ine:mtoe a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Millones de toneladas equivalentes de petróleo (Mtep)"@es , "Millions of tonnes of oil equivalent (Mtoe)"@en .
+
+ine:toe-capita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Toneladas equivalentes de petróleo por habitante (tep/hab)"@es , "Tonnes of oil equivalent per capita (toe/capita)"@en .
+
+ine:wattsPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Vatios per cápita"@es , "Watts Per Capita"@en .
+
+ine:megaJoulesPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:energyAmount ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Megajulios per cápita"@es , "Megajoules Per Capita"@en .
+
+ine:kgCo2EquivalentPerCapita a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massKilogramsBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Kg de CO2 equivalente per capita"@es , "Kg Co2Equivalent Per Capita"@en .
+
+ine:thousandOfPersons a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:integer ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Miles de personas"@es , "Thousand Of Persons"@en .
+
+ine:thousandsOfTonnesCo2Equivalent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Miles de Toneladas CO2 equivalente"@es , "Thousands Of Tonnes Co2 Equivalent"@en .
+
+ine:eurosPerMeasureOfConsumption a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros por unidad de consumo"@es , "Euros Per Measure of Consumption"@en .
+
+ine:eurosPerSquareMetre a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Euros/m2"@es , "Euros Per Square Metre"@en .
+
+ine:thousandsOfNetTonnes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Miles de toneladas netas"@es , "Thousands Of Net Tonnes"@en .
+
+ine:millionPassenger-Kilometres a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:lengthMetreBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Millones de viajeros-km"@es , "Million Passenger Kilometres"@en .
+
+ine:thousandsOfTonnes a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:decimal ;
+#  rdfs:comment "TODO" ;
+  rdfs:label "Miles de Toneladas"@es , "Thousands Of Tonnes"@en .
+

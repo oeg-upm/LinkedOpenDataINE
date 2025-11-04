@@ -1,0 +1,230 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix place: <http://purl.org/ontology/places>. 
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+@prefix ex-geo:   <http://example.org/geo#> .
+@prefix inelod:       <https://stats.linkeddata.es/voc/cubes/> .
+@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>.
+@prefix unit: <http://qudt.org/vocab/unit/>.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Measure Sets
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ine:MeasureSet a owl:Class ;
+    rdfs:label "Conjunto de Medidas"@es, "Set of Measurements"@en;
+    rdfs:comment "La clase OWL que representa a aquellas variables del INE que corresponden al conjunto de medidas de un conjunto de datos"@es.
+
+ine:inMeasureSet a rdf:Property ;
+    rdfs:label "In Measure Set"@en, "En el Conjunto de Medidas"@es ;
+    rdfs:comment "La propiedad que indica la pertenencia de una medida a un conjunto de medidas."@es ;
+    rdfs:domain qb:MeasureProperty ;
+    rdfs:range ine:MeasureSet .
+
+ine:unit
+    rdf:type ine:MeasureSet;
+    rdfs:label "Unit"@en , "Unidad"@es .
+
+ine:unitEmployed
+    rdf:type ine:MeasureSet ;
+    rdfs:label "Unit Employed"@en , "Unidad Ocupados"@es .
+
+ine:rate 
+    a ine:MeasureSet ;
+    rdfs:label "Tasas"@es, "Rates"@en;
+    rdfs:comment "Relación entre dos magnitudes"@es.
+
+ine:datatypeTourists
+    a ine:MeasureSet ;
+    rdfs:label "Tipo de dato Turistas"@es, "Datatype Tourists"@en;
+    rdfs:comment "Relación entre dos magnitudes"@es.
+
+ine:dataType
+    a ine:MeasureSet ;
+    rdfs:label "Tipo de dato"@es, "Datatype"@en;
+    rdfs:comment "Relación entre dos magnitudes"@es.
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Measures
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ine:numberOfIndividuals  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de individuos"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población."@es ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ine:numberOfPeople  a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Numero de personas"@es , "Personas"@es ;
+    rdfs:comment "Cada uno de los elementos que forman parte de la población de personas."@es ;
+    rdfs:subPropertyOf ine:numberOfIndividuals ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer.
+
+ine:unemploymentRate a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Tasas de Paro"@es, "Tasa de paro de la población"@es;
+    rdfs:comment "Es el cociente entre el número de parados y el de activos. Se calcula para ambos sexos y para cada uno de ellos por separado."@es;
+    ine:inMeasureSet ine:rate;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.
+
+ine:activityRate a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Tasa de actividad"@es;
+    rdfs:comment "La tasa de actividad se define como el cociente entre el total de activos y la población de 16 y más años."@es;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float;
+    ine:inMeasureSet ine:rate.
+
+ine:employmentRate a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Tasa de empleo de la población"@es;
+    rdfs:comment "Es el cociente entre el número de parados y el de activos. Se calcula para ambos sexos y para cada uno de ellos por separado."@es;
+    ine:inMeasureSet ine:rate;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.
+
+ine:grossDomesticProduct a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Producto Interior Bruto"@es;
+    rdfs:comment "El producto interior bruto (PIB) es un indicador económico que refleja el valor monetario de todos los bienes y servicios finales producidos por un territorio en un determinado periodo de tiempo."@es;
+    rdfs:subPropertyOf sdmx-measure:currency;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.
+
+ine:workstation a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Puestos de trabajo"@es;
+    rdfs:comment "Es un contrato explícito o implícito entre una persona (que puede ser residente en otro territorio económico) y una unidad institucional residente en el país, para realizar un trabajo a cambio de una remuneración durante un período definido o indefinido de tiempo."@es;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:String.
+
+ine:numberOfHours a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de horas"@es;
+    rdfs:comment "Número de horas en miles"@es;
+    rdfs:subPropertyOf sdmx-measure:refPeriod;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:overnightStays a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Pernoctaciones"@es;
+    rdfs:comment "Se entiende por pernoctación cada noche que un viajero se aloja en el establecimiento. Al igual que en la entrada de viajeros, las plazas ocupadas se desglosan según el lugar de residencia."@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue; 
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:int.
+
+ine:numberOfTravelers a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Viajero"@es;
+    rdfs:comment "Número de personas que viajan"@es;
+    rdfs:subPropertyOf ine:numberOfPeople; 
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:int.
+
+ine:hiredStaff a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Personal Empleado"@es;
+    rdfs:comment "Número de empleados"@es;
+    rdfs:subPropertyOf ine:numberOfPeople;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:ocupationDegreeRoom  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Grado de ocupación por habitaciones"@es;
+    rdfs:comment "Relación, en porcentaje, entre la media diaria de habitaciones ocupadas en el mes y el total de habitaciones disponibles."@es;
+    rdfs:subPropertyOf ine:rate; 
+    rdfs:domain qb:Observation;
+    rdfs:range unit:PERCENT.
+
+ine:ocupationDegreeBedplaces  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Grado de ocupación por plazas"@es;
+    rdfs:label "Grado de ocupación por plazas en fin de semana"@es;
+    rdfs:comment "Relación, en porcentaje, entre el total de las pernoctaciones y el producto de las plazas disponibles por los días a los que se refieren las pernoctaciones más las camas supletorias utilizadas."@es;
+    rdfs:subPropertyOf ine:rate;
+    rdfs:domain qb:Observation; 
+    rdfs:range unit:PERCENT.
+
+ine:numberOfBedplaces  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de plazas estimadas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:numberOfRooms  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de habitaciones estimadas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:numberOfEstablishments  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Número de estabclecimientos abiertos estimados"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:index  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Índice"@es;
+    rdfs:comment "Medida estadística que permite agregar una o más variables de distinta naturaleza para sintetizar la parte esencial de la información contenida en un fenómeno."@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:employedABSValue  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Valor absoluto"@es;
+    rdfs:comment "Los ocupados son todas aquellas personas de 16 años o más que, según los criterios OIT, durante la semana de referencia tuvieron un empleo por cuenta ajena, asalariado, o ejercieron una actividad por cuenta propia, trabajadores por cuenta propia. En relación a este empleo o actividad, pudieron haberse encontrado en la semana de referencia: - trabajando al menos una hora en el citado período a cambio de una remuneración, salario, beneficio empresarial o ganancia familiar, etc., o - ausentes del mismo pero con un fuerte vínculo con dicho empleo."@es;
+    ine:inMeasureSet ine:unitEmployed;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:employedPercentage  a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Porcentaje"@es;
+    rdfs:label "Distribución porcentual de los activos"@es;
+    rdfs:comment "Los ocupados son todas aquellas personas de 16 años o más que, según los criterios OIT, durante la semana de referencia tuvieron un empleo por cuenta ajena, asalariado, o ejercieron una actividad por cuenta propia, trabajadores por cuenta propia. En relación a este empleo o actividad, pudieron haberse encontrado en la semana de referencia: - trabajando al menos una hora en el citado período a cambio de una remuneración, salario, beneficio empresarial o ganancia familiar, etc., o - ausentes del mismo pero con un fuerte vínculo con dicho empleo."@es;
+    ine:inMeasureSet ine:unitEmployed;
+    rdfs:domain qb:Observation; 
+    rdfs:range unit:PERCENT.
+
+ine:averageStay a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Estancia media"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:float.
+
+ine:numberOfTouristsABSValue a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Dato base"@es, "Dato base Turistas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    ine:inMeasureSet ine:datatypeTourists;
+    rdfs:domain qb:Observation; 
+    rdfs:range xsd:int.
+
+ine:numberOfTouristsAnnualVarianceRate a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Tasa de variación anual"@es, "Tasa de variación anual Turistas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    ine:inMeasureSet ine:datatypeTourists;
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.
+
+ine:numberOfTouristsAccumulated a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Acumulado en lo que va de año"@es, "Acumulado en lo que va de año Turistas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    ine:inMeasureSet ine:datatypeTourists; 
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:int.
+
+ine:numberOfTouristsAccumulatedVarianceRate a rdf:Property , qb:MeasureProperty;
+    rdfs:label "Tasa de variación acumulada"@es, "Tasa de variación acumulada Turistas"@es;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    ine:inMeasureSet ine:datatypeTourists; 
+    rdfs:domain qb:Observation;
+    rdfs:range xsd:float.

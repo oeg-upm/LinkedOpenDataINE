@@ -1,0 +1,237 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inelod: <http://stats.linkeddata.es/voc/cubes/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inelod:anuario_estadístico_turismo_IECA_Observations a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rml:reference "Tipo de establecimiento turístico" ] ;
+            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#lodgingType> ],
+        [ rr:objectMap [ rml:reference "Medida" ] ;
+            rr:predicate qb:measureType ],
+        [ rr:object inelod:anuario_estadístico_turismo_IECA ;
+            rr:predicate qb:dataSet ],
+        [ rr:objectMap [ rml:reference "Total" ;
+                    rr:datatype xsd:float ] ;
+            rr:predicateMap [ rml:reference "Medida" ] ],
+        [ rr:objectMap [ rml:reference "Anual" ] ;
+            rr:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#baseYear> ] ;
+    rr:subjectMap [ rr:class qb:Observation ;
+            rr:template "https://stats.linkeddata.es/voc/cubes/anuario_estadístico_turismo_IECA/o{index}" ] .
+
+inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim2 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim1 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim3 ] ;
+            rr:predicate qb:component ] ;
+    rr:subjectMap [ rr:class qb:DataStructureDefinition ;
+            rr:constant inelod:anuario_estadístico_turismo_IECA_dsd ] .
+
+inelod:anuario_estadístico_turismo_IECA_TriplesMapDataset rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist3 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dct:source ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dcat:contactPoint ],
+        [ rr:object inelod:anuario_estadístico_turismo_IECA_dsd ;
+            rr:predicate qb:structure ],
+        [ rr:object <https://creativecommons.org/licenses/by/4.0/> ;
+            rr:predicate dct:license ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist6 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist5 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object "anuario_estadístico_turismo_IECA" ;
+            rr:predicate rdfs:label ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist4 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object dcat:Dataset ;
+            rr:predicate rdf:type ],
+        [ rr:object <http://publications.europa.eu/resource/authority/language/SPA> ;
+            rr:predicate dct:language ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist1 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:anuario_estadístico_turismo_IECA_dist2 ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object "urn:ine:es:TABLA:TPX:anuario_estadístico_turismo_IECA"@es ;
+            rr:predicate dct:identifier ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dct:publisher ] ;
+    rr:subjectMap [ rr:class qb:DataSet ;
+            rr:constant inelod:anuario_estadístico_turismo_IECA ] .
+
+inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim1 a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#lodgingType> ;
+            rr:predicate qb:dimension ],
+        [ rr:object 1 ;
+            rr:predicate qb:order ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim2 a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/voc/cubes/vocabulary#baseYear> ;
+            rr:predicate qb:dimension ],
+        [ rr:object 2 ;
+            rr:predicate qb:order ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_TriplesMapDSD_bndim3 a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object qb:measureType ;
+            rr:predicate qb:dimension ],
+        [ rr:object 3 ;
+            rr:predicate qb:order ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist1 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object "Html"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <http://www.iana.org/assignments/media-types/text/html> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object "Html"@en ;
+            rr:predicate dct:title ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+            rr:predicate dct:format ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist2 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object "PC-Axis"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object "PC-Axis"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/px/anuario_estadístico_turismo_IECA.px?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist3 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object "Excel: Extensión XLSX"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/xlsx/anuario_estadístico_turismo_IECA.xlsx?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+            rr:predicate dct:format ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object "Excel: XLSX extension"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist4 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object "Json"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+            rr:predicate dct:format ],
+        [ rr:object "Json"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object <http://www.iana.org/assignments/media-types/application/json> ;
+            rr:predicate dcat:mediaType ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist5 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <http://www.iana.org/assignments/media-types/text/csv> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object "CSV: Tab Separated"@en ;
+            rr:predicate dct:title ],
+        [ rr:object "CSV: separado por tabuladores"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/csv_bd/anuario_estadístico_turismo_IECA.csv?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+            rr:predicate dct:format ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+
+inelod:anuario_estadístico_turismo_IECA_dist6 rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\anuario_estadístico_turismo_IECA.csv" ] ;
+    rr:predicateObjectMap [ rr:object <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+            rr:predicate dct:format ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=anuario_estadístico_turismo_IECA> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object <http://www.iana.org/assignments/media-types/text/csv> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object "CSV: separado por ;"@es ;
+            rr:predicate dct:title ],
+        [ rr:object "CSV: Separated by ;"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/anuario_estadístico_turismo_IECA.csv?nocab=1> ;
+            rr:predicate dcat:downloadURL ] ;
+    rr:subjectMap [ rr:constant [ ] ;
+            rr:termType rr:BlankNode ] .
+

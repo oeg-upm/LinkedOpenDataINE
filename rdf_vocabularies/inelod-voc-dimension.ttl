@@ -18,7 +18,7 @@
 
 # Ontology declaration and metadata. 
 
-ine: a owl:Ontology ;
+ine:dimensions a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:creator "Diego Conde-Herreros";
     dcterms:contributor "Diego Conde-Herreros";
@@ -28,9 +28,9 @@ ine: a owl:Ontology ;
     vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
     owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
     owl:versionInfo "1.0.0"@en;
-    dcterms:description "An ontology for describing the variables used in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
-                        "Una ontologia para describir las variables empleadas en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
-    dcterms:title "INELOD VOC" .
+    dcterms:description "An ontology for describing the variables  used as dimensions in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
+                        "Una ontologia para describir las variables empleadas como dimensiones en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
+    dcterms:title "INELOD VOC DIMENSION" .
 
 # Reused Ontology terms from other vocabularies.
 
@@ -59,15 +59,6 @@ ine:territorialTotals
     rdfs:label "Territorial totals"@en ,
     "Totales Territoriales"@es ,
     "NAC"@es .
-
-
-ine:total
-    rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
-    rdfs:label "Total"@en ,
-    "Total"@es .
-
 
 ine:ccaa
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -477,8 +468,7 @@ ine:baseYear
     rdfs:domain qb:Observation ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf sdmx-dimension:refPeriod ;
-    rdfs:label "Base year"@en ,
-    "Año Base"@es .
+    rdfs:label "Base year"@en , "Año Base"@es, "Anual"@es .
 
 ine:expenditureSubgroups3Digits
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -5159,8 +5149,7 @@ ine:lodgingType
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:label "Accommodation type"@en ,
-    "Tipo de alojamiento"@es .
+    rdfs:label "Accommodation type"@en , "Tipo de alojamiento"@es, "Tipo de establecimiento turístico"@es .
 
 
 ine:cohorts
