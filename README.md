@@ -21,9 +21,9 @@ Los pasos a seguir para la generación semiautomática de de los cubos de datos 
 
 0. Crear un entorno virtual (Recomendado).
 1. Instalar Python.
-2. Ejecutar el script cube_semiauto_generation.py con la ruta del cubo a generar en formato csv. 
+2. Ejecutar el script cube_semiauto_generation.py con la ruta del cubo a generar en formato csv. Si se desea añadir los metadatos de la tabla del ine se debe incluir el flag "INE-metadata". 
 ````
-python .\cube_semiauto_generation.py ../datasets/capitulo_66615.csv
+python .\cube_semiauto_generation.py ../datasets/capitulo_66615.csv --INE-metadata
 
 ````  
 

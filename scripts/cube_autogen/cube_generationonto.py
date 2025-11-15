@@ -5,7 +5,7 @@ import sys
 import morph_kgc
 import time
 import subprocess
-
+import argparse
 import rdflib
 
 # Base directory (absolute) of this script so relative resources can be resolved anywhere
@@ -652,6 +652,13 @@ def add_mappings_from_csv(file_path):
 
 
 # Main execution of the python script
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--INE-metadata", 
+    action="store_true",
+    help="Add the INE metadata (by default no metadata would be added)"
+)
+args = parser.parse_args()
 if len(sys.argv) < 2:
     print("Usage: python cube_semiauto_generation_auto_onto.py <csv-file-path> [measurement]")
     sys.exit(1)
@@ -662,8 +669,9 @@ csv_file_path = os.path.abspath(sys.argv[1])
 # Add template metadata to the data graph
 start_time = time.time()
 #add_template_metadata(csv_file_path)
-add_INE_metadata(csv_file_path)
-print(f"Template metadata added in {time.time() - start_time:.2f} seconds")
+if args.INE_metadata:
+    add_INE_metadata(csv_file_path)
+    print(f"Template metadata added in {time.time() - start_time:.2f} seconds")
 
 # Add index column to the CSV file
 start_time = time.time()
