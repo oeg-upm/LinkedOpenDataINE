@@ -4654,3 +4654,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/3/0931> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> .
 <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/4/02134> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> .
 <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16/3/1113> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://purl.org/dc/terms/title> "Clasificación de bienes y servicios. COICOP 2016."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de bienes y servicios. COICOP 2016."@es .

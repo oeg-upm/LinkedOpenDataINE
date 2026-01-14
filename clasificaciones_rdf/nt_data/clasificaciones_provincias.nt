@@ -265,3 +265,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/1/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> .
 <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/1/37> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> .
 <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS/1/22> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provincias"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://purl.org/dc/terms/title> "Provincias"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

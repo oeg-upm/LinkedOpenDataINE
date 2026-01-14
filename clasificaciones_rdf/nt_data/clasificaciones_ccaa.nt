@@ -100,3 +100,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
 <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://purl.org/dc/terms/title> "Comunidades Autónomas"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunidades Autónomas"@es .

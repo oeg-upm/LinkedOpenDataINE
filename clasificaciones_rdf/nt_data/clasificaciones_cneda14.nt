@@ -324,3 +324,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14/2/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14/3/CL> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14/2/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://purl.org/dc/terms/title> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es .

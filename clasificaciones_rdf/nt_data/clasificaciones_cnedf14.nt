@@ -1262,3 +1262,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14/2/000> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14/3/0300> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14/3/0700> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://purl.org/dc/terms/title> "Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es .

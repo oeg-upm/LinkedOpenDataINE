@@ -397,3 +397,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11/3/560> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> .
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11/3/454> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> .
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11/2/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es .

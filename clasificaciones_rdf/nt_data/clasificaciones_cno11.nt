@@ -5486,3 +5486,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11/3/50> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> .
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11/4/511> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> .
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11/5/2622> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://purl.org/dc/terms/title> "Clasificación Nacional de Ocupaciones. CNO 2011."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones. CNO 2011."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

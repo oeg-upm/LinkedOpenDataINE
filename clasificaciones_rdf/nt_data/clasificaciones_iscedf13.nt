@@ -1313,3 +1313,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13/2/050> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> .
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13/1/05> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> .
 <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13/3/0841> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2013"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2013"@es .

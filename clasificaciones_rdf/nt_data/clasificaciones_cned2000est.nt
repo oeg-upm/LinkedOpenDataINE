@@ -278,3 +278,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/1/E> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/2/52> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/2/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

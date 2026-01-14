@@ -5929,3 +5929,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11/5/3002> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> .
 <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11/5/5020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> .
 <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11/4/334> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://purl.org/dc/terms/title> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es .

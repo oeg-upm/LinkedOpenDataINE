@@ -5544,3 +5544,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94/5/8121> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> .
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94/4/752> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> .
 <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94/1/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://purl.org/dc/terms/title> "Clasificación Nacional de Ocupaciones. CNO 1994."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones. CNO 1994."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

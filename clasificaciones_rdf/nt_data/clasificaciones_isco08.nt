@@ -3718,3 +3718,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/4/3221> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> .
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/4/1213> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> .
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/4/7132> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://purl.org/dc/terms/title> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .

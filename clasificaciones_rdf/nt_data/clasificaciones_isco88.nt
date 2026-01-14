@@ -3268,3 +3268,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/4/3419> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesionales de nivel medio en operaciones y comerciales, no clasificados bajo otros epígrafes"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/2/92> <http://www.w3.org/2004/02/skos/core#prefLabel> "Peones agropecuarios, forestales, pesqueros y afines"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08/4/7416> <http://www.w3.org/2004/02/skos/core#prefLabel> "Preparadores y elaboradores de tabaco y sus productos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://purl.org/dc/terms/title> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .

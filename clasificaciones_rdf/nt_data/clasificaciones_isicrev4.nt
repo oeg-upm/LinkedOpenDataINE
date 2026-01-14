@@ -5730,3 +5730,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/1/T> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> .
 <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/4/9512> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> .
 <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/3/662> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://purl.org/dc/terms/title> "Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es .

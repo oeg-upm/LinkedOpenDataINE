@@ -818,3 +818,6 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC/2/31> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC/1/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC/3/525> <http://www.w3.org/2004/02/skos/core#inScheme> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
