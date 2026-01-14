@@ -1,0 +1,90 @@
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21> <http://purl.org/dc/terms/title> "Clasificación de Productos por Actividades. CPA 2.1."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://purl.org/dc/terms/title> "Clasificación Nacional de Ocupaciones. CNO 2011."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020> <http://purl.org/dc/terms/title> "Nomenclatura Combinada 2020"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2023> <http://purl.org/dc/terms/title> "Nomenclatura Combinada 2023"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09> <http://purl.org/dc/terms/title> "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev 2"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://purl.org/dc/terms/title> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://purl.org/dc/terms/title> "Clasificación de bienes y servicios. COICOP 2016."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2002> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Productos por Actividades. CPA 2002."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21ENG> <http://purl.org/dc/terms/title> "Classification of Products by Activities. CPA 2.1."@en .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://purl.org/dc/terms/title> "Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://purl.org/dc/terms/title> "Clasificación Nacional de Ocupaciones. CNO 1994."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada 2020"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provincias"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2008> <http://purl.org/dc/terms/title> "Clasificación de Productos por Actividades. CPA 2008."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones. CNO 1994."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO88> <http://purl.org/dc/terms/title> "Clasificación Internacional Uniforme de Ocupaciones, 1988"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://purl.org/dc/terms/title> "Comunidades Autónomas"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada 2010"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDP14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas y titulaciones en sectores de estudio (CNED-P), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2002> <http://purl.org/dc/terms/title> "Clasificación de Productos por Actividades. CPA 2002."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas. CNAE 2025"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO88> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones, 1988"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2013"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunidades Autónomas"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDA11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDP14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://purl.org/dc/terms/title> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpc/CPC21> <http://purl.org/dc/terms/title> "Clasificación Central de Productos (CPC) Versión 2.1"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://purl.org/dc/terms/title> "Provincias"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2008> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Productos por Actividades. CPA 2008."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21ENG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpc/CPC21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Productos por Actividades. CPA 2.1."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://purl.org/dc/terms/title> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA2002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones. CNO 2011."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDF13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2013"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cpc/CPC21> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Central de Productos (CPC) Versión 2.1"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isced/ISCEDP11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2010> <http://purl.org/dc/terms/title> "Nomenclatura Combinada 2010"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE93> <http://purl.org/dc/terms/title> "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDP14> <http://purl.org/dc/terms/title> "Clasificación de programas y titulaciones en sectores de estudio (CNED-P), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDA14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/coicop/COICOP16> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de bienes y servicios. COICOP 2016."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cn/CN2023> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada 2023"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cpa/CPA21ENG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Classification of Products by Activities. CPA 2.1."@en .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNEDF14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025> <http://purl.org/dc/terms/title> "Clasificación Nacional de Actividades Económicas. CNAE 2025"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4> <http://purl.org/dc/terms/title> "Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/isco/ISCO08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cno/CNO94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://stats.linkeddata.es/voc/clasificaciones/nace/NACEREV2> <http://purl.org/dc/terms/title> "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev 2"@es .

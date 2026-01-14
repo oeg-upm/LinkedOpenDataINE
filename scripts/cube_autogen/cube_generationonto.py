@@ -323,25 +323,29 @@ def add_POM_from_csv(file_path):
             # Dimension columns
             # First we check if the column is in the vocabulary of the dimensions.
             ask_dim = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                    f' ASK {{ ?s rdfs:label "{column}"@es .}}'
+                    f' ASK {{     ?s rdfs:label ?label .'\
+                    f'              FILTER (STR(?label) = "{column}")}}'
             #print(ask_dim)
             res_dim = dimensions.query(ask_dim)
             ask_measure = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                          f'                                    PREFIX qb: <http://purl.org/linked-data/cube#>' \
+                          f' PREFIX qb: <http://purl.org/linked-data/cube#>' \
                           f' ASK {{ ?s a qb:MeasureProperty ;' \
-                          f'            rdfs:label "{column}"@es .}}'
+                          f'           rdfs:label ?label .'\
+                          f'    FILTER (STR(?label) = "{column}")}}'
             res_measure = measures.query(ask_measure)
             ask_measure_set = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
                     f'            PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>' \
                     f' ASK {{ ?s a ine:MeasureSet ;' \
-                    f'   rdfs:label "{column}"@es .}}'
+                    f'                rdfs:label ?label .'\
+                    f'    FILTER (STR(?label) = "{column}")}}'
             #print(ask_measure_set)
             res_measure_set = measures.query(ask_measure_set)
             #Case where the column is a dimension.
             print("Dimension:", res_dim.askAnswer, "Measure:", res_measure.askAnswer, "MeasureSet:", res_measure_set.askAnswer)
             if res_dim.askAnswer and not res_measure.askAnswer and not res_measure_set.askAnswer:
                 select_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                                f' SELECT ?s WHERE {{ ?s rdfs:label "{column}"@es .}}'
+                                f' SELECT ?s WHERE {{ ?s rdfs:label ?label .'\
+                                    f'    FILTER (STR(?label) = "{column}")}}'
                 for result in dimensions.query(select_query):
                     dim = result["s"]
                 print(f"Processing column: {column} as dimension with URI: {dim}")
@@ -382,7 +386,8 @@ def add_POM_from_csv(file_path):
             if not res_dim.askAnswer and res_measure.askAnswer and not res_measure_set.askAnswer:
                 contains_measure = True
                 select_query = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                               f' SELECT ?s WHERE {{ ?s rdfs:label "{column}"@es .}}'
+                               f' SELECT ?s WHERE {{ ?s rdfs:label ?label'\
+                               f'    FILTER (STR(?label) = "{column}")}}'
                 for result in measures.query(select_query):
                     rdf_measure = result["s"]
                 print(f"Processing column: {column}")
@@ -467,7 +472,8 @@ def add_POM_from_csv(file_path):
                                   f' PREFIX ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>' \
                                     f' SELECT ?measure WHERE {{ ' \
                                     f'?measureSet a ine:MeasureSet ;' \
-                                    f'              rdfs:label "{column}"@es . ' \
+                                    f'              rdfs:label ?label . ' \
+                                    f'    FILTER (STR(?label) = "{column}") . ' \
                                     f'?measure ine:inMeasureSet ?measureSet .}}'
                 for result in measures.query(query_measu_set):
                         rdf_measure = result["measure"]
@@ -611,7 +617,8 @@ def detect_and_replace_measures(file_path):
                             measure_replace_query = (
                                 ' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>'
                                 ' PREFIX qb: <http://purl.org/linked-data/cube#>'
-                                f' SELECT ?measure WHERE {{ ?measure a qb:MeasureProperty ; rdfs:label "{cell_value}"@es . }}'
+                                f' SELECT ?measure WHERE {{ ?measure a qb:MeasureProperty ; rdfs:label ?label . '\
+                                f'    FILTER (STR(?label) = "{cell_value}")}}'
                             )
                             for result in medidas.query(measure_replace_query):
                                 rdf_measure = result["measure"]
@@ -652,7 +659,22 @@ def add_mappings_from_csv(file_path):
 
 
 # Main execution of the python script
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+    description="Generate RDF data cube from CSV file with optional INE metadata"
+)
+# 1. REQUIRED positional argument → input CSV
+parser.add_argument(
+        "input_csv",
+        type=str,
+        help="Path to the input CSV file"
+)
+# 2. OPTIONAL string argument (not required)
+parser.add_argument(
+        "--Medida",
+        type=str,
+        required=False,
+        help="Optional string parameter"
+)
 parser.add_argument(
     "--INE-metadata", 
     action="store_true",
