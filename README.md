@@ -27,5 +27,24 @@ python .\cube_semiauto_generation.py ../datasets/capitulo_66615.csv  --Medida "P
 
 ````  
 
+## INE API (AutoGenAPI)
+El script `autogenAPI/cube_autogenAPI` genera mappings y cubos de datos a partir de la API del INE. Los argumentos son los siguientes:
+
+| Argumento | Alias | Por defecto | Descripción |
+| :--- | :--- | :--- | :--- |
+| `INE_API_URL` | - | Requerido | URL de la API del INE para la obtención de datos. |
+| `--output_mappings_folder` | - | `mappings/` | Carpeta de destino para los mapeos generados. |
+| `--output_folder` | - | `output/` | Carpeta de destino para el cubo de datos final. |
+| `--measure_ontology_file` | - | `../rdf_vocabularies/inelod-voc-measure.ttl` | Ruta al archivo de ontología de medidas. |
+| `--dimension_ontology_file` | - | `../rdf_vocabularies/inelod-voc-dimension.ttl` | Ruta al archivo de ontología de dimensiones. |
+| `--bigcube` | `-b` | False | Flag para habilitar la generación de cubos grandes desde DATOS_TABLA. |
+| `--materialize` | `-m` | False | Flag para materializar datos tras los mapeos (no compatible con --bigcube). |
+
+Un ejemplo de uso es el siguiente:
+`python autogenAPI/cube_autogenAPI.py --output_mappings_folder . --output_folder . --measure_ontology_file rdf_vocabularies/inelod-voc-measure.ttl --dimension_ontology_file rdf_vocabularies/inelod-voc-dimension.ttl -m "https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/50954?tip=A nult=2"`
+Se generara la carpeta en `/autogenAPI/50954` que contendrá tanto el mapping como la materialización en N-Triples y Turtle.
+
+
 #   Autor
 - Diego Conde Herreros (OEG-UPM) - main contact  diego.conde.herreros at upm.es
+- Isaac Noya Vázquez (OEG-UPM) - main contact  isaac.noya at upm.es (AutoGenAPI)

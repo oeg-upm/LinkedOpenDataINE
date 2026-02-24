@@ -85,14 +85,14 @@ def main():
     parser.add_argument(
         "--measure_ontology_file", 
         type=str,
-        default="autogen/rdf_vocabularies/inelod-voc-measure.ttl",
+        default="../rdf_vocabularies/inelod-voc-measure.ttl",
         help="Path to the measure ontology file."
     )
     # dimension ontology file
     parser.add_argument(
         "--dimension_ontology_file", 
         type=str,
-        default="autogen/rdf_vocabularies/inelod-voc-dimension.ttl",
+        default="../rdf_vocabularies/inelod-voc-dimension.ttl",
         help="Path to the dimension ontology file."
     )
     parser.add_argument(
