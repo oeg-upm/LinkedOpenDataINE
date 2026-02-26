@@ -8,4 +8,5 @@ data_cubes_rdf/servicios/data/
 data_cubes_rdf/turismo/data/
 INE_SQL_QUERIES.sql
 datos_eurostat/
+autogenAPI/src/__pycache__/
 SHACL_Validator/
