@@ -14,6 +14,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code:    <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix unit: <http://qudt.org/vocab/unit/>.
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 
@@ -41,12 +42,12 @@ ine:measures a owl:Ontology ;
 
 qb:Observation a rdfs:Class .
 qb:MeasureProperty a rdfs:Class .
-qb:DimensionProperty a rdfs:Class .
-sdmx-measure:obsValue a qb:MeasureProperty, rdf:Property .
-sdmx-dim:refPeriod a qb:DimensionProperty, rdf:Property .
-sdmx-measure:refPeriod a qb:DimensionProperty, rdf:Property .
-sdmx-measure:currency a qb:MeasureProperty, rdf:Property  .
-sdmx-dim:refArea a qb:DimensionProperty, rdf:Property .
+sdmx-measure:obsValue a qb:MeasureProperty, rdf:Property ;
+    rdfs:label "Observation"@en ;
+    rdfs:range rdfs:Resource .
+sdmx-measure:currency a qb:MeasureProperty, rdf:Property  ;
+    rdfs:label "Currency"@en ;
+    rdfs:range sdmx-code:Currency .
 unit:PERCENT a owl:Class . 
 ############################################################################
 # MEASURE SETS
@@ -241,7 +242,7 @@ ine:overnightStays a rdf:Property , qb:MeasureProperty;
 ine:numberOfHours a rdf:Property , qb:MeasureProperty;
     rdfs:label "Número de horas"@es;
     rdfs:comment "Número de horas en miles"@es;
-    rdfs:subPropertyOf sdmx-measure:refPeriod;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
     rdfs:domain qb:Observation; 
     rdfs:range xsd:int.
 
@@ -249,7 +250,7 @@ ine:workstation a rdf:Property , qb:MeasureProperty;
     rdfs:label "Puestos de trabajo"@es;
     rdfs:comment "Es un contrato explícito o implícito entre una persona (que puede ser residente en otro territorio económico) y una unidad institucional residente en el país, para realizar un trabajo a cambio de una remuneración durante un período definido o indefinido de tiempo."@es;
     rdfs:domain qb:Observation;
-    rdfs:range xsd:String.
+    rdfs:range xsd:string.
 
 ine:grossDomesticProduct a rdf:Property, qb:MeasureProperty;
     rdfs:label "Producto Interior Bruto"@es;
@@ -413,42 +414,42 @@ ine:pairs a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Pares"@es , "Pairs"@en .
 
 ine:minutes a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Minutos"@es , "Minutes"@en .
 
 ine:hours a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Horas"@es , "Hours"@en .
 
 ine:days a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Días"@es , "Days"@en .
 
 ine:squareMetres a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Metros cuadrados"@es , "Square Metres"@en .
 
 ine:squareKilometres a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Kilómetros cuadrados"@es , "Square Kilometres"@en .
 
 ine:hectares a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refArea ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -469,7 +470,7 @@ ine:litres a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Litros"@es , "Litres"@en .
 
 ine:horasTrabajadorMes a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -504,7 +505,7 @@ ine:companies a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Empresas"@es , "Companies"@en .
 
 ine:years a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -553,7 +554,7 @@ ine:deathsOfLessThan1YearsPer1000Born a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Defunciones de menores de 1 año por 1.000 nacidos"@es , "Deaths of children under 1 year of age per 1,000 births"@en .
 
 ine:deathsDuringFirst24HoursOfLife a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -936,7 +937,7 @@ ine:usdEur a rdf:Property, qb:MeasureProperty ;
   rdfs:label "USD/EUR"@es , "USD/EUR"@en .
 
 ine:hours_workerByweek a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -1421,14 +1422,14 @@ ine:offences a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Infracciones"@es , "Offences"@en .
 
 ine:hoursDay a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Horas/dia"@es , "Hours/Day"@en .
 
 ine:yearsPerson a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -1690,7 +1691,7 @@ ine:organizations a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Organizaciones"@es , "Organizations"@en .
 
 ine:squareYears a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
@@ -1739,7 +1740,7 @@ ine:kilogramsPerCapita a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Kilogramos per cápita"@es , "Kilograms Per Capita"@en .
 
 ine:EurosUSDRelation a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , sdmx-dim:refPeriod ;
+  rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;

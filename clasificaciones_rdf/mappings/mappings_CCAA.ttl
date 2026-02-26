@@ -35,6 +35,11 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
     rr:object  <http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA>;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate skos:member;
+        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}"];
     ].
 
 # These are the mappings corresponding to the dataset metadata
@@ -96,3 +101,4 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
         rr:predicate skos:member;
         rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}"]
     ].    
+
