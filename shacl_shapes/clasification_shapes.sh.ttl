@@ -1,0 +1,343 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos:  <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix :      <http://example.org/shapes/xkos/> .
+
+#################################################################
+# 0. Declaración de prefijos
+#################################################################
+
+:CommonPrefixes 
+    a sh:PrefixDeclaration ;
+    sh:declare [
+        sh:prefix "skos" ;
+        sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI;
+    ];
+    sh:declare [
+        sh:prefix "xkos";
+        sh:namespace "http://rdf-vocabulary.ddialliance.org/xkos#"^^xsd:anyURI;
+    ].
+
+
+#################################################################
+# 1.Esquema de la clasificación (Modelado conforme a SKOS y XKOS)
+#################################################################
+
+:ClassificationSchemeShape
+    a sh:NodeShape ;
+    # Todos los conceptos deben de perteneecer a un esquema. 
+    sh:targetObjectsOf skos:inScheme ;
+
+    # Debe  ser del tipo skos:ConceptScheme
+    sh:property [
+        sh:path rdf:type ;
+        sh:hasValue skos:ConceptScheme ;
+        sh:severity sh:Violation ;
+        sh:message "Los recursos empleados en skos:inScheme DEBEN ser del tipo skos:ConceptScheme." ;
+    ] ;
+
+    # El esquema debe de tener una etiqueta que describa los metadatos presentes.
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "El esquema de la clasificación DEBE tener por lo menos un skos:prefLabel (con una etiqueta de idioma)." ;
+    ] ;
+    sh:property [
+        sh:path dct:title ;
+        sh:datatype rdf:langString ;
+        sh:maxCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Se RECOMIENDA tener un único dct:title para identificar al esquema de clasificación." ;
+    ] ;
+
+    # Metadatos específicos de XKOS.
+    sh:property [
+        sh:path xkos:numberOfLevels ;
+        sh:datatype xsd:positiveInteger ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "XKOS RECOMIENDA xkos:numberOfLevels para el esquema de la clasificación." ;
+    ] ;
+
+    # List of classification levels (xkos:levels points to an rdf:List)
+    sh:property [
+        sh:path xkos:levels ;
+        sh:class rdf:List ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "XKOS RECOMIENDA utilizar xkos:levels con una rdf:List de instancias de xkos:ClassificationLevel." ;
+    ] .
+
+#################################################################
+# 2. Elementos de la clasificación (Conceptos del SKOS del esquema)
+#################################################################
+
+:ClassificationItemShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+
+    # Debe pertenecer a un esquema de la clasificación. 
+    sh:property [
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:class skos:ConceptScheme ;
+        sh:severity sh:Violation ;
+        sh:message "Cada elemento de la clasificación DEBE tener skos:inScheme apuntando a un skos:ConceptScheme." ;
+    ] ;
+
+    # Etiquetas preferidas.
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Cada elemento de la clasificación DEBE tener Por lo menos un skos:prefLabel (con etiqueta de idioma)." ;
+    ] ;
+
+    # Notacion (codigo de cada elemento de la clasificación)
+    sh:property [
+        sh:path skos:notation ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Cada elemento de la clasificación DEBE de tener un código skos:notation." ;
+    ] ;
+
+    # Relaciones jerárquicas de SKOS: si las hay estas tienen que enlazar a otros conceptos. 
+    sh:property [
+        sh:path skos:broader ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "skos:broader DEBE apuntar a un skos:Concept." ;
+    ] ;
+    sh:property [
+        sh:path skos:narrower ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "skos:narrower DEBE apuntar a un skos:Concept." ;
+    ] ;
+
+    # Relaciones jerárquicas de XKOS: el rango debe ser skos:Concept
+    sh:property [
+        sh:path xkos:isPartOf ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:isPartOf DEBE apuntar a un skos:Concept." ;
+    ] ;
+    sh:property [
+        sh:path xkos:hasPart ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:hasPart DEBE apuntar a un skos:Concept." ;
+    ] ;
+    sh:property [
+        sh:path xkos:specializes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:specializes DEBE apuntar a un skos:Concept." ;
+    ] ;
+    sh:property [
+        sh:path xkos:generalizes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:generalizes DEBE apuntar a un skos:Concept." ;
+    ] ;
+
+    # Regla de integridad de SKOS — como máximo una etiqueta prefLabel por idioma.
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Un skos:Concept NO DEBE tener más de un skos:prefLabel por idioma." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?lang (COUNT(?label) AS ?count)
+            WHERE {
+              $this skos:prefLabel ?label .
+              BIND(LANG(?label) AS ?lang)
+              FILTER(?lang != "")
+            }
+            GROUP BY $this ?lang
+            HAVING (COUNT(?label) > 1)
+        """ ;
+    ] .
+
+#################################################################
+# 2b. Restricciones adicionales para la jerarquía de conceptos
+#################################################################
+
+:ConceptHierarchyConstraintsShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+
+    # 2b.1 Jerarquía de broader acíclica (no llega al mismo concepto la cadena de skos:broader)
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "La jerarquía skos:broader DEBE ser acíclica (no llega al mismo concepto la cadena de skos:broader)." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this skos:broader+ $this .
+            }
+        """ ;
+    ] ;
+
+    # 2b.2 Los conceptos superiores no deben tener relaciones de skos:broader. 
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Un concepto skos:topConceptOf NO DEBE tener ningún skos:broader." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this skos:topConceptOf ?scheme .
+              $this skos:broader ?broader .
+            }
+        """ ;
+    ] ;
+
+    # 2b.3 Si el concepto no tiene un skos:broader en la clasificación, DEBERÍA ser declarado como  topConceptOf de ese esquema.
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Un concepto sin un skos:broader en la clasificación, DEBERÍA ser declarado como  topConceptOf de ese esquema" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this skos:inScheme ?scheme .
+              FILTER NOT EXISTS { $this skos:broader ?b . }
+              FILTER NOT EXISTS { $this skos:topConceptOf ?scheme . }
+            }
+        """ ;
+    ] ;
+
+    # 2b.4 Si un concepto es skos:topConceptOf de una clasificación, DEBE tener skos:inScheme que apunte a ese esquema.
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+
+        sh:message "Si un concepto es skos:topConceptOf de una clasificación, DEBE tener skos:inScheme que apunte a ese esquema." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this skos:topConceptOf ?scheme .
+              FILTER NOT EXISTS { $this skos:inScheme ?scheme . }
+            }
+        """ ;
+    ] .
+
+#################################################################
+# 3. Classification levels (xkos:ClassificationLevel)
+#################################################################
+
+:ClassificationLevelShape
+    a sh:NodeShape ;
+    sh:targetClass xkos:ClassificationLevel ;
+
+    # xkos:depth es obligatorio y debe ser un entero positivo. 
+    sh:property [
+        sh:path xkos:depth ;
+        sh:datatype xsd:positiveInteger ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:ClassificationLevel DEBE tener exactamente un xkos:depth y debe ser un valor entero positivo." ;
+    ] ;
+
+    # Patrón opcional para las notaciones del nivel.
+    sh:property [
+        sh:path xkos:notationPattern ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Si lo hay, xkos:notationPattern DEBERÍA ser una cadena de caracteres (regex) que describe el patrónn del código." ;
+    ] ;
+
+    # Etiquetas par los niveles (e.g. 'Section', 'Division', 'Group', etc.)
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Un nivel de clasificación DEBERÍA tener un skos:prefLabel que describa el nombre del nivel." ;
+    ] ;
+
+    # Miembros de level: classification
+    sh:property [
+        sh:path skos:member ;
+        sh:minCount 1 ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:ClassificationLevel DEBERÍA usar skos:member para apuntar a los elementos de la clasificación (skos:Concept) a ese nivel." ;
+    ] ;
+
+    #################################################################
+    # 3b. Restricciones adicionales de nivel
+    #################################################################
+
+    # 3b.1 If a level declares xkos:notationPattern, all its members' skos:notation MUST match it
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Todos los conceptos skos:member de un xkos:ClassificationLevel DEBEN tener un skos:notation que sea conforme al xkos:notationPattern." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?member ?notation ?pattern
+            WHERE {
+              $this xkos:notationPattern ?pattern .
+              $this skos:member ?member .
+              ?member skos:notation ?notation .
+              FILTER ( !regex(str(?notation), str(?pattern)) )
+            }
+        """ ;
+    ] .
+
+#################################################################
+# 4. Notas de explicación (XKOS ExplanatoryNote & subproperties)
+#################################################################
+
+:ExplanatoryNoteShape
+    a sh:NodeShape ;
+    sh:targetClass xkos:ExplanatoryNote ;
+
+    sh:property [
+        sh:path xkos:plainText ;
+        sh:datatype rdf:PlainLiteral ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "xkos:ExplanatoryNote DEBE tener por lo menos un literal xkos:plainText." ;
+    ] .
+
+# Notas sobre las propiedades de anotación de los conceptos.
+:ConceptExplanatoryNotesShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+
+    sh:property [
+        sh:path xkos:inclusionNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Warning ;
+        sh:message "xkos:inclusionNote DEBERÍA ser un literal (generalmente  con una etiqueta de idioma)." ;
+    ] ;
+    sh:property [
+        sh:path xkos:exclusionNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Warning ;
+        sh:message "xkos:exclusionNote DEBERÍA ser un literal (generalmente  con una etiqueta de idioma)." ;
+    ] ;
+    sh:property [
+        sh:path xkos:coreContentNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Warning ;
+        sh:message "xkos:coreContentNote DEBERÍA ser un literal (generalmente  con una etiqueta de idioma)." ;
+    ] ;
+    sh:property [
+        sh:path xkos:additionalContentNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Warning ;
+        sh:message "xkos:additionalContentNote DEBERÍA ser un literal (generalmente  con una etiqueta de idioma)." ;
+    ] .

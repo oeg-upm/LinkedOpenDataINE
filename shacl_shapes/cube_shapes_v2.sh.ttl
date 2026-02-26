@@ -1,0 +1,573 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix :      <http://example.org/shapes/qb/> .
+
+#################################################################
+# Prefijos comunes
+#################################################################
+
+:CommonPrefixes
+    a sh:PrefixDeclaration ;
+    sh:declare [
+        sh:prefix "qb" ;
+        sh:namespace "http://purl.org/linked-data/cube#"^^xsd:anyURI ;
+    ] .
+
+#################################################################
+# PERFIL 1 — SIMPLE (single-measure, sin qb:measureType)
+# - Pensado para cubos con EXACTAMENTE 1 medida en el DSD
+# - Requiere que cada observación lleve esa medida
+#
+# Para activar este perfil, cambia sh:deactivated a false en las shapes *_Simple
+# y sh:deactivated a true en las shapes *_Complete (abajo).
+#################################################################
+
+:DataSetShape_Simple
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:DataSet ;
+
+    sh:property [
+        sh:path qb:structure ;
+        sh:class qb:DataStructureDefinition ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Un qb:DataSet DEBE tener exactamente una qb:structure enlazando a una qb:DataStructureDefinition." ;
+    ] ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Un qb:DataSet DEBERÍA tener por lo menos una qb:Observation via qb:dataSet." ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              FILTER NOT EXISTS {
+                ?obs a qb:Observation ;
+                     qb:dataSet $this .
+              }
+            }
+        """ ;
+    ] .
+
+:DataStructureDefinitionShape_Simple
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:DataStructureDefinition ;
+
+    sh:property [
+        sh:path qb:component ;
+        sh:class qb:ComponentSpecification ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Una qb:DataStructureDefinition DEBE tener por lo menos un qb:component (qb:ComponentSpecification)." ;
+    ] ;
+
+    # Cada componentProperty no debe repetirse dentro del DSD
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Dentro de una qb:DataStructureDefinition , cada qb:componentProperty DEBE ser usado como máximo una vez." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?prop
+            WHERE {
+              $this qb:component ?cs1, ?cs2 .
+              ?cs1 qb:componentProperty ?prop .
+              ?cs2 qb:componentProperty ?prop .
+              FILTER (?cs1 != ?cs2)
+            }
+        """ ;
+    ] ;
+
+    # Perfil SIMPLE: debe haber EXACTAMENTE 1 qb:MeasureProperty y NO usar qb:measureType
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "El DSD DEBE declarar exactamente 1 qb:MeasureProperty y NO incluir qb:measureType como dimensión." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              {
+                SELECT $this (COUNT(DISTINCT ?m) AS ?mc) (SUM(IF(?dim = qb:measureType, 1, 0)) AS ?hasMT)
+                WHERE {
+                  $this qb:component ?cs .
+                  ?cs qb:componentProperty ?p .
+                  OPTIONAL { ?p a qb:MeasureProperty . BIND(?p AS ?m) }
+                  OPTIONAL { ?p a qb:DimensionProperty . BIND(?p AS ?dim) }
+                }
+                GROUP BY $this
+              }
+              FILTER (?mc != 1 || ?hasMT > 0)
+            }
+        """ ;
+    ] .
+
+:ComponentSpecificationShape_Simple
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:ComponentSpecification ;
+
+    sh:property [
+        sh:path qb:componentProperty ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:node :ComponentPropertyShape ;
+        sh:severity sh:Violation ;
+        sh:message "Una qb:ComponentSpecification DEBE tener exactamente una qb:componentProperty de tipo Dimension/Measure/Attribute." ;
+    ] .
+
+# Shape compartida (vale para ambos perfiles)
+:ComponentPropertyShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path rdf:type ;
+        sh:or (
+            [ sh:hasValue qb:DimensionProperty ]
+            [ sh:hasValue qb:MeasureProperty ]
+            [ sh:hasValue qb:AttributeProperty ]
+        ) ;
+        sh:severity sh:Violation ;
+        sh:message "qb:componentProperty DEBE tener el tipo: qb:DimensionProperty, qb:MeasureProperty o qb:AttributeProperty (tipo explícito recomendado)." ;
+    ] .
+
+:ObservationShape_Simple
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:Observation ;
+
+    sh:property [
+        sh:path qb:dataSet ;
+        sh:class qb:DataSet ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Cada qb:Observation DEBE tener exactamente un qb:dataSet apuntando a un qb:DataSet." ;
+    ] ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Cada qb:Observation DEBE estar asociada a un qb:DataStructureDefinition mediante su qb:dataSet/qb:structure." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this qb:dataSet ?ds .
+              FILTER NOT EXISTS { ?ds qb:structure ?dsd . }
+            }
+        """ ;
+    ] ;
+
+    # 4a (SIMPLE): todas las dimensiones del DSD deben estar presentes
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Todas las qb:Observation DEBEN proporcionar un valor para cada qb:DimensionProperty declarado en su DSD." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?dim
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+              FILTER NOT EXISTS { $this ?dim ?dimValue . }
+            }
+        """ ;
+    ] ;
+
+    # Cardinalidad de dimensiones (max 1 valor por dimensión)
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Cada dimensión en una qb:Observation DEBE tener como máximo un valor." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?dim
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+              $this ?dim ?v1, ?v2 .
+              FILTER (?v1 != ?v2)
+            }
+        """ ;
+    ] ;
+
+    # 4b (SIMPLE): exactamente 1 medida declarada en el DSD debe estar presente en cada observación
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Cada qb:Observation DEBE incluir el valor de la única qb:MeasureProperty declarada en el DSD." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?measure
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+
+              {
+                SELECT ?dsd (SAMPLE(?m) AS ?measure)
+                WHERE {
+                  ?dsd qb:component ?cs .
+                  ?cs qb:componentProperty ?m .
+                  ?m a qb:MeasureProperty .
+                }
+                GROUP BY ?dsd
+              }
+
+              FILTER NOT EXISTS { $this ?measure ?mValue . }
+            }
+        """ ;
+    ] .
+
+:UniqueDimensionCombinationPerDataset_Simple
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:DataSet ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Dentro de un qb:DataSet, dos qb:Observations no DEBERÍAN compartir la misma combinación de todos los valores de dimensiones." ;
+        sh:severity sh:Warning ;
+        sh:select """
+          SELECT $this
+          WHERE {
+            $this a qb:DataSet ;
+                  qb:structure ?dsd .
+
+            ?obs1 qb:dataSet $this .
+            ?obs2 qb:dataSet $this .
+            FILTER (?obs1 != ?obs2)
+
+            FILTER NOT EXISTS {
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+
+              ?obs1 ?dim ?val1 .
+              ?obs2 ?dim ?val2 .
+              FILTER (?val1 != ?val2)
+            }
+          }
+        """ ;
+    ] .
+
+#################################################################
+# PERFIL 2 — COMPLETO (soporta multi-measure con qb:measureType)
+#   * si hay múltiples medidas, se usa qb:measureType
+#   * una observación NO tiene por qué llevar todas las medidas
+#################################################################
+
+:DataSetShape_Complete
+    a sh:NodeShape ;
+    sh:deactivated false ;
+    sh:targetClass qb:DataSet ;
+
+    sh:property [
+        sh:path qb:structure ;
+        sh:class qb:DataStructureDefinition ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Un qb:DataSet DEBE tener exactamente una qb:structure enlazando a una qb:DataStructureDefinition." ;
+    ] ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Un qb:DataSet DEBERÍA tener por lo menos una qb:Observation via qb:dataSet." ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              FILTER NOT EXISTS {
+                ?obs a qb:Observation ;
+                     qb:dataSet $this .
+              }
+            }
+        """ ;
+    ] .
+
+:DataStructureDefinitionShape_Complete
+    a sh:NodeShape ;
+    sh:deactivated false ;
+    sh:targetClass qb:DataStructureDefinition ;
+
+    sh:property [
+      sh:path qb:component ;
+      sh:minCount 1 ;
+      sh:node [
+        sh:or (
+          [ sh:property [ sh:path qb:componentProperty ; sh:minCount 1 ] ]
+          [ sh:property [ sh:path qb:dimension         ; sh:minCount 1 ] ]
+          [ sh:property [ sh:path qb:measure           ; sh:minCount 1 ] ]
+          [ sh:property [ sh:path qb:attribute         ; sh:minCount 1 ] ]
+        )
+      ] ;
+      sh:severity sh:Violation ;
+      sh:message "Una qb:DataStructureDefinition DEBE tener al menos un qb:component, y cada componente debe declarar qb:dimension/qb:measure/qb:attribute o qb:componentProperty." ;
+    ] ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Dentro de una qb:DataStructureDefinition, cada qb:componentProperty DEBE ser usado como máximo una vez." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?prop
+            WHERE {
+              $this qb:component ?cs1, ?cs2 .
+              ?cs1 qb:componentProperty ?prop .
+              ?cs2 qb:componentProperty ?prop .
+              FILTER (?cs1 != ?cs2)
+            }
+        """ ;
+    ] ;
+
+    # Recomendación: si hay múltiples medidas, incluir qb:measureType
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Si el DSD declara más de una qb:MeasureProperty, se RECOMIENDA incluir qb:measureType como qb:DimensionProperty." ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              {
+                SELECT $this (COUNT(DISTINCT ?m) AS ?mc) (SUM(IF(?dim = qb:measureType, 1, 0)) AS ?hasMT)
+                WHERE {
+                  $this qb:component ?cs .
+                  ?cs qb:componentProperty ?p .
+                  OPTIONAL { ?p a qb:MeasureProperty . BIND(?p AS ?m) }
+                  OPTIONAL { ?p a qb:DimensionProperty . BIND(?p AS ?dim) }
+                }
+                GROUP BY $this
+              }
+              FILTER (?mc > 1 && ?hasMT = 0)
+            }
+        """ ;
+    ] .
+
+:ComponentSpecificationShape_Complete
+    a sh:NodeShape ;
+    sh:deactivated false ;
+    sh:targetClass qb:ComponentSpecification ;
+
+    sh:property [
+        sh:path qb:componentProperty ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:node :ComponentPropertyShape ;
+        sh:severity sh:Violation ;
+        sh:message "Una qb:ComponentSpecification DEBE tener exactamente una qb:componentProperty de tipo Dimension/Measure/Attribute." ;
+    ] .
+
+:ObservationShape_Complete
+    a sh:NodeShape ;
+    sh:deactivated false ;
+    sh:targetClass qb:Observation ;
+
+    sh:property [
+        sh:path qb:dataSet ;
+        sh:class qb:DataSet ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Cada qb:Observation DEBE tener exactamente un qb:dataSet apuntando a un qb:DataSet." ;
+    ] ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Cada qb:Observation DEBE estar asociada a un qb:DataStructureDefinition mediante su qb:dataSet/qb:structure." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this
+            WHERE {
+              $this qb:dataSet ?ds .
+              FILTER NOT EXISTS { ?ds qb:structure ?dsd . }
+            }
+        """ ;
+    ] ;
+
+    # Dimensiones presentes (incluye qb:measureType si está en el DSD)
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Todas las qb:Observation DEBEN proporcionar un valor para cada qb:DimensionProperty declarado en su DSD (incluye qb:measureType si está en el DSD)." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?dim
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+              FILTER NOT EXISTS { $this ?dim ?dimValue . }
+            }
+        """ ;
+    ] ;
+
+    # Cardinalidad de dimensiones (max 1)
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Cada dimensión en una qb:Observation DEBE tener como máximo un valor." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?dim
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+              $this ?dim ?v1, ?v2 .
+              FILTER (?v1 != ?v2)
+            }
+        """ ;
+    ] ;
+
+    #################################################################
+    # MEDIDAS (perfil COMPLETO)
+    #################################################################
+
+    # Caso A: DSD sin qb:measureType -> al menos una medida presente
+    sh:sparql [
+      sh:prefixes :CommonPrefixes ;
+      sh:message "Si el DSD NO incluye qb:measureType, cada qb:Observation DEBE proporcionar al menos un valor para alguna medida definida en el DSD." ;
+      sh:severity sh:Violation ;
+      sh:select """
+        SELECT $this
+        WHERE {
+          $this qb:dataSet ?ds .
+          ?ds qb:structure ?dsd .
+
+          # DSD does NOT include qb:measureType (support both modeling styles)
+          FILTER NOT EXISTS {
+            ?dsd qb:component ?csMT .
+            { ?csMT qb:componentProperty qb:measureType . }
+            UNION
+            { ?csMT qb:dimension qb:measureType . }
+          }
+
+          # Observation has NO value for ANY measure declared in the DSD
+          FILTER NOT EXISTS {
+            ?dsd qb:component ?cs .
+            {
+              # Preferred: measures declared explicitly (doesn't rely on rdf:type in this graph)
+              ?cs qb:measure ?m .
+            }
+            UNION
+            {
+              # Fallback: componentProperty that is (optionally) typed as a MeasureProperty
+              ?cs qb:componentProperty ?m .
+              OPTIONAL { ?m a qb:MeasureProperty . }
+              FILTER(BOUND(?m))
+            }
+
+            $this ?m ?val .
+          }
+        }
+      """ ;
+    ] ;
+
+
+
+    # Caso B1: DSD con qb:measureType -> qb:measureType debe estar y ser una medida del DSD
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Si el DSD incluye qb:measureType, cada qb:Observation DEBE tener qb:measureType y su valor DEBE ser una qb:MeasureProperty declarada en el DSD." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?m
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+
+              ?dsd qb:component ?csMT .
+              ?csMT qb:componentProperty qb:measureType .
+
+              OPTIONAL { $this qb:measureType ?m . }
+
+              FILTER ( !BOUND(?m) || NOT EXISTS {
+                ?dsd qb:component ?cs .
+                ?cs qb:componentProperty ?m .
+                ?m a qb:MeasureProperty .
+              })
+            }
+        """ ;
+    ] ;
+
+    # Caso B2: DSD con qb:measureType -> debe existir valor (qb:obsValue o ?m)
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Si el DSD incluye qb:measureType, cada qb:Observation DEBE proporcionar el valor de la medida: usando qb:obsValue o usando la propia propiedad de medida indicada por qb:measureType." ;
+        sh:severity sh:Violation ;
+        sh:select """
+            SELECT $this ?m
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+
+              ?dsd qb:component ?csMT .
+              ?csMT qb:componentProperty qb:measureType .
+
+              $this qb:measureType ?m .
+
+              FILTER NOT EXISTS { $this qb:obsValue ?v . }
+              FILTER NOT EXISTS { $this ?m ?v2 . }
+            }
+        """ ;
+    ] ;
+
+    # Caso B3 (warning): evitar múltiples medidas distintas a la indicada por measureType
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Si se usa qb:measureType, se recomienda que una qb:Observation NO incluya valores para otras qb:MeasureProperty distintas de la indicada." ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this ?otherM
+            WHERE {
+              $this qb:dataSet ?ds .
+              ?ds qb:structure ?dsd .
+
+              ?dsd qb:component ?csMT .
+              ?csMT qb:componentProperty qb:measureType .
+
+              $this qb:measureType ?m .
+
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?otherM .
+              ?otherM a qb:MeasureProperty .
+              FILTER (?otherM != ?m)
+
+              $this ?otherM ?val .
+            }
+        """ ;
+    ] .
+
+:UniqueDimensionCombinationPerDataset_Complete
+    a sh:NodeShape ;
+    sh:deactivated true ;
+    sh:targetClass qb:DataSet ;
+
+    sh:sparql [
+        sh:prefixes :CommonPrefixes ;
+        sh:message "Dentro de un qb:DataSet, dos qb:Observations no DEBERÍAN compartir la misma combinación de todos los valores de dimensiones (incluye qb:measureType si está en el DSD)." ;
+        sh:severity sh:Warning ;
+        sh:select """
+          SELECT $this
+          WHERE {
+            $this a qb:DataSet ;
+                  qb:structure ?dsd .
+
+            ?obs1 qb:dataSet $this .
+            ?obs2 qb:dataSet $this .
+            FILTER (?obs1 != ?obs2)
+
+            FILTER NOT EXISTS {
+              ?dsd qb:component ?cs .
+              ?cs qb:componentProperty ?dim .
+              ?dim a qb:DimensionProperty .
+
+              ?obs1 ?dim ?val1 .
+              ?obs2 ?dim ?val2 .
+              FILTER (?val1 != ?val2)
+            }
+          }
+        """ ;
+    ] .

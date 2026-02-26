@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/measure#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix och: <http://w3id.org/def/och/> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
@@ -34,15 +34,20 @@ ine:dimensions a owl:Ontology ;
 
 # Reused Ontology terms from other vocabularies.
 
-sdmx-dimension:age a qb:DimensionProperty, rdf:Property .
+sdmx-dimension:age a qb:DimensionProperty, rdf:Property ;
+    rdfs:range rdfs:Resource;
+    rdfs:label "Age"@en .
 sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:refArea a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:refArea a qb:DimensionProperty, rdf:Property;
+    rdfs:range rdfs:Resource;
+    rdfs:label "Reference Area"@en .
 sdmx-dimension:educationLev a qb:DimensionProperty, rdf:Property.
-sdmx-dimension:currency a qb:DimensionProperty, rdf:Property.
+sdmx-dimension:currency a qb:DimensionProperty, rdf:Property;
+    rdfs:range rdfs:Resource;
+    rdfs:label "Currency"@en .
 sdmx-dimension:sex a qb:DimensionProperty, rdf:Property.
 foaf:surname a rdf:Property.
 foaf:name a rdf:Property.
-sdmx-measure:age a qb:DimensionProperty, rdf:Property.
 qb:Observation a rdfs:Class, owl:Class.
 qb:DimensionProperty a rdfs:Class, owl:Class.
 qb:DimensionProperty a rdfs:Class, owl:Class.
@@ -97,6 +102,7 @@ ine:sauAndOtherLands
 
 ine:municipalities
     rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf sdmx-dimension:refArea ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:comment "El municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines."@es ;
@@ -267,7 +273,7 @@ ine:economicalActivity
 
 ine:economicSector 
     a rdf:Property, qb:DimensionProperty;
-    rdfs:label "Sector económico"@es, "Economic sectors"@en , "Sectores económicos"@es ,"Economic Sector","Sector de actividad"@es;
+    rdfs:label "Sector económico"@es, "Economic sectors"@en , "Sectores económicos"@es ,"Economic Sector"@en ,"Sector de actividad"@es;
     rdfs:domain qb:Observation;
     rdfs:range skos:Concept.
 
@@ -450,7 +456,7 @@ ine:averageQuantitiesConsumed
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:decimal ;
-    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Average quantities consumed"@en ,
     "Cantidades medias consumidas"@es .
 
@@ -516,7 +522,7 @@ ine:totalAndAverageExpenditureMonetary
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:decimal ;
-    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Total and average expenditure (monetary)"@en ,
     "Gastos totales y medios (monetario)"@es .
 
@@ -5273,7 +5279,7 @@ ine:percentageOfTimeWorkedUtatRange
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
     rdfs:range xsd:decimal ;
-    rdfs:subPropertyOf sdmx-measure:age ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Percentage of time worked (UTAT range)"@en ,
     "Porcentaje de tiempo trabajado (tramo UTAT)"@es .
 

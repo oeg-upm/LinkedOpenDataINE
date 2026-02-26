@@ -44,7 +44,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNAE
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
         rr:constant <http://stats.linkeddata.es/voc/clasificaciones/cnae/CNAE2025>;
-        rr:class dcat:Distribution;
+        rr:class dcat:Distribution, skos:ConceptScheme;
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:accessURL;

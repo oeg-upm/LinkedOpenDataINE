@@ -62,36 +62,36 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/61> <http://www.w3.org/2004/02/skos/core#notation> "61" .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/21> <http://www.w3.org/2004/02/skos/core#notation> "21" .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/B> <http://www.w3.org/2004/02/skos/core#notation> "B" .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/33> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/54> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/31> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/51> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/61> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/23> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/56> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/L> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/H> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/41> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/F> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/21> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/22> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/12> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/34> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/53> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/52> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/80> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/C> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/J> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/Z> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/K> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/B> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/I> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/32> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/11> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/55> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/D> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/E> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/G> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/33> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/54> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/31> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/51> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/61> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/23> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/56> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/L> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/H> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/41> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/F> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/21> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/22> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/12> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/34> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/53> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/52> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/80> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/C> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/J> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/Z> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/K> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/B> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/I> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/32> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/11> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/55> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/D> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/E> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/2004/02/skos/core#member> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/G> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/D> <http://rdf-vocabulary.ddialliance.org/xkos#coreContentNote> "En esta categoría se van a incluir las personas que han recibido todos los cursos de escolarización obligatoria, en los que habrá adquirido los elementos básicos de la cultura. Han existido diversos planes de estudios, y las acreditaciones están en función del plan de la época en la cual la persona realizó el estudio."@es .
@@ -135,8 +135,8 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/52> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "Este grupo no comprende los siguientes programas:\r\n\r\n· Títulos oficiales y homologados impartidos por las universidades (véase 54, 55)"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/12> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "En este grupo no se clasifican las personas cuyo programa educativo de más alto nivel terminado es el siguiente:\r\n· Certificado de Estudios Primarios, expedido con anterioridad a la Ley General de Educación de 1970, es decir, antes del curso 1975-76 (véase 23)"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/61> <http://rdf-vocabulary.ddialliance.org/xkos#exclusionNote> "Este grupo no comprende:\r\n Las personas que han completado los cursos de doctorado, pero no han adquirido el título de doctor (véase 55)\r\nLas personas que han obtenido el certificado de suficiencia investigada, pero no han adquirido el título de doctor (véase 55)"@es .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1" .
-<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2" .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/34> <http://www.w3.org/2004/02/skos/core#prefLabel> "Enseñanzas de grado medio de música y danza"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/31> <http://www.w3.org/2004/02/skos/core#prefLabel> " Enseñanzas par la formación e inserción laboral que precisan de una titulación de estudios secundarios de primera etapa para su realización (más de 300 horas)"@es .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/2/51> <http://www.w3.org/2004/02/skos/core#prefLabel> "Enseñanzas de grado superior de formación profesional específica y equivalentes, artes plásticas y diseño y deportivas"@es .
@@ -202,3 +202,15 @@
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://purl.org/dc/terms/title> "Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es .
 <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/B> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/C> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/D> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/E> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/F> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/G> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/H> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/I> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/J> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/K> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/L> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
+<http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV/1/Z> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000NIV> .
