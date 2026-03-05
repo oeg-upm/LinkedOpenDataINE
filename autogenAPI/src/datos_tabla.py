@@ -141,7 +141,7 @@ def _add_static_template(table_name, urlAPI, parameters, g_mappings):
     g_mappings.add((dataset_static, RDF.type, RML.TriplesMap))
     g_mappings.add((dataset_static, RML.logicalSource, INELOD["LS_Root"]))
 
-    add_subject_map(dataset_static, QB.Dataset, g_mappings, constant_uri=INELOD[table_name])
+    add_subject_map(dataset_static, QB.DataSet, g_mappings, constant_uri=INELOD[table_name])
 
     add_pom_obj(dataset_static, DCT.title, table_name, g_mappings, lang="es")
     add_pom_obj(dataset_static, QB.structure, INELOD[table_name + "_dsd"], g_mappings)
@@ -188,7 +188,7 @@ def _add_observations_triplesmap(table_name, parameters, g_mappings):
     g_mappings.add((observations, RML.logicalSource, INELOD["LS_Data"]))
 
     add_subject_map(observations, QB.Observation, g_mappings, template="https://stats.linkeddata.es/voc/cubes/" + "obs/{COD}_{Data.CodigoPeriodo}")
-    add_pom_obj(observations, QB.Dataset, INELOD[table_name], g_mappings)
+    add_pom_obj(observations, QB.dataSet, INELOD[table_name], g_mappings)
 
     add_pom_parenttpm(observations, QB.slice, INELOD[table_name + "_Series"], "COD", "COD", g_mappings)
     

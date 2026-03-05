@@ -217,7 +217,7 @@ def normalizeINE(datacube_path, measureOntologyFile):
             ?dataset qb:slice ?slice .
         }
         WHERE {
-            ?obs qb:Dataset ?dataset ;
+            ?obs qb:dataSet ?dataset ;
                 qb:slice ?slice .
         }
     """
@@ -233,7 +233,7 @@ def normalizeINE(datacube_path, measureOntologyFile):
             {
                 SELECT DISTINCT ?mainDSD ?measure
                 WHERE {
-                    ?dataset a qb:Dataset ;
+                    ?dataset a qb:DataSet ;
                             qb:structure ?mainDSD ;
                             qb:slice ?slice .
                     ?slice qb:sliceStructure ?sliceKey .
