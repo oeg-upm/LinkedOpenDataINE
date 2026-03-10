@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# Define the class Observation
+qb:Observation a rdfs:Class, owl:Class ;
+    rdfs:label "Observation"@en ;
+    rdfs:comment "A single observation in the cube, may have one or more associated measured values"@en ;
+    rdfs:subClassOf qb:Attachable ;
+    owl:equivalentClass scovo:Item ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class Measure
+qb:Measure a rdfs:Class, owl:Class ;
+    rdfs:label "Measure"@en ;
+    rdfs:comment "The class of components which represent the measured value of the phenomenon being observed"@en ;
+    rdfs:subClassOf qb:ComponentProperty ;
+    owl:disjointWith qb:AttributeProperty ;
+    owl:disjointWith qb:DimensionProperty ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class Attribute
+qb:Attribute a rdfs:Class, owl:Class ;
+    rdfs:label "Attribute"@en ;
+    rdfs:comment "The class of components which represent attributes of observations in the cube, e.g. unit of measurement"@en ;
+    rdfs:subClassOf qb:ComponentProperty ;
+    owl:disjointWith qb:MeasureProperty ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class Dimension
+qb:Dimension a rdfs:Class, owl:Class ;
+    rdfs:label "Dimension"@en ;
+    rdfs:comment "An alternative to qb:componentProperty which makes explicit that the component is a dimension"@en ;
+    rdfs:subPropertyOf qb:componentProperty ;
+    rdfs:range qb:DimensionProperty ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class Concept
+qb:Concept a rdfs:Class, owl:Class ;
+    rdfs:label "Concept"@en ;
+    rdfs:comment "gives the concept which is being measured or indicated by a ComponentProperty"@en ;
+    rdfs:domain qb:ComponentProperty ;
+    rdfs:range skos:Concept ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class CodeList
+qb:CodeList a rdfs:Class, owl:Class ;
+    rdfs:label "Code List"@en ;
+    rdfs:comment "Represents a generalized hierarchy of concepts which can be used for coding"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class HierarchicalCodeList
+qb:HierarchicalCodeList a rdfs:Class, owl:Class ;
+    rdfs:label "Hierarchical Code List"@en ;
+    rdfs:comment "Represents a generalized hierarchy of concepts which can be used for coding"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class AggregatableHierarchy
+qb:AggregatableHierarchy a rdfs:Class, owl:Class ;
+    rdfs:label "Aggregatable Hierarchy"@en ;
+    rdfs:subClassOf qb:HierarchicalCodeList ;
+    rdfs:comment "Indicates a hierarchy in which each parent concept is a disjoint union of its child concepts"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class ConceptScheme
+qb:ConceptScheme a rdfs:Class, owl:Class ;
+    rdfs:label "Concept Scheme"@en ;
+    rdfs:comment "Represents a collection of related concepts"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class Collection
+qb:Collection a rdfs:Class, owl:Class ;
+    rdfs:label "Collection"@en ;
+    rdfs:comment "Represents a collection of related concepts"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class ComponentProperty
+qb:ComponentProperty a rdfs:Class, owl:Class ;
+    rdfs:label "Component property (abstract)"@en ;
+    rdfs:subClassOf rdf:Property ;
+    rdfs:comment "Abstract super-property of all properties representing dimensions, attributes or measures"@en ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class DimensionProperty
+qb:DimensionProperty a rdfs:Class, owl:Class ;
+    rdfs:label "Dimension property"@en ;
+    rdfs:comment "The class of components which represent the dimensions of the cube"@en ;
+    rdfs:subClassOf qb:ComponentProperty ;
+    rdfs:subClassOf qb:CodedProperty ;
+    owl:disjointWith qb:MeasureProperty ;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> ;
+
+# Define the class AttributeProperty
+qb:AttributeProperty a rdfs:Class, owl:Class ;
+    rdfs:label "Attribute property"@en ;
+    rdfs:comment "The class of components which represent attributes of observations in the cube, e.g. unit of measurement"@

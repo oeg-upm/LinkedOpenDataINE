@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix och: <http://w3id.org/def/och/> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
@@ -25,8 +25,8 @@ ine:dimensions a owl:Ontology ;
     dcterms:created "2025-05-01"^^xsd:date ;
     dcterms:modified "2025-09-23"^^xsd:date;
     vann:preferredNamespacePrefix "ine" ;
-    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
-    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
+    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary/dimension#> ; 
+    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/dimension/1.0.0> ; 
     owl:versionInfo "1.0.0"@en;
     dcterms:description "An ontology for describing the variables  used as dimensions in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
                         "Una ontologia para describir las variables empleadas como dimensiones en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
@@ -34,9 +34,7 @@ ine:dimensions a owl:Ontology ;
 
 # Reused Ontology terms from other vocabularies.
 
-sdmx-dimension:age a qb:DimensionProperty, rdf:Property ;
-    rdfs:range rdfs:Resource;
-    rdfs:label "Age"@en .
+
 sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property.
 sdmx-dimension:refArea a qb:DimensionProperty, rdf:Property;
     rdfs:range rdfs:Resource;
@@ -45,7 +43,6 @@ sdmx-dimension:educationLev a qb:DimensionProperty, rdf:Property.
 sdmx-dimension:currency a qb:DimensionProperty, rdf:Property;
     rdfs:range rdfs:Resource;
     rdfs:label "Currency"@en .
-sdmx-dimension:sex a qb:DimensionProperty, rdf:Property.
 foaf:surname a rdf:Property.
 foaf:name a rdf:Property.
 qb:Observation a rdfs:Class, owl:Class.
@@ -53,7 +50,10 @@ qb:DimensionProperty a rdfs:Class, owl:Class.
 qb:DimensionProperty a rdfs:Class, owl:Class.
 skos:Concept a owl:Class.
 
-
+# The type of reason class that will be reused as a range for some dimensions.
+ine:ReasonType a rdfs:Class, owl:Class ;
+    rdfs:label "Reason type"@en , "Tipo de razón"@es ;
+    rdfs:comment "La causa o la razón que mueve algo"@es, "The cause or reason that moves something"@en .
 
 # The Ontology.
 
@@ -85,7 +85,7 @@ ine:cropsPasruresAndOrchards
 ine:provinces
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range skos:Concept ;
     rdfs:comment "La provincia es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado. Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica."@es ;
     rdfs:label "Provinces"@en, "Provincias"@es, "PROV"@es ;
     qb:concept  <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>  .
@@ -171,7 +171,7 @@ ine:sections
 ine:typeOfTrade
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range skos:Concept ;
     rdfs:label "Type of trade"@en ,
     "Tipo de comercio"@es .
 
@@ -179,7 +179,7 @@ ine:typeOfTrade
 ine:productGroups
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range skos:Concept ;
     rdfs:label "Product groups"@en ,
     "Grupos de Productos"@es .
 
@@ -374,7 +374,7 @@ ine:householdsAndPersons
 ine:municipalitySize
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Municipality size"@en ,
     "Tamaño del municipio"@es .
 
@@ -415,7 +415,7 @@ ine:householdType
 ine:mainHouseholdIncomeSource
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:decimal ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Main household income source"@en ,
     "Principal fuente de ingresos del hogar"@es .
 
@@ -423,14 +423,14 @@ ine:mainHouseholdIncomeSource
 ine:householdRegularNetMonthlyIncomeLevel
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:decimal ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Household regular net monthly income level"@en ,
     "Nivel de ingresos mensuales netos regulares del hogar"@es .
 
 ine:expenditureGroups
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:decimal ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Expenditure groups"@en ,
     "Grupos de gasto"@es .
 
@@ -486,7 +486,7 @@ ine:expenditureSubgroups3Digits
 ine:expenditureCodes
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:decimal ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Expenditure codes"@en ,
     "Códigos de gasto"@es .
 
@@ -946,7 +946,7 @@ ine:professionalSituationOfMainJob
 ine:reasonForReducedActivity
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reason for reduced activity"@en ,
     "Causa de la actividad reducida"@es .
 
@@ -1006,7 +1006,7 @@ ine:professionalSituationOfSecondaryJob
 ine:reasonsForIncreasedActivity
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reasons for increased activity"@en ,
     "Causas de la mayor actividad"@es .
 
@@ -1087,7 +1087,7 @@ ine:occupation
 ine:reasonsForNotWorking
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reasons for not working"@en ,
     "Motivos de no trabajar"@es .
 
@@ -1112,7 +1112,7 @@ ine:actualHoursWorkedInMainJobWeek
 ine:reasonsForParttimeWork
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reasons for part-time work"@en ,
     "Motivos de la jornada parcial"@es .
 
@@ -1120,7 +1120,7 @@ ine:reasonsForParttimeWork
 ine:reasonForNotSeekingEmployment
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reason for not seeking employment"@en ,
     "Motivo de no buscar empleo"@es .
 
@@ -1171,7 +1171,7 @@ ine:numberOfUnemployedInHousehold
 ine:personsAged1625LivingWithReferencePerson
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:date ;
+    rdfs:range xsd:integer ;
     rdfs:label "Persons aged 16-25 living with reference person"@en ,
     "Personas entre 16 y 25 años que conviven con la persona de referencia"@es .
 
@@ -1205,7 +1205,7 @@ ine:numberOfPersonsLivingWithReferencePerson
 ine:studentsAged1625LivingWithReferencePerson
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:date ;
+    rdfs:range xsd:integer ;
     rdfs:label "Students aged 16-25 living with reference person"@en ,
     "Estudiantes entre 16 y 25 años que conviven con la persona de referencia"@es .
 
@@ -1424,7 +1424,7 @@ ine:publicEmploymentOfficeParticipation
 ine:reasonForTemporaryContract
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reason for temporary contract"@en ,
     "Motivo de tener un contrato o relación laboral temporal"@es .
 
@@ -1440,7 +1440,7 @@ ine:jobWhereMoreHoursDesired
 ine:reasonForSeekingOtherJob
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range ine:typeOfReason ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Reason for seeking other job"@en ,
     "Razón de búsqueda de otro empleo"@es .
 
@@ -2564,7 +2564,7 @@ ine:incomePerConsumptionUnitPercentages
 ine:laborForceStatusInPreviousPeriod
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:label "Labor force status in previous period"@en ,
     "Relación con la actividad en periodo anterior"@es .
 
@@ -2789,7 +2789,7 @@ ine:spouse2AgeSemiintervals
     rdf:type rdf:Property , qb:DimensionProperty ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf sdmx-dimension:ageGroup ;
+    rdfs:subPropertyOf sdmx-dimension:age ;
     rdfs:label "Spouse 2 age semi-intervals"@en ,
     "Semiintervalos de edad conyuge 2"@es .
 
@@ -6094,7 +6094,7 @@ ine:typeOfReason
     rdf:type rdf:Property , qb:DimensionProperty ;
     # rdfs:comment "TODO" ;
     rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Literal ;
+    rdfs:range ine:ReasonType ;
     rdfs:label "Type of reasons"@en ,
     "Tipo de razones"@es .
 

@@ -29,7 +29,7 @@ ine:measures a owl:Ontology ;
     dcterms:created "2025-11-03"^^xsd:date ;
     dcterms:modified "2025-11-03"^^xsd:date;
     vann:preferredNamespacePrefix "ine" ;
-    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary#> ; 
+    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary/measure#> ; 
     owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
     owl:versionInfo "1.0.0"@en;
     dcterms:description "An ontology for describing the variables used as measures in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
@@ -1048,7 +1048,7 @@ ine:estate a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Finca"@es , "Estate"@en .
 
-ine:bothForOne a rdf:Property, qb:MeasureProperty ;
+ine:bothPerOne a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
@@ -1407,7 +1407,7 @@ ine:divorcesPerWoman a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Divorcios por mujer"@es , "Divorces per woman"@en .
 
-ine:porcentageOfGDP a rdf:Property, qb:MeasureProperty ;
+ine:percentageOfGDP a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
@@ -1486,7 +1486,7 @@ ine:decrees a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Decretos"@es , "Decrees"@en .
 
-ine:madresFallecidasPerCada100000NacidosVivos a rdf:Property, qb:MeasureProperty ;
+ine:deceasedMothersPerEach1KLiveBirths a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
@@ -1514,7 +1514,7 @@ ine:percentageOfDailySmokers a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Porcentaje fumadores diarios"@es , "Percentage of daily smokers"@en .
 
-ine:tonnessPerInhabitant a rdf:Property, qb:MeasureProperty ;
+ine:tonnesPerInhabitant a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
@@ -1655,14 +1655,14 @@ ine:percentageOfFemaleCounselors a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Porcentaje de consejeras"@es , "Porcentaje Of Female Counselors"@en .
 
-ine:percentajeOfFemaleMayors a rdf:Property, qb:MeasureProperty ;
+ine:percentageOfFemaleMayors a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Porcentaje de alcaldesas"@es , "Porcentaje Of Female Mayors"@en .
 
-ine:percentajeOfFemaleCouncillors a rdf:Property, qb:MeasureProperty ;
+ine:percentageOfFemaleCouncillors a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue, ine:percentage ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
@@ -1879,8 +1879,8 @@ ine:millionsOfEuros a rdf:Property, qb:MeasureProperty ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Millones de euros"@es , "Millions Of Euros"@en .
 
-ine:ilotonnesOfOilEquivalent a rdf:Property, qb:MeasureProperty ;
-  rdfs:skubPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
+ine:kilotonnesOfOilEquivalent a rdf:Property, qb:MeasureProperty ;
+  rdfs:subPropertyOf sdmx-measure:obsValue , ine:massTonnesBased ;
   rdfs:domain qb:Observation ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
