@@ -26,7 +26,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISICREV4
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -36,14 +36,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISICREV4
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4>;
+    rr:object  <http://lod.ine.es/voc/clasificaciones/isic/ISICREV4>;
     ].
 
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4>;
+        rr:constant <http://lod.ine.es/voc/clasificaciones/isic/ISICREV4>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -62,7 +62,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISICREV4
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -79,7 +79,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISICREV4
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/{PADRE_NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/isic/ISICREV4/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -95,9 +95,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISICREV4
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4>;
+        rr:object  <http://lod.ine.es/voc/clasificaciones/isic/ISICREV4>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/isic/ISICREV4/{NIVEL}"]
     ].              

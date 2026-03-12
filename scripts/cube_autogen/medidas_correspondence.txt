@@ -1,12 +1,12 @@
-Tasa de actividad,https://stats.linkeddata.es/voc/cubes/vocabulary#activityRate
-Tasa de paro,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
-Tasa de paro de la población,https://stats.linkeddata.es/voc/cubes/vocabulary#unemploymentRate
-Tasa de empleo de la población,https://stats.linkeddata.es/voc/cubes/vocabulary#employmentRate
-Valor absoluto Ocupados,https://stats.linkeddata.es/voc/cubes/vocabulary#employedABSValue
-Porcentaje Ocupados,https://stats.linkeddata.es/voc/cubes/vocabulary#employedPercentage
-Personas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfPeople
-Estancia,https://stats.linkeddata.es/voc/cubes/vocabulary#averageStay
-Dato base Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsABSValue
-Tasa de variación anual Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAnnualVarianceRate
-Acumulado en lo que va de año Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAccumulated
-Tasa de variación acumulada Turistas,https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate
+Tasa de actividad,https://lod.ine.es/voc/cubes/vocabulary#activityRate
+Tasa de paro,https://lod.ine.es/voc/cubes/vocabulary#unemploymentRate
+Tasa de paro de la población,https://lod.ine.es/voc/cubes/vocabulary#unemploymentRate
+Tasa de empleo de la población,https://lod.ine.es/voc/cubes/vocabulary#employmentRate
+Valor absoluto Ocupados,https://lod.ine.es/voc/cubes/vocabulary#employedABSValue
+Porcentaje Ocupados,https://lod.ine.es/voc/cubes/vocabulary#employedPercentage
+Personas,https://lod.ine.es/voc/cubes/vocabulary#numberOfPeople
+Estancia,https://lod.ine.es/voc/cubes/vocabulary#averageStay
+Dato base Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsABSValue
+Tasa de variación anual Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAnnualVarianceRate
+Acumulado en lo que va de año Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulated
+Tasa de variación acumulada Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate

@@ -37,7 +37,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_EST
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -47,14 +47,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_EST
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST>;
+    rr:object  <http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST>;
     ].
 
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST>;
+        rr:constant <http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -73,7 +73,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_EST
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -90,7 +90,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_EST
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/{PADRE_NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -106,9 +106,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNED2000_EST
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST>;
+        rr:object  <http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://stats.linkeddata.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/cned/CNED2000EST/{NIVEL}"]
     ].              

@@ -5,5 +5,5 @@ SELECT DISTINCT ?x ?y ?z
 WHERE {
 ?x ?y ?z.
  ?x rdf:type xkos:ClassificationLevel .
- ?x skos:inScheme <http://stats.linkeddata.es/voc/clasificaciones/provincias/PROVINCIAS>. 
+ ?x skos:inScheme <http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS>. 
 }

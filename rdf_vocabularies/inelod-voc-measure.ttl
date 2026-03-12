@@ -1,4 +1,4 @@
-@prefix ine: <https://stats.linkeddata.es/voc/cubes/vocabulary#>. 
+@prefix ine: <https://lod.ine.es/voc/cubes/vocabulary#>. 
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -29,8 +29,8 @@ ine:measures a owl:Ontology ;
     dcterms:created "2025-11-03"^^xsd:date ;
     dcterms:modified "2025-11-03"^^xsd:date;
     vann:preferredNamespacePrefix "ine" ;
-    vann:preferredNamespaceUri <https://stats.linkeddata.es/voc/cubes/vocabulary/measure#> ; 
-    owl:versionIRI <https://stats.linkeddata.es/voc/cubes/vocabulary/1.0.0> ; 
+    vann:preferredNamespaceUri <https://lod.ine.es/voc/cubes/vocabulary/measure#> ; 
+    owl:versionIRI <https://lod.ine.es/voc/cubes/vocabulary/1.0.0> ; 
     owl:versionInfo "1.0.0"@en;
     dcterms:description "An ontology for describing the variables used as measures in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
                         "Una ontologia para describir las variables empleadas como medidas en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
