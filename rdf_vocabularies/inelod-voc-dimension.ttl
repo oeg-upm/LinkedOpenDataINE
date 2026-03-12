@@ -62,7 +62,7 @@ ine:territorialTotals
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Territorial totals"@en ,
-    "Totales Territoriales"@es ,
+    "Total Nacional"@es ,
     "NAC"@es .
 
 ine:ccaa
