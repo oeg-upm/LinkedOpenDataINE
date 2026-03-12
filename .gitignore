@@ -10,3 +10,6 @@ INE_SQL_QUERIES.sql
 datos_eurostat/
 autogenAPI/src/__pycache__/
 SHACL_Validator/
+autogenAPI/config.ini
+autogenAPI/mappings
+autogenAPI/output
