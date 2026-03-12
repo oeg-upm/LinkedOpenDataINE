@@ -111,7 +111,7 @@
     sh:targetClass qb:ComponentSpecification ;
 
     sh:property [
-        sh:path qb:componentProperty ;
+        sh:path [ sh:alternativePath ( qb:dimension qb:measure qb:attribute ) ] ;
         sh:minCount 1 ; sh:maxCount 1 ;
         sh:node :ComponentPropertyShape ;
         sh:severity sh:Violation ;
@@ -120,17 +120,16 @@
 
 # Shape compartida (vale para ambos perfiles)
 :ComponentPropertyShape
-    a sh:NodeShape ;
-    sh:property [
-        sh:path rdf:type ;
-        sh:or (
-            [ sh:hasValue qb:DimensionProperty ]
-            [ sh:hasValue qb:MeasureProperty ]
-            [ sh:hasValue qb:AttributeProperty ]
-        ) ;
-        sh:severity sh:Violation ;
-        sh:message "qb:componentProperty DEBE tener el tipo: qb:DimensionProperty, qb:MeasureProperty o qb:AttributeProperty (tipo explícito recomendado)." ;
-    ] .
+  a sh:NodeShape ;
+  sh:property [
+    sh:path rdf:type ;
+    sh:qualifiedValueShape [
+      sh:in ( qb:DimensionProperty qb:MeasureProperty qb:AttributeProperty )
+    ] ;
+    sh:qualifiedMinCount 1 ;
+    sh:message "qb:componentProperty MUST have at least one of these types: qb:DimensionProperty, qb:MeasureProperty, qb:AttributeProperty." ;
+    sh:severity sh:Violation ;
+  ] .
 
 :ObservationShape_Simple
     a sh:NodeShape ;
@@ -351,7 +350,7 @@
     sh:targetClass qb:ComponentSpecification ;
 
     sh:property [
-        sh:path qb:componentProperty ;
+        sh:path [ sh:alternativePath ( qb:dimension qb:measure qb:attribute ) ] ;
         sh:minCount 1 ; sh:maxCount 1 ;
         sh:node :ComponentPropertyShape ;
         sh:severity sh:Violation ;

@@ -1,5 +1,5 @@
 datasets/
-configuration/
+morph_configuration/
 data_cubes_rdf/educacion/data/
 data_cubes_rdf/inmigración/data/
 data_cubes_rdf/mercado_laboral/data/

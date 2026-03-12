@@ -1,0 +1,598 @@
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ex: <http://www.myDataCube.org/> .
+@prefix ex-dsd: <http://www.myDataCube.org/dsd/> .
+@prefix sdmx-attr: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-meas: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix xmls: <http://www.w3.org/2001/XMLSchema#> . 
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dbp-r: <http://dbpedia.org/resource/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:dataset a qb:DataSet ;
+  rdfs:label "Dataset"^^xmls:string ;
+  rdfs:comment "Overview description about the dataset" ;
+  qb:structure ex:dsd ;
+  dc:publisher "Publisher Office"^^xmls:string .
+  
+sdmx-attr:unitMeasure a rdf:Property, qb:AttributeProperty ;
+                        rdfs:label "Unit of Measure"@en ;
+                        rdfs:isDefinedBy <http://sdmx.org/wp-content/uploads/2009/01/01_sdmx_cog_annex_1_cdc_2009.pdf> ;
+                        rdfs:comment "The unit in which the data values are measured."@en ;
+                        qb:concept sdmx-concept:unitMeasure .  
+			
+sdmx-meas:obsValue a rdf:Property, qb:MeasureProperty ;
+                      rdfs:label "Observation"@en ;
+                      rdfs:isDefinedBy <http://sdmx.org/wp-content/uploads/2009/01/01_sdmx_cog_annex_1_cdc_2009.pdf> ;
+                      rdfs:comment "The value of a particular variable at a particular period."@en ;
+                      qb:concept sdmx-concept:obsValue . 			
+                           
+ex:perCapitaIncome a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "per capita income"@en ;
+    rdfs:subPropertyOf sdmx-meas:obsValue ;
+    rdfs:comment "The per capita oncome of a particular quarter at a particular period."@en ;
+    qb:concept sdmx-concept:obsValue ;
+    rdfs:range xmls:decimal . 
+    
+ex:population a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "population"@en ;
+    rdfs:subPropertyOf sdmx-meas:obsValue ;
+    rdfs:comment "The population of a particular quarter at a particular period."@en ;
+    qb:concept sdmx-concept:obsValue .
+    
+ex:numVisits a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Number of visits"@en ;
+    rdfs:subPropertyOf sdmx-meas:obsValue ;
+    rdfs:comment "The number of visits of a particular quarter at a particular period."@en ;
+    qb:concept sdmx-concept:obsValue .
+    
+ex:state a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "State"@en ;
+    rdfs:subPropertyOf sdmx-meas:obsValue ;
+    rdfs:comment "The state of a particular quarter at a particular period."@en ;
+    qb:concept sdmx-concept:obsValue ;
+    rdfs:range xmls:decimal .        
+
+ex:dsd a qb:DataStructureDefinition ;
+  rdfs:label "DSD for the dataset"@en ;
+  qb:component 	
+    ex-dsd:geo , 
+    ex-dsd:time , 
+    ex-dsd:unit , 
+    ex-dsd:population ,
+    ex-dsd:numVisits ,
+    ex-dsd:state ,
+    ex-dsd:value ,
+    ex-dsd:perCapitaIncome.
+
+ex-dsd:geo a qb:ComponentSpecification ;
+  qb:dimension ex:geo ;
+  rdfs:label "CS for Region" .
+
+ex-dsd:time a qb:ComponentSpecification ;
+  qb:dimension ex:time ;
+  rdfs:label "CS for Time" .
+  
+ex-dsd:value a qb:ComponentSpecification ;
+  rdfs:label "CS for Value" ;
+  qb:measure sdmx-meas:obsValue .  
+
+ex-dsd:perCapitaIncome a qb:ComponentSpecification ;
+  rdfs:label "CS for perCapitaIncome" ;
+  qb:measure ex:perCapitaIncome.  
+  
+ex-dsd:population a qb:ComponentSpecification ;
+  rdfs:label "CS for population" ;
+  qb:measure ex:population.  
+  
+ex-dsd:numVisits a qb:ComponentSpecification ;
+  rdfs:label "CS for num visits" ;
+  qb:measure ex:numVisits.    
+  
+ex-dsd:state a qb:ComponentSpecification ;
+  rdfs:label "CS for state" ;
+  qb:measure ex:state.    
+
+ex-dsd:unit a qb:ComponentSpecification ;
+  rdfs:label "CS for Unit" ;
+  qb:attribute sdmx-attr:unitMeasure .
+
+ex:geo a qb:DimensionProperty ;
+  rdfs:label "Region"@en .
+
+ex:time a qb:DimensionProperty ;
+  rdfs:label "Time"@en .
+  
+ex:value a qb:MeasureProperty ;
+  rdfs:label "Value"@en .  
+
+ex:perCapitaIncome a qb:MeasureProperty ;
+  rdfs:label "Per capita income"@en .  
+  
+ex:population a qb:MeasureProperty ;
+  rdfs:label "Population"@en .   
+
+ex:numVisits a qb:MeasureProperty ;
+  rdfs:label "Number of visits"@en .  
+  
+ex:state a qb:MeasureProperty ;
+  rdfs:label "State"@en .    
+
+ex:unit a qb:AttributeProperty ;
+rdfs:label "Unit" .
+
+ex:obs0 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter1 ;
+	ex:perCapitaIncome 74.6 ;
+	ex:population "47274"^^xmls:float  ;
+	ex:numVisits "1284"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "7.2"^^xmls:decimal .
+
+ex:obs1 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter2 ;
+	ex:perCapitaIncome 110.5 ;
+	ex:population "15729"^^xmls:float  ;
+	ex:numVisits "724"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "2.8"^^xmls:decimal .
+
+ex:obs2 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter3 ;
+	ex:perCapitaIncome 84.8 ;
+	ex:population "15068"^^xmls:float  ;
+	ex:numVisits "481"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "2.9"^^xmls:decimal .
+
+ex:obs3 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter4 ;
+	ex:perCapitaIncome 97.8 ;
+	ex:population "22380"^^xmls:float  ;
+	ex:numVisits "907"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "4.9"^^xmls:decimal .
+
+ex:obs4 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter5 ;
+	ex:perCapitaIncome 105.0 ;
+	ex:population "31693"^^xmls:float  ;
+	ex:numVisits "265"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "1.8"^^xmls:decimal .
+
+ex:obs5 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter6 ;
+	ex:perCapitaIncome 95.9 ;
+	ex:population "51349"^^xmls:float  ;
+	ex:numVisits "455"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "2.2"^^xmls:decimal .
+
+ex:obs6 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter7 ;
+	ex:perCapitaIncome 170.0 ;
+	ex:population "43715"^^xmls:float  ;
+	ex:numVisits "439"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "1.8"^^xmls:decimal .
+
+ex:obs7 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter8 ;
+	ex:perCapitaIncome 139.2 ;
+	ex:population "41872"^^xmls:float  ;
+	ex:numVisits "370"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "5.4"^^xmls:decimal .
+
+ex:obs8 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter9 ;
+	ex:perCapitaIncome 105.3 ;
+	ex:population "57676"^^xmls:float ;
+	ex:numVisits "498"^^xmls:float  ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "4.8"^^xmls:decimal .
+
+ex:obs9 a qb:Observation ;
+	qb:dataSet ex:dataset ;
+	ex:geo ex:quarter10 ;
+	ex:perCapitaIncome 104.0 ;
+	ex:population "38182"^^xmls:float ;
+	ex:numVisits "390"^^xmls:float ;
+	ex:time ex:Y2017M2 ;
+	sdmx-attr:unitMeasure ex:unit ;
+	ex:state "5.3"^^xmls:decimal .
+  
+ex:quarter1 a ex:Region ;
+  owl:sameAs wd:Q1758503 ;
+  rdfs:label "El Raval"@en .
+  
+ex:quarter2 a ex:Region ;
+  owl:sameAs wd:Q17154 ;
+  rdfs:label "Gothic Quarter"@en .
+  
+ex:quarter3 a ex:Region ;
+  owl:sameAs wd:Q377070 ;
+  rdfs:label "La Barceloneta"@en .
+  
+ex:quarter4 a ex:Region ;
+  owl:sameAs wd:Q2442135 ;
+  rdfs:label "Sant Pere, Santa Caterina i la Ribera"@en .
+  
+ex:quarter34 a ex:Region ;
+  owl:sameAs wd:Q3321797 ;
+  rdfs:label "Can Baró"@en .  
+  
+ex:quarter47 a ex:Region ;
+  owl:sameAs wd:Q3320716 ;
+  rdfs:label "Can Peguera"@en .  
+
+ex:quarter49 a ex:Region ;
+  owl:sameAs wd:Q3751386 ;
+  rdfs:label "Canyelles"@en . 
+
+ex:quarter55 a ex:Region ;
+  owl:sameAs wd:Q3320722 ;
+  rdfs:label "Ciutat Meridiana"@en . 
+  
+ex:quarter33 a ex:Region ;
+  owl:sameAs wd:Q3297875 ;
+  rdfs:label "El Baix Guinardó"@en .   
+
+ex:quarter70 a ex:Region ;
+  owl:sameAs wd:Q2390761 ;
+  rdfs:label "El Besòs i el Maresme"@en . 
+  
+ex:quarter59 a ex:Region ;
+  owl:sameAs wd:Q3319496 ;
+  rdfs:label "Bon Pastor"@en . 
+
+ex:quarter32 a ex:Region ;
+  owl:sameAs wd:Q2994821 ;
+  rdfs:label "Camp d'en Grassot i Gràcia Nova"@en . 
+  
+ex:quarter64 a ex:Region ;
+  owl:sameAs wd:Q3294602 ;
+  rdfs:label "El Camp de l'Arpa del Clot"@en .
+  
+ex:quarter37 a ex:Region ;
+  owl:sameAs wd:Q3319498 ;
+  rdfs:label "El Carmel"@en .     
+
+ex:quarter42 a ex:Region ;
+  owl:sameAs wd:Q3320857 ;
+  rdfs:label "La Clota"@en .     
+
+ex:quarter65 a ex:Region ;
+  owl:sameAs wd:Q2979686 ;
+  rdfs:label "El Clot"@en .     
+
+ex:quarter29 a ex:Region ;
+  owl:sameAs wd:Q1932090 ;
+  rdfs:label "El Coll"@en .
+  
+ex:quarter62 a ex:Region ;
+  owl:sameAs wd:Q3813818 ;
+  rdfs:label "El Congrés i els Indians"@en .     
+ 
+ex:quarter5 a ex:Region ;
+  owl:sameAs wd:Q2107762 ;
+  rdfs:label "Fort Pienc"@en .   
+ 
+ex:quarter35 a ex:Region ;
+  owl:sameAs wd:Q3045547 ;
+  rdfs:label "El Guinardó"@en .   
+
+ex:quarter66 a ex:Region ;
+  owl:sameAs wd:Q3294440 ;
+  rdfs:label "El Parc i la Llacuna del Poblenou"@en .   
+ 
+ex:quarter11 a ex:Region ;
+  owl:sameAs wd:Q980253 ;
+  rdfs:label "El Poble-sec"@en .    
+  
+ex:quarter68 a ex:Region ;
+  owl:sameAs wd:Q1404773 ;
+  rdfs:label "El Poblenou"@en .  
+  
+ex:quarter27 a ex:Region ;
+  owl:sameAs wd:Q3321805 ;
+  rdfs:label "El Putget i Farró"@en .  
+  
+ex:quarter43 a ex:Region ;
+  owl:sameAs wd:Q15225338 ;
+  rdfs:label "Horta"@en .    
+
+ex:quarter15 a ex:Region ;
+  owl:sameAs wd:Q3750929 ;
+  rdfs:label "Hostafrancs"@en .  
+  
+ex:quarter8 a ex:Region ;
+  owl:sameAs wd:Q3291762 ;
+  rdfs:label "L'Antiga Esquerra de l'Eixample"@en .  
+
+ex:quarter16 a ex:Region ;
+  owl:sameAs wd:Q9018356 ;
+  rdfs:label "La Bordeta"@en .  
+  
+ex:quarter7 a ex:Region ;
+  owl:sameAs wd:Q1904302 ;
+  rdfs:label "Dreta de l'Eixample"@en .  
+  
+ex:quarter36 a ex:Region ;
+  owl:sameAs wd:Q3297889 ;
+  rdfs:label "La Font d'en Fargues"@en .    
+
+ex:quarter48 a ex:Region ;
+  owl:sameAs wd:Q2736697 ;
+  rdfs:label "La Guineueta"@en .    
+
+ex:quarter13 a ex:Region ;
+  owl:sameAs wd:Q3751076 ;
+  rdfs:label "La Marina de Port"@en .    
+
+ex:quarter9 a ex:Region ;
+  owl:sameAs wd:Q1026658 ;
+  rdfs:label "La Nova Esquerra de l'Eixample"@en .    
+
+ex:quarter52 a ex:Region ;
+  owl:sameAs wd:Q3750926 ;
+  rdfs:label "La Prosperitat"@en .
+  
+ex:quarter6 a ex:Region ;
+  owl:sameAs wd:Q2470217 ;
+  rdfs:label "Sagrada Família"@en .
+  
+ex:quarter61 a ex:Region ;
+  owl:sameAs wd:Q3773462 ;
+  rdfs:label "La Sagrera"@en .
+
+ex:quarter30 a ex:Region ;
+  owl:sameAs wd:Q3320699 ;
+  rdfs:label "La Salut"@en .
+  
+ex:quarter38 a ex:Region ;
+  owl:sameAs wd:Q3320705 ;
+  rdfs:label "La Taxonera"@en .  
+
+ex:quarter53 a ex:Region ;
+  owl:sameAs wd:Q3750932 ;
+  rdfs:label "La Trinitat Nova"@en .
+
+ex:quarter57 a ex:Region ;
+  owl:sameAs wd:Q6746220 ;
+  rdfs:label "La Trinitat Vella"@en .
+
+ex:quarter41 a ex:Region ;
+  owl:sameAs wd:Q3298492 ;
+  rdfs:label "La Vall d'Hebron"@en .
+    
+ex:quarter73 a ex:Region ;
+  owl:sameAs wd:Q542473 ;
+  rdfs:label "La Verneda i la Pau"@en .
+
+ex:quarter31 a ex:Region ;
+  owl:sameAs wd:Q2741611 ;
+  rdfs:label "Vila de Gràcia"@en .
+
+ex:quarter67 a ex:Region ;
+  owl:sameAs wd:Q1167101 ;
+  rdfs:label "La Vila Olímpica del Poblenou"@en .
+ 
+ex:quarter19 a ex:Region ;
+  owl:sameAs wd:Q3296693 ;
+  rdfs:label "Les Corts"@en .
+   
+ex:quarter50 a ex:Region ;
+  owl:sameAs wd:Q1627690 ;
+  rdfs:label "Les Roquetes"@en .
+  
+ex:quarter24 a ex:Region ;
+  owl:sameAs wd:Q3297896 ;
+  rdfs:label "Les Tres Torres"@en . 
+
+ex:quarter40 a ex:Region ;
+  owl:sameAs wd:Q3298502 ;
+  rdfs:label "Montbau"@en . 
+  
+ex:quarter63 a ex:Region ;
+  owl:sameAs wd:Q3813816 ;
+  rdfs:label "Navas"@en . 
+
+ex:quarter21 a ex:Region ;
+  owl:sameAs wd:Q2562684 ;
+  rdfs:label "Pedralbes"@en . 
+
+ex:quarter45 a ex:Region ;
+  owl:sameAs wd:Q3750558 ;
+  rdfs:label "Porta"@en . 
+
+ex:quarter71 a ex:Region ;
+  owl:sameAs wd:Q6273541 ;
+  rdfs:label "Provençals del Poblenou"@en . 
+  
+ex:quarter60 a ex:Region ;
+  owl:sameAs wd:Q990510 ;
+  rdfs:label "Sant Andreu de Palomar"@en . 
+      
+ex:quarter10 a ex:Region ;
+  owl:sameAs wd:Q720994 ;
+  rdfs:label "Sant Antoni"@en . 
+
+ex:quarter39 a ex:Region ;
+  owl:sameAs wd:Q3298510 ;
+  rdfs:label "Sant Genís dels Agudells"@en . 
+
+ex:quarter26 a ex:Region ;
+  owl:sameAs wd:Q3389521 ;
+  rdfs:label "Sant Gervasi – Galvany"@en .  
+
+ex:quarter25 a ex:Region ;
+  owl:sameAs wd:Q3321657 ;
+  rdfs:label "Sant Gervasi – la Bonanova"@en .
+
+ex:quarter72 a ex:Region ;
+  owl:sameAs wd:Q3773169 ;
+  rdfs:label "Sant Martí de Provençals"@en . 
+
+ex:quarter4 a ex:Region ;
+  owl:sameAs wd:Q2442135 ;
+  rdfs:label "Sant Pere, Santa Caterina i la Ribera"@en .
+
+ex:quarter18 a ex:Region ;
+  owl:sameAs wd:Q2476184 ;
+  rdfs:label "Sants"@en .
+
+ex:quarter17 a ex:Region ;
+  owl:sameAs wd:Q3596096 ;
+  rdfs:label "Sants-Badal"@en .
+  
+ex:quarter23 a ex:Region ;
+  owl:sameAs wd:Q3043699 ;
+  rdfs:label "Sarrià"@en .
+  
+ex:quarter54 a ex:Region ;
+  owl:sameAs wd:Q3750940 ;
+  rdfs:label "Torre Baró"@en .
+  
+ex:quarter56 a ex:Region ;
+  owl:sameAs wd:Q3751072 ;
+  rdfs:label "Vallbona"@en .
+
+ex:quarter28 a ex:Region ;
+  owl:sameAs wd:Q2057331 ;
+  rdfs:label "Vallcarca i els Penitents"@en .
+
+ex:quarter22 a ex:Region ;
+  owl:sameAs wd:Q3310216 ;
+  rdfs:label "Vallvidrera, el Tibidabo i les Planes"@en .
+  
+ex:quarter51 a ex:Region ;
+  owl:sameAs wd:Q3750551 ;
+  rdfs:label "Verdum"@en .
+
+ex:quarter44 a ex:Region ;
+  owl:sameAs wd:Q3320806 ;
+  rdfs:label "Vilapicina i la Torre Llobeta"@en .
+
+ex:Y2001 a ex:Time ;
+  rdfs:label "2001"@en .
+
+ex:Y2002 a ex:Time ;
+  rdfs:label "2002"@en .
+  
+ex:Y2003 a ex:Time ;
+  rdfs:label "2003"@en .
+
+ex:Y2004 a ex:Time ;
+  rdfs:label "2004"@en .
+  
+ex:Y2017 a ex:Time ;
+           skos:prefLabel "2017"@en ;
+           skos:notation "Y2017" .
+
+ex:Y2017M1 a ex:Time ;
+             skos:prefLabel "2017/january"@en ;
+             skos:broader ex:Y2017Q1 ;
+             skos:notation "Y2017M1" .
+
+ex:Y2017M10 a ex:Time ;
+              skos:prefLabel "2017/october"@en ;
+              skos:broader ex:Y2017Q4 ;
+              skos:notation "Y2017M10" .
+
+ex:Y2017M11 a ex:Time ;
+              skos:prefLabel "2017/november"@en ;
+              skos:broader ex:Y2017Q4 ;
+              skos:notation "Y2017M11" .
+
+ex:Y2017M12 a ex:Time ;
+              skos:prefLabel "2017/december"@en ;
+              skos:broader ex:Y2017Q4 ;
+              skos:notation "Y2017M12" .
+
+ex:Y2017M2 a ex:Time ;
+             skos:prefLabel "2017/february"@en ;
+             skos:broader ex:Y2017Q1 ;
+             skos:notation "Y2017M2" .
+
+ex:Y2017M3 a ex:Time ;
+             skos:prefLabel "2017/march"@en ;
+             skos:broader ex:Y2017Q1 ;
+             skos:notation "Y2017M3" .
+
+ex:Y2017M4 a ex:Time ;
+             skos:prefLabel "2017/april"@en ;
+             skos:broader ex:Y2017Q2 ;
+             skos:notation "Y2017M4" .
+
+ex:Y2017M5 a ex:Time ;
+             skos:prefLabel "2017/may"@en ;
+             skos:broader ex:Y2017Q2 ;
+             skos:notation "Y2017M5" .
+
+ex:Y2017M6 a ex:Time ;
+             skos:prefLabel "2017/june"@en ;
+             skos:broader ex:Y2017Q2 ;
+             skos:notation "Y2017M6" .
+
+ex:Y2017M7 a ex:Time ;
+             skos:prefLabel "2017/july"@en ;
+             skos:broader ex:Y2017Q3 ;
+             skos:notation "Y2017M7" .
+
+ex:Y2017M8 a ex:Time ;
+             skos:prefLabel "2017/august"@en ;
+             skos:broader ex:Y2017Q3 ;
+             skos:notation "Y2017M8" .
+
+ex:Y2017M9 a ex:Time ;
+             skos:prefLabel "2017/september"@en ;
+             skos:broader ex:Y2017Q3 ;
+             skos:notation "Y2017M9" .
+
+ex:Y2017Q1 a ex:TimeQ1 ;
+             skos:prefLabel "2017/I quarter"@en ;
+             skos:broader ex:Y2017 ;
+             skos:notation "Y2017Q1" .
+
+ex:Y2017Q2 a ex:TimeQ2 ;
+             skos:prefLabel "2017/II quarter"@en ;
+             skos:broader ex:Y2017 ;
+             skos:notation "Y2017Q2" .
+
+ex:Y2017Q3 a ex:TimeQ3 ;
+             skos:prefLabel "2017/III quarter"@en ;
+             skos:broader ex:Y2017 ;
+             skos:notation "Y2017Q3" .
+
+ex:Y2017Q4 a ex:TimeQ4 ;
+             skos:prefLabel "2017/IV quarter"@en ;
+             skos:broader ex:Y2017 ;
+             skos:notation "Y2017Q4" .
+
+  
