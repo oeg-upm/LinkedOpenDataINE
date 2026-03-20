@@ -3,6 +3,7 @@ import os
 import sys
 import argparse, warnings
 import time
+from datetime import datetime, timezone
 
 from src.utils import convertNT2TTL, run_morph, run_morph_bigcube_batched
 from src.prefixes import *
@@ -280,9 +281,20 @@ def normalizeINE(datacube_path, measureOntologyFile):
      # Ejecutar en tu grafo
     g.update(replace_obs_query)
 
+    
+    for s, p, o in g.triples((None, SDMX_DIMENSION.date, None)):
+        if o.datatype == XSD.long:
+            timestamp = int(o)
+            dt = datetime.fromtimestamp(timestamp / 1000, tz=timezone.utc)
+            
+            g.remove((s, p, o))
+            g.add((s, p, Literal(dt.isoformat(), datatype=XSD.dateTime)))
+
+
     warnings.filterwarnings("ignore", message="NTSerializer always uses UTF-8 encoding")
     g.serialize(destination=datacube_path, format="nt")
     
+
     return g
 
 if __name__ == "__main__":
