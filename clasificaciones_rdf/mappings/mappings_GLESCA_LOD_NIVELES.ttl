@@ -1,0 +1,38 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://www.w3.org/2004/ql#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+
+<#LogicalSource> a rml:LogicalSource;
+    rml:source "./datasets/Clasificaciones_GESCLA_LOD_NIVELES.csv";
+    rml:referenceFormulation ql:CSV.
+
+<#Classification> a rr:TriplesMap;
+    rml:logicalSource <#LogicalSource>;
+    rr:subjectMap [
+        rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}/{Clasificación}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate xkos:numberOfLevels;
+        rr:objectMap [ rr:column "Número de niveles" ]
+    ].
+
+<#Level> a rr:TriplesMap;
+    rml:logicalSource <#LogicalSource>;
+    rr:subjectMap [
+        rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}/{Clasificación}/{Profundidad}";
+        rr:class xkos:ClassificationLevel
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:prefLabel;
+        rr:objectMap [ rr:column "(xkos:ClassificationLevel)" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate xkos:depth;
+        rr:objectMap [ rr:column "Profundidad" ]
+    ];
+    rr:predicateObjectMap [
+        rr:predicate xkos:notationPattern;
+        rr:objectMap [ rr:column "Expresión regular" ]
+    ].

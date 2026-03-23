@@ -41,7 +41,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNAE2009_NACEREV2
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/cnae/CNAE09/{NIVEL1}/{CODIGO1}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/cnae/CNAE-2009/{NIVEL1}/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;

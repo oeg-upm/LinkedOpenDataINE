@@ -26,7 +26,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCO08
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO08/{NIVEL}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO-08/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -36,14 +36,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCO08
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/voc/clasificaciones/isco/ISCO08>;
+    rr:object  <http://lod.ine.es/voc/clasificaciones/isco/ISCO-08>;
     ].
 
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/voc/clasificaciones/isco/ISCO08>;
+        rr:constant <http://lod.ine.es/voc/clasificaciones/isco/ISCO-08>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -62,7 +62,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCO08
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO08/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO-08/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -79,7 +79,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCO08
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO08/{PADRE_NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO-08/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -95,9 +95,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCO08
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://lod.ine.es/voc/clasificaciones/isco/ISCO08>;
+        rr:object  <http://lod.ine.es/voc/clasificaciones/isco/ISCO-08>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO08/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/isco/ISCO-08/{NIVEL}"]
     ].              
