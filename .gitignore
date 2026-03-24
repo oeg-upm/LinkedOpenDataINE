@@ -13,4 +13,6 @@ autogenAPI/config.ini
 autogenAPI/mappings
 autogenAPI/output
 autogenAPI/debug.py
+autogenAPI/.vscode
+autogenAPI/.vscode/*
 morph_configuration/

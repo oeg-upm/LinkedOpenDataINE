@@ -102,7 +102,7 @@ def getMeasureFromTTL(label, meausureOntologyFile):
     ask_measure = f'''
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX qb: <http://purl.org/linked-data/cube#>
-        PREFIX ine: <https://http://lod.ine.es/voc/cubes/vocabulary#> 
+        PREFIX ine: <https://lod.ine.es/voc/cubes/vocabulary#> 
 
         ASK {{
             {{ ?s a qb:MeasureProperty ; rdfs:label "{label}"@es . }}
