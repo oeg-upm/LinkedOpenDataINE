@@ -1,6 +1,6 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inelod: <http://stats.linkeddata.es/voc/cubes/> .
+@prefix inelod: <http://stats.linkeddata.es/cubes/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -31,7 +31,7 @@ inelod:66615_Observations a rml:TriplesMap ;
     rml:predicateObjectMap [ rml:objectMap [ rml:reference "Edad" ] ;
             rml:predicate sdmx-dimension:age ],
         [ rml:objectMap [ rml:reference "Capitales y grandes ciudades" ] ;
-            rml:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#municipality> ],
+            rml:predicate <https://stats.linkeddata.es/cubes/vocabulary#municipality> ],
         [ rml:objectMap [ rml:reference "Periodo" ] ;
             rml:predicate sdmx-dimension:refPeriod ],
         [ rml:objectMap [ rml:reference "Nivel de formación alcanzado" ] ;
@@ -42,9 +42,9 @@ inelod:66615_Observations a rml:TriplesMap ;
             rml:predicate sdmx-dimension:sex ],
         [ rml:objectMap [ rml:reference "Personas" ;
                     rml:datatype xsd:float ] ;
-            rml:predicate <https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfPeople> ] ;
+            rml:predicate <https://stats.linkeddata.es/cubes/vocabulary#numberOfPeople> ] ;
     rml:subjectMap [ rml:class qb:Observation ;
-            rml:template "https://stats.linkeddata.es/voc/cubes/66615/o{index}" ] .
+            rml:template "https://stats.linkeddata.es/cubes/66615/o{index}" ] .
 
 inelod:66615_TriplesMapDSD a rml:TriplesMap ;
     rml:logicalSource inelod:APIJSONLS ;
@@ -102,7 +102,7 @@ inelod:66615_TriplesMapDSD_bndim1 a rml:TriplesMap ;
     rml:logicalSource inelod:APIJSONLS ;
     rml:predicateObjectMap [ rml:object 1 ;
             rml:predicate qb:order ],
-        [ rml:object <https://stats.linkeddata.es/voc/cubes/vocabulary#municipality> ;
+        [ rml:object <https://stats.linkeddata.es/cubes/vocabulary#municipality> ;
             rml:predicate qb:dimension ] ;
     rml:subjectMap [ rml:constant [ ] ;
             rml:termType rml:BlankNode ] .
@@ -145,7 +145,7 @@ inelod:66615_TriplesMapDSD_bndim5 a rml:TriplesMap ;
 
 inelod:66615_TriplesMapDSD_measu a rml:TriplesMap ;
     rml:logicalSource inelod:APIJSONLS ;
-    rml:predicateObjectMap [ rml:object <https://stats.linkeddata.es/voc/cubes/vocabulary#numberOfPeople> ;
+    rml:predicateObjectMap [ rml:object <https://stats.linkeddata.es/cubes/vocabulary#numberOfPeople> ;
             rml:predicate qb:measure ] ;
     rml:subjectMap [ rml:constant [ ] ;
             rml:termType rml:BlankNode ] .

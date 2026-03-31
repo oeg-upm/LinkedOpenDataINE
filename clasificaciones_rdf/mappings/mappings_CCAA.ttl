@@ -24,7 +24,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}";
+        rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -34,19 +34,19 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA>;
+    rr:object  <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
     ];
 
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}"];
+        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}"];
     ].
 
 # These are the mappings corresponding to the dataset metadata
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA>;
+        rr:constant <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -66,7 +66,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_CCAA"];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -95,10 +95,10 @@ FROM AYUDACOD2024PRO.AYUDACOD_CCAA
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA>;
+        rr:object <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}"]
     ].    
 

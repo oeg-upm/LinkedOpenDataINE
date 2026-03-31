@@ -11,7 +11,7 @@
 <#ClassificationFamily> a rr:TriplesMap;
     rml:logicalSource <#LogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}";
+        rr:template "http://lod.ine.es/clasificaciones/{Familia}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -22,7 +22,7 @@
 <#Classification> a rr:TriplesMap;
     rml:logicalSource <#LogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}/{Clasificación}";
+        rr:template "http://lod.ine.es/clasificaciones/{Familia}/{Clasificación}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -31,9 +31,9 @@
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:belongsTo;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}" ];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/{Familia}" ];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:follows;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/{Familia}/{Sucede}" ];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/{Familia}/{Sucede}" ];
     ].

@@ -16,7 +16,7 @@
         rml:referenceFormulation ql:CSV;
     ];
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/voc/correspondencias/CNAE-93-Rev.1-CNAE09>;
+        rr:constant <http://lod.ine.es/correspondencias/CNAE-93-Rev.1-CNAE09>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -38,9 +38,9 @@
         rml:referenceFormulation ql:CSV;
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/cnae/CNAE-93-Rev.1/6/{CODIGO1}";
+        rr:template "http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1/6/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/cnae/CNAE-2009/4/{CODIGO2}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/cnae/CNAE-2009/4/{CODIGO2}";];
     ].
