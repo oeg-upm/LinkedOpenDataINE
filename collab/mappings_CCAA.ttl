@@ -9,23 +9,25 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 
 <#CSVLogicalSource> a rml:LogicalSource;   
-    rml:source "datasets/CCAA.csv";
+    rml:source "https://raw.githubusercontent.com/oeg-upm/LinkedOpenDataINE/refs/heads/main/collab/ccaa.csv";
     rml:referenceFormulation rml:CSV.
 
 <#Level> a rr:TriplesMap;
-    rr:logicalSource <#CSVLogicalSource>;
+    rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
         rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
-    rr:predicate xkos:depth;
-    rr:objectMap [rr:column "NIVEL"];
+        rr:predicate xkos:depth;
+        rr:objectMap [
+                        rr:column "NIVEL"; 
+                        rr:datatype xsd:positiveInteger];
     ];
     
     rr:predicateObjectMap [
-    rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+        rr:predicate skos:inScheme;
+        rr:object  <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
     ];
 
     rr:predicateObjectMap [
@@ -35,27 +37,30 @@
 
 # These are the mappings corresponding to the dataset metadata
 <#Metadata> a rr:TriplesMap;
-    rr:logicalSource <#CSVLogicalSource>;
+    rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
         rr:constant <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
-        rr:class dcat:Distribution;
+        rr:class dcat:Distribution, skos:ConceptScheme ;
     ];
     rr:predicateObjectMap [
-    rr:predicate dcat:accessURL;
-    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/" 
+        rr:predicate dcat:accessURL;
+        rr:object <https://oeg-upm.github.io/INELOD-Catalogue/> 
     ];
     rr:predicateObjectMap [
-    rr:predicate dcat:downloadURL;
-    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_ccaa.nt" 
+        rr:predicate dcat:downloadURL;
+        rr:object <https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_ccaa.nt> 
     ];
     rr:predicateObjectMap [
-    rr:predicate dcat:mediaType;
-    rr:object "https://www.iana.org/assignments/media-types/application/n-triples" 
-    ]. 
-
+        rr:predicate dcat:mediaType;
+        rr:object <https://www.iana.org/assignments/media-types/application/n-triples> 
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:prefLabel;
+        rr:objectMap [ rr:constant "Clasificación de las Comunidades Autónomas (CCAA)"; rr:language "es" ];
+    ].
 #These are the mappings corresponding to the concepts of the classification
 <#TriplesMap1> a rr:TriplesMap;
-    rr:logicalSource <#CSVLogicalSource>;
+    rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
         rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}";
         rr:class skos:Concept;
@@ -91,5 +96,9 @@
     rr:predicateObjectMap [
         rr:predicate skos:member;
         rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}"]
-    ].    
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:topConceptOf;
+        rr:object <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+    ].
 
