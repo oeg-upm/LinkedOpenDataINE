@@ -33,7 +33,10 @@ def getTableDimensions(tableId, ontologyDimensionsFile):
     series_tabla = requests.get(f"https://servicios.ine.es/wstempus/jsCache/ES/SERIES_TABLA/{tableId}?").json()
 
     # Caso de cubos muy grandes (SERIES_TABLA no devuelve los datos, entonces hay que usar GRUPOS_TABLA y VALORES_GRUPOSTABLA)
-    grupos_tabla = requests.get(f"https://servicios.ine.es/wstempus/jsCache/ES/GRUPOS_TABLA/{tableId}?").json()
+    try:
+        grupos_tabla = requests.get(f"https://servicios.ine.es/wstempus/jsCache/ES/GRUPOS_TABLA/{tableId}?").json()
+    except:
+        return {}
     #grupos_ids = JSONPath("$.*.Id").parse(grupos_tabla)
     grupos_ids = search("$.*.Id", grupos_tabla)
     dimension_ids = []
