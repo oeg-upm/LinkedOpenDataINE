@@ -9,7 +9,7 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>. 
 @prefix place: <http://purl.org/ontology/places#>.
-@prefix inelod: <https://lod.ine.es/voc/cubes/vocabulary#>.
+@prefix inelod: <https://lod.ine.es/cubes/vocabulary#>.
 
    
 <#ccaa-prov> a rr:TriplesMap;
@@ -18,11 +18,11 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS/1/{CPRO}";
+        rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/1/{CPRO}";
     ];
     rr:predicateObjectMap [
         rr:predicate place:in ;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/{CODAUTO}" ];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/1/{CODAUTO}" ];
     ]. 
 
 <#prov-mun> a rr:TriplesMap;
@@ -31,7 +31,7 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/mun/{CPRO}{CMUN}";
+        rr:template "http://lod.ine.es/mun/{CPRO}{CMUN}";
         rr:class inelod:municipality ;
     ];
     rr:predicateObjectMap [
@@ -48,5 +48,5 @@
     rr:predicateObjectMap [
         rr:predicate place:in ;
         rr:objectMap [ 
-            rr:template "http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS/1/{CPRO}"; ];
+            rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/1/{CPRO}"; ];
     ].

@@ -1,125 +1,125 @@
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_ccaa.nt" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Extremadura "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#prefLabel> "Galicia "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Murcia, Región de"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rioja, La"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#prefLabel> "País Vasco "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canarias "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla - La Mancha "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ceuta"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cataluña "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Navarra, Comunidad Foral de"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Madrid, Comunidad de"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cantabria "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunitat Valenciana "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aragón "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#prefLabel> "Balears, Illes"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andalucía "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla y León "@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Melilla"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asturias, Principado de"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#notation> "16" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#notation> "09" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#notation> "12" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#notation> "18" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#notation> "06" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#notation> "11" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#notation> "19" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#notation> "14" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#notation> "08" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#notation> "03" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#notation> "13" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#notation> "05" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#notation> "07" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#notation> "15" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#notation> "17" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#notation> "04" .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://purl.org/dc/terms/title> "Comunidades Autónomas"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunidades Autónomas"@es .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
-<http://lod.ine.es/voc/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/voc/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones_ccaa.nt" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Extremadura "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#prefLabel> "Galicia "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#prefLabel> "Murcia, Región de"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rioja, La"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#prefLabel> "País Vasco "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canarias "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla - La Mancha "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ceuta"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cataluña "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#prefLabel> "Navarra, Comunidad Foral de"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Madrid, Comunidad de"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cantabria "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunitat Valenciana "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aragón "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#prefLabel> "Balears, Illes"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Andalucía "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#prefLabel> "Castilla y León "@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#prefLabel> "Melilla"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asturias, Principado de"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#notation> "16" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#notation> "09" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#notation> "12" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#notation> "18" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#notation> "06" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#notation> "11" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#notation> "19" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#notation> "14" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#notation> "08" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#notation> "03" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#notation> "13" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#notation> "05" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#notation> "07" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#notation> "15" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#notation> "17" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#notation> "04" .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://purl.org/dc/terms/title> "Comunidades Autónomas"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comunidades Autónomas"@es .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/01> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/02> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/03> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/04> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/05> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/06> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/07> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/08> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/09> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/10> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/11> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/12> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/13> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/14> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/15> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/16> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/17> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/18> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+<http://lod.ine.es/clasificaciones/ccaa/CCAA/1/19> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/ccaa/CCAA> .

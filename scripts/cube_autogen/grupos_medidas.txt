@@ -1,11 +1,11 @@
-Tasas,https://lod.ine.es/voc/cubes/vocabulary#activityRate
-Tasas,https://lod.ine.es/voc/cubes/vocabulary#unemploymentRate
-Tasas,https://lod.ine.es/voc/cubes/vocabulary#employmentRate
-Unidad,https://lod.ine.es/voc/cubes/vocabulary#employedABSValue
-Unidad,https://lod.ine.es/voc/cubes/vocabulary#employedPercentage
-Unidad Ocupados,https://lod.ine.es/voc/cubes/vocabulary#employedABSValue
-Unidad Ocupados,https://lod.ine.es/voc/cubes/vocabulary#employedPercentage
-Tipo de dato Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsABSValue
-Tipo de dato Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAnnualVarianceRate
-Tipo de dato Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulated
-Tipo de dato Turistas,https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate
+Tasas,https://lod.ine.es/cubes/vocabulary#activityRate
+Tasas,https://lod.ine.es/cubes/vocabulary#unemploymentRate
+Tasas,https://lod.ine.es/cubes/vocabulary#employmentRate
+Unidad,https://lod.ine.es/cubes/vocabulary#employedABSValue
+Unidad,https://lod.ine.es/cubes/vocabulary#employedPercentage
+Unidad Ocupados,https://lod.ine.es/cubes/vocabulary#employedABSValue
+Unidad Ocupados,https://lod.ine.es/cubes/vocabulary#employedPercentage
+Tipo de dato Turistas,https://lod.ine.es/cubes/vocabulary#numberOfTouristsABSValue
+Tipo de dato Turistas,https://lod.ine.es/cubes/vocabulary#numberOfTouristsAnnualVarianceRate
+Tipo de dato Turistas,https://lod.ine.es/cubes/vocabulary#numberOfTouristsAccumulated
+Tipo de dato Turistas,https://lod.ine.es/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate

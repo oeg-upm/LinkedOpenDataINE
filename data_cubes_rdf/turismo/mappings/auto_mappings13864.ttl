@@ -1,6 +1,6 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inelod: <http://lod.ine.es/voc/cubes/> .
+@prefix inelod: <http://lod.ine.es/cubes/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -20,12 +20,12 @@ inelod:13864_Observations a rr:TriplesMap ;
         [ rr:objectMap [ rml:reference "Tipo de dato Turistas" ] ;
             rr:predicate qb:measureType ],
         [ rr:objectMap [ rml:reference "Motivo del viaje" ] ;
-            rr:predicate <https://lod.ine.es/voc/cubes/vocabulary#travelReason> ],
+            rr:predicate <https://lod.ine.es/cubes/vocabulary#travelReason> ],
         [ rr:objectMap [ rml:reference "Turistas" ;
                     rr:datatype xsd:float ] ;
             rr:predicateMap [ rml:reference "Tipo de dato Turistas" ] ] ;
     rr:subjectMap [ rr:class qb:Observation ;
-            rr:template "https://lod.ine.es/voc/cubes/13864/o{index}" ] .
+            rr:template "https://lod.ine.es/cubes/13864/o{index}" ] .
 
 inelod:13864_TriplesMapDSD a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
@@ -85,7 +85,7 @@ inelod:13864_TriplesMapDataset rml:logicalSource [ rml:referenceFormulation ql:C
 inelod:13864_TriplesMapDSD_bndim1 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/13864.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://lod.ine.es/voc/cubes/vocabulary#travelReason> ;
+    rr:predicateObjectMap [ rr:object <https://lod.ine.es/cubes/vocabulary#travelReason> ;
             rr:predicate qb:dimension ],
         [ rr:object 1 ;
             rr:predicate qb:order ] ;
@@ -115,7 +115,7 @@ inelod:13864_TriplesMapDSD_bndim3 a rr:TriplesMap ;
 inelod:13864_TriplesMapDSD_measu1 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/13864.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsABSValue> ;
+    rr:predicateObjectMap [ rr:object <https://lod.ine.es/cubes/vocabulary#numberOfTouristsABSValue> ;
             rr:predicate qb:measure ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
@@ -123,7 +123,7 @@ inelod:13864_TriplesMapDSD_measu1 a rr:TriplesMap ;
 inelod:13864_TriplesMapDSD_measu2 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/13864.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAnnualVarianceRate> ;
+    rr:predicateObjectMap [ rr:object <https://lod.ine.es/cubes/vocabulary#numberOfTouristsAnnualVarianceRate> ;
             rr:predicate qb:measure ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
@@ -131,7 +131,7 @@ inelod:13864_TriplesMapDSD_measu2 a rr:TriplesMap ;
 inelod:13864_TriplesMapDSD_measu3 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/13864.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulated> ;
+    rr:predicateObjectMap [ rr:object <https://lod.ine.es/cubes/vocabulary#numberOfTouristsAccumulated> ;
             rr:predicate qb:measure ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
@@ -139,7 +139,7 @@ inelod:13864_TriplesMapDSD_measu3 a rr:TriplesMap ;
 inelod:13864_TriplesMapDSD_measu4 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "../datasets/13864.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://lod.ine.es/voc/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate> ;
+    rr:predicateObjectMap [ rr:object <https://lod.ine.es/cubes/vocabulary#numberOfTouristsAccumulatedVarianceRate> ;
             rr:predicate qb:measure ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
