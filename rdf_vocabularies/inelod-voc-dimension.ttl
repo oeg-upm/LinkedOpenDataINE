@@ -63,6 +63,7 @@ ine:territorialTotals
     rdfs:range rdfs:Literal ;
     rdfs:label "Territorial totals"@en ,
     "Total Nacional"@es ,
+    "Totales Territoriales"@es ,
     "NAC"@es .
 
 ine:ccaa
@@ -154,6 +155,7 @@ ine:sections
     rdfs:range rdfs:Literal ;
     rdfs:label "Sections"@en ,
     "Secciones"@es ,
+    "SECCIONES "@es,
     "SECC"@es ,
     "Sections of CNAE 2009"@en ,
     "Secciones de la CNAE 2009"@es ,
@@ -649,7 +651,7 @@ ine:collective
     "Colectivo"@es .
 
 ine:residence a rdf:Property, qb:DimensionProperty;
-    rdfs:label "residencia"@es;
+    rdfs:label "residencia"@es;  
     rdfs:comment "Lugar en que se reside"@es;
     rdfs:domain qb:Observation;
     rdfs:range rdfs:Resource;
@@ -1709,7 +1711,8 @@ ine:demographicConcepts
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
     rdfs:label "Demographic concepts"@en ,
-    "Conceptos Demográficos"@es .
+    "Conceptos Demográficos"@es ,
+    "Conceptos demógraficos"@es .
 
 
 ine:urbanOrNonurbanArea
@@ -1772,6 +1775,7 @@ ine:divisions
     rdfs:range rdfs:Literal ;
     rdfs:label "Divisions"@en ,
     "Divisiones"@es ,
+    "DIVISIONES"@es ,
     "Divisions (Base 2000)"@en ,
     "Divisiones (Base 2000)"@es ,
     "Divisions (Base 90)"@en ,
@@ -1790,6 +1794,7 @@ ine:groups
     "Grupos COICOP"@es ,
     "Groups"@en ,
     "Grupos"@es ,
+    "GRUPOS"@es ,
     "Groups 1992"@en ,
     "Grupos 1992"@es ,
     "Groups 1983"@en ,
@@ -2021,7 +2026,8 @@ ine:dataTypeLevelsAndRates
     rdfs:range xsd:decimal ;
     rdfs:subPropertyOf ine:dataType ;
     rdfs:label "Data type: Levels and Rates"@en ,
-    "Tipo de dato: Niveles y Tasas"@es .
+    "Tipo de dato: Niveles y Tasas"@es ,
+    "Tipo de dato"@es .
 
 
 ine:levelsAndRates a rdf:Property, qb:DimensionProperty;
@@ -2148,6 +2154,22 @@ ine:calendarAdjustedIndicesBasedOnCNAE74
     rdfs:label "Calendar-adjusted indices, based on the CNAE-74"@en ,
     "Índices corregidos de efecto calendario, basados en la CNAE-74"@es .
 
+ine:indexAndRates 
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:index ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Index and Rates"@en ,
+    "Índice y tasas"@es,
+    "Índice y Tasas"@es,
+    "Índices y Tasas"@es .
+
+ine:travelersAndRates
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Travelers and rates"@en ,
+    "Viajeros y tasas"@es .
 
 ine:calendarAdjustedIndicesBasedOnCNAE93
     rdf:type rdf:Property , qb:DimensionProperty ;
