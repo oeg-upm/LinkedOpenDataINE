@@ -159,7 +159,7 @@ def main():
 
 from rdflib import Graph, URIRef, RDF, Namespace
 def normalizeINE(datacube_path, measureOntologyFile):
-    g = Graph()
+    g = Graph(store="Oxigraph")    
     g.parse(datacube_path, format="nt")
     
     unique_measures = set(str(o) for o in g.objects(None, QB.measure))    
@@ -192,11 +192,7 @@ def normalizeINE(datacube_path, measureOntologyFile):
                 ?slice qb:measure ?measure ;
                     qb:sliceStructure ?sliceKey .
                 ?slicedsd qb:sliceKey ?sliceKey .
-                
-                # Opcional: Verificar que no exista ya para no duplicar si lanzas la query 2 veces
-                FILTER NOT EXISTS { 
-                    ?slicedsd qb:component [ qb:measure ?measure ] 
-                }
+            
             }
         }
     """      
@@ -241,10 +237,6 @@ def normalizeINE(datacube_path, measureOntologyFile):
                     ?sliceDSD qb:sliceKey ?sliceKey ;
                             qb:component ?sliceComponent .
                     ?sliceComponent qb:measure ?measure .
-                    FILTER NOT EXISTS {
-                        ?mainDSD qb:component ?existingComp .
-                        ?existingComp qb:measure ?measure .
-                    }
                 }
             }
         }
