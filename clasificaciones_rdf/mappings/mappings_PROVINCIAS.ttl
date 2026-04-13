@@ -24,7 +24,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}";
+        rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -34,14 +34,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS>;
+    rr:object  <http://lod.ine.es/clasificaciones/provincias/PROVINCIAS>;
     ].
 
 # These are the mappings corresponding to the dataset metadata
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS>;
+        rr:constant <http://lod.ine.es/clasificaciones/provincias/PROVINCIAS>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -61,7 +61,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable [rr:tableName "AYUDACOD2024PRO.AYUDACOD_PROVINCIAS"];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -78,7 +78,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
     ];    
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/{NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -94,10 +94,10 @@ FROM AYUDACOD2024PRO.AYUDACOD_PROVINCIAS
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object <http://lod.ine.es/voc/clasificaciones/provincias/PROVINCIAS>;
+        rr:object <http://lod.ine.es/clasificaciones/provincias/PROVINCIAS>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones//CCAA/provincias/PROVINCIAS/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones//CCAA/provincias/PROVINCIAS/{NIVEL}"]
     ].    
               

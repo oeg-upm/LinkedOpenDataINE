@@ -10,7 +10,7 @@
 					  vcard:hasURL <https://www.ine.es/infoine/>.
 
 
-<http://lod.ine.es/voc/cubes/66615> rdfs:label "66615";
+<http://lod.ine.es/cubes/66615> rdfs:label "66615";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66615> ;
 											 dcat:theme sec-pub:educacion ;
@@ -79,7 +79,7 @@
 											].																					
 
 
-<http://lod.ine.es/voc/cubes/66616> rdfs:label "66616";
+<http://lod.ine.es/cubes/66616> rdfs:label "66616";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66616> ;
 											 dcat:theme sec-pub:educacion ;
@@ -147,7 +147,7 @@
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
 
-<http://lod.ine.es/voc/cubes/66617> rdfs:label "66617";
+<http://lod.ine.es/cubes/66617> rdfs:label "66617";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66617> ;
 											 dcat:theme sec-pub:educacion ;
@@ -214,7 +214,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/66618> rdfs:label "66618";
+<http://lod.ine.es/cubes/66618> rdfs:label "66618";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66618> ;
 											 dcat:theme sec-pub:educacion ;
@@ -281,7 +281,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/66619> rdfs:label "66619";
+<http://lod.ine.es/cubes/66619> rdfs:label "66619";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=66619> ;
 											 dcat:theme sec-pub:educacion ;
@@ -349,7 +349,7 @@
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
 
-<http://lod.ine.es/voc/cubes/69687> rdfs:label "69687";
+<http://lod.ine.es/cubes/69687> rdfs:label "69687";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69687> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
@@ -416,7 +416,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/69688> rdfs:label "69688";
+<http://lod.ine.es/cubes/69688> rdfs:label "69688";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69688> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
@@ -484,7 +484,7 @@
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
 
-<http://lod.ine.es/voc/cubes/69689> rdfs:label "69689";
+<http://lod.ine.es/cubes/69689> rdfs:label "69689";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69689> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
@@ -551,7 +551,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/69690> rdfs:label "69690";
+<http://lod.ine.es/cubes/69690> rdfs:label "69690";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=69690> ;
 											 dcat:theme sec-pub:inmigracionyemigracion ;
@@ -619,7 +619,7 @@
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
 
-<http://lod.ine.es/voc/cubes/65334> rdfs:label "65334";
+<http://lod.ine.es/cubes/65334> rdfs:label "65334";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=65334> ;
 											 dcat:theme sec-pub:mercadolaboral ;
@@ -686,7 +686,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/2855> rdfs:label "2855";
+<http://lod.ine.es/cubes/2855> rdfs:label "2855";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2855> ;
 											 dcat:theme sec-pub:demografia ;
@@ -753,7 +753,7 @@
 											       dcat:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 											       dcterms:license <https://www.ine.es/aviso_legal>
 											].	
-<http://lod.ine.es/voc/cubes/2940> rdfs:label "2940";
+<http://lod.ine.es/cubes/2940> rdfs:label "2940";
 											 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 											 dcterms:source <https://www.ine.es/jaxiT3/Tabla.htm?t=2940> ;
 											 dcat:theme sec-pub:alojamientos ;

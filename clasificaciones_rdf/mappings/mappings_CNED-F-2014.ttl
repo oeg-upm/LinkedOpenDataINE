@@ -37,7 +37,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDF14
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014/{NIVEL}";
+        rr:template "http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -47,14 +47,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDF14
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014>;
+    rr:object  <http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014>;
     ].
 
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014>;
+        rr:constant <http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -73,7 +73,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDF14
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -90,7 +90,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDF14
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014/{PADRE_NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -106,9 +106,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_CNEDF14
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014>;
+        rr:object  <http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/voc/clasificaciones/cnedf/CNED-F-2014/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014/{NIVEL}"]
     ].    
