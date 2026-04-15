@@ -3,7 +3,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix :      <http://example.org/shapes/qb/> .
+@prefix :      <http://lod.ine.es/shacl/> .
 
 #################################################################
 # 0. Declaración de prefijos

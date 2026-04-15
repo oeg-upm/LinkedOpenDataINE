@@ -15,7 +15,7 @@
 <#Level> a rr:TriplesMap;
     rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}";
+        rr:template "http://lod.ine.es/kos/ccaa/CCAA/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -27,19 +27,19 @@
     
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+        rr:object  <http://lod.ine.es/kos/ccaa/CCAA>;
     ];
 
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}"];
+        rr:objectMap [rr:template "http://lod.ine.es/kos/ccaa/CCAA/{NIVEL}/{COD}"];
     ].
 
 # These are the mappings corresponding to the dataset metadata
 <#Metadata> a rr:TriplesMap;
     rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+        rr:constant <http://lod.ine.es/kos/ccaa/CCAA>;
         rr:class dcat:Distribution, skos:ConceptScheme ;
     ];
     rr:predicateObjectMap [
@@ -62,7 +62,7 @@
 <#TriplesMap1> a rr:TriplesMap;
     rml:logicalSource <#CSVLogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/kos/ccaa/CCAA/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -91,14 +91,14 @@
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+        rr:object <http://lod.ine.es/kos/ccaa/CCAA>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/kos/ccaa/CCAA/{NIVEL}"]
     ];
     rr:predicateObjectMap [
         rr:predicate skos:topConceptOf;
-        rr:object <http://lod.ine.es/clasificaciones/ccaa/CCAA>;
+        rr:object <http://lod.ine.es/kos/ccaa/CCAA>;
     ].
 

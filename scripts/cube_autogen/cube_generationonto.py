@@ -25,7 +25,7 @@ QL = Namespace("http://semweb.mmlab.be/ns/ql#")
 TRANSIT = Namespace("http://vocab.org/transit/terms/")
 XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
 WGS84_POS = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
-INELOD = Namespace("http://lod.ine.es/cubes/")
+INELOD = Namespace("http://lod.ine.es/recurso/cubes/")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 OWL = Namespace("http://www.w3.org/2002/07/owl#")
@@ -44,7 +44,7 @@ SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 SDMX_METADATA = Namespace("http://purl.org/linked-data/sdmx/2009/metadata#")
 SDMX_CODE = Namespace("http://purl.org/linked-data/sdmx/2009/code#")
 SDMX_SUBJECT = Namespace("http://purl.org/linked-data/sdmx/2009/subject#")
-INELOD_VOC = Namespace("http://lod.ine.es/cubes/vocabulary/")
+INELOD_VOC = Namespace("http://lod.ine.es/def/vocabulary/")
 
 # Create two new graphs, one for the data and one for the RML mappings for the observations
 g_mappings = Graph()
@@ -334,7 +334,7 @@ def add_POM_from_csv(file_path):
                           f'    FILTER (STR(?label) = "{column}")}}'
             res_measure = measures.query(ask_measure)
             ask_measure_set = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                    f'            PREFIX ine: <https://lod.ine.es/cubes/vocabulary#>' \
+                    f'            PREFIX ine: <https://lod.ine.es/def/vocabulary/>' \
                     f' ASK {{ ?s a ine:MeasureSet ;' \
                     f'                rdfs:label ?label .'\
                     f'    FILTER (STR(?label) = "{column}")}}'
@@ -469,7 +469,7 @@ def add_POM_from_csv(file_path):
                 order += 1
                 measu_order = 1
                 query_measu_set = f' PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' \
-                                  f' PREFIX ine: <https://lod.ine.es/cubes/vocabulary#>' \
+                                  f' PREFIX ine: <https://lod.ine.es/def/vocabulary/>' \
                                     f' SELECT ?measure WHERE {{ ' \
                                     f'?measureSet a ine:MeasureSet ;' \
                                     f'              rdfs:label ?label . ' \
@@ -650,7 +650,7 @@ def add_mappings_from_csv(file_path):
     g_mappings.add((logical_source_bnode, RML.referenceFormulation, QL.CSV))
     subject_map_bnode = BNode()
     g_mappings.add((triples_map_obs, RR.subjectMap, subject_map_bnode))
-    g_mappings.add((subject_map_bnode, RR.template, Literal("https://lod.ine.es/cubes/" + file_name + "/o{index}")))
+    g_mappings.add((subject_map_bnode, RR.template, Literal("https://lod.ine.es/recurso/cubes/" + file_name + "/o{index}")))
     g_mappings.add((subject_map_bnode, RR['class'], QB.Observation))
     predicate_object_map_bnode = BNode()
     g_mappings.add((triples_map_obs, RR.predicateObjectMap, predicate_object_map_bnode))

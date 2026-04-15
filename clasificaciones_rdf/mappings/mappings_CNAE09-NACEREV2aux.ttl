@@ -25,7 +25,7 @@
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:downloadURL;
-    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/correspondencias_cnae09-nacerev2.nt" 
+    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/kos/nt_data/correspondencias_cnae09-nacerev2.nt" 
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:mediaType;
@@ -38,9 +38,9 @@
         rml:referenceFormulation ql:CSV;
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/cnae/CNAE-2009/4/{CODIGO1}";
+        rr:template "http://lod.ine.es/kos/cnae/CNAE-2009/4/{CODIGO1}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:ConceptAssociation;
-        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/nace/NACE-Rev.2/4/{CODIGO2}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/kos/nace/NACE-Rev.2/4/{CODIGO2}";];
     ].

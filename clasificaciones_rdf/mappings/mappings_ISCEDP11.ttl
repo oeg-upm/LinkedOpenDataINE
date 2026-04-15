@@ -26,7 +26,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
 <#Level> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/{NIVEL}";
+        rr:template "http://lod.ine.es/kos/isced/ISCED-P-2011/{NIVEL}";
         rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
@@ -36,14 +36,14 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
     
     rr:predicateObjectMap [
     rr:predicate skos:inScheme;
-    rr:object  <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011>;
+    rr:object  <http://lod.ine.es/kos/isced/ISCED-P-2011>;
     ].
 
 
 <#Metadata> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:constant <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011>;
+        rr:constant <http://lod.ine.es/kos/isced/ISCED-P-2011>;
         rr:class dcat:Distribution;
     ];
     rr:predicateObjectMap [
@@ -52,7 +52,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:downloadURL;
-    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_iscedp11.nt" 
+    rr:object "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/kos/nt_data/clasificaciones_iscedp11.nt" 
     ];
     rr:predicateObjectMap [
     rr:predicate dcat:mediaType;
@@ -62,7 +62,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
 <#TriplesMap1> a rr:TriplesMap;
     rr:logicalTable <#ClassifiTableView>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/{NIVEL}/{COD}";
+        rr:template "http://lod.ine.es/kos/isced/ISCED-P-2011/{NIVEL}/{COD}";
         rr:class skos:Concept;
     ];
     rr:predicateObjectMap [
@@ -79,7 +79,7 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
     ];
     rr:predicateObjectMap [
         rr:predicate skos:broader;
-        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/{PADRE_NIVEL}/{PADRE}";];
+        rr:objectMap [ rr:template "http://lod.ine.es/kos/isced/ISCED-P-2011/{PADRE_NIVEL}/{PADRE}";];
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:coreContentNote;
@@ -95,9 +95,9 @@ FROM AYUDACOD2024PRO.AYUDACOD_ISCEDP11
     ];              
     rr:predicateObjectMap [
         rr:predicate skos:inScheme;
-        rr:object  <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011>;
+        rr:object  <http://lod.ine.es/kos/isced/ISCED-P-2011>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:member;
-        rr:objectMap [rr:template "http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/{NIVEL}"]
+        rr:objectMap [rr:template "http://lod.ine.es/kos/isced/ISCED-P-2011/{NIVEL}"]
     ].              

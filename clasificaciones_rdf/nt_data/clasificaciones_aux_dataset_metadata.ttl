@@ -3,122 +3,122 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 
-<http://lod.ine.es/clasificaciones/ccaa/CCAA> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/ccaa/CCAA> a skos:ConceptScheme ;
 														   skos:prefLabel "Comunidades Autónomas"@es ;
 														   dc:title 	"Comunidades Autónomas"@es .
 
-<http://lod.ine.es/clasificaciones/cn/CN-2010> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cn/CN-2010> a skos:ConceptScheme ;
 														   skos:prefLabel "Nomenclatura Combinada 2010"@es ;
 														   dc:title 	"Nomenclatura Combinada 2010"@es .
 
-<http://lod.ine.es/clasificaciones/cn/CN-2020> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cn/CN-2020> a skos:ConceptScheme ;
 														   skos:prefLabel "Nomenclatura Combinada 2020"@es ;
 														   dc:title 	"Nomenclatura Combinada 2020"@es .
 
-<http://lod.ine.es/clasificaciones/cn/C-2023> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cn/C-2023> a skos:ConceptScheme ;
 														   skos:prefLabel "Nomenclatura Combinada 2023"@es ;
 														   dc:title 	"Nomenclatura Combinada 2023"@es .
 
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2009> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cnae/CNAE-2009> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es ;
 														   dc:title 	"Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
 
-<http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cnae/CNAE-93-Rev.1> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Actividades Económicas. CNAE 1993"@es ;
 														   dc:title 	"Clasificación Nacional de Actividades Económicas. CNAE 1993"@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED2000_EST> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED2000_EST> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es ;
 														   dc:title 	"Clasificación Nacional de Educación. CNED 2000. Niveles Educativos"@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED2000NIV> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED2000NIV> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es ;
 														   dc:title 	"Clasificación Nacional de Educación. CNED 2000. Niveles de Formación."@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED2000_SEC> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED2000_SEC> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es ;
 														   dc:title 	"Clasificación Nacional de Educación. CNED 2000. Sectores de Estudio."@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED-A-2014> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED-A-2014> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es ;
 														   dc:title 	"Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados (CNED-A), 2014."@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED-F-2014> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED-F-2014> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es ;
 														   dc:title 	"Clasificación de programas y titulaciones en sectores de estudio (CNED-F), 2014."@es .
 
-<http://lod.ine.es/clasificaciones/cned/CNED-P-2014> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cned/CNED-P-2014> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de programas y titulaciones en sectores de estudio (CNED-P), 2014."@es ;
 														   dc:title 	"Clasificación de programas y titulaciones en sectores de estudio (CNED-P), 2014."@es .
 
-<http://lod.ine.es/clasificaciones/cno/CNO-11> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cno/CNO-11> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Ocupaciones. CNO 2011."@es ;
 														   dc:title 	"Clasificación Nacional de Ocupaciones. CNO 2011."@es .
 
-<http://lod.ine.es/clasificaciones/cno/CN-94> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cno/CN-94> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Ocupaciones. CNO 1994."@es ;
 														   dc:title 	"Clasificación Nacional de Ocupaciones. CNO 1994."@es .
 
-<http://lod.ine.es/clasificaciones/coicop/COICOP16> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/coicop/COICOP16> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de bienes y servicios. COICOP 2016."@es ;
 														   dc:title 	"Clasificación de bienes y servicios. COICOP 2016."@es .
 
-<http://lod.ine.es/clasificaciones/cpa/CPA21> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cpa/CPA21> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de Productos por Actividades. CPA 2.1."@es ;
 														   dc:title 	"Clasificación de Productos por Actividades. CPA 2.1."@es .
 
-<http://lod.ine.es/clasificaciones/cpa/CPA21ENG> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cpa/CPA21ENG> a skos:ConceptScheme ;
 														   skos:prefLabel "Classification of Products by Activities. CPA 2.1."@en ;
 														   dc:title 	"Classification of Products by Activities. CPA 2.1."@en .
 
-<http://lod.ine.es/clasificaciones/cpa/CPA2002> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cpa/CPA2002> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de Productos por Actividades. CPA 2002."@es ;
 														   dc:title 	"Clasificación de Productos por Actividades. CPA 2002."@es .
 
-<http://lod.ine.es/clasificaciones/cpa/CPA2008> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cpa/CPA2008> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación de Productos por Actividades. CPA 2008."@es ;
 														   dc:title 	"Clasificación de Productos por Actividades. CPA 2008."@es .
 
-<http://lod.ine.es/clasificaciones/cpc/CPC21ENG> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cpc/CPC21ENG> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Central de Productos (CPC) Versión 2.1"@es ;
 														   dc:title 	"Clasificación Central de Productos (CPC) Versión 2.1"@es .
 
-<http://lod.ine.es/clasificaciones/isced/ISCED-A-2011> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isced/ISCED-A-2011> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es ;
 														   dc:title 	"Clasificación internacional normalizada de la educación ISCED 2011, Logros educativos"@es .
 
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isced/ISCED-P-2011> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es ;
 														   dc:title 	"Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
 
-<http://lod.ine.es/clasificaciones/isced/ISCED-F-2013> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isced/ISCED-F-2013> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación internacional normalizada de la educación ISCED 2013"@es ;
 														   dc:title 	"Clasificación internacional normalizada de la educación ISCED 2013"@es .
 
-<http://lod.ine.es/clasificaciones/isco/ISCO-88> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isco/ISCO-88> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Internacional Uniforme de Ocupaciones, 1988"@es ;
 														   dc:title 	"Clasificación Internacional Uniforme de Ocupaciones, 1988"@es .
 
-<http://lod.ine.es/clasificaciones/isco/ISCO-08> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isco/ISCO-08> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Internacional Uniforme de Ocupaciones, 2008"@es ;
 														   dc:title 	"Clasificación Internacional Uniforme de Ocupaciones, 2008"@es .
 
-<http://lod.ine.es/clasificaciones/isic/ISIC-Rev.4> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/isic/ISIC-Rev.4> a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es ;
 														   dc:title 	"Clasificación Industrial Internacional Uniforme de todas las actividades económicas, Revisión 4"@es .
 
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.1.1> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/nace/NACE-Rev.1.1> a skos:ConceptScheme ;
 														   skos:prefLabel "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es ;
 														   dc:title 	"Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev.1.1"@es .
 
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> a skos:ConceptScheme ;
+<http://lod.ine.es/kos/nace/NACE-Rev.2> a skos:ConceptScheme ;
 														   skos:prefLabel "Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev 2"@es ;
 														   dc:title 	"Nomenclatura estadística de actividades económicas de la Comunidad Europea Rev 2"@es .
 
-<http://lod.ine.es/clasificaciones/provincias/PROVINCIAS>	 a skos:ConceptScheme ;
+<http://lod.ine.es/kos/provincias/PROVINCIAS>	 a skos:ConceptScheme ;
 														   skos:prefLabel "Provincias"@es ;
 														   dc:title 	"Provincias"@es .
 
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2025>	 a skos:ConceptScheme ;
+<http://lod.ine.es/kos/cnae/CNAE-2025>	 a skos:ConceptScheme ;
 														   skos:prefLabel "Clasificación Nacional de Actividades Económicas. CNAE 2025"@es ;
 														   dc:title 	"Clasificación Nacional de Actividades Económicas. CNAE 2025"@es .

@@ -1,27 +1,27 @@
-Capitales y grandes ciudades,https://lod.ine.es/cubes/vocabulary#municipality
-Municipios,https://lod.ine.es/cubes/vocabulary#municipality
+Capitales y grandes ciudades,https://lod.ine.es/def/vocabulary/municipality
+Municipios,https://lod.ine.es/def/vocabulary/municipality
 Sexo,http://purl.org/linked-data/sdmx/2009/dimension#sex
 Edad,http://purl.org/linked-data/sdmx/2009/dimension#age
 Nivel de formación alcanzado,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
 Periodo,http://purl.org/linked-data/sdmx/2009/dimension#refPeriod
-Nacionalidad,https://lod.ine.es/cubes/vocabulary#nationality
+Nacionalidad,https://lod.ine.es/def/vocabulary/nationality
 Nivel de estudios,http://purl.org/linked-data/sdmx/2009/dimension#educationLev
-Lugar de nacimiento,https://lod.ine.es/cubes/vocabulary#placeOfBirth
-País de nacionalidad,https://lod.ine.es/cubes/vocabulary#countryNationality
-País de nacimiento,https://lod.ine.es/cubes/vocabulary#countryOfBirth
-País de procedencia,https://lod.ine.es/cubes/vocabulary#countryOfOrigin
-Comunidades y ciudades autonomas,https://lod.ine.es/cubes/vocabulary#ccaa
-Comunidades y Ciudades Autónomas,https://lod.ine.es/cubes/vocabulary#ccaa
-Tipo de alojamiento,https://lod.ine.es/cubes/vocabulary#lodgingType
-Provincias,https://lod.ine.es/cubes/vocabulary#provinces
-Sector económico,https://lod.ine.es/cubes/vocabulary#economicSector
-Rama de actividad CNAE 2009,https://lod.ine.es/cubes/vocabulary#economicalActivity
-Grupos de edad,https://lod.ine.es/cubes/vocabulary#ageGroup
-País de residencia,https://lod.ine.es/cubes/vocabulary#countryOfResidence
-Comunidades autónomas,https://lod.ine.es/cubes/vocabulary#ccaa
-Motivo del viaje,https://lod.ine.es/cubes/vocabulary#travelReason
-Via de acceso,https://lod.ine.es/cubes/vocabulary#accessRoute
-Comunidad autónoma de destino,https://lod.ine.es/cubes/vocabulary#ccaa
-Forma de organización del viaje,https://lod.ine.es/cubes/vocabulary#travelOrganization
-Duración del viaje,https://lod.ine.es/cubes/vocabulary#travelDuration
-Tipo de visitante,https://lod.ine.es/cubes/vocabulary#touristType
+Lugar de nacimiento,https://lod.ine.es/def/vocabulary/placeOfBirth
+País de nacionalidad,https://lod.ine.es/def/vocabulary/countryNationality
+País de nacimiento,https://lod.ine.es/def/vocabulary/countryOfBirth
+País de procedencia,https://lod.ine.es/def/vocabulary/countryOfOrigin
+Comunidades y ciudades autonomas,https://lod.ine.es/def/vocabulary/ccaa
+Comunidades y Ciudades Autónomas,https://lod.ine.es/def/vocabulary/ccaa
+Tipo de alojamiento,https://lod.ine.es/def/vocabulary/lodgingType
+Provincias,https://lod.ine.es/def/vocabulary/provinces
+Sector económico,https://lod.ine.es/def/vocabulary/economicSector
+Rama de actividad CNAE 2009,https://lod.ine.es/def/vocabulary/economicalActivity
+Grupos de edad,https://lod.ine.es/def/vocabulary/ageGroup
+País de residencia,https://lod.ine.es/def/vocabulary/countryOfResidence
+Comunidades autónomas,https://lod.ine.es/def/vocabulary/ccaa
+Motivo del viaje,https://lod.ine.es/def/vocabulary/travelReason
+Via de acceso,https://lod.ine.es/def/vocabulary/accessRoute
+Comunidad autónoma de destino,https://lod.ine.es/def/vocabulary/ccaa
+Forma de organización del viaje,https://lod.ine.es/def/vocabulary/travelOrganization
+Duración del viaje,https://lod.ine.es/def/vocabulary/travelDuration
+Tipo de visitante,https://lod.ine.es/def/vocabulary/touristType

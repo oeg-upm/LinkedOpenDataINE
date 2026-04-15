@@ -3,7 +3,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix api:   <http://purl.org/linked-data/api/vocab#> .
-@prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector/>.
+@prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector#>.
 
 pubsec:ciencia-tecnologia
         a               skos:Concept ;

@@ -1,6 +1,6 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix inelod: <http://stats.linkeddata.es/cubes/> .
+@prefix inelod: <http://stats.linkeddata.es/recurso/cubes/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -16,7 +16,7 @@ inelod:68535_Observations a rr:TriplesMap ;
     rr:predicateObjectMap [ rr:objectMap [ rml:reference "Sexo" ] ;
             rr:predicate sdmx-dimension:sex ],
         [ rr:objectMap [ rml:reference "Provincias" ] ;
-            rr:predicate <https://stats.linkeddata.es/cubes/vocabulary#provinces> ],
+            rr:predicate <https://stats.linkeddata.es/def/vocabulary/provinces> ],
         [ rr:object inelod:68535 ;
             rr:predicate qb:dataSet ],
         [ rr:objectMap [ rml:reference "Edad" ] ;
@@ -24,12 +24,12 @@ inelod:68535_Observations a rr:TriplesMap ;
         [ rr:objectMap [ rml:reference "Periodo" ] ;
             rr:predicate sdmx-dimension:refPeriod ],
         [ rr:objectMap [ rml:reference "Nacionalidad" ] ;
-            rr:predicate <https://stats.linkeddata.es/cubes/vocabulary#nationality> ],
+            rr:predicate <https://stats.linkeddata.es/def/vocabulary/nationality> ],
         [ rr:objectMap [ rml:reference "Personas" ;
                     rr:datatype xsd:float ] ;
-            rr:predicate <https://stats.linkeddata.es/cubes/vocabulary#numberOfPeople> ] ;
+            rr:predicate <https://stats.linkeddata.es/def/vocabulary/numberOfPeople> ] ;
     rr:subjectMap [ rr:class qb:Observation ;
-            rr:template "https://stats.linkeddata.es/cubes/68535/o{index}" ] .
+            rr:template "https://stats.linkeddata.es/recurso/cubes/68535/o{index}" ] .
 
 inelod:68535_TriplesMapDSD a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
@@ -89,7 +89,7 @@ inelod:68535_TriplesMapDSD_bndim1 a rr:TriplesMap ;
             rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\68535.csv" ] ;
     rr:predicateObjectMap [ rr:object 1 ;
             rr:predicate qb:order ],
-        [ rr:object <https://stats.linkeddata.es/cubes/vocabulary#provinces> ;
+        [ rr:object <https://stats.linkeddata.es/def/vocabulary/provinces> ;
             rr:predicate qb:dimension ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .
@@ -117,7 +117,7 @@ inelod:68535_TriplesMapDSD_bndim3 a rr:TriplesMap ;
 inelod:68535_TriplesMapDSD_bndim4 a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\68535.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/cubes/vocabulary#nationality> ;
+    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/def/vocabulary/nationality> ;
             rr:predicate qb:dimension ],
         [ rr:object 4 ;
             rr:predicate qb:order ] ;
@@ -137,7 +137,7 @@ inelod:68535_TriplesMapDSD_bndim5 a rr:TriplesMap ;
 inelod:68535_TriplesMapDSD_measu a rr:TriplesMap ;
     rml:logicalSource [ rml:referenceFormulation ql:CSV ;
             rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\scripts\\cube_autogen\\68535.csv" ] ;
-    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/cubes/vocabulary#numberOfPeople> ;
+    rr:predicateObjectMap [ rr:object <https://stats.linkeddata.es/def/vocabulary/numberOfPeople> ;
             rr:predicate qb:measure ] ;
     rr:subjectMap [ rr:constant [ ] ;
             rr:termType rr:BlankNode ] .

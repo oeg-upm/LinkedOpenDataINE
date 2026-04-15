@@ -5,7 +5,7 @@
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix :      <http://example.org/shapes/inelod-qb/> .
+@prefix :      <http://lod.ine.es/shacl/> .
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 @prefix unit: <http://qudt.org/vocab/unit/>.
 

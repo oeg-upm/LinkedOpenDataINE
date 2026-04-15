@@ -1,562 +1,562 @@
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/clasificaciones/nt_data/clasificaciones_iscedp11.nt" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#notation> "341" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#notation> "354" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#notation> "748" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#notation> "741" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#notation> "353" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#notation> "241" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#notation> "0" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#notation> "454" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#notation> "99" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#notation> "441" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#notation> "758" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#notation> "844" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#notation> "343" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#notation> "666" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#notation> "84" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#notation> "2" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#notation> "34" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#notation> "253" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#notation> "647" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#notation> "747" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#notation> "344" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#notation> "665" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#notation> "5" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#notation> "352" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#notation> "999" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#notation> "100" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#notation> "667" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#notation> "44" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#notation> "645" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#notation> "65" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#notation> "651" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#notation> "8" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#notation> "3" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#notation> "251" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#notation> "252" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#notation> "768" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#notation> "4" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#notation> "646" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#notation> "851" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#notation> "243" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#notation> "76" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#notation> "751" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#notation> "841" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#notation> "443" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#notation> "35" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#notation> "761" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#notation> "66" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#notation> "75" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#notation> "86" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#notation> "656" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#notation> "541" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#notation> "757" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#notation> "342" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#notation> "861" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#notation> "54" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#notation> "544" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#notation> "554" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#notation> "661" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#notation> "55" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#notation> "453" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#notation> "244" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#notation> "444" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#notation> "9" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#notation> "551" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#notation> "7" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#notation> "45" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#notation> "74" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#notation> "657" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#notation> "85" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#notation> "010" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#notation> "242" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#notation> "767" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#notation> "020" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#notation> "854" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#notation> "746" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#notation> "655" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#notation> "451" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#notation> "766" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#notation> "25" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#notation> "64" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#notation> "351" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#notation> "24" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#notation> "254" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#notation> "756" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#notation> "6" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#notation> "864" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#notation> "641" .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de licenciatura o equivalente"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación primaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de doctorado o equivalente"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (más de 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación de la primera infancia"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de maestría o equivalente"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria baja"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación terciaria de ciclo corto"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (duración mínima de 5 años)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación postsecundaria no terciaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
-<http://lod.ine.es/clasificaciones/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/clasificaciones/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#downloadURL> "https://oeg-upm.github.io/INELOD-Catalogue/nt-data/kos/nt_data/clasificaciones_iscedp11.nt" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#mediaType> "https://www.iana.org/assignments/media-types/application/n-triples" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/ns/dcat#accessURL> "https://oeg-upm.github.io/INELOD-Catalogue/" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#broader> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdf-vocabulary.ddialliance.org/xkos#ClassificationLevel> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "3"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://rdf-vocabulary.ddialliance.org/xkos#depth> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#notation> "341" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#notation> "354" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#notation> "748" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#notation> "741" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#notation> "353" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#notation> "241" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#notation> "0" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#notation> "454" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#notation> "99" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#notation> "441" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#notation> "758" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#notation> "844" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#notation> "02" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#notation> "343" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#notation> "666" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#notation> "84" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#notation> "2" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#notation> "34" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#notation> "253" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#notation> "647" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#notation> "747" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#notation> "344" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#notation> "665" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#notation> "5" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#notation> "352" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#notation> "999" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#notation> "100" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#notation> "667" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#notation> "44" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#notation> "645" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#notation> "65" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#notation> "651" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#notation> "8" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#notation> "3" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#notation> "251" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#notation> "252" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#notation> "768" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#notation> "4" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#notation> "646" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#notation> "851" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#notation> "243" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#notation> "76" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#notation> "751" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#notation> "01" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#notation> "841" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#notation> "443" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#notation> "35" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#notation> "761" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#notation> "66" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#notation> "75" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#notation> "86" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#notation> "656" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#notation> "10" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#notation> "541" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#notation> "1" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#notation> "757" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#notation> "342" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#notation> "861" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#notation> "54" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#notation> "544" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#notation> "554" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#notation> "661" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#notation> "55" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#notation> "453" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#notation> "244" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#notation> "444" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#notation> "9" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#notation> "551" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#notation> "7" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#notation> "45" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#notation> "74" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#notation> "657" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#notation> "85" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#notation> "010" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#notation> "242" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#notation> "767" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#notation> "020" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#notation> "854" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#notation> "746" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#notation> "655" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#notation> "451" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#notation> "766" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#notation> "25" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#notation> "64" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#notation> "351" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#notation> "24" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#notation> "254" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#notation> "756" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#notation> "6" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#notation> "864" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#notation> "641" .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de licenciatura o equivalente"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desarrollo educacional de la primera infancia"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación primaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (más de 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas considerados insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de doctorado o equivalente"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (más de 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación de la primera infancia"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión parcial del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nivel de maestría o equivalente"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programa largo de primer título (duración mínima de 5 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión, o la conclusión parcial, del nivel; sin acceso directo a la educación terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria baja"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#prefLabel> "No clasificado en otra parte"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación terciaria de ciclo corto"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#prefLabel> "Académica"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primer título (3 a 4 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profesional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#prefLabel> "Programas largos de primer título (duración mínima de 5 años)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orientación no especificada"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación postsecundaria no terciaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de licenciatura o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#prefLabel> "Insuficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segundo o siguiente título (tras cursar un programa de nivel de maestría o equivalente)"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vocacional"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educación preprimaria"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#prefLabel> "suficientes para la conclusión del nivel"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#prefLabel> "Suficientes para la conclusión del nivel; con acceso directo a la educación secundaria alta"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#member> <http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/665> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/241> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/01> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/666> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/757> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/253> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/454> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/756> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/99> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/25> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/999> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/541> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/02> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/551> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/66> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/251> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/851> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/44> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/85> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/741> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/84> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/844> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/647> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/344> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/656> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/242> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/645> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/661> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/252> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/854> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/010> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/766> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/353> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/354> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/441> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/244> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/451> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/751> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/443> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/24> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/74> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/100> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/65> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/76> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/641> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/646> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/343> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/748> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/657> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/768> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/55> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/746> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/651> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/243> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/351> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/254> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/667> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/453> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/864> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/45> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/861> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/747> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/554> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/767> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/841> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/75> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/444> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/10> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/342> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/655> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/761> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/86> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/758> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/64> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/341> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/35> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/352> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/3/544> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/54> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/2/34> <http://www.w3.org/2004/02/skos/core#inScheme> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://purl.org/dc/terms/title> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación internacional normalizada de la educación ISCED 2011, Programas"@es .
+<http://lod.ine.es/kos/isced/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/2> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/3> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/4> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/5> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/6> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/7> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/8> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .
+<http://lod.ine.es/kos/isced/ISCED-P-2011/1/9> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://lod.ine.es/kos/isced/ISCED-P-2011> .

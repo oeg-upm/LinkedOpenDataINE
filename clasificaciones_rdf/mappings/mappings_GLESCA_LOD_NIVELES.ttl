@@ -11,7 +11,7 @@
 <#Classification> a rr:TriplesMap;
     rml:logicalSource <#LogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/{Familia}/{Clasificación}";
+        rr:template "http://lod.ine.es/kos/{Familia}/{Clasificación}";
     ];
     rr:predicateObjectMap [
         rr:predicate xkos:numberOfLevels;
@@ -21,7 +21,7 @@
 <#Level> a rr:TriplesMap;
     rml:logicalSource <#LogicalSource>;
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/{Familia}/{Clasificación}/{Profundidad}";
+        rr:template "http://lod.ine.es/kos/{Familia}/{Clasificación}/{Profundidad}";
         rr:class xkos:ClassificationLevel
     ];
     rr:predicateObjectMap [

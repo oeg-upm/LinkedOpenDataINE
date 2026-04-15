@@ -12,7 +12,7 @@
 @prefix dqv:   <http://www.w3.org/ns/dqv#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix pubsec: <https://datos.gob.es/kos/sector-publico/sector/>.
-@prefix ine: <https://lod.ine.es/cubes/vocabulary#>. 
+@prefix ine: <https://lod.ine.es/def/vocabulary/>. 
 
 # -----------------------------
 # Theme taxonomy
@@ -142,26 +142,26 @@ pubsec:hosteleria
               <http://lod.ine.es/correspondencias/CNAE93-CNAE09>,
               <http://lod.ine.es/correspondencias/CNAE2009-NACEREV2>,
               <http://lod.ine.es/mun>,
-              <http://lod.ine.es/cubes/66615>,
-              <http://lod.ine.es/cubes/66616>,
-              <http://lod.ine.es/cubes/66617>,
-              <http://lod.ine.es/cubes/66618>,
-              <http://lod.ine.es/cubes/66619>,
-              <http://lod.ine.es/cubes/69687>,
-              <http://lod.ine.es/cubes/69688>,
-              <http://lod.ine.es/cubes/69689>,
-              <http://lod.ine.es/cubes/69690>,
-              <http://lod.ine.es/cubes/65334>,
-              <http://lod.ine.es/cubes/65349>,
-              <http://lod.ine.es/cubes/65353>,
-              <http://lod.ine.es/cubes/65123>,
-              <http://lod.ine.es/cubes/2855>,
-              <http://lod.ine.es/cubes/2940>,
-              <http://lod.ine.es/cubes/10821>,
-              <http://lod.ine.es/cubes/10822>,
-              <http://lod.ine.es/cubes/10823>,
-              <http://lod.ine.es/cubes/13864>,
-              <http://lod.ine.es/cubes/23988>;
+              <http://lod.ine.es/recurso/cubes/66615>,
+              <http://lod.ine.es/recurso/cubes/66616>,
+              <http://lod.ine.es/recurso/cubes/66617>,
+              <http://lod.ine.es/recurso/cubes/66618>,
+              <http://lod.ine.es/recurso/cubes/66619>,
+              <http://lod.ine.es/recurso/cubes/69687>,
+              <http://lod.ine.es/recurso/cubes/69688>,
+              <http://lod.ine.es/recurso/cubes/69689>,
+              <http://lod.ine.es/recurso/cubes/69690>,
+              <http://lod.ine.es/recurso/cubes/65334>,
+              <http://lod.ine.es/recurso/cubes/65349>,
+              <http://lod.ine.es/recurso/cubes/65353>,
+              <http://lod.ine.es/recurso/cubes/65123>,
+              <http://lod.ine.es/recurso/cubes/2855>,
+              <http://lod.ine.es/recurso/cubes/2940>,
+              <http://lod.ine.es/recurso/cubes/10821>,
+              <http://lod.ine.es/recurso/cubes/10822>,
+              <http://lod.ine.es/recurso/cubes/10823>,
+              <http://lod.ine.es/recurso/cubes/13864>,
+              <http://lod.ine.es/recurso/cubes/23988>;
   dcat:service <https://lod.ine.es/> ;
  # dcat:record <https://data.example.org/record/pop-annual-geo-2025> ; Actualmente no tenemos registros de los conjuntos de datos, pero podría ser una interesante incorporación en el futuro.
   dcat:endpointURL <https://lod.ine.es/> ;
@@ -213,26 +213,26 @@ pubsec:hosteleria
               <http://lod.ine.es/correspondencias/CNAE93-CNAE09>,
               <http://lod.ine.es/correspondencias/CNAE2009-NACEREV2>,
               <http://lod.ine.es/mun>,
-              <http://lod.ine.es/cubes/66615>,
-              <http://lod.ine.es/cubes/66616>,
-              <http://lod.ine.es/cubes/66617>,
-              <http://lod.ine.es/cubes/66618>,
-              <http://lod.ine.es/cubes/66619>,
-              <http://lod.ine.es/cubes/69687>,
-              <http://lod.ine.es/cubes/69688>,
-              <http://lod.ine.es/cubes/69689>,
-              <http://lod.ine.es/cubes/69690>,
-              <http://lod.ine.es/cubes/65334>,
-              <http://lod.ine.es/cubes/65349>,
-              <http://lod.ine.es/cubes/65353>,
-              <http://lod.ine.es/cubes/65123>,
-              <http://lod.ine.es/cubes/2855>,
-              <http://lod.ine.es/cubes/2940>,
-              <http://lod.ine.es/cubes/10821>,
-              <http://lod.ine.es/cubes/10822>,
-              <http://lod.ine.es/cubes/10823>,
-              <http://lod.ine.es/cubes/13864>,
-              <http://lod.ine.es/cubes/23988>; 
+              <http://lod.ine.es/recurso/cubes/66615>,
+              <http://lod.ine.es/recurso/cubes/66616>,
+              <http://lod.ine.es/recurso/cubes/66617>,
+              <http://lod.ine.es/recurso/cubes/66618>,
+              <http://lod.ine.es/recurso/cubes/66619>,
+              <http://lod.ine.es/recurso/cubes/69687>,
+              <http://lod.ine.es/recurso/cubes/69688>,
+              <http://lod.ine.es/recurso/cubes/69689>,
+              <http://lod.ine.es/recurso/cubes/69690>,
+              <http://lod.ine.es/recurso/cubes/65334>,
+              <http://lod.ine.es/recurso/cubes/65349>,
+              <http://lod.ine.es/recurso/cubes/65353>,
+              <http://lod.ine.es/recurso/cubes/65123>,
+              <http://lod.ine.es/recurso/cubes/2855>,
+              <http://lod.ine.es/recurso/cubes/2940>,
+              <http://lod.ine.es/recurso/cubes/10821>,
+              <http://lod.ine.es/recurso/cubes/10822>,
+              <http://lod.ine.es/recurso/cubes/10823>,
+              <http://lod.ine.es/recurso/cubes/13864>,
+              <http://lod.ine.es/recurso/cubes/23988>; 
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
   dcat:contactPoint [

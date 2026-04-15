@@ -1,150 +1,150 @@
-<http://lod.ine.es/clasificaciones/cneda/CNED-A-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cneda> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cno/CNO-11> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cno> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnae> .
-<http://lod.ine.es/clasificaciones/cneda/CNED2000_NIV> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cneda> .
-<http://lod.ine.es/clasificaciones/iscedp> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-P (Clasificacion Internacional Normalizada de Educacion,  Nivel educativo)" .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cpa/CPA2002> .
-<http://lod.ine.es/clasificaciones/cneda/CNED2000_NIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-F (Clasificación Nacional de Educación, Sector de estudios)" .
-<http://lod.ine.es/clasificaciones/laet/EET24_ABR25_V13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpc> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPC (Clasificación Central de Productos)" .
-<http://lod.ine.es/clasificaciones/isceda/ISCED-A-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedf/CNED2000_SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/nace> <http://www.w3.org/2004/02/skos/core#prefLabel> "NACE (Clasificación Europea de Actividades Económicas)" .
-<http://lod.ine.es/clasificaciones/cnedp/CNED2000_EST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-08> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/isco/ISCO-88> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2002> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2002)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20ES> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/nace> .
-<http://lod.ine.es/clasificaciones/cno> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNO (Clasificación Nacional de Ocupaciones)" .
-<http://lod.ine.es/clasificaciones/isceda/ISCED-A-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion Internacional Normalizada de Educacion CINE 2011 (Anexo 3: CINE-A 2011)" .
-<http://lod.ine.es/clasificaciones/cnedf/CNED2000_SEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Sectores de estudios (CNEDSEC)" .
-<http://lod.ine.es/clasificaciones/laet/EET24_ABR25_V13> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/laet> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2002> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cpa/CPA2008> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedp/CNED-P-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion de programas en niveles educativos 2014 (CNED-P-2014)" .
-<http://lod.ine.es/clasificaciones/cn/CN-2010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Provincias" .
-<http://lod.ine.es/clasificaciones/iscedf/ISCED-F-2013> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/iscedf> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20IN> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/nace> .
-<http://lod.ine.es/clasificaciones/cnedp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedp> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-P  (Clasificación Nacional de Educación, Nivel educativo)" .
-<http://lod.ine.es/clasificaciones/cno/CNO-11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones 2011 ( CNO-11 )" .
-<http://lod.ine.es/clasificaciones/cpc/CPC2.1ENG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Central Product Classification, (CPC Version 2.1)" .
-<http://lod.ine.es/clasificaciones/cno/CNO-94> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cno> .
-<http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cnedf/CNED2000_SEC> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2008> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2008)" .
-<http://lod.ine.es/clasificaciones/cneda> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-A (Clasificación Nacional de Educación, Nivel de formación alcanzada)" .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas ( CNAE 1993 Rev.1)" .
-<http://lod.ine.es/clasificaciones/cn/CN-2020> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cn> .
-<http://lod.ine.es/clasificaciones/cnae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/coicop/COICOP18PF> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/coicop> .
-<http://lod.ine.es/clasificaciones/ccaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/ccaa> .
-<http://lod.ine.es/clasificaciones/cneda/CNED2000_NIV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Nivel de formación (CNEDNIV)" .
-<http://lod.ine.es/clasificaciones/cneda/CNED-A-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/provincias> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Provincias" .
-<http://lod.ine.es/clasificaciones/iscedp/ISCED-P-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion Internacional Normalizada de Educacion CINE 2011 (Anexo 2: CINE-P 2011)" .
-<http://lod.ine.es/clasificaciones/cno/CNO-94> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones 1994 ( CNO-94 )" .
-<http://lod.ine.es/clasificaciones/cn/CN-2023> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2023 )" .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1ENG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistical Classification of Products by Activity,(CPA Version 2.1)" .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20ES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cn/CN-2023> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cn> .
-<http://lod.ine.es/clasificaciones/cnae> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNAE (Clasificación Nacional de Actividades Económicas)" .
-<http://lod.ine.es/clasificaciones/isco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en sectores de estudio 2014 (CNED-F-2014)" .
-<http://lod.ine.es/clasificaciones/cpc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2009> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cnae/CNAE-93-Rev.1> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedp/CNED-P-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-08> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/isco> .
-<http://lod.ine.es/clasificaciones/iscedp/ISCED-P-2011> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/iscedp> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isic/ISIC-Rev.4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Industrial Uniforme de Actividades Económicas ( ISIC Rev.4)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20ES> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> .
-<http://lod.ine.es/clasificaciones/iscedp/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cneda/CNED-A-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados 2014 (CNED-A-2014)" .
-<http://lod.ine.es/clasificaciones/isco/ISCO-88> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/isco> .
-<http://lod.ine.es/clasificaciones/iscedf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1ENG> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cpa> .
-<http://lod.ine.es/clasificaciones/cn/CN-2020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2020 )" .
-<http://lod.ine.es/clasificaciones/cnedf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/iscedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-F (Clasificacion Internacional Normalizada de Educacion, Sector de estudios)" .
-<http://lod.ine.es/clasificaciones/isic/ISIC-Rev.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isic/ISIC-Rev.4> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/isic> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2002> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cpa> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1ENG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/iscedp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.1.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas ( NACE Rev.1.1)" .
-<http://lod.ine.es/clasificaciones/iscedf/ISCED-F-2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cneda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.1.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/nace> .
-<http://lod.ine.es/clasificaciones/coicop/COICOP18PF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/laet> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lista de Actividades para el Empleo del Tiempo" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20IN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cpa> .
-<http://lod.ine.es/clasificaciones/coicop/COICOP16> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Consumo de 5 dógitos(COICOP16)" .
-<http://lod.ine.es/clasificaciones/isceda/ISCED-A-2011> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/isceda> .
-<http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnedf> .
-<http://lod.ine.es/clasificaciones/cnedp/CNED2000_EST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Nivel de estudios (CNEDEST)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20IN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistical classification of economic activities in the European Community, NACE Rev.2.1" .
-<http://lod.ine.es/clasificaciones/cpa> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPA (Clasificación de Productos por Actividad)" .
-<http://lod.ine.es/clasificaciones/iscedf/ISCED-F-2013> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Campos de educación y formación de la CINE 2013 (CINE-F 2013)" .
-<http://lod.ine.es/clasificaciones/coicop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/coicop/COICOP16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cno/CNO-94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2025> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnae> .
-<http://lod.ine.es/clasificaciones/cpc/CPC2.1ENG> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cpc> .
-<http://lod.ine.es/clasificaciones/cn/CN-2010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2010 )" .
-<http://lod.ine.es/clasificaciones/coicop/COICOP18PF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Consumo de 5 dógitos(COICOP18PF)" .
-<http://lod.ine.es/clasificaciones/cnedf/CNED2000_SEC> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnedf> .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20ES> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas (NACE Rev. 2.1)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/nace> .
-<http://lod.ine.es/clasificaciones/cn/CN-2010> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cn> .
-<http://lod.ine.es/clasificaciones/isic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isceda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cno/CNO-11> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cno/CNO-94> .
-<http://lod.ine.es/clasificaciones/cnedp/CNED-P-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cnedp/CNED2000_EST> .
-<http://lod.ine.es/clasificaciones/ccaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Comunidades Autónomas" .
-<http://lod.ine.es/clasificaciones/cpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2008> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cpa> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2.1)" .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2009> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnae> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2025> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas (CNAE) 2025" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2.1%20IN> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> .
-<http://lod.ine.es/clasificaciones/cno/CNO-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2025> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cnae/CNAE-2009> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCO (Clasificación Internacional Uniforme de Ocupaciones)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/nace/NACE-Rev.1.1> .
-<http://lod.ine.es/clasificaciones/provincias/PROVINCIAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cn/CN-2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpc/CPC2.1ENG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/laet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnedp/CNED2000_EST> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnedp> .
-<http://lod.ine.es/clasificaciones/isceda> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-A (Clasificacion Internacional Normalizada de Educacion, Nivel de formación alcanzada)" .
-<http://lod.ine.es/clasificaciones/cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cnae/CNAE-2009> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas ( CNAE 2009)" .
-<http://lod.ine.es/clasificaciones/nace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones 2008 ( ISCO-08 )" .
-<http://lod.ine.es/clasificaciones/provincias/PROVINCIAS> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/provincias> .
-<http://lod.ine.es/clasificaciones/cn/CN-2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cpa/CPA2.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/isco/ISCO-88> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones 1988 ( ISCO-88 )" .
-<http://lod.ine.es/clasificaciones/cnedp/CNED-P-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/cnedp> .
-<http://lod.ine.es/clasificaciones/provincias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Comunidades Autónomas" .
-<http://lod.ine.es/clasificaciones/laet/EET24_ABR25_V13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lista de Actividades para el Empleo del Tiempo 2024" .
-<http://lod.ine.es/clasificaciones/cnedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-F-2014  (Clasificación Nacional de Educación, Sector de estudios)" .
-<http://lod.ine.es/clasificaciones/nace/NACE-Rev.2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas ( NACE Rev.2)" .
-<http://lod.ine.es/clasificaciones/coicop/COICOP16> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/clasificaciones/coicop> .
-<http://lod.ine.es/clasificaciones/cneda/CNED-A-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/clasificaciones/cneda/CNED2000_NIV> .
-<http://lod.ine.es/clasificaciones/cnedf/CNED-F-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://lod.ine.es/clasificaciones/cn> <http://www.w3.org/2004/02/skos/core#prefLabel> "CN(Nomenclatura Combinada)" .
-<http://lod.ine.es/clasificaciones/isic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISIC (Clasificación Internacional Industrial Uniforme de Actividades Económicas)" .
-<http://lod.ine.es/clasificaciones/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cneda/CNED-A-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cneda> .
+<http://lod.ine.es/kos/cnae/CNAE-2009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cno/CNO-11> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cno> .
+<http://lod.ine.es/kos/nace/NACE-Rev.1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnae/CNAE-93-Rev.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnae> .
+<http://lod.ine.es/kos/cneda/CNED2000_NIV> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cneda> .
+<http://lod.ine.es/kos/iscedp> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-P (Clasificacion Internacional Normalizada de Educacion,  Nivel educativo)" .
+<http://lod.ine.es/kos/cpa/CPA2.1> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cpa/CPA2002> .
+<http://lod.ine.es/kos/cneda/CNED2000_NIV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-F (Clasificación Nacional de Educación, Sector de estudios)" .
+<http://lod.ine.es/kos/laet/EET24_ABR25_V13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpc> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPC (Clasificación Central de Productos)" .
+<http://lod.ine.es/kos/isceda/ISCED-A-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedf/CNED2000_SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/nace> <http://www.w3.org/2004/02/skos/core#prefLabel> "NACE (Clasificación Europea de Actividades Económicas)" .
+<http://lod.ine.es/kos/cnedp/CNED2000_EST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco/ISCO-08> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/isco/ISCO-88> .
+<http://lod.ine.es/kos/cpa/CPA2002> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2002)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20ES> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/nace> .
+<http://lod.ine.es/kos/cno> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNO (Clasificación Nacional de Ocupaciones)" .
+<http://lod.ine.es/kos/isceda/ISCED-A-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion Internacional Normalizada de Educacion CINE 2011 (Anexo 3: CINE-A 2011)" .
+<http://lod.ine.es/kos/cnedf/CNED2000_SEC> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Sectores de estudios (CNEDSEC)" .
+<http://lod.ine.es/kos/laet/EET24_ABR25_V13> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/laet> .
+<http://lod.ine.es/kos/cpa/CPA2002> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cpa/CPA2008> .
+<http://lod.ine.es/kos/cnae/CNAE-93-Rev.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedp/CNED-P-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion de programas en niveles educativos 2014 (CNED-P-2014)" .
+<http://lod.ine.es/kos/cn/CN-2010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/provincias/PROVINCIAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Provincias" .
+<http://lod.ine.es/kos/iscedf/ISCED-F-2013> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/iscedf> .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20IN> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/nace> .
+<http://lod.ine.es/kos/cnedp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedp> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-P  (Clasificación Nacional de Educación, Nivel educativo)" .
+<http://lod.ine.es/kos/cno/CNO-11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones 2011 ( CNO-11 )" .
+<http://lod.ine.es/kos/cpc/CPC2.1ENG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Central Product Classification, (CPC Version 2.1)" .
+<http://lod.ine.es/kos/cno/CNO-94> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cno> .
+<http://lod.ine.es/kos/cnedf/CNED-F-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cnedf/CNED2000_SEC> .
+<http://lod.ine.es/kos/cpa/CPA2008> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2008)" .
+<http://lod.ine.es/kos/cneda> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-A (Clasificación Nacional de Educación, Nivel de formación alcanzada)" .
+<http://lod.ine.es/kos/cnae/CNAE-93-Rev.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas ( CNAE 1993 Rev.1)" .
+<http://lod.ine.es/kos/cn/CN-2020> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cn> .
+<http://lod.ine.es/kos/cnae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/coicop/COICOP18PF> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/coicop> .
+<http://lod.ine.es/kos/ccaa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/ccaa/CCAA> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/ccaa> .
+<http://lod.ine.es/kos/cneda/CNED2000_NIV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Nivel de formación (CNEDNIV)" .
+<http://lod.ine.es/kos/cneda/CNED-A-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/provincias> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Provincias" .
+<http://lod.ine.es/kos/iscedp/ISCED-P-2011> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificacion Internacional Normalizada de Educacion CINE 2011 (Anexo 2: CINE-P 2011)" .
+<http://lod.ine.es/kos/cno/CNO-94> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Ocupaciones 1994 ( CNO-94 )" .
+<http://lod.ine.es/kos/cn/CN-2023> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2023 )" .
+<http://lod.ine.es/kos/cpa/CPA2.1ENG> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistical Classification of Products by Activity,(CPA Version 2.1)" .
+<http://lod.ine.es/kos/cnae/CNAE-2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20ES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cn/CN-2023> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cn> .
+<http://lod.ine.es/kos/cnae> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNAE (Clasificación Nacional de Actividades Económicas)" .
+<http://lod.ine.es/kos/isco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedf/CNED-F-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en sectores de estudio 2014 (CNED-F-2014)" .
+<http://lod.ine.es/kos/cpc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnae/CNAE-2009> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cnae/CNAE-93-Rev.1> .
+<http://lod.ine.es/kos/nace/NACE-Rev.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedp/CNED-P-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco/ISCO-08> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/isco> .
+<http://lod.ine.es/kos/iscedp/ISCED-P-2011> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/iscedp> .
+<http://lod.ine.es/kos/isco/ISCO-88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isic/ISIC-Rev.4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Industrial Uniforme de Actividades Económicas ( ISIC Rev.4)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20ES> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/nace/NACE-Rev.2> .
+<http://lod.ine.es/kos/iscedp/ISCED-P-2011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cneda/CNED-A-2014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de programas, titulaciones y certificaciones en niveles de formación alcanzados 2014 (CNED-A-2014)" .
+<http://lod.ine.es/kos/isco/ISCO-88> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/isco> .
+<http://lod.ine.es/kos/iscedf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpa/CPA2.1ENG> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cpa> .
+<http://lod.ine.es/kos/cn/CN-2020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2020 )" .
+<http://lod.ine.es/kos/cnedf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/iscedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-F (Clasificacion Internacional Normalizada de Educacion, Sector de estudios)" .
+<http://lod.ine.es/kos/isic/ISIC-Rev.4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isic/ISIC-Rev.4> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/isic> .
+<http://lod.ine.es/kos/cpa/CPA2002> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cpa> .
+<http://lod.ine.es/kos/cpa/CPA2002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpa/CPA2.1ENG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/iscedp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco/ISCO-08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/nace/NACE-Rev.1.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas ( NACE Rev.1.1)" .
+<http://lod.ine.es/kos/iscedf/ISCED-F-2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cneda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/nace/NACE-Rev.1.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/nace> .
+<http://lod.ine.es/kos/coicop/COICOP18PF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/laet> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lista de Actividades para el Empleo del Tiempo" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20IN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpa/CPA2.1> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cpa> .
+<http://lod.ine.es/kos/coicop/COICOP16> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Consumo de 5 dógitos(COICOP16)" .
+<http://lod.ine.es/kos/isceda/ISCED-A-2011> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/isceda> .
+<http://lod.ine.es/kos/cnedf/CNED-F-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnedf> .
+<http://lod.ine.es/kos/cnedp/CNED2000_EST> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Educación, Nivel de estudios (CNEDEST)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20IN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statistical classification of economic activities in the European Community, NACE Rev.2.1" .
+<http://lod.ine.es/kos/cpa> <http://www.w3.org/2004/02/skos/core#prefLabel> "CPA (Clasificación de Productos por Actividad)" .
+<http://lod.ine.es/kos/iscedf/ISCED-F-2013> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Campos de educación y formación de la CINE 2013 (CINE-F 2013)" .
+<http://lod.ine.es/kos/coicop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/coicop/COICOP16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cno/CNO-94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnae/CNAE-2025> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnae> .
+<http://lod.ine.es/kos/cpc/CPC2.1ENG> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cpc> .
+<http://lod.ine.es/kos/cn/CN-2010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nomenclatura Combinada ( 2010 )" .
+<http://lod.ine.es/kos/coicop/COICOP18PF> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Consumo de 5 dógitos(COICOP18PF)" .
+<http://lod.ine.es/kos/cnedf/CNED2000_SEC> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnedf> .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20ES> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas (NACE Rev. 2.1)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/nace> .
+<http://lod.ine.es/kos/cn/CN-2010> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cn> .
+<http://lod.ine.es/kos/isic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isceda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cno/CNO-11> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cno/CNO-94> .
+<http://lod.ine.es/kos/cnedp/CNED-P-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cnedp/CNED2000_EST> .
+<http://lod.ine.es/kos/ccaa> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Comunidades Autónomas" .
+<http://lod.ine.es/kos/cpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpa/CPA2008> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cpa> .
+<http://lod.ine.es/kos/cpa/CPA2.1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Estadóstica de Productos por Actividades ( CPA 2.1)" .
+<http://lod.ine.es/kos/cnae/CNAE-2009> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnae> .
+<http://lod.ine.es/kos/cnae/CNAE-2025> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas (CNAE) 2025" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2.1%20IN> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/nace/NACE-Rev.2> .
+<http://lod.ine.es/kos/cno/CNO-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnae/CNAE-2025> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cnae/CNAE-2009> .
+<http://lod.ine.es/kos/cpa/CPA2008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCO (Clasificación Internacional Uniforme de Ocupaciones)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/nace/NACE-Rev.1.1> .
+<http://lod.ine.es/kos/provincias/PROVINCIAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cn/CN-2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpc/CPC2.1ENG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/laet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnedp/CNED2000_EST> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnedp> .
+<http://lod.ine.es/kos/isceda> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISCED-A (Clasificacion Internacional Normalizada de Educacion, Nivel de formación alcanzada)" .
+<http://lod.ine.es/kos/cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cnae/CNAE-2009> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Nacional de Actividades Económicas ( CNAE 2009)" .
+<http://lod.ine.es/kos/nace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco/ISCO-08> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones 2008 ( ISCO-08 )" .
+<http://lod.ine.es/kos/provincias/PROVINCIAS> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/provincias> .
+<http://lod.ine.es/kos/cn/CN-2020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cpa/CPA2.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/isco/ISCO-88> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Internacional Uniforme de Ocupaciones 1988 ( ISCO-88 )" .
+<http://lod.ine.es/kos/cnedp/CNED-P-2014> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/cnedp> .
+<http://lod.ine.es/kos/provincias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/ccaa/CCAA> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación de Comunidades Autónomas" .
+<http://lod.ine.es/kos/laet/EET24_ABR25_V13> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lista de Actividades para el Empleo del Tiempo 2024" .
+<http://lod.ine.es/kos/cnedf> <http://www.w3.org/2004/02/skos/core#prefLabel> "CNED-F-2014  (Clasificación Nacional de Educación, Sector de estudios)" .
+<http://lod.ine.es/kos/nace/NACE-Rev.2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clasificación Europea de actividades económicas ( NACE Rev.2)" .
+<http://lod.ine.es/kos/coicop/COICOP16> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <http://lod.ine.es/kos/coicop> .
+<http://lod.ine.es/kos/cneda/CNED-A-2014> <http://rdf-vocabulary.ddialliance.org/xkos#follows> <http://lod.ine.es/kos/cneda/CNED2000_NIV> .
+<http://lod.ine.es/kos/cnedf/CNED-F-2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://lod.ine.es/kos/cn> <http://www.w3.org/2004/02/skos/core#prefLabel> "CN(Nomenclatura Combinada)" .
+<http://lod.ine.es/kos/isic> <http://www.w3.org/2004/02/skos/core#prefLabel> "ISIC (Clasificación Internacional Industrial Uniforme de Actividades Económicas)" .
+<http://lod.ine.es/kos/ccaa/CCAA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .

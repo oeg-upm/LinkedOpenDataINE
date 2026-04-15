@@ -18,11 +18,11 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/1/{CPRO}";
+        rr:template "http://lod.ine.es/kos/provincias/PROVINCIAS/1/{CPRO}";
     ];
     rr:predicateObjectMap [
         rr:predicate place:in ;
-        rr:objectMap [ rr:template "http://lod.ine.es/clasificaciones/ccaa/CCAA/1/{CODAUTO}" ];
+        rr:objectMap [ rr:template "http://lod.ine.es/kos/ccaa/CCAA/1/{CODAUTO}" ];
     ]. 
 
 <#prov-mun> a rr:TriplesMap;
@@ -31,7 +31,7 @@
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/mun/{CPRO}{CMUN}";
+        rr:template "http://lod.ine.es/recurso/mun/{CPRO}{CMUN}";
         rr:class inelod:municipality ;
     ];
     rr:predicateObjectMap [
@@ -48,5 +48,5 @@
     rr:predicateObjectMap [
         rr:predicate place:in ;
         rr:objectMap [ 
-            rr:template "http://lod.ine.es/clasificaciones/provincias/PROVINCIAS/1/{CPRO}"; ];
+            rr:template "http://lod.ine.es/kos/provincias/PROVINCIAS/1/{CPRO}"; ];
     ].
