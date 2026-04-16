@@ -122,7 +122,7 @@ def add_dataStructureDefinition(dimensions, inputId, g_mappings):
 
     def _add_component_dsd(inputId, dimension, order, g_mappings):
         componentTP = INELOD[f"{inputId}_TriplesMapDSD_bndim{order}"]
-        g_mappings.add((componentTP, RDF.Type, RML.TriplesMap))
+        g_mappings.add((componentTP, RDF.type, RML.TriplesMap))
         g_mappings.add((componentTP, RML.logicalSource, INELOD["LS_Root"]))
         add_pom_obj(componentTP, QB.order, order, g_mappings)
         add_pom_obj(componentTP, QB.dimension, dimension, g_mappings)
