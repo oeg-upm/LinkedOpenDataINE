@@ -5,7 +5,7 @@ import argparse, warnings
 import time
 from datetime import datetime, timezone
 
-from src.utils import convertNT2TTL, run_morph, run_morph_bigcube_batched
+from src.utils import convertNT2TTL, run_morph, run_morph_bigcube_batched, normalizeINE
 from src.prefixes import *
 from src.generate_mappings import generate_mapping, generate_mappings_big_cube, parse_ine_api_url
 from src.dimensions_measure import getMeasureFromTTL
@@ -148,146 +148,13 @@ def main():
     if args.materialize:
         print("Materializing data...")
         if args.bigcube:
-            run_morph_bigcube_batched(paths["mapping_folder"] + "/", paths["output_folder"], paths["file_nt"], batch_size=1)
+            run_morph_bigcube_batched(paths["mapping_folder"] + "/", paths["output_folder"], paths["file_nt"], batch_size=1, measureOntologyFile=args.measure_ontology_file)
         else:
             run_morph(paths["mapping_file"], paths["file_nt"])
-
-        if not args.bigcube:
             normalizeINE(paths["file_nt"], args.measure_ontology_file)
             convertNT2TTL(paths["file_nt"], paths["file_ttl"])
 
 
-from rdflib import Graph, URIRef, RDF, Namespace
-def normalizeINE(datacube_path, measureOntologyFile):
-    g = Graph(store="Oxigraph")    
-    g.parse(datacube_path, format="nt")
-    
-    unique_measures = set(str(o) for o in g.objects(None, QB.measure))    
-    for old_measure_label in unique_measures:
-        new_predicate_uri = getMeasureFromTTL(old_measure_label, measureOntologyFile)
-        if new_predicate_uri and new_predicate_uri != SDMX_MEASURE["obsValue"]:
-            # 3. Consultas para colocar el predicado de measures donde es estandar por el RDF Data Cube
-            old_uri = Literal(old_measure_label)
-
-            new_uri = URIRef(new_predicate_uri)
-
-            update_query = """
-                DELETE { ?s qb:measure ?old }
-                INSERT { ?s qb:measure ?new }
-                WHERE  { ?s qb:measure ?old }
-            """
-            # Pass the variables via initBindings
-            g.update(update_query, initBindings={'old': old_uri, 'new': new_uri}, initNs={'qb': QB})
-    update_query = """
-        INSERT {
-            ?slicedsd qb:component [ 
-                qb:measure ?measure ; 
-                qb:order "1"^^xsd:int 
-            ] .
-        }
-        WHERE {
-            SELECT DISTINCT ?slicedsd ?measure
-            WHERE {
-                # Buscamos la relación, pero filtramos duplicados con el DISTINCT
-                ?slice qb:measure ?measure ;
-                    qb:sliceStructure ?sliceKey .
-                ?slicedsd qb:sliceKey ?sliceKey .
-            
-            }
-        }
-    """      
-    g.update(update_query, initNs={'qb': QB})
-    update_query = """
-        DELETE {
-            ?slice qb:measure ?measure .
-        }
-        WHERE {
-            ?slice qb:measure ?measure ;
-                qb:sliceStructure ?sliceKey .
-            ?slicedsd qb:sliceKey ?sliceKey .
-        }
-        """
-    g.update(update_query, initNs={'qb': QB})
-    # Conectar lod slices a dataset directamente
-    update_query = """
-        INSERT {
-            ?dataset qb:slice ?slice .
-        }
-        WHERE {
-            ?obs qb:dataSet ?dataset ;
-                qb:slice ?slice .
-        }
-    """
-    g.update(update_query, initNs={'qb': QB})
-
-    # Subir el measure a nivel de DataStructureDefinition del dataset
-    # TO-DO
-    update_query = """
-        INSERT {
-            ?mainDSD qb:component [ qb:measure ?measure ] .
-        }
-        WHERE {
-            {
-                SELECT DISTINCT ?mainDSD ?measure
-                WHERE {
-                    ?dataset a qb:DataSet ;
-                            qb:structure ?mainDSD ;
-                            qb:slice ?slice .
-                    ?slice qb:sliceStructure ?sliceKey .
-                    ?sliceDSD qb:sliceKey ?sliceKey ;
-                            qb:component ?sliceComponent .
-                    ?sliceComponent qb:measure ?measure .
-                }
-            }
-        }
-    """
-    g.update(update_query, initNs={'qb': QB})
-
-    replace_obs_query = """
-        PREFIX qb: <http://purl.org/linked-data/cube#>
-        PREFIX sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#>
-
-        DELETE {
-            ?obs sdmx-measure:obsValue ?val .
-        }
-        INSERT {
-            ?obs ?specificMeasure ?val .
-        }
-        WHERE {
-            # 1. Seleccionamos observaciones que tengan el valor genérico
-            ?obs sdmx-measure:obsValue ?val .
-
-            # 2. Navegamos hacia arriba para descubrir la medida real
-            ?obs qb:slice ?slice .                   # La obs pertenece a un Slice
-            ?slice qb:sliceStructure ?sliceKey .     # El Slice tiene una estructura (Key)
-            
-            # 3. Buscamos la DSD parcial que define esa Key (donde guardaste las measures)
-            ?sliceDSD qb:sliceKey ?sliceKey ;
-                    qb:component ?comp .
-                    
-            # 4. Extraemos la URI de la medida específica (ej. ine:rate, ine:index)
-            ?comp qb:measure ?specificMeasure .
-        }
-        """
-
-     # Ejecutar en tu grafo
-    g.update(replace_obs_query)
-
-    
-    for s, p, o in g.triples((None, SDMX_DIMENSION.date, None)):
-        if o.datatype == XSD.long:
-            timestamp = int(o)
-            dt = datetime.fromtimestamp(timestamp / 1000, tz=timezone.utc)
-            
-            g.remove((s, p, o))
-            g.add((s, p, Literal(dt.isoformat(), datatype=XSD.dateTime)))
-
-
-    warnings.filterwarnings("ignore", message="NTSerializer always uses UTF-8 encoding")
-    g.serialize(destination=datacube_path, format="nt")
-    
-
-    return g
 
 if __name__ == "__main__":
     main()
