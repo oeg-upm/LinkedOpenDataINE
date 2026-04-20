@@ -220,9 +220,9 @@
         """ ;
     ] .
 
-:UniqueDimensionCombinationPerDataset_Simple
+:UniqueDimensionCombinationPerDataset_V2
     a sh:NodeShape ;
-    sh:deactivated true ;
+    sh:deactivated false ;
     sh:targetClass qb:DataSet ;
 
     sh:sparql [
@@ -230,27 +230,29 @@
         sh:message "Dentro de un qb:DataSet, dos qb:Observations no DEBERÍAN compartir la misma combinación de todos los valores de dimensiones." ;
         sh:severity sh:Warning ;
         sh:select """
-          SELECT $this
-          WHERE {
-            $this a qb:DataSet ;
-                  qb:structure ?dsd .
-
-            ?obs1 qb:dataSet $this .
-            ?obs2 qb:dataSet $this .
-            FILTER (?obs1 != ?obs2)
-
-            FILTER NOT EXISTS {
-              ?dsd qb:component ?cs .
-              ?cs qb:componentProperty ?dim .
-              ?dim a qb:DimensionProperty .
-
-              ?obs1 ?dim ?val1 .
-              ?obs2 ?dim ?val2 .
-              FILTER (?val1 != ?val2)
+            SELECT $this
+            WHERE {
+              {
+                SELECT $this ?obs (GROUP_CONCAT(?pair; separator="||") AS ?key)
+                WHERE {
+                  $this a qb:DataSet ;
+                        qb:structure ?dsd .
+                  ?obs qb:dataSet $this .
+                  ?dsd qb:component ?cs .
+                  ?cs qb:componentProperty ?dim .
+                  ?dim a qb:DimensionProperty .
+                  ?obs ?dim ?val .
+                  BIND(CONCAT(STR(?dim), "=", STR(?val)) AS ?pair)
+                }
+                GROUP BY $this ?obs
+              }
             }
-          }
+            GROUP BY $this ?key
+            HAVING (COUNT(?obs) > 1)
         """ ;
     ] .
+
+
 
 #################################################################
 # PERFIL 2 — COMPLETO (soporta multi-measure con qb:measureType)
@@ -539,34 +541,34 @@
         """ ;
     ] .
 
-:UniqueDimensionCombinationPerDataset_Complete
+:UniqueDimensionCombinationPerDataset_V2
     a sh:NodeShape ;
     sh:deactivated true ;
     sh:targetClass qb:DataSet ;
 
     sh:sparql [
         sh:prefixes :CommonPrefixes ;
-        sh:message "Dentro de un qb:DataSet, dos qb:Observations no DEBERÍAN compartir la misma combinación de todos los valores de dimensiones (incluye qb:measureType si está en el DSD)." ;
+        sh:message "Dentro de un qb:DataSet, dos qb:Observations no DEBERÍAN compartir la misma combinación de todos los valores de dimensiones." ;
         sh:severity sh:Warning ;
         sh:select """
-          SELECT $this
-          WHERE {
-            $this a qb:DataSet ;
-                  qb:structure ?dsd .
-
-            ?obs1 qb:dataSet $this .
-            ?obs2 qb:dataSet $this .
-            FILTER (?obs1 != ?obs2)
-
-            FILTER NOT EXISTS {
-              ?dsd qb:component ?cs .
-              ?cs qb:componentProperty ?dim .
-              ?dim a qb:DimensionProperty .
-
-              ?obs1 ?dim ?val1 .
-              ?obs2 ?dim ?val2 .
-              FILTER (?val1 != ?val2)
+            SELECT $this
+            WHERE {
+              {
+                SELECT $this ?obs (GROUP_CONCAT(?pair; separator="||") AS ?key)
+                WHERE {
+                  $this a qb:DataSet ;
+                        qb:structure ?dsd .
+                  ?obs qb:dataSet $this .
+                  ?dsd qb:component ?cs .
+                  ?cs qb:componentProperty ?dim .
+                  ?dim a qb:DimensionProperty .
+                  ?obs ?dim ?val .
+                  BIND(CONCAT(STR(?dim), "=", STR(?val)) AS ?pair)
+                }
+                GROUP BY $this ?obs
+              }
             }
-          }
+            GROUP BY $this ?key
+            HAVING (COUNT(?obs) > 1)
         """ ;
     ] .
