@@ -1,0 +1,42 @@
+@prefix ine: <https://lod.ine.es/def/vocabulary/>. 
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix och: <http://w3id.org/def/och/> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+
+# Esta ontología es para definir otros conceptos que no son parte del conjunto de dimensiones y medidas de los cubos de datos pero que son complementarios a estos. 
+# Es probable que sea integrado en los otros vocabularios de INELOD, pero por ahora se mantiene separado para no mezclar conceptos que son más generales con los específicos de los cubos de datos.
+
+# Ontology declaration and metadata. 
+
+ine:dimensions a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:creator "Diego Conde-Herreros";
+    dcterms:contributor "Diego Conde-Herreros";
+    dcterms:created "2026-04-30"^^xsd:date ;
+    dcterms:modified "2026-04-30"^^xsd:date;
+    vann:preferredNamespacePrefix "ine" ;
+    vann:preferredNamespaceUri <https://lod.ine.es/de/vocabulary/> ; 
+    owl:versionIRI <https://lod.ine.es/def/vocabulary/dimension/1.0.0> ; 
+    owl:versionInfo "1.0.0"@en;
+    dcterms:description "An ontology for describing other concepts used in the RDF data cubes from the Instituto Nacional de Estadística"@en, 
+                        "Una ontologia para describir otros conceptos empleados en los cubos de datos en RDF del Instituto Nacional de Estadística"@es ;
+    dcterms:title "INELOD VOC" .
+
+ine:Municipality rdfs:subClassOf skos:Concept ;
+    rdfs:label "Municipality"@en, "Municipio"@es ;
+    rdfs:comment "A municipality is a local administrative unit that is part of a province and an autonomous community in Spain. It is the smallest administrative division in the country and is responsible for providing local services to its residents."@en, 
+                 "Un municipio es una unidad administrativa local que forma parte de una provincia y una comunidad autónoma en España. Es la división administrativa más pequeña del país y es responsable de proporcionar servicios locales a sus residentes."@es .
+                 
+

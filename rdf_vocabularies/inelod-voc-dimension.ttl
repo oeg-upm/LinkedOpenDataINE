@@ -15,7 +15,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
 
-
 # Ontology declaration and metadata. 
 
 ine:dimensions a owl:Ontology ;
@@ -72,7 +71,7 @@ ine:ccaa
     rdfs:range skos:Concept ;
     rdfs:comment "Una comunidad autónoma (C. A.) es una entidad territorial que, dentro del actual ordenamiento jurídico constitucional, está dotada de autonomía, con instituciones y representantes propios y determinadas competencias legislativas, ejecutivas y administrativas, lo que la asimila en muchos aspectos a entidades federadas."@es;
     rdfs:label "Autonomous communities and cities"@en , "Comunidades y Ciudades Autónomas"@es , "Comunidades y ciudades autonomas"@es, "CCAA"@es, "Comunidades autónomas"@es, "Comunidad autónoma de destino"@es ;
-    qb:concept  <http://lod.ine.es/clasificaciones/ccaa/CCAA> .
+    qb:concept  <http://lod.ine.es/kos/ccaa/CCAA> .
 
 
 ine:cropsPasruresAndOrchards
@@ -89,7 +88,7 @@ ine:provinces
     rdfs:range skos:Concept ;
     rdfs:comment "La provincia es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado. Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica."@es ;
     rdfs:label "Provinces"@en, "Provincias"@es, "PROV"@es ;
-    qb:concept  <http://lod.ine.es/clasificaciones/provincias/PROVINCIAS>  .
+    qb:concept  <http://lod.ine.es/kos/provincias/PROVINCIAS>  .
 
 
 ine:sauAndOtherLands
@@ -106,6 +105,7 @@ ine:municipalities
     rdfs:subPropertyOf sdmx-dimension:refArea ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Literal ;
+    qb:concept ine:Municipality;
     rdfs:comment "El municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines."@es ;
     rdfs:label "Municipalities"@en ,
     "Municipios"@es ,
@@ -680,7 +680,6 @@ ine:ageGroups
     rdfs:range rdfs:Resource ;
     qb:concept sdmx-concept:age ;
     rdfs:label "Age groups"@en , "Grupos de edad"@es .
-
 
 ine:professionalSituation
     rdf:type rdf:Property , qb:DimensionProperty ;
