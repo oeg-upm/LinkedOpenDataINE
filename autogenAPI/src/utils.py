@@ -26,6 +26,15 @@ def add_pom_obj(triples_map, pred, obj, g_mappings, lang=None):
     else:
         g_mappings.add((pom_bnode, RML.object, obj if isinstance(obj, URIRef) else Literal(obj)))
 
+def add_pom_obj_iri(triples_map, pred, obj_uri, g_mappings):
+    pom_bnode = BNode()
+    g_mappings.add((triples_map, RML.predicateObjectMap, pom_bnode))
+    g_mappings.add((pom_bnode, RML.predicate, pred))
+    object_map_bnode = BNode()
+    g_mappings.add((pom_bnode, RML.objectMap, object_map_bnode))
+    g_mappings.add((object_map_bnode, RML.template, Literal(obj_uri)))
+    g_mappings.add((object_map_bnode, RML.termType, RML.IRI))
+
 def add_pom_ref(triples_map, pred, ref, g_mappings, datatype=None):
     pom_bnode = BNode()
     g_mappings.add((triples_map, RML.predicateObjectMap, pom_bnode))

@@ -159,7 +159,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-#"https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/50954?det=2&tip=M&nult=2"
+#"https://servicios.ine.es/wstempus/jsCache/ES/DATOS_TABLA/50902?det=2&tip=M&nult=2"
 #"https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/66615?&tv=19:4581&det=2&tip=M"
 #"https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/CENSO10053173?nult=3&det=2&tip=M"
 #"https://servicios.ine.es/wstempus/js/ES/DATOS_METADATAOPERACION/IPC?g1=115:16&g2=3:84&p=1&nult=5&tip=A"
