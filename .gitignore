@@ -1,9 +1,13 @@
 data_cubes_rdf/educacion/data/
-data_cubes_rdf/inmigración/data/
-data_cubes_rdf/mercado_laboral/data/
 data_cubes_rdf/población/data/
+data_cubes_rdf/mercado_laboral/data/
+data_cubes_rdf/demografia/data/
 data_cubes_rdf/servicios/data/
 data_cubes_rdf/turismo/data/
+data_cubes_rdf/sociedad/data/
+data_cubes_rdf/economia/data/
+data_cubes_rdf/ipc/data/
+data_cubes_rdf/industria/data/
 INE_SQL_QUERIES.sql
 datos_eurostat/
 autogenAPI/src/__pycache__/

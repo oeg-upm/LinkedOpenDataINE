@@ -122,7 +122,7 @@ ine:datatypeTourists
 
 ine:unemploymentRate a rdf:Property, qb:MeasureProperty;
     rdfs:label "Tasas de Paro"@es, "Tasa de paro de la población"@es;
-    rdfs:comment "Es el cociente entre el número de parados y el de activos. Se calcula para ambos sexos y para cada uno de ellos por separado."@es;
+    rdfs:comment "La tasa de desempleo es la proporción de la población activa que no tiene trabajo. Las personas desempleadas son aquellas en edad de trabajar que no tienen empleo, están disponibles para trabajar y, en las últimas cuatro semanas, han realizado acciones específicas para encontrar trabajo."@es;
     ine:inMeasureSet ine:rate;
     rdfs:domain qb:Observation;
     rdfs:range xsd:float.
@@ -136,7 +136,7 @@ ine:activityRate a rdf:Property, qb:MeasureProperty;
 
 ine:employmentRate a rdf:Property, qb:MeasureProperty;
     rdfs:label "Tasa de empleo de la población"@es;
-    rdfs:comment "Es el cociente entre el número de parados y el de activos. Se calcula para ambos sexos y para cada uno de ellos por separado."@es;
+    rdfs:comment "La tasa representa la proporción entre las personales empleadas y la población en edad de trabajar, ajustada tanto por calendario como estacionalmente."@es;
     ine:inMeasureSet ine:rate;
     rdfs:domain qb:Observation;
     rdfs:range xsd:float.
