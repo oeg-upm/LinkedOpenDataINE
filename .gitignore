@@ -8,6 +8,8 @@ data_cubes_rdf/sociedad/data/
 data_cubes_rdf/economia/data/
 data_cubes_rdf/ipc/data/
 data_cubes_rdf/industria/data/
+data_cubes_rdf/gentrificacion/
+data_cubes_rdf/geo/
 INE_SQL_QUERIES.sql
 datos_eurostat/
 autogenAPI/src/__pycache__/
