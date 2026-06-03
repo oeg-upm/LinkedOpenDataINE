@@ -10,6 +10,8 @@ data_cubes_rdf/ipc/data/
 data_cubes_rdf/industria/data/
 data_cubes_rdf/gentrificacion/
 data_cubes_rdf/geo/
+data_cubes_rdf/agricultura/data/
+data_cubes_rdf/ciencia-tecnologia/data/
 INE_SQL_QUERIES.sql
 datos_eurostat/
 autogenAPI/src/__pycache__/
@@ -22,3 +24,4 @@ autogenAPI/.vscode
 autogenAPI/.vscode/*
 morph_configuration/
 datasets/
+_prepared_csv/

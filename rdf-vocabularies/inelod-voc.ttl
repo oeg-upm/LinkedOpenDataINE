@@ -22,7 +22,7 @@
 ine: a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:creator "Diego Conde-Herreros";
-    dcterms:contributor "Diego Conde-Herreros", "Oscar Corcho", "Luis M. Vilches-Blázquez" ;";
+    dcterms:contributor "Diego Conde-Herreros", "Oscar Corcho", "Luis M. Vilches-Blázquez" ;
     dcterms:created "2025-05-01"^^xsd:date ;
     dcterms:modified "2025-09-23"^^xsd:date;
     vann:preferredNamespacePrefix "ine" ;
@@ -50,7 +50,7 @@ qb:DimensionProperty a rdfs:Class, owl:Class.
 skos:Concept a owl:Class.
 qb:MeasureProperty a rdfs:Class .
 sdmx-measure:obsValue a qb:MeasureProperty, rdf:Property ;
-    rdfs:label "Observation"@en ;
+    rdfs:label "Observation"@en, "Total"@es ;
     rdfs:range rdfs:Resource .
 sdmx-measure:currency a qb:MeasureProperty, rdf:Property  ;
     rdfs:label "Currency"@en ;
@@ -85,7 +85,7 @@ ine:ccaa
     rdfs:domain qb:Observation ;
     rdfs:range skos:Concept ;
     rdfs:comment "Una comunidad autónoma (C. A.) es una entidad territorial que, dentro del actual ordenamiento jurídico constitucional, está dotada de autonomía, con instituciones y representantes propios y determinadas competencias legislativas, ejecutivas y administrativas, lo que la asimila en muchos aspectos a entidades federadas."@es;
-    rdfs:label "Autonomous communities and cities"@en , "Comunidades y Ciudades Autónomas"@es , "Comunidades y ciudades autonomas"@es, "CCAA"@es, "Comunidades autónomas"@es, "Comunidad autónoma de destino"@es ;
+    rdfs:label "Autonomous communities and cities"@en , "Comunidades y Ciudades Autónomas"@es , "Comunidades y ciudades autonomas"@es, "CCAA"@es, "Comunidades autónomas"@es, "Comunidad autónoma de destino"@es, "Comunidades"@es, "Comunidades y ciudades autónomas"@es ;
     qb:concept  <http://lod.ine.es/kos/ccaa/CCAA> .
 
 
@@ -105,6 +105,11 @@ ine:provinces
     rdfs:label "Provinces"@en, "Provincias"@es, "PROV"@es ;
     qb:concept  <http://lod.ine.es/kos/provincias/PROVINCIAS>  .
 
+ine:equipmentType 
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    rdfs:label "Equipment type"@en , "Tipo de equipamiento"@es .
 
 ine:sauAndOtherLands
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -136,6 +141,19 @@ ine:subcity
     "Subciudad"@es ,
     "SUBCITY"@es .
 
+ine:wasteType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    rdfs:label "Waste type"@en ,
+    "Clase de residuo"@es .
+
+ine:hazardType
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    rdfs:label "Hazard type"@en ,
+    "Tipo de peligrosidad"@es .
 
 ine:supracity
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -202,11 +220,19 @@ ine:productGroups
     rdfs:label "Product groups"@en ,
     "Grupos de Productos"@es .
 
+ine:consumedProduct
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:subPropertyOf ine:productGroups ;
+    rdfs:domain qb:Observation ;
+    rdfs:range skos:Concept ;
+    rdfs:label "Consumed product"@en ,
+    "Producto consumido"@es .
+
 sdmx-dimension:refPeriod a qb:DimensionProperty, rdf:Property ;
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Resource;
     qb:concept sdmx-concept:refPeriod ;
-    rdfs:label "Reference Period"@en , "Period"@en, "Periodo"@es, "TIME_PERIOD"@en ;
+    rdfs:label "Reference Period"@en , "Period"@en, "Periodo"@es, "TIME_PERIOD"@en, "periodo"@es ;
     rdfs:comment """The period of time or point in time to which the measured observation is intended to refer."""@en ;
     rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
 
@@ -224,7 +250,7 @@ ine:PIBDataType  a rdf:Property, qb:DimensionProperty;
     rdfs:label "Tipo de dato de PIB"@es;
     rdfs:comment "Incluye: Datos no ajustados de estacionalidad y calendario, y Datos ajustados de estacionalidad y calendario"@es;
     rdfs:domain qb:Observation;
-    rdfs:range xsd:String.
+    rdfs:range xsd:string.
 
 
 ine:compontentsPIBpmDemand
@@ -288,7 +314,9 @@ ine:economicActivity
     "Economic activity (CNAE-93)"@en ,
     "Actividad económica (CNAE-93)"@es ,
     "Economic activity (CNAE-09)"@en ,
-    "Actividad económica (CNAE-09)"@es .
+    "Actividad económica (CNAE-09)"@es ,
+    "Actividad económica (CNAE-2009)"@es,
+    "Actividad principal (CNAE-2009 a 1, 2 y 3 dígitos)"@es .
 
 ine:economicSector 
     a rdf:Property, qb:DimensionProperty;
@@ -325,6 +353,11 @@ sdmx-dimension:sex a qb:DimensionProperty, rdf:Property ;
     rdfs:comment """The state of being male or female."""@en , "El sexo se refiere al sexo biológico de la persona. Según la OMS, el sexo hace referencia a las características biológicas y fisiológicas que definen a hombres y mujeres, mientras que el género se refiere a los roles, conductas, actividades y atributos construidos socialmente que una cultura determinada considera apropiados para hombres y mujeres. De acuerdo con esta descripción, la OMS considera que hombre y mujer son categorías de sexo, mientras que masculino y femenino son categorías de género."@es ;
     rdfs:isDefinedBy <https://sdmx.org/wp-content/uploads/01_sdmx_cog_annex_1_cdc_2009.pdf> .
 
+ine:housingFeatures a rdf:Property, qb:DimensionProperty ;
+    rdfs:label "Housing features"@en , "Características de la vivienda"@es ;
+    rdfs:comment "Características de la vivienda como el número de habitaciones, el número de personas por habitación, la superficie útil, etc."@es ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource .
 
 ine:islands
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -443,7 +476,7 @@ ine:expenditureGroups
     rdfs:domain qb:Observation ;
     rdfs:range rdfs:Resource ;
     rdfs:label "Expenditure groups"@en ,
-    "Grupos de gasto"@es .
+    "Grupos de gasto"@es, "Clase de gasto"@es .
 
 
 ine:expenditureGroups2Digits
@@ -689,6 +722,13 @@ ine:ageGroups
     rdfs:range rdfs:Resource ;
     qb:concept sdmx-concept:age ;
     rdfs:label "Age groups"@en , "Grupos de edad"@es .
+
+ine:fiveYearAgeGroup
+    rdf:type rdf:Property , qb:DimensionProperty ;
+    rdfs:domain qb:Observation ;
+    rdfs:range rdfs:Resource ;
+    qb:concept ine:ageGroups ;
+    rdfs:label "Five-year age groups"@en , "Grupo quinquenal de edad"@es .
 
 ine:professionalSituation
     rdf:type rdf:Property , qb:DimensionProperty ;
@@ -1537,14 +1577,6 @@ ine:classificationAccordingToEo
     rdfs:range rdfs:Resource ;
     rdfs:label "Classification according to E.O."@en ,
     "Clasificación según E.O."@es .
-
-
-ine:indicatorType
-    rdf:type rdf:Property , qb:DimensionProperty ;
-    rdfs:domain qb:Observation ;
-    rdfs:range rdfs:Resource ;
-    rdfs:label "Indicator type"@en ,
-    "Tipo de indicador"@es .
 
 
 ine:actualHoursWorkedInMainJob
@@ -6272,18 +6304,64 @@ ine:unitEmployed
 ine:dataType
     a ine:MeasureSet ;
     rdfs:label "Tipo de dato"@es, "Datatype"@en ;
-    rdfs:comment "Relación entre dos magnitudes"@es.
+    rdfs:comment "Relación entre dos magnitudes"@es .
 
 ine:datatypeTourists
     a ine:MeasureSet ;
     rdfs:label "Tipo de dato Turistas"@es, "Datatype Tourists"@en ;
-    rdfs:comment "Relación entre dos magnitudes"@es.
+    rdfs:comment "Relación entre dos magnitudes"@es .
 
-
+ine:indicatorType
+    a ine:MeasureSet ;
+    rdfs:label "Indicator type"@en , "Tipo de indicador"@es ;
+    rdfs:comment "TODO" .
 
 ###############################################################################
 # MEASURES IN SETS
 ################################################################################
+
+ine:volumeOfSludgeGenerated a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Volumen de lodos generados en el tratamiento de aguas residuales (toneladas de materia seca/año)"@es, "Volume of sludge generated during wastewater treatment (tons of dry matter/year)"@en ;
+    rdfs:comment "TODO" ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:treatedResidualWaterVolume a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Volumen de aguas residuales tratadas"@es, "Volumes of treated wastewater"@en ;
+    rdfs:comment "TODO" ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:reusedWaterVolume a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Volumen total de agua reutilizada"@es, "Total volume of reused water"@en ;
+    rdfs:comment "TODO" ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:invoiceforSewerageAndWastewaterTreatment a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Importe facturado por alcantarillado y depuración"@es, "Amount invoiced for sewerage and wastewater treatment"@en ;
+    rdfs:comment "TODO" ;
+    rdfs:subPropertyOf sdmx-measure:currency ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:sewerageNetworkLength a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Longitud de la red de alcantarillado (km)"@es, "Length of the sewerage network (km)"@en ;
+    rdfs:comment "TODO" ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
+
+ine:sludgeVolume a rdf:Property, qb:MeasureProperty ;
+    rdfs:label "Volumen de lodos generados en el tratamiento de aguas residuales"@es, "Volume of sludge generated during wastewater treatment"@en ;
+    rdfs:comment "TODO" ;
+    ine:inMeasureSet ine:indicatorType ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:float .
 
 ine:unemploymentRate a rdf:Property, qb:MeasureProperty;
     rdfs:label "Tasas de Paro"@es, "Tasa de paro de la población"@es;
@@ -6769,14 +6847,6 @@ ine:index  a rdf:Property , qb:MeasureProperty;
     rdfs:subPropertyOf sdmx-measure:obsValue;
     rdfs:domain qb:Observation; 
     rdfs:range xsd:int.
-
-ine:municipalities a rdf:Property, qb:MeasureProperty ;
-  rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
-  rdfs:domain qb:Observation ;
-  rdfs:range xsd:integer ;
-  rdfs:comment "El municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines."@es ;
-  rdfs:label "Municipios"@es , "Municipalities"@en .
-
 
 ine:peopleMarryingForTheFirstTimePerThousandInhabitants a rdf:Property, qb:MeasureProperty ;
   rdfs:subPropertyOf sdmx-measure:obsValue , ine:count ;
@@ -8141,24 +8211,6 @@ ine:thousandsOfTonnes a rdf:Property, qb:MeasureProperty ;
   rdfs:range xsd:decimal ;
 #  rdfs:comment "TODO" ;
   rdfs:label "Miles de Toneladas"@es , "Thousands Of Tonnes"@en .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ############ Extensión para el los indicadores de gentrificación. ##############################
