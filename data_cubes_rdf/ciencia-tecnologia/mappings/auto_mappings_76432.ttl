@@ -1,0 +1,233 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix inelod: <http://lod.ine.es/recurso/cubes/> .
+@prefix inelod-voc: <http://lod.ine.es/def/vocabulary/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+inelod:76432_Observations a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rml:reference "Total" ;
+                    rr:datatype xsd:float ] ;
+            rr:predicate sdmx-measure:obsValue ],
+        [ rr:objectMap [ rml:reference "Tipo_de_equipamiento" ] ;
+            rr:predicate inelod-voc:equipmentType ],
+        [ rr:object inelod:76432 ;
+            rr:predicate qb:dataSet ],
+        [ rr:objectMap [ rml:reference "Caracteristicas_de_la_vivienda" ] ;
+            rr:predicate inelod-voc:housingFeatures ] ;
+    rr:subjectMap [ rr:class qb:Observation ;
+            rr:template "http://lod.ine.es/recurso/cubes/76432/o{index}" ] .
+
+inelod:76432_TriplesMapDSD a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_component_2 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_component_1 ] ;
+            rr:predicate qb:component ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_component_measu ] ;
+            rr:predicate qb:component ] ;
+    rr:subjectMap [ rr:class qb:DataStructureDefinition ;
+            rr:constant inelod:76432_dsd ] .
+
+inelod:76432_TriplesMapDataset a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_px ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object inelod:76432_dsd ;
+            rr:predicate qb:structure ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_csv_sc ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object "76432" ;
+            rr:predicate rdfs:label ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dcat:contactPoint ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_html ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_csv_tab ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_xlsx ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object <https://www.ine.es/> ;
+            rr:predicate dct:publisher ],
+        [ rr:object "urn:ine:es:TABLA:TPX:76432"@es ;
+            rr:predicate dct:identifier ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dct:source ],
+        [ rr:objectMap [ rr:parentTriplesMap inelod:76432_TM_dist_json ] ;
+            rr:predicate dcat:distribution ],
+        [ rr:object <http://publications.europa.eu/resource/authority/language/SPA> ;
+            rr:predicate dct:language ],
+        [ rr:object <https://creativecommons.org/licenses/by/4.0/> ;
+            rr:predicate dct:license ],
+        [ rr:object dcat:Dataset ;
+            rr:predicate rdf:type ] ;
+    rr:subjectMap [ rr:class qb:DataSet ;
+            rr:constant inelod:76432 ] .
+
+inelod:76432_TM_component_1 a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object 1 ;
+            rr:predicate qb:order ],
+        [ rr:object inelod-voc:housingFeatures ;
+            rr:predicate qb:dimension ] ;
+    rr:subjectMap [ rr:constant inelod:76432_component_1 ] .
+
+inelod:76432_TM_component_2 a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object inelod-voc:equipmentType ;
+            rr:predicate qb:dimension ],
+        [ rr:object 2 ;
+            rr:predicate qb:order ] ;
+    rr:subjectMap [ rr:constant inelod:76432_component_2 ] .
+
+inelod:76432_TM_component_measu a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object sdmx-measure:obsValue ;
+            rr:predicate qb:measure ] ;
+    rr:subjectMap [ rr:constant inelod:76432_component_measu ] .
+
+inelod:76432_TM_dist_csv_sc a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object <http://www.iana.org/assignments/media-types/text/csv> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+            rr:predicate dct:format ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object "CSV: separado por ;"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/76432.csv?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object "CSV: Separated by ;"@en ;
+            rr:predicate dct:title ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_csv_sc ] .
+
+inelod:76432_TM_dist_csv_tab a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object "CSV: separado por tabuladores"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/csv_bd/76432.csv?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object <http://www.iana.org/assignments/media-types/text/csv> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object "CSV: Tab Separated"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+            rr:predicate dct:format ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_csv_tab ] .
+
+inelod:76432_TM_dist_html a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object <http://www.iana.org/assignments/media-types/text/html> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+            rr:predicate dct:format ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object "Html"@es ;
+            rr:predicate dct:title ],
+        [ rr:object "Html"@en ;
+            rr:predicate dct:title ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_html ] .
+
+inelod:76432_TM_dist_json a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object "Json"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <http://www.iana.org/assignments/media-types/application/json> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object "Json"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/json/t76432.json?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+            rr:predicate dct:format ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_json ] .
+
+inelod:76432_TM_dist_px a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ],
+        [ rr:object "PC-Axis"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object "PC-Axis"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/px/76432.px?nocab=1> ;
+            rr:predicate dcat:downloadURL ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_px ] .
+
+inelod:76432_TM_dist_xlsx a rr:TriplesMap ;
+    rml:logicalSource [ rml:referenceFormulation ql:CSV ;
+            rml:source "C:\\Users\\dconde\\Desktop\\LinkedOpenDataINE\\_prepared_csv\\76432.csv" ] ;
+    rr:predicateObjectMap [ rr:object "Excel: Extensión XLSX"@es ;
+            rr:predicate dct:title ],
+        [ rr:object <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            rr:predicate dcat:applicableLegislation ],
+        [ rr:object <http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet> ;
+            rr:predicate dcat:mediaType ],
+        [ rr:object dcat:Distribution ;
+            rr:predicate rdf:type ],
+        [ rr:object <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+            rr:predicate dct:format ],
+        [ rr:object <https://www.ine.es/jaxiT3/files/t/es/xlsx/76432.xlsx?nocab=1> ;
+            rr:predicate dcat:downloadURL ],
+        [ rr:object "Excel: XLSX extension"@en ;
+            rr:predicate dct:title ],
+        [ rr:object <https://www.ine.es/jaxiT3/Tabla.htm?t=76432> ;
+            rr:predicate dcat:accessURL ],
+        [ rr:object <https://www.ine.es/aviso_legal> ;
+            rr:predicate dct:license ] ;
+    rr:subjectMap [ rr:constant inelod:76432_dist_xlsx ] .
+

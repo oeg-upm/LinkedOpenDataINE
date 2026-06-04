@@ -11,28 +11,40 @@
 @prefix place: <http://purl.org/ontology/places#>.
 @prefix inelod: <https://lod.ine.es/cubes/vocabulary#>.
 
-   
-<#ccaa-prov> a rr:TriplesMap;
+<#Level> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "codigos/diccionario25.csv" ;
+        rml:source "datasets/diccionario25.csv" ;
         rml:referenceFormulation ql:CSV
-    ];
+    ];    
     rr:subjectMap [
-        rr:template "http://lod.ine.es/kos/provincias/PROVINCIAS/1/{CPRO}";
+        rr:constant <http://lod.ine.es/kos/municipios/MUNICIPIOS/1>;
+        rr:class xkos:ClassificationLevel;
     ];
     rr:predicateObjectMap [
-        rr:predicate place:in ;
-        rr:objectMap [ rr:template "http://lod.ine.es/kos/ccaa/CCAA/1/{CODAUTO}" ];
-    ]. 
+        rr:predicate xkos:depth;
+        rr:object 1 ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:inScheme;
+        rr:object  <http://lod.ine.es/kos/municipios/MUNICIPIOS>;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:member;
+        rr:objectMap [rr:template "http://lod.ine.es/kos/ccaa/CCAA/1/{CPRO}{CMUN}"];
+    ].
 
-<#prov-mun> a rr:TriplesMap;
+<#municipios> a rr:TriplesMap;
     rml:logicalSource [
-        rml:source "codigos/diccionario25.csv" ;
+        rml:source "datasets/diccionario25.csv" ;
         rml:referenceFormulation ql:CSV
     ];
     rr:subjectMap [
-        rr:template "http://lod.ine.es/recurso/mun/{CPRO}{CMUN}";
-        rr:class inelod:municipality ;
+        rr:template "http://lod.ine.es/kos/municipios/MUNICIPIOS/1/{CPRO}{CMUN}";
+        rr:class skos:Concept  ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate skos:inScheme;
+        rr:object <http://lod.ine.es/kos/municipios/MUNICIPIOS>;
     ];
     rr:predicateObjectMap [
         rr:predicate skos:notation ;
@@ -46,7 +58,7 @@
                         rr:language "es"];
     ];
     rr:predicateObjectMap [
-        rr:predicate place:in ;
+        rr:predicate skos:broader ;
         rr:objectMap [ 
             rr:template "http://lod.ine.es/kos/provincias/PROVINCIAS/1/{CPRO}"; ];
     ].
