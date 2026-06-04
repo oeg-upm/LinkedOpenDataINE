@@ -81,7 +81,7 @@ def _add_series_triplesmap(inputId, dimensions, measure, parameters, g_mappings)
     g_mappings.add((series, RDF.type, RML.TriplesMap))
     g_mappings.add((series, RML.logicalSource, INELOD["LS_Root"]))
 
-    add_subject_map(series, QB["slice"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "series/{COD}")
+    add_subject_map(series, QB["slice"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "series/{COD}")
 
     add_pom_ref(series, DCT["identifier"], "COD", g_mappings)
     add_pom_ref(series, SKOS["prefLabel"], "Nombre", g_mappings)
@@ -114,7 +114,7 @@ def _add_unidad_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((unidad, RDF.type, RML.TriplesMap))
     g_mappings.add((unidad, RML.logicalSource, INELOD["LS_Root"]))
 
-    add_subject_map(unidad, QB["AttributeProperty"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "unit/{Unidad.Id}")
+    add_subject_map(unidad, QB["AttributeProperty"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "unit/{Unidad.Id}")
 
     add_pom_ref(unidad, SKOS["prefLabel"], "Unidad.Nombre", g_mappings)
     if "A" not in parameters.get("tip"):
@@ -126,7 +126,7 @@ def _add_scale_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((escala, RDF.type, RML.TriplesMap))
     g_mappings.add((escala, RML.logicalSource, INELOD["LS_Root"]))
 
-    add_subject_map(escala, QB["AttributeProperty"], g_mappings, template="https://lod.ine.es/recurso/cubes/" +  "scale/{Escala.Id}")
+    add_subject_map(escala, QB["AttributeProperty"], g_mappings, template="http://lod.ine.es/recurso/cubes/" +  "scale/{Escala.Id}")
 
     add_pom_ref(escala, SKOS["prefLabel"], "Escala.Nombre", g_mappings)
     if "A" not in parameters.get("tip"):
@@ -140,10 +140,11 @@ def _add_observations_triplesmap(inputId, measure, parameters, g_mappings):
     g_mappings.add((observation, RDF.type, RML.TriplesMap))
     g_mappings.add((observation, RML.logicalSource, INELOD["LS_Data"]))
 
-    add_subject_map(observation, QB.Observation, g_mappings, template="https://lod.ine.es/recurso/cubes/" + "obs/" + inputId + "_{CodigoPeriodo}")
+    t = f"http://lod.ine.es/recurso/cubes/{inputId}/"
+    add_subject_map(observation, QB.Observation, g_mappings, template=t + "o{CodigoPeriodo}")
 
     add_pom_obj(observation, QB.dataSet, INELOD[inputId], g_mappings)
-    add_pom_obj(observation, QB.observationGroup, URIRef("https://lod.ine.es/recurso/cubes/" + "series/" + inputId), g_mappings)
+    add_pom_obj(observation, QB.observationGroup, URIRef("http://lod.ine.es/recurso/cubes/" + "series/" + inputId), g_mappings)
 
     add_pom_ref(observation, SDMX_DIMENSION.year, "Anyo", g_mappings, datatype=XSD.gYear)
     add_pom_ref(observation, SDMX_DIMENSION.date, "Fecha", g_mappings, datatype=XSD.long)
@@ -173,7 +174,7 @@ def _add_tipodato_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((tipoDato, RDF.type, RML.TriplesMap))
     g_mappings.add((tipoDato, RML.logicalSource, INELOD["LS_Data"]))
 
-    add_subject_map(tipoDato, QB["AttributeProperty"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "tipodato/{TipoDato.Id}")
+    add_subject_map(tipoDato, QB["AttributeProperty"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "tipodato/{TipoDato.Id}")
 
     add_pom_ref(tipoDato, SKOS["prefLabel"], "TipoDato.Nombre", g_mappings)
     add_pom_ref(tipoDato, SKOS["notation"], "TipoDato.Codigo", g_mappings)
@@ -185,7 +186,7 @@ def _add_periodo_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((periodo, RDF.type, RML.TriplesMap))
     g_mappings.add((periodo, RML.logicalSource, INELOD["LS_Data"]))
 
-    add_subject_map(periodo, QB["DimensionProperty"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "periodo/{Periodo.Id}")
+    add_subject_map(periodo, QB["DimensionProperty"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "periodo/{Periodo.Id}")
 
     if "A" not in parameters.get("tip"):
         add_pom_ref(periodo, DCT["identifier"], "Periodo.Id", g_mappings, datatype=XSD.integer)
@@ -203,7 +204,7 @@ def _add_meta_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((metadata, RDF.type, RML.TriplesMap))
     g_mappings.add((metadata, RML.logicalSource, INELOD["LS_Meta"]))
 
-    add_subject_map(metadata, SKOS["Concept"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "md/{Id}")
+    add_subject_map(metadata, SKOS["Concept"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "md/{Id}")
 
     add_pom_ref(metadata, DCT["identifier"], "Id", g_mappings, datatype=XSD.integer)
     add_pom_ref(metadata, SKOS["prefLabel"], "Nombre", g_mappings)
@@ -220,7 +221,7 @@ def _add_variable_triplesmap(inputId, parameters, g_mappings):
     g_mappings.add((variable, RDF.type, RML.TriplesMap))
     g_mappings.add((variable, RML.logicalSource, INELOD["LS_Meta"]))
 
-    add_subject_map(variable, SKOS["Concept"], g_mappings, template="https://lod.ine.es/recurso/cubes/" + "variable/{Variable.Id}")
+    add_subject_map(variable, SKOS["Concept"], g_mappings, template="http://lod.ine.es/recurso/cubes/" + "variable/{Variable.Id}")
 
     add_pom_ref(variable, SKOS["prefLabel"], "Variable.Nombre", g_mappings)
     add_pom_ref(variable, DCT["identifier"], "Variable.Id", g_mappings, datatype=XSD.integer)
